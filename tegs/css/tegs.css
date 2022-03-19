@@ -1,0 +1,62 @@
+body {
+  font-family: "Satisfy", cursive;
+  font-family: "Smooch Sans", sans-serif;
+  font-family: "Tangerine", cursive;
+  background-color: azure;
+}
+
+.name-teg {
+  margin-left: 500px;
+}
+
+.defition-section {
+  margin-left: 155px;
+}
+
+.utility-section {
+  margin-left: 650px;
+}
+
+.enumiration-section {
+  margin-left: 670px;
+  font-size: 30px;
+}
+ol {
+  border: 9px;
+  color: brown;
+}
+
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.description-section {
+  margin-left: 650px;
+}
+
+.paragraph-section {
+  margin-left: 60px;
+}
+
+.numbers-section {
+  font-size: 40px;
+  color: steelblue;
+}
+
+.all-tegs-section {
+  font-size: 50px;
+  color: saddlebrown;
+}
