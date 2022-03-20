@@ -1,0 +1,57 @@
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-family: "Smooch Sans", sans-serif;
+  font-family: "Tangerine", cursive;
+  background-color: #f2f2f2;
+}
+
+.main-conteiner {
+  display: flex;
+  flex-direction: row;
+}
+
+.all-inftomation {
+  margin-left: 150px;
+}
+.head-one {
+  margin-left: 120px;
+  font-size: 40px;
+}
+
+.text-section {
+  font-size: 20px;
+}
+
+.letters-section {
+  color: brown;
+  font-size: 30px;
+}
+
+.header-section {
+  font-size: 35px;
+}
+
+.aside-section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.foto-section {
+  border: 3px solid #55c5e9;
+  padding: 20px;
+  background: #666;
+}
+
+.navigation-section {
+  background-color: #d2f3f9;
+}
+
+.link-side-section {
+  color: black;
+}
+
+.color-section {
+  color: brown;
+}
