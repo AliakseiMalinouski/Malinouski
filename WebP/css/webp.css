@@ -33,7 +33,6 @@ body {
 }
 
 .aside-section {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
