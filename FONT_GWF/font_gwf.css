@@ -1,0 +1,87 @@
+body {
+  background-color: snow;
+}
+
+.main-conteiner {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-section {
+  margin-left: 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.span-section {
+  padding: 35px;
+}
+
+.name-section {
+  margin-left: 115px;
+  font-size: 72px;
+  font-family: "Oswald", sans-serif;
+}
+
+.poem-section {
+  width: 270px;
+  line-height: 30px;
+  font-size: 23px;
+  margin-left: 130px;
+  margin-top: 80px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.link-zeus {
+  text-decoration: none;
+  font-weight: bold;
+  color: maroon;
+  font-weight: bold;
+}
+
+.author-section {
+  margin-top: 50px;
+  margin-left: 440px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.author-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.aside-section {
+  margin-left: 250px;
+  width: 150px;
+}
+
+.aside-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+}
+
+.footer-section {
+  width: 21%;
+  height: 30px;
+  margin-left: 600px;
+  margin-top: 100px;
+  border: solid;
+  border-radius: 13px;
+  border-color: midnightblue;
+}
+
+.footer-span-section {
+  padding: 25px;
+}
+
+.link-footer-text {
+  text-decoration: none;
+  color: brown;
+}
