@@ -387,6 +387,8 @@
   width: 308px;
   height: 37px;
   margin-top: 11px;
+  border: 0px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 ::placeholder {
@@ -487,4 +489,23 @@ button {
   margin-left: -80px;
   border: 0px;
   background-color: white;
+}
+
+.order {
+  margin-left: 176px;
+  margin-top: -17px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: white;
+  border: 2px solid;
+  width: 174px;
+  padding-left: 75px;
+  padding-top: 6px;
+  height: 33px;
+  padding-bottom: 6px;
+  background: #2d2c2c;
+  list-style-type: none;
 }
