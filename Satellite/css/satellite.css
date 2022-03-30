@@ -214,3 +214,69 @@ body {
   color: white;
 }
 
+.section-two {
+    width: 1540px;
+    height: 417px;
+    background-color: white;
+    font-family: "Manrope",
+    sans-serif;
+}
+
+
+.premium-circle {
+  margin-left: 450px;
+}
+
+.premium-card-foto {
+  width: 438px;
+  height: 280px;
+  margin-left: 682px;
+  margin-top: -80px
+}
+
+
+.text-premium {
+  margin-top: -300px;
+  margin-left: 180px;
+}
+
+
+.head-premium {
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Manrope",
+  sans-serif;
+  font-size: 26px;
+}
+
+
+.ul-premium {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  font-family: "Manrope",
+  sans-serif;
+}
+
+
+.order-premium {
+  margin-left: -26px;
+  width: 155px;
+  margin-top: 30px;
+}
+
+.order-premium-now {
+  text-decoration: none;
+  margin-top: -45px;
+  margin-left: 16px;
+  font-weight: 500;
+  
+  }
+
+
+  .premium-link-order {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
