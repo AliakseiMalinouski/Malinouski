@@ -7,6 +7,8 @@ body {
   width: 1540px;
   height: 1080px;
   font-family: "Manrope", sans-serif;
+  
+  ;
 }
 
 .foto-logo {
@@ -284,7 +286,7 @@ body {
 
   .section-3 {
     width: 1540px;
-    height: 1080px;
+    height: 900px;
     font-family: "Manrope",
     sans-serif;
     margin-top: 100px;
@@ -362,4 +364,93 @@ body {
       margin-top: -150px;
     }
 
+
+    .mob-ev {
+      margin-left: 800px;  
+      margin-top: -190px;
+      }
+
+      .mobile-app {
+        font-size: 33px;
+
+      }
+
+
+      .pocket {
+        margin-top: -28px;
+        font-size: 13px;
+      }
+
+
+      .last-frame-circle {
+        margin-left: 1383px;
+        width: 157px;
+        height: 157px;
+        margin-top: 180px;
+      }
   
+
+
+      .footer {
+        width: 1540px;
+        height: 239px;
+        background-color: black;
+      }
+
+      .last-circle {
+        width: 157px;
+        margin-left: 1381px;
+      }
+
+
+      .div-footer {
+        display: flex;
+        color: white;
+        font-family: "Manrope",
+        sans-serif;
+        
+      }
+
+
+      .last-logo {
+        margin-left: 202px;
+        margin-top: 30px;
+        height: 14px;
+        width: 14px;
+      }
+
+
+      .support {
+        margin-left: 395px;
+        margin-bottom: -20px;
+        margin-top: 35px;
+        
+        
+        
+      }
+
+      .sate {
+        font-size: 33px;
+        margin-top: -12px;
+        margin-left: 212px;
+      }
+
+      .copyright {
+        margin-top: 20px;
+        margin-left: 260px;
+      }
+
+
+      .gadwell {
+        margin-left: 180px;
+      }
+
+      .test {
+        margin-left: 550px;
+        margin-top: 20px;
+      }
+
+
+      .logo-sate {
+        margin-left: 120px;
+      }
