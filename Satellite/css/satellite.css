@@ -280,3 +280,86 @@ body {
     color: white;
     font-size: 16px;
   }
+
+
+  .section-3 {
+    width: 1540px;
+    height: 1080px;
+    font-family: "Manrope",
+    sans-serif;
+    margin-top: 100px;
+    }
+  
+
+    .frame-circle {
+      width: 137px;
+      height: 257px;
+    }
+
+    .apps {
+      display: flex;
+    }
+
+
+    .apps-serv {
+      font-size: 33px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 1px;
+      margin-left: -1px;
+      margin-top: 55px;
+      
+    }
+
+    .frame-4-logo {
+      margin-left: 130px;
+      margin-top: 55px;
+      height: 14px;
+      width: 14px;
+      
+    }
+
+
+    .errow {
+      margin-left: 430px;
+      margin-top: -181px;
+      height: 250px;
+      width: 1;
+    }
+
+    .text-frame {
+      display: flex;
+      margin-left: 400px;
+    }
+
+    .credit-debit {
+      margin-left: 490px;
+      margin-top: -5px;
+      font-size: 13px;
+      
+    }
+
+    .ins {
+      margin-top: -20px;
+      font-size: 13px;
+    }
+
+    .crypto {
+      font-size: 33px;
+      margin-bottom: 18px;
+    }
+
+    .cards {
+      margin-left: 490px;
+      margin-top: -20px;
+      margin-bottom: 4px;
+      font-size: 33px;
+      
+    }
+
+    .spiral {
+      width: 1540px;
+      margin-top: -150px;
+    }
+
+  
