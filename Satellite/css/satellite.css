@@ -15,15 +15,15 @@ body {
 
 .header {
   background-color: black;
-  width: 1920px;
-  height: 1080px;
+  width: 1560px;
+  height: 900px;
   font-family: "Manrope", sans-serif;
   
   ;
 }
 
 .margin-1 {
-  margin-left: 180px;
+  margin-left: 0px;
 }
 
 .foto-logo {
@@ -53,8 +53,8 @@ body {
   color: white;
   list-style-type: none;
   display: flex;
-  margin-top: 60px;
-  margin-left: 284px;
+  margin-top: 65px;
+  margin-left: 84px;
 }
 
 .nav-1li-1 {
@@ -134,7 +134,7 @@ body {
 }
 
 .circle-3 {
-  margin-left: 1029px;
+  margin-left: 529px;
   margin-top: 8px;
 }
 
@@ -160,7 +160,7 @@ body {
 
 .section-1 {
   font-family: "Manrope", sans-serif;
-  width: 1920px;
+  width: 1560px;
   height: 417px;
   background-color: #e8e8e8;
   margin-top: -67px;
@@ -239,7 +239,7 @@ body {
 }
 
 .section-two {
-    width: 1920px;
+    width: 1560px;
     height: 417px;
     background-color: white;
     font-family: "Manrope",
@@ -310,7 +310,7 @@ body {
 
 
   .section-3 {
-    width: 1920px;
+    width: 1560px;
     height: 900px;
     font-family: "Manrope",
     sans-serif;
@@ -387,7 +387,7 @@ body {
     }
 
     .spiral {
-      width: 1920px;
+      width: 1560px;
       margin-top: -150px;
     }
 
@@ -424,7 +424,7 @@ body {
 
 
       .footer {
-        width: 1920px;
+        width: 1560px;
         height: 239px;
         background-color: black;
       }
