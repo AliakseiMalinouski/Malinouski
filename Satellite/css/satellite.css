@@ -15,8 +15,8 @@ body {
 
 .header {
   background-color: black;
-  width: 1560px;
-  height: 900px;
+  width: 1920px;
+  height: 1080px;
   font-family: "Manrope", sans-serif;
   
   ;
@@ -29,14 +29,14 @@ body {
 .foto-logo {
   height: 12px;
   width: 12px;
-  margin-left: 183px;
+  margin-left: 383px;
   margin-top: 36px;
   padding-top: 12px;
 }
 
 .first-name {
   color: white;
-  margin-left: 206px;
+  margin-left: 393px;
   font-size: 28px;
   line-height: 66px;
   margin-top: -35px;
@@ -47,6 +47,7 @@ body {
 
 .header-conteiner-1 {
   display: flex;
+  
 }
 
 .nav-1 {
@@ -134,7 +135,7 @@ body {
 }
 
 .circle-3 {
-  margin-left: 529px;
+  margin-left: 1029px;
   margin-top: 8px;
 }
 
@@ -160,7 +161,7 @@ body {
 
 .section-1 {
   font-family: "Manrope", sans-serif;
-  width: 1560px;
+  width: 1920px;
   height: 417px;
   background-color: #e8e8e8;
   margin-top: -67px;
@@ -239,7 +240,7 @@ body {
 }
 
 .section-two {
-    width: 1560px;
+    width: 1920px;
     height: 417px;
     background-color: white;
     font-family: "Manrope",
@@ -310,7 +311,7 @@ body {
 
 
   .section-3 {
-    width: 1560px;
+    width: 1920px;
     height: 900px;
     font-family: "Manrope",
     sans-serif;
@@ -387,7 +388,7 @@ body {
     }
 
     .spiral {
-      width: 1560px;
+      width: 1920px;
       margin-top: -150px;
     }
 
@@ -424,7 +425,7 @@ body {
 
 
       .footer {
-        width: 1560px;
+        width: 1920px;
         height: 239px;
         background-color: black;
       }
