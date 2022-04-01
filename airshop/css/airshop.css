@@ -5,7 +5,7 @@
 
 .header {
   background: url(../img/Rectangle\ 1.png) no-repeat center top / cover;
-  width: 1920px;
+  width: 1560px;
   height: 80px;
 }
 
@@ -163,7 +163,7 @@
   background: url(../img/air-jordan-i-ajko-high-1\ 1.png) no-repeat;
   background-repeat: no-repeat;
   background-position: 30vw 30%;
-  width: 1920px;
+  width: 1560px;
   height: 850px;
 }
 
@@ -381,7 +381,7 @@
 
 .two-section {
   background: url(../img/Air-Jordan-1-High5\ 1.png) no-repeat center top;
-  width: 1920px;
+  width: 1560px;
   background-size: cover;
   padding-top: 50px;
   height: 528px;
@@ -445,7 +445,7 @@ button {
 .footer {
   background-image: url(../img/fone-footer.png);
   background-size: cover;
-  width: 1920px;
+  width: 1560px;
   height: 270px;
   margin-top: -16px;
   display: flex;
