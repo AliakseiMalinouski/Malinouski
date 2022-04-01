@@ -1,5 +1,6 @@
 .body {
   font-family: "Nunito", sans-serif;
+  margin: 0;
 }
 
 .header {
@@ -226,12 +227,14 @@
 }
 
 .nike-air {
-  margin-left: 150px;
+  margin-left: 140px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 25px;
 }
 
 .air-jordan {
@@ -241,6 +244,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 25px;
 }
 
 .nike-zoom-pegaus {
@@ -250,6 +255,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 25px;
 }
 
 .foto-4 {
@@ -266,6 +273,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 25px;
 }
 
 .Mars {
@@ -275,6 +284,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 25px;
 }
 
 .Retro {
@@ -284,6 +295,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 25px;
 }
 
 .nav-4 {
@@ -291,33 +304,39 @@
 }
 
 .prise-1 {
-  margin-left: 150px;
+  margin-left: 140px;
   margin-top: -20px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 7px;
 }
 
 .prise-2 {
-  margin-left: 350px;
+  margin-left: 348px;
   margin-top: -20px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 7px;
 }
 
 .prise-3 {
-  margin-left: 385px;
+  margin-left: 388px;
   margin-top: -20px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 7px;
 }
 
 .nav-5 {
@@ -332,6 +351,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 7px;
 }
 
 .prise-5 {
@@ -342,6 +363,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 7px;
 }
 
 .prise-6 {
@@ -352,6 +375,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  list-style-type: none;
+  margin-top: 7px;
 }
 
 .two-section {
