@@ -1,0 +1,59 @@
+.div-1 {
+    background-image: url(../img/left.jpeg);
+    background-repeat: repeat-y;
+}
+
+
+.div-2 {
+    background-image: url(../img/leftugol.jpeg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    ;
+}
+
+
+.div-3 {
+    background-image: url(../img/leftugol_top.jpeg);
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+
+.div-4 {
+    background-image: url(../img/top.jpeg);
+    background-repeat: repeat-x;
+    background-position: top;
+    
+}
+
+
+.div-5 {
+    background-image: url(../img/rightugol_top.jpeg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.div-6 {
+    background-image: url(../img/right.jpeg);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+.div-7 {
+    background-image: url(../img/rightugol.jpeg);
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+}
+
+.div-8 {
+    background-image: url(../img/bottom.jpeg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+
+.text {
+    text-align: center;
+    padding: 100px;
+}
+
