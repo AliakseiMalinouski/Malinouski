@@ -1,0 +1,652 @@
+body {
+    font-family: 'Fira Sans Condensed',
+    sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.div-1-header {
+    display: flex;
+}
+
+.logo-1 {
+    margin-left: 80px;
+}
+
+.logo-2 {
+    margin-top: 43px;
+}
+
+
+.name {
+    margin-top: 30px;
+    margin-left: -110px;
+    letter-spacing: 5px;
+    font-size: 34px;
+    font-weight: 500;
+
+}
+
+
+.ford {
+    color: #A6D26A;
+}
+
+
+.nav-1 {
+    margin-left: 105px;
+    display: flex;
+}
+
+.li-1 {
+    margin-top: 28px;
+    font-weight: bold;
+    letter-spacing: 3%;
+    font-size: 15px;
+}
+
+.li-2 {
+     margin-left: 44px;
+    margin-top: 28px;
+    font-weight: bold;
+    letter-spacing: 3%;
+    font-size: 15px;
+}
+
+.li-3 {
+    margin-left: 44px;
+    margin-top: 28px;
+    font-weight: bold;
+    letter-spacing: 3%;
+    font-size: 15px;
+    }
+
+
+
+.li-4 {
+    margin-left: 44px;
+    margin-top: 28px;
+    letter-spacing: 3%;
+    font-weight: bold;
+    font-size: 15px;
+    }
+
+.input {
+    margin-left: 89px;
+    height: 40px;
+    width: 290px;
+    border: 1px solid #2F2F2FCC;
+    border-radius: 10px;
+    margin-top: 33px;
+}
+
+.poisk {
+    border: 0px;
+    background: none;
+    margin-top: 5px;
+    margin-left: -60px;
+    
+}
+
+.profile {
+    margin-left: 55.5px;
+    margin-top: 40px;
+}
+
+.like {
+    margin-left: 40.5px;
+    margin-top: 40px;
+}
+
+
+.one {
+    
+    margin-top: 47px;
+    margin-left: 4.05px;
+}
+
+
+.buy {
+    margin-left: 40.5px;
+    margin-top: 40px;
+}
+
+.three {
+    margin-left: 4.05px;
+    margin-top: 47px;
+}
+
+.nav-2 {
+    display: flex;
+    margin-top: 62px;
+}
+
+
+.li-2-1 {
+    width: 256px;
+    height: 24px;
+    margin-left: 115px;
+    font-size: 20px;
+    letter-spacing: 3%;
+    margin-right: -40px;
+   
+   
+
+   
+}
+
+.li-2-2 {
+    width: 256px;
+    height: 24px;
+    font-size: 20px;
+    letter-spacing: 3%;
+    margin-left: 50px;
+}
+
+
+.li-2-3 {
+    width: 256px;
+    height: 24px;
+    font-size: 20px;
+    letter-spacing: 3%;
+    margin-left: 50px;
+}
+
+
+.li-2-4 {
+    width: 256px;
+    height: 24px;
+    font-size: 20px;
+    letter-spacing: 3%;
+    margin-left: 100px;
+}
+
+
+.green-fone {
+    height: 472px;
+    background-image: url(../img/fone.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: -20px;
+    
+
+}
+
+
+.left {
+    margin-left: -50px;
+}
+.left-1 {
+    margin-left: 30px;
+}
+
+.right {
+    margin-left: 45px;
+}
+
+
+.div-book1 {
+    width: 384px;
+    height: 494px;
+    margin-left: 80px;
+    margin-top: 83px;
+    background-color: #FBFBFB;
+    
+}
+
+.flex {
+    display: flex;
+
+}
+
+.fil {
+    padding-left: 132px;
+    padding-right: 127px;
+}
+
+
+.red-like {
+    margin-left: 289.67px;
+    padding-top: 29px;
+}
+
+.nav-4 {
+    display: flex;
+    margin-left: 87px;
+    letter-spacing: 0.3px;
+}
+
+.author {
+    margin-left: 110px;
+    color: #ADADAD;
+}
+
+
+.prise-1 {
+    margin-left: 122px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #F06450;
+    font-weight: bold;
+}
+
+.nav-5 {
+    display: flex;
+    
+}
+
+.stars {
+    padding-left: 71px;
+    
+
+}
+
+.stars2 {
+    padding-left: 3px;
+
+}
+
+
+.stars3 {
+    padding-left: 3px;
+}
+
+
+.stars4 {
+    padding-left: 3px;
+}
+
+.stars5 {
+    padding-left: 3px;
+}
+
+
+.opinion {
+    padding-left: 6px;
+    color: #ADADAD;
+    letter-spacing: 0.3px;
+}
+
+.div-link {
+    margin-top: 38px;
+}
+/* кнопка */
+.order1 {
+    margin-left: 129px;
+    
+    border: 2px solid black;
+    width: 128px;
+    height: 40px;
+    padding-top: 9px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 9px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    font-size: 16px;
+}
+
+.div-book-two {
+    width: 384px;
+    height: 494px;
+    margin-left: 64px;
+    background-color: #FBFBFB;
+    margin-top: 83px;
+}
+
+.fil-2 {
+    padding-left: 132px;
+    padding-right: 127px;
+}
+
+.red-like-two {
+    margin-left: 289.67px;
+    padding-top: 29px;
+}
+
+.div-book-three {
+    width: 384px;
+    height: 494px;
+    margin-left: 64px;
+    background-color: #FBFBFB;
+    margin-top: 83px;
+}
+
+
+.div-section-2 {
+    width: 384px;
+    height: 494px;
+    margin-left: 80px;
+    margin-top: 83px;
+    background-color: #FBFBFB;
+
+}
+
+.nav-4-2 {
+    margin-left: 87px;
+    letter-spacing: 0.3px;
+
+}
+
+.author-1 {
+    margin-left: 110px;
+    color: #ADADAD;
+
+}
+
+.prise-1-2 {
+    margin-left: 122px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #F06450;
+    font-weight: bold;
+
+}
+
+.div-section-3 {
+    width: 384px;
+    height: 494px;
+    margin-left: 80px;
+    margin-top: 83px;
+    background-color: #FBFBFB;
+}
+
+.fil-3 {
+    padding-left: 132px;
+    padding-right: 127px;
+
+}
+
+.like-red-like {
+    margin-left: 289.67px;
+    padding-top: 29px;
+
+}
+
+.fil-5 {
+    padding-left: 132px;
+    padding-right: 127px;
+
+}
+
+.like-red-like-three {
+    margin-left: 289.67px;
+    padding-top: 29px;
+}
+
+.nav-5-3 {
+    margin-left: 87px;
+    letter-spacing: 0.3px;
+}
+
+.author-2 {
+    margin-left: 110px;
+    color: #ADADAD;
+    
+}
+
+.prise-2-2 {
+    margin-left: 122px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #F06450;
+    font-weight: bold;
+}
+
+
+.div-section-4 {
+    width: 384px;
+    height: 494px;
+    margin-left: 80px;
+    margin-top: 83px;
+    background-color: #FBFBFB;
+}
+
+
+.footer {
+    height: 386px;
+    margin-top: 72px;
+}
+
+
+.company {
+    padding-top: 32px;
+    width: 240px;
+    height: 386px;
+    margin-left: 80px;
+    line-height: 28px;
+
+}
+
+
+.paragraph-company {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+    
+}
+
+.spisok-1 {
+    margin-top: 30.63px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+
+.klient {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+}
+
+.flex-div-footer {
+    display: flex;
+}
+
+
+.base {
+    padding-top: 32px;
+    width: 240px;
+    height: 386px;
+    margin-left: 80px;
+    line-height: 28px;
+}
+
+
+.spisok-2 {
+    margin-top: 30.63px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.account {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+}
+
+.spisok-3 {
+    margin-top: 30.63px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+
+.i-liked {
+    padding-top: 32px;
+    width: 240px;
+    height: 386px;
+    margin-left: 80px;
+    line-height: 28px;
+}
+
+
+.contacts-div {
+    width: 320px;
+    height: 386px;
+    margin-left: 111px;
+    margin-top: 37px;
+}
+
+.telefon {
+    display: flex;
+}
+
+.foto-telefon {
+    width: 16px;
+    height: 16px;
+    padding-top: 32px;
+}
+
+
+.ul-ul {
+    display: flex;
+    padding-top: 16px;
+    
+}
+
+.contact {
+    font-size: 18px;
+    font-weight: bold;
+    
+    letter-spacing: 1px;
+    color: #2F2F2F;
+}
+
+.number {
+    margin-left: -29px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.mts {
+    padding-left: 5px;
+    color: #ADADAD;
+}
+
+.life {
+    padding-left: 5px;
+    color: #ADADAD;
+    }
+
+
+    .a1 {
+        padding-left: 5px;
+        color: #ADADAD;
+        }
+    
+
+
+.gmail {
+    margin-top: -40px;
+    letter-spacing: 1px;
+    margin-left: -9px;
+}
+
+.social-networks {
+    margin-left: 1071px;
+    margin-top: -240px;
+}
+
+.twit {
+    margin-right: 13px;
+    margin-left: -40px;
+}
+
+
+
+
+.face {
+    margin-left: 13px;
+    margin-top: -2px;
+    
+
+}
+
+.inst {
+    margin-left: 13px;
+    margin-top: -5px;
+}
+
+
+.fotos-networks {
+    display: flex;
+}
+
+
+a {
+    text-decoration: none;
+    color: #2F2F2F;
+}
+
+.mobile-apps {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+
+}
+
+
+.apps-icon {
+    margin-top: 34.47px;
+    margin-left: 1029px;
+    margin-bottom: -70px;
+}
+
+.icons {
+    margin-left: 53px;
+}
+
+.icon-apple {
+    margin-left: 1180px;
+    margin-top: 0px;
+
+    
+}
+
+
+.icon-android {
+    margin-top: 10px;
+}
+
+.last-div {
+    height: 38px;
+    width: 400px;
+    margin-top: 27px;
+    margin-left: 540px;
+    color: #ADADAD;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.last-text {
+    
+    height: 38px;
+    width: 400px;
+}
+
+
+.span {
+    margin-left: 155px;
+    
+   
+}
