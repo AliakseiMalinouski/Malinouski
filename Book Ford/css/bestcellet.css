@@ -3,7 +3,7 @@ body {
     sans-serif;
     width: 100%;
     margin: 0;
-    height: 3734px;
+    height: 2234px;
 }
 
 a {
@@ -524,6 +524,7 @@ li {letter-spacing: 1px;}
     height: 50px;
     margin-top: 136px;
     margin-left: 111px;
+    width: 288px;
 }
 
 
@@ -532,6 +533,7 @@ li {letter-spacing: 1px;}
     height: 50px;
     margin-top: 68px;
     margin-left: 111px;
+
     }
 
 
@@ -543,6 +545,16 @@ li {letter-spacing: 1px;}
         letter-spacing: 0.2px;
         color: black;
         
+    }
+
+
+    .years {
+        letter-spacing: 0.2px;
+        font-weight: 700 bold;
+        font-size: 18px;
+        line-height: 19.5px;
+        letter-spacing: 0.2px;
+        color: black;
     }
 
 
@@ -574,3 +586,340 @@ li {letter-spacing: 1px;}
     position: relative;
    
 } */
+
+
+.block {
+    margin-left: 104px;
+}
+
+.material{
+    margin-top: 280px;
+    margin-left: 124px;
+}
+
+.oblozka {
+    letter-spacing: 0.2px;
+    font-weight: 700 bold;
+    font-size: 18px;
+    line-height: 19.5px;
+    letter-spacing: 0.2px;
+    color: black;
+    margin-left: -15px;
+}
+
+.hard___pe {
+    margin-bottom: 16px;
+    margin-left: -40px;
+    
+}
+
+.btn {
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
+}
+
+.else {
+    color: #A6D26A;
+    
+    
+    margin-left: -20px;
+}
+
+
+.hard___pe1 {
+    color: #A6D26A;
+    font-weight: bold;
+    margin-top: 56px;
+    margin-left: -20px;
+}
+
+
+.testing {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer  */
+
+.footer {
+    height: 386px;
+    margin-top: 72px;
+}
+
+
+.company {
+    padding-top: 32px;
+    width: 240px;
+    height: 386px;
+    margin-left: 80px;
+    line-height: 28px;
+
+}
+
+
+.paragraph-company {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+
+}
+
+.spisok-1 {
+    margin-top: 30.63px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+
+.klient {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+}
+
+.flex-div-footer {
+    display: flex;
+}
+
+
+.base {
+    padding-top: 32px;
+    width: 240px;
+    height: 386px;
+    margin-left: 80px;
+    line-height: 28px;
+}
+
+
+.spisok-2 {
+    margin-top: 30.63px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.account {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+}
+
+.spisok-3 {
+    margin-top: 30.63px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+
+.i-liked {
+    padding-top: 32px;
+    width: 240px;
+    height: 386px;
+    margin-left: 80px;
+    line-height: 28px;
+}
+
+
+.contacts-div {
+    width: 320px;
+    height: 386px;
+    margin-left: 111px;
+    margin-top: 37px;
+}
+
+.telefon {
+    display: flex;
+}
+
+.foto-telefon {
+    width: 16px;
+    height: 16px;
+    padding-top: 32px;
+}
+
+
+.ul-ul {
+    display: flex;
+    padding-top: 16px;
+
+}
+
+.contact {
+    font-size: 18px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    color: #2F2F2F;
+}
+
+.number {
+    margin-left: -29px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.mts {
+    padding-left: 5px;
+    color: #ADADAD;
+}
+
+.life {
+    padding-left: 5px;
+    color: #ADADAD;
+}
+
+
+.a1 {
+    padding-left: 5px;
+    color: #ADADAD;
+}
+
+
+
+.gmail {
+    margin-top: -40px;
+    letter-spacing: 1px;
+    margin-left: -9px;
+}
+
+.social-networks {
+    margin-left: 1071px;
+    margin-top: -240px;
+}
+
+.twit {
+    margin-right: 13px;
+    margin-left: -40px;
+}
+
+
+
+
+.face {
+    margin-left: 13px;
+    margin-top: -2px;
+
+
+}
+
+.inst {
+    margin-left: 13px;
+    margin-top: -5px;
+}
+
+
+.fotos-networks {
+    display: flex;
+}
+
+
+a {
+    text-decoration: none;
+    color: #2F2F2F;
+}
+
+.mobile-apps {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    color: #2F2F2F;
+
+}
+
+
+.apps-icon {
+    margin-top: 34.47px;
+    margin-left: 1029px;
+    margin-bottom: -70px;
+}
+
+.icons {
+    margin-left: 53px;
+}
+
+.icon-apple {
+    margin-left: 1180px;
+    margin-top: 0px;
+
+
+}
+
+
+.icon-android {
+    margin-top: 10px;
+}
+
+.last-div {
+    height: 38px;
+    width: 400px;
+    margin-top: 27px;
+    margin-left: 540px;
+    color: #ADADAD;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+.last-text {
+
+    height: 38px;
+    width: 400px;
+}
+
+
+.span {
+    margin-left: 155px;
+
+
+}
