@@ -469,8 +469,8 @@ li {letter-spacing: 1px;}
 }
 
 
-.input {
-    width: 260px;
+.input-1 {
+    width: 248px;
     height: 4px;
     margin-top: 57px;
     padding-left: 60px;
@@ -490,7 +490,7 @@ li {letter-spacing: 1px;}
 
 
 .zero {
-    margin-left: 80px;
+    margin-left: -20px;
     border: 1px solid black;
     border-radius: 13px;
     padding-left: 20px;
@@ -551,7 +551,7 @@ li {letter-spacing: 1px;}
     }
 
 
-    .li-class-2 {
+    /* .li-class-2 {
         margin-top: 16px;
         color: #2F2F2F;
         font-size: 16px;
@@ -559,7 +559,18 @@ li {letter-spacing: 1px;}
         list-style-type: circle;
         
     }
+ */
 
-
-
-
+/* .btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 34px;
+    text-align: center;
+    padding: .5rem 1rem;
+   
+    font-family: sans-serif;
+    cursor: pointer;
+    position: relative;
+   
+} */
