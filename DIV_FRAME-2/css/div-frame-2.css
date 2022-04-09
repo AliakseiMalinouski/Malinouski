@@ -1,10 +1,12 @@
 .main {
-    background-image: url(../img/ramka.png)   ;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-    height: 100%;
+    background: url(../img/leftugol.jpeg) no-repeat left bottom, url(../img/leftugol_top.jpeg) no-repeat left top, 
+    url(../img/rightugol_top.jpeg) no-repeat top right, url(../img/rightugol.jpeg) no-repeat right bottom, 
+    url(../img/testingleft.jpeg) repeat-y left, url(../img/bottomtop.jpeg) repeat-x top, url(../img/right.jpeg) repeat-y right,
+    url(../img/bottomtop.jpeg) repeat-x bottom;
     text-align: center;
+    padding: 50px;
+    
+    
 
     
     
