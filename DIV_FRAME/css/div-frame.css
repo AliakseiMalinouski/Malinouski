@@ -4,7 +4,7 @@
 }
 
 
-.div-2 {
+.div-8 {
     background-image: url(../img/leftugol.jpeg);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -12,7 +12,7 @@
 }
 
 
-.div-3 {
+.div-6 {
     background-image: url(../img/leftugol_top.jpeg);
     background-position: left top;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
 }
 
-.div-6 {
+.div-3 {
     background-image: url(../img/right.jpeg);
     background-repeat: repeat-y;
     background-position: right;
@@ -45,7 +45,7 @@
     background-position: right bottom; 
 }
 
-.div-8 {
+.div-2 {
     background-image: url(../img/bottom.jpeg);
     background-repeat: repeat-x;
     background-position: bottom;
