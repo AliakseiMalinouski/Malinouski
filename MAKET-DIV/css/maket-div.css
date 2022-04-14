@@ -1,0 +1,32 @@
+.header {
+    height: 50px;
+    background-color: aquamarine;
+    
+}
+
+.footer {
+    height: 50px;
+    background-color: blue;
+    
+}
+
+
+.menu {
+    width: 15%;
+    float: left;
+    background-image: url(../img/fone1.png);
+    background-repeat: repeat-y repeat-x;
+    
+}
+
+
+.banner {
+    width: 200px;
+    float: right;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+}
+

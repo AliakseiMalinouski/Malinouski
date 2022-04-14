@@ -2,6 +2,7 @@ body {
     width: 100%;
     font-family: 'Fira Sans Condensed',
     sans-serif;
+    
 }
 
 
@@ -211,9 +212,10 @@ ul {
 }
 
 .main-section {
-    height: 1203px;
+    height: 1303px;
     background-color: #f4f4f4;
     margin-top: -16px;
+    
 }
 
 .text-book {
@@ -250,7 +252,7 @@ ul {
     background-color: white;
      margin-left: 80px;
     position: absolute;
-    top: 43%;
+    top: 41.7%;
     
 }
 
@@ -296,7 +298,7 @@ ul {
 
 .margin {
     position: absolute;
-    top: 118%;
+    top: 117.5%;
     margin-left: 80px;
     display: flex;
 }
@@ -306,15 +308,15 @@ ul {
     width: 545px;
     height: 447px;
     position: absolute;
-    top: 150%;
+    top: 146%;
     margin-left: 80px;
-    margin-top: -5px;
+    margin-top: 20px;
 }
 
 
 .look {
     padding-left: 32px;
-    padding-top: 35px;
+    padding-top: 25px;
     font-weight: bold;
     font-size: 16px;
 }
@@ -322,7 +324,7 @@ ul {
 .books {
     padding-left: 17px;
     letter-spacing: 1.1px;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
 }
 
 .nav-books {
@@ -330,4 +332,291 @@ ul {
       list-style-type: "– ";
     
 
+}
+
+
+.bigs-divs {
+    display: flex;
+}
+
+.test-margin {
+    margin-left: 10px;
+    
+}
+
+.two-book-section {
+    width: 723px;
+    height: 1203px;
+    margin-left: 637px;
+    background-color: white;
+    margin-top: 39px;
+}
+
+
+.stone {
+    padding-left: 32px;
+    margin-top: 36px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #2F2F2F;
+}
+
+.joann {
+    padding-left: 32px;
+    letter-spacing: 1px;
+}
+
+.five-stars {
+    margin-left: 32px;
+    margin-top: 18px;
+    
+}
+
+.opinion-book {
+    display: inline-block;
+    color: #ADADAD;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 6px;
+}
+
+.artical {
+    width: 287px;
+    height: 21px;
+    margin-left: 32px;
+    margin-top: -18px;
+}
+
+.artical-after {
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about-paragraph {
+    width: 627px;
+    height: 132px;
+    margin-left: 32px;
+    margin-top: 24px;
+}
+
+
+.big-paragraph {
+    letter-spacing: 0.8px;
+    line-height: 21px;
+    color:  #2F2F2F;;
+}
+
+.prise26 {
+    width: 149px;
+    height: 38px;
+    margin-left: 32px;
+    margin-top: 30px;
+}
+
+.prise-26 {
+    color: #2F2F2F;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+.order {
+     display: flex;
+     margin-top: 40px;
+     margin-left: 32px;
+}
+
+.brot {
+    width: 200px;
+    height: 68px;
+    
+   
+}
+
+.btn {
+    border: 1px solid #98B66F;
+    background-color: #98B66F;
+    color: white;
+    padding-top: 25px;
+    padding-left: 63px;
+    padding-bottom: 25px;
+    padding-right: 55px;
+    
+}
+
+
+
+.brot1 {
+    width: 265px;
+    height: 68px;
+    margin-left: 24px;
+    margin-top: -3px;
+}
+
+.btn1 {
+    border: 1px solid #98B66F;
+    background-color: white;
+    color: #A6D26A;
+    font-size: 20px;
+    padding-top: 22px;
+    padding-left: 40px;
+    padding-bottom: 22px;
+    padding-right: 40px;
+
+}
+
+.like-in-book {
+    margin-left: 28.33px;
+    margin-top: 30px;
+}
+
+.have {
+    margin-top: 40px;
+    margin-left: 32px;
+}
+
+.skleps {
+   padding-left: 12px;
+   letter-spacing: 1px;
+   margin-bottom: 32px;
+}
+
+.nav-display-flex {
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.big-info-1 {
+    margin-left: -8px;
+}
+
+.bottom {
+     margin-bottom: 8px;
+     width: 287px;
+     height: 21px;
+}
+
+.bottom1 {
+    margin-bottom: 44px;
+}
+
+.all {
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.bottom2 {
+    margin-top: 42px;
+}
+
+.bottom3 {
+    margin-top: 26px;
+}
+
+.bottom4 {
+    margin-top: 12px;
+}
+
+
+.repost {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 32px;
+}
+
+.twitter-2 {
+    left: 54%;
+
+    position: absolute;
+}
+
+.telegram-2 {
+    left: 56%;
+    position: absolute;
+}
+.facebook-2 {
+    left: 58.3%;
+    position: absolute;
+    top: 206%;
+    
+
+}
+
+.instagram-2 {
+      left: 60.5%;
+      position: absolute;
+      
+      top: 205.6%;
+      
+}
+
+.two-main-section {
+    
+    height: 1487px;
+    background-color:  #f4f4f4;;
+    
+    
+}
+
+.div-1 {
+    height: 397px;
+    background-color: white;
+    width: 975px;
+    margin-left: 90px;
+    margin-top: -65px;
+}
+
+
+.opinions-130 {
+    padding-top: 48px;
+    margin-left: 32px;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #2F2F2F;
+}
+
+.paulina {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 32px;
+}
+
+.span-paulina {
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #ADADAD;
+}
+
+.stars-paulina {
+    margin-left: 32px;
+}
+
+
+.paulina-t {
+    margin-top: 16px;
+    margin-left: 32px;
+    letter-spacing: 1px;
+}
+
+.funf {
+    margin-left: 32px;
+}
+
+
+.border-funf {
+    border: 1px solid black;
+    border-radius: 13px;
+    width: 87px;
+    height: 30px;
+    padding-left: 18px;
+    padding-top: 10px;
+    
+    
 }

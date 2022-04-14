@@ -29,7 +29,9 @@ table {
 .sports {
     width: 300px;
     height: 500px;
-    background-color: gold;
+    background-image: url(../img/fone3.png);
+    background-repeat: repeat-x repeat-y;
+
     
     
     
@@ -40,9 +42,7 @@ table {
 }
 
 .football {
-    position: absolute;
-    top: 10%;
-    left: 53%;
+    text-align: center;
     font-family: sans-serif,
     serif;
     
@@ -52,6 +52,7 @@ table {
 
 .content {
     height: 500px;
+    max-height: 500px;
     background-image: url(../img/ball.png);
     background-position: right;
     background-repeat: repeat-y;
@@ -66,7 +67,7 @@ table {
 
 .foto {
     width: 250px;
-    margin-left: 350px;
+   
     margin-top: 20px;
     float: left;
     margin-right: 20px;
@@ -75,7 +76,7 @@ table {
 }
 
 .about {
-    margin-left: 350px;
+   
     font-family: sans-serif,
     serif;
     
