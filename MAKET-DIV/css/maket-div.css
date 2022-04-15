@@ -1,13 +1,34 @@
+body {
+   font-family: sans-serif, serif;
+}
+
 .header {
     height: 50px;
-    background-color: aquamarine;
+    background-color: #add8e6;
+    margin-bottom: -19.5px;
+    text-align: center;
+    color: blue;
+    font-size: 25px;
     
+    
+}
+
+.head1 {
+    padding-top: 10px;
 }
 
 .footer {
     height: 50px;
-    background-color: blue;
+    background-color: #add8e6;
     
+    
+}
+
+.head {
+   text-align: center ;
+    padding-top: 10px;
+    color: blue;
+    font-size: 25px;
 }
 
 
@@ -16,6 +37,10 @@
     float: left;
     background-image: url(../img/fone1.png);
     background-repeat: repeat-y repeat-x;
+    margin-right: 20px;
+    
+    
+    
     
 }
 
@@ -28,5 +53,51 @@
 .clear {
     clear: both;
     height: 0px;
+    margin-bottom: -25px;
+    
+}
+
+li {
+    list-style-type: none;
+    margin-top: 19.7px;
+    color: slateblue;
+    font-weight: bold;
+    font-family: sans-serif,
+        serif;
+}
+
+.football {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.tips {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.about {
+    font-size: 17px;
+    
+    
+    
+    
+}
+
+.foto {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    
+}
+
+.content {
+    background-image: url(../img/ball.png);
+    background-position: right;
+    background-repeat: repeat-y;
 }
 
