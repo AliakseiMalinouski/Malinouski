@@ -1,0 +1,68 @@
+.header {
+    height: 50px;
+    background: #add8e6;
+}
+
+.footer {
+    height: 50px;
+    background: green;
+}
+
+.content {
+   
+    margin-left: 19.2%;
+    margin-right: 13.3%;
+    background: url(../img/ball3-removebg-preview.png) no-repeat top left,
+    url(../img/ball2.png) no-repeat left bottom,
+    url(../img/ball4.png) no-repeat top right,
+    url(../img/ball5.png) no-repeat right bottom;
+    
+    
+
+}
+
+.menu {
+    width: 19.2%;
+    
+    float: left;
+    background: url(../img/ball3-removebg-preview.png) no-repeat top left, url(../img/ball2.png) no-repeat left bottom,
+    url(../img/ball4.png) no-repeat top right, url(../img/ball5.png) no-repeat right bottom;
+    
+    
+    
+    
+   
+}
+
+.banner {
+    width: 200px;
+    
+    float: right;
+    background: url(../img/ball3-removebg-preview.png) no-repeat top left,
+    url(../img/ball2.png) no-repeat left bottom,
+    url(../img/ball4.png) no-repeat top right,
+    url(../img/ball5.png) no-repeat right bottom;
+    
+    
+}
+
+
+.wrap {
+    background-image: url(../img/fon1.png) ;
+
+    background-position-x: 19.2%;
+    background-position-y: top ;
+    background-repeat: repeat-y repeat-x;
+}
+
+
+.pre-wrap {
+    background-image: url(../img/banner.png) ;
+    background-position: top right;
+    background-repeat: repeat-y  ;
+}
+
+.clear {
+    clear: both;
+   
+}
