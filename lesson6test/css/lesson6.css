@@ -1,0 +1,197 @@
+body {
+    height: 10000px;
+}
+
+[align = 'center'] {
+    background: purple;
+    font-size: 40px;
+    
+}
+
+[align = "right"] {
+    background: green;
+    font-size: 30px;
+
+}
+
+
+[src^=https] {
+      border: 1px solid red;
+      background-color: yellowgreen;
+      border-radius: 13px;
+      width: 500px;
+
+
+}
+
+
+[src$=gif] {
+    margin: auto 0;
+    background: blue;
+    border: 10px solid purple;
+}
+
+div strong {
+    font-size: 30px;
+    color: violet;
+    background: yellow;
+    border: 2px solid brown;
+}
+
+h2 ~ p {
+    font-size: 44px;
+    color: tomato;
+    margin: auto 0;
+}
+
+h3 ~ p {
+    color: cadetblue;
+    font-size: 22px;
+    border: 10px solid gray;
+    border-radius: 13px;
+    border-left: red;
+    border-right: red;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 150px;
+    background-color: blueviolet;
+}
+
+ td {
+    padding: 20px;
+}
+/* 
+td:first-child {
+    background-color: gray;
+}
+
+td:last-child {
+    background-color: green;
+}
+
+td:nth-child(3) {
+    background-color: brown;
+}
+
+td:nth-child(even) {
+    background-color: aqua;
+} */
+
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: gray;
+}
+
+
+tr:nth-child(even) td:nth-child(even) {
+    background-color: gray;
+}
+
+.sbig {
+    display: none;
+}
+
+.sbig:target {
+    display: block !important; 
+}
+
+
+
+
+.block {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.block:hover {
+   background-color: yellow;
+   height: 150px;
+   width: 150px;
+}
+
+div.chess a:visited  {
+    color: red;
+}
+
+
+/* div :not(one,two,three,four) {
+    color: blue;
+    border: 3px solid black;
+} */
+
+
+a.comb:hover:visited {
+    background-color: green;
+    color: violet;
+    height: 100px;
+    width: 100px;
+   
+}
+
+
+
+/* img[src$=".jpg"]:first-child {
+    border: 20px solid goldenrod;
+    background: gray;
+} */
+
+
+.test {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+.test1::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    border-radius: 70%;
+    background-color: plum;
+    display: inline-block;
+    margin: 0 0 0 10;
+    
+    
+}
+
+
+.test1::after {
+    content: "";
+}
+
+
+.menu {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: brown;
+}
+
+
+.banner {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background: aqua;
+}
+
+.content {
+    background: purple;
+    
+}
+
+.container {
+    background: green;
+}
+
+
+.clearfix::after {
+    content: '';
+    display: block;
+   
+    clear: both;
+
+}
