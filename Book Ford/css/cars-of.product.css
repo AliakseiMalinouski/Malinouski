@@ -641,7 +641,7 @@ padding-left: 14px;
 }
 
 .div-1 {
-    height: 397px;
+    height: 1423px;
     background-color: white;
     width: 975px;
     margin-left: 90px;
@@ -696,4 +696,24 @@ padding-left: 14px;
     padding-top: 10px;
     
     
+}
+
+.Anrey94aa {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 32px;
+    margin-top: 58px;
+}
+
+.data-an {
+    display: inline;
+    margin-left: 14px;
+    color: #ADADAD;
+}
+
+.text-an {
+    margin-left: 32px;
+    letter-spacing: 1px;
+    margin-top: 16px;
 }
