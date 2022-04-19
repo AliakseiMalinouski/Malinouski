@@ -1,26 +1,30 @@
-.star1 img {
-    opacity: 0;
-}
 
-.star1:hover {
-    background-image: url(../img/star1.png) ;
-    background-repeat: no-repeat;
-}
 
-.star2:hover {
+
+div.picture {
+     background-image: url(../img/star0.png);
+     background-repeat: no-repeat;
+     width: 100px;
+     height: 100px;
+    
+ }
+
+
+
+/* .picture:hover ~ .picture:nth-child(-n+2),
+.picture:hover ~ .picture:nth-child(-n+3),
+.picture:hover ~ .picture:nth-child(-n+4),
+.picture:hover ~ .picture:nth-child(-n+5) */
+
+.picture:hover ~ .picture:nth-child(n+5),
+.picture:hover~.picture:nth-child(n+4),
+.picture:hover~.picture:nth-child(n+3),
+.picture:hover~.picture:nth-child(n+2),
+.picture:hover~.picture:nth-child(n+1)
+
+{
+
     background-image: url(../img/star1.png);
-    background-repeat: no-repeat;
+    
 }
 
-.star2:hover {
-    background-image: url(../img/star1.png);
-    background-repeat: no-repeat;
-}
-
-.star2 img {
-    opacity: 0;
-}
-
-.content {
-    display: flex;
-}
