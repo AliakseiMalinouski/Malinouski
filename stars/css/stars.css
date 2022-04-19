@@ -16,13 +16,7 @@ div.picture {
 .picture:hover ~ .picture:nth-child(-n+4),
 .picture:hover ~ .picture:nth-child(-n+5) */
 
-.picture:hover ~ .picture:nth-child(n+5),
-.picture:hover~.picture:nth-child(n+4),
-.picture:hover~.picture:nth-child(n+3),
-.picture:hover~.picture:nth-child(n+2),
-.picture:hover~.picture:nth-child(n+1)
-
-{
+.picture:hover ~ .picture {
 
     background-image: url(../img/star1.png);
     
