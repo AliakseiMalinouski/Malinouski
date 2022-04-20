@@ -11,11 +11,11 @@
 .content {
    
     margin-left: 19.2%;
-    margin-right: 13.3%;
+    margin-right: 16.3%;
     background: url(../img/ball3-removebg-preview.png) no-repeat top left,
     url(../img/ball2.png) no-repeat left bottom,
     url(../img/ball4.png) no-repeat top right,
-    url(../img/ball5.png) no-repeat right bottom;
+    url(../img/ball5.png) no-repeat right bottom ;
     
     
 
@@ -42,6 +42,7 @@
     url(../img/ball2.png) no-repeat left bottom,
     url(../img/ball4.png) no-repeat top right,
     url(../img/ball5.png) no-repeat right bottom;
+    
     
     
 }
