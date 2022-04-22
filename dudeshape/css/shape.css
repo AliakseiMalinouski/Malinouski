@@ -66,6 +66,10 @@ body {
     margin-left: 465.19px;
     padding-top: 5px;
 }
+.menu__top  a:hover {
+    content: '';
+    color: #244D4D;;
+}
 
 .search {
     float: right;
@@ -143,7 +147,7 @@ h1 {
     margin-left: 9.45px;
 }
 
-.description ul li {
+.description  ul li {
     float: left;
     margin-left: 100px;
     
@@ -154,7 +158,99 @@ h1 {
 .about {
     width: 1200px;
     height: 577px;
-    background-color: red;
+    
     margin-left: 55px;
-    margin-top: 152.24px;
+    margin-top: 172.24px;
+    float: left;
+   
+}
+
+.about-us {
+    color: #244D4D;
+    font-size: 32px;
+    font-weight: 700 bold;
+    font-family: 'Montserrat';
+}
+
+.paragraph-about {
+    font-size: 20px;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.div-about ul li  {
+   clear: both;
+   
+    
+
+}
+
+.ul-icon {
+    margin-top: 40px;
+    margin-left: -100px;
+    
+    
+}
+
+
+.div-about ul li:nth-child(2) {
+    margin-top: 73.78px;
+}
+
+.div-about ul li:nth-child(3) {
+    margin-top: 73.78px;
+
+}
+
+ .h4-about {
+    font-size: 24px;
+    color: #244D4D;
+    font-family: 'DM Sans',
+    sans-serif;
+    font-weight: 500;
+    line-height: 27px;
+    margin-left: 5%;
+    
+}
+
+.h4-about2 {
+    font-size: 20px;
+    color: #244D4D;
+    font-family: 'DM Sans',
+        sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700 bold;
+    line-height: 27px;
+    margin-left: 5%;
+}
+
+.h4-about3 {
+    font-size: 20px;
+    color: #244D4D;
+    font-family: 'DM Sans',
+        sans-serif;
+    font-weight: 500;
+    margin-top: 40px;
+    font-weight: 700 bold;
+    line-height: 27px;
+    margin-left: 5%;
+}
+
+.p-about {
+    margin-top: 15px;
+    margin-left: 5%;
+}
+
+
+.fone-about {
+    width: 596px;
+    height: 577px;
+    background-image: url(../img/fone-about.png);
+    margin-left: 724px;
+    margin-top: 138.81px;
+    padding-top: 0.1px;
+    
+    
 }
