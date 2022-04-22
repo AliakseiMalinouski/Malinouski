@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-family: 'DM Sans',
+    sans-serif;
+    height: 5000px;
+    background-color: #FCFBFF;
+}
+
+.container {
+    width: 1252.86px;
+    margin: 0 auto;
+    
+}
+
+.header {
+    height: 759.04px;
+    background-color: #FCFBFF;
+    margin-top: 43.27px;
+    
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    color: #244D4D;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    line-height: 29.26px;
+    font-weight: 700 bold;
+    float: left;
+}
+
+.header ul li {
+    float: left;
+    margin-left: 50px;
+    
+}
+
+.header li a {
+    color: #161616;
+    line-height: 20.83px;
+    font-weight: 400 'Regular';
+}
+
+.menu__top {
+    margin-left: 465.19px;
+    padding-top: 5px;
+}
+
+.search {
+    float: right;
+}
+
+.fone {
+    width: 972px;
+    height: 700px;
+    margin-top: 34.01px;
+    background-image: url(../img/fone_header.png);
+    margin-left: 22%;
+
+    
+   
+    
+}
+
+.left-text {
+    background-color: #154444;
+    width: 620.53px;
+    height: 469.92px;
+    margin-top: -38%;
+
+    
+    
+    
+    
+}
+
+.help {
+    font-size: 56px;
+    color: #FFFFFF;
+    line-height: 68.26px;
+    padding-left: 120.38px;
+    padding-top: 74.46px;
+    font-weight: 700 bold;
+    font-weight: 'Montserrat';
+}
+
+.left-paragraph {
+    padding-left: 120.38px;
+    padding-top: 30px;
+    color: #FFFFFF;
+    font-weight: 400 'Regular';
+    font-family: 'DM Sans',
+    sans-serif;
+    font-size: 20px;
+
+}
+
+
+/* description */
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 140px;
+    color: #244D4D;
+    font-family: 'DM Sans',
+    sans-serif;
+    font-weight: 700 bold;
+    line-height: 41.66px;
+
+}
+
+.div-description {
+    width: 1086px;
+    height: 134px;
+    margin-left: 116px;
+    margin-bottom: -40px;
+}
+
+
+.operation {
+    margin-left: 9.45px;
+}
+
+.description ul li {
+    float: left;
+    margin-left: 100px;
+    
+    
+
+}
+
+.about {
+    width: 1200px;
+    height: 577px;
+    background-color: red;
+    margin-left: 55px;
+    margin-top: 152.24px;
+}
