@@ -276,6 +276,9 @@ h1 {
 .blocks {
     margin-top: 80px;
     display: flex;
+    padding-top: 0.1px;
+    
+
 }
 
 .block-1 {
@@ -395,4 +398,37 @@ h1 {
 
 .block-2 ul li:nth-child(2) {
     margin-right: 24.06px;
+}
+
+.block-3 {
+    width: 380px;
+    height: 382.31px;
+    background-color: white;
+    margin-left: 30px;
+    background-image: url(../img/fone-block3.png);
+    background-repeat: no-repeat;
+    background-position: top center 50% 0%;
+    -webkit-box-shadow: -3px 13px 37px 0px rgba(34, 60, 80, 0.24);
+    -moz-box-shadow: -3px 13px 37px 0px rgba(34, 60, 80, 0.24);
+    box-shadow: -3px 13px 37px 0px rgba(34, 60, 80, 0.24);
+}
+
+.block-3 a {
+    float: right;
+    padding-top: 270px;
+    padding-left: 8px;
+}
+
+.block-3 a:nth-child(2) {
+    padding-right: 24.06px;
+}
+
+.block-3 p {
+    padding-top: 270px;
+    padding-left: 24.06px;
+    color: #244D4D;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500 'Medium';
+    float: left;
 }
