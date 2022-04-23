@@ -1,4 +1,7 @@
+.content {
+    float: left;
 
+}
 
 
 div.picture {
@@ -6,6 +9,7 @@ div.picture {
      background-repeat: no-repeat;
      width: 100px;
      height: 100px;
+     float: right;
     
  }
 
@@ -16,9 +20,16 @@ div.picture {
 .picture:hover ~ .picture:nth-child(-n+4),
 .picture:hover ~ .picture:nth-child(-n+5) */
 
+
 .picture:hover ~ .picture {
 
     background-image: url(../img/star1.png);
     
 }
+
+.picture:hover {
+    background-image: url(../img/star1.png);
+}
+
+
 
