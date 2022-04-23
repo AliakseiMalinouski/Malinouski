@@ -177,10 +177,12 @@ li {
     line-height: 19px;
     margin-left: 5px;
     margin-right: 5px;
+    display: block;
+    float: right;
     
 }
 
-.breadcrumbs ul:last-child::after {
+.breadcrumbs li:last-child::after {
     content: '' ; 
 }
 
