@@ -255,3 +255,91 @@ h1 {
     
 }
 
+.section-one {
+    margin-top: 166px;
+}
+
+.section-one-paragpaph {
+    color: #383738;
+    font-size: 20px;
+    font-weight: 400 'Regular';
+    font-family: 'DM Sans',sans-serif; 
+    margin-top: 20px;
+    line-height: 27px;
+}
+
+.blocks {
+    margin-top: 80px;
+}
+
+.block-1 {
+    width: 380px;
+    height: 382.31px;
+    background-color: white;
+    background-image: url(../img/fone-block1.png);
+    background-repeat: no-repeat;
+    background-position: top center 50% 0%;
+    -webkit-box-shadow: -3px 13px 37px 0px rgba(34, 60, 80, 0.24);
+    -moz-box-shadow: -3px 13px 37px 0px rgba(34, 60, 80, 0.24);
+    box-shadow: -3px 13px 37px 0px rgba(34, 60, 80, 0.24);
+    /* active.vision.ru - источник */
+   
+    
+
+}
+.block-1 p {
+
+    padding-top: 0.1px;
+    padding-top: 270px;
+    padding-left: 24.06px;
+    color: #244D4D;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500 'Medium';
+    float: left;
+}
+
+.block-1 a {
+   float: right; 
+   padding-top: 270px;
+   
+   
+}
+
+
+.block-1 a {
+    padding-left: 8px;
+    
+}
+
+.block-1 {
+    padding-right: 24.06px;
+}
+
+.prise40 {
+    padding-top: 20.75px;
+    padding-left: 24.06px;
+    float: left;
+    color: #154444;
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 500 'Medium';
+    
+}
+
+.buy-40 {
+    float: right;
+    border: 1px solid #244D4D;
+    background-color: #244D4D;
+    border-radius: 6px;
+    margin-top: 20.75px;
+    padding-left: 14.35px;
+    padding-right: 14.5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500 'Medium';
+    
+    
+}
