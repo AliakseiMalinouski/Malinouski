@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+    background-color: #add8e6;
+}
+
+.footer {
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+    background-color: #add8e6;
+}
+
+.menu {
+    float: left;
+    width: 200px;
+    background: #f0e68c;
+}
+
+.menu li {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: #5955ca;
+    font-weight:  bold;
+}
+
+.menu h4 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 35px;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.football {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.menu li:last-child {
+    margin-bottom: 30.5px;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.picture {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.content p {
+    margin-top: 10px;
+}
+
+.content {
+    background-image: url(../img/ball.png);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+@media all and (max-width:1064px) {
+    .menu {
+        height: 400px;
+    }
+}
+
+@media all and (max-width:877px) {
+    .menu {
+        height: 600px;
+    }
+}
+
+@media all and (max-width:638px) {
+    .menu {
+        height: 800px;
+    }
+}
+
+@media all and (max-width:524px) {
+    .menu {
+        height: 1000px;
+    }
+}
+
+@media all and (max-width:488px) {
+    .content p {
+        margin-top: 145px;
+    }
+
+    .picture {
+        margin-top: 10px;
+    }
+}
+
+@media all and (max-width:461px) {
+    .menu {
+        height: 1200px;
+    }
+}
+
+@media all and (max-width:423px) {
+    .header{
+       height: 60px;
+
+    }
+}
+
+@media all and (max-width:426px) {
+    .menu {
+        height: 1150px;
+        width: 150px;
+    }
+
+    .picture {
+        margin-left: 15px;
+    }
+    
+}
+
+
+@media all and (max-width:411px) {
+    .picture {
+        width: 190px;
+    }
+}
+
+
+@media all and (max-width:405px) {
+    .picture {
+        width: 170px;
+    }
+}
+
+
+@media all and (max-width:385px) {
+    .picture {
+        width: 150px;
+    }
+}
+
+
+@media all and (max-width:381px) {
+    .menu {
+        height: 1300px;
+    }
+}
+
+@media all and (max-width:365px) {
+    .picture {
+        width: 130px;
+    }
+}
+
+@media all and (max-width:364px) {
+    .content p {
+        margin-top: 130px;
+    }
+}
+
+
+@media all and (max-width:362px) {
+    .menu {
+        height: 1400px;
+    }
+}
+
+@media all and (max-width:345px) {
+    .picture {
+        width: 110px;
+    }
+}
+
+@media all and (max-width:345px) {
+    .menu {
+        height: 1600px;
+    }
+}
+
+@media all and (max-width:344px) {
+    .content p {
+        margin-top: 120px;
+    }
+}
+
+@media all and (max-width:339px) {
+    .content {
+        width: 100%;
+
+    }
+}
+
+@media all and (max-width:328px) {
+    .content p {
+        margin-top: 100px;
+    }
+}
+
+
+@media all and (max-width:320px) {
+    .menu {
+        width: 130px;
+    }
+}
+
+
+@media all and (max-width: 290px) {
+    .menu {
+        width: 110px;
+    }
+}
+
+
+@media all and (max-width:268px) {
+    .menu {
+        height: 1700px;
+    }
+}
+
+@media all and (max-width:257px) {
+    .menu {
+        height: 1800px;
+        width: 100px;
+    }
+
+}
+
+@media all and (max-width:252px) {
+    .menu {
+        height: 1900px;
+    }
+}
+
+@media all and (max-width:240px) {
+    .menu {
+        height: 2000px;
+    }
+}
+
+
+
