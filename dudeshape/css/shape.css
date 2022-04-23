@@ -167,6 +167,9 @@ h1 {
     margin-left: 55px;
     margin-top: 172.24px;
     float: left;
+    background-image: url(../img/fone-about.png);
+    background-position: right;
+    background-repeat: no-repeat;
    
 }
 
@@ -249,16 +252,7 @@ h1 {
 }
 
 
-.fone-about {
-    width: 596px;
-    height: 577px;
-    background-image: url(../img/fone-about.png);
-    margin-left: 724px;
-    margin-top: 138.81px;
-    padding-top: 0.1px;
-    
-    
-}
+
 
 .section-one {
     margin-top: 166px;
@@ -432,3 +426,4 @@ h1 {
     font-weight: 500 'Medium';
     float: left;
 }
+
