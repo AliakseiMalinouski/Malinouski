@@ -12,8 +12,9 @@ body {
 
 
 .header {
-    background-color:  #1B1B1C;
+    background:  #1B1B1C;
     height: 52px;
+    padding-bottom: 12px;
 }
 
 .header .container {
@@ -88,12 +89,14 @@ li {
 
 /* menu top */
 
-
+.menu__left {
+    float: left;
+}
 
 .menu__left li {
     float: left;
-    
-    padding: 21px 24px;
+    height: 63px;
+    padding: 24px 12px;
 
 }
 
@@ -110,7 +113,10 @@ li {
 .menu__left a {
     color: black;
     font-weight: bold;
+    line-height: 19px;
 }
+
+
 
 
 
@@ -140,11 +146,15 @@ li {
 .menu__bottom {
     border-top: 1px solid #C4C4C4;
 }
+
+.menu__bottom_left {
+    margin-left: 12px;
+}
 .menu__bottom li {
     float: left;
     margin-right: 32px;
     margin-top: 16px;
-    margin-left: 60px;
+   
 }
 
 .menu__bottom a {
@@ -171,7 +181,7 @@ li {
 }
 
 
-.breadcrumbs li a::after {
+/* .breadcrumbs li a::after {
     content: "/";
     font-weight: 500;
     line-height: 19px;
@@ -180,11 +190,24 @@ li {
     display: block;
     float: right;
     
+} */
+
+.breadcrumbs li:after {
+    content: '/';
+    font-weight: 500;
+    line-height: 19px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    float: right;
+    color: #878787;
+
 }
 
 .breadcrumbs li:last-child::after {
-    content: '' ; 
+    content: '';
 }
+
 
 .clearfix {
     clear: both;
