@@ -464,15 +464,15 @@ h1 {
 }
 
 .div-fone {
-    width: 490px;
-    height: 346px;
+    width: 495px;
+    height: 381px;
     background-color: #244D4D;
     
 }
 
 .div-bg {
     width: 500px;
-    height: 351px;
+    height: 389.34px;
     background-image: url(../img/in-fone.png);
     background-repeat: no-repeat;
     float: left;
