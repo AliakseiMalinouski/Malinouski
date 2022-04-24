@@ -427,3 +427,57 @@ h1 {
     float: left;
 }
 
+.section-two ul {
+    margin-top: 30px;
+}
+
+
+
+.section-two .headings li:first-child {
+    float: left;
+    margin-left: 260px;
+    margin-right: 100px;
+    margin-right: 104px;
+    color: #244D4D;
+    
+
+}
+.section-two .headings li:nth-child(2) {
+   float: left;
+   margin-right: 104px;
+   
+
+}
+
+.section-two .headings  li {
+   
+    font-size: 24px;
+    line-height: 27px;
+    font-family: 'DM sans';
+    color: #919090;
+}
+
+.fone_section_two {
+    width: 552px;
+    height: 393px;
+    margin-top: 98.46px;
+}
+
+.div-fone {
+    width: 490px;
+    height: 346px;
+    background-color: #244D4D;
+    
+}
+
+.div-bg {
+    width: 500px;
+    height: 351px;
+    background-image: url(../img/in-fone.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+    
+   
+}
