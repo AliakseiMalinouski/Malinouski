@@ -303,7 +303,7 @@ h1 {
     float: left;
 }
 
-.block-1 a {
+.block-1 .photo-a a {
    float: right; 
    padding-top: 270px;
    
@@ -311,14 +311,13 @@ h1 {
 }
 
 
-.block-1 a {
-    padding-left: 8px;
-    
-}
+
 
 .block-1 {
     padding-right: 24.06px;
 }
+
+
 
 .prise40 {
     padding-top: 20.75px;
@@ -339,8 +338,8 @@ h1 {
     margin-top: 20.75px;
     padding-left: 14.35px;
     padding-right: 14.5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
     color: white;
     font-size: 12px;
     font-weight: 500 'Medium';
@@ -376,19 +375,17 @@ h1 {
     float: left;
 }
 
-.block-2 a {
+.block-2 .photo-a a {
     float: right;
     padding-top: 270px;
 }
 
-.block-2 a {
-    padding-left: 8px;
-    
+.block-2 .photo-a:nth-child(2) {
+    margin-right: 24.06px;
 }
 
-.block-2 a:nth-child(2) {
-    padding-right: 24.06px;
-}
+
+
 
 .prise40-2 {
     padding-top: 20.75px;
@@ -398,6 +395,8 @@ h1 {
 .block-2 ul li:nth-child(2) {
     margin-right: 24.06px;
 }
+
+
 
 .block-3 {
     width: 380px;
@@ -412,16 +411,16 @@ h1 {
     box-shadow: -3px 13px 37px 0px rgba(34, 60, 80, 0.24);
 }
 
-.block-3 a {
+.block-3 .photo-a a {
     float: right;
     padding-top: 270px;
     padding-left: 8px;
+    
+    
 }
-
-.block-3 a:nth-child(2) {
-    padding-right: 24.06px;
+.block-3 .photo-a:nth-child(2) {
+    margin-right: 24.06px;
 }
-
 .block-3 p {
     padding-top: 270px;
     padding-left: 24.06px;
@@ -431,6 +430,8 @@ h1 {
     font-weight: 500 'Medium';
     float: left;
 }
+
+
 
 .section-two ul {
     margin-top: 30px;
@@ -509,6 +510,12 @@ h1 {
     
 }
 
+.mini-block1:hover {
+    background-color: #244D4D;
+}
+
+
+
 .mini-block2 {
     width: 222px;
     height: 90px;
@@ -522,6 +529,12 @@ h1 {
    
 }
 
+.mini-block2:hover {
+    background-color: #244D4D;
+}
+
+
+
 .mini-block3 {
     width: 222px;
     height: 90px;
@@ -532,6 +545,10 @@ h1 {
     background-position: 50% 25%;
 }
 
+.mini-block3:hover {
+    background-color: #244D4D;
+}
+
 .mini-block4 {
     width: 222px;
     height: 90px;
@@ -540,6 +557,10 @@ h1 {
     background-image: url(../img/kitchen.png);
     background-repeat: no-repeat;
     background-position: 50% 25%;
+}
+
+.mini-block4:hover {
+    background-color: #244D4D;
 }
 
 .mini-block5 {
@@ -554,6 +575,10 @@ h1 {
     background-color: #154444;
 }
 
+.mini-block5:hover {
+    background-color: #244D4D;
+}
+
 .mini-block6 {
     width: 222px;
     height: 90px;
@@ -563,6 +588,10 @@ h1 {
     background-image: url(../img/hallway.png);
     background-repeat: no-repeat;
     background-position: 50% 25%;
+}
+
+.mini-block6:hover {
+    background-color: #244D4D;
 }
 
 .text-in-mini-block {
@@ -676,4 +705,37 @@ h1 {
 .opinion-jibon span {
     color: black;
     font-weight: 500;
+}
+
+/* section-four */
+
+.section-four {
+    margin-top: 322px;
+}
+
+.e-mail-div {
+    width: 1200px;
+    height: 404px;
+    background-color: #305F64;
+    margin-left: 10px;
+    padding-top: 65px;
+}
+
+.e-mail-div h3 { 
+    text-align: center;
+    font-size: 32px;
+    color: #FFFFFF;
+    line-height: 48px;
+    font-weight: 700, Bold;
+    font-family: 'Montserrat';
+}
+
+.e-mail-div p {
+    text-align: center;
+    margin-top: 20.39px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400, 'Regular';
+    font-family: 'DM Sans';
+    color: #FFFFFFCC;
 }
