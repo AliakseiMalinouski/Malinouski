@@ -481,3 +481,121 @@ h1 {
     
    
 }
+
+.position-div {
+    display: flex;
+}
+
+.mini-blocks-div{
+   margin-top: 108.79px;
+   margin-left: 103.28px;
+   display: flex;
+   
+}
+
+.mini-block1 {
+    width: 222px;
+    height: 90px;
+    border: 1px solid #D9DCE5;
+    background-image: url(../img/badroom.png);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+
+    
+}
+
+.mini-block2 {
+    width: 222px;
+    height: 90px;
+    border: 1px solid #D9DCE5;
+    margin-top: 33.42px;
+    background-image: url(../img/dining-room.png);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+
+    
+   
+}
+
+.mini-block3 {
+    width: 222px;
+    height: 90px;
+    border: 1px solid #D9DCE5;
+    margin-top: 33.42px;
+    background-image: url(../img/bedroom.png);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
+
+.mini-block4 {
+    width: 222px;
+    height: 90px;
+    border: 1px solid #D9DCE5;
+    margin-left: 30px;
+    background-image: url(../img/kitchen.png);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
+
+.mini-block5 {
+    width: 222px;
+    height: 90px;
+    border: 1px solid #D9DCE5;
+    margin-top: 33.42px;
+    margin-left: 30px;
+    background-image: url(../img/office.png);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-color: #154444;
+}
+
+.mini-block6 {
+    width: 222px;
+    height: 90px;
+    border: 1px solid #D9DCE5;
+    margin-top: 33.42px;
+    margin-left: 30px;
+
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
+
+.text-in-mini-block {
+    color: #808080;
+    font-weight: 500, Medium;
+    line-height: 21px;
+    font-family: 'DM sans';
+    padding-left: 66.05px;
+    padding-top: 56px;
+
+   
+}
+
+.text-kitchen {
+    color: #808080;
+    font-weight: 500,
+    Medium;
+    line-height: 21px;
+    font-family: 'DM sans';
+    padding-top: 56px;
+    padding-left: 82px;
+  
+}
+
+.text-in-bedroom {
+    color: #808080;
+    font-weight: 500,
+    Medium;
+    line-height: 21px;
+    font-family: 'DM sans';
+    padding-top: 56px;
+    padding-left: 76px;
+}
+
+.text-in-office {
+    padding-top: 56px;
+    padding-left: 91.3px;
+    color: white;
+    font-weight: 500, medium;
+    line-height: 21px;
+}
