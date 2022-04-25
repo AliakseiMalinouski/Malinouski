@@ -256,6 +256,7 @@ h1 {
 
 .section-one {
     margin-top: 166px;
+    margin-left: 60px;
 }
 
 .section-one-paragpaph {
@@ -345,7 +346,11 @@ h1 {
     font-weight: 500 'Medium';
     
     
+    
 }
+
+
+
 
 .block-2 {
     width: 380px;
@@ -555,7 +560,7 @@ h1 {
     border: 1px solid #D9DCE5;
     margin-top: 33.42px;
     margin-left: 30px;
-
+    background-image: url(../img/hallway.png);
     background-repeat: no-repeat;
     background-position: 50% 25%;
 }
@@ -598,4 +603,77 @@ h1 {
     color: white;
     font-weight: 500, medium;
     line-height: 21px;
+}
+
+.text-in-hallway {
+    padding-top: 56px;
+    padding-left: 82px;
+    color: #808080;
+    font-weight: 500,medium;
+    line-height: 21px;
+}
+
+.section-three {
+    margin-top: 140px;
+}
+
+.section-three-flex {
+    display: flex;
+}
+
+.section-three-about {
+    margin-left: 79.94px;
+}
+
+.section-three-about h3 {
+    color: #244D4D;
+    font-weight: 700, Bold;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.section-three-about p {
+    margin-top: 30.25px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400, 'Regular';
+}
+
+
+.big-circle {
+    width: 492.42px;
+    height: 492.42px;
+    background-image: url(../img/big-circle.png);
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    
+}
+
+.fone-after-circle {
+    width: 459.09px;
+    height: 492.42px;
+    background-image: url(../img/fone_after_big-circle.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 70px;
+   
+}
+
+.opinion-jibon {
+    display: flex;
+    margin-top: 10px;
+}
+
+.photo-jibon {
+    padding-top: 30px;
+}
+
+.opinion-jibon p {
+    color: black;
+    font-weight: 500;
+}
+
+.opinion-jibon span {
+    color: black;
+    font-weight: 500;
 }
