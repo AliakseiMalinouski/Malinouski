@@ -710,7 +710,7 @@ h1 {
 /* section-four */
 
 .section-four {
-    margin-top: 322px;
+    margin-top: 140px;
 }
 
 .e-mail-div {
@@ -739,3 +739,42 @@ h1 {
     font-family: 'DM Sans';
     color: #FFFFFFCC;
 }
+
+.section-four input {
+    margin-left: 358.1px;
+    margin-top: 50px;
+    width: 471.98px;
+    height: 67px;
+    padding-top: 22.49px;
+    padding-bottom: 22.51px;
+}
+
+input::placeholder {
+    padding-left: 45.52px;
+    padding-top: 22.49px;
+    padding-bottom: 22.51px;
+}
+
+input[type="text"] {
+    padding: 15px;
+}
+
+.btn {
+    position: relative;
+    left: -12.5%;
+    border: 1px solid #FFB624;
+    border-radius: 10px;
+    background-color: #FFB624;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 31.16px;
+    padding-right: 32.16px;
+    width: 125px;
+    height: 52px;
+    color: white;
+    font-weight: 500, Medium;
+    line-height: 22px;
+    font-family: 'DM Sans';
+}
+
+
