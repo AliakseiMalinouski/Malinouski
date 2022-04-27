@@ -154,7 +154,7 @@ h1 {
 
 .description  ul li {
     float: left;
-    margin-left: 100px;
+    margin-left: 95px;
     
     
 
@@ -981,4 +981,98 @@ h1 {
 
 
 
+
+@media only screen and (max-width:1200px) {
+    .header .logo {
+        padding-left: 60px;
+    }
+
+    .left-text {
+        margin-left: 60px;
+    }
+
+    .header .search   {
+        float: none;
+        
+        
+        
+    }
+
+    .search li img:first-child {
+        margin-left: 15px;
+    }
+
+    .description ul li {
+        margin-left: 90px;
+    }
+
+    .about {
+        background-position: 80% ;
+    }
+
+    
+
+    .blocks {
+        display: block;
+        margin-left: 350px;
+        margin-top: 0px;
+    }
+    
+
+    .block-1,
+    .block-2,
+    .block-3 {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .section-one .test {
+        margin-left: 720px;
+        margin-top: 80px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'dm sans'
+    }
+
+    .mini-blocks-div {
+        margin-left: 40px;
+    }
+
+    .fone_section_two {
+        margin-left: 60px;
+    }
+
+
+    .div-fone-section-three {
+        margin-left: 39px;
+    }
+
+    .section-three-about {
+        margin-left: 80px;
+    }
+
+    
+
+    
+
+   
+
+   
+}
+
+@media only screen and (max-width:992px) {
+   
+}
+
+@media only screen and (max-width:768px) {
+
+}
+
+@media only screen and (max-width:480px) {
+
+}
+
+@media only screen and (max-width:320px) {
+
+}
 
