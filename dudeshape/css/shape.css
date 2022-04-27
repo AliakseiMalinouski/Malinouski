@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-    width: 1252.86px;
+    width: 1200px;
     margin: 0 auto;
     
 }
@@ -789,6 +789,8 @@ h1 {
     background-color: #305F64;
     
     
+    
+    
 }
 
 .footer-flex {
@@ -975,3 +977,8 @@ h1 {
     line-height: 23.44px;
     color: #FFFFFF;
 }
+
+
+
+
+
