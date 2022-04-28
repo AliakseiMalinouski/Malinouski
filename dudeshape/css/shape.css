@@ -159,6 +159,11 @@ h1 {
 
 }
 
+.test {
+    padding-left: 1150px;
+    margin-top: 67px;
+}
+
 .about {
     width: 1200px;
     height: 577px;
@@ -267,7 +272,7 @@ h1 {
 }
 
 .blocks {
-    margin-top: 80px;
+    margin-top: 13px;
     display: flex;
     padding-top: 0.1px;
     
