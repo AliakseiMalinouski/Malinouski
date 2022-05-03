@@ -47,3 +47,15 @@ h3 + p {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+@media print {
+    a:before {
+        content: 'ссылка';
+
+    }
+
+    a:after {
+        content: 'https: //chesspro.ru/statistic/botvinnik.shtml';
+        margin-left: 10px;
+    }
+}
