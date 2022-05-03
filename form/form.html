@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</h3>
+    <div class="big-div">
+    <label class="label-1" for="one">
+        Название статьи: </label>
+          <div class="div-input">
+              <input class="input-100"  type="text" placeholder="text" id="one">
+        </div>
+        <label for="two" style="margin-right: 87px;" class="label-1" for="category">
+            Рубрика:
+        </label>
+        <div class="div-input">
+            <select name="category" id="two">
+                <option value="1"> Програмированние</option>
+                <option value="2">Веб-дизайн</option>
+            </select>
+        </div>
+        <label class="div-radio" for="three">
+                Публикация:
+        </label>
+        <div class="radio-buttons" >
+            <input class="radio-display" id="three" type="radio"> На сайте
+            <input class="radio-display" checked id="three" type="radio"> В журнале
+            <input class="radio-display" id="three" type="radio"> На сайте и в журнале
+        </div>
+        
+        <label class="checkbox-label" for="four">
+            Разрешить комментария:
+        </label>
+        <div class="checkbox-div">
+            <input id="four" checked type="checkbox">
+        </div>
+
+        <div style="clear: both; margin-bottom: 5px"></div>
+         <label  for="textarea">Текст статьи:</label>
+        <textarea class="comment" style="display: block;" name="comment" id="textarea">
+
+        </textarea>
+
+        <button type="submit">Опубликовать</button>
+
+       
+   </div>
+
+</body>
+</html>
