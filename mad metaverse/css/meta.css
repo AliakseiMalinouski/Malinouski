@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #171919;
+    /* background-image: url(../img/big-fone-header.png) ;
+    background-repeat: no-repeat;
+    background-position: 5% 75%; */
+    
+   
+}
+
+
+div.header h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Montserrat';
+    font-size: 80px;
+    line-height: 156px;
+    padding-top: 110px;
+    padding-left: 194px;
+    color: white;
+    background-image: url(../img/red-line.png);
+    background-repeat: no-repeat;
+    background-position: 26% 53%;
+   
+   
+}
+
+
+
+
+.header-paragraph-first {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: white;
+    padding-left: 234px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.second-paragraph-header {
+    font-size: 22px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    letter-spacing: 7.33px;
+    line-height: 32px;
+    text-align: right;
+    color: #6e6f6f;
+    margin-top: 51px;
+    background-image: url(../img/line-before.png);
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+.third-paragraph-header {
+    color: white;
+    padding-left: 1085px;
+    font-family: 'Fira Sans';
+    font-size: 27px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-top: 23px;
+}
+.p-flex {
+    display: flex;
+    padding-left: 777px;
+}
+
+.fifth-paragraph-header {
+     margin-top: 212px;
+     color: #FFFFFF;
+     font-family: 'Fira Sans';
+     letter-spacing: 8px;
+     font-weight: 400;
+     line-height: 19.2px;
+     width: 300px;
+     text-transform: uppercase;
+}
+
+.four-paragraph-header {
+    color: #6e6f6f;
+    font-size: 18px;
+    letter-spacing: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    line-height: 21.94px;
+    margin-top: 34px;
+    writing-mode: vertical-lr;
+    text-orientation: upleft ;
+    margin-left: 100px;
+    
+}
