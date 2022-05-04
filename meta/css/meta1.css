@@ -19,8 +19,8 @@ body {
     /* background-image: url(../img/big-fone-header.png) ;
     background-repeat: no-repeat;
     background-position: 5% 75%; */
-    
-   
+
+
 }
 
 
@@ -36,8 +36,8 @@ div.header h2 {
     background-image: url(../img/red-line.png);
     background-repeat: no-repeat;
     background-position: 26% 53%;
-   
-   
+
+
 }
 
 
@@ -77,20 +77,21 @@ div.header h2 {
     font-weight: bold;
     margin-top: 23px;
 }
+
 .p-flex {
     display: flex;
     padding-left: 777px;
 }
 
 .fifth-paragraph-header {
-     margin-top: 212px;
-     color: #FFFFFF;
-     font-family: 'Fira Sans';
-     letter-spacing: 8px;
-     font-weight: 400;
-     line-height: 19.2px;
-     width: 300px;
-     text-transform: uppercase;
+    margin-top: 212px;
+    color: #FFFFFF;
+    font-family: 'Fira Sans';
+    letter-spacing: 8px;
+    font-weight: 400;
+    line-height: 19.2px;
+    width: 300px;
+    text-transform: uppercase;
 }
 
 .four-paragraph-header {
@@ -102,9 +103,9 @@ div.header h2 {
     line-height: 21.94px;
     margin-top: 34px;
     writing-mode: vertical-lr;
-    text-orientation: upleft ;
+    text-orientation: upleft;
     margin-left: 100px;
-    
+
 }
 
 
