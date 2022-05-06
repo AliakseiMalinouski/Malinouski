@@ -142,7 +142,7 @@
         }
         .row-of-cards-one {
             margin: 0 auto;
-            width: 1088px;
+            width: 3168px;
             height: 380px;
             display: flex;
             flex-direction: column;
@@ -150,7 +150,7 @@
         }
         .row-of-cards-one2 {
             margin: 0 auto;
-            width: 1088px;
+            width: 316px;
             height: 380px;
             display: flex;
             margin-top: 35px;
@@ -160,7 +160,7 @@
         }
         .row-of-cards-one3 {
             margin: 0 auto;
-            width: 1088px;
+            width: 316px;
             height: 380px;
             display: flex;
             margin-top: 35px;
