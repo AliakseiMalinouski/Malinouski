@@ -1,0 +1,179 @@
+ @media all and (max-width:1400px) {
+    .container {
+        width: 1000px;
+    }
+        div.header h2 {
+            text-transform: uppercase;
+            font-weight: 800;
+            font-family: 'Montserrat';
+            font-size: 70px;
+            line-height: 156px;
+            padding-top: 110px;
+            padding-left: 194px;
+            color: white;
+            background-image: url(../img/red-line.png);
+            background-repeat: no-repeat;
+            background-position: 26% 53%;
+        }
+        .header-paragraph-first {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            color: white;
+            padding-left: 234px;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .second-paragraph-header {
+            font-size: 22px;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            letter-spacing: 7.33px;
+            line-height: 32px;
+            text-align: center;
+            color: #6e6f6f;
+            margin-top: 51px;
+            background-image: url(../img/line-before.png);
+            background-repeat: no-repeat;
+            background-position: 80%;
+        }
+        .third-paragraph-header {
+            color: white;
+            padding-left: 800px;
+            font-family: 'Fira Sans';
+            font-size: 27px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            margin-top: 23px;
+        }
+        .p-flex {
+            display: flex;
+            padding-left: 497px;
+        }
+        
+        div.section-one h1 {
+            color: white;
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 156px;
+            padding-left: 140px;
+            text-transform: uppercase;
+            background-image: url(../img/red-line.png);
+            background-repeat: no-repeat;
+            background-position: 30% 18%;
+        }
+        .first-div-section-one {
+            width: 819px;
+            height: 456px;
+            margin-top: 37px;
+            margin-left: 102px;
+            display: flex;
+        }
+        .second-div-section-one {
+            display: flex;
+            margin-bottom: -2px;
+            margin-left: 90px;
+            margin-top: -30px;
+        }
+        .div-paragraph-header {
+            display: block;
+        }
+
+        .second-div-p {
+            margin-left: 5px;
+            width: 393px;
+            margin-left: 70px;
+            float: right;
+            margin-top: -400px;
+        }
+        .last-div-p {
+            margin-left: 530px;
+            width: 393px;
+            margin-top: -400px;
+        }
+        div.section-two h1 {
+            margin-top: -40px;
+            color: white;
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 156px;
+            padding-left: 140px;
+            text-transform: uppercase;
+        }
+        .block-first-partners {
+            width: 717px;
+            height: 160px;
+            margin-top: 73px;
+            margin-left: 300px;
+            display: flex;
+        }
+        .block-second-partners {
+            width: 717px;
+            height: 160px;
+            margin-top: 69px;
+            margin-left: 300px;
+            display: flex;
+        }
+        .sixth-partners {
+            margin-left: 139px;
+            width: 250px;
+            height: 160px;
+            background-image: url(../img/crft-text.png);
+            background-repeat: no-repeat;
+            background-position: 50% 60%;
+            display: none;
+        }
+        .third-partners {
+            width: 250px;
+            height: 160px;
+            margin-left: 127px;
+            display: none;
+        }
+        .section-three {
+            padding-top: 206px;
+            background-color: #171919;
+            background-image: url(../img/fone-section3.png);
+            background-repeat: no-repeat;
+            background-position: 58% 9%;
+            margin-bottom: -2px;
+            padding-bottom: 600px;
+        }
+        .row-of-cards-one {
+            margin: 0 auto;
+            width: 1088px;
+            height: 380px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 200px;
+        }
+        .row-of-cards-one2 {
+            margin: 0 auto;
+            width: 1088px;
+            height: 380px;
+            display: flex;
+            margin-top: 35px;
+            flex-direction: column;
+            margin-left: 650px;
+            margin-top: -380px;
+        }
+        .row-of-cards-one3 {
+            margin: 0 auto;
+            width: 1088px;
+            height: 380px;
+            display: flex;
+            margin-top: 35px;
+            display: none;
+            /* flex-direction: column; */
+            /* margin-left: 700px; */
+            /* margin-top: -380px; */
+        }
+    .card-1 {
+        margin-bottom: 30px;
+    }
+        
+
+        
+
+} 
