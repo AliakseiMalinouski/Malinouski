@@ -1,7 +1,8 @@
  @media all and (max-width:1280px) {
     .container {
-        width: 100%;
+        width: 1100px;
         padding: 0px 15px;
+        margin: 0 auto;
     }
         div.header h2 {
             text-transform: uppercase;
@@ -24,6 +25,19 @@
             font-size: 30px;
             text-transform: uppercase;
         }
+        .four-paragraph-header {
+            color: #6e6f6f;
+            font-size: 18px;
+            letter-spacing: 16px;
+            font-weight: 400;
+            font-family: 'Montserrat';
+            line-height: 21.94px;
+            margin-top: 34px;
+            writing-mode: vertical-lr;
+            text-orientation: upleft;
+            margin-left: 90px;
+        }
+        
         .second-paragraph-header {
             font-size: 22px;
             font-family: 'Montserrat';
@@ -68,13 +82,13 @@
             width: 819px;
             height: 456px;
             margin-top: 37px;
-            margin-left: 102px;
+            margin-left: 222px;
             display: flex;
         }
         .second-div-section-one {
             display: flex;
             margin-bottom: -2px;
-            margin-left: 90px;
+            margin-left: 220px;
             margin-top: -30px;
         }
         .div-paragraph-header {
@@ -109,6 +123,12 @@
             margin-left: 300px;
             display: flex;
         }
+
+        .blocks {
+            margin-left: 150px;
+        }
+
+
         .block-second-partners {
             width: 717px;
             height: 160px;
@@ -195,15 +215,25 @@
             background-image: url(../img/red-line.png);
             background-repeat: no-repeat;
             background-position: 21% 20%;
-            margin-bottom: 106px;
+            
+        }
+
+        .list {
+            margin-top: 151px;
+            margin-left: 129px;
+            
         }
         
+        .list2 {
+            margin-top: 10px;
+            margin-left: 255px;
+        }
 
         
 
 } 
 
-@media all and (max-width:1332px) {
+/* @media all and (max-width:1332px) {
     .container {
         width: 100%;
         padding: 0px 15px;
@@ -378,5 +408,5 @@
         
         
         
-}
+} */
  
