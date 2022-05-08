@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+}
+
+
+.main {
+    position: relative;
+   
+}
+
+
+
+.picture {
+    width: 1200px;
+    left: -300px;
+    position: absolute;
+}
+
+.p1 {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.p2 {
+    width: 100%;
+    margin-top: 600px;
+    margin-bottom: 100px;
+   
+}
+
+div.p2 p {
+    position: absolute;
+}
+
+
+
+.no-smoking {
+    
+    
+    position: absolute;
+    top: 70px;
+    left: 475px;
+    z-index: 2;
+}
+
+.bio, .people, .yin {
+    position: absolute;
+}
+
+.yin {
+    top: 210px;
+    left: 505px;
+}
+
+.bio {
+    top: 50px;
+    left: 390px;
+}
+
+.people {
+    left: 610px;
+    top: 20px;
+}
+
+.bio:hover {
+    z-index: 3;
+}
+
+.people:hover {
+    z-index: 3;
+}
+.yin:hover {
+    z-index: 3;
+}
