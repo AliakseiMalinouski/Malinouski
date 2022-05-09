@@ -127,11 +127,13 @@ body {
 
 
 /* description */
-
+.description {
+    padding-top: 140px;
+}
 h1 {
     font-size: 32px;
     text-align: center;
-    margin-top: 140px;
+    
     color: #244D4D;
     font-family: 'DM Sans',
     sans-serif;
@@ -986,97 +988,46 @@ h1 {
 
 
 
-/* @media only screen and (max-width:1200px) {
-    .header .logo {
-        padding-left: 60px;
+@media all and (max-width:1380px) {
+    .container {
+        width: 800px;
     }
-
-    .left-text {
-        margin-left: 60px;
-    }
-
-    .header .search   {
-        float: none;
-        
-        
-        
-    }
-
-    .search li img:first-child {
-        margin-left: 15px;
-    }
-
-    .description ul li {
-        margin-left: 90px;
-    }
-
-    .about {
-        background-position: 80% ;
-    }
-
-    
-
-    .blocks {
-        display: block;
-        margin-left: 350px;
-        margin-top: 0px;
-    }
-    
-
-    .block-1,
-    .block-2,
-    .block-3 {
-        margin-left: 0px;
-        margin-top: 30px;
-    }
-
-    .section-one .test {
-        margin-left: 720px;
-        margin-top: 80px;
-        font-size: 20px;
-        font-weight: 400;
-        font-family: 'dm sans'
-    }
-
-    .mini-blocks-div {
-        margin-left: 40px;
-    }
-
-    .fone_section_two {
-        margin-left: 60px;
-    }
-
-
-    .div-fone-section-three {
-        margin-left: 39px;
-    }
-
-    .section-three-about {
-        margin-left: 80px;
-    }
-
-    
-
-    
-
-   
-
-   
+.menu__top {
+    /* margin-left: 465.19px; */
+    padding-top: 5px;
+    width: 600px;
 }
-
-@media only screen and (max-width:992px) {
-   
+.left-text {
+    background-color: #154444;
+    width: 490.53px;
+    height: 319.92px;
+    margin-top: 114px;
+    /* margin-left: -60px; */
 }
+.help {
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 48.26px;
+    padding-left: 100.38px;
+    padding-top: 30px;
+    font-weight: 700 ;
+    font-weight: 'Montserrat';
 
-@media only screen and (max-width:768px) {
 
 }
-
-@media only screen and (max-width:480px) {
-
+.left-paragraph {
+    padding-left: 100px;
+    padding-top: 30px;
+    color: #FFFFFF;
+    font-weight: 400 'Regular';
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
 }
 
-@media only screen and (max-width:320px) {
 
-} */
 
+
+
+
+
+}

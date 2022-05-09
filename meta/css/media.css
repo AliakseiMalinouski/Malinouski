@@ -387,6 +387,7 @@
             padding: 0px 15px;
             margin: 0 auto;
         }
+        
         div.header h2 {
             text-transform: uppercase;
             font-weight: 800;
@@ -428,20 +429,23 @@
         }
 
         .first-div-p {
-            width: 393px;
+            width: 293px;
             
             padding-left: 70px;
         }
+        .second-div-p {
+            margin-left: 5px;
+            width: 293px;
+            margin-left: 450px;
+            margin-top: -400px;
+        }
         .third-div-p {
             margin-left: 37px;
-            width: 393px;
+            width: 293px;
             /* padding-top: 69px; */
             margin-left: 70px;
         }
-        .blocks {
-            /* margin-left: 20px; */
-            margin-left: -50px;
-        }
+        
         div.second-div-p p {
             margin-top: 30px;
             font-family: 'Fira Sans';
@@ -450,7 +454,7 @@
             letter-spacing: 8px;
             color: white;
             text-transform: uppercase;
-            width: 295px;
+          
             font-size: 14px;
         }
         .first-div-p p {
@@ -461,7 +465,7 @@
             letter-spacing: 8px;
             color: white;
             text-transform: uppercase;
-            width: 295px;
+       
             font-size: 14px;
         }
         div.third-div-p p {
@@ -472,8 +476,13 @@
             letter-spacing: 8px;
             color: white;
             text-transform: uppercase;
-            width: 295px;
+            
             font-size: 14px;
+        }
+        .last-div-p {
+            margin-left: 430px;
+            width: 293px;
+            margin-top: -400px;
         }
         .last-div-p p {
             margin-top: 30px;
@@ -483,7 +492,7 @@
             letter-spacing: 8px;
             color: white;
             text-transform: uppercase;
-            width: 295px;
+            width: 293px;
             font-size: 14px;
         }
         .last-div-p h3 {
@@ -513,23 +522,9 @@
             line-height: 44px;
             color: white;
         }
-        .second-div-p {
-            margin-left: 5px;
-            width: 393px;
-            margin-left: 450px;
-            margin-top: -400px;
-        }
-        .first-div-p {
-            width: 393px;
-            /* padding-left: 70px; */
-            margin-left: 50px;
-            
-        }
-        .last-div-p {
-            margin-left: 430px;
-            width: 393px;
-            margin-top: -400px;
-        }
+        
+        
+        
         div.section-one h1 {
             color: white;
             font-family: 'Montserrat';
