@@ -88,7 +88,7 @@ div.hero button {
 div.section-one h3 {
     width: 93px;
     height: 80px;
-    margin-left: 0px;
+    margin-left: 400px;
     font-size: 36px;
     line-height: 80px;
     color: black;
@@ -102,9 +102,9 @@ div.section-one h3 {
 }
 .block-1 {
     width: 303px;
-    height: 696px;
+    height: 690px;
     background-color: #f5f5f5;
-    margin-right: 18px;
+    margin-right: 7px;
     border-radius: 10px;
     background: url(../img/fone-block1-932.png);
     background-repeat: no-repeat;
@@ -155,4 +155,159 @@ div.block-1 img {
     line-height: 27px;
     font-weight: 500;
 }
+
+.block-23 {
+    width: 600px;
+}
+.block-2 {
+    width: 302px;
+    height: 441px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    
+}
+div.block-2 img {
+    display: none;
+}
+
+.block-2 {
+    background-image: url(../img/Typewriter-bro\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+}
+div.block-2 h4 {
+    width: 138px;
+    height: 69px;
+    line-height: 80px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #263238;
+    margin-left: 29px;
+    margin-top: 180px;
+}
+div.block-2 p {
+    width: 250px;
+    height: 106px;
+    margin-left: 29px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #8F95A5;
+    font-size: 14px;
+}
+div.block-2 button {
+    margin-top: 5px;
+    width: 196px;
+    height: 57px;
+    background-color: #263238;
+    border: 1px solid #263238;
+    border-radius: 5px;
+    padding-left: 42px;
+    padding-right: 41px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+    margin-left: 29px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.block-3 {
+    width: 304px;
+    height: 442px;
+    background-color: #F5F5F5;
+    margin-left: 7px;
+    border-radius: 10px;
+    background-image: url(../img/House\ bookshelves-bro\ 1.png);
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+}
+div.block-3 img {
+    display: none;
+}
+
+div.block-3 h4 {
+    font-size: 22px;
+    color: #263238;
+    margin-left: 29px;
+    width: 127px;
+    height: 69px;
+    line-height: 80px;
+    margin-top: 180px;
+    font-weight: 600;
+}
+div.block-3 p {
+    width: 250px;
+        height: 106px;
+        margin-left: 29px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #8F95A5;
+        font-size: 14px;
+}
+div.block-3 button {
+    margin-top: 4px;
+    width: 196px;
+    height: 57px;
+    background-color: #263238;
+    border: 1px solid #263238;
+    border-radius: 5px;
+    padding-left: 42px;
+    padding-right: 41px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+    margin-left: 29px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.block-4 {
+    width: 600px;
+    height: 241px;
+    background-color: #f5f5f5;
+    margin-top: 7px;
+    border-radius: 10px;
+    padding-top: 0.1px;
+    background-image: url(../img/Podcast\ audience-bro\ 1.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+div.block-4 h4 {
+    width: 117px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 80px;
+    color: #263238;
+    margin-left: 29px;
+    margin-top: 5px;
+}
+div.block-4 p {
+    width: 341px;
+    height: 72px;
+    margin-left: 29px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #8F95A5;
+    font-size: 14px;
+    margin-top: 10px;
+}
+div.block-4 button {
+    margin-top: 5px;
+        width: 196px;
+        height: 57px;
+        background-color: #263238;
+        border: 1px solid #263238;
+        border-radius: 5px;
+        padding-left: 42px;
+        padding-right: 41px;
+        padding-top: 15px;
+        padding-bottom: 19px;
+        margin-left: 29px;
+        color: white;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 500;
+}
+
 }
