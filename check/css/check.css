@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.in-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 35px;
+    display: inline-block;    
+    
+}
+
+label::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/checkbox-none.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    
+    
+}
+
+
+div.in-checkbox span {
+    position: absolute;
+    left: 670px;
+    top: 190px;
+}
+
+div.in-checkbox input:checked + label::before {
+    content: '';
+    background-image: url(../img/checkbox.png);
+    background-repeat: no-repeat;
+    
+}
+
+div.in-checkbox input:checked ~ span  {
+   display: inline-block;
+   font-size: 18px;
+   letter-spacing: 1.5px;
+   font-weight: bold;
+   font-family: sans-serif,serif;
+   text-decoration: line-through;
+   color: darkblue;
+}
+
+.checkbox-form-one {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: #1abc9c;
+    border-radius: 13px;
+    padding: 0.1px;
+}
+
+.in-checkbox {
+    margin-top: 150px;
+    margin-left: 50px;
+    background-color: snow;
+    width: 400px;
+    height: 100px;
+}
+
+.in-checkbox:hover {
+    background-image: url(../img/pencel.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 25%;
+}

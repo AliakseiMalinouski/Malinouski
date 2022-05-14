@@ -8,6 +8,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   overflow-x: hidden;
+  
 }
 
 a {
@@ -24,6 +25,8 @@ li {
   margin: 0 auto;
   width: 1600px;
   background-color: green;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .header {
