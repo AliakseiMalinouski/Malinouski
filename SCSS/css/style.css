@@ -1,0 +1,55 @@
+body {
+  height: 5000px; }
+
+h2 {
+  color: green;
+  font-size: 29px; }
+
+div.block {
+  background-color: lightgreen;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto; }
+  div.block ul {
+    background-color: blue;
+    border: 1px solid orangered; }
+    div.block ul li {
+      color: purple;
+      font-size: 20px;
+      list-style: georgian; }
+      div.block ul li a {
+        text-decoration: dotted;
+        color: yellow; }
+        div.block ul li a a:before {
+          content: "//";
+          color: cadetblue; }
+          div.block ul li a a:before span {
+            color: red;
+            font-size: 30px;
+            letter-spacing: 3px;
+            text-decoration: underline;
+            box-shadow: 1px 3px 4px 7px black; }
+
+div.block2 {
+  background-color: green;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto; }
+  div.block2 p {
+    color: red; }
+
+div.in {
+  width: 500px;
+  height: 500px;
+  background-color: lightgreen;
+  margin: 0 auto; }
+
+div.in p {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  color: tomato;
+  background-color: yellowgreen;
+  border: 3px dotted red; }
+
+/*# sourceMappingURL=style.css.map */
