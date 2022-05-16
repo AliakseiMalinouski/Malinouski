@@ -379,5 +379,141 @@ ul.list1 li:last-child {
     background-position: right;
     
 }
+.section-three h2 {
+    font-size: 36px;
+    line-height: 80px;
+    color: black;
+    font-weight: bold;
+    width: 127px;
+    margin: 0 auto;
+    height: 80px;
+}
+.mini-blocks {
+    height: 1007.85px;
+    width: 902px;
+    margin: 0 auto;
+    margin-top: 32.05px;
+    display: flex;
+    flex-flow: wrap;
+}
+.mini-block1,
+.mini-block2,
+.mini-block3 {
+    width: 350px;
+    height: 493.93px;
+    background-color: orange;
+}
+
+.mini-block1 img {
+    display: none;
+}
+.mini-block1 {
+    margin-left: 80px;
+    background-image: url(../img/Online\ test-bro\ 1.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+div.mini-block1 h4 {
+    width: 273px;
+    height: 34px;
+    color: #263238;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 250px;
+    margin-left: 29px;
+}
+div.mini-block1 p {
+    width: 300px;
+    height: 90px;
+    color: #8F95A5;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 29px;
+}
+.mini-block2 {
+    background-image: url(../img/Lesson-bro\ 1.png);
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+}
+.mini-block2 img {
+    display: none;
+}
+div.mini-block2 h4 {
+    width: 273px;
+        height: 34px;
+        color: #263238;
+        line-height: 34px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 250px;
+        margin-left: 29px;
+}
+div.mini-block2 p {
+width: 300px;
+    height: 90px;
+    color: #8F95A5;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 29px;
+}
+.mini-block3 {
+    margin: 0 auto;
+    background-image: url(../img/Webinar-bro\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.mini-block3 img {
+    display: none;
+}
+div.mini-block3 h4 {
+    width: 273px;
+        height: 34px;
+        color: #263238;
+        line-height: 34px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 250px;
+        margin-left: 29px;
+}
+div.mini-block3 p {
+    width: 300px;
+        height: 90px;
+        color: #8F95A5;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-top: 25px;
+        margin-left: 29px;
+}
+div.price span:first-child {
+    display: inline-block;
+    width: 90px;
+    height: 36px;
+    margin-left: 18px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #263238;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.price {
+    width: 205px;
+    height: 45px;
+    margin-top: 20px;
+    background-color: #EEEEEE;
+}
+div.price span:last-child {
+    display: inline-block;
+    width: 89px;
+    height: 24px;
+    color: #546269;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 }
