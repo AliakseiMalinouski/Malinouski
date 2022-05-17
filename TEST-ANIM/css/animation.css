@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#block1 {
+    
+}
+
+.colors {
+    width: 150px;
+    height: 300px;
+    float: right;
+    
+}
+
+.color1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+}
+
+.color2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.color3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    
+}
+
+
+
+.up {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+#color1 {
+    animation: color1 1s infinite;
+}
+#color2 {
+    animation: color2 1s infinite;
+}
+#color3 {
+    animation: color3 1s infinite;
+}
+
+#img-anim {
+    animation: car 10s linear infinite ;
+    
+}
+
+@keyframes color1 {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: white;
+    }
+    
+}
+@keyframes color2 {
+    from {
+        background-color: yellow;
+    }
+
+    to {
+        background-color: white;
+    }
+
+}
+@keyframes color3 {
+    from {
+        background-color: green;
+    }
+
+    to {
+        background-color: white;
+    }
+
+}
+
+@keyframes car {
+    0% {
+        margin-left: 20px;
+    }
+
+    30% {
+        margin-left: 400px;
+    }
+
+    60% {
+        margin-left: 600px;
+    }
+
+    80% {
+        margin-left: 800px;
+    }
+
+    90% {
+        margin-left: 900px;
+
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+div.road {
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+    margin-top: -4px;
+}
+
+.mortal {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 56px;
+    height: 125px;
+    animation: mortal 2s steps(3) infinite;
+}
+
+@keyframes mortal {
+    from {
+        background: url(../img/mortalcombat.png) 20% ;
+    }
+    to {
+        background: url(../img/mortalcombat.png) 770px;
+        
+    }
+}
+
