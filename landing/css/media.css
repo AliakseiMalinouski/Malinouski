@@ -1642,6 +1642,22 @@ div.contact input {
     line-height: 9px;
     font-size: 9px;
 }
+.section-one {
+    padding-top: 41px;
+}
+.section-two {
+    padding-top: 132px;
+}
+.section-three {
+    padding-top: 69px;
+}
+.section-four {
+    padding-top: 40px;
+}
+.footer {
+    padding-top: 110px;
+    margin: 0 auto;
+}
 }
 
 
