@@ -599,7 +599,6 @@ div.contact .input-s {
         margin: 0 auto;
         padding-left: 10px;
         padding-right: 10px;
-        background-color: green;
     }
     ul.nav {
         display: none;
@@ -649,6 +648,7 @@ div.contact .input-s {
     line-height: 27px;
     margin-top: 25px;
 }
+
 div.section-one h3 {
     width: 78px;
     height: 80px;
@@ -663,7 +663,7 @@ div.section-one h3 {
 .flex {
     display: flex;
     margin-top: 53px;
-    width: 696px;
+    width: 676px;
 }
 .block-1 {
     width: 224px;
@@ -809,7 +809,7 @@ div.block-3 button {
     font-weight: 500;
 }
 .block-4 {
-    width: 462px;
+    width: 453px;
     height: 210px;
     background-color: #f5f5f5;
     margin-top: 7px;
@@ -954,6 +954,157 @@ ul.list1 li:last-child {
 .mini-block3 {
     width: 270px;
     height: 493.93px;
+    background-color: orange;
+}
+div.mini-block1 h4 {
+    width: 174px;
+    height: 56px;
+    color: #263238;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 220px;
+    margin-left: 29px;
+}
+div.mini-block1 p {
+    width: 200px;
+    height: 80px;
+    color: #8F95A5;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 29px;
+}
+div.mini-block2 h4 {
+     width: 174px;
+    height: 56px;
+    color: #263238;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 205.50px;
+    margin-left: 29px;
+}
+div.mini-block2 p {
+     width: 200px;
+    height: 80px;
+    color: #8F95A5;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 29px;
+}
+div.mini-block3 h4 {
+    width: 174px;
+    height: 56px;
+    color: #263238;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 205px;
+    margin-left: 29px;
+}
+
+div.mini-block3 p {
+     width: 200px;
+    height: 80px;
+    color: #8F95A5;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 29px;
+}
+.mini-block1 {
+    margin-left: 160px;
+    background-image: url(../img/bm1.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.mini-block2 {
+    background-image: url(../img/bm2.png);
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+}
+.mini-block3 {
+    background-image: url(../img/bm3.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.contact {
+    display: flex;
+    width: 600px;
+    height: 429px;
+    margin: 0 auto;
+    background-image: url(../img/contact600.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+div.contact h2 {
+    width: 169px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+div.contact p {
+    width: 330px;
+    height: 60px;
+    margin-top: 37px;
+    color: #8F95A5;
+    font-size: 14px;
+    line-height: 21px;
+}
+div.contact input {
+    width: 283px;
+    height: 50px;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    color: #8F95A5;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 10px;
+    border: 1px solid #8F95A5;
+}
+div.contact .input-s {
+    width: 145px;
+    height: 50px;
+    padding-left: 0px;
+    background-color: #263238;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #263238;
+    border-radius: 10px;
+    margin-left: 0px;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    margin-top: 25px;
+}
+.border p {
+    width: 350px;
+    height: 16px;
+    margin-left: 137px;
+    margin-top: 10px;
+    color: #8F95A5;
+    line-height: 19px;
+    font-size: 13px;
+}
+.border {
+    width: 600px;
+    border-top: 1px solid #8F95A5;
+    display: flex;
+    padding-top: 50px;
+}
+.fix {
+    width: 460px;
 }
 
 }
