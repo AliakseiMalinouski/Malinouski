@@ -57,7 +57,8 @@ li {
 
 .hero {
   padding-top: 92px;
-  background-color: #141414; }
+  background-color: #141414;
+  margin-bottom: -2px; }
   .hero .container {
     padding: 0.1px;
     display: flex;
@@ -100,7 +101,8 @@ li {
 .text-after-hero {
   padding-top: 203px;
   background: url(../img/50-circle-hero.png) no-repeat 81% 101%;
-  background-color: #141414; }
+  background-color: #141414;
+  margin-bottom: -1px; }
   .text-after-hero .container {
     display: flex;
     justify-content: space-around;
@@ -124,5 +126,114 @@ li {
       font-weight: 400; }
       .text-after-hero .container p:last-child span {
         color: white; }
+
+.cards1 {
+  padding-top: 122px;
+  background: url(../img/under-circle.png) no-repeat 81% -0.9%;
+  background-color: #141414;
+  margin-bottom: -1px; }
+  .cards1 .container {
+    display: flex;
+    background: url(../img/card1.png) no-repeat 95% 70%; }
+  .cards1 h4 {
+    width: 177px;
+    height: 41px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40.98px; }
+  .cards1 a.button1 {
+    display: block;
+    width: 148px;
+    height: 62px;
+    margin-top: 16px;
+    border: 1px solid black;
+    padding-left: 32px;
+    padding-right: 23px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.17px;
+    color: white;
+    background-image: url(../img/button-cards1.png);
+    background-repeat: no-repeat;
+    margin-bottom: 284px; }
+  .cards1 .block-img {
+    width: 530px;
+    height: 327px; }
+  .cards1 ul {
+    width: 258px;
+    height: 131px;
+    margin-left: 78px;
+    margin-top: 10px; }
+    .cards1 ul li {
+      font-weight: 300;
+      color: #757575;
+      font-size: 18px;
+      line-height: 30.17px; }
+      .cards1 ul li span {
+        font-weight: 700;
+        color: white;
+        font-size: 20px; }
+
+.cards2 {
+  padding-top: 185px;
+  background-color: #141414;
+  margin-bottom: -1px; }
+  .cards2 .container {
+    display: flex;
+    background: url(../img/2card.png) no-repeat 96%;
+    padding-bottom: 300px; }
+    .cards2 .container h4 {
+      width: 155px;
+      height: 41px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 40.98px; }
+    .cards2 .container .button2 {
+      display: block;
+      width: 148px;
+      height: 62px;
+      margin-top: 16px;
+      border: 1px solid black;
+      padding-left: 32px;
+      padding-right: 23px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-radius: 15px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30.17px;
+      color: white;
+      background-image: url(../img/button-cards2.png);
+      background-repeat: no-repeat; }
+    .cards2 .container ul {
+      width: 289px;
+      height: 165px;
+      margin-left: 84px; }
+      .cards2 .container ul li {
+        font-size: 20px;
+        line-height: 33.52px;
+        font-weight: 400;
+        color: #757575; }
+        .cards2 .container ul li span {
+          color: white; }
+
+.apps {
+  padding-top: 201px;
+  background-color: #141414; }
+  .apps .container .h3 {
+    width: 281px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49.18px; }
 
 /*# sourceMappingURL=style.css.map */
