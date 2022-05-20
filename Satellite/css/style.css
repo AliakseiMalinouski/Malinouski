@@ -228,7 +228,8 @@ li {
 
 .apps {
   padding-top: 201px;
-  background-color: #141414; }
+  background-color: #141414;
+  margin-bottom: -1px; }
   .apps .container {
     background: url(../img/logo-circle.svg) no-repeat left top; }
     .apps .container h3 {
