@@ -1,0 +1,22 @@
+@import url(.//veriables.scss);
+
+
+@mixin bth-order ($w) {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-right: 16px;
+    font-size: $fz18;
+    color: white;
+}
+
+
+@mixin btn-app ($w1) {
+    height: 54px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-right: 16px;
+    font-size: $fz18;
+    color: white;
+}
