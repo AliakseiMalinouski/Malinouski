@@ -367,12 +367,12 @@ li {
                
 
                 @keyframes block1 {
-                   from{-webkit-box-shadow: inset 3px 3px 15px 8px #6a63e9;
+                   from{-webkit-box-shadow: inset 3px 3px 15px 3px #6a63e9;
                     box-shadow: inset 3px 3px 15px 8px #6a63e9;}
-                    50%{-webkit-box-shadow: inset 3px 3px 15px 20px rgba(255, 28, 204, 0.35);
+                    50%{-webkit-box-shadow: inset 3px 3px 15px 10px rgba(255, 28, 204, 0.35);
                         box-shadow: inset 3px 3px 15px 20x rgba(255, 28, 204, 0.35);}
                     to {
-                        -webkit-box-shadow: inset 3px 3px 15px 8px #6a63e9;
+                        -webkit-box-shadow: inset 3px 3px 15px 3px #6a63e9;
                             box-shadow: inset 3px 3px 15px 8px #6a63e9;
                     }
                 }
@@ -430,17 +430,17 @@ li {
 
             @keyframes block2 {
                     from {
-                        -webkit-box-shadow: inset 3px 3px 15px 8px #6a63e9;
+                        -webkit-box-shadow: inset 3px 3px 15px 3px #6a63e9;
                         box-shadow: inset 3px 3px 15px 8px #6a63e9;
                     }
             
                     50% {
-                        -webkit-box-shadow: inset 3px 3px 15px 20px rgba(255, 28, 204, 0.35);
+                        -webkit-box-shadow: inset 3px 3px 15px 10px rgba(255, 28, 204, 0.35);
                         box-shadow: inset 3px 3px 15px 20x rgba(255, 28, 204, 0.35);
                     }
             
                     to {
-                        -webkit-box-shadow: inset 3px 3px 15px 8px #6a63e9;
+                        -webkit-box-shadow: inset 3px 3px 15px 3px #6a63e9;
                         box-shadow: inset 3px 3px 15px 8px #6a63e9;
                     }
                 }
@@ -496,17 +496,17 @@ li {
 
             @keyframes block3 {
                     from {
-                        -webkit-box-shadow: inset 3px 3px 15px 8px #6a63e9;
+                        -webkit-box-shadow: inset 3px 3px 15px 3px #6a63e9;
                         box-shadow: inset 3px 3px 15px 8px #6a63e9;
                     }
             
                     50% {
-                        -webkit-box-shadow: inset 3px 3px 15px 20px rgba(255, 28, 204, 0.35);
+                        -webkit-box-shadow: inset 3px 3px 15px 10px rgba(255, 28, 204, 0.35);
                         box-shadow: inset 3px 3px 15px 20x rgba(255, 28, 204, 0.35);
                     }
             
                     to {
-                        -webkit-box-shadow: inset 3px 3px 15px 8px #6a63e9;
+                        -webkit-box-shadow: inset 3px 3px 15px 3px #6a63e9;
                         box-shadow: inset 3px 3px 15px 8px #6a63e9;
                     }
                 }
