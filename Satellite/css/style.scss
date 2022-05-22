@@ -696,3 +696,61 @@ li {
         transform: translate(15px);
     }
 }
+
+.updates {
+    padding-top: 303px;
+    background-color: #141414;
+
+    .container {
+        background-color: green;
+
+        h3 {
+          width: 206px;
+          height: 49px;
+          color: white;
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 49.18px;
+          margin-left: 490px;
+        }
+
+    .blocks-updates1 {
+        width: 1165.56px;
+        height: 223.35px;
+        background-color: orange;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 17px;
+        margin-top: 48px;
+        
+        .wrap1 {
+            height: 200px;
+            background-color: purple;
+            border-bottom: 3px solid #c4c4c4;
+            height: 200px;
+            width: 330px;
+            display: flex;
+            justify-content: center;
+
+            .block-update1 {
+            height: 153.35px;
+            width: 285.56px;
+            background-color: red;
+        }
+        }
+       
+
+        .block-update2 {
+            height: 153.35px;
+            width: 285.56px;
+            background-color: lightblue;
+        }
+
+        .block-update3 {
+            height: 153.35px;
+            width: 285.56px;
+            background-color: pink;
+        }
+    }
+    }
+}
