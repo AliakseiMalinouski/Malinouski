@@ -127,12 +127,13 @@
            ageinday = ageinday*365;
            var throughtext = 'Через пять лет Вам будет:';
            var through = prompt('Через пять лет Вам будет:');
-           var textgender = 'Ваш пол';
+           var textgender = 'Ваш пол:';
            var gender = prompt('Ваш пол:');
            var textsallary = 'Вы на пенсии?';
-           var sallary =  confirm('Вы на пенсии?')
+           var sallary =  confirm('Вы на пенсии:')
            var sallary = String("Нет")
-           alert(`${infoname} ${lastname} ${name} ${patronymic}\n\n${textage} ${age}\n\n${textageinday} ${ageinday}\n\n${throughtext} ${through}\n\n${textgender} ${gender}\n\n${textsallary} ${sallary}`)  
+           var code = 'Код появится после закрытия окна данных';
+           alert(`${infoname} ${lastname} ${name} ${patronymic}\n\n${textage} ${age}\n\n${textageinday} ${ageinday}\n\n${throughtext} ${through}\n\n${textgender} ${gender}\n\n${textsallary} ${sallary}\n\n${code}`)  
         
     </script>
 </body>
