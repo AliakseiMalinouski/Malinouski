@@ -1009,7 +1009,7 @@ li {
                     margin-top: 32px;
                 }
 
-                input {
+                input.number {
                     background-color: #1e0e3c;
                     border: 1px solid #1e0e3c;
                     border-radius: 16.56px;
@@ -1046,6 +1046,29 @@ li {
                     font-weight: 400;
 
                     
+                }
+
+                .checkbox {
+                    display: flex;
+                }
+
+                input.checkbox {
+                    display: block;
+                    margin-top: 10px;
+                    width: 15px;
+                    height: 15px;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: #1e0e3c;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    letter-spacing: 1px;
+                    line-height: 23.46px;
+                    margin-top: 5px;
+                    margin-left: 5px;
                 }
 
                

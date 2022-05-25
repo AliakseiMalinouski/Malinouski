@@ -734,7 +734,7 @@ li {
           margin-top: 4px; }
         .footer .container .footer-position .form-footer form {
           margin-top: 32px; }
-        .footer .container .footer-position .form-footer input {
+        .footer .container .footer-position .form-footer input.number {
           background-color: #1e0e3c;
           border: 1px solid #1e0e3c;
           border-radius: 16.56px;
@@ -764,6 +764,23 @@ li {
           padding-bottom: 12px;
           font-size: 18px;
           font-weight: 400; }
+        .footer .container .footer-position .form-footer .checkbox {
+          display: flex; }
+        .footer .container .footer-position .form-footer input.checkbox {
+          display: block;
+          margin-top: 10px;
+          width: 15px;
+          height: 15px;
+          border: none;
+          border-radius: 4px;
+          background-color: #1e0e3c; }
+        .footer .container .footer-position .form-footer span {
+          font-size: 14px;
+          color: #FFFFFF;
+          letter-spacing: 1px;
+          line-height: 23.46px;
+          margin-top: 5px;
+          margin-left: 5px; }
       .footer .container .footer-position img {
         position: absolute;
         top: 220px; }
