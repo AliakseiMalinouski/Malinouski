@@ -1,3 +1,240 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url(../css/variables.scss);
 @import url(../css/mixins.scss);
+
+// colors 
+
+$red: #E44C58;
+$green: #669966;
+$gray: #636363;
+$light-gray: #EAEAEA;
+$dark: #3F3F3F;
+$text: #999999;
+$text-light: #DFDFDF;
+$white: #fff;
+$input: #AEAEAE;
+
+
+// font-weight 
+
+$reg: 400;
+$bold: 600;
+$ex-bold: 700;
+
+
+
+// font-size
+$fz: 16px;
+$fzs: $fz -2;
+$fz18: $fz + 2;
+$fz21: $fz + 5;
+$fz27: $fz + 11;
+$fz33: $fz + 17;
+$fz44: $fz + 24;
+
+
+// containers
+$xl: 1200px;
+
+// imagePath
+
+$imagePath: "../img/";
+
+// mixins
+
+@mixin btn($w){
+    width: $w;
+    height: 53px;
+    background: $green;
+    border: 1px solid $green;
+    border-radius: 42px;
+    font-weight: 400;
+    font-size: $fz18;
+    line-height: 25px;
+    color: $white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 10000px;
+    font-size: $fz;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $reg;
+}
+
+.container {
+    width: $xl;
+    margin: 0 auto;
+}
+
+li {
+   list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// header
+
+.header {
+    background-color: $green;
+    height: 81px;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+
+            li {
+                margin-right: 50px;
+
+                a {
+                    line-height: 25px;
+                    font-size: $fz18;
+                    color: $text-light;
+
+                }
+            }
+        }
+
+        .auth {
+            display: flex;
+
+
+            p {
+                font-weight: 600;
+                font-size: $fz;
+                line-height: 22px;
+                color: $white;
+
+                &:first-child {
+                    padding-right: 15px;
+                    border-right: 1px solid $white;
+                    margin-right: 15px;
+                }
+
+            }
+
+            img {
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+// logo
+
+.logo {
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 169px;
+
+        
+        .search {
+            display: flex;
+
+            input {
+                width: 341px;
+                height: 48px;
+                background: #EAEAEA;
+                padding-left: 43px;
+                border: 1px solid #eaeaea;
+                font-size: $fz;
+                line-height: 22px;
+                color: #AEAEAE;
+                margin-right: 53px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+// menu 
+
+.menu {
+    margin-bottom: 53px;
+    .container {
+        
+
+        ul {
+            display: flex;
+            position: relative;
+            width: 740px;
+            padding-bottom: 15px;
+
+            &::before {
+                content: '';
+                width: 44px;
+                height: 4px;
+                background: $green;
+                border-radius: 26px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 4px;
+                background-color: #eaeaea;
+                border-radius: 26px;
+                position: absolute;
+                top: 40px;
+                left: 0;
+            }
+
+            li {
+                margin-right: 50px;
+
+
+                a {
+                    font-size: $fz21;
+                    line-height: 29px;
+                    font-weight: $bold;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+// slider
+
+.slider {
+     height: 646px;
+     background: url(../img/slider-bg.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+
+    .container {
+        
+         
+        
+
+        .btn {
+            @include btn(305px)
+        }
+    }
+}
