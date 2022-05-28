@@ -39,4 +39,8 @@ h3 {
   text-transform: uppercase;
   text-align: center; }
 
+.container {
+  width: 1224px;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=repair.css.map */
