@@ -5,6 +5,38 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  height: 15000px; }
+  height: 15000px;
+  font-size: 16px;
+  font-weight: 300; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+  line-height: 58.51px;
+  width: 466px;
+  height: 118px; }
+
+h2 {
+  width: 683px;
+  height: 49px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48.6px;
+  color: #000000; }
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37.8px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center; }
 
 /*# sourceMappingURL=repair.css.map */

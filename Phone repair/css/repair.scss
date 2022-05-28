@@ -1,6 +1,9 @@
 // colors
 $bold-pink: #ff005c;
 $light-pink: #ff6099;
+$light-blue: #BFE0FF;
+$white: #fff;
+$black: #000000;
 
 // font size
 
@@ -14,23 +17,15 @@ $fz36: $fz + 20;
 $fz48: $fz + 32;
 
 
+// font-weight 
 
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 600;
+$extra-bold: 700;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// body + *
 
 * {
     padding: 0;
@@ -41,4 +36,49 @@ $fz48: $fz + 32;
 body {
     font-family: 'Montserrat', sans-serif;
     height: 15000px;
+    font-size: $fz;
+    font-weight: $light;
 }
+
+// reset
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+// global styles
+
+h1 {
+    font-weight: $extra-bold;
+    font-size: $fz48;
+    color: $black;
+    line-height: 58.51px;
+    width: 466px;
+    height: 118px;
+}
+
+
+h2 {
+    width: 683px;
+    height: 49px;
+    font-weight: $extra-bold;
+    font-size: $fz36;
+    line-height: 48.6px;
+    color: $black;
+}
+
+h3 {
+    font-size: $fz28;
+    font-weight: $extra-bold;
+    line-height: 37.8px;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
