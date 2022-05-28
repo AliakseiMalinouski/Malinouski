@@ -24,6 +24,7 @@ $regular: 400;
 $medium: 500;
 $bold: 600;
 $extra-bold: 700;
+$bold800: 800;
 
 // body + *
 
@@ -87,3 +88,60 @@ h3 {
     margin: 0 auto;
 }
 
+// header
+
+.header {
+    height: 80px;
+
+    .container {
+         display: flex;
+         justify-content: space-between;
+         height: 100%;
+         align-items: center;
+
+    h4 {
+        font-size: $fz26;
+        font-weight: $light;
+        color: $black;
+        line-height: 31.69px;
+
+        span {
+            color: $bold-pink;
+            font-size: $fz26;
+            font-weight: $bold800;
+            line-height: 31.69px;
+            text-transform: uppercase;
+
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin-right: 50px;
+
+            a {
+                font-size: $fz15;
+                color: $black;
+                font-weight: $medium;
+                line-height: 31.69px;
+            }
+        }
+    }
+
+    div.tel {
+
+        a {
+            font-size: $fz18;
+            font-weight: $extra-bold;
+            line-height: 21.94px;
+            color: $black;
+        }
+    }
+
+    }
+
+}
+
+// hero
