@@ -70,10 +70,59 @@ h3 {
           color: #000000;
           font-weight: 500;
           line-height: 31.69px; }
+        .header .container ul li a:hover {
+          color: #ff005c;
+          font-weight: 500; }
     .header .container div.tel a {
       font-size: 18px;
       font-weight: 700;
       line-height: 21.94px;
       color: #000000; }
+
+.hero {
+  padding-top: 65px; }
+  .hero .container {
+    display: flex;
+    justify-content: space-between; }
+    .hero .container h1 {
+      width: 466px;
+      height: 118px;
+      margin-bottom: 40px; }
+    .hero .container p {
+      font-weight: 500;
+      color: #000000;
+      font-size: 18px;
+      line-height: 21.94px;
+      margin-bottom: 40px;
+      width: 415px;
+      height: 22px; }
+    .hero .container a {
+      display: block;
+      width: 220px;
+      height: 50px;
+      padding-left: 48px;
+      padding-top: 16px;
+      background-color: #ff005c;
+      color: #fff;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18.29px; }
+    .hero .container .hero-fone-mobile {
+      width: 665px;
+      height: 575px;
+      position: relative; }
+      .hero .container .hero-fone-mobile img:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      .hero .container .hero-fone-mobile img:nth-child(2) {
+        position: absolute;
+        top: 0px;
+        left: 300px; }
+      .hero .container .hero-fone-mobile img:last-child {
+        position: absolute;
+        left: 0;
+        top: 187px; }
 
 /*# sourceMappingURL=repair.css.map */
