@@ -6,16 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+
 </head>
 <body>
 
-    <img src="../anketa 2/img/Безымянный.png" alt="code">
     <script>
          var lastname;
          var name;
@@ -31,14 +25,15 @@
          name = prompt ? prompt('Введите Ваше имя:') : alert('Вы отказались')
          patronymic = prompt ? prompt('Введите Ваше отчество:') : alert('Вы отказались')
          age = prompt ? prompt('Сколько вам лет?') : alert('Вы отказались')
-         ageinday = prompt ? prompt('Ваш возраст в днях:') : alert('Вы отказались')
-         ageinday = ageinday*365;
-         through = prompt ? prompt('Сколько вам будет через пять лет?') : alert('Вы отказались')
-         gender = prompt ? prompt('Ваш пол:') : alert('Вы отказались')
-         sallary = confirm ? confirm('Вы на пенсии?') : alert('Вы отказались')
-         sallary = String('Нет')
-         code = 'Код появится после закрытия окна'
-         alert(`Ваше ФИО: ${lastname} ${name} ${patronymic}\n\nВаш возраст: ${age}\n\nВаш возраст в днях: ${ageinday}\n\nЧерез пять лет Вам будет:  ${through}\n\nВаш пол: ${gender}\n\nВы на пенсии? ${sallary}\n\n${code}`)
+         ageinday = age*365;
+         through = parseInt(age) + 5
+         gender = confirm('Вы мужчина?') ? gender = 'Мужской' : gender = 'Женский'
+         sallary = age < 60 ? sallary = 'Нет' : sallary = 'Да'
+         
+         
+         
+         
+         alert(`Ваше ФИО: ${lastname} ${name} ${patronymic}\n\nВаш возраст: ${age}\n\nВаш возраст в днях: ${ageinday}\n\nЧерез пять лет Вам будет:  ${through}\n\nВаш пол: ${gender}\n\nВы на пенсии? ${sallary}\n\n`)
          
     </script>
 </body>
