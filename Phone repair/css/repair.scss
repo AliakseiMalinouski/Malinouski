@@ -1,0 +1,44 @@
+// colors
+$bold-pink: #ff005c;
+$light-pink: #ff6099;
+
+// font size
+
+$fz: 16px;
+$fz12: $fz - 4;
+$fz15: $fz - 1;
+$fz18: $fz + 2;
+$fz26: $fz + 10;
+$fz28: $fz + 12;
+$fz36: $fz + 20;
+$fz48: $fz + 32;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 15000px;
+}
