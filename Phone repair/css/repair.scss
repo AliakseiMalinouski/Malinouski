@@ -80,6 +80,7 @@ h3 {
     color: $black;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 45px;
 }
 
 
@@ -211,4 +212,59 @@ h3 {
             }
         }
     }
+}
+
+// slider
+.slider {
+   padding-top: 150px;
+
+   .container {
+       background-color: green;
+
+       .first-slide {
+           display: flex;
+           justify-content: space-between;
+           background-color: purple;
+       }
+       
+      .quality {
+          width: 370px;
+          height: 244px;
+          background-color: red;
+      }
+
+      .prise {
+         width: 370px;
+         height: 244px;
+         background-color: orange;
+      }
+
+      .warranty {
+            width: 370px;
+            height: 244px;
+            background-color: aqua;
+      }
+
+      .second-slide {
+          display: flex;
+          justify-content: space-between;
+          background-color: aquamarine;
+      }
+
+      .professional-staff {
+            width: 370px;
+            height: 244px;
+            background-color: blue;
+      }
+      .special-equipment {
+            width: 370px;
+            height: 244px;
+            background-color: yellow;
+      }
+      .direct-deliveries {
+            width: 370px;
+            height: 244px;
+            background-color: teal;
+      }
+   }
 }
