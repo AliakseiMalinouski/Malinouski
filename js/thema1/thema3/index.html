@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #main {
+           
+           display: none;
+
+
+       }
+
+       .white {
+         width: 900px;
+         height: 300px;
+         background-color: white;
+         padding: 0.1px;
+       }
+
+       div.white span {
+           display: block;
+           margin-left: 150px;
+           margin-top: 150px;
+           font-size: 50px;
+       }
+        .red {
+         width: 900px;
+         height: 300px;
+         background-color: red;
+         padding: 0.1px;
+       }
+        div.red span {
+           display: block;
+           margin-left: 100px;
+           margin-top: 150px;
+           font-size: 50px;
+           
+       }
+       
+        .blue {
+         width: 900px;
+         height: 300px;
+         background-color: blue;
+         padding: 0.1px;
+       }
+        div.blue span {
+           display: block;
+           margin-left: 150px;
+           margin-top: 150px;
+           font-size: 50px;
+       }
+
+       
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div class="white"><span>Я</span></div>
+        <div class="red"><span>Люблю</span></div>
+        <div class="blue"><span>Говно</span></div>
+    </div>
+    <button onclick="myFunction()">click</button>
+    <script>
+        
+
+    //    function Car (model,color,year){
+    //        this.model = model;
+    //        this.color = color;
+    //        this.year = year;
+    //    }
+
+    //    var bmw = new Car()
+        
+    //   var a = 10;
+    //   var b = 20;
+    //   alert(Math.max(a,b))  
+
+    // var a = 6.3;
+    // var b = 7.5;
+
+    // alert(Math.round(a))
+    // alert(Math.ceil(b))
+
+    // var a = 225;
+    // alert(Math.sqrt(a))
+     
+    //   string
+    // var str = 'Hello, my name is Aleksy';
+    // console.log(str.length)
+      
+    // var str = 'Hello'
+    // console.log(str[3].charCodeAt(0))
+
+    // var str = 'Всем привет! Сегодня мы поговорим о встроенных классах JavaScrtipt';
+    // console.log(str[3].charAt(0))
+    // console.log(str.substr(15))
+    // console.log(str.split(''))
+    // console.log(str.toUpperCase(0))
+    // console.log(str.indexOf('п'))
+    // console.log(str.replace('Ивет','ИВЕТ'))
+    // console.log(str.trim('!'))
+
+    // array
+
+    // var a = ['Как ' , ' У']
+    // var a2 = ['Тебя ' , 'Дела']
+    // console.log(a.concat(a2))
+
+    // function changeColor(){
+    //   var EL =  document.getElementsByTagName(app);
+    //   EL.style.backgroundСolor = 'purple';
+    // }
+
+    function myFunction() {
+        document.getElementById('main').style.backgroundColor = '';
+        document.getElementById('main').style.borderRadius = '40px'
+        document.getElementById('main').style.width = '900px';
+        document.getElementById('main').style.height = '900px';
+        document.getElementById('main').style.display = 'block';
+        document.getElementById('main').style.border = '10px solid black';
+        document.getElementById('main').style.margin = '0 auto';
+        document.getElementById('main').style.boxShadow = '3px 5px 7px 10px yellow'
+    }
+    
+    </script>
+</body>
+</html>
