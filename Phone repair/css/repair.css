@@ -106,7 +106,9 @@ h3 {
         position: relative; }
         .hero .container .modal_hero .close .close-button {
           position: absolute;
-          border: none; }
+          border: none;
+          top: 20px;
+          right: 20px; }
     .hero .container h1 {
       width: 466px;
       height: 118px;

@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="header">
-        <div class="container">
+        <div class="container" id="con-header">
             <h4><span>BRAND</span> Сервис</h4>
             <ul>
                 <li><a href="#">Главная</a></li>
@@ -30,9 +30,9 @@
         </div>
     </div>
 
-    <div class="hero">
-        <div class="container">
-          <div class="relative">
+    <div id="hero" class="hero">
+        <div class="container" >
+          <div class="relative" id="rel-opacity">
               <h1>
                 Мы чиним любые
                 телефоны
@@ -40,7 +40,7 @@
               <p>Починим Ваш телефон в Санкт-Петербурге</p>
               <button class="open_button" onclick="myFunctionOpen()" type="button">Позвонить нам</button>
           </div>
-          <div class="hero-fone-mobile">
+          <div class="hero-fone-mobile" id="hero-opacity">
               <img src="../Phone repair/img/phones-fone.png" alt="Смартфоны">
               <img src="../Phone repair/img/blue-ball.png" alt="Задний фон cверху">
               <img src="../Phone repair/img/blue-ball2.png" alt="Задний фон снизу">
@@ -49,10 +49,9 @@
               <div class="close"><button type="button" class="close-button" onclick="myFunctionClose()">Закрыть</button></div>
           </div>
         </div>
-        
     </div>
 
-    <div class="slider">
+    <div class="slider" id="slider-opacity">
         <div class="container">
             <h3>Нас выбирают</h3>
         <!-- slider -->
@@ -128,7 +127,7 @@
         </div>
     </div>
 
-    <div class="repair">
+    <div class="repair" id="con">
         <div class="container">
             <h3>Ремонтируем поломки</h3>
             <div class="blocks">
