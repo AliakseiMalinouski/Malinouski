@@ -4,6 +4,7 @@ $light-pink: #ff6099;
 $light-blue: #BFE0FF;
 $white: #fff;
 $black: #000000;
+$gray: #C4C4C4;
 
 // font size
 
@@ -219,52 +220,374 @@ h3 {
    padding-top: 150px;
 
    .container {
-       background-color: green;
+       height: 410px;
+
+    .carousel {
+        position: relative;
+        height: 320px;
+
+        .carousel-indicators [data-bs-target] {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $gray;
+
+        }
+
+        .carousel-indicators .active {
+            background-color: $bold-pink;
+        }
+        
+        }
 
        .first-slide {
            display: flex;
            justify-content: space-between;
-           background-color: purple;
        }
        
       .quality {
           width: 370px;
           height: 244px;
-          background-color: red;
+          position: relative;
+          padding: 0.1px;
+
+          img {
+              position: absolute;
+              top: 30px;
+              left: 30px;
+          }
+
+          .border-quality {
+              padding-top: 25px;
+              width: 370px;
+              height: 152px;
+              border-top: 2px solid $light-blue;
+              margin-top: 90px;
+
+              h4 {
+                  width: 279px;
+                  height: 24px;
+                  color: $black;
+                  line-height: 24.3px;
+                  font-size: $fz18;
+                  font-weight: $extra-bold;
+                  margin-left: 35px;
+                  margin-bottom: 20px;
+                  
+              }
+
+              p {
+                  width: 293px;
+                  height: 40px;
+                  color: $black;
+                  line-height: 20.25px;
+                  font-size: $fz15;
+                  font-weight: $medium;
+                  margin-left: 35px;
+              }
+          }
       }
 
       .prise {
          width: 370px;
          height: 244px;
-         background-color: orange;
+         padding: 0.1px;
+         position: relative;
+
+         img {
+             position: absolute;
+             top: 30px;
+             left: 30px;
+         }
+
+         .border-prise {
+            padding-top: 25px;
+            width: 370px;
+            height: 152px;
+            border-top: 2px solid $light-blue;
+            margin-top: 90px;
+
+            h4 {
+                width: 290px;
+                height: 24px;
+                margin-left: 35px;
+                margin-bottom: 20px;
+                line-height: 24.3px;
+                font-size: $fz18;
+                font-weight: $extra-bold;
+            }
+
+            p {
+                width: 293px;
+                height: 40px;
+                margin-left: 35px;
+                color: $black;
+                font-size: $fz15;
+                font-weight: $medium;
+                line-height: 20.25px;
+            }
+         }
       }
 
       .warranty {
             width: 370px;
             height: 244px;
-            background-color: aqua;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+
+            .border-warranty {
+                padding-top: 25px;
+                width: 370px;
+                height: 152px;
+                border-top: 2px solid $light-blue;
+                margin-top: 90px;
+
+                h4 {
+                    width: 239px;
+                    height: 24px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    color: $black;
+                    line-height: 24.3px;
+                    margin-left: 35px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    width: 293px;
+                    height: 40px;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                    font-weight: $medium;
+                    color: $black;
+                    margin-left: 35px;
+                }
+            }
       }
 
       .second-slide {
           display: flex;
           justify-content: space-between;
-          background-color: aquamarine;
       }
 
       .professional-staff {
             width: 370px;
             height: 244px;
-            background-color: blue;
+            position: relative;
+
+            img {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+
+            .border-staff {
+                padding-top: 25px;
+                width: 370px;
+                height: 152px;
+                border-top: 2px solid $light-blue;
+                margin-top: 90px;
+
+                h4 {
+                    margin-left: 35px;
+                    font-weight: $extra-bold;
+                    color: $black;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                    width: 325px;
+                    height: 24px;
+                    margin-bottom: 20px;
+                    
+                }
+
+                p {
+                    font-size: $fz15;
+                    font-weight: $medium;
+                    color: $black;
+                    line-height: 20.25px;
+                    margin-left: 35px;
+                    width: 330px;
+                    height: 40px;
+                }
+            }
       }
       .special-equipment {
             width: 370px;
             height: 244px;
-            background-color: yellow;
+            position: relative;
+
+            img {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+
+            .border-equipment {
+                padding-top: 25px;
+                width: 370px;
+                height: 152px;
+                border-top: 2px solid $light-blue;
+                margin-top: 90px;
+                
+
+                h4 {
+                    color: $black;
+                    font-weight: $extra-bold;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                    margin-left: 35px;
+                    margin-bottom: 20px;
+                    width: 330px;
+                    height: 24px;
+                }
+
+                p {
+                    margin-left: 35px;
+                    font-size: $fz15;
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    width: 330px;
+                    height: 40px;
+                }
+            }
       }
       .direct-deliveries {
             width: 370px;
             height: 244px;
-            background-color: teal;
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 30px;
+                left: 30px;
+            }
+
+            .border-delivery {
+                padding-top: 25px;
+                width: 370px;
+                height: 152px;
+                border-top: 2px solid $light-blue;
+                margin-top: 90px;
+
+                h4 {
+                    font-size: $fz18;
+                    color: $black;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-left: 35px;
+                    margin-bottom: 20px;
+                    width: 300px;
+                    height: 24px;
+                }
+
+                p {
+                    margin-left: 35px;
+                    color: $black;
+                    font-weight: $medium;
+                    font-size: $fz15;
+                    line-height: 20.25px;
+                    width: 330px;
+                    height: 40px;
+                }
+            }
       }
    }
+}
+
+// repair
+
+.repair {
+    padding-top: 150px;
+
+    .container {
+        background-color: deeppink;
+
+        .blocks {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .left__blocks {
+            width: 590px;
+            height: 1210px;
+            background-color: lightblue;
+
+            .display {
+                width: 590px;
+                height: 280px;
+                background-color: teal;
+                position: relative;
+                padding: 0.1px;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                    
+                }
+
+                h5 {
+                    width: 177px;
+                    height: 24px;
+                    color: $black;
+                    font-weight: $extra-bold;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                    margin-top: 38px;
+                    margin-left: 79px;
+                    margin-bottom: 38px;
+                }
+
+                .lists {
+                    display: flex;
+                    width: 437px;
+                    height: 120px;
+                    justify-content: space-between;
+                    
+                    li {
+                        margin-bottom: 20px;
+                        font-weight: $medium;
+                        font-size: $fz15;
+                        color: $black;
+                        line-height: 20.25px;
+                    }
+
+                    .list-display-one {
+
+                        li:nth-child(1) {
+                           width: 148px;
+                           height: 20px;
+                        }
+                        li:nth-child(2){
+                            width: 132px;
+                            height: 20px;
+                        }
+                        li:nth-child(3){
+                            width: 158px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right__blocks {
+            width: 590px;
+            height: 1210px;
+            background-color: lightgreen;
+        }
+    }
 }
