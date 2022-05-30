@@ -32,21 +32,24 @@
 
     <div class="hero">
         <div class="container">
-          <div>
+          <div class="relative">
               <h1>
                 Мы чиним любые
                 телефоны
               </h1>
               <p>Починим Ваш телефон в Санкт-Петербурге</p>
-              <a href="#">Позвонить нам</a>
-              <div class="modal_hero"></div>
+              <button class="open_button" onclick="myFunctionOpen()" type="button">Позвонить нам</button>
           </div>
           <div class="hero-fone-mobile">
               <img src="../Phone repair/img/phones-fone.png" alt="Смартфоны">
               <img src="../Phone repair/img/blue-ball.png" alt="Задний фон cверху">
               <img src="../Phone repair/img/blue-ball2.png" alt="Задний фон снизу">
           </div>
+          <div id="call" class="modal_hero"> 
+              <div class="close"><button type="button" class="close-button" onclick="myFunctionClose()">Закрыть</button></div>
+          </div>
         </div>
+        
     </div>
 
     <div class="slider">

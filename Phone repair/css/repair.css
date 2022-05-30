@@ -84,12 +84,29 @@ h3 {
   padding-top: 65px; }
   .hero .container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     .hero .container .modal_hero {
+      z-index: 3;
       background-color: red;
-      width: 460px;
+      width: 430px;
       height: 350px;
-      display: none; }
+      position: absolute;
+      top: 190px;
+      left: 420px;
+      display: none;
+      opacity: 0;
+      animation: modal_hero 2.5s forwards; }
+@keyframes modal_hero {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      .hero .container .modal_hero .close {
+        position: relative; }
+        .hero .container .modal_hero .close .close-button {
+          position: absolute;
+          border: none; }
     .hero .container h1 {
       width: 466px;
       height: 118px;
@@ -102,17 +119,18 @@ h3 {
       margin-bottom: 40px;
       width: 415px;
       height: 22px; }
-    .hero .container a {
+    .hero .container .open_button {
       display: block;
       width: 220px;
       height: 50px;
-      padding-left: 48px;
-      padding-top: 16px;
+      padding-left: 45x;
+      padding-top: 4px;
       background-color: #ff005c;
       color: #fff;
       font-weight: 300;
       font-size: 15px;
-      line-height: 18.29px; }
+      line-height: 18.29px;
+      border: none; }
     .hero .container .hero-fone-mobile {
       width: 665px;
       height: 575px;
