@@ -85,6 +85,11 @@ h3 {
   .hero .container {
     display: flex;
     justify-content: space-between; }
+    .hero .container .modal_hero {
+      background-color: red;
+      width: 460px;
+      height: 350px;
+      display: none; }
     .hero .container h1 {
       width: 466px;
       height: 118px;
