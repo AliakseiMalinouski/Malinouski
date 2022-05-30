@@ -356,7 +356,11 @@ h3 {
         height: 280px;
         background-color: teal;
         position: relative;
-        padding: 0.1px; }
+        padding: 0.1px;
+        background-image: url(../img/display-img.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        margin-bottom: 30px; }
         .repair .container .left__blocks .display img {
           position: absolute;
           top: 30px;
@@ -378,19 +382,21 @@ h3 {
           justify-content: space-between; }
           .repair .container .left__blocks .display .lists li {
             margin-bottom: 20px;
-            font-weight: 500;
-            font-size: 15px;
-            color: #000000;
-            line-height: 20.25px; }
-          .repair .container .left__blocks .display .lists .list-display-one li:nth-child(1) {
-            width: 148px;
+            width: 204px;
             height: 20px; }
-          .repair .container .left__blocks .display .lists .list-display-one li:nth-child(2) {
-            width: 132px;
-            height: 20px; }
-          .repair .container .left__blocks .display .lists .list-display-one li:nth-child(3) {
-            width: 158px;
-            height: 40px; }
+            .repair .container .left__blocks .display .lists li a {
+              font-weight: 500;
+              font-size: 15px;
+              color: #000000;
+              line-height: 20.25px; }
+          .repair .container .left__blocks .display .lists a:hover {
+            color: #ff005c; }
+          .repair .container .left__blocks .display .lists .sensor {
+            height: 45px; }
+      .repair .container .left__blocks .dinamics {
+        width: 590px;
+        height: 280px;
+        background-color: chocolate; }
     .repair .container .right__blocks {
       width: 590px;
       height: 1210px;

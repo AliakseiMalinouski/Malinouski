@@ -531,6 +531,10 @@ h3 {
                 background-color: teal;
                 position: relative;
                 padding: 0.1px;
+                background-image: url(../img/display-img.png);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+                margin-bottom: 30px;
 
                 img {
                     position: absolute;
@@ -557,30 +561,35 @@ h3 {
                     height: 120px;
                     justify-content: space-between;
                     
+                    
                     li {
                         margin-bottom: 20px;
-                        font-weight: $medium;
-                        font-size: $fz15;
-                        color: $black;
-                        line-height: 20.25px;
+                        width: 204px;
+                        height: 20px;
+                        a {
+                            font-weight: $medium;
+                            font-size: $fz15;
+                            color: $black;
+                            line-height: 20.25px;
+                        }
+                    
                     }
 
-                    .list-display-one {
-
-                        li:nth-child(1) {
-                           width: 148px;
-                           height: 20px;
-                        }
-                        li:nth-child(2){
-                            width: 132px;
-                            height: 20px;
-                        }
-                        li:nth-child(3){
-                            width: 158px;
-                            height: 40px;
-                        }
+                    a:hover {
+                        color: $bold-pink;
                     }
+
+                    .sensor {
+                        height: 45px;
+                    }
+                    
                 }
+            }
+
+            .dinamics {
+                width: 590px;
+                height: 280px;
+                background-color: chocolate;
             }
         }
 
