@@ -4,7 +4,7 @@ function myFunctionOpen() {
     document.getElementById('hero-opacity').style.opacity = '0.1';
     document.getElementById('con-header').style.opacity = '0.1';
     document.getElementById('slider-opacity').style.opacity = '0.1';
-    document.getElementById('over').style.overflowY = 'none';
+    document.getElementById('over').style.overflowY = 'hidden';
     
 }
 
@@ -14,5 +14,6 @@ function myFunctionClose() {
     document.getElementById('hero-opacity').style.opacity = '1';
     document.getElementById('con-header').style.opacity = '1';
     document.getElementById('slider-opacity').style.opacity = '1';
-    document.getElementById('over').style.overflowY = '1';
+    document.getElementById('over').style.overflowY = '';
+    
 }
