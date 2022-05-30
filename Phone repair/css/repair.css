@@ -111,7 +111,14 @@ h3 {
     .hero .container .hero-fone-mobile {
       width: 665px;
       height: 575px;
-      position: relative; }
+      position: relative;
+      animation: phones 3s;
+      animation-iteration-count: 1; }
+@keyframes phones {
+  to {
+    margin-left: 0px; }
+  from {
+    margin-left: 300px; } }
       .hero .container .hero-fone-mobile img:first-child {
         position: absolute;
         top: 0;
@@ -377,9 +384,10 @@ h3 {
           margin-bottom: 38px; }
         .repair .container .left__blocks .display .lists {
           display: flex;
-          width: 437px;
-          height: 120px;
-          justify-content: space-between; }
+          width: 477px;
+          height: 130px;
+          justify-content: space-between;
+          margin-left: 50px; }
           .repair .container .left__blocks .display .lists li {
             margin-bottom: 20px;
             width: 204px;
@@ -393,10 +401,120 @@ h3 {
             color: #ff005c; }
           .repair .container .left__blocks .display .lists .sensor {
             height: 45px; }
+          .repair .container .left__blocks .display .lists .list-display-one {
+            height: 130px; }
       .repair .container .left__blocks .dinamics {
         width: 590px;
         height: 280px;
-        background-color: chocolate; }
+        background-color: chocolate;
+        position: relative;
+        padding: 0.1px;
+        background-image: url(../img/dinamics-img.png);
+        background-position: right bottom;
+        background-repeat: no-repeat; }
+        .repair .container .left__blocks .dinamics img {
+          position: absolute;
+          top: 30px;
+          left: 30px; }
+        .repair .container .left__blocks .dinamics h5 {
+          margin-left: 79px;
+          margin-top: 38px;
+          width: 170px;
+          height: 24px;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24.3px;
+          margin-bottom: 38px;
+          color: #000000; }
+        .repair .container .left__blocks .dinamics .lists-dinamics {
+          display: flex;
+          justify-content: space-between;
+          width: 450px;
+          height: 130px;
+          margin-left: 50px; }
+          .repair .container .left__blocks .dinamics .lists-dinamics ul li {
+            margin-bottom: 20px; }
+            .repair .container .left__blocks .dinamics .lists-dinamics ul li a {
+              font-weight: 500;
+              font-size: 15px;
+              color: #000000;
+              line-height: 20.25px; }
+            .repair .container .left__blocks .dinamics .lists-dinamics ul li a:hover {
+              color: #ff005c; }
+      .repair .container .left__blocks .buttons {
+        width: 590px;
+        height: 280px;
+        padding: 0.1px;
+        margin-top: 30px;
+        position: relative;
+        background-color: aqua;
+        background-image: url(../img/buttons-img.png);
+        background-position: right top;
+        background-repeat: no-repeat; }
+        .repair .container .left__blocks .buttons img {
+          position: absolute;
+          top: 30px;
+          left: 30px; }
+        .repair .container .left__blocks .buttons h5 {
+          margin-left: 79px;
+          margin-top: 38px;
+          width: 74px;
+          height: 24px;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24.3px;
+          margin-bottom: 38px;
+          color: #000000; }
+        .repair .container .left__blocks .buttons ul {
+          margin-left: 50px; }
+          .repair .container .left__blocks .buttons ul li {
+            margin-bottom: 20px; }
+            .repair .container .left__blocks .buttons ul li a {
+              font-weight: 500;
+              font-size: 15px;
+              color: #000000;
+              line-height: 20.25px; }
+            .repair .container .left__blocks .buttons ul li a:hover {
+              color: #ff005c; }
+      .repair .container .left__blocks .net {
+        width: 590px;
+        height: 280px;
+        padding: 0.1px;
+        margin-top: 30px;
+        position: relative;
+        background-color: blueviolet;
+        background-image: url(../img/net-img.png);
+        background-position: right bottom;
+        background-repeat: no-repeat; }
+        .repair .container .left__blocks .net img {
+          position: absolute;
+          top: 30px;
+          left: 30px; }
+        .repair .container .left__blocks .net h5 {
+          width: 183px;
+          height: 24px;
+          margin-left: 79px;
+          margin-top: 38px;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24.3px;
+          margin-bottom: 38px;
+          color: #000000; }
+        .repair .container .left__blocks .net .lists-net {
+          display: flex;
+          justify-content: space-between;
+          width: 382px;
+          height: 100px;
+          margin-left: 50px; }
+          .repair .container .left__blocks .net .lists-net li {
+            margin-bottom: 20px; }
+            .repair .container .left__blocks .net .lists-net li a {
+              font-weight: 500;
+              font-size: 15px;
+              color: #000000;
+              line-height: 20.25px; }
+            .repair .container .left__blocks .net .lists-net li a:hover {
+              color: #ff005c; }
     .repair .container .right__blocks {
       width: 590px;
       height: 1210px;

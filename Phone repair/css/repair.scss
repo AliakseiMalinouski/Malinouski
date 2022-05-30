@@ -194,6 +194,13 @@ h3 {
             width: 665px;
             height: 575px;
             position: relative;
+            animation: phones 3s;
+            animation-iteration-count: 1;
+
+            @keyframes phones {
+                to{margin-left: 0px;}
+                from{margin-left: 300px;}
+            }
             
             img:first-child {
                 position: absolute;
@@ -557,9 +564,10 @@ h3 {
 
                 .lists {
                     display: flex;
-                    width: 437px;
-                    height: 120px;
+                    width: 477px;
+                    height: 130px;
                     justify-content: space-between;
+                    margin-left: 50px;
                     
                     
                     li {
@@ -582,6 +590,10 @@ h3 {
                     .sensor {
                         height: 45px;
                     }
+
+                    .list-display-one {
+                        height: 130px;
+                    }
                     
                 }
             }
@@ -590,7 +602,156 @@ h3 {
                 width: 590px;
                 height: 280px;
                 background-color: chocolate;
+                position: relative;
+                padding: 0.1px;
+                background-image: url(../img/dinamics-img.png);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                }
+
+                h5 {
+                    margin-left: 79px;
+                    margin-top: 38px;
+                    width: 170px;
+                    height: 24px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 38px;
+                    color: $black;
+                }
+
+                .lists-dinamics {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 450px;
+                    height: 130px;
+                    margin-left: 50px;
+
+                    ul {
+
+                        li {
+                           margin-bottom: 20px;
+                            a {
+                                font-weight: $medium;
+                                font-size: $fz15;
+                                color: $black;
+                                line-height: 20.25px;
+                            }
+
+                            a:hover {
+                                color: $bold-pink;
+                            }
+                        }
+                    }
+                }
             }
+
+            .buttons {
+                width: 590px;
+                height: 280px;
+                padding: 0.1px;
+                margin-top: 30px;
+                position: relative;
+                background-color: aqua;
+                background-image: url(../img/buttons-img.png);
+                background-position: right top;
+                background-repeat: no-repeat;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                }
+
+                h5 {
+                    margin-left: 79px;
+                    margin-top: 38px;
+                    width: 74px;
+                    height: 24px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 38px;
+                    color: $black;
+                }
+
+                ul {
+                    margin-left: 50px;
+                    li {
+                        margin-bottom: 20px;
+                        a {
+                            font-weight: $medium;
+                            font-size: $fz15;
+                            color: $black;
+                            line-height: 20.25px;
+                        }
+                        a:hover {
+                            color: $bold-pink;
+                        }
+                    }
+                }
+            }
+
+            .net {
+                width: 590px;
+                height: 280px;
+                padding: 0.1px;
+                margin-top: 30px;
+                position: relative;
+                background-color: blueviolet;
+                background-image: url(../img/net-img.png);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                }
+
+                h5 {
+                    width: 183px;
+                    height: 24px;
+                    margin-left: 79px;
+                    margin-top: 38px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 38px;
+                    color: $black;
+                }
+
+                .lists-net {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 382px;
+                    height: 100px;
+                    margin-left: 50px;
+
+                    li {
+                        margin-bottom: 20px;
+
+                        a {
+                            font-weight: $medium;
+                            font-size: $fz15;
+                            color: $black;
+                            line-height: 20.25px;
+                        }
+
+                        a:hover {
+                            color: $bold-pink;
+                        }
+                    }
+                }
+            }
+
+            
         }
 
         .right__blocks {
