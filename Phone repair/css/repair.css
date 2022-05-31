@@ -861,4 +861,9 @@ h3 {
         top: 35px;
         left: 32px; }
 
+.video {
+  padding-top: 150px; }
+  .video .container .play-video {
+    width: 1200px; }
+
 /*# sourceMappingURL=repair.css.map */
