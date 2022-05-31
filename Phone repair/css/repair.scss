@@ -1027,3 +1027,93 @@ h3 {
         }
     }
 }
+
+// brands 
+
+.brands {
+    padding-top: 150px;
+
+    .container {
+        
+        
+
+       .mobile_brands_block_one {
+           width: 1224px;
+           height: 100px;
+           display: flex;
+           justify-content: space-between;
+           margin-bottom: 25px;
+
+
+           .xiaomi {
+            width: 220px;
+            height: 100px;
+            background-color: red;
+           }
+
+           .apple {
+            width: 220px;
+            height: 100px;
+            background-color: purple;
+           }
+
+           .huawei {
+            width: 220px;
+            height: 100px;
+            background-color: aqua;
+
+           }
+
+           .honor {
+            width: 220px;
+            height: 100px;
+            background-color: blue;
+               
+           }
+
+           .meizu {
+            width: 220px;
+            height: 100px;
+            background-color: brown;
+
+           }
+       }
+
+       .mobile_brands_block_two {
+           width: 1224px;
+           height: 100px;
+           display: flex;
+           justify-content: space-between;
+
+           .samsung {
+            width: 220px;
+            height: 100px;
+            background-color: chocolate;
+           }
+
+           .nokia {
+            width: 220px;
+            height: 100px;
+            background-color: darkcyan;
+           }
+
+           .lenovo {
+            width: 220px;
+            height: 100px;
+            background-color: darkorange;
+           }
+
+           .sony {
+            width: 220px;
+            height: 100px;
+            background-color: yellow;
+           }
+
+           .asus {
+            width: 220px;
+            height: 100px;
+            background-color: deeppink;
+           }
+       }
+    }
+}

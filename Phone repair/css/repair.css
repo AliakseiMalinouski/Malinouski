@@ -713,4 +713,58 @@ h3 {
           .repair .container .right__blocks .other-problems .other-problems-list li a:hover {
             color: #ff005c; }
 
+.brands {
+  padding-top: 150px; }
+  .brands .container .mobile_brands_block_one {
+    width: 1224px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px; }
+    .brands .container .mobile_brands_block_one .xiaomi {
+      width: 220px;
+      height: 100px;
+      background-color: red; }
+    .brands .container .mobile_brands_block_one .apple {
+      width: 220px;
+      height: 100px;
+      background-color: purple; }
+    .brands .container .mobile_brands_block_one .huawei {
+      width: 220px;
+      height: 100px;
+      background-color: aqua; }
+    .brands .container .mobile_brands_block_one .honor {
+      width: 220px;
+      height: 100px;
+      background-color: blue; }
+    .brands .container .mobile_brands_block_one .meizu {
+      width: 220px;
+      height: 100px;
+      background-color: brown; }
+  .brands .container .mobile_brands_block_two {
+    width: 1224px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between; }
+    .brands .container .mobile_brands_block_two .samsung {
+      width: 220px;
+      height: 100px;
+      background-color: chocolate; }
+    .brands .container .mobile_brands_block_two .nokia {
+      width: 220px;
+      height: 100px;
+      background-color: darkcyan; }
+    .brands .container .mobile_brands_block_two .lenovo {
+      width: 220px;
+      height: 100px;
+      background-color: darkorange; }
+    .brands .container .mobile_brands_block_two .sony {
+      width: 220px;
+      height: 100px;
+      background-color: yellow; }
+    .brands .container .mobile_brands_block_two .asus {
+      width: 220px;
+      height: 100px;
+      background-color: deeppink; }
+
 /*# sourceMappingURL=repair.css.map */
