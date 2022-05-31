@@ -453,6 +453,15 @@ h3 {
           height: 45px; }
         .repair .container .left__blocks .display .lists .list-display-one {
           height: 130px; }
+    .repair .container .left__blocks .display:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
     .repair .container .left__blocks .dinamics {
       width: 590px;
       height: 280px;
@@ -493,6 +502,15 @@ h3 {
             line-height: 20.25px; }
           .repair .container .left__blocks .dinamics .lists-dinamics ul li a:hover {
             color: #ff005c; }
+    .repair .container .left__blocks .dinamics:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
     .repair .container .left__blocks .buttons {
       width: 590px;
       height: 280px;
@@ -530,6 +548,15 @@ h3 {
             line-height: 20.25px; }
           .repair .container .left__blocks .buttons ul li a:hover {
             color: #ff005c; }
+    .repair .container .left__blocks .buttons:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
     .repair .container .left__blocks .net {
       width: 590px;
       height: 280px;
@@ -571,6 +598,15 @@ h3 {
             line-height: 20.25px; }
           .repair .container .left__blocks .net .lists-net li a:hover {
             color: #ff005c; }
+    .repair .container .left__blocks .net:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
   .repair .container .right__blocks {
     width: 590px;
     height: 1210px; }
@@ -628,6 +664,15 @@ h3 {
             line-height: 20.25px; }
           .repair .container .right__blocks .battery .battery-list li a:hover {
             color: #ff005c; }
+    .repair .container .right__blocks .battery:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
     .repair .container .right__blocks .camera {
       width: 590px;
       height: 280px;
@@ -669,6 +714,15 @@ h3 {
             line-height: 20.25px; }
           .repair .container .right__blocks .camera .camera-list li a:hover {
             color: #ff005c; }
+    .repair .container .right__blocks .camera:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
     .repair .container .right__blocks .speaker {
       width: 590px;
       height: 280px;
@@ -710,6 +764,15 @@ h3 {
             line-height: 20.25px; }
           .repair .container .right__blocks .speaker .speaker-list li a:hover {
             color: #ff005c; }
+    .repair .container .right__blocks .speaker:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
     .repair .container .right__blocks .other-problems {
       width: 590px;
       height: 280px;
@@ -751,6 +814,15 @@ h3 {
             line-height: 20.25px; }
           .repair .container .right__blocks .other-problems .other-problems-list li a:hover {
             color: #ff005c; }
+    .repair .container .right__blocks .other-problems:hover {
+      -moz-transform: scale(1.1) translate(1px, 5px);
+      -webkit-transform: scale(1.1) translate(1px, 5px);
+      -o-transform: scale(1.1) translate(1px, 5px);
+      -ms-transform: scale(1.1) translate(1px, 5px);
+      transform: scale(1.1) translate(1px, 5px) linear;
+      background-color: #BFE0FF;
+      background-image: none;
+      transition: 1s; }
 
 .brands {
   padding-top: 150px; }

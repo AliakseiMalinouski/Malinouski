@@ -700,6 +700,17 @@ h3 {
                 }
             }
 
+            .display:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
+            }
+
             
 
             .dinamics {
@@ -758,6 +769,17 @@ h3 {
                 }
             }
 
+            .dinamics:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
+            }
+
             .buttons {
                 width: 590px;
                 height: 280px;
@@ -803,6 +825,16 @@ h3 {
                         }
                     }
                 }
+            }
+            .buttons:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
             }
 
             .net {
@@ -858,6 +890,17 @@ h3 {
                         }
                     }
                 }
+            }
+
+            .net:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
             }
 
             
@@ -947,6 +990,17 @@ h3 {
                 }
             }
 
+            .battery:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
+            }
+
             .camera {
                 width: 590px;
                 height: 280px;
@@ -1001,6 +1055,17 @@ h3 {
                         }
                     }
                 }
+            }
+
+            .camera:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
             }
 
             .speaker {
@@ -1058,6 +1123,17 @@ h3 {
                 }
             }
 
+            .speaker:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
+            }
+
             .other-problems {
                 width: 590px;
                 height: 280px;
@@ -1111,6 +1187,17 @@ h3 {
                         }
                     }
                 }
+            }
+
+            .other-problems:hover {
+                -moz-transform: scale(1.1) translate(1px, 5px);
+                -webkit-transform: scale(1.1) translate(1px, 5px);
+                -o-transform: scale(1.1) translate(1px, 5px);
+                -ms-transform: scale(1.1) translate(1px, 5px);
+                transform: scale(1.1) translate(1px, 5px) linear;
+                background-color: $light-blue;
+                background-image: none;
+                transition: 1s;
             }
         }
     }
