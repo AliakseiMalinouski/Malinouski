@@ -721,50 +721,119 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px; }
+    .brands .container .mobile_brands_block_one a {
+      display: block; }
     .brands .container .mobile_brands_block_one .xiaomi {
       width: 220px;
       height: 100px;
-      background-color: red; }
+      position: relative;
+      padding: 0.1px; }
+      .brands .container .mobile_brands_block_one .xiaomi img {
+        position: absolute;
+        top: 25px;
+        left: 85px; }
+      .brands .container .mobile_brands_block_one .xiaomi span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_one .xiaomi:hover {
+      animation: xiaomi 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes xiaomi {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_one .xiaomi:hover img {
+        opacity: 0.2; }
+      .brands .container .mobile_brands_block_one .xiaomi:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_one .xiaomi:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_one .apple {
       width: 220px;
       height: 100px;
-      background-color: purple; }
+      position: relative; }
+      .brands .container .mobile_brands_block_one .apple img {
+        position: absolute;
+        top: 25px;
+        left: 85px; }
     .brands .container .mobile_brands_block_one .huawei {
       width: 220px;
       height: 100px;
-      background-color: aqua; }
+      position: relative; }
+      .brands .container .mobile_brands_block_one .huawei img {
+        position: absolute;
+        top: 25px;
+        left: 85px; }
     .brands .container .mobile_brands_block_one .honor {
       width: 220px;
       height: 100px;
-      background-color: blue; }
+      position: relative; }
+      .brands .container .mobile_brands_block_one .honor img {
+        position: absolute;
+        top: 29px;
+        left: 35px; }
     .brands .container .mobile_brands_block_one .meizu {
       width: 220px;
       height: 100px;
-      background-color: brown; }
+      position: relative; }
+      .brands .container .mobile_brands_block_one .meizu img {
+        position: absolute;
+        top: 35px;
+        left: 29px; }
   .brands .container .mobile_brands_block_two {
     width: 1224px;
     height: 100px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     .brands .container .mobile_brands_block_two .samsung {
       width: 220px;
       height: 100px;
-      background-color: chocolate; }
+      position: relative; }
+      .brands .container .mobile_brands_block_two .samsung img {
+        position: absolute;
+        top: 29px;
+        left: 53px; }
     .brands .container .mobile_brands_block_two .nokia {
       width: 220px;
       height: 100px;
-      background-color: darkcyan; }
+      position: relative; }
+      .brands .container .mobile_brands_block_two .nokia img {
+        position: absolute;
+        top: 35px;
+        left: 33px; }
     .brands .container .mobile_brands_block_two .lenovo {
       width: 220px;
       height: 100px;
-      background-color: darkorange; }
+      position: relative; }
+      .brands .container .mobile_brands_block_two .lenovo img {
+        position: absolute;
+        top: 35px;
+        left: 39px; }
     .brands .container .mobile_brands_block_two .sony {
       width: 220px;
       height: 100px;
-      background-color: yellow; }
+      position: relative; }
+      .brands .container .mobile_brands_block_two .sony img {
+        position: absolute;
+        top: 35px;
+        left: 15px; }
     .brands .container .mobile_brands_block_two .asus {
       width: 220px;
       height: 100px;
-      background-color: deeppink; }
+      position: relative; }
+      .brands .container .mobile_brands_block_two .asus img {
+        position: absolute;
+        top: 35px;
+        left: 32px; }
 
 /*# sourceMappingURL=repair.css.map */

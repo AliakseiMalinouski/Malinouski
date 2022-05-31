@@ -1036,6 +1036,7 @@ h3 {
     .container {
         
         
+        
 
        .mobile_brands_block_one {
            width: 1224px;
@@ -1045,36 +1046,114 @@ h3 {
            margin-bottom: 25px;
 
 
+           a {
+               display: block;
+           }
+
+           
+
+
            .xiaomi {
             width: 220px;
             height: 100px;
-            background-color: red;
+            position: relative;
+            padding: 0.1px;
+
+            img {
+                position: absolute;
+                top: 25px;
+                left: 85px;
+            }
+
+            span {
+                display: block;
+                position: absolute;
+                color: $white;
+                font-weight: $extra-bold;
+                font-size: $fz15;
+                left: 50px;
+                top: 35px;
+                display: none;
+
+                
+            }
+            
+           }
+
+           .xiaomi:hover {
+              animation: xiaomi 2s forwards;
+              animation-iteration-count: 1;
+              
+               
+              @keyframes xiaomi  {
+                  from{background-color: $white;}
+                  to{background-color: $bold-pink;}
+              }
+               
+
+               img {
+                   opacity: 0.2;
+               }
+               
+               span {
+                   display: block;
+                   z-index: 1;
+               }
+
+               span:after {
+                   content: '>';
+                   margin-left: 7px;
+               }
            }
 
            .apple {
             width: 220px;
             height: 100px;
-            background-color: purple;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 25px;
+                left: 85px;
+            }
            }
 
            .huawei {
             width: 220px;
             height: 100px;
-            background-color: aqua;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 25px;
+                left: 85px;
+            }
 
            }
 
            .honor {
             width: 220px;
             height: 100px;
-            background-color: blue;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 29px;
+                left: 35px;
+            }
                
            }
 
            .meizu {
             width: 220px;
             height: 100px;
-            background-color: brown;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 35px;
+                left: 29px;
+            }
 
            }
        }
@@ -1084,35 +1163,66 @@ h3 {
            height: 100px;
            display: flex;
            justify-content: space-between;
+           position: relative;
 
            .samsung {
             width: 220px;
             height: 100px;
-            background-color: chocolate;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 29px;
+                left: 53px;
+            }
            }
 
            .nokia {
             width: 220px;
             height: 100px;
-            background-color: darkcyan;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 35px;
+                left: 33px;
+            }
            }
 
            .lenovo {
             width: 220px;
             height: 100px;
-            background-color: darkorange;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 35px;
+                left: 39px;
+            }
            }
 
            .sony {
             width: 220px;
             height: 100px;
-            background-color: yellow;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 35px;
+                left: 15px;
+            }
            }
 
            .asus {
             width: 220px;
             height: 100px;
-            background-color: deeppink;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 35px;
+                left: 32px;
+            }
            }
        }
     }
