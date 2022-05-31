@@ -374,175 +374,319 @@ h3 {
 
 .repair {
   padding-top: 150px; }
-  .repair .container {
-    background-color: deeppink; }
-    .repair .container .blocks {
-      display: flex;
-      justify-content: space-between; }
-    .repair .container .left__blocks {
+  .repair .container .blocks {
+    display: flex;
+    justify-content: space-between; }
+  .repair .container .left__blocks {
+    width: 590px;
+    height: 1210px; }
+    .repair .container .left__blocks .display {
       width: 590px;
-      height: 1210px;
-      background-color: lightblue; }
-      .repair .container .left__blocks .display {
-        width: 590px;
-        height: 280px;
-        background-color: teal;
-        position: relative;
-        padding: 0.1px;
-        background-image: url(../img/display-img.png);
-        background-position: right bottom;
-        background-repeat: no-repeat;
-        margin-bottom: 30px; }
-        .repair .container .left__blocks .display img {
-          position: absolute;
-          top: 30px;
-          left: 30px; }
-        .repair .container .left__blocks .display h5 {
-          width: 177px;
-          height: 24px;
-          color: #000000;
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 24.3px;
-          margin-top: 38px;
-          margin-left: 79px;
-          margin-bottom: 38px; }
-        .repair .container .left__blocks .display .lists {
-          display: flex;
-          width: 477px;
-          height: 130px;
-          justify-content: space-between;
-          margin-left: 50px; }
-          .repair .container .left__blocks .display .lists li {
-            margin-bottom: 20px;
-            width: 204px;
-            height: 20px; }
-            .repair .container .left__blocks .display .lists li a {
-              font-weight: 500;
-              font-size: 15px;
-              color: #000000;
-              line-height: 20.25px; }
-          .repair .container .left__blocks .display .lists a:hover {
+      height: 280px;
+      position: relative;
+      padding: 0.1px;
+      background-image: url(../img/display-img.png);
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 30px; }
+      .repair .container .left__blocks .display img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .left__blocks .display h5 {
+        width: 177px;
+        height: 24px;
+        color: #000000;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24.3px;
+        margin-top: 38px;
+        margin-left: 79px;
+        margin-bottom: 38px; }
+      .repair .container .left__blocks .display .lists {
+        display: flex;
+        width: 477px;
+        height: 130px;
+        justify-content: space-between;
+        margin-left: 50px; }
+        .repair .container .left__blocks .display .lists li {
+          margin-bottom: 20px;
+          width: 204px;
+          height: 20px; }
+          .repair .container .left__blocks .display .lists li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+        .repair .container .left__blocks .display .lists a:hover {
+          color: #ff005c; }
+        .repair .container .left__blocks .display .lists .sensor {
+          height: 45px; }
+        .repair .container .left__blocks .display .lists .list-display-one {
+          height: 130px; }
+    .repair .container .left__blocks .dinamics {
+      width: 590px;
+      height: 280px;
+      position: relative;
+      padding: 0.1px;
+      background-image: url(../img/dinamics-img.png);
+      background-position: right bottom;
+      background-repeat: no-repeat; }
+      .repair .container .left__blocks .dinamics img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .left__blocks .dinamics h5 {
+        margin-left: 79px;
+        margin-top: 38px;
+        width: 170px;
+        height: 24px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.3px;
+        margin-bottom: 38px;
+        color: #000000; }
+      .repair .container .left__blocks .dinamics .lists-dinamics {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        height: 130px;
+        margin-left: 50px; }
+        .repair .container .left__blocks .dinamics .lists-dinamics ul li {
+          margin-bottom: 20px; }
+          .repair .container .left__blocks .dinamics .lists-dinamics ul li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+          .repair .container .left__blocks .dinamics .lists-dinamics ul li a:hover {
             color: #ff005c; }
-          .repair .container .left__blocks .display .lists .sensor {
-            height: 45px; }
-          .repair .container .left__blocks .display .lists .list-display-one {
-            height: 130px; }
-      .repair .container .left__blocks .dinamics {
-        width: 590px;
-        height: 280px;
-        background-color: chocolate;
-        position: relative;
-        padding: 0.1px;
-        background-image: url(../img/dinamics-img.png);
-        background-position: right bottom;
-        background-repeat: no-repeat; }
-        .repair .container .left__blocks .dinamics img {
-          position: absolute;
-          top: 30px;
-          left: 30px; }
-        .repair .container .left__blocks .dinamics h5 {
-          margin-left: 79px;
-          margin-top: 38px;
-          width: 170px;
-          height: 24px;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 24.3px;
-          margin-bottom: 38px;
-          color: #000000; }
-        .repair .container .left__blocks .dinamics .lists-dinamics {
-          display: flex;
-          justify-content: space-between;
-          width: 450px;
-          height: 130px;
-          margin-left: 50px; }
-          .repair .container .left__blocks .dinamics .lists-dinamics ul li {
-            margin-bottom: 20px; }
-            .repair .container .left__blocks .dinamics .lists-dinamics ul li a {
-              font-weight: 500;
-              font-size: 15px;
-              color: #000000;
-              line-height: 20.25px; }
-            .repair .container .left__blocks .dinamics .lists-dinamics ul li a:hover {
-              color: #ff005c; }
-      .repair .container .left__blocks .buttons {
-        width: 590px;
-        height: 280px;
-        padding: 0.1px;
-        margin-top: 30px;
-        position: relative;
-        background-color: aqua;
-        background-image: url(../img/buttons-img.png);
-        background-position: right top;
-        background-repeat: no-repeat; }
-        .repair .container .left__blocks .buttons img {
-          position: absolute;
-          top: 30px;
-          left: 30px; }
-        .repair .container .left__blocks .buttons h5 {
-          margin-left: 79px;
-          margin-top: 38px;
-          width: 74px;
-          height: 24px;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 24.3px;
-          margin-bottom: 38px;
-          color: #000000; }
-        .repair .container .left__blocks .buttons ul {
-          margin-left: 50px; }
-          .repair .container .left__blocks .buttons ul li {
-            margin-bottom: 20px; }
-            .repair .container .left__blocks .buttons ul li a {
-              font-weight: 500;
-              font-size: 15px;
-              color: #000000;
-              line-height: 20.25px; }
-            .repair .container .left__blocks .buttons ul li a:hover {
-              color: #ff005c; }
-      .repair .container .left__blocks .net {
-        width: 590px;
-        height: 280px;
-        padding: 0.1px;
-        margin-top: 30px;
-        position: relative;
-        background-color: blueviolet;
-        background-image: url(../img/net-img.png);
-        background-position: right bottom;
-        background-repeat: no-repeat; }
-        .repair .container .left__blocks .net img {
-          position: absolute;
-          top: 30px;
-          left: 30px; }
-        .repair .container .left__blocks .net h5 {
-          width: 183px;
-          height: 24px;
-          margin-left: 79px;
-          margin-top: 38px;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 24.3px;
-          margin-bottom: 38px;
-          color: #000000; }
-        .repair .container .left__blocks .net .lists-net {
-          display: flex;
-          justify-content: space-between;
-          width: 382px;
-          height: 100px;
-          margin-left: 50px; }
-          .repair .container .left__blocks .net .lists-net li {
-            margin-bottom: 20px; }
-            .repair .container .left__blocks .net .lists-net li a {
-              font-weight: 500;
-              font-size: 15px;
-              color: #000000;
-              line-height: 20.25px; }
-            .repair .container .left__blocks .net .lists-net li a:hover {
-              color: #ff005c; }
-    .repair .container .right__blocks {
+    .repair .container .left__blocks .buttons {
       width: 590px;
-      height: 1210px;
-      background-color: lightgreen; }
+      height: 280px;
+      padding: 0.1px;
+      margin-top: 30px;
+      position: relative;
+      background-image: url(../img/buttons-img.png);
+      background-position: right top;
+      background-repeat: no-repeat; }
+      .repair .container .left__blocks .buttons img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .left__blocks .buttons h5 {
+        margin-left: 79px;
+        margin-top: 38px;
+        width: 74px;
+        height: 24px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.3px;
+        margin-bottom: 38px;
+        color: #000000; }
+      .repair .container .left__blocks .buttons ul {
+        margin-left: 50px; }
+        .repair .container .left__blocks .buttons ul li {
+          margin-bottom: 20px; }
+          .repair .container .left__blocks .buttons ul li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+          .repair .container .left__blocks .buttons ul li a:hover {
+            color: #ff005c; }
+    .repair .container .left__blocks .net {
+      width: 590px;
+      height: 280px;
+      padding: 0.1px;
+      margin-top: 30px;
+      position: relative;
+      background-image: url(../img/net-img.png);
+      background-position: right bottom;
+      background-repeat: no-repeat; }
+      .repair .container .left__blocks .net img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .left__blocks .net h5 {
+        width: 183px;
+        height: 24px;
+        margin-left: 79px;
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.3px;
+        margin-bottom: 38px;
+        color: #000000; }
+      .repair .container .left__blocks .net .lists-net {
+        display: flex;
+        justify-content: space-between;
+        width: 382px;
+        height: 120px;
+        margin-left: 50px; }
+        .repair .container .left__blocks .net .lists-net li {
+          margin-bottom: 20px; }
+          .repair .container .left__blocks .net .lists-net li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+          .repair .container .left__blocks .net .lists-net li a:hover {
+            color: #ff005c; }
+  .repair .container .right__blocks {
+    width: 590px;
+    height: 1210px; }
+    .repair .container .right__blocks .battery {
+      width: 590px;
+      height: 280px;
+      margin-bottom: 30px;
+      padding: 0.1px;
+      position: relative;
+      background-image: url(../img/battery-img.png);
+      background-position: right bottom;
+      background-repeat: no-repeat; }
+      .repair .container .right__blocks .battery img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .right__blocks .battery h5 {
+        margin-left: 79px;
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.3px;
+        margin-bottom: 38px;
+        color: #000000;
+        width: 183px;
+        height: 24px; }
+      .repair .container .right__blocks .battery .battery-list {
+        display: flex;
+        justify-content: space-between;
+        width: 428px;
+        height: 160px;
+        margin-left: 50px; }
+        .repair .container .right__blocks .battery .battery-list li {
+          margin-bottom: 20px; }
+          .repair .container .right__blocks .battery .battery-list li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+          .repair .container .right__blocks .battery .battery-list li a:hover {
+            color: #ff005c; }
+    .repair .container .right__blocks .camera {
+      width: 590px;
+      height: 280px;
+      margin-bottom: 30px;
+      padding: 0.1px;
+      position: relative;
+      background-image: url(../img/camera-img.png);
+      background-position: right top;
+      background-repeat: no-repeat; }
+      .repair .container .right__blocks .camera img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .right__blocks .camera h5 {
+        width: 78px;
+        height: 24px;
+        margin-left: 79px;
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.3px;
+        margin-bottom: 38px;
+        color: #000000; }
+      .repair .container .right__blocks .camera .camera-list {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+        width: 491px;
+        height: 170px; }
+        .repair .container .right__blocks .camera .camera-list li {
+          margin-bottom: 20px; }
+          .repair .container .right__blocks .camera .camera-list li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+          .repair .container .right__blocks .camera .camera-list li a:hover {
+            color: #ff005c; }
+    .repair .container .right__blocks .speaker {
+      width: 590px;
+      height: 280px;
+      margin-bottom: 30px;
+      padding: 0.1px;
+      position: relative;
+      background-image: url(../img/speaker-fone.png);
+      background-position: right bottom;
+      background-repeat: no-repeat; }
+      .repair .container .right__blocks .speaker img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .right__blocks .speaker h5 {
+        margin-left: 79px;
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.3px;
+        margin-bottom: 38px;
+        color: #000000;
+        width: 216px;
+        height: 24px; }
+      .repair .container .right__blocks .speaker .speaker-list {
+        width: 478px;
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px; }
+        .repair .container .right__blocks .speaker .speaker-list li {
+          margin-bottom: 15px; }
+          .repair .container .right__blocks .speaker .speaker-list li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+          .repair .container .right__blocks .speaker .speaker-list li a:hover {
+            color: #ff005c; }
+    .repair .container .right__blocks .other-problems {
+      width: 590px;
+      height: 280px;
+      padding: 0.1px;
+      margin-bottom: 30px;
+      position: relative;
+      background-image: url(../img/other-problems-img.png);
+      background-position: right top;
+      background-repeat: no-repeat; }
+      .repair .container .right__blocks .other-problems img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .repair .container .right__blocks .other-problems h5 {
+        width: 177px;
+        height: 24px;
+        margin-left: 79px;
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.3px;
+        margin-bottom: 38px;
+        color: #000000; }
+      .repair .container .right__blocks .other-problems .other-problems-list {
+        width: 450px;
+        height: 170px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px; }
+        .repair .container .right__blocks .other-problems .other-problems-list li {
+          margin-bottom: 20px; }
+          .repair .container .right__blocks .other-problems .other-problems-list li a {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            line-height: 20.25px; }
+          .repair .container .right__blocks .other-problems .other-problems-list li a:hover {
+            color: #ff005c; }
 
 /*# sourceMappingURL=repair.css.map */

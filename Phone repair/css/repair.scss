@@ -558,7 +558,7 @@ h3 {
     padding-top: 150px;
 
     .container {
-        background-color: deeppink;
+        
 
         .blocks {
             display: flex;
@@ -569,12 +569,10 @@ h3 {
         .left__blocks {
             width: 590px;
             height: 1210px;
-            background-color: lightblue;
 
             .display {
                 width: 590px;
                 height: 280px;
-                background-color: teal;
                 position: relative;
                 padding: 0.1px;
                 background-image: url(../img/display-img.png);
@@ -640,7 +638,6 @@ h3 {
             .dinamics {
                 width: 590px;
                 height: 280px;
-                background-color: chocolate;
                 position: relative;
                 padding: 0.1px;
                 background-image: url(../img/dinamics-img.png);
@@ -697,7 +694,6 @@ h3 {
                 padding: 0.1px;
                 margin-top: 30px;
                 position: relative;
-                background-color: aqua;
                 background-image: url(../img/buttons-img.png);
                 background-position: right top;
                 background-repeat: no-repeat;
@@ -743,7 +739,6 @@ h3 {
                 padding: 0.1px;
                 margin-top: 30px;
                 position: relative;
-                background-color: blueviolet;
                 background-image: url(../img/net-img.png);
                 background-position: right bottom;
                 background-repeat: no-repeat;
@@ -770,7 +765,7 @@ h3 {
                     display: flex;
                     justify-content: space-between;
                     width: 382px;
-                    height: 100px;
+                    height: 120px;
                     margin-left: 50px;
 
                     li {
@@ -796,7 +791,217 @@ h3 {
         .right__blocks {
             width: 590px;
             height: 1210px;
-            background-color: lightgreen;
+
+            .battery {
+                width: 590px;
+                height: 280px;
+                margin-bottom: 30px;
+                padding: 0.1px;
+                position: relative;
+                background-image: url(../img/battery-img.png);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+
+                }
+
+                h5 {
+                    margin-left: 79px;
+                    margin-top: 38px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 38px;
+                    color: $black;
+                    width: 183px;
+                    height: 24px;
+                }
+
+                .battery-list {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 428px;
+                    height: 160px;
+                    margin-left: 50px;
+                    
+
+                    li {
+                        margin-bottom: 20px;
+
+                        a {
+                            font-weight: $medium;
+                            font-size: $fz15;
+                            color: $black;
+                            line-height: 20.25px;
+                        }
+
+                        a:hover {
+                            color: $bold-pink;
+                        }
+                    }
+                }
+            }
+
+            .camera {
+                width: 590px;
+                height: 280px;
+                margin-bottom: 30px;
+                padding: 0.1px;
+                position: relative;
+                background-image: url(../img/camera-img.png);
+                background-position: right top;
+                background-repeat: no-repeat;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                }
+
+                h5 {
+                    width: 78px;
+                    height: 24px;
+                    margin-left: 79px;
+                    margin-top: 38px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 38px;
+                    color: $black;
+                }
+
+                .camera-list {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 50px;
+                    width: 491px;
+                    height: 170px;
+
+                    li {
+                        margin-bottom: 20px;
+
+                        a {
+                            font-weight: $medium;
+                            font-size: $fz15;
+                            color: $black;
+                            line-height: 20.25px;
+                              
+                            
+                        }
+                        a:hover {
+                            color: $bold-pink;
+                        }
+                    }
+                }
+            }
+
+            .speaker {
+                width: 590px;
+                height: 280px;
+                margin-bottom: 30px;
+                padding: 0.1px;
+                position: relative;
+                background-image: url(../img/speaker-fone.png);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                }
+
+                h5 {
+                    margin-left: 79px;
+                    margin-top: 38px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 38px;
+                    color: $black;
+                    width: 216px;
+                    height: 24px;
+                }
+
+                .speaker-list {
+                    width: 478px;
+                    height: 170px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 50px;
+
+                    li {
+                        margin-bottom: 15px;
+
+                        a {
+                            font-weight: $medium;
+                            font-size: $fz15;
+                            color: $black;
+                            line-height: 20.25px;
+                        }
+
+                        a:hover {
+                            color: $bold-pink;
+                        }
+                    }
+                }
+            }
+
+            .other-problems {
+                width: 590px;
+                height: 280px;
+                padding: 0.1px;
+                margin-bottom: 30px;
+                position: relative;
+                background-image: url(../img/other-problems-img.png);
+                background-position: right top;
+                background-repeat: no-repeat;
+
+                img {
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                }
+
+                h5 {
+                    width: 177px;
+                    height: 24px;
+                    margin-left: 79px;
+                    margin-top: 38px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 38px;
+                    color: $black;
+                }
+
+                .other-problems-list {
+                    width: 450px;
+                    height: 170px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 50px;
+
+                    li {
+                        margin-bottom: 20px;
+
+                        a {
+                            font-weight: $medium;
+                            font-size: $fz15;
+                            color: $black;
+                            line-height: 20.25px;
+                        }
+
+                        a:hover {
+                            color: $bold-pink;
+                        }
+                    }
+                }
+            }
         }
     }
 }
