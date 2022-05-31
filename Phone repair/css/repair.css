@@ -798,6 +798,31 @@ h3 {
         position: absolute;
         top: 25px;
         left: 85px; }
+      .brands .container .mobile_brands_block_one .huawei span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_one .huawei:hover {
+      animation: huawei 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes huawei {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_one .huawei:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_one .huawei:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_one .huawei:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_one .honor {
       width: 220px;
       height: 100px;
@@ -806,6 +831,31 @@ h3 {
         position: absolute;
         top: 29px;
         left: 35px; }
+      .brands .container .mobile_brands_block_one .honor span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_one .honor:hover {
+      animation: honor 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes honor {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_one .honor:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_one .honor:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_one .honor:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_one .meizu {
       width: 220px;
       height: 100px;
@@ -814,6 +864,31 @@ h3 {
         position: absolute;
         top: 35px;
         left: 29px; }
+      .brands .container .mobile_brands_block_one .meizu span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_one .meizu:hover {
+      animation: meizu 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes meizu {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_one .meizu:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_one .meizu:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_one .meizu:hover span:after {
+        content: '>';
+        margin-left: 7px; }
   .brands .container .mobile_brands_block_two {
     width: 1224px;
     height: 100px;
@@ -828,6 +903,31 @@ h3 {
         position: absolute;
         top: 29px;
         left: 53px; }
+      .brands .container .mobile_brands_block_two .samsung span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_two .samsung:hover {
+      animation: samsung 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes samsung {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_two .samsung:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_two .samsung:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_two .samsung:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_two .nokia {
       width: 220px;
       height: 100px;
@@ -836,6 +936,31 @@ h3 {
         position: absolute;
         top: 35px;
         left: 33px; }
+      .brands .container .mobile_brands_block_two .nokia span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_two .nokia:hover {
+      animation: nokia 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes nokia {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_two .nokia:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_two .nokia:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_two .nokia:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_two .lenovo {
       width: 220px;
       height: 100px;
@@ -844,6 +969,31 @@ h3 {
         position: absolute;
         top: 35px;
         left: 39px; }
+      .brands .container .mobile_brands_block_two .lenovo span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_two .lenovo:hover {
+      animation: lenovo 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes lenovo {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_two .lenovo:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_two .lenovo:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_two .lenovo:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_two .sony {
       width: 220px;
       height: 100px;
@@ -852,6 +1002,31 @@ h3 {
         position: absolute;
         top: 35px;
         left: 15px; }
+      .brands .container .mobile_brands_block_two .sony span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_two .sony:hover {
+      animation: sony 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes sony {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_two .sony:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_two .sony:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_two .sony:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_two .asus {
       width: 220px;
       height: 100px;
@@ -860,10 +1035,36 @@ h3 {
         position: absolute;
         top: 35px;
         left: 32px; }
+      .brands .container .mobile_brands_block_two .asus span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_two .asus:hover {
+      animation: asus 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes asus {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_two .asus:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_two .asus:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_two .asus:hover span:after {
+        content: '>';
+        margin-left: 7px; }
 
 .video {
   padding-top: 150px; }
   .video .container .play-video {
-    width: 1200px; }
+    width: 1200px;
+    height: 675px; }
 
 /*# sourceMappingURL=repair.css.map */
