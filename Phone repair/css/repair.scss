@@ -1092,7 +1092,7 @@ h3 {
                
 
                img {
-                   opacity: 0.2;
+                   opacity: 0;
                }
                
                span {
@@ -1116,6 +1116,49 @@ h3 {
                 top: 25px;
                 left: 85px;
             }
+            span {
+                display: block;
+                position: absolute;
+                color: $white;
+                font-weight: $extra-bold;
+                font-size: $fz15;
+                left: 50px;
+                top: 35px;
+                display: none;
+
+                
+            }
+           }
+
+           .apple:hover {
+            animation: apple 2s forwards;
+            animation-iteration-count: 1;
+
+            @keyframes apple {
+                    from {
+                        background-color: $white;
+                    }
+            
+                    to {
+                        background-color: $bold-pink;
+                    }
+                }
+            
+            
+                img {
+                    opacity: 0;
+                    
+                }
+            
+                span {
+                    display: block;
+                    z-index: 1;
+                }
+            
+                span:after {
+                    content: '>';
+                    margin-left: 7px;
+                }
            }
 
            .huawei {

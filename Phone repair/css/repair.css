@@ -750,7 +750,7 @@ h3 {
   to {
     background-color: #ff005c; } }
       .brands .container .mobile_brands_block_one .xiaomi:hover img {
-        opacity: 0.2; }
+        opacity: 0; }
       .brands .container .mobile_brands_block_one .xiaomi:hover span {
         display: block;
         z-index: 1; }
@@ -765,6 +765,31 @@ h3 {
         position: absolute;
         top: 25px;
         left: 85px; }
+      .brands .container .mobile_brands_block_one .apple span {
+        display: block;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        left: 50px;
+        top: 35px;
+        display: none; }
+    .brands .container .mobile_brands_block_one .apple:hover {
+      animation: apple 2s forwards;
+      animation-iteration-count: 1; }
+@keyframes apple {
+  from {
+    background-color: #fff; }
+  to {
+    background-color: #ff005c; } }
+      .brands .container .mobile_brands_block_one .apple:hover img {
+        opacity: 0; }
+      .brands .container .mobile_brands_block_one .apple:hover span {
+        display: block;
+        z-index: 1; }
+      .brands .container .mobile_brands_block_one .apple:hover span:after {
+        content: '>';
+        margin-left: 7px; }
     .brands .container .mobile_brands_block_one .huawei {
       width: 220px;
       height: 100px;
