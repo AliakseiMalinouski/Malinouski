@@ -74,6 +74,19 @@ h3 {
         .header .container ul li a:hover {
           color: #ff005c;
           font-weight: 500; }
+      .header .container ul li:hover {
+        animation: link 2s ease-in-out 0s normal none infinite running; }
+@keyframes link {
+  0%,
+                50%,
+                100% {
+    transform: rotate(0deg); }
+  10%,
+                30% {
+    transform: rotate(-5deg); }
+  20%,
+                40% {
+    transform: rotate(5deg); } }
     .header .container div.tel a {
       font-size: 18px;
       font-weight: 700;
@@ -96,7 +109,7 @@ h3 {
       left: 420px;
       display: none;
       opacity: 0;
-      animation: modal_hero 2.5s forwards; }
+      animation: modal_hero 2s forwards; }
 @keyframes modal_hero {
   0% {
     opacity: 0; }
@@ -380,6 +393,19 @@ h3 {
   .repair .container .left__blocks {
     width: 590px;
     height: 1210px; }
+    .repair .container .left__blocks li:hover {
+      animation: link-display 2s ease-in-out 0s normal none infinite running; }
+@keyframes link-display {
+  0%,
+                    50%,
+                    100% {
+    transform: rotate(0deg); }
+  10%,
+                    30% {
+    transform: rotate(-5deg); }
+  20%,
+                    40% {
+    transform: rotate(5deg); } }
     .repair .container .left__blocks .display {
       width: 590px;
       height: 280px;
@@ -548,6 +574,19 @@ h3 {
   .repair .container .right__blocks {
     width: 590px;
     height: 1210px; }
+    .repair .container .right__blocks li:hover {
+      animation: link-display 2s ease-in-out 0s normal none infinite running; }
+@keyframes link-display {
+  0%,
+                    50%,
+                    100% {
+    transform: rotate(0deg); }
+  10%,
+                    30% {
+    transform: rotate(-7deg); }
+  20%,
+                    40% {
+    transform: rotate(7deg); } }
     .repair .container .right__blocks .battery {
       width: 590px;
       height: 280px;

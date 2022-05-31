@@ -132,8 +132,33 @@ h3 {
              a:hover {
              color: $bold-pink;
              font-weight: $medium;
+
         }
         }
+
+        li:hover {
+            animation: link 2s ease-in-out 0s normal none infinite running;
+        }
+
+        @keyframes link {
+            0%,
+                50%,
+                100% {
+                    transform: rotate(0deg);
+                }
+            
+                10%,
+                30% {
+                    transform: rotate(-5deg);
+                }
+            
+                20%,
+                40% {
+                    transform: rotate(5deg);
+                }
+        }
+
+        
 
        
     }
@@ -174,7 +199,7 @@ h3 {
                 display: none;
                 // animation: modal_hero 3s;
                 opacity: 0;
-                animation: modal_hero 2.5s forwards;
+                animation: modal_hero 2s forwards;
 
                 @keyframes modal_hero {
                         0% {
@@ -570,6 +595,29 @@ h3 {
             width: 590px;
             height: 1210px;
 
+            li:hover {
+                    animation: link-display 2s ease-in-out 0s normal none infinite running;
+                }
+            
+                @keyframes link-display {
+            
+                    0%,
+                    50%,
+                    100% {
+                        transform: rotate(0deg);
+                    }
+            
+                    10%,
+                    30% {
+                        transform: rotate(-5deg);
+                    }
+            
+                    20%,
+                    40% {
+                        transform: rotate(5deg);
+                    }
+                }
+
             .display {
                 width: 590px;
                 height: 280px;
@@ -622,6 +670,21 @@ h3 {
                     
                     }
 
+                    // li:hover {
+                    //     animation: link-display 2s ease-in-out 0s normal none infinite running;
+                    // }
+                    // @keyframes link-display {
+                    //     0%, 50%, 100% {
+                    //         transform: rotate(0deg);
+                    //     }
+                    //     10%, 30% {
+                    //         transform: rotate(-7deg);
+                    //     }
+                    //     20%, 40% {
+                    //         transform: rotate(7deg);
+                    //     }
+                    // }
+
                     a:hover {
                         color: $bold-pink;
                     }
@@ -636,6 +699,8 @@ h3 {
                     
                 }
             }
+
+            
 
             .dinamics {
                 width: 590px;
@@ -801,6 +866,29 @@ h3 {
         .right__blocks {
             width: 590px;
             height: 1210px;
+
+            li:hover {
+                    animation: link-display 2s ease-in-out 0s normal none infinite running;
+                }
+            
+                @keyframes link-display {
+            
+                    0%,
+                    50%,
+                    100% {
+                        transform: rotate(0deg);
+                    }
+            
+                    10%,
+                    30% {
+                        transform: rotate(-7deg);
+                    }
+            
+                    20%,
+                    40% {
+                        transform: rotate(7deg);
+                    }
+                }
 
             .battery {
                 width: 590px;
