@@ -1781,3 +1781,189 @@ h3 {
         }
     }
 }
+
+// opinion
+
+.opinion {
+    padding-top: 150px;
+
+    .container {
+        background-color: green;
+        height: 500px;
+
+ 
+
+        
+        
+        .carousel-indicators {
+
+            button {
+                width: 15px;
+                height: 15px;
+                background-color: $bold-pink;
+                border-radius: 50%;
+            }
+        }
+       
+        .slide1 {
+            display: flex;
+            justify-content: space-between;
+            height: 410px;
+            background-color: red;
+
+            h5 {
+                width: 84px;
+                height: 24px;
+                font-weight: $extra-bold;
+                font-size: $fz18;
+                color: $black;
+                line-height: 24.3px;
+                margin-left: 85px;
+                margin-top: 38px;
+            }
+            img {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            }
+
+            .list-comment {
+                display: flex;
+                justify-content: space-between;
+                width: 498px;
+                height: 20px;
+                margin-top: 20px;
+                margin-bottom: 27px;
+
+                ul {
+                  display: flex;
+                  justify-content: space-between;
+                  height: 20px;
+                  height: 246px;
+
+                  li {
+                      height: 20px;
+                      margin-right: 10px;
+                      color: $gray;
+
+                      span {
+                          color: $bold-pink;
+                          display: inline-block;
+                          margin-left: 4px;
+                      }
+                  }
+                }
+
+                img {
+                    position: static;
+                }
+
+                p {
+                    width: 520px;
+                    height: 125px;
+                    font-weight: $medium;
+                    line-height: 24.75px;
+                    font-size: $fz15;
+                    color: $black;
+                    
+                }
+
+                
+
+
+            }
+
+
+            
+        .comment1 {
+            width: 590px;
+            height: 354px;
+            background-color: purple;
+            position: relative;
+            padding: 0.1px;
+            background-image: url(../img/yandex1.png);
+            background-repeat: no-repeat;
+            background-position: 5% 90%;
+
+            .yandex {
+               width: 213px;
+               height: 20px;
+               margin-top: 50px;
+               margin-left: 40px;
+
+               li {
+                   width: 230px;
+                   height: 20px;
+                   color: $gray;
+                   line-height: 20.25px;
+                   font-weight: $medium;
+                   font-size: $fz15;
+                   
+                   span {
+                       color: $bold-pink;
+                   }
+               }
+            }
+
+            
+
+            
+        }
+        .comment2 {
+            width: 590px;
+            height: 354px;
+            background-color: lightblue;
+        }
+        }
+
+        .slide2 {
+             display: flex;
+             justify-content: space-between;
+             height: 410px;
+             background-color: red;
+
+            .comment3 {
+                width: 590px;
+                height: 354px;
+                background-color: lightcoral;
+                position: relative;
+                padding: 0.1px;
+            }
+
+            .comment4 {
+                width: 590px;
+                height: 354px;
+                background-color: blue;
+                position: relative;
+                padding: 0.1px;
+            }
+        }
+
+        .slide3 {
+             display: flex;
+             justify-content: space-between;
+             height: 410px;
+             background-color: red;
+             
+
+            .comment5 {
+                width: 590px;
+                height: 354px;
+                background-color: aqua;
+                position: relative;
+                padding: 0.1px;
+            }
+
+            .comment6 {
+                width: 590px;
+                height: 354px;
+                background-color: chocolate;
+                position: relative;
+                padding: 0.1px;
+            }
+        }
+
+        
+        
+    }
+}
