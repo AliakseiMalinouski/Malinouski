@@ -2232,3 +2232,94 @@ h3 {
         
     }
 }
+
+// reviews 
+
+.reviews {
+    padding-top: 45px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            display: block;
+            border: 1px solid $white;
+            -webkit-box-shadow: 0px 0px 37px -9px rgba(191, 224, 255, 1);
+            -moz-box-shadow: 0px 0px 37px -9px rgba(191, 224, 255, 1);
+            box-shadow: 0px 0px 37px -9px rgba(191, 224, 255, 1);
+            
+        }
+
+        a:nth-child(1) {
+            width: 267px;
+            height: 50px;
+            background-color: $bold-pink;
+            padding-left: 48px;
+            padding-top: 16px;
+            color: $white;
+            font-weight: $medium;
+            font-size: $fz15;
+            line-height: 18.29px;
+            
+            
+            
+        }
+
+        a:nth-child(2) {
+            width: 227px;
+            height: 50px;
+            padding-left: 54px;
+            padding-top: 16px;
+            font-weight: $medium;
+            font-size: $fz15;
+            line-height: 18.29px;
+            color: $black;
+            background-image: url(../img/small-yandex.png);
+            background-position: 10%;
+            background-repeat: no-repeat;
+        }
+
+        a:nth-child(3) {
+            width: 218px;
+            height: 50px;
+            font-weight: $medium;
+            font-size: $fz15;
+            line-height: 18.29px;
+            padding-left: 54px;
+            padding-top: 16px;
+            color: $black;
+            background-image: url(../img/small-google.png);
+            background-position: 10%;
+            background-repeat: no-repeat;
+        }
+
+        a:nth-child(4) {
+            width: 198px;
+            height: 50px;
+            font-weight: $medium;
+            font-size: $fz15;
+            line-height: 18.29px;
+            padding-left: 54px;
+            padding-top: 16px;
+            color: $black;
+            background-image: url(../img/2gis.png);
+            background-position: 10%;
+            background-repeat: no-repeat;
+        }
+
+        a:nth-child(5) {
+            width: 190px;
+            height: 50px;
+            font-weight: $medium;
+            font-size: $fz15;
+            line-height: 18.29px;
+            padding-left: 54px;
+            padding-top: 16px;
+            color: $black;
+            background-image: url(../img/yell.png);
+            background-position: 10%;
+            background-repeat: no-repeat;
+        }
+    }
+}
