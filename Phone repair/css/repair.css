@@ -1574,6 +1574,9 @@ h3 {
       background-position: 10%;
       background-repeat: no-repeat; }
 
+.sale {
+  padding-top: 150px; }
+
 .master {
   padding-top: 150px; }
   .master .container .form {
