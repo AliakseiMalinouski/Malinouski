@@ -1181,8 +1181,7 @@ h3 {
 .opinion {
   padding-top: 150px; }
   .opinion .container {
-    background-color: green;
-    height: 500px; }
+    height: 550px; }
     .opinion .container .carousel-indicators button {
       width: 15px;
       height: 15px;
@@ -1191,8 +1190,7 @@ h3 {
     .opinion .container .slide1 {
       display: flex;
       justify-content: space-between;
-      height: 410px;
-      background-color: red; }
+      height: 450px; }
       .opinion .container .slide1 h5 {
         width: 84px;
         height: 24px;
@@ -1238,7 +1236,6 @@ h3 {
       .opinion .container .slide1 .comment1 {
         width: 590px;
         height: 354px;
-        background-color: purple;
         position: relative;
         padding: 0.1px;
         background-image: url(../img/yandex1.png);
@@ -1258,43 +1255,240 @@ h3 {
             font-size: 15px; }
             .opinion .container .slide1 .comment1 .yandex li span {
               color: #ff005c; }
+      .opinion .container .slide1 .comment1:hover {
+        -moz-transform: scale(1.05) translate(1px, 5px);
+        -webkit-transform: scale(1.05) translate(1px, 5px);
+        -o-transform: scale(1.05) translate(1px, 5px);
+        -ms-transform: scale(1.05) translate(1px, 5px);
+        transform: scale(1.05) translate(1px, 5px) linear;
+        background-color: #BFE0FF;
+        transition: 1s; }
+        .opinion .container .slide1 .comment1:hover p {
+          width: 450px;
+          margin: 0 auto; }
+        .opinion .container .slide1 .comment1:hover .yandex {
+          margin-top: 30px; }
       .opinion .container .slide1 .comment2 {
         width: 590px;
         height: 354px;
-        background-color: lightblue; }
+        position: relative;
+        padding: 0.1px;
+        background-image: url(../img/yandex1.png);
+        background-repeat: no-repeat;
+        background-position: 5% 90%; }
+        .opinion .container .slide1 .comment2 .yandex {
+          width: 213px;
+          height: 20px;
+          margin-top: 50px;
+          margin-left: 40px; }
+          .opinion .container .slide1 .comment2 .yandex li {
+            width: 230px;
+            height: 20px;
+            color: #C4C4C4;
+            line-height: 20.25px;
+            font-weight: 500;
+            font-size: 15px; }
+            .opinion .container .slide1 .comment2 .yandex li span {
+              color: #ff005c; }
+      .opinion .container .slide1 .comment2:hover {
+        -moz-transform: scale(1.05) translate(1px, 5px);
+        -webkit-transform: scale(1.05) translate(1px, 5px);
+        -o-transform: scale(1.05) translate(1px, 5px);
+        -ms-transform: scale(1.05) translate(1px, 5px);
+        transform: scale(1.05) translate(1px, 5px) linear;
+        background-color: #BFE0FF;
+        transition: 1s; }
+        .opinion .container .slide1 .comment2:hover p {
+          width: 450px;
+          margin: 0 auto; }
+        .opinion .container .slide1 .comment2:hover .yandex {
+          margin-top: 30px; }
     .opinion .container .slide2 {
       display: flex;
       justify-content: space-between;
-      height: 410px;
-      background-color: red; }
+      height: 450px; }
+      .opinion .container .slide2 h5 {
+        width: 84px;
+        height: 24px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #000000;
+        line-height: 24.3px;
+        margin-left: 85px;
+        margin-top: 38px; }
+      .opinion .container .slide2 img {
+        position: absolute;
+        top: 30px;
+        left: 30px; }
+      .opinion .container .slide2 .list-comment {
+        display: flex;
+        justify-content: space-between;
+        width: 498px;
+        height: 20px;
+        margin-top: 20px;
+        margin-bottom: 27px; }
+        .opinion .container .slide2 .list-comment ul {
+          display: flex;
+          justify-content: space-between;
+          height: 20px;
+          height: 246px; }
+          .opinion .container .slide2 .list-comment ul li {
+            height: 20px;
+            margin-right: 10px;
+            color: #C4C4C4; }
+            .opinion .container .slide2 .list-comment ul li span {
+              color: #ff005c;
+              display: inline-block;
+              margin-left: 4px; }
+        .opinion .container .slide2 .list-comment img {
+          position: static; }
+        .opinion .container .slide2 .list-comment p {
+          width: 520px;
+          height: 125px;
+          font-weight: 500;
+          line-height: 24.75px;
+          font-size: 15px;
+          color: #000000; }
       .opinion .container .slide2 .comment3 {
         width: 590px;
         height: 354px;
-        background-color: lightcoral;
         position: relative;
-        padding: 0.1px; }
+        padding: 0.1px;
+        background-image: url(../img/yandex1.png);
+        background-repeat: no-repeat;
+        background-position: 5% 90%; }
+        .opinion .container .slide2 .comment3 .yandex {
+          width: 213px;
+          height: 20px;
+          margin-top: 50px;
+          margin-left: 40px; }
+          .opinion .container .slide2 .comment3 .yandex li {
+            width: 230px;
+            height: 20px;
+            color: #C4C4C4;
+            line-height: 20.25px;
+            font-weight: 500;
+            font-size: 15px; }
+            .opinion .container .slide2 .comment3 .yandex li span {
+              color: #ff005c; }
+      .opinion .container .slide2 .comment3:hover {
+        -moz-transform: scale(1.05) translate(1px, 5px);
+        -webkit-transform: scale(1.05) translate(1px, 5px);
+        -o-transform: scale(1.05) translate(1px, 5px);
+        -ms-transform: scale(1.05) translate(1px, 5px);
+        transform: scale(1.05) translate(1px, 5px) linear;
+        background-color: #BFE0FF;
+        transition: 1s; }
+        .opinion .container .slide2 .comment3:hover p {
+          width: 450px;
+          margin: 0 auto; }
+        .opinion .container .slide2 .comment3:hover .yandex {
+          margin-top: 30px; }
       .opinion .container .slide2 .comment4 {
         width: 590px;
         height: 354px;
-        background-color: blue;
         position: relative;
         padding: 0.1px; }
+        .opinion .container .slide2 .comment4 .yandex {
+          width: 213px;
+          height: 20px;
+          margin-top: 50px;
+          margin-left: 40px; }
+          .opinion .container .slide2 .comment4 .yandex li {
+            width: 230px;
+            height: 20px;
+            color: #C4C4C4;
+            line-height: 20.25px;
+            font-weight: 500;
+            font-size: 15px; }
+            .opinion .container .slide2 .comment4 .yandex li span {
+              color: #ff005c; }
+      .opinion .container .slide2 .comment4:hover {
+        -moz-transform: scale(1.05) translate(1px, 5px);
+        -webkit-transform: scale(1.05) translate(1px, 5px);
+        -o-transform: scale(1.05) translate(1px, 5px);
+        -ms-transform: scale(1.05) translate(1px, 5px);
+        transform: scale(1.05) translate(1px, 5px) linear;
+        background-color: #BFE0FF;
+        transition: 1s; }
+        .opinion .container .slide2 .comment4:hover p {
+          width: 450px;
+          margin: 0 auto; }
+        .opinion .container .slide2 .comment4:hover .yandex {
+          margin-top: 30px; }
     .opinion .container .slide3 {
       display: flex;
       justify-content: space-between;
-      height: 410px;
-      background-color: red; }
+      height: 410px; }
       .opinion .container .slide3 .comment5 {
         width: 590px;
         height: 354px;
-        background-color: aqua;
         position: relative;
-        padding: 0.1px; }
+        padding: 0.1px;
+        background-image: url(../img/yandex1.png);
+        background-repeat: no-repeat;
+        background-position: 5% 90%; }
+        .opinion .container .slide3 .comment5 .yandex {
+          width: 213px;
+          height: 20px;
+          margin-top: 50px;
+          margin-left: 40px; }
+          .opinion .container .slide3 .comment5 .yandex li {
+            width: 230px;
+            height: 20px;
+            color: #C4C4C4;
+            line-height: 20.25px;
+            font-weight: 500;
+            font-size: 15px; }
+            .opinion .container .slide3 .comment5 .yandex li span {
+              color: #ff005c; }
+      .opinion .container .slide3 .comment5:hover {
+        -moz-transform: scale(1.05) translate(1px, 5px);
+        -webkit-transform: scale(1.05) translate(1px, 5px);
+        -o-transform: scale(1.05) translate(1px, 5px);
+        -ms-transform: scale(1.05) translate(1px, 5px);
+        transform: scale(1.05) translate(1px, 5px) linear;
+        background-color: #BFE0FF;
+        transition: 1s; }
+        .opinion .container .slide3 .comment5:hover p {
+          width: 450px;
+          margin: 0 auto; }
+        .opinion .container .slide3 .comment5:hover .yandex {
+          margin-top: 30px; }
       .opinion .container .slide3 .comment6 {
         width: 590px;
         height: 354px;
-        background-color: chocolate;
         position: relative;
-        padding: 0.1px; }
+        padding: 0.1px;
+        background-image: url(../img/yandex1.png);
+        background-repeat: no-repeat;
+        background-position: 5% 90%; }
+        .opinion .container .slide3 .comment6 .yandex {
+          width: 213px;
+          height: 20px;
+          margin-top: 50px;
+          margin-left: 40px; }
+          .opinion .container .slide3 .comment6 .yandex li {
+            width: 230px;
+            height: 20px;
+            color: #C4C4C4;
+            line-height: 20.25px;
+            font-weight: 500;
+            font-size: 15px; }
+            .opinion .container .slide3 .comment6 .yandex li span {
+              color: #ff005c; }
+      .opinion .container .slide3 .comment6:hover {
+        -moz-transform: scale(1.05) translate(1px, 5px);
+        -webkit-transform: scale(1.05) translate(1px, 5px);
+        -o-transform: scale(1.05) translate(1px, 5px);
+        -ms-transform: scale(1.05) translate(1px, 5px);
+        transform: scale(1.05) translate(1px, 5px) linear;
+        background-color: #BFE0FF;
+        transition: 1s; }
+        .opinion .container .slide3 .comment6:hover p {
+          width: 450px;
+          margin: 0 auto; }
+        .opinion .container .slide3 .comment6:hover .yandex {
+          margin-top: 30px; }
 
 /*# sourceMappingURL=repair.css.map */
