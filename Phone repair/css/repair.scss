@@ -5,6 +5,8 @@ $light-blue: #BFE0FF;
 $white: #fff;
 $black: #000000;
 $gray: #C4C4C4;
+$light-gray: #E5E5E5;
+$bold-gray: #797979;
 
 // font size
 
@@ -2251,6 +2253,30 @@ h3 {
             
         }
 
+        a:hover {
+            animation: a-block 2s ease-in-out 0s normal none infinite running;
+        }
+
+        @keyframes a-block {
+            0%,
+                50%,
+                100% {
+                    transform: rotate(0deg);
+                }
+            
+                10%,
+                30% {
+                    transform: rotate(-5deg);
+                }
+            
+                20%,
+                40% {
+                    transform: rotate(5deg);
+                }
+        }
+
+       
+
         a:nth-child(1) {
             width: 267px;
             height: 50px;
@@ -2321,5 +2347,112 @@ h3 {
             background-position: 10%;
             background-repeat: no-repeat;
         }
+    }
+}
+
+// master
+
+.master {
+    padding-top: 150px;
+
+    .container {
+
+
+    .form {
+        height: 295px;
+        width: 1224px;
+        padding: 0.1px;
+        background:  url(../img/opacity.png) left no-repeat ,url(../img/courrier.png) right no-repeat;
+        
+
+        .about-form {
+            width: 843px;
+            height: 206px;
+            margin-top: 45px;
+            margin-left: 45px;
+            display: flex;
+            justify-content: space-evenly;
+
+            .information-form {
+                display: flex;
+                flex-direction: column;
+                width: 438px;
+                height: 206px;
+
+                h6 {
+                    width: 260px;
+                    height: 24px;
+                    font-weight: $extra-bold;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                }
+
+                p {
+                    width: 438px;
+                    height: 75px;
+                    margin-top: 15px;
+                    font-size: $fz15;
+                    font-weight: $medium;
+                }
+
+                ul {
+                    
+
+                    li:nth-child(1) {
+                        margin-bottom: 10px;
+                        color: $bold-pink;
+                        font-weight: $extra-bold;
+                        font-size: $fz18;
+                    }
+
+                    li:nth-child(2) {
+                        a{
+                        font-size: $fz12;
+                        color: $bold-pink;
+                        font-weight: $medium; 
+                        }
+                       
+                    }
+                }
+            }
+        }
+
+        .block-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0.1px;
+            
+            input {
+            width: 300px;
+            height: 50px;
+            border: 2px solid $light-gray;
+            padding-left: 20px;
+            background-color: $white;
+            
+            }
+
+            ::placeholder {
+                color: $bold-gray;
+                font-size: $fz15;
+                font-weight: $medium;
+                line-height: 20.25px;
+            }
+
+            button {
+                display: block;
+                width: 300px;
+                height: 50px;
+                border: none;
+                background-color: $bold-pink;
+                font-weight: $medium;
+                color: $white;
+                font-size: $fz15;
+                line-height: 20.25px;
+                margin-top: 25px;
+                
+            }
+        }
+    }
     }
 }
