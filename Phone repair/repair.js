@@ -10,6 +10,8 @@ function myFunctionOpen() {
     document.getElementById('video').style.opacity = '0.1';
     document.getElementById('opinion').style.opacity = '0.1';
     document.getElementById('reviews').style.opacity = '0.1';
+    document.getElementById('sale').style.opacity = '0.1';
+    document.getElementById('master').style.opacity = '0.1';
     // overflow-y for body + background
     document.getElementById('over').style.overflowY = 'hidden';
     document.getElementById('over').style.background = 'rgba(0,0,0,.7)';
@@ -23,6 +25,8 @@ function myFunctionOpen() {
     document.getElementById('video').style.filter = 'blur(5px)';
     document.getElementById('opinion').style.filter = 'blur(5px)';
     document.getElementById('reviews').style.filter = 'blur(5px)';
+    document.getElementById('sale').style.filter = 'blur(5px)';
+    document.getElementById('master').style.filter = 'blur(5px)';
     
 }
 
@@ -38,6 +42,8 @@ function myFunctionClose() {
     document.getElementById('video').style.opacity = '1';
     document.getElementById('opinion').style.opacity = '1';
     document.getElementById('reviews').style.opacity = '1';
+    document.getElementById('sale').style.opacity = '1';
+    document.getElementById('master').style.opacity = '1';
     
     // overflow-y for body + background
     document.getElementById('over').style.overflowY = '';
@@ -51,5 +57,9 @@ function myFunctionClose() {
     document.getElementById('brands').style.filter = '';
     document.getElementById('video').style.filter = ''; 
     document.getElementById('opinion').style.filter = '';
-    document.getElementById('reviews').style.filter = ''; 
+    document.getElementById('reviews').style.filter = '';
+    document.getElementById('sale').style.filter = '';
+    document.getElementById('master').style.filter = ''; 
 }
+
+

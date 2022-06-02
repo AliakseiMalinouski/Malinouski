@@ -14,6 +14,7 @@ $fz: 16px;
 $fz12: $fz - 4;
 $fz15: $fz - 1;
 $fz18: $fz + 2;
+$fz24: $fz + 8;
 $fz26: $fz + 10;
 $fz28: $fz + 12;
 $fz36: $fz + 20;
@@ -74,6 +75,7 @@ h2 {
     font-size: $fz36;
     line-height: 48.6px;
     color: $black;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -2357,6 +2359,121 @@ h3 {
 
     .container {
         
+
+        .slide_1 {
+            height: 420px;
+            padding: 0.1px;
+
+
+            .wrap {
+                height: 369px;
+                padding: 0.1px;
+                background-image: url(../img/sale-fone.png);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+            }
+
+            h3 {
+                margin-left: 53px;
+                margin-top: 45px;
+                margin-bottom: 50px;
+            }
+
+            .typewriter {
+                margin-left: 53px;
+                margin-top: 45px;
+                margin-bottom: 50px;
+                white-space: nowrap;
+                overflow: hidden;
+                transform: translateY(-50%);
+                animation: typewriter 8s infinite;
+            }
+
+            
+
+            @keyframes typewriter {
+                from{width: 0;}
+                to{width: 693px;}
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 705px;
+                height: 97px;
+                margin-left: 35px;
+
+                li:nth-child(1){
+                    font-weight: $medium;
+                    font-size: $fz24;
+                    color: $black;
+                    line-height: 39.6px;
+                    width: 321px;
+
+                    span {
+                        font-size: $fz24;
+                        font-weight: $extra-bold;
+                        color: $black;
+                        line-height: 39.6px;
+                    }
+                }
+
+                li:nth-child(2){
+                    font-weight: $bold800;
+                    line-height: 97.2px;
+                    font-size: 72px;
+                    color: $bold-pink;
+                    
+
+                    span {
+                        color: $black;
+                        line-height: 97.2px;
+                        font-weight: $bold;
+                        font-size: 72px;
+                        display: inline-block;
+                        margin-left: 7px;
+                    }
+                }
+            }
+
+            .links_wrap1 {
+                width: 574px;
+                height: 50px;
+                padding: 0.1px;
+                margin-left: 63px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+
+                a:nth-child(1) {
+                display: inline-block;
+                width: 286px;
+                height: 50px;
+                padding-left: 40px;
+                padding-top: 16px;
+                color: $white;
+                font-weight: $medium;
+                line-height: 18.29px;
+                font-size: $fz15;
+                background-color: $bold-pink;
+                
+            }
+
+            a:nth-child(2) {
+                color: $gray;
+                font-weight: $extra-bold;
+                line-height: 18.29px;
+                font-size: $fz15;
+            }
+
+            a:nth-child(2):after{
+                content: '>';
+                margin-left: 10px;
+            }
+            }    
+        }
+
     }
 }
 
