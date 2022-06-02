@@ -63,3 +63,13 @@ function myFunctionClose() {
 }
 
 
+var home;
+function CallTheMasterAtHome() {
+    if(document.getElementById('to_the_house')){
+        onclick = alert('Ваша заявка была отправлена!') = home;
+     }
+}
+
+
+
+
