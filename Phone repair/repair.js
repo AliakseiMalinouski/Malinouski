@@ -73,11 +73,6 @@ function CallTheMasterAtHome() {
 }
 
 
-function GetFocusOn() {
-    if (onclick = document.getElementById('input_master')) {
-        document.getElementById('pencil').style.display = 'block'; 
-    } 
-}
 
 
 
