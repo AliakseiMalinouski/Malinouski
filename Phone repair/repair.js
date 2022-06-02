@@ -63,12 +63,23 @@ function myFunctionClose() {
 }
 
 
+
+
 var home;
 function CallTheMasterAtHome() {
     if(document.getElementById('to_the_house')){
-        onclick = alert('Ваша заявка была отправлена!') = home;
+        onclick = alert('Ваша заявка была отправлена!\nОстались вопросы? Позвоните нам!') = home;
      }
 }
+
+
+function GetFocusOn() {
+    if (onclick = document.getElementById('input_master')) {
+        document.getElementById('pencil').style.display = 'block'; 
+    } 
+}
+
+
 
 
 

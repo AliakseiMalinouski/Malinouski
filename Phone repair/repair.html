@@ -39,7 +39,7 @@
                 телефоны
               </h1>
               <p>Починим Ваш телефон в Санкт-Петербурге</p>
-              <button class="open_button" onclick="myFunctionOpen()" type="button">Позвонить нам</button>
+              <button id="after_request" class="open_button" onclick="myFunctionOpen()" type="button">Позвонить нам</button>
           </div>
           <div class="hero-fone-mobile" id="hero-opacity">
               <img src="../Phone repair/img/phones-fone.png" alt="Смартфоны">
@@ -484,7 +484,8 @@
     <div class="master" id="master">
         <div class="container">
             <h3>Вызвать мастера</h3>
-            <div class="form">
+            <div id="off" class="form">
+                <img id="pencil" class="pencil" src="../Phone repair/video/gif.gif" alt="Карандашик">
                 <div class="about-form">
                 <div class="information-form">
                     <h6>Вызвать мастера на дом</h6>
@@ -499,7 +500,7 @@
                 <div class="block-form">
                     <h6>Заполните форму:</h6>
                     <form action="#" method="get">
-                    <input type="text" placeholder="Ваш телефон">
+                    <input onclick="GetFocusOn()" id="input_master" type="text" placeholder="Ваш телефон">
                     <button onclick="CallTheMasterAtHome()" id="to_the_house" type="submit">Вызвать мастера на дом</button>
                 </form>
                 </div>

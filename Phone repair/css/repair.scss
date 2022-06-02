@@ -1237,6 +1237,10 @@ h3 {
             height: 100px;
             position: relative;
             padding: 0.1px;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1289,6 +1293,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1344,6 +1352,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1397,6 +1409,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1450,6 +1466,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1511,6 +1531,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1563,6 +1587,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1616,6 +1644,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1668,6 +1700,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -1720,6 +1756,10 @@ h3 {
             width: 220px;
             height: 100px;
             position: relative;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
             img {
                 position: absolute;
@@ -2363,6 +2403,10 @@ h3 {
         .slide_1 {
             height: 420px;
             padding: 0.1px;
+             border: 1px solid #fff;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
 
 
             .wrap {
@@ -2489,7 +2533,23 @@ h3 {
         height: 295px;
         width: 1224px;
         padding: 0.1px;
-        background:  url(../img/opacity.png) left no-repeat ,url(../img/courrier.png) right no-repeat;
+        background:  url(../img/opacity.png) left no-repeat ,url(../img/courrier.png) right top no-repeat;
+        position: relative;
+        border: 1px solid #fff;
+        -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        box-shadow: 0px 0px 37px -9px #bfe0ff;
+
+
+        .pencil {
+           position: absolute;
+           width: 100px;
+           height: 100px;
+           top: 180px;
+           left: 380px;
+           display: none;
+
+        }
         
 
         .about-form {
