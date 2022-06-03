@@ -322,3 +322,17 @@ function CloseMapUnion() {
     document.getElementById('union11').style.display = 'block';
     document.getElementById('location_11').style.display = 'none';
 }
+
+// open text
+
+function OpenText() {
+    document.getElementById('next-about').style.display = 'block';
+    document.getElementById('open-text').style.display = 'none';
+    
+}
+
+function CloseText() {
+    document.getElementById('next-about').style.display = 'none';
+    document.getElementById('open-text').style.display = 'block';
+    
+}

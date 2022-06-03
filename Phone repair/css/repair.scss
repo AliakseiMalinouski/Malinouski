@@ -194,7 +194,7 @@ h3 {
 
          .modal_hero {
                 z-index: 3;
-                background-color: red;
+                background-color: $white;
                 width: 430px;
                 height: 350px;
                 position: absolute;
@@ -204,6 +204,11 @@ h3 {
                 // animation: modal_hero 3s;
                 opacity: 0;
                 animation: modal_hero 2s forwards;
+                padding: 0.1px;
+                border: 10px solid $light-blue;
+                background-image: url(../img/modal_hero_fone.jpg);
+                background-repeat: no-repeat;
+                background-position: bottom center;
 
                 @keyframes modal_hero {
                         0% {
@@ -217,13 +222,37 @@ h3 {
 
                 .close {
                     position: relative;
+                    padding: 0.1px;
 
                     .close-button {
                         position: absolute;
                         border: none;
                         top: 20px;
                         right: 20px;
+                        cursor: pointer;
                     }
+
+                    ul {
+                        margin-top: 100px;
+
+
+                        li {
+                        color: $bold-pink;
+                        font-size: $fz18;
+                        font-weight: $medium;
+                        margin-bottom: 20px;
+
+                        a {
+                        color: $bold-pink;
+                        font-size: $fz18;
+                        font-weight: $medium;
+                        }
+                    }
+                    }
+
+                    
+
+                    
                 }
          }
 
@@ -3479,6 +3508,67 @@ h3 {
             }
 
             
+        }
+
+        .about-center {
+            padding-top: 7px;
+
+            p {
+                color: $black;
+                line-height: 24.75px;
+                font-size: $fz15;
+                font-weight: $medium;
+            }
+
+            button {
+                width: 170px;
+                height: 20px;
+                color: $gray;
+                font-weight: $bold800;
+                font-size: $fz15;
+                line-height: 20.25px;
+                border: none;
+                background-color: $white;
+                display: block;
+                margin: 0 auto;
+                margin-top: 27px;
+            }
+
+            #open-text::after {
+                content: 'v';
+                margin-left: 7px;
+                
+            }
+
+            .next-about {
+
+                display: none;
+                animation: next-about 0.5s linear;
+                transform: translateY(10%);
+
+                @keyframes next-about {
+                    from {
+                            height: 0;
+                        }
+                    
+                        to {
+                            height: 275px;
+                        }
+                }
+
+                p {
+                    color: $black;
+                    line-height: 24.75px;
+                    font-size: $fz15;
+                    font-weight: $medium;
+                    margin-top: 40px;
+                }
+
+                #close-text::after {
+                    content: '^';
+                    margin-left: 7px;
+                }
+            }
         }
     }
 }

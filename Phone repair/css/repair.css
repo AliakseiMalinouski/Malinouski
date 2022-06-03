@@ -102,7 +102,7 @@ h3 {
     position: relative; }
     .hero .container .modal_hero {
       z-index: 3;
-      background-color: red;
+      background-color: #fff;
       width: 430px;
       height: 350px;
       position: absolute;
@@ -110,19 +110,37 @@ h3 {
       left: 420px;
       display: none;
       opacity: 0;
-      animation: modal_hero 2s forwards; }
+      animation: modal_hero 2s forwards;
+      padding: 0.1px;
+      border: 10px solid #BFE0FF;
+      background-image: url(../img/modal_hero_fone.jpg);
+      background-repeat: no-repeat;
+      background-position: bottom center; }
 @keyframes modal_hero {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
       .hero .container .modal_hero .close {
-        position: relative; }
+        position: relative;
+        padding: 0.1px; }
         .hero .container .modal_hero .close .close-button {
           position: absolute;
           border: none;
           top: 20px;
-          right: 20px; }
+          right: 20px;
+          cursor: pointer; }
+        .hero .container .modal_hero .close ul {
+          margin-top: 100px; }
+          .hero .container .modal_hero .close ul li {
+            color: #ff005c;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px; }
+            .hero .container .modal_hero .close ul li a {
+              color: #ff005c;
+              font-size: 18px;
+              font-weight: 500; }
     .hero .container h1 {
       width: 466px;
       height: 118px;
@@ -2345,5 +2363,45 @@ h3 {
         margin-left: 770px;
         margin-top: 10px;
         cursor: pointer; }
+  .contacts .container .about-center {
+    padding-top: 7px; }
+    .contacts .container .about-center p {
+      color: #000000;
+      line-height: 24.75px;
+      font-size: 15px;
+      font-weight: 500; }
+    .contacts .container .about-center button {
+      width: 170px;
+      height: 20px;
+      color: #C4C4C4;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 20.25px;
+      border: none;
+      background-color: #fff;
+      display: block;
+      margin: 0 auto;
+      margin-top: 27px; }
+    .contacts .container .about-center #open-text::after {
+      content: 'v';
+      margin-left: 7px; }
+    .contacts .container .about-center .next-about {
+      display: none;
+      animation: next-about 0.5s linear;
+      transform: translateY(10%); }
+@keyframes next-about {
+  from {
+    height: 0; }
+  to {
+    height: 275px; } }
+      .contacts .container .about-center .next-about p {
+        color: #000000;
+        line-height: 24.75px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 40px; }
+      .contacts .container .about-center .next-about #close-text::after {
+        content: '^';
+        margin-left: 7px; }
 
 /*# sourceMappingURL=repair.css.map */
