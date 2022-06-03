@@ -2641,11 +2641,11 @@ h3 {
     padding-top: 150px;
 
     .container {
+        padding: 0.1px;
 
         .criteria_1 {
             width: 1224px;
             height: 180px;
-            background-color: green;
             display: flex;
             justify-content: space-between;
 
@@ -2675,8 +2675,10 @@ h3 {
             div:nth-child(1) {
                 width: 386px;
                 height: 180px;
-                background-color: orange;
                 padding: 0.1px;
+                -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                box-shadow: 0px 0px 37px -9px #bfe0ff;
 
                 .border-bottom {
                     background-color: $light-blue;
@@ -2705,8 +2707,10 @@ h3 {
             div:nth-child(2) {
                 width: 386px;
                 height: 180px;
-                background-color: lightgreen;
                 padding: 0.1px;
+                -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                box-shadow: 0px 0px 37px -9px #bfe0ff;
                 h5:before {
                         content: '2';
                         margin-right: 20px;
@@ -2733,8 +2737,10 @@ h3 {
             div:nth-child(3) {
                 width: 386px;
                 height: 180px;
-                background-color: aqua;
                 padding: 0.1px;
+                -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                box-shadow: 0px 0px 37px -9px #bfe0ff;
                 h5:before {
                     content: '3';
                     margin-right: 20px;
@@ -2755,6 +2761,115 @@ h3 {
                     height: 2px;
                     width: 386px;
                     margin-bottom: 25px;
+                }
+            }
+        }
+
+        .criteria_2 {
+            margin-top: 30px;
+            width: 1224px;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.1px;
+
+            div:nth-child(1) {
+                width: 590px;
+                height: 120px;
+                padding: 0.1px;
+                display: flex;
+                -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                box-shadow: 0px 0px 37px -9px #bfe0ff;
+
+                h5 {
+                    width: 210px;
+                    height: 45px;
+                    color: $black;
+                    font-weight: $extra-bold;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                    margin-left: 30px;
+                    margin-top: 29px;
+                }
+
+                h5:before {
+                    content: '4';
+                    color: $bold-pink;
+                    font-size: $fz36;
+                    width: 25px;
+                    height: 49px;
+                    line-height: 48.6px;
+                    font-weight: $extra-bold;
+                    margin-right: 20px;
+                }
+
+                .border-right {
+                    height: 120px;
+                    width: 2px;
+                    background-color: $light-blue;
+                    margin-left: 25px;
+                }
+
+                p {
+                    width: 241px;
+                    height: 40px;
+                    color: $black;
+                    line-height: 20.25px;
+                    font-weight: $medium;
+                    font-size: $fz15;
+                    margin-top: 40px;
+                    margin-left: 25px;
+                }
+            }
+
+            div:nth-child(2) {
+                width: 590px;
+                height: 120px;
+                padding: 0.1px;
+                display: flex;
+                -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                box-shadow: 0px 0px 37px -9px #bfe0ff;
+
+                 h5 {
+                    width: 210px;
+                    height: 45px;
+                    color: $black;
+                    font-weight: $extra-bold;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                    margin-left: 30px;
+                    margin-top: 29px;
+                }
+
+                h5:before {
+                    content: '4';
+                    color: $bold-pink;
+                    font-size: $fz36;
+                    width: 25px;
+                    height: 49px;
+                    line-height: 48.6px;
+                    font-weight: $extra-bold;
+                    margin-right: 20px;
+                }
+
+                .border-right {
+                    height: 120px;
+                    width: 2px;
+                    background-color: $light-blue;
+                    margin-left: 25px;
+                }
+
+                p {
+                    width: 279px;
+                    height: 40px;
+                    color: $black;
+                    line-height: 20.25px;
+                    font-weight: $medium;
+                    font-size: $fz15;
+                    margin-top: 40px;
+                    margin-left: 25px;
                 }
             }
         }
