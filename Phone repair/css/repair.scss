@@ -2634,3 +2634,129 @@ h3 {
     }
     }
 }
+
+// work
+
+.work {
+    padding-top: 150px;
+
+    .container {
+
+        .criteria_1 {
+            width: 1224px;
+            height: 180px;
+            background-color: green;
+            display: flex;
+            justify-content: space-between;
+
+
+            h5 {
+                width: 188px;
+                height: 44px;
+                margin-top: 21px;
+                margin-left: 30px;
+                color: $black;
+                font-weight: $extra-bold;
+                font-size: 18px;
+                line-height: 24.3px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                margin-left: 25px;
+                color: $black;
+                font-size: $fz15;
+                line-height: 20.25px;
+                font-weight: $medium;
+                
+            }
+
+
+            div:nth-child(1) {
+                width: 386px;
+                height: 180px;
+                background-color: orange;
+                padding: 0.1px;
+
+                .border-bottom {
+                    background-color: $light-blue;
+                    height: 2px;
+                    width: 386px;
+                    margin-bottom: 25px;
+                }
+
+                h5:before {
+                    content: '1';
+                    margin-right: 20px;
+                    color: $bold-pink;
+                    line-height: 48.6px;
+                    font-size: $fz36;
+                    font-weight: $extra-bold;
+                    width: 15px;
+                    height: 49px;
+                }
+
+                p {
+                    width: 333px;
+                    height: 40px;
+                    
+                }
+            }
+            div:nth-child(2) {
+                width: 386px;
+                height: 180px;
+                background-color: lightgreen;
+                padding: 0.1px;
+                h5:before {
+                        content: '2';
+                        margin-right: 20px;
+                        color: $bold-pink;
+                        line-height: 48.6px;
+                        font-size: $fz36;
+                        font-weight: $extra-bold;
+                        width: 22px;
+                        height: 49px;
+                    }
+
+                    p {
+                        width: 319px;
+                        height: 40px;
+                    }
+                     .border-bottom {
+                    background-color: $light-blue;
+                    height: 2px;
+                    width: 386px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            div:nth-child(3) {
+                width: 386px;
+                height: 180px;
+                background-color: aqua;
+                padding: 0.1px;
+                h5:before {
+                    content: '3';
+                    margin-right: 20px;
+                    color: $bold-pink;
+                    line-height: 48.6px;
+                    font-size: $fz36;
+                    font-weight: $extra-bold;
+                    width: 22px;
+                    height: 49px;
+                }
+
+                p {
+                    width: 335px;
+                    height: 40px;
+                }
+                 .border-bottom {
+                    background-color: $light-blue;
+                    height: 2px;
+                    width: 386px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
