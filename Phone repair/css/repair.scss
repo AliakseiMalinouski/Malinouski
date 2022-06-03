@@ -3395,6 +3395,33 @@ h3 {
             }
 
 
+            #union9 {
+                position: absolute;
+                left: 550px;
+                top: 345px;
+            }
+
+
+            .location_9 {
+                    position: absolute;
+                    top: 70px;
+                    left: 192px;
+                    width: 850px;
+                    height: 550px;
+                    background-color: red;
+                    display: none;
+                    animation: location 1.5s forwards;
+                    padding: 0.1px;
+                
+                    img {
+                        margin-left: 770px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                
+                    }
+            }
+
+
             
 
             
