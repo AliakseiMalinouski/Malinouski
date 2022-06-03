@@ -106,8 +106,8 @@ function OpenMapUnion1() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
-    
-    
+    document.getElementById('union11').style.display = 'none';
+ 
 }
 
 // location 2
@@ -125,6 +125,7 @@ function OpenMapUnion2() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 
@@ -143,6 +144,7 @@ function OpenMapUnion3() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 // loction 4
@@ -160,6 +162,7 @@ function OpenMapUnion4() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 // location 5
@@ -177,6 +180,7 @@ function OpenMapUnion5() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 
@@ -195,6 +199,7 @@ function OpenMapUnion6() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 // location 7
@@ -212,6 +217,7 @@ function OpenMapUnion7() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 // location 8
@@ -229,6 +235,7 @@ function OpenMapUnion8() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 // location 9
@@ -246,7 +253,7 @@ function OpenMapUnion9() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
-    
+    document.getElementById('union11').style.display = 'none';
 }
 
 // location 10
@@ -264,6 +271,26 @@ function OpenMapUnion10() {
     document.getElementById('union8').style.display = 'none';
     document.getElementById('union9').style.display = 'none';
     document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
+}
+
+// location 11
+
+
+function OpenMapUnion11() {
+    document.getElementById('location_11').style.display = 'block';
+    document.getElementById('map').style.backgroundImage = 'none';
+    document.getElementById('union1').style.display = 'none';
+    document.getElementById('union2').style.display = 'none';
+    document.getElementById('union3').style.display = 'none';
+    document.getElementById('union4').style.display = 'none';
+    document.getElementById('union5').style.display = 'none';
+    document.getElementById('union6').style.display = 'none';
+    document.getElementById('union7').style.display = 'none';
+    document.getElementById('union8').style.display = 'none';
+    document.getElementById('union9').style.display = 'none';
+    document.getElementById('union10').style.display = 'none';
+    document.getElementById('union11').style.display = 'none';
 }
 
 
@@ -292,4 +319,6 @@ function CloseMapUnion() {
     document.getElementById('location_9').style.display = 'none';
     document.getElementById('union10').style.display = 'block';
     document.getElementById('location_10').style.display = 'none';
+    document.getElementById('union11').style.display = 'block';
+    document.getElementById('location_11').style.display = 'none';
 }
