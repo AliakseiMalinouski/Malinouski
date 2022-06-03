@@ -3316,6 +3316,87 @@ h3 {
                     }
             }
 
+
+            #union6 {
+                position: absolute;
+                left: 505px;
+                top: 210px;
+            }
+
+            .location_6 {
+                    position: absolute;
+                    top: 70px;
+                    left: 192px;
+                    width: 850px;
+                    height: 550px;
+                    background-color: red;
+                    display: none;
+                    animation: location 1.5s forwards;
+                    padding: 0.1px;
+                
+                    img {
+                        margin-left: 770px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                
+                    }
+            }
+
+
+            #union7 {
+                position: absolute;
+                left: 692px;
+                top: 280px;
+            }
+
+            .location_7 {
+                    position: absolute;
+                    top: 70px;
+                    left: 192px;
+                    width: 850px;
+                    height: 550px;
+                    background-color: red;
+                    display: none;
+                    animation: location 1.5s forwards;
+                    padding: 0.1px;
+                
+                    img {
+                        margin-left: 770px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                
+                    }
+            }
+
+
+            #union8 {
+                position: absolute;
+                left: 330px;
+                top: 330px;
+            }
+
+            .location_8 {
+                    position: absolute;
+                    top: 70px;
+                    left: 192px;
+                    width: 850px;
+                    height: 550px;
+                    background-color: red;
+                    display: none;
+                    animation: location 1.5s forwards;
+                    padding: 0.1px;
+                
+                    img {
+                        margin-left: 770px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                
+                    }
+            }
+
+
+            
+
             
         }
     }
