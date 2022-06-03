@@ -2141,6 +2141,11 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     position: relative; }
+    .contacts .container .map #union1 {
+      position: absolute;
+      left: 370px; }
+    .contacts .container .map img {
+      cursor: pointer; }
     .contacts .container .map .location_1 {
       position: absolute;
       top: 70px;
@@ -2153,11 +2158,48 @@ h3 {
       padding: 0.1px; }
       .contacts .container .map .location_1 img {
         margin-left: 770px;
-        margin-top: 10px; }
-@keyframes location_1 {
+        margin-top: 10px;
+        cursor: pointer; }
+@keyframes location {
   from {
     opacity: 0.4; }
   to {
     opacity: 1; } }
+    .contacts .container .map #union2 {
+      position: absolute;
+      left: 565px;
+      top: 20px; }
+    .contacts .container .map .location_2 {
+      position: absolute;
+      top: 70px;
+      left: 192px;
+      width: 850px;
+      height: 550px;
+      background-color: red;
+      display: none;
+      animation: location 1.5s forwards;
+      padding: 0.1px; }
+      .contacts .container .map .location_2 img {
+        margin-left: 770px;
+        margin-top: 10px;
+        cursor: pointer; }
+    .contacts .container .map #union3 {
+      position: absolute;
+      left: 435px;
+      top: 95px; }
+    .contacts .container .map .location_3 {
+      position: absolute;
+      top: 70px;
+      left: 192px;
+      width: 850px;
+      height: 550px;
+      background-color: red;
+      display: none;
+      animation: location 1.5s forwards;
+      padding: 0.1px; }
+      .contacts .container .map .location_3 img {
+        margin-left: 770px;
+        margin-top: 10px;
+        cursor: pointer; }
 
 /*# sourceMappingURL=repair.css.map */

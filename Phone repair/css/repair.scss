@@ -3172,6 +3172,15 @@ h3 {
             background-position: center;
             position: relative;
 
+            #union1 {
+                position: absolute;
+                left: 370px;
+            }
+
+            img {
+                cursor: pointer;
+            }
+
             .location_1 {
                 position: absolute;
                 top: 70px;
@@ -3188,10 +3197,13 @@ h3 {
                 img {
                     margin-left: 770px;
                     margin-top: 10px;
+                    cursor: pointer;
                 }
-            }
 
-            @keyframes location_1 {
+                
+            }
+            
+            @keyframes location {
                 from{
                     opacity: 0.4;
                 }
@@ -3200,6 +3212,60 @@ h3 {
                     opacity: 1;
                 }
             }
+
+            #union2 {
+                position: absolute;
+                left: 565px;
+                top: 20px;
+            }
+
+            .location_2 {
+                position: absolute;
+                top: 70px;
+                left: 192px;
+                width: 850px;
+                height: 550px;
+                background-color: red;
+                display: none;
+                animation: location 1.5s forwards;
+                padding: 0.1px;
+                
+
+                img {
+                        margin-left: 770px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                        
+                    }
+            }
+
+            #union3 {
+                position: absolute;
+                left: 435px;
+                top: 95px;
+                
+            }
+
+            .location_3 {
+                position: absolute;
+                top: 70px;
+                left: 192px;
+                width: 850px;
+                height: 550px;
+                background-color: red;
+                display: none;
+                animation: location 1.5s forwards;
+                padding: 0.1px;
+
+                img {
+                        margin-left: 770px;
+                        margin-top: 10px;
+                        cursor: pointer;
+                
+                    }
+            }
+
+            
         }
     }
 }

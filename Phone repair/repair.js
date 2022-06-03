@@ -90,24 +90,53 @@ function CallTheMasterAtHome() {
      }
 }
 
-function OpenMap() {
+
+// loction1
+
+function OpenMapUnion1() {
     // location_1
     document.getElementById('location_1').style.display = 'block';
     document.getElementById('map').style.backgroundImage = 'none';
-    document.getElementById('union1').style.display = 'none'
+    document.getElementById('union1').style.display = 'none';
+    document.getElementById('union2').style.display = 'none';
+    document.getElementById('union3').style.display = 'none';
     
     
 }
 
-function CloseMap() {
-    // location_1
+// location 2
+
+function OpenMapUnion2() {
+    document.getElementById('location_2').style.display = 'block';
+    document.getElementById('map').style.backgroundImage = 'none';
+    document.getElementById('union1').style.display = 'none';
+    document.getElementById('union2').style.display = 'none';
+    document.getElementById('union3').style.display = 'none';
+}
+
+
+// location 3
+
+function OpenMapUnion3() {
+    document.getElementById('location_3').style.display = 'block';
+    document.getElementById('map').style.backgroundImage = 'none';
+    document.getElementById('union1').style.display = 'none';
+    document.getElementById('union2').style.display = 'none';
+    document.getElementById('union3').style.display = 'none';
+}
+
+
+
+
+
+
+
+function CloseMapUnion() {
     document.getElementById('location_1').style.display = 'none';
     document.getElementById('union1').style.display = 'block';
     document.getElementById('map').style.backgroundImage = '';
+    document.getElementById('union2').style.display = 'block';
+    document.getElementById('location_2').style.display = 'none';
+    document.getElementById('union3').style.display = 'block';
+    document.getElementById('location_3').style.display = 'none';
 }
-
-
-
-
-
-
