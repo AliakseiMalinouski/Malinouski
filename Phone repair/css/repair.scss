@@ -1264,7 +1264,7 @@ h3 {
            }
 
            .xiaomi:hover {
-              animation: xiaomi 2s forwards;
+              animation: xiaomi 2.5s forwards;
               animation-iteration-count: 1;
               
                
@@ -2872,6 +2872,57 @@ h3 {
                     margin-left: 25px;
                 }
             }
+        }
+    }
+}
+
+// our service center
+
+.our_service_center {
+    padding-top: 150px;
+
+    .container {
+
+
+        button {
+            width: 15px;
+            height: 15px;
+            background-color: $bold-pink !important;
+            border-radius: 50%;
+        }
+        
+        .carousel-indicators {
+            top: 340px;
+
+
+            
+        }
+
+        .pictures {
+           
+
+            .picture-slides {   
+                display: flex;
+                justify-content: space-evenly;
+
+                img:nth-child(1):hover {
+                        transform: scale(1.1);
+                        transition: 1.5s;
+                    }
+
+                img:nth-child(2):hover {
+                    transform: scale(1.1);
+                    transition: 1.5s;
+                }
+
+                img:nth-child(3):hover {
+                    transform: scale(1.1);
+                    transition: 1.5s;
+                }
+                
+            }
+
+     
         }
     }
 }

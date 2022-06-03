@@ -858,7 +858,7 @@ h3 {
         top: 35px;
         display: none; }
     .brands .container .mobile_brands_block_one .xiaomi:hover {
-      animation: xiaomi 2s forwards;
+      animation: xiaomi 2.5s forwards;
       animation-iteration-count: 1; }
 @keyframes xiaomi {
   from {
@@ -1961,5 +1961,27 @@ h3 {
           font-size: 15px;
           margin-top: 40px;
           margin-left: 25px; }
+
+.our_service_center {
+  padding-top: 150px; }
+  .our_service_center .container button {
+    width: 15px;
+    height: 15px;
+    background-color: #ff005c !important;
+    border-radius: 50%; }
+  .our_service_center .container .carousel-indicators {
+    top: 340px; }
+  .our_service_center .container .pictures .picture-slides {
+    display: flex;
+    justify-content: space-evenly; }
+    .our_service_center .container .pictures .picture-slides img:nth-child(1):hover {
+      transform: scale(1.1);
+      transition: 1.5s; }
+    .our_service_center .container .pictures .picture-slides img:nth-child(2):hover {
+      transform: scale(1.1);
+      transition: 1.5s; }
+    .our_service_center .container .pictures .picture-slides img:nth-child(3):hover {
+      transform: scale(1.1);
+      transition: 1.5s; }
 
 /*# sourceMappingURL=repair.css.map */
