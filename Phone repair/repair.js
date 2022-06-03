@@ -94,12 +94,12 @@ function CallTheMasterAtHome() {
 // loction1
 
 function OpenMapUnion1() {
-    // location_1
     document.getElementById('location_1').style.display = 'block';
     document.getElementById('map').style.backgroundImage = 'none';
     document.getElementById('union1').style.display = 'none';
     document.getElementById('union2').style.display = 'none';
     document.getElementById('union3').style.display = 'none';
+    document.getElementById('union4').style.display = 'none';
     
     
 }
@@ -112,6 +112,7 @@ function OpenMapUnion2() {
     document.getElementById('union1').style.display = 'none';
     document.getElementById('union2').style.display = 'none';
     document.getElementById('union3').style.display = 'none';
+    document.getElementById('union4').style.display = 'none';
 }
 
 
@@ -123,12 +124,22 @@ function OpenMapUnion3() {
     document.getElementById('union1').style.display = 'none';
     document.getElementById('union2').style.display = 'none';
     document.getElementById('union3').style.display = 'none';
+    document.getElementById('union4').style.display = 'none';
+}
+
+// loction 4
+
+function OpenMapUnion4() {
+    document.getElementById('location_4').style.display = 'block';
+    document.getElementById('map').style.backgroundImage = 'none';
+    document.getElementById('union1').style.display = 'none';
+    document.getElementById('union2').style.display = 'none';
+    document.getElementById('union3').style.display = 'none';
+    document.getElementById('union4').style.display = 'none';
 }
 
 
-
-
-
+// close
 
 
 function CloseMapUnion() {
@@ -139,4 +150,6 @@ function CloseMapUnion() {
     document.getElementById('location_2').style.display = 'none';
     document.getElementById('union3').style.display = 'block';
     document.getElementById('location_3').style.display = 'none';
+    document.getElementById('union4').style.display = 'block';
+    document.getElementById('location_4').style.display = 'none'
 }
