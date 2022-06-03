@@ -2057,6 +2057,7 @@ h3 {
 .contacts {
   padding-top: 150px; }
   .contacts .container .contacts-information {
+    width: 1224px;
     display: flex;
     justify-content: space-between; }
     .contacts .container .contacts-information div:nth-child(1) {
@@ -2133,5 +2134,30 @@ h3 {
         font-size: 18px;
         color: #000000;
         font-weight: 800; }
+  .contacts .container .map {
+    width: 1224px;
+    height: 500px;
+    background-image: url(../img/big_map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+    .contacts .container .map .location_1 {
+      position: absolute;
+      top: 70px;
+      left: 192px;
+      width: 850px;
+      height: 550px;
+      background-color: red;
+      display: none;
+      animation: location_1 1.5s forwards;
+      padding: 0.1px; }
+      .contacts .container .map .location_1 img {
+        margin-left: 770px;
+        margin-top: 10px; }
+@keyframes location_1 {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=repair.css.map */

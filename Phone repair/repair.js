@@ -12,6 +12,10 @@ function myFunctionOpen() {
     document.getElementById('reviews').style.opacity = '0.1';
     document.getElementById('sale').style.opacity = '0.1';
     document.getElementById('master').style.opacity = '0.1';
+    document.getElementById('work').style.opacity = '0.1';
+    document.getElementById('our_service_center').style.opacity = '0.1';
+    document.getElementById('courier').style.opacity = '0.1';
+    document.getElementById('contacts').style.opacity = '0.1';
     // overflow-y for body + background
     document.getElementById('over').style.overflowY = 'hidden';
     document.getElementById('over').style.background = 'rgba(0,0,0,.7)';
@@ -27,6 +31,10 @@ function myFunctionOpen() {
     document.getElementById('reviews').style.filter = 'blur(5px)';
     document.getElementById('sale').style.filter = 'blur(5px)';
     document.getElementById('master').style.filter = 'blur(5px)';
+    document.getElementById('work').style.filter = 'blur(5px)';
+    document.getElementById('our_service_center').style.filter = 'blur(5px)';
+    document.getElementById('courier').style.filter = 'blur(5px)';
+    document.getElementById('contacts').style.filter = 'blur(5px)';
     
 }
 
@@ -44,6 +52,10 @@ function myFunctionClose() {
     document.getElementById('reviews').style.opacity = '1';
     document.getElementById('sale').style.opacity = '1';
     document.getElementById('master').style.opacity = '1';
+    document.getElementById('work').style.opacity = '1';
+    document.getElementById('our_service_center').style.opacity = '1';
+    document.getElementById('courier').style.opacity = '1';
+    document.getElementById('contacts').style.opacity = '1';
     
     // overflow-y for body + background
     document.getElementById('over').style.overflowY = '';
@@ -59,7 +71,13 @@ function myFunctionClose() {
     document.getElementById('opinion').style.filter = '';
     document.getElementById('reviews').style.filter = '';
     document.getElementById('sale').style.filter = '';
-    document.getElementById('master').style.filter = ''; 
+    document.getElementById('master').style.filter = '';
+    document.getElementById('work').style.filter = '';
+    document.getElementById('our_service_center').style.filter = '';
+    document.getElementById('courier').style.filter = '';
+    document.getElementById('contacts').style.filter = '';
+    
+    
 }
 
 
@@ -72,7 +90,21 @@ function CallTheMasterAtHome() {
      }
 }
 
+function OpenMap() {
+    // location_1
+    document.getElementById('location_1').style.display = 'block';
+    document.getElementById('map').style.backgroundImage = 'none';
+    document.getElementById('union1').style.display = 'none'
+    
+    
+}
 
+function CloseMap() {
+    // location_1
+    document.getElementById('location_1').style.display = 'none';
+    document.getElementById('union1').style.display = 'block';
+    document.getElementById('map').style.backgroundImage = '';
+}
 
 
 
