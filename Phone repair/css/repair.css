@@ -2219,5 +2219,23 @@ h3 {
         margin-left: 770px;
         margin-top: 10px;
         cursor: pointer; }
+    .contacts .container .map #union5 {
+      position: absolute;
+      left: 280px;
+      top: 160px; }
+    .contacts .container .map .location_5 {
+      position: absolute;
+      top: 70px;
+      left: 192px;
+      width: 850px;
+      height: 550px;
+      background-color: red;
+      display: none;
+      animation: location 1.5s forwards;
+      padding: 0.1px; }
+      .contacts .container .map .location_5 img {
+        margin-left: 770px;
+        margin-top: 10px;
+        cursor: pointer; }
 
 /*# sourceMappingURL=repair.css.map */

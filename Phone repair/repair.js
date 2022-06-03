@@ -138,6 +138,18 @@ function OpenMapUnion4() {
     document.getElementById('union4').style.display = 'none';
 }
 
+// location 5
+
+function OpenMapUnion5() {
+    document.getElementById('location_5').style.display = 'block';
+    document.getElementById('map').style.backgroundImage = 'none';
+    document.getElementById('union1').style.display = 'none';
+    document.getElementById('union2').style.display = 'none';
+    document.getElementById('union3').style.display = 'none';
+    document.getElementById('union4').style.display = 'none';
+    document.getElementById('union5').style.display = 'none';
+}
+
 
 // close
 
@@ -152,4 +164,6 @@ function CloseMapUnion() {
     document.getElementById('location_3').style.display = 'none';
     document.getElementById('union4').style.display = 'block';
     document.getElementById('location_4').style.display = 'none'
+    document.getElementById('union5').style.display = 'block';
+    document.getElementById('location_5').style.display = 'none'
 }
