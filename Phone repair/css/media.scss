@@ -877,7 +877,106 @@ $bold800: 800;
 
         .container {
 
-            
+            .contacts-information {
+
+
+                .contact-list-1 {
+                    width: auto;
+                    padding-right: 10px;
+
+                    ul:nth-child(1) {
+
+                        li:nth-child(1){
+                        font-size: $fz15 - 1;
+                    }
+                    li:nth-child(2) {
+                        font-size: $fz18 - 3;
+                        
+                    }
+                    }
+
+                    
+                }
+
+                .contact-list-2 {
+                    width: auto;
+
+                    ul {
+
+                        li:nth-child(2) {
+                            font-size: $fz18 - 2;
+
+                        }
+                    }
+                }
+
+               .contact-list-3 {
+                ul:nth-child(1) {
+                
+                        li:nth-child(1) {
+                            font-size: $fz18 - 2;
+                        }
+                
+                        li:nth-child(2) {
+                            font-size: $fz18 - 2;
+                
+                        }
+                        li:nth-child(3) {
+                            font-size: $fz18 - 2;
+                
+                        }
+                    }
+
+               
+               }
+            }
+
+            .map {
+
+                #union1 {
+                    left: 30px;
+                }
+
+                #union2 {
+                    left: 225px;
+                }
+
+                #union3 {
+                    left: 95px;
+                }
+
+                #union4 {
+                    left: 310px;
+                }
+
+                #union5 {
+                    left: 0px;
+                }
+
+                #union6 {
+                    left: 175px;
+                }
+
+                #union7 {
+                    left: 362px;
+                }
+
+                #union8 {
+                    left: 0px;
+                }
+
+                #union9 {
+                    left: 180px;
+                }
+
+                #union10 {
+                    left: 0px;
+                }
+
+                #union11 {
+                    left: 180px;
+                }
+            }
         }
     }
 }
