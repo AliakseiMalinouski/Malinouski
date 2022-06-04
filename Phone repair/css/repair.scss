@@ -3581,12 +3581,17 @@ h3 {
 
     .container {
         padding: 0.1px;
-        background-color: lightgreen;
+        
 
-        .arrive {
+        .wrap_footer {
             padding: 0.1px;
-            width: 561px;
-            background-color: orange;
+            display: flex;
+            justify-content: space-between; 
+            
+            .arrive {
+            padding: 0.1px;
+            width: 611px;
+            border-right: 2px solid $light-blue;
 
 
             ul:nth-child(1) {
@@ -3696,5 +3701,115 @@ h3 {
                }
             }
         }
+        .company {
+            width: 243px;
+            height: 396px;
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            border-right: 2px solid $light-blue;
+            
+
+            ul {
+               
+
+                li {
+                    margin-bottom: 25px
+                }
+
+                li:first-child {
+                    color: $black;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                    font-weight: $extra-bold;
+                }
+
+                li:nth-child(2) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(3) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(4) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(5) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(6) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                
+                
+            }
+        }
+
+        .repair-brands {
+            width: 288px;
+            height: 396px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.1px;
+
+            ul {
+
+                li {
+                    margin-bottom: 20px;
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+            }
+
+            ul:first-child {
+                margin-top: 54px;
+
+                li:nth-child(1) {
+                    color: $black;
+                    font-size: $fz18 - 2;
+                    line-height: 24.3px;
+                    font-weight: $extra-bold;
+                }
+            }
+
+            ul:last-child{
+                margin-top: 98px;
+            }
+        }
+        }
+
+        .end_footer {
+            width: 1224px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+
+            h6 {
+                color: $gray;
+                font-size: $fz15;
+                font-weight: $medium;
+                line-height: 18.29px;
+            }
+        }
+
+      
     }
 }

@@ -2407,89 +2407,164 @@ h3 {
 .footer {
   padding-top: 152px; }
   .footer .container {
-    padding: 0.1px;
-    background-color: lightgreen; }
-    .footer .container .arrive {
+    padding: 0.1px; }
+    .footer .container .wrap_footer {
       padding: 0.1px;
-      width: 561px;
-      background-color: orange; }
-      .footer .container .arrive ul:nth-child(1) {
-        width: 425px;
-        height: 32px;
+      display: flex;
+      justify-content: space-between; }
+      .footer .container .wrap_footer .arrive {
+        padding: 0.1px;
+        width: 611px;
+        border-right: 2px solid #BFE0FF; }
+        .footer .container .wrap_footer .arrive ul:nth-child(1) {
+          width: 425px;
+          height: 32px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .footer .container .wrap_footer .arrive ul:nth-child(1) li:nth-child(1) {
+            font-size: 26px;
+            font-weight: 300;
+            color: #000000;
+            line-height: 31.69px; }
+            .footer .container .wrap_footer .arrive ul:nth-child(1) li:nth-child(1) span {
+              color: #ff005c;
+              font-size: 26px;
+              font-weight: 800;
+              line-height: 31.69px;
+              text-transform: uppercase; }
+          .footer .container .wrap_footer .arrive ul:nth-child(1) li:nth-child(2) {
+            color: #C4C4C4;
+            line-height: 21.94px;
+            font-weight: 400;
+            font-size: 16px; }
+        .footer .container .wrap_footer .arrive h6 {
+          color: #000000;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24.3px;
+          margin-left: 30px; }
+        .footer .container .wrap_footer .arrive .list_2 {
+          width: 519px;
+          height: 30px;
+          display: flex;
+          justify-content: space-between; }
+          .footer .container .wrap_footer .arrive .list_2 li:nth-child(1) {
+            color: #ff005c;
+            font-weight: 600;
+            line-height: 29.7px;
+            font-size: 18px; }
+          .footer .container .wrap_footer .arrive .list_2 li:nth-child(2) {
+            color: #C4C4C4;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20.25px; }
+        .footer .container .wrap_footer .arrive p {
+          width: 531px;
+          height: 125px;
+          color: #000000;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 24.75px;
+          margin-left: 30px; }
+        .footer .container .wrap_footer .arrive ul:last-child {
+          width: 403px;
+          height: 54px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          background-image: url(../img/metro.png);
+          background-repeat: no-repeat;
+          background-position: 54% 50%;
+          align-items: center; }
+          .footer .container .wrap_footer .arrive ul:last-child li:nth-child(1) {
+            width: 178px;
+            height: 54px;
+            color: #C4C4C4;
+            font-size: 15px;
+            line-height: 20.25px;
+            font-weight: 500; }
+            .footer .container .wrap_footer .arrive ul:last-child li:nth-child(1) span {
+              color: #ff005c;
+              line-height: 29.7px;
+              font-weight: 600;
+              font-size: 16px; }
+          .footer .container .wrap_footer .arrive ul:last-child li:nth-child(2) {
+            line-height: 20.25px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #000000; }
+      .footer .container .wrap_footer .company {
+        width: 243px;
+        height: 396px;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        border-right: 2px solid #BFE0FF; }
+        .footer .container .wrap_footer .company ul li {
+          margin-bottom: 25px; }
+        .footer .container .wrap_footer .company ul li:first-child {
+          color: #000000;
+          font-size: 18px;
+          line-height: 24.3px;
+          font-weight: 700; }
+        .footer .container .wrap_footer .company ul li:nth-child(2) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(3) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(4) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(5) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(6) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+      .footer .container .wrap_footer .repair-brands {
+        width: 288px;
+        height: 396px;
         display: flex;
         justify-content: space-between;
-        align-items: center; }
-        .footer .container .arrive ul:nth-child(1) li:nth-child(1) {
-          font-size: 26px;
-          font-weight: 300;
+        padding: 0.1px; }
+        .footer .container .wrap_footer .repair-brands ul li {
+          margin-bottom: 20px;
           color: #000000;
-          line-height: 31.69px; }
-          .footer .container .arrive ul:nth-child(1) li:nth-child(1) span {
-            color: #ff005c;
-            font-size: 26px;
-            font-weight: 800;
-            line-height: 31.69px;
-            text-transform: uppercase; }
-        .footer .container .arrive ul:nth-child(1) li:nth-child(2) {
-          color: #C4C4C4;
-          line-height: 21.94px;
-          font-weight: 400;
-          font-size: 16px; }
-      .footer .container .arrive h6 {
-        color: #000000;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 24.3px;
-        margin-left: 30px; }
-      .footer .container .arrive .list_2 {
-        width: 519px;
-        height: 30px;
-        display: flex;
-        justify-content: space-between; }
-        .footer .container .arrive .list_2 li:nth-child(1) {
-          color: #ff005c;
-          font-weight: 600;
-          line-height: 29.7px;
-          font-size: 18px; }
-        .footer .container .arrive .list_2 li:nth-child(2) {
-          color: #C4C4C4;
           font-weight: 500;
-          font-size: 15px;
-          line-height: 20.25px; }
-      .footer .container .arrive p {
-        width: 531px;
-        height: 125px;
-        color: #000000;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .repair-brands ul:first-child {
+          margin-top: 54px; }
+          .footer .container .wrap_footer .repair-brands ul:first-child li:nth-child(1) {
+            color: #000000;
+            font-size: 16px;
+            line-height: 24.3px;
+            font-weight: 700; }
+        .footer .container .wrap_footer .repair-brands ul:last-child {
+          margin-top: 98px; }
+    .footer .container .end_footer {
+      width: 1224px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px; }
+      .footer .container .end_footer h6 {
+        color: #C4C4C4;
         font-size: 15px;
         font-weight: 500;
-        line-height: 24.75px;
-        margin-left: 30px; }
-      .footer .container .arrive ul:last-child {
-        width: 403px;
-        height: 54px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        background-image: url(../img/metro.png);
-        background-repeat: no-repeat;
-        background-position: 54% 50%;
-        align-items: center; }
-        .footer .container .arrive ul:last-child li:nth-child(1) {
-          width: 178px;
-          height: 54px;
-          color: #C4C4C4;
-          font-size: 15px;
-          line-height: 20.25px;
-          font-weight: 500; }
-          .footer .container .arrive ul:last-child li:nth-child(1) span {
-            color: #ff005c;
-            line-height: 29.7px;
-            font-weight: 600;
-            font-size: 16px; }
-        .footer .container .arrive ul:last-child li:nth-child(2) {
-          line-height: 20.25px;
-          font-size: 15px;
-          font-weight: 500;
-          color: #000000; }
+        line-height: 18.29px; }
 
 /*# sourceMappingURL=repair.css.map */
