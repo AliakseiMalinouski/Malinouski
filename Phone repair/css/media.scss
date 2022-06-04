@@ -774,4 +774,110 @@ $bold800: 800;
             }
         }
     }
+
+    // master
+
+    .master {
+
+        .container {
+            height: 600px;
+            
+
+            .form {
+                width: 540px;
+                height: 500px;
+                background: none;
+
+                .about-form {
+                    width: 540px;
+                    height: auto;
+                    flex-direction: column;
+
+
+                    .information-form {
+
+                        ul {
+
+                            li {
+                                width: 200px;
+                            }
+                        }
+                    }
+
+                    .block-form {
+
+                        h6 {
+                           width: 200px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    // work
+
+
+    .work {
+
+        .container {
+
+            .criteria_1 {
+
+                div:nth-child(1) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    // our service center 
+
+    .our_service_center {
+
+        .container {
+            height: 1250px;
+
+
+            .carousel {
+                height: 1050px;
+
+                .carousel-indicators {
+                    top: 1000px;
+                }
+            }
+
+            
+        }
+    }
+
+    // courier 
+
+
+    .courier {
+
+        .container {
+            height: 500px;
+
+            .call-up {
+                width: 560px;
+                background: none;
+                flex-direction: column;
+                height: 400px;
+            }
+        }
+    }
+
+
+    // contacts
+
+    .contacts {
+
+        .container {
+
+            
+        }
+    }
 }
