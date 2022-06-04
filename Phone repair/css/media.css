@@ -184,6 +184,55 @@
     .our_service_center .container .picture-slides {
       display: flex;
       justify-content: space-evenly;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap; }
+
+  .courier .container .call-up {
+    width: 960px; }
+
+  .contacts .container .contacts-information {
+    width: auto; }
+  .contacts .container .map {
+    width: auto; }
+    .contacts .container .map #union1 {
+      left: 220px; }
+    .contacts .container .map #union2 {
+      left: 425px; }
+    .contacts .container .map #union3 {
+      left: 285px; }
+    .contacts .container .map #union4 {
+      left: 510px;
+      top: 100px; }
+    .contacts .container .map #union5 {
+      left: 140px; }
+    .contacts .container .map #union6 {
+      left: 365px; }
+    .contacts .container .map #union7 {
+      left: 562px;
+      top: 260px; }
+    .contacts .container .map #union8 {
+      left: 190px;
+      top: 310px; }
+    .contacts .container .map #union9 {
+      left: 380px;
+      top: 345px; }
+    .contacts .container .map #union10 {
+      left: 30px; }
+    .contacts .container .map #union11 {
+      left: 320px; }
+
+  .footer .container .wrap_footer {
+    flex-direction: column;
+    align-items: center; }
+    .footer .container .wrap_footer .arrive {
+      border-right: none;
+      border-bottom: 2px solid #BFE0FF; }
+    .footer .container .wrap_footer .company {
+      border-right: none;
+      border-bottom: 2px solid #BFE0FF; }
+    .footer .container .wrap_footer .repair-brands {
+      border-right: none;
+      border-bottom: 2px solid #BFE0FF; }
+  .footer .container .end_footer {
+    width: auto; } }
 
 /*# sourceMappingURL=media.css.map */

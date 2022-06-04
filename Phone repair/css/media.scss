@@ -487,7 +487,108 @@ $bold800: 800;
 
         .container {
 
-            
+            .call-up {
+                width: 960px;
+            }
+        }
+    }
+
+    // contacts
+
+
+    .contacts {
+
+        .container {
+
+            .contacts-information {
+                width: auto;
+            }
+
+            .map {
+                width: auto;
+
+                #union1 {
+                    left: 220px;
+                }
+
+                #union2 {
+                    left: 425px;
+                }
+
+                #union3 {
+                    left: 285px;
+                }
+
+                #union4 {
+                    left: 510px;
+                    top: 100px;
+                }
+
+                #union5 {
+                    left: 140px;
+                }
+
+                #union6 {
+                    left: 365px;
+                }
+
+                #union7 {
+                    left: 562px;
+                    top: 260px;
+                }
+
+                #union8 {
+                    left: 190px;
+                    top: 310px;
+                    
+                }
+
+                #union9 {
+                    left: 380px;
+                    top: 345px;
+                }
+
+                #union10 {
+                    left: 30px;
+                }
+
+                #union11 {
+                    left: 320px;
+                }
+            }
+        }
+    }
+
+    // footer 
+
+    .footer {
+
+        .container {
+
+            .wrap_footer {
+                flex-direction: column;
+                align-items: center;
+                
+
+                .arrive {
+                    border-right: none;
+                    border-bottom: 2px solid $light-blue;
+                }
+
+                .company {
+                    border-right: none;
+                    border-bottom: 2px solid $light-blue;
+                }
+
+                .repair-brands {
+                    border-right: none;
+                    border-bottom: 2px solid $light-blue;
+                }
+            }
+
+            .end_footer {
+                width: auto;
+            }
         }
     }
 }
