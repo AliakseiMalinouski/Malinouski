@@ -284,6 +284,34 @@
   .repair .container .right__blocks .speaker {
     width: 560px; }
   .repair .container .right__blocks .other-problems {
-    width: 560px; } }
+    width: 560px; }
+
+  .video .container .play-video {
+    width: 560px;
+    height: auto; }
+
+  .sale .container .slide_1 {
+    height: 500px;
+    padding: 0.1px; }
+    .sale .container .slide_1 ul {
+      flex-direction: column; }
+      .sale .container .slide_1 ul li {
+        width: auto; }
+    .sale .container .slide_1 .wrap {
+      padding: 0.1px;
+      height: 500px;
+      background-size: 80%; }
+      .sale .container .slide_1 .wrap ul li:nth-child(2) {
+        width: 400px; }
+      .sale .container .slide_1 .wrap .typewriter {
+        width: 420px;
+        font-size: 22px; }
+  @keyframes typewriter {
+    from {
+      width: 0; }
+    to {
+      width: 420px; } }
+      .sale .container .slide_1 .wrap .links_wrap1 {
+        margin-top: 100px; } }
 
 /*# sourceMappingURL=media.css.map */
