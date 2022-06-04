@@ -422,6 +422,8 @@
       height: 376px;
       display: flex;
       flex-direction: column; }
+    .hero .container .modal_hero {
+      left: 20px; }
 
   .video .container .play-video {
     width: 460px; } }

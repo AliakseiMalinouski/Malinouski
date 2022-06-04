@@ -19,6 +19,7 @@ function myFunctionOpen() {
     // overflow-y for body + background
     document.getElementById('over').style.overflowY = 'hidden';
     document.getElementById('over').style.background = 'rgba(0,0,0,.7)';
+    document.getElementById('none-fone').style.background = 'none';
     // blur for header + rel + repair + hero
     document.getElementById('hero-opacity').style.filter = 'blur(5px)';
     document.getElementById('rel-opacity').style.filter = 'blur(5px)';
@@ -60,6 +61,7 @@ function myFunctionClose() {
     // overflow-y for body + background
     document.getElementById('over').style.overflowY = '';
     document.getElementById('over').style.background = '';
+    document.getElementById('none-fone').style.background = '';
     // blur for header + rel + repair + hero
     document.getElementById('hero-opacity').style.filter = '';
     document.getElementById('rel-opacity').style.filter = '';
