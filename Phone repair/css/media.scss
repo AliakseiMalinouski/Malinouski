@@ -449,4 +449,45 @@ $bold800: 800;
             }
         }
     }
+
+
+    // our service center
+
+    .our_service_center {
+
+        .container {
+
+            height: 1060px;
+            
+
+            .carousel {
+                height: 900px;
+                background-color: orange;
+
+
+                .carousel-indicators {
+                    top: 860px;
+
+                    
+                }
+            }
+                        .picture-slides {
+                            display: flex;
+                            justify-content: space-evenly;
+                            flex-wrap: wrap;
+                        }
+        }
+    }
+
+
+    // courier 
+
+
+    .courier {
+
+        .container {
+
+            
+        }
+    }
 }

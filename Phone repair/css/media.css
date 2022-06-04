@@ -172,6 +172,18 @@
       margin-top: 30px;
       background: url(../img/blue-line.png) no-repeat 42.7%; }
       .work .container .criteria_2 div:nth-child(2) .border-right {
-        display: none; } }
+        display: none; }
+
+  .our_service_center .container {
+    height: 1060px; }
+    .our_service_center .container .carousel {
+      height: 900px;
+      background-color: orange; }
+      .our_service_center .container .carousel .carousel-indicators {
+        top: 860px; }
+    .our_service_center .container .picture-slides {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; } }
 
 /*# sourceMappingURL=media.css.map */
