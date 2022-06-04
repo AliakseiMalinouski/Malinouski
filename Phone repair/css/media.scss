@@ -669,7 +669,7 @@ $bold800: 800;
         .container {
 
             .left__blocks {
-                
+                width: auto;
 
                 .display {
                     width: 560px;
@@ -690,6 +690,7 @@ $bold800: 800;
 
 
             .right__blocks {
+                width: auto;
 
 
                 .battery {
@@ -738,6 +739,7 @@ $bold800: 800;
 
                 ul {
                     flex-direction: column;
+                    width: auto;
 
                     li {
                         width: auto;
@@ -769,6 +771,7 @@ $bold800: 800;
                         
                     .links_wrap1 {
                         margin-top: 100px;
+                        width: auto;
                     }
                 }
             }
@@ -784,12 +787,12 @@ $bold800: 800;
             
 
             .form {
-                width: 540px;
+                width: auto;
                 height: 500px;
                 background: none;
 
                 .about-form {
-                    width: 540px;
+                    width: auto;
                     height: auto;
                     flex-direction: column;
 
@@ -862,7 +865,7 @@ $bold800: 800;
             height: 500px;
 
             .call-up {
-                width: 560px;
+                width: auto;
                 background: none;
                 flex-direction: column;
                 height: 400px;
@@ -975,6 +978,29 @@ $bold800: 800;
 
                 #union11 {
                     left: 180px;
+                }
+            }
+        }
+    }
+
+    // footer
+
+    .footer {
+
+        .container {
+
+            .wrap_footer {
+                .arrive {
+                    width: auto;
+
+                    h6 {
+                        width: 200px;
+                    }
+
+                    p {
+                        font-size: $fz15 - 1;
+                        width: 500px;
+                    }
                 }
             }
         }
