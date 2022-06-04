@@ -57,6 +57,78 @@
       .slider .container .second-slide .special-equipment img {
         left: 170px; }
       .slider .container .second-slide .direct-deliveries img {
-        left: 170px; } }
+        left: 170px; }
+
+  .repair .container .blocks {
+    flex-direction: column;
+    align-items: center; }
+
+  .brands .container .all-brands {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .brands .container .all-brands .mobile_brands_block_one {
+      width: 220px;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 0px; }
+      .brands .container .all-brands .mobile_brands_block_one .xiaomi {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_one .apple {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_one .huawei {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_one .honor {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_one .meizu {
+        margin-bottom: 30px; }
+    .brands .container .all-brands .mobile_brands_block_two {
+      width: 220px;
+      height: auto;
+      flex-direction: column; }
+      .brands .container .all-brands .mobile_brands_block_two .samsung {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_two .nokia {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_two .lenovo {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_two .sony {
+        margin-bottom: 30px; }
+      .brands .container .all-brands .mobile_brands_block_two .asus {
+        margin-bottom: 30px; }
+
+  .video .container .play-video {
+    width: 960px; }
+
+  .opinion .container {
+    height: 900px; }
+    .opinion .container .carousel {
+      height: 790px;
+      background-color: orange; }
+      .opinion .container .carousel .slide1 {
+        height: auto;
+        flex-direction: column;
+        align-items: center; }
+      .opinion .container .carousel .slide2 {
+        height: auto;
+        flex-direction: column;
+        align-items: center; }
+
+  .reviews .container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../img/yandex1.png) no-repeat 40% 30%, url(../img/google1.png) no-repeat 50% 60%, url(../img/2gis.png) no-repeat 60% 30%, url(../img/yell.png) no-repeat 50% 5%;
+    background-color: green; }
+    .reviews .container a {
+      margin-bottom: 30px; }
+    .reviews .container a:nth-child(2) {
+      align-self: end; }
+    .reviews .container a:nth-child(3) {
+      align-self: flex-start; }
+    .reviews .container a:nth-child(4) {
+      align-self: end; }
+    .reviews .container a:nth-child(5) {
+      align-self: flex-start; } }
 
 /*# sourceMappingURL=media.css.map */

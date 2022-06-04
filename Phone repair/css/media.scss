@@ -178,4 +178,170 @@ $bold800: 800;
 
         }
     }
+
+    // repair
+
+    .repair {
+
+        .container {
+
+            .blocks {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    // brands
+
+    .brands {
+
+        .container {
+
+
+            .all-brands {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .mobile_brands_block_one {
+                    width: 220px;
+                    height: auto;
+                    flex-direction: column;
+                    margin-bottom: 0px;
+
+                    .xiaomi {
+                        margin-bottom: 30px;
+
+                    }
+
+                    .apple {
+                        margin-bottom: 30px;
+
+                    }
+
+                    .huawei {
+                        margin-bottom: 30px;
+
+                    }
+
+                    .honor {
+                        margin-bottom: 30px;
+                    }
+
+                    .meizu {
+                        margin-bottom: 30px;
+                    }
+                }
+                .mobile_brands_block_two {
+                    width: 220px;
+                    height: auto;
+                    flex-direction: column;
+
+
+                    .samsung {
+                        margin-bottom: 30px;
+
+                    }
+
+                    .nokia {
+                        margin-bottom: 30px;
+
+                    }
+
+                    .lenovo {
+                        margin-bottom: 30px;
+
+                    }
+
+                    .sony {
+                        margin-bottom: 30px;
+
+                    }
+
+                    .asus {
+                        margin-bottom: 30px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // video
+
+    .video {
+
+
+        .container {
+
+            .play-video {
+
+                width: 960px;
+            }
+        }
+    }
+
+    // opinion
+
+    .opinion {
+
+        .container {
+            height: 900px;
+
+
+            .carousel {
+                height: 790px;
+                background-color: orange;
+
+                .slide1 {
+                        height: auto;
+                        flex-direction: column;
+                        align-items: center;
+                }
+
+                .slide2 {
+                    height: auto;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+        }
+    }
+
+    // .reviews 
+
+
+    .reviews {
+
+        .container {
+
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: center;
+            background: url(../img/yandex1.png) no-repeat 40% 30%, url(../img/google1.png) no-repeat 50% 60%, url(../img/2gis.png) no-repeat 60% 30%, url(../img/yell.png) no-repeat 50% 5%;
+            background-color: green;
+
+            a {
+                margin-bottom: 30px;
+            }
+
+            a:nth-child(2) {
+                align-self: end;
+            }
+
+            a:nth-child(3) {
+                align-self: flex-start;
+            }
+
+            a:nth-child(4) {
+                align-self: end;
+            }
+            
+            a:nth-child(5) {
+                align-self: flex-start;
+            }
+        }
+    }
 }
