@@ -1,0 +1,181 @@
+// colors
+$bold-pink: #ff005c;
+$light-pink: #ff6099;
+$light-blue: #BFE0FF;
+$white: #fff;
+$black: #000000;
+$gray: #C4C4C4;
+$light-gray: #E5E5E5;
+$bold-gray: #797979;
+
+// font size
+
+$fz: 16px;
+$fz12: $fz - 4;
+$fz15: $fz - 1;
+$fz18: $fz + 2;
+$fz24: $fz + 8;
+$fz26: $fz + 10;
+$fz28: $fz + 12;
+$fz36: $fz + 20;
+$fz48: $fz + 32;
+
+
+// font-weight 
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 600;
+$extra-bold: 700;
+$bold800: 800;
+
+@media all and (max-width:1400px) {
+    .container {
+        width: 960px;
+        background-color: green;
+    }
+
+    // header
+
+    .header {
+
+        .container {
+
+            h4 {
+               font-size: $fz26 - 2;
+
+               span {
+                font-size: $fz26 - 2;
+               }
+            }
+
+            ul {
+               
+                li {
+                    margin-right: 30px;
+                }
+            }
+
+            .tel {
+
+                a:nth-child(2) {
+                    font-size: $fz18 - 2;
+                }
+            }
+
+            
+        }
+    }
+
+    // hero
+
+    .hero {
+
+        .container {
+
+            h1 {
+                font-size: $fz48 - 12;
+                width: 370px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: $fz18 - 2;
+                margin-bottom: 20px;
+            }
+
+            .hero-fone-mobile {
+                width: 545px;
+                height: 475px;
+
+                img:nth-child(1) {
+                    width: 500px;
+                }
+                img:nth-child(2) {
+                    width: 230px;
+                }
+                img:nth-child(3) {
+                    width: 310px;
+                }
+            }
+        }
+    }
+
+    // slider_1
+
+    .slider {
+
+        .container {
+            height: 900px;
+            
+
+            .carousel {
+                height: 790px;
+                background-color: orange;
+            }
+
+            .first-slide {
+                    display: flex;
+                    justify-content: none;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: purple;
+
+                    .quality {
+                        
+
+                        img {
+
+                            left: 170px;
+                        }
+                    }
+
+                    .prise {
+
+                        img {
+                            left: 170px;
+                        }
+                    }
+
+                    .warranty {
+                        
+                        img {
+                            left: 170px;
+                        }
+                    }
+            }
+
+            .second-slide {
+                display: flex;
+                justify-content: none;
+                align-items: center;
+                flex-direction: column;
+                background-color: blue;
+
+                .professional-staff {
+                    
+                    img {
+                        left: 170px;
+                    }
+                }
+
+                .special-equipment {
+
+                    img {
+                        left: 170px;
+                    }
+                }
+
+                .direct-deliveries {
+
+                    img {
+
+                        left: 170px;
+                    }
+                }
+            }
+
+        }
+    }
+}

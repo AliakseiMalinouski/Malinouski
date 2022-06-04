@@ -1,0 +1,62 @@
+@media all and (max-width: 1400px) {
+  .container {
+    width: 960px;
+    background-color: green; }
+
+  .header .container h4 {
+    font-size: 24px; }
+    .header .container h4 span {
+      font-size: 24px; }
+  .header .container ul li {
+    margin-right: 30px; }
+  .header .container .tel a:nth-child(2) {
+    font-size: 16px; }
+
+  .hero .container h1 {
+    font-size: 36px;
+    width: 370px;
+    margin-bottom: 20px; }
+  .hero .container p {
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .hero .container .hero-fone-mobile {
+    width: 545px;
+    height: 475px; }
+    .hero .container .hero-fone-mobile img:nth-child(1) {
+      width: 500px; }
+    .hero .container .hero-fone-mobile img:nth-child(2) {
+      width: 230px; }
+    .hero .container .hero-fone-mobile img:nth-child(3) {
+      width: 310px; }
+
+  .slider .container {
+    height: 900px; }
+    .slider .container .carousel {
+      height: 790px;
+      background-color: orange; }
+    .slider .container .first-slide {
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      flex-direction: column;
+      background-color: purple; }
+      .slider .container .first-slide .quality img {
+        left: 170px; }
+      .slider .container .first-slide .prise img {
+        left: 170px; }
+      .slider .container .first-slide .warranty img {
+        left: 170px; }
+    .slider .container .second-slide {
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      flex-direction: column;
+      background-color: blue; }
+      .slider .container .second-slide .professional-staff img {
+        left: 170px; }
+      .slider .container .second-slide .special-equipment img {
+        left: 170px; }
+      .slider .container .second-slide .direct-deliveries img {
+        left: 170px; } }
+
+/*# sourceMappingURL=media.css.map */
