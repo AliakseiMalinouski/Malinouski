@@ -234,5 +234,56 @@
       border-bottom: 2px solid #BFE0FF; }
   .footer .container .end_footer {
     width: auto; } }
+@media all and (max-width: 992px) {
+  .container {
+    width: 560px; }
+
+  .header .container {
+    padding: 0.1px; }
+    .header .container ul li {
+      display: none; }
+    .header .container img {
+      display: block;
+      margin-left: 300px; }
+    .header .container .tel {
+      display: none; }
+
+  .hero .container {
+    flex-direction: column;
+    align-items: center; }
+    .hero .container h1 {
+      font-size: 26px;
+      width: 300px; }
+    .hero .container p {
+      font-size: 15px;
+      width: 250px;
+      height: auto; }
+    .hero .container .hero-fone-mobile {
+      animation: none;
+      width: 430px;
+      margin-top: 50px; }
+      .hero .container .hero-fone-mobile img:nth-child(1) {
+        width: 400px; }
+      .hero .container .hero-fone-mobile img:nth-child(2) {
+        width: 130px; }
+      .hero .container .hero-fone-mobile img:nth-child(3) {
+        width: 190px; }
+
+  .repair .container .left__blocks .display {
+    width: 560px; }
+  .repair .container .left__blocks .dinamics {
+    width: 560px; }
+  .repair .container .left__blocks .buttons {
+    width: 560px; }
+  .repair .container .left__blocks .net {
+    width: 560px; }
+  .repair .container .right__blocks .battery {
+    width: 560px; }
+  .repair .container .right__blocks .camera {
+    width: 560px; }
+  .repair .container .right__blocks .speaker {
+    width: 560px; }
+  .repair .container .right__blocks .other-problems {
+    width: 560px; } }
 
 /*# sourceMappingURL=media.css.map */

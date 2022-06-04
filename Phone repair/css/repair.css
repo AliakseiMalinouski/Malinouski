@@ -63,6 +63,10 @@ h3 {
         font-weight: 800;
         line-height: 31.69px;
         text-transform: uppercase; }
+    .header .container img {
+      width: 20px;
+      height: 20px;
+      display: none; }
     .header .container ul {
       display: flex; }
       .header .container ul li {

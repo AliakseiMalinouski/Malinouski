@@ -592,3 +592,122 @@ $bold800: 800;
         }
     }
 }
+
+@media all and (max-width:992px) {
+    .container {
+        width: 560px;
+    }
+
+    // header
+
+    .header {
+
+        .container {
+            padding: 0.1px;
+            ul {
+            
+                    li {
+                        display: none;
+                    }
+                }
+            
+                img {
+                    display: block;
+                    margin-left: 300px;
+                }
+
+                .tel {
+                    display: none;
+                }
+        }
+    }
+
+    // hero 
+
+    .hero {
+
+        .container {
+             flex-direction: column;
+             align-items: center;
+
+            h1 {
+                font-size: $fz26;
+                width: 300px;
+                
+            }
+
+            p {
+                font-size: $fz15;
+                width: 250px;
+                height: auto;
+            }
+
+            .hero-fone-mobile {
+                animation: none;
+                width: 430px;
+                margin-top: 50px;
+
+                img:nth-child(1) {
+                    width: 400px;
+                }
+                img:nth-child(2) {
+                    width: 130px;
+                }
+                img:nth-child(3) {
+                    width: 190px;
+                }
+
+             
+            }
+        }
+    }
+
+    // repair {
+
+    .repair {
+
+        .container {
+
+            .left__blocks {
+                
+
+                .display {
+                    width: 560px;
+                }
+
+                .dinamics {
+                    width: 560px;
+                }
+
+                .buttons {
+                    width: 560px;
+                }
+
+                .net {
+                    width: 560px;
+                }
+            }
+
+
+            .right__blocks {
+
+
+                .battery {
+                    width: 560px;
+                }
+
+                .camera {
+                    width: 560px;
+                }
+                
+                .speaker {
+                    width: 560px;
+                }
+
+                .other-problems {
+                    width: 560px;
+                }
+            }
+        }
+    }
+}
