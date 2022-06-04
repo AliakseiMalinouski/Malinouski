@@ -387,4 +387,66 @@ $bold800: 800;
             }
         }
     }
+
+    // master
+
+    .master {
+
+        .container {
+
+
+            .form {
+                width: 944px;
+            }
+        }
+    }
+    
+
+    // work
+
+    .work {
+
+        .container {
+
+            .criteria_1 {
+                width: auto;
+                height: auto;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                flex-direction: row;
+                padding: 0.1px;
+
+                
+                
+
+                div:nth-child(3) {
+                    margin-top: 30px;
+                }
+            }
+
+            .criteria_2 {
+                width: auto;
+                height: auto;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+                div:nth-child(1) {
+                    background: url(../img/blue-line.png) no-repeat 42.7%;
+                    .border-right {
+                        display: none;
+                    }
+                }
+
+                div:nth-child(2) {
+                    margin-top: 30px;
+                    background: url(../img/blue-line.png) no-repeat 42.7%;
+                    
+                    .border-right {
+                    display: none;
+                    }
+                }
+                    
+            }
+        }
+    }
 }

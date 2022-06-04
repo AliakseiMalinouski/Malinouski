@@ -145,6 +145,33 @@
         display: block;
         margin-bottom: 15px; }
       .sale .container .slide_1 .wrap .links_wrap1 a:nth-child(2) {
-        color: #ff005c; } }
+        color: #ff005c; }
+
+  .master .container .form {
+    width: 944px; }
+
+  .work .container .criteria_1 {
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0.1px; }
+    .work .container .criteria_1 div:nth-child(3) {
+      margin-top: 30px; }
+  .work .container .criteria_2 {
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .work .container .criteria_2 div:nth-child(1) {
+      background: url(../img/blue-line.png) no-repeat 42.7%; }
+      .work .container .criteria_2 div:nth-child(1) .border-right {
+        display: none; }
+    .work .container .criteria_2 div:nth-child(2) {
+      margin-top: 30px;
+      background: url(../img/blue-line.png) no-repeat 42.7%; }
+      .work .container .criteria_2 div:nth-child(2) .border-right {
+        display: none; } }
 
 /*# sourceMappingURL=media.css.map */
