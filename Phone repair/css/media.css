@@ -129,6 +129,22 @@
     .reviews .container a:nth-child(4) {
       align-self: end; }
     .reviews .container a:nth-child(5) {
-      align-self: flex-start; } }
+      align-self: flex-start; }
+
+  .sale .container .slide_1 .wrap {
+    background-size: 60%; }
+    .sale .container .slide_1 .wrap h2 {
+      color: #ff005c; }
+    .sale .container .slide_1 .wrap ul li {
+      color: #ff005c; }
+      .sale .container .slide_1 .wrap ul li span {
+        color: #ff005c; }
+    .sale .container .slide_1 .wrap .links_wrap1 {
+      display: block; }
+      .sale .container .slide_1 .wrap .links_wrap1 a {
+        display: block;
+        margin-bottom: 15px; }
+      .sale .container .slide_1 .wrap .links_wrap1 a:nth-child(2) {
+        color: #ff005c; } }
 
 /*# sourceMappingURL=media.css.map */

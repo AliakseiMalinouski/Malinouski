@@ -344,4 +344,47 @@ $bold800: 800;
             }
         }
     }
+
+    // sale
+
+    .sale {
+
+        .container {
+
+            .slide_1 {
+
+                .wrap {
+                    background-size: 60%;
+
+                    h2 {
+                        color: $bold-pink;
+                    }
+
+                    ul {
+
+                        li {
+                            color: $bold-pink;
+
+                            span {
+                                color: $bold-pink;
+                            }
+                        }
+                    }
+
+                    .links_wrap1 {
+                        display: block;
+
+                        a {
+                            display: block;
+                            margin-bottom: 15px;
+                        }
+
+                        a:nth-child(2) {
+                            color: $bold-pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
