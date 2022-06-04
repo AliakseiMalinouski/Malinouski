@@ -1006,3 +1006,60 @@ $bold800: 800;
         }
     }
 }
+
+@media all and (max-width: 580px) {
+    .container {
+       width: 480px;
+    }
+    // header
+
+    .header {
+
+        .container {
+
+            img {
+                margin-left: 200px;
+            }
+        }
+    }
+
+    // hero 
+
+    .hero {
+
+        .container {
+            height: 597px;
+            background: url(../img/fone-header-mobile.png) no-repeat right;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .hero-fone-mobile {
+                display: none;
+            }
+
+            h1 {
+                font-size: $fz48;
+                height: auto;
+                width: 270px;
+            }
+
+            .relative {
+                height: 376px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    // video
+
+    .video {
+        
+        .container {
+
+            .play-video {
+                width: 460px;
+            }
+        }
+    }
+}

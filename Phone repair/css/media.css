@@ -400,5 +400,30 @@
     .footer .container .wrap_footer .arrive p {
       font-size: 14px;
       width: 500px; } }
+@media all and (max-width: 580px) {
+  .container {
+    width: 480px; }
+
+  .header .container img {
+    margin-left: 200px; }
+
+  .hero .container {
+    height: 597px;
+    background: url(../img/fone-header-mobile.png) no-repeat right;
+    align-items: flex-start;
+    flex-direction: column; }
+    .hero .container .hero-fone-mobile {
+      display: none; }
+    .hero .container h1 {
+      font-size: 48px;
+      height: auto;
+      width: 270px; }
+    .hero .container .relative {
+      height: 376px;
+      display: flex;
+      flex-direction: column; }
+
+  .video .container .play-video {
+    width: 460px; } }
 
 /*# sourceMappingURL=media.css.map */
