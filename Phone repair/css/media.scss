@@ -1409,4 +1409,94 @@ $bold800: 800;
             }
         }
     }
+
+
+    // repair 
+
+
+    .repair {
+
+        .container {
+
+            .display {
+                display: none;
+            }
+
+            .dinamics {
+                display: none;
+            }
+
+            .buttons {
+                display: none;
+            }
+
+            .net {
+                display: none;
+            }
+
+
+            .battery {
+                display: none;
+            }
+
+            .camera {
+                display: none;
+            }
+
+            .speaker {
+                display: none;
+            }
+
+            .other-problems {
+                display: none;
+            }
+
+            // mobile blocks
+
+            .left__blocks {
+                padding: 0.1px;
+                
+                .display-mobile {
+                display: block;
+                width: 335px;
+                height: 100px;
+                background: url(../img/display-broken-phone-icon.svg) no-repeat 7%;
+                border: 1px solid $white;
+                padding: 0.1px;
+                position: relative;
+                margin-bottom: 30px;
+                
+
+                h6 {
+                   color: $black;
+                   line-height: 24.3px;
+                   margin-top: 38px;
+                   margin-left: 65px;
+                   font-weight: $extra-bold;
+                   font-size: $fz18;
+                }
+
+                img {
+                    position: absolute; 
+                    top: 38px;
+                    right: 30px;
+                }
+
+                ul {
+                    margin-top: 38px;
+                    display: none;
+                    li {
+                        font-size: $fz15;
+                        font-weight: $medium;
+                        color: $black;
+                        line-height: 20.25px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            }
+
+            
+        }
+    }
 }
