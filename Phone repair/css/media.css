@@ -245,7 +245,7 @@
     padding: 0.1px; }
     .header .container ul li {
       display: none; }
-    .header .container img {
+    .header .container .menu {
       display: block;
       margin-left: 300px; }
     .header .container .tel {
@@ -417,8 +417,8 @@
   .container {
     width: 480px; }
 
-  .header .container img {
-    margin-left: 200px; }
+  .header .container .menu {
+    margin-left: 220px; }
 
   .hero .container {
     height: 597px;
