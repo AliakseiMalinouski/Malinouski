@@ -1487,6 +1487,15 @@ $bold800: 800;
                     display: none;
                     
                 }
+
+                .close3 {
+                    position: absolute;
+                    right: 32px;
+                    top: 429px;
+                    display: none;
+                }
+
+                
                 
                 .display-mobile {
                 display: block;
@@ -1701,6 +1710,77 @@ $bold800: 800;
 
 
 
+            }
+
+            .net-mobile {
+                display: block;
+                width: 335px;
+                height: 100px;
+                // background: url(../img/display-broken-phone-icon.svg) no-repeat 7%;
+                border: 1px solid $white;
+                padding: 0.1px;
+                position: relative;
+                margin-bottom: 30px;
+                border: 2px solid $white;
+                background-color: $white;
+                -webkit-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+                -moz-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+                box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+                animation: dinamics-mobile 1.2s linear;
+                transition: 0.5s;
+
+
+                .icon-net{
+                    position: absolute;
+                    left: 19px;
+                    top: 34px;
+                }
+                
+
+                h6 {
+                   color: $black;
+                   line-height: 24.3px;
+                   margin-top: 38px;
+                   margin-left: 65px;
+                   font-weight: $extra-bold;
+                   font-size: $fz18;
+                }
+
+                .open4 {
+                    position: absolute; 
+                    top: 38px;
+                    right: 30px;
+                }
+
+            
+                ul {
+                    margin-top: 38px;
+                    display: none;
+                    background-color: $white;
+                    
+                    
+                    
+                    li {
+                        font-size: $fz15;
+                        font-weight: $medium;
+                        color: $black;
+                        line-height: 20.25px;
+                        margin-bottom: 20px;
+                        animation: list-ds 1.5s linear;
+                        
+                        
+                    }
+
+                    @keyframes list-ds {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
+                    }
+                }
             }
             }
 

@@ -425,3 +425,21 @@ function CloseButtonsMobile() {
     document.getElementById('close-button-list-buttons-mobile').style.display = 'none';
     document.getElementById('open-button-list-buttons-mobile').style.display = 'block';
 }
+
+
+// net mobile
+
+
+function OpenNetMobile() {
+    document.getElementById('list-net-mobile').style.display = 'block';
+    document.getElementById('net-mobile').style.height = '300px';
+    document.getElementById('close-button-list-net-mobile').style.display = 'block';
+    document.getElementById('open-button-list-net-mobile').style.display = 'none';
+}
+
+function CloseNetMobile() {
+    document.getElementById('list-net-mobile').style.display = 'none';
+    document.getElementById('net-mobile').style.height = '100px';
+    document.getElementById('close-button-list-net-mobile').style.display = 'none';
+    document.getElementById('open-button-list-net-mobile').style.display = 'block';
+}
