@@ -100,6 +100,11 @@ $bold800: 800;
                     width: 310px;
                 }
             }
+
+            .modal_hero {
+                top: 50px;
+                left: 270px;
+            }
         }
     }
 
@@ -659,6 +664,10 @@ $bold800: 800;
                 }
 
              
+            }
+
+            .modal_hero {
+                left: 50px;
             }
         }
     }
@@ -1468,7 +1477,7 @@ $bold800: 800;
                 display: block;
                 width: 335px;
                 height: 100px;
-                background: url(../img/display-broken-phone-icon.svg) no-repeat 7%;
+                // background: url(../img/display-broken-phone-icon.svg) no-repeat 7%;
                 border: 1px solid $white;
                 padding: 0.1px;
                 position: relative;
@@ -1478,9 +1487,17 @@ $bold800: 800;
                 -webkit-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
                 -moz-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
                 box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+                animation: display-mobile 1.2s linear;
+                transition: 0.5s;
 
-                .p {
-                    display: none;
+                @keyframes display-mobile {
+                    
+                }
+
+                .icon-display {
+                    position: absolute;
+                    left: 19px;
+                    top: 34px;
                 }
                 
 
@@ -1503,12 +1520,28 @@ $bold800: 800;
                 ul {
                     margin-top: 38px;
                     display: none;
+                    
+                    
+                    
                     li {
                         font-size: $fz15;
                         font-weight: $medium;
                         color: $black;
                         line-height: 20.25px;
                         margin-bottom: 20px;
+                        animation: list-ds 1.5s linear;
+                        
+                        
+                    }
+
+                    @keyframes list-ds {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
                     }
                 }
             }

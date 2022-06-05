@@ -372,8 +372,8 @@ function CloseBrands() {
 
 function OpenDisplayMobile() {
     document.getElementById('list-display-mobile').style.display = 'block';
-    document.getElementById('display-mobile').style.height = '375px';
-    document.getElementById('display-mobile').style.backgroundPositionY = '10%';
+    document.getElementById('display-mobile').style.height = '335px';
+    document.getElementById('display-mobile').style.backgroundPositionY = '9.8%';
     document.getElementById('close-button-list-display-mobile').style.display = 'block';
     document.getElementById('open-button-list-display-mobile').style.display = 'none';
     
