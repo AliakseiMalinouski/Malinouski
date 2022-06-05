@@ -367,13 +367,12 @@ function CloseBrands() {
     document.getElementById('button-close-brands').style.display = 'none';
 }
 
-// open display mobile
+//  display mobile
 
 
 function OpenDisplayMobile() {
     document.getElementById('list-display-mobile').style.display = 'block';
     document.getElementById('display-mobile').style.height = '335px';
-    document.getElementById('display-mobile').style.backgroundPositionY = '9.8%';
     document.getElementById('close-button-list-display-mobile').style.display = 'block';
     document.getElementById('open-button-list-display-mobile').style.display = 'none';
     
@@ -384,9 +383,26 @@ function OpenDisplayMobile() {
 function CloseDisplayMobile() {
     document.getElementById('list-display-mobile').style.display = 'none';
     document.getElementById('display-mobile').style.height = '100px';
-    document.getElementById('display-mobile').style.backgroundPositionY = '';
     document.getElementById('close-button-list-display-mobile').style.display = 'none';
     document.getElementById('open-button-list-display-mobile').style.display = 'block';
     
 }
 
+
+// dinamics mobile
+
+
+function OpenDinamicsMobile() {
+    document.getElementById('list-dinamics-mobile').style.display = 'block';
+    document.getElementById('dinamics-mobile').style.height = '300px';
+    document.getElementById('close-button-list-dinamics-mobile').style.display = 'block';
+    document.getElementById('open-button-list-dinamics-mobile').style.display = 'none';
+}
+
+
+function CloseDinamicsMobile() {
+    document.getElementById('list-dinamics-mobile').style.display = 'none';
+    document.getElementById('dinamics-mobile').style.height = '100px';
+    document.getElementById('close-button-list-dinamics-mobile').style.display = 'none';
+    document.getElementById('open-button-list-dinamics-mobile').style.display = 'block';
+}

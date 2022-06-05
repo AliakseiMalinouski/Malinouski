@@ -625,6 +625,11 @@
       right: 30px;
       top: 38px;
       display: none; }
+    .repair .container .left__blocks .close1 {
+      position: absolute;
+      right: 32px;
+      top: 169px;
+      display: none; }
     .repair .container .left__blocks .display-mobile {
       display: block;
       width: 335px;
@@ -659,6 +664,52 @@
         margin-top: 38px;
         display: none; }
         .repair .container .left__blocks .display-mobile ul li {
+          font-size: 15px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 20.25px;
+          margin-bottom: 20px;
+          animation: list-ds 1.5s linear; }
+  @keyframes list-ds {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+    .repair .container .left__blocks .dinamics-mobile {
+      display: block;
+      width: 335px;
+      height: 100px;
+      border: 1px solid #fff;
+      padding: 0.1px;
+      position: relative;
+      margin-bottom: 30px;
+      border: 2px solid #fff;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      -moz-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      animation: dinamics-mobile 1.2s linear;
+      transition: 0.5s; }
+      .repair .container .left__blocks .dinamics-mobile .icon-dinamics {
+        position: absolute;
+        left: 19px;
+        top: 34px; }
+      .repair .container .left__blocks .dinamics-mobile h6 {
+        color: #000000;
+        line-height: 24.3px;
+        margin-top: 38px;
+        margin-left: 65px;
+        font-weight: 700;
+        font-size: 18px; }
+      .repair .container .left__blocks .dinamics-mobile .open2 {
+        position: absolute;
+        top: 38px;
+        right: 30px; }
+      .repair .container .left__blocks .dinamics-mobile ul {
+        margin-top: 38px;
+        display: none;
+        background-color: #fff; }
+        .repair .container .left__blocks .dinamics-mobile ul li {
           font-size: 15px;
           font-weight: 500;
           color: #000000;
