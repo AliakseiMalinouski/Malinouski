@@ -625,6 +625,8 @@
       padding: 0.1px;
       position: relative;
       margin-bottom: 30px; }
+      .repair .container .left__blocks .display-mobile .p {
+        display: none; }
       .repair .container .left__blocks .display-mobile h6 {
         color: #000000;
         line-height: 24.3px;
