@@ -383,6 +383,10 @@ function OpenDisplayMobile() {
 
 function CloseDisplayMobile() {
     document.getElementById('list-display-mobile').style.display = 'none';
+    document.getElementById('display-mobile').style.height = '100px';
+    document.getElementById('display-mobile').style.backgroundPositionY = '';
+    document.getElementById('close-button-list-display-mobile').style.display = 'none';
+    document.getElementById('open-button-list-display-mobile').style.display = 'block';
     
 }
 

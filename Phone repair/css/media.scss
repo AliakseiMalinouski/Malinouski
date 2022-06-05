@@ -1455,8 +1455,12 @@ $bold800: 800;
 
             .left__blocks {
                 padding: 0.1px;
+                position: relative;
 
-                .test1 {
+                .close {
+                    position: absolute;
+                    right: 30px;
+                    top: 38px;
                     display: none;
                 }
                 
@@ -1490,16 +1494,7 @@ $bold800: 800;
                     right: 30px;
                 }
 
-                
-
-                .close {
-                    display: none;
-                    position: absolute;
-                    top: 38px;
-                    right: 30px;
-                    
-                }
-
+            
                 ul {
                     margin-top: 38px;
                     display: none;

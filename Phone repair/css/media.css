@@ -613,8 +613,12 @@
   .repair .container .other-problems {
     display: none; }
   .repair .container .left__blocks {
-    padding: 0.1px; }
-    .repair .container .left__blocks .test1 {
+    padding: 0.1px;
+    position: relative; }
+    .repair .container .left__blocks .close {
+      position: absolute;
+      right: 30px;
+      top: 38px;
       display: none; }
     .repair .container .left__blocks .display-mobile {
       display: block;
@@ -635,11 +639,6 @@
         font-weight: 700;
         font-size: 18px; }
       .repair .container .left__blocks .display-mobile .open {
-        position: absolute;
-        top: 38px;
-        right: 30px; }
-      .repair .container .left__blocks .display-mobile .close {
-        display: none;
         position: absolute;
         top: 38px;
         right: 30px; }
