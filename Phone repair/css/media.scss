@@ -1177,4 +1177,123 @@ $bold800: 800;
             }
         }
     }
+
+    // sale 
+
+
+    .sale {
+
+        .container {
+
+            .slide_1 {
+
+                .wrap {
+                    height: 480px;
+                }
+
+                .typewriter {
+
+                    margin-left: 0px;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    margin-left: 0px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    // contacts 
+
+
+    .contacts {
+
+        .container {
+
+            .contacts-information {
+                flex-direction: column;
+
+                div:nth-child(1) {
+                    width: 100%;
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        height: 110px;
+
+                        li {
+                            font-size: $fz24 !important;
+                            
+
+                        }
+
+                        a {
+                            font-size: $fz24 !important;
+                        }
+                    }
+                }
+                div:nth-child(2) {
+                    width: 100%;
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        height: 110px;
+
+                        li {
+                            font-size: $fz24 !important;
+                            
+
+                        }
+
+                        a {
+                            font-size: $fz24 !important;
+                        }
+                    }
+                }
+                div:nth-child(3) {
+                    width: 100%;
+
+
+                    ul {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        height: 110px;
+
+                        li {
+                            font-size: $fz24 !important;
+                            
+
+                        }
+
+                        a {
+                            font-size: $fz24 !important;
+                        }
+                    }
+                }
+            }
+
+            .map {
+                
+                background: url(../img/map-mobile.png) no-repeat center;
+                height: 420px;
+                background-size: cover;
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
 }
