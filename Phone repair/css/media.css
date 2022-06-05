@@ -457,7 +457,10 @@
   .brands .container .all-brands {
     flex-direction: column; }
     .brands .container .all-brands .mobile_brands_block_two {
-      display: none; }
+      display: none;
+      height: auto; }
+    .brands .container .all-brands .open-second-brands {
+      display: block; }
 
   .master {
     display: none; }

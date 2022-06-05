@@ -350,3 +350,19 @@ function CloseText() {
     document.getElementById('open-text').style.display = 'block';
     
 }
+
+
+// open oher brands
+
+
+function OpenBrands() {
+    document.getElementById('OpenMobileBrandsBlock').style.display = 'flex';
+    document.getElementById('button-open-brands').style.display = 'none';
+    document.getElementById('button-close-brands').style.display = 'block';
+}
+
+function CloseBrands() {
+    document.getElementById('OpenMobileBrandsBlock').style.display = 'none';
+    document.getElementById('button-open-brands').style.display = 'block';
+    document.getElementById('button-close-brands').style.display = 'none';
+}

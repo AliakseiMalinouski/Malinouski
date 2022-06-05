@@ -7,6 +7,7 @@ $black: #000000;
 $gray: #C4C4C4;
 $light-gray: #E5E5E5;
 $bold-gray: #797979;
+$blue: #0085FF;
 
 // font size
 
@@ -1130,6 +1131,18 @@ $bold800: 800;
 
                 .mobile_brands_block_two {
                     display: none;
+                    height: auto;
+
+                   
+                    
+
+                    
+
+                    
+                }
+
+                .open-second-brands {
+                    display: block;
                 }
             }
         }

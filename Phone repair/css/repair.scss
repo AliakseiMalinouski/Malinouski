@@ -7,6 +7,7 @@ $black: #000000;
 $gray: #C4C4C4;
 $light-gray: #E5E5E5;
 $bold-gray: #797979;
+$blue: #0085FF;
 
 // font size
 
@@ -1554,6 +1555,44 @@ h3 {
                     content: '>';
                     margin-left: 7px;
                 }
+           }
+       }
+
+       .open-second-brands {
+           width: 220px;
+           height: 50px;
+           border: 2px solid $blue;
+           padding: 0.1px;
+           display: none;
+           
+
+           p {
+               color: $blue;
+               line-height: 18.29px;
+               font-size: $fz15;
+               font-weight: $extra-bold;
+               margin-top: 12px;
+               width: 100%;
+               padding-left: 40px;
+           }
+           
+       }
+
+       .close-second-brands {
+           width: 220px;
+           height: 50px;
+           border: 2px solid $blue;
+           padding: 0.1px;
+           display: none;
+
+           p {
+               color: $blue;
+               line-height: 18.29px;
+               font-size: $fz15;
+               font-weight: $extra-bold;
+               margin-top: 12px;
+               width: 100%;
+               padding-left: 40px;
            }
        }
 
