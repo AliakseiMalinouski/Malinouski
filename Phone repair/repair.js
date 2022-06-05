@@ -406,3 +406,22 @@ function CloseDinamicsMobile() {
     document.getElementById('close-button-list-dinamics-mobile').style.display = 'none';
     document.getElementById('open-button-list-dinamics-mobile').style.display = 'block';
 }
+
+
+// buttons mobile
+
+
+function OpenButtonsMobile() {
+    document.getElementById('list-buttons-mobile').style.display = 'block';
+    document.getElementById('buttons-mobile').style.height = '300px';
+    document.getElementById('close-button-list-buttons-mobile').style.display = 'block';
+    document.getElementById('open-button-list-buttons-mobile').style.display = 'none';
+}
+
+
+function CloseButtonsMobile() {
+    document.getElementById('list-buttons-mobile').style.display = 'none';
+    document.getElementById('buttons-mobile').style.height = '100px';
+    document.getElementById('close-button-list-buttons-mobile').style.display = 'none';
+    document.getElementById('open-button-list-buttons-mobile').style.display = 'block';
+}
