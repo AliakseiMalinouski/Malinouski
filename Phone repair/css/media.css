@@ -539,6 +539,8 @@
     height: 420px;
     background-size: cover; }
     .contacts .container .map img {
-      display: none; } }
+      display: none; }
+  .contacts .container .about-center .next-about {
+    transform: none; } }
 
 /*# sourceMappingURL=media.css.map */
