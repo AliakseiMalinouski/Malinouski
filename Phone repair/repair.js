@@ -366,3 +366,23 @@ function CloseBrands() {
     document.getElementById('button-open-brands').style.display = 'block';
     document.getElementById('button-close-brands').style.display = 'none';
 }
+
+// open display mobile
+
+
+function OpenDisplayMobile() {
+    document.getElementById('list-display-mobile').style.display = 'block';
+    document.getElementById('display-mobile').style.height = '375px';
+    document.getElementById('display-mobile').style.backgroundPositionY = '10%';
+    document.getElementById('close-button-list-display-mobile').style.display = 'block';
+    document.getElementById('open-button-list-display-mobile').style.display = 'none';
+    
+    
+}
+
+
+function CloseDisplayMobile() {
+    document.getElementById('list-display-mobile').style.display = 'none';
+    
+}
+

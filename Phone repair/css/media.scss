@@ -1455,6 +1455,10 @@ $bold800: 800;
 
             .left__blocks {
                 padding: 0.1px;
+
+                .test1 {
+                    display: none;
+                }
                 
                 .display-mobile {
                 display: block;
@@ -1476,10 +1480,20 @@ $bold800: 800;
                    font-size: $fz18;
                 }
 
-                img {
+                .open {
                     position: absolute; 
                     top: 38px;
                     right: 30px;
+                }
+
+                
+
+                .close {
+                    display: none;
+                    position: absolute;
+                    top: 38px;
+                    right: 30px;
+                    
                 }
 
                 ul {

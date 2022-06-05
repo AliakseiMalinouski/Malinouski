@@ -614,6 +614,8 @@
     display: none; }
   .repair .container .left__blocks {
     padding: 0.1px; }
+    .repair .container .left__blocks .test1 {
+      display: none; }
     .repair .container .left__blocks .display-mobile {
       display: block;
       width: 335px;
@@ -630,7 +632,12 @@
         margin-left: 65px;
         font-weight: 700;
         font-size: 18px; }
-      .repair .container .left__blocks .display-mobile img {
+      .repair .container .left__blocks .display-mobile .open {
+        position: absolute;
+        top: 38px;
+        right: 30px; }
+      .repair .container .left__blocks .display-mobile .close {
+        display: none;
         position: absolute;
         top: 38px;
         right: 30px; }
