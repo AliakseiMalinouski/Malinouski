@@ -1330,4 +1330,83 @@ $bold800: 800;
             }
         }
     }
+
+    // footer
+
+    .footer {
+       display: none;
+    }
+
+
+    // footer mobile
+
+    .footer-mobile {
+        padding-top: 82px;
+        display: block;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .footer-mobile-block-one {
+                height: 314px;
+                background-color: lightcoral;
+                padding: 0.1px;
+                border-bottom: 2px solid $light-blue;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 357px;
+
+                h5 {
+                    font-weight: $regular;
+                    color: $black;
+                    font-size: $fz26;
+                    line-height: 31.69px;
+                    margin-bottom: 10px;
+                    margin-left: 30px;
+
+                    span {
+                        color: $bold-pink;
+                        line-height: 31.69px;
+                        font-size: $fz26;
+                        font-weight: $bold800;
+                    }
+                }
+
+                .p-one {
+                    color: $gray;
+                    font-weight: $regular;
+                    font-size: $fz18;
+                    line-height: 21.94px;
+                    margin-bottom: 30px;
+                    margin-left: 30px;
+                }
+
+                .p-two {
+                    font-weight: $extra-bold;
+                    font-size: $fz18;
+                    line-height: 21.94px;
+                    margin-bottom: 30px;
+                    color: $black;
+                    margin-left: 30px;
+                }
+
+
+                .lists-footer-mobile {
+                    padding: 0.1px;
+                    width: 100%;
+                    display: flex;
+                    height: auto;
+
+                    li {
+                        margin-bottom: 25px;
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
 }
