@@ -2688,7 +2688,7 @@ h3 {
 
 
             h5 {
-                width: 188px;
+                width: auto;
                 height: 44px;
                 margin-top: 21px;
                 margin-left: 30px;
@@ -2781,6 +2781,70 @@ h3 {
                 box-shadow: 0px 0px 37px -9px #bfe0ff;
                 h5:before {
                     content: '3';
+                    margin-right: 20px;
+                    color: $bold-pink;
+                    line-height: 48.6px;
+                    font-size: $fz36;
+                    font-weight: $extra-bold;
+                    width: 22px;
+                    height: 49px;
+                }
+
+                p {
+                    width: 335px;
+                    height: 40px;
+                }
+                 .border-bottom {
+                    background-color: $light-blue;
+                    height: 2px;
+                    width: 386px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            div:nth-child(4) {
+                width: 386px;
+                height: 180px;
+                padding: 0.1px;
+                -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                box-shadow: 0px 0px 37px -9px #bfe0ff;
+                margin-top: 30px;
+                display: none;
+                h5:before {
+                    content: '4';
+                    margin-right: 20px;
+                    color: $bold-pink;
+                    line-height: 48.6px;
+                    font-size: $fz36;
+                    font-weight: $extra-bold;
+                    width: auto;
+                    height: 49px;
+                }
+
+                p {
+                    width: 335px;
+                    height: 40px;
+                }
+                 .border-bottom {
+                    background-color: $light-blue;
+                    height: 2px;
+                    width: 386px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            div:nth-child(5) {
+                width: 386px;
+                height: 180px;
+                padding: 0.1px;
+                -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                box-shadow: 0px 0px 37px -9px #bfe0ff;
+                margin-top: 30px;
+                display: none;
+                h5:before {
+                    content: '5';
                     margin-right: 20px;
                     color: $bold-pink;
                     line-height: 48.6px;

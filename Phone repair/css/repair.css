@@ -1810,7 +1810,7 @@ h3 {
       display: flex;
       justify-content: space-between; }
       .work .container .criteria_1 h5 {
-        width: 188px;
+        width: auto;
         height: 44px;
         margin-top: 21px;
         margin-left: 30px;
@@ -1893,6 +1893,58 @@ h3 {
           width: 335px;
           height: 40px; }
         .work .container .criteria_1 div:nth-child(3) .border-bottom {
+          background-color: #BFE0FF;
+          height: 2px;
+          width: 386px;
+          margin-bottom: 25px; }
+      .work .container .criteria_1 div:nth-child(4) {
+        width: 386px;
+        height: 180px;
+        padding: 0.1px;
+        -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        box-shadow: 0px 0px 37px -9px #bfe0ff;
+        margin-top: 30px;
+        display: none; }
+        .work .container .criteria_1 div:nth-child(4) h5:before {
+          content: '4';
+          margin-right: 20px;
+          color: #ff005c;
+          line-height: 48.6px;
+          font-size: 36px;
+          font-weight: 700;
+          width: auto;
+          height: 49px; }
+        .work .container .criteria_1 div:nth-child(4) p {
+          width: 335px;
+          height: 40px; }
+        .work .container .criteria_1 div:nth-child(4) .border-bottom {
+          background-color: #BFE0FF;
+          height: 2px;
+          width: 386px;
+          margin-bottom: 25px; }
+      .work .container .criteria_1 div:nth-child(5) {
+        width: 386px;
+        height: 180px;
+        padding: 0.1px;
+        -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        box-shadow: 0px 0px 37px -9px #bfe0ff;
+        margin-top: 30px;
+        display: none; }
+        .work .container .criteria_1 div:nth-child(5) h5:before {
+          content: '5';
+          margin-right: 20px;
+          color: #ff005c;
+          line-height: 48.6px;
+          font-size: 36px;
+          font-weight: 700;
+          width: 22px;
+          height: 49px; }
+        .work .container .criteria_1 div:nth-child(5) p {
+          width: 335px;
+          height: 40px; }
+        .work .container .criteria_1 div:nth-child(5) .border-bottom {
           background-color: #BFE0FF;
           height: 2px;
           width: 386px;

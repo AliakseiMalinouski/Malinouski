@@ -833,6 +833,22 @@ $bold800: 800;
                     margin-bottom: 30px;
                 }
             }
+
+            .criteria_2 {
+                div:nth-child(2) {
+                    width: 520px;
+
+                    h5 {
+                        margin-left: 5px;
+                    }
+                }
+                div:nth-child(1) {
+                    width: 520px;
+                    h5 {
+                        margin-left: 5px;
+                    }
+                }
+            }
         }
     }
 
@@ -1058,11 +1074,106 @@ $bold800: 800;
     // video
 
     .video {
+        display: none;
         
         .container {
 
             .play-video {
                 width: 460px;
+            }
+        }
+    }
+
+    // opinion 
+
+
+    .opinion {
+       display: none;
+    }
+
+    // reviews
+
+
+    .reviews {
+
+        .container {
+
+            background: none;
+
+            a:nth-child(5) {
+                align-self: center;
+            }
+            a:nth-child(4) {
+                align-self: center;
+            }
+            a:nth-child(3) {
+                align-self: center;
+            }
+            a:nth-child(2) {
+                align-self: center;
+            }
+            a:nth-child(1) {
+                align-self: center;
+            }
+        }
+    }
+
+    // brands
+
+    .brands {
+
+        .container {
+
+            .all-brands {
+                flex-direction: column;
+
+
+                .mobile_brands_block_two {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // master
+
+
+    .master {
+        display: none;
+    }
+
+
+    // our-s-c
+
+    .our_service_center {
+        display: none;
+    }
+
+
+    // courier
+
+
+    .courier {
+        display: none;
+    }
+
+    // work
+
+    .work {
+
+        .container {
+
+            .criteria_1 {
+                div:nth-child(4) {
+                    display: block;
+                }
+                 div:nth-child(5) {
+                    display: block;
+                }
+            }
+
+            .criteria_2 {
+              display: none;
             }
         }
     }
