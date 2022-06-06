@@ -375,6 +375,7 @@ function OpenDisplayMobile() {
     document.getElementById('display-mobile').style.height = '335px';
     document.getElementById('close-button-list-display-mobile').style.display = 'block';
     document.getElementById('open-button-list-display-mobile').style.display = 'none';
+    document.getElementById('close-button-list-dinamics-mobile').style.top = '405px';
     
     
 }
@@ -385,6 +386,7 @@ function CloseDisplayMobile() {
     document.getElementById('display-mobile').style.height = '100px';
     document.getElementById('close-button-list-display-mobile').style.display = 'none';
     document.getElementById('open-button-list-display-mobile').style.display = 'block';
+    document.getElementById('close-button-list-dinamics-mobile').style.top = '170px';
     
 }
 
@@ -467,7 +469,7 @@ function CloseBatteryMobile() {
 
 function OpenCameraMobile() {
     document.getElementById('list-camera-mobile').style.display = 'block';
-    document.getElementById('camera-mobile').style.height = '300px';
+    document.getElementById('camera-mobile').style.height = '340px';
     document.getElementById('close-button-list-camera-mobile').style.display = 'block';
     document.getElementById('open-button-list-camera-mobile').style.display = 'none';
 }
@@ -477,5 +479,41 @@ function CloseCameraMobile() {
     document.getElementById('camera-mobile').style.height = '100px';
     document.getElementById('close-button-list-camera-mobile').style.display = 'none';
     document.getElementById('open-button-list-camera-mobile').style.display = 'block';
+}
+
+
+// speaker mobile
+
+
+function OpenSpeakerMobile() {
+    document.getElementById('list-speaker-mobile').style.display = 'block';
+    document.getElementById('speaker-mobile').style.height = '300px';
+    document.getElementById('close-button-list-speaker-mobile').style.display = 'block';
+    document.getElementById('open-button-list-speaker-mobile').style.display = 'none';
+}
+
+function CloseSpeakerMobile() {
+    document.getElementById('list-speaker-mobile').style.display = 'none';
+    document.getElementById('speaker-mobile').style.height = '100px';
+    document.getElementById('close-button-list-speaker-mobile').style.display = 'none';
+    document.getElementById('open-button-list-speaker-mobile').style.display = 'block';
+}
+
+
+// other problems mobile
+
+
+function OpenOtherProblemsMobile() {
+    document.getElementById('list-other-problems-mobile').style.display = 'block';
+    document.getElementById('other-problems-mobile').style.height = '380px';
+    document.getElementById('close-button-list-other-problems-mobile').style.display = 'block';
+    document.getElementById('open-button-list-other-problems-mobile').style.display = 'none';
+}
+
+function CloseOtherProblemsMobile() {
+    document.getElementById('list-other-problems-mobile').style.display = 'none';
+    document.getElementById('other-problems-mobile').style.height = '100px';
+    document.getElementById('close-button-list-other-problems-mobile').style.display = 'none';
+    document.getElementById('open-button-list-other-problems-mobile').style.display = 'block';
 }
 

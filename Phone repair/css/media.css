@@ -666,7 +666,7 @@
         margin-top: 38px;
         margin-left: 65px;
         font-weight: 700;
-        font-size: 18px; }
+        font-size: 17px; }
       .repair .container .left__blocks .display-mobile .open {
         position: absolute;
         top: 38px;
@@ -711,7 +711,7 @@
         margin-top: 38px;
         margin-left: 65px;
         font-weight: 700;
-        font-size: 18px; }
+        font-size: 17px; }
       .repair .container .left__blocks .dinamics-mobile .open2 {
         position: absolute;
         top: 38px;
@@ -757,7 +757,7 @@
         margin-top: 38px;
         margin-left: 65px;
         font-weight: 700;
-        font-size: 18px; }
+        font-size: 17px; }
       .repair .container .left__blocks .buttons-mobile .open3 {
         position: absolute;
         top: 38px;
@@ -803,7 +803,7 @@
         margin-top: 38px;
         margin-left: 65px;
         font-weight: 700;
-        font-size: 18px; }
+        font-size: 17px; }
       .repair .container .left__blocks .net-mobile .open4 {
         position: absolute;
         top: 38px;
@@ -838,6 +838,16 @@
       right: 32px;
       top: 170px;
       display: none; }
+    .repair .container .right__blocks .close6 {
+      position: absolute;
+      right: 32px;
+      top: 300px;
+      display: none; }
+    .repair .container .right__blocks .close7 {
+      position: absolute;
+      right: 32px;
+      top: 430px;
+      display: none; }
     .repair .container .right__blocks .battery-mobile {
       display: block;
       width: 335px;
@@ -863,7 +873,7 @@
         margin-top: 38px;
         margin-left: 65px;
         font-weight: 700;
-        font-size: 18px; }
+        font-size: 17px; }
       .repair .container .right__blocks .battery-mobile .open5 {
         position: absolute;
         top: 38px;
@@ -908,7 +918,7 @@
         margin-top: 38px;
         margin-left: 65px;
         font-weight: 700;
-        font-size: 18px; }
+        font-size: 17px; }
       .repair .container .right__blocks .camera-mobile .open6 {
         position: absolute;
         top: 38px;
@@ -917,6 +927,96 @@
         margin-top: 38px;
         display: none; }
         .repair .container .right__blocks .camera-mobile ul li {
+          font-size: 15px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 20.25px;
+          margin-bottom: 20px;
+          animation: list-ds 1.5s linear; }
+  @keyframes list-ds {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+    .repair .container .right__blocks .speaker-mobile {
+      display: block;
+      width: 335px;
+      height: 100px;
+      border: 1px solid #fff;
+      padding: 0.1px;
+      position: relative;
+      margin-bottom: 30px;
+      border: 2px solid #fff;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      -moz-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      animation: display-mobile 1.2s linear;
+      transition: 0.5s; }
+      .repair .container .right__blocks .speaker-mobile .icon-speaker {
+        position: absolute;
+        left: 19px;
+        top: 34px; }
+      .repair .container .right__blocks .speaker-mobile h6 {
+        color: #000000;
+        line-height: 24.3px;
+        margin-top: 38px;
+        margin-left: 65px;
+        font-weight: 700;
+        font-size: 17px; }
+      .repair .container .right__blocks .speaker-mobile .open7 {
+        position: absolute;
+        top: 38px;
+        right: 30px; }
+      .repair .container .right__blocks .speaker-mobile ul {
+        margin-top: 38px;
+        display: none; }
+        .repair .container .right__blocks .speaker-mobile ul li {
+          font-size: 15px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 20.25px;
+          margin-bottom: 20px;
+          animation: list-ds 1.5s linear; }
+  @keyframes list-ds {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+    .repair .container .right__blocks .other-problems-mobile {
+      display: block;
+      width: 335px;
+      height: 100px;
+      border: 1px solid #fff;
+      padding: 0.1px;
+      position: relative;
+      margin-bottom: 30px;
+      border: 2px solid #fff;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      -moz-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      animation: display-mobile 1.2s linear;
+      transition: 0.5s; }
+      .repair .container .right__blocks .other-problems-mobile .icon-other-problems {
+        position: absolute;
+        left: 19px;
+        top: 34px; }
+      .repair .container .right__blocks .other-problems-mobile h6 {
+        color: #000000;
+        line-height: 24.3px;
+        margin-top: 38px;
+        margin-left: 65px;
+        font-weight: 700;
+        font-size: 17px; }
+      .repair .container .right__blocks .other-problems-mobile .open8 {
+        position: absolute;
+        top: 38px;
+        right: 30px; }
+      .repair .container .right__blocks .other-problems-mobile ul {
+        margin-top: 38px;
+        display: none; }
+        .repair .container .right__blocks .other-problems-mobile ul li {
           font-size: 15px;
           font-weight: 500;
           color: #000000;
