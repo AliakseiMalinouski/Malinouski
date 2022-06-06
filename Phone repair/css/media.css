@@ -432,7 +432,7 @@
       width: 500px; } }
 @media all and (max-width: 580px) {
   .container {
-    width: 100%; }
+    width: 480px; }
 
   .header .container .menu {
     margin-left: 220px; }
@@ -1143,12 +1143,12 @@
       opacity: 1; } } }
 @media all and (max-width: 500px) {
   .container {
-    width: 100%; }
+    width: 320px; }
 
   .header .container {
     position: relative; }
     .header .container .menu {
-      margin-left: 140px; }
+      margin-left: 70px; }
 
   .hero .container .modal_hero {
     width: 320px;
