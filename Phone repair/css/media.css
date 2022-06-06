@@ -419,7 +419,7 @@
     height: 620px;
     background-size: 100%; }
     .contacts .container .map img {
-      display: none; }
+      display: none !important; }
   .contacts .container .about-center .next-about {
     transform: none; }
 
