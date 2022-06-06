@@ -143,6 +143,47 @@ h3 {
     display: flex;
     justify-content: space-between;
     position: relative; }
+    .hero .container .modal_hero {
+      z-index: 3;
+      background-color: #fff;
+      width: 430px;
+      height: 350px;
+      position: absolute;
+      top: 190px;
+      left: 420px;
+      display: none;
+      opacity: 0;
+      animation: modal_hero 2s forwards;
+      padding: 0.1px;
+      border: 10px solid #BFE0FF;
+      background-image: url(../img/modal_hero_fone.jpg);
+      background-repeat: no-repeat;
+      background-position: bottom center; }
+@keyframes modal_hero {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+      .hero .container .modal_hero .close {
+        position: relative;
+        padding: 0.1px; }
+        .hero .container .modal_hero .close .close-button {
+          position: absolute;
+          border: none;
+          top: 20px;
+          right: 20px;
+          cursor: pointer; }
+        .hero .container .modal_hero .close ul {
+          margin-top: 100px; }
+          .hero .container .modal_hero .close ul li {
+            color: #ff005c;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px; }
+            .hero .container .modal_hero .close ul li a {
+              color: #ff005c;
+              font-size: 18px;
+              font-weight: 500; }
     .hero .container h1 {
       width: 466px;
       height: 118px;

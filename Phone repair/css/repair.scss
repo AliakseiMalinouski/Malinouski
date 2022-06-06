@@ -255,7 +255,69 @@ h3 {
          justify-content: space-between;
          position: relative;
 
-       
+        .modal_hero {
+                z-index: 3;
+                background-color: $white;
+                width: 430px;
+                height: 350px;
+                position: absolute;
+                top: 190px;
+                left: 420px;
+                display: none;
+                // animation: modal_hero 3s;
+                opacity: 0;
+                animation: modal_hero 2s forwards;
+                padding: 0.1px;
+                border: 10px solid $light-blue;
+                background-image: url(../img/modal_hero_fone.jpg);
+                background-repeat: no-repeat;
+                background-position: bottom center;
+
+                @keyframes modal_hero {
+                        0% {
+                            opacity: 0;
+                        }
+                
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
+                .close {
+                    position: relative;
+                    padding: 0.1px;
+
+                    .close-button {
+                        position: absolute;
+                        border: none;
+                        top: 20px;
+                        right: 20px;
+                        cursor: pointer;
+                    }
+
+                    ul {
+                        margin-top: 100px;
+
+
+                        li {
+                        color: $bold-pink;
+                        font-size: $fz18;
+                        font-weight: $medium;
+                        margin-bottom: 20px;
+
+                        a {
+                        color: $bold-pink;
+                        font-size: $fz18;
+                        font-weight: $medium;
+                        }
+                    }
+                    }
+
+                    
+
+                    
+                }
+         }
 
 
         h1 {
