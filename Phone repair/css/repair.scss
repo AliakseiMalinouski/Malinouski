@@ -43,7 +43,6 @@ $bold800: 800;
 
 body {
     font-family: 'Montserrat', sans-serif;
-    height: 15000px;
     font-size: $fz;
     font-weight: $light;
 }
@@ -128,6 +127,43 @@ h3 {
         width: 20px;
         height: 20px;
         display: none;
+    }
+
+    .nav-header {
+        display: none;
+        width: 320px;
+        background-color: lightcoral;
+        height: 530px;
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 0px;
+        animation: nav-header 0.4s linear;
+
+        @keyframes nav-header {
+            from {
+                    width: 0;
+                }
+            
+                to {
+                    width: 320px;
+                }
+        }
+
+        .interior-modal {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+
+            #close-modal-header {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width: 40px;
+                height: 40px;
+            }
+        }
     }
 
     ul {

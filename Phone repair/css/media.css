@@ -1152,8 +1152,10 @@
   .container {
     width: 320px; }
 
-  .header .container .menu {
-    margin-left: 70px; }
+  .header .container {
+    position: relative; }
+    .header .container .menu {
+      margin-left: 70px; }
 
   .repair .left__blocks {
     width: 320px !important; }

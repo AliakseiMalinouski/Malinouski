@@ -19,7 +19,12 @@
     <div class="header">
         <div class="container" id="con-header">
             <h4><span>BRAND</span>Сервис</h4>
-            <img class="menu" src="../Phone repair/img/nav.svg" alt="Меню">
+            <img onclick="OpenModalMobile()" class="menu" src="../Phone repair/img/nav.svg" alt="Меню">
+            <div id="nav-header" class="nav-header">
+             <div class="interior-modal">
+                 <img onclick="CloseModalMobile()" id="close-modal-header" src="../Phone repair/img/cross-close.png" alt="Закрыть">
+             </div>
+            </div>
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Бренды</a></li>
@@ -910,7 +915,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="container">
             <div class="wrap_footer">
             <div class="arrive">
@@ -970,7 +975,7 @@
         </div>
     </div>
 
-    <div class="footer-mobile">
+    <div class="footer-mobile" id="footer-mobile">
         <div class="container">
             <div class="footer-mobile-block-one">
                 <h5><span>BRAND</span>Сервис</h5>
