@@ -7,37 +7,11 @@ function CallTheMasterAtHome() {
 }
 
 
-// close
 
 
-function CloseMapUnion() {
-    document.getElementById('location_1').style.display = 'none';
-    document.getElementById('union1').style.display = 'block';
-    document.getElementById('map').style.backgroundImage = '';
-    document.getElementById('union2').style.display = 'block';
-    document.getElementById('location_2').style.display = 'none';
-    document.getElementById('union3').style.display = 'block';
-    document.getElementById('location_3').style.display = 'none';
-    document.getElementById('union4').style.display = 'block';
-    document.getElementById('location_4').style.display = 'none'
-    document.getElementById('union5').style.display = 'block';
-    document.getElementById('location_5').style.display = 'none';
-    document.getElementById('union6').style.display = 'block';
-    document.getElementById('location_6').style.display = 'none';
-    document.getElementById('union7').style.display = 'block';
-    document.getElementById('location_7').style.display = 'none';
-    document.getElementById('union8').style.display = 'block';
-    document.getElementById('location_8').style.display = 'none';
-    document.getElementById('union9').style.display = 'block';
-    document.getElementById('location_9').style.display = 'none';
-    document.getElementById('union10').style.display = 'block';
-    document.getElementById('location_10').style.display = 'none';
-    document.getElementById('union11').style.display = 'block';
-    document.getElementById('location_11').style.display = 'none';
-    document.getElementById('about-center').style.marginTop = '7px';
-}
 
-// open text
+
+
 
 function OpenText() {
     document.getElementById('next-about').style.display = 'block';
@@ -52,7 +26,7 @@ function CloseText() {
 }
 
 
-// open oher brands
+
 
 
 function OpenBrands() {
@@ -67,7 +41,7 @@ function CloseBrands() {
     document.getElementById('button-close-brands').style.display = 'none';
 }
 
-//  display mobile
+
 
 
 function OpenDisplayMobile() {
@@ -96,7 +70,7 @@ function CloseDisplayMobile() {
 }
 
 
-// dinamics mobile
+
 
 
 function OpenDinamicsMobile() {
@@ -117,7 +91,6 @@ function CloseDinamicsMobile() {
 }
 
 
-// buttons mobile
 
 
 function OpenButtonsMobile() {
@@ -138,7 +111,7 @@ function CloseButtonsMobile() {
 }
 
 
-// net mobile
+
 
 
 function OpenNetMobile() {
@@ -157,7 +130,7 @@ function CloseNetMobile() {
 
 
 
-// battery mobile
+
 
 function OpenBatteryMobile() {
     document.getElementById('list-battery-mobile').style.display = 'block';
@@ -173,7 +146,7 @@ function CloseBatteryMobile() {
     document.getElementById('open-button-list-battery-mobile').style.display = 'block';
 }
 
-// camera mobile
+
 
 
 function OpenCameraMobile() {
@@ -191,7 +164,7 @@ function CloseCameraMobile() {
 }
 
 
-// speaker mobile
+
 
 
 function OpenSpeakerMobile() {
@@ -209,7 +182,6 @@ function CloseSpeakerMobile() {
 }
 
 
-// other problems mobile
 
 
 function OpenOtherProblemsMobile() {
@@ -226,8 +198,6 @@ function CloseOtherProblemsMobile() {
     document.getElementById('open-button-list-other-problems-mobile').style.display = 'block';
 }
 
-
-// modal mobile header
 
 
 function OpenModalMobile() {
