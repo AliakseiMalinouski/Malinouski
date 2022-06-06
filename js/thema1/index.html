@@ -5,174 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+ 
 </head>
 <body>
 
+      
+    
+
+    <script type="module">
+        // const colorPikiers = [
+        //     {label:'red', color:'#FF0000'},
+        //     { label: 'green', color: '#FF0000' },
+        //     { label: 'blue', color: '#00FF00' },
+        //     { label: 'yellow', color: '#FFFF00' },
+        //     { label: 'blue', color: '#0000FF' }
+        // ]
+        //  const elements = colorPikiers.map(el=>{
+        //     const button = document.createElement('button');
+        //     button.type = 'button';
+        //     button.textContent = el.label;
+        //     button.style.backgroundColor = el.color
+        //     button.style.width = '200px'
+        //     button.style.height = '150px'
+        //     return button
+        //  })
+        //  document.body.append(...elements)
 
 
-    <img src="../thema1/img/code.png" alt="code">
-
-    <script>
-
-        // переменные 
-        // var a = 5;
-        // var str = 'hello'
-        // console.log(a)
-        // a = 'world';
-        // console.log(a)
-        // var b = 6;
-        // console.log(--a)
-        // var c = 15;
-        // console.log(++c)
-
-
-        // ариф. операции
-
-        // var cold = 150;
-        // cold = cold + 250;
-        // console.log(cold)
-
-        // var a = 'бетонно';
-        // var b = 'мешалка';
-        // console.log(a+b)
-
-
-        // сравнение операции и логические операции
-
-        // var a = 6;
-        // console.log(a<8)
-        // var b = 7;
-        // console.log(b>10)
-       
-        //  var c = 'page';
-        //  var d = 'time';
-
-        // 'p'.charCodeAt(0)
-        // 't'.charCodeAt(0)
-        //  console.log(c<d)
-
-        //  var name = 'Aleksy';
-        //  var age = '19';
-        //  console.log(name=='Aleksy') && console.log(age>18)
-        //  console.log(name=='Illia') && console.log(age>23)
-
-        //  var summa = 500;
-        //  var distance = 1500;
-
-        //  console.log(summa>400) || console.log(distance<1400)
-
-        //  var str = '1000'
-        //  console.log (parseInt('1000'))
-        //  typeof num
-
-        //  console.log(parseInt(2.5))
-
-        //  console.log(parseFloat(4.3))
-
-        
-
-        // оператор if
-
-        // var age = 19;
-
-        // if (age>18) {
-        //     console.log('text text');
-        //     console.log('exxxx');
-        // }
-
-    //     var num = 25
-         
-    //     if(num<23) console.log('right')
-    //     else console.log('false')
-
-    //     var money = '5000';
-        
-    //    if (money < 4000) {
-    //         alert('денег нет!');
-    //         alert('но вы справитесь!');
-    //     }
-    //     else
-    //         alert('денег девать некуда!');
-        
-
-        // var name = prompt ('голосование', 'варианты');
-        // prompt('голосование', 'варианты')
-        // console.log(name)
-        // alert('Hello' + name)
-        
-        // var invite = confirm('invite you?')
-
-        // var speed = parseInt(prompt('Введите скорость'))
-        // if(speed>60) {
-        //     alert('превышение')
-        // }
-        // else
-        //     alert('норма')
-
-
-           var infoname = 'Ваше ФИО:';
-           var lastname = prompt('Введите вашу фамилию');
-           var name = prompt('Введите ваше имя');
-           var patronymic = prompt('Введите ваше отчество');
-           var textage = 'Ваш возраст в годах:';
-           var age = prompt('Ваш возраст в годах:');
-           var textageinday = 'Ваш возраст в днях:';
-           var ageinday = prompt('Ваш возраст в днях:');
-           ageinday = ageinday*365;
-           var throughtext = 'Через пять лет Вам будет:';
-           var through = prompt('Через пять лет Вам будет:');
-           var textgender = 'Ваш пол:';
-           var gender = prompt('Ваш пол:');
-           var textsallary = 'Вы на пенсии?';
-           var sallary =  confirm('Вы на пенсии:')
-           var sallary = String("Нет")
-           var code = 'Код появится после закрытия окна данных';
-           alert(`${infoname} ${lastname} ${name} ${patronymic}\n\n${textage} ${age}\n\n${textageinday} ${ageinday}\n\n${throughtext} ${through}\n\n${textgender} ${gender}\n\n${textsallary} ${sallary}\n\n${code}`)  
-
-        //  var lastname;
-        //  var name;
-        //  var patronymic;
-        //  var age;
-        //  var ageinday;
-        //  var through;
-        //  var gender;
-        //  var sallary;
-        //  if(confirm('Согласны ли вы заполнить данные?')){
-        //     lastname = prompt('Введите вашу фамилию:');
-        //     name = prompt('Введите Ваше имя:');
-        //     patronymic = prompt('Введите Ваше отчество:');
-        //     age = prompt('Введите Ваш возраст:');
-        //     ageinday = prompt('Ваш возраст в днях:');
-        //     ageinday = ageinday*365;
-        //     through = prompt('Через пять лет Вам будет:');
-        //     gender = prompt('Ваш пол:');
-        //     sallary = confirm('Вы на пенсии?');
-        //     sallary = String('Нет');
-        //     alert(`Ваше ФИО: ${lastname} ${name} ${patronymic}\n\nВаш возраст: ${age}\n\nВаш возраст в днях: ${ageinday}\n\nЧерез пять лет Вам будет:  ${through}\n\nВаш пол: ${gender}\n\nВы на пенсии? ${sallary}\n\n` )
-
-        //  }
-        //  else {
-        //      alert('Вы нажали < нет >')
-        //  }
-
-        //  var lastname;
-        //  var name;
-        //  var patronymic;
-        //  var age;
-        //  var ageinday;
-        //  var through;
-        //  var gender;
-        //  var sallary;
-
-        // lastname ? prompt('Введите своё имя') = lastname : confirm('Вы ничего не ввели') ;
-        
-         
+        const names =  ['Stas', 'Leha', 'Iluha', 'Stas', 'Artem']
+        const filter = names.filter((el,i,arr) => arr.indexOf(el) === i)
+        console.log(names);
+        console.log(filter)
     </script>
 </body>
 </html>

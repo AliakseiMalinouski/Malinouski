@@ -443,3 +443,39 @@ function CloseNetMobile() {
     document.getElementById('close-button-list-net-mobile').style.display = 'none';
     document.getElementById('open-button-list-net-mobile').style.display = 'block';
 }
+
+
+
+// battery mobile
+
+function OpenBatteryMobile() {
+    document.getElementById('list-battery-mobile').style.display = 'block';
+    document.getElementById('battery-mobile').style.height = '300px';
+    document.getElementById('close-button-list-battery-mobile').style.display = 'block';
+    document.getElementById('open-button-list-battery-mobile').style.display = 'none';
+}
+
+function CloseBatteryMobile() {
+    document.getElementById('list-battery-mobile').style.display = 'none';
+    document.getElementById('battery-mobile').style.height = '100px';
+    document.getElementById('close-button-list-battery-mobile').style.display = 'none';
+    document.getElementById('open-button-list-battery-mobile').style.display = 'block';
+}
+
+// camera mobile
+
+
+function OpenCameraMobile() {
+    document.getElementById('list-camera-mobile').style.display = 'block';
+    document.getElementById('camera-mobile').style.height = '300px';
+    document.getElementById('close-button-list-camera-mobile').style.display = 'block';
+    document.getElementById('open-button-list-camera-mobile').style.display = 'none';
+}
+
+function CloseCameraMobile() {
+    document.getElementById('list-camera-mobile').style.display = 'none';
+    document.getElementById('camera-mobile').style.height = '100px';
+    document.getElementById('close-button-list-camera-mobile').style.display = 'none';
+    document.getElementById('open-button-list-camera-mobile').style.display = 'block';
+}
+

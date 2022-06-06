@@ -619,7 +619,8 @@
     display: none; }
   .repair .container .left__blocks {
     padding: 0.1px;
-    position: relative; }
+    position: relative;
+    height: auto; }
     .repair .container .left__blocks .close {
       position: absolute;
       right: 30px;
@@ -812,6 +813,110 @@
         display: none;
         background-color: #fff; }
         .repair .container .left__blocks .net-mobile ul li {
+          font-size: 15px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 20.25px;
+          margin-bottom: 20px;
+          animation: list-ds 1.5s linear; }
+  @keyframes list-ds {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  .repair .container .right__blocks {
+    padding: 0.1px;
+    position: relative;
+    height: auto; }
+    .repair .container .right__blocks .close4 {
+      position: absolute;
+      right: 32px;
+      top: 40px;
+      display: none; }
+    .repair .container .right__blocks .close5 {
+      position: absolute;
+      right: 32px;
+      top: 170px;
+      display: none; }
+    .repair .container .right__blocks .battery-mobile {
+      display: block;
+      width: 335px;
+      height: 100px;
+      border: 1px solid #fff;
+      padding: 0.1px;
+      position: relative;
+      margin-bottom: 30px;
+      border: 2px solid #fff;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      -moz-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      animation: display-mobile 1.2s linear;
+      transition: 0.5s; }
+      .repair .container .right__blocks .battery-mobile .icon-battery {
+        position: absolute;
+        left: 19px;
+        top: 34px; }
+      .repair .container .right__blocks .battery-mobile h6 {
+        color: #000000;
+        line-height: 24.3px;
+        margin-top: 38px;
+        margin-left: 65px;
+        font-weight: 700;
+        font-size: 18px; }
+      .repair .container .right__blocks .battery-mobile .open5 {
+        position: absolute;
+        top: 38px;
+        right: 30px; }
+      .repair .container .right__blocks .battery-mobile ul {
+        margin-top: 38px;
+        display: none; }
+        .repair .container .right__blocks .battery-mobile ul li {
+          font-size: 15px;
+          font-weight: 500;
+          color: #000000;
+          line-height: 20.25px;
+          margin-bottom: 20px;
+          animation: list-ds 1.5s linear; }
+  @keyframes list-ds {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+    .repair .container .right__blocks .camera-mobile {
+      display: block;
+      width: 335px;
+      height: 100px;
+      border: 1px solid #fff;
+      padding: 0.1px;
+      position: relative;
+      margin-bottom: 30px;
+      border: 2px solid #fff;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      -moz-box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      box-shadow: 0px 0px 27px -7px rgba(191, 224, 255, 0.8);
+      animation: display-mobile 1.2s linear;
+      transition: 0.5s; }
+      .repair .container .right__blocks .camera-mobile .icon-camera {
+        position: absolute;
+        left: 19px;
+        top: 34px; }
+      .repair .container .right__blocks .camera-mobile h6 {
+        color: #000000;
+        line-height: 24.3px;
+        margin-top: 38px;
+        margin-left: 65px;
+        font-weight: 700;
+        font-size: 18px; }
+      .repair .container .right__blocks .camera-mobile .open6 {
+        position: absolute;
+        top: 38px;
+        right: 30px; }
+      .repair .container .right__blocks .camera-mobile ul {
+        margin-top: 38px;
+        display: none; }
+        .repair .container .right__blocks .camera-mobile ul li {
           font-size: 15px;
           font-weight: 500;
           color: #000000;
