@@ -1,7 +1,6 @@
 @media all and (max-width: 1400px) {
   .container {
-    width: 960px;
-    background-color: green; }
+    width: 960px; }
 
   .header .container h4 {
     font-size: 24px; }
@@ -35,14 +34,12 @@
   .slider .container {
     height: 900px; }
     .slider .container .carousel {
-      height: 790px;
-      background-color: orange; }
+      height: 790px; }
     .slider .container .first-slide {
       display: flex;
       justify-content: none;
       align-items: center;
-      flex-direction: column;
-      background-color: purple; }
+      flex-direction: column; }
       .slider .container .first-slide .quality img {
         left: 170px; }
       .slider .container .first-slide .prise img {
@@ -583,7 +580,6 @@
       align-items: center; }
       .footer-mobile .container .footer-mobile-block-one {
         height: 314px;
-        background-color: lightcoral;
         padding: 0.1px;
         border-bottom: 2px solid #BFE0FF;
         display: flex;
@@ -1156,6 +1152,10 @@
     position: relative; }
     .header .container .menu {
       margin-left: 70px; }
+
+  .hero .container .modal_hero {
+    width: 320px;
+    left: 0px; }
 
   .repair .left__blocks {
     width: 320px !important; }

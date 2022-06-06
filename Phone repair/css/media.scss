@@ -34,7 +34,7 @@ $bold800: 800;
 @media all and (max-width:1400px) {
     .container {
         width: 960px;
-        background-color: green;
+        
     }
 
     // header
@@ -118,7 +118,7 @@ $bold800: 800;
 
             .carousel {
                 height: 790px;
-                background-color: orange;
+               
             }
 
             .first-slide {
@@ -126,7 +126,7 @@ $bold800: 800;
                     justify-content: none;
                     align-items: center;
                     flex-direction: column;
-                    background-color: purple;
+                    
 
                     .quality {
                         
@@ -1429,7 +1429,6 @@ $bold800: 800;
 
             .footer-mobile-block-one {
                 height: 314px;
-                background-color: lightcoral;
                 padding: 0.1px;
                 border-bottom: 2px solid $light-blue;
                 display: flex;
@@ -2333,6 +2332,17 @@ $bold800: 800;
             }
 
             
+        }
+    }
+
+    .hero {
+
+        .container {
+
+            .modal_hero {
+                width: 320px;
+                left: 0px;
+            }
         }
     }
 
