@@ -103,8 +103,7 @@
   .opinion .container {
     height: 900px; }
     .opinion .container .carousel {
-      height: 790px;
-      background-color: orange; }
+      height: 790px; }
       .opinion .container .carousel .slide1 {
         height: auto;
         flex-direction: column;
@@ -118,8 +117,7 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    background: url(../img/yandex1.png) no-repeat 40% 30%, url(../img/google1.png) no-repeat 50% 60%, url(../img/2gis.png) no-repeat 60% 30%, url(../img/yell.png) no-repeat 50% 5%;
-    background-color: green; }
+    background: url(../img/yandex1.png) no-repeat 40% 30%, url(../img/google1.png) no-repeat 50% 60%, url(../img/2gis.png) no-repeat 60% 30%, url(../img/yell.png) no-repeat 50% 5%; }
     .reviews .container a {
       margin-bottom: 30px; }
     .reviews .container a:nth-child(2) {
@@ -177,8 +175,7 @@
   .our_service_center .container {
     height: 1060px; }
     .our_service_center .container .carousel {
-      height: 900px;
-      background-color: orange; }
+      height: 900px; }
       .our_service_center .container .carousel .carousel-indicators {
         top: 860px; }
     .our_service_center .container .picture-slides {
