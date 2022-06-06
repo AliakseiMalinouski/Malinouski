@@ -425,7 +425,7 @@ function OpenButtonsMobile() {
     document.getElementById('buttons-mobile').style.height = '260px';
     document.getElementById('close-button-list-buttons-mobile').style.display = 'block';
     document.getElementById('open-button-list-buttons-mobile').style.display = 'none';
-    document.getElementById('close-button-list-buttons-mobile').style.top = '300px';
+    
     
 }
 
