@@ -1,8 +1,3 @@
-function CallTheMasterAtHome() {
-    if(document.getElementById('to_the_house')){
-        onclick = alert('Ваша заявка была отправлена!\nОстались вопросы? Позвоните нам!') = home;
-     }
-}
 function OpenText() {
     document.getElementById('next-about').style.display = 'block';
     document.getElementById('open-text').style.display = 'none';
