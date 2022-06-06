@@ -96,9 +96,6 @@
       .brands .container .all-brands .mobile_brands_block_two .asus {
         margin-bottom: 30px; }
 
-  .video .container .play-video {
-    width: 960px; }
-
   .opinion .container {
     height: 900px; }
     .opinion .container .carousel {
@@ -325,10 +322,6 @@
       width: 500px;
       margin: 0 auto; }
 
-  .video .container .play-video {
-    width: 560px;
-    height: auto; }
-
   .sale .container .slide_1 {
     height: 500px;
     padding: 0.1px; }
@@ -453,11 +446,6 @@
       flex-direction: column; }
     .hero .container .modal_hero {
       left: 20px; }
-
-  .video {
-    display: none; }
-    .video .container .play-video {
-      width: 460px; }
 
   .opinion {
     display: none; }
