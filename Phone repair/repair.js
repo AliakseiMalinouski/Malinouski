@@ -7,12 +7,6 @@ function CallTheMasterAtHome() {
 }
 
 
-
-
-
-
-
-
 function OpenText() {
     document.getElementById('next-about').style.display = 'block';
     document.getElementById('open-text').style.display = 'none';
