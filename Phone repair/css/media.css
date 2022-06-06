@@ -639,7 +639,7 @@
     .repair .container .left__blocks .close3 {
       position: absolute;
       right: 32px;
-      top: 429px;
+      top: 40px;
       display: none; }
     .repair .container .left__blocks .wrap-display-mobile {
       display: block;
@@ -651,18 +651,6 @@
       display: block;
       position: relative; }
     .repair .container .left__blocks .wrap-net-mobile {
-      display: block;
-      position: relative; }
-    .repair .container .left__blocks .wrap-battery-mobile {
-      display: block;
-      position: relative; }
-    .repair .container .left__blocks .wrap-camera-mobile {
-      display: block;
-      position: relative; }
-    .repair .container .left__blocks .wrap-speaker-mobile {
-      display: block;
-      position: relative; }
-    .repair .container .left__blocks .wrap-other-problems-mobile {
       display: block;
       position: relative; }
     .repair .container .left__blocks .display-mobile {
@@ -805,7 +793,6 @@
       height: 100px;
       border: 1px solid #fff;
       padding: 0.1px;
-      position: relative;
       margin-bottom: 30px;
       border: 2px solid #fff;
       background-color: #fff;
@@ -869,13 +856,24 @@
       right: 32px;
       top: 430px;
       display: none; }
+    .repair .container .right__blocks .wrap-battery-mobile {
+      display: block;
+      position: relative; }
+    .repair .container .right__blocks .wrap-camera-mobile {
+      display: block;
+      position: relative; }
+    .repair .container .right__blocks .wrap-speaker-mobile {
+      display: block;
+      position: relative; }
+    .repair .container .right__blocks .wrap-other-problems-mobile {
+      display: block;
+      position: relative; }
     .repair .container .right__blocks .battery-mobile {
       display: block;
       width: 335px;
       height: 100px;
       border: 1px solid #fff;
       padding: 0.1px;
-      position: relative;
       margin-bottom: 30px;
       border: 2px solid #fff;
       background-color: #fff;

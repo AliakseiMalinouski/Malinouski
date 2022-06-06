@@ -1492,7 +1492,7 @@ $bold800: 800;
                 .close3 {
                     position: absolute;
                     right: 32px;
-                    top: 429px;
+                    top: 40px;
                     display: none;
                 }
 
@@ -1514,27 +1514,6 @@ $bold800: 800;
 
 
                 .wrap-net-mobile {
-                    display: block;
-                    position: relative;
-                }
-
-
-                .wrap-battery-mobile {
-                    display: block;
-                    position: relative;
-                }
-
-                .wrap-camera-mobile {
-                    display: block;
-                    position: relative;
-                }
-
-                .wrap-speaker-mobile {
-                    display: block;
-                    position: relative;
-                }
-
-                .wrap-other-problems-mobile {
                     display: block;
                     position: relative;
                 }
@@ -1760,7 +1739,6 @@ $bold800: 800;
                 // background: url(../img/display-broken-phone-icon.svg) no-repeat 7%;
                 border: 1px solid $white;
                 padding: 0.1px;
-                position: relative;
                 margin-bottom: 30px;
                 border: 2px solid $white;
                 background-color: $white;
@@ -1856,6 +1834,26 @@ $bold800: 800;
                     display: none;
                 }
 
+                .wrap-battery-mobile {
+                    display: block;
+                    position: relative;
+                }
+
+                .wrap-camera-mobile {
+                    display: block;
+                    position: relative;
+                }
+
+                .wrap-speaker-mobile {
+                    display: block;
+                    position: relative;
+                }
+
+                .wrap-other-problems-mobile {
+                    display: block;
+                    position: relative;
+                }
+
                 .battery-mobile {
                         display: block;
                         width: 335px;
@@ -1863,7 +1861,6 @@ $bold800: 800;
                         // background: url(../img/display-broken-phone-icon.svg) no-repeat 7%;
                         border: 1px solid $white;
                         padding: 0.1px;
-                        position: relative;
                         margin-bottom: 30px;
                         border: 2px solid $white;
                         background-color: $white;
