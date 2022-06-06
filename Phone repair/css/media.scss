@@ -1,4 +1,3 @@
-// colors
 $bold-pink: #ff005c;
 $light-pink: #ff6099;
 $light-blue: #BFE0FF;
@@ -8,9 +7,6 @@ $gray: #C4C4C4;
 $light-gray: #E5E5E5;
 $bold-gray: #797979;
 $blue: #0085FF;
-
-// font size
-
 $fz: 16px;
 $fz12: $fz - 4;
 $fz15: $fz - 1;
@@ -20,10 +16,6 @@ $fz26: $fz + 10;
 $fz28: $fz + 12;
 $fz36: $fz + 20;
 $fz48: $fz + 32;
-
-
-// font-weight 
-
 $light: 300;
 $regular: 400;
 $medium: 500;
@@ -598,7 +590,6 @@ $bold800: 800;
         }
     }
 }
-
 @media all and (max-width:992px) {
     .container {
         width: 560px;
@@ -1101,7 +1092,6 @@ $bold800: 800;
         }
     }
 }
-
 @media all and (max-width: 580px) {
     .container {
        width: 480px;
@@ -2316,7 +2306,6 @@ $bold800: 800;
         }
     }
 }
-
 @media all and (max-width: 500px) {
     .container {
         width: 320px;
