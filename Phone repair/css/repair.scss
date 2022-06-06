@@ -637,6 +637,41 @@ h3 {
             width: 590px;
             height: 1210px;
 
+
+            .wrap-display-mobile {
+                display: none;
+            }
+
+             .wrap-dinamics-mobile {
+                    display: none;
+                }
+
+                .wrap-buttons-mobile {
+                display: none;
+                }
+
+
+                .wrap-net-mobile {
+                    display: none;
+                }
+
+
+                .wrap-battery-mobile {
+                    display: none;
+                }
+
+                .wrap-camera-mobile {
+                    display: none;
+                }
+
+                .wrap-speaker-mobile {
+                    display: none;
+                }
+
+                .wrap-other-problems-mobile {
+                    display: none;
+                }
+
             li:hover {
                     animation: link-display 2s ease-in-out 0s normal none infinite running;
                 }

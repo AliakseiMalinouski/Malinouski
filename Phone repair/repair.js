@@ -375,7 +375,10 @@ function OpenDisplayMobile() {
     document.getElementById('display-mobile').style.height = '335px';
     document.getElementById('close-button-list-display-mobile').style.display = 'block';
     document.getElementById('open-button-list-display-mobile').style.display = 'none';
-    document.getElementById('close-button-list-dinamics-mobile').style.top = '405px';
+    
+    
+
+    
     
     
 }
@@ -387,6 +390,8 @@ function CloseDisplayMobile() {
     document.getElementById('close-button-list-display-mobile').style.display = 'none';
     document.getElementById('open-button-list-display-mobile').style.display = 'block';
     document.getElementById('close-button-list-dinamics-mobile').style.top = '170px';
+    document.getElementById('close-button-list-dinamics-mobile').style.top = '40px';
+   
     
 }
 
@@ -399,6 +404,8 @@ function OpenDinamicsMobile() {
     document.getElementById('dinamics-mobile').style.height = '300px';
     document.getElementById('close-button-list-dinamics-mobile').style.display = 'block';
     document.getElementById('open-button-list-dinamics-mobile').style.display = 'none';
+    
+    
 }
 
 
@@ -418,6 +425,8 @@ function OpenButtonsMobile() {
     document.getElementById('buttons-mobile').style.height = '260px';
     document.getElementById('close-button-list-buttons-mobile').style.display = 'block';
     document.getElementById('open-button-list-buttons-mobile').style.display = 'none';
+    document.getElementById('close-button-list-buttons-mobile').style.top = '300px';
+    
 }
 
 

@@ -417,6 +417,22 @@ h3 {
   .repair .container .left__blocks {
     width: 590px;
     height: 1210px; }
+    .repair .container .left__blocks .wrap-display-mobile {
+      display: none; }
+    .repair .container .left__blocks .wrap-dinamics-mobile {
+      display: none; }
+    .repair .container .left__blocks .wrap-buttons-mobile {
+      display: none; }
+    .repair .container .left__blocks .wrap-net-mobile {
+      display: none; }
+    .repair .container .left__blocks .wrap-battery-mobile {
+      display: none; }
+    .repair .container .left__blocks .wrap-camera-mobile {
+      display: none; }
+    .repair .container .left__blocks .wrap-speaker-mobile {
+      display: none; }
+    .repair .container .left__blocks .wrap-other-problems-mobile {
+      display: none; }
     .repair .container .left__blocks li:hover {
       animation: link-display 2s ease-in-out 0s normal none infinite running; }
 @keyframes link-display {
