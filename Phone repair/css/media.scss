@@ -26,100 +26,69 @@ $bold800: 800;
 @media all and (max-width:1400px) {
     .container {
         width: 960px;
-        
     }
-
-    // header
-
     .header {
-
         .container {
-
             h4 {
                font-size: $fz26 - 2;
-
                span {
                 font-size: $fz26 - 2;
                }
             }
-
             ul {
-               
                 li {
-                    margin-right: 30px;
+                 margin-right: 30px;
                 }
             }
 
             .tel {
-
                 a:nth-child(2) {
-                    font-size: $fz18 - 2;
+                font-size: $fz18 - 2;
                 }
-            }
-
-            
+            } 
         }
     }
-
-    // hero
-
     .hero {
-
         .container {
-
             h1 {
-                font-size: $fz48 - 12;
-                width: 370px;
-                margin-bottom: 20px;
+            font-size: $fz48 - 12;
+            width: 370px;
+            margin-bottom: 20px;
             }
-
             p {
-                font-size: $fz18 - 2;
-                margin-bottom: 20px;
+            font-size: $fz18 - 2;
+            margin-bottom: 20px;
             }
-
             .hero-fone-mobile {
                 width: 545px;
                 height: 475px;
-
                 img:nth-child(1) {
-                    width: 500px;
+                width: 500px;
                 }
                 img:nth-child(2) {
-                    width: 230px;
+                width: 230px;
                 }
                 img:nth-child(3) {
-                    width: 310px;
+                width: 310px;
                 }
             }
-
             .modal_hero {
-                top: 50px;
-                left: 270px;
+            top: 50px;
+            left: 270px;
             }
         }
     }
-
-    // slider_1
-
     .slider {
-
         .container {
-            height: 900px;
-            
-
+        height: 900px;
             .carousel {
-                height: 790px;
-               
+            height: 790px;
             }
-
             .first-slide {
-                    display: flex;
-                    justify-content: none;
-                    align-items: center;
-                    flex-direction: column;
-                    
-
+            display: flex;
+            justify-content: none;
+            align-items: center;
+            flex-direction: column;
                     .quality {
                         
 
@@ -176,9 +145,6 @@ $bold800: 800;
 
         }
     }
-
-    // repair
-
     .repair {
 
         .container {
