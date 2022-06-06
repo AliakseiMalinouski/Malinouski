@@ -1104,7 +1104,7 @@ $bold800: 800;
 
 @media all and (max-width: 580px) {
     .container {
-       width: 480px;
+       width: 100%;
     }
     // header
 
@@ -2319,7 +2319,7 @@ $bold800: 800;
 
 @media all and (max-width: 500px) {
     .container {
-        width: 320px;
+        width: 100%;
     }
 
     .header {
@@ -2328,7 +2328,7 @@ $bold800: 800;
             position: relative;
 
             .menu {
-                margin-left: 70px;
+                margin-left: 210px;
             }
 
             
