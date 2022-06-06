@@ -1504,7 +1504,10 @@ h3 {
         width: 590px;
         height: 354px;
         position: relative;
-        padding: 0.1px; }
+        padding: 0.1px;
+        background-image: url(../img/yandex1.png);
+        background-repeat: no-repeat;
+        background-position: 5% 90%; }
         .opinion .container .slide2 .comment4 .yandex {
           width: 213px;
           height: 20px;

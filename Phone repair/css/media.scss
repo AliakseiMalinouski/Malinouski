@@ -723,6 +723,102 @@ $bold800: 800;
     }
 
 
+    // opinion
+
+    .opinion {
+
+        .container {
+
+            .slide1 {
+
+
+                .comment1 {
+                    background-position: 5% 95%;
+                    p {
+                        width: 500px;
+                        margin: 0 auto;
+
+                    }
+
+                    .list-comment {
+                        height: auto;
+
+                    
+
+                    ul {
+
+                        height: auto;
+                    }
+                }
+                }
+
+                .comment2 {
+                    background-position: 5% 95%;
+
+                    ul {
+                        height: auto;
+                    }
+
+                    .list-comment {
+                        height: auto;
+                    }
+
+                    p {
+                        width: 500px;
+                        margin: 0 auto;
+                    }
+                }
+
+                
+            }
+            .slide2 {
+
+
+                .comment3 {
+                    background-position: 5% 95%;
+                    p {
+                        width: 500px;
+                        margin: 0 auto;
+
+                    }
+
+                    .list-comment {
+                        height: auto;
+
+                    
+
+                    ul {
+
+                        height: auto;
+                    }
+                }
+                }
+
+                .comment4 {
+                    background-position: 5% 95%;
+
+                    ul {
+                        height: auto;
+                    }
+
+                    .list-comment {
+                        height: auto;
+                    }
+
+                    p {
+                        width: 500px;
+                        margin: 0 auto;
+                    }
+                }
+
+                
+            }
+
+            
+        }
+    }
+
+
     // video
 
     .video {
@@ -960,50 +1056,23 @@ $bold800: 800;
                }
             }
 
-            .map {
 
-                #union1 {
-                    left: 30px;
+
+             .map {
+                
+                background: url(../img/map-mobile.png) no-repeat center;
+                height: 620px;
+                background-size: 100%;
+
+                img {
+                    display: none;
                 }
+            }
 
-                #union2 {
-                    left: 225px;
-                }
+            .about-center {
 
-                #union3 {
-                    left: 95px;
-                }
-
-                #union4 {
-                    left: 310px;
-                }
-
-                #union5 {
-                    left: 0px;
-                }
-
-                #union6 {
-                    left: 175px;
-                }
-
-                #union7 {
-                    left: 362px;
-                }
-
-                #union8 {
-                    left: 0px;
-                }
-
-                #union9 {
-                    left: 180px;
-                }
-
-                #union10 {
-                    left: 0px;
-                }
-
-                #union11 {
-                    left: 180px;
+                .next-about {
+                    transform: none;
                 }
             }
         }

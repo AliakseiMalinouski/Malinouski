@@ -295,6 +295,43 @@
     .repair .container .right__blocks .other-problems {
       width: 560px; }
 
+  .opinion .container .slide1 .comment1 {
+    background-position: 5% 95%; }
+    .opinion .container .slide1 .comment1 p {
+      width: 500px;
+      margin: 0 auto; }
+    .opinion .container .slide1 .comment1 .list-comment {
+      height: auto; }
+      .opinion .container .slide1 .comment1 .list-comment ul {
+        height: auto; }
+  .opinion .container .slide1 .comment2 {
+    background-position: 5% 95%; }
+    .opinion .container .slide1 .comment2 ul {
+      height: auto; }
+    .opinion .container .slide1 .comment2 .list-comment {
+      height: auto; }
+    .opinion .container .slide1 .comment2 p {
+      width: 500px;
+      margin: 0 auto; }
+  .opinion .container .slide2 .comment3 {
+    background-position: 5% 95%; }
+    .opinion .container .slide2 .comment3 p {
+      width: 500px;
+      margin: 0 auto; }
+    .opinion .container .slide2 .comment3 .list-comment {
+      height: auto; }
+      .opinion .container .slide2 .comment3 .list-comment ul {
+        height: auto; }
+  .opinion .container .slide2 .comment4 {
+    background-position: 5% 95%; }
+    .opinion .container .slide2 .comment4 ul {
+      height: auto; }
+    .opinion .container .slide2 .comment4 .list-comment {
+      height: auto; }
+    .opinion .container .slide2 .comment4 p {
+      width: 500px;
+      margin: 0 auto; }
+
   .video .container .play-video {
     width: 560px;
     height: auto; }
@@ -383,28 +420,14 @@
     font-size: 16px; }
   .contacts .container .contacts-information .contact-list-3 ul:nth-child(1) li:nth-child(3) {
     font-size: 16px; }
-  .contacts .container .map #union1 {
-    left: 30px; }
-  .contacts .container .map #union2 {
-    left: 225px; }
-  .contacts .container .map #union3 {
-    left: 95px; }
-  .contacts .container .map #union4 {
-    left: 310px; }
-  .contacts .container .map #union5 {
-    left: 0px; }
-  .contacts .container .map #union6 {
-    left: 175px; }
-  .contacts .container .map #union7 {
-    left: 362px; }
-  .contacts .container .map #union8 {
-    left: 0px; }
-  .contacts .container .map #union9 {
-    left: 180px; }
-  .contacts .container .map #union10 {
-    left: 0px; }
-  .contacts .container .map #union11 {
-    left: 180px; }
+  .contacts .container .map {
+    background: url(../img/map-mobile.png) no-repeat center;
+    height: 620px;
+    background-size: 100%; }
+    .contacts .container .map img {
+      display: none; }
+  .contacts .container .about-center .next-about {
+    transform: none; }
 
   .footer .container .wrap_footer .arrive {
     width: auto; }
