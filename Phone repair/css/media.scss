@@ -2317,3 +2317,114 @@ $bold800: 800;
         }
     }
 }
+
+@media all and (max-width: 500px) {
+    .container {
+        width: 320px;
+    }
+
+    .header {
+
+        .container {
+
+            .menu {
+                margin-left: 70px;
+            }
+        }
+    }
+
+    .repair {
+
+        .left__blocks {
+            width: 320px !important;
+
+            #display-mobile {
+                width: 320px;
+            }
+            #dinamics-mobile {
+                width: 320px;
+            }
+            #buttons-mobile {
+                width: 320px;
+            }
+            #net-mobile {
+                width: 320px;
+            }
+            
+        }
+
+        .right__blocks {
+            width: 320px !important;
+
+            #battery-mobile {
+                width: 320px;
+            }
+
+            #camera-mobile {
+                width: 320px;
+            }
+
+            #speaker-mobile {
+                width: 320px;
+            }
+
+            #other-problems-mobile {
+                width: 320px;
+            }
+        }
+    }
+
+    .sale {
+
+        .container {
+
+            .slide_1 {
+                width: auto;
+
+                ul {
+                    height: auto;
+                    
+
+                    li:nth-child(1) {
+                        width: 255px;
+                        color: $black;
+                        font-weight: $regular;
+                        font-size: $fz18 + 1;
+                        margin-bottom: 35px;
+
+                        span {
+                            color: $black;
+                            font-size: $fz18 + 2;
+
+                        }
+                    }
+                }
+
+                .wrap {
+
+                    .typewriter {
+                        animation: none;
+                        color: $black;
+                        width: 280px;
+                        font-size: $fz - 2;
+                    }
+
+                    ul {
+
+                        li:nth-child(2) {
+                            width: 299px;
+                            font-size: $fz36;
+
+                            span {
+                                font-size: $fz36 - 6;
+                                color: $black;
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}
