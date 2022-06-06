@@ -150,12 +150,8 @@ function CloseModalMobile() {
     document.getElementById('logo').style.filter = '';
    
 }
-
-
-
 function myFunctionOpen() {
     document.getElementById('call').style.display = 'block';
-    // opacity
     document.getElementById('rel-opacity').style.opacity = '0.1';
     document.getElementById('hero-opacity').style.opacity = '0.1';
     document.getElementById('con-header').style.opacity = '0.1';
@@ -172,11 +168,9 @@ function myFunctionOpen() {
     document.getElementById('contacts').style.opacity = '0.1';
     document.getElementById('footer').style.opacity = '0.1';
     document.getElementById('footer-mobile').style.opacity = '0.1';
-    // overflow-y for body + background
     document.getElementById('over').style.overflowY = 'hidden';
     document.getElementById('over').style.background = 'rgba(0,0,0,.7)';
     document.getElementById('none-fone').style.background = 'none';
-    // blur for header + rel + repair + hero
     document.getElementById('hero-opacity').style.filter = 'blur(5px)';
     document.getElementById('rel-opacity').style.filter = 'blur(5px)';
     document.getElementById('con-header').style.filter = 'blur(5px)';
@@ -193,12 +187,10 @@ function myFunctionOpen() {
     document.getElementById('contacts').style.filter = 'blur(5px)';
     document.getElementById('footer').style.filter = 'blur(5px)';
     document.getElementById('footer-mobile').style.filter = 'blur(5px)';
-    
 }
 
 function myFunctionClose() {
     document.getElementById('call').style.display = 'none';
-    // opacity
     document.getElementById('rel-opacity').style.opacity = '1';
     document.getElementById('hero-opacity').style.opacity = '1';
     document.getElementById('con-header').style.opacity = '1';
@@ -215,12 +207,9 @@ function myFunctionClose() {
     document.getElementById('contacts').style.opacity = '1';
     document.getElementById('footer').style.opacity = '1';
     document.getElementById('footer-mobile').style.opacity = '1';
-    
-    // overflow-y for body + background
     document.getElementById('over').style.overflowY = '';
     document.getElementById('over').style.background = '';
     document.getElementById('none-fone').style.background = '';
-    // blur for header + rel + repair + hero
     document.getElementById('hero-opacity').style.filter = '';
     document.getElementById('rel-opacity').style.filter = '';
     document.getElementById('con-header').style.filter = '';
@@ -237,7 +226,5 @@ function myFunctionClose() {
     document.getElementById('contacts').style.filter = '';
     document.getElementById('footer').style.filter = '';
     document.getElementById('footer-mobile').style.filter = '';
-    
-    
 }
 
