@@ -50,8 +50,7 @@
       display: flex;
       justify-content: none;
       align-items: center;
-      flex-direction: column;
-      background-color: blue; }
+      flex-direction: column; }
       .slider .container .second-slide .professional-staff img {
         left: 170px; }
       .slider .container .second-slide .special-equipment img {
