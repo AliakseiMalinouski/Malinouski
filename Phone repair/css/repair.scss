@@ -1,4 +1,4 @@
-// colors
+
 $bold-pink: #ff005c;
 $light-pink: #ff6099;
 $light-blue: #BFE0FF;
@@ -9,7 +9,7 @@ $light-gray: #E5E5E5;
 $bold-gray: #797979;
 $blue: #0085FF;
 
-// font size
+
 
 $fz: 16px;
 $fz12: $fz - 4;
@@ -22,7 +22,7 @@ $fz36: $fz + 20;
 $fz48: $fz + 32;
 
 
-// font-weight 
+
 
 $light: 300;
 $regular: 400;
@@ -31,7 +31,7 @@ $bold: 600;
 $extra-bold: 700;
 $bold800: 800;
 
-// body + *
+
 
 * {
     padding: 0;
@@ -46,7 +46,7 @@ body {
     font-weight: $light;
 }
 
-// reset
+
 
 
 a {
@@ -57,7 +57,7 @@ li {
     list-style-type: none;
 }
 
-// global styles
+
 
 h1 {
     font-weight: $extra-bold;
@@ -95,7 +95,7 @@ h3 {
     margin: 0 auto;
 }
 
-// header
+
 
 .header {
     height: 80px;
@@ -244,7 +244,7 @@ h3 {
 
 }
 
-// hero
+
 
 .hero {
     padding-top: 65px;
@@ -320,7 +320,7 @@ h3 {
     }
 }
 
-// slider
+
 .slider {
    padding-top: 150px;
 
@@ -611,7 +611,7 @@ h3 {
    }
 }
 
-// repair
+
 
 .repair {
     padding-top: 150px;
@@ -1305,7 +1305,7 @@ h3 {
     }
 }
 
-// brands 
+
 
 .brands {
     padding-top: 150px;
@@ -1948,7 +1948,7 @@ h3 {
     }
 }
 
-// video
+
 
 .video {
     padding-top: 150px;
@@ -1962,7 +1962,7 @@ h3 {
     }
 }
 
-// opinion
+
 
 .opinion {
     padding-top: 150px;
@@ -2416,7 +2416,7 @@ h3 {
     }
 }
 
-// reviews 
+
 
 .reviews {
     padding-top: 45px;
@@ -2531,7 +2531,7 @@ h3 {
     }
 }
 
-// sale
+
 
 .sale {
     padding-top: 150px;
@@ -2664,7 +2664,7 @@ h3 {
     }
 }
 
-// master
+
 
 .master {
     padding-top: 150px;
@@ -2778,7 +2778,7 @@ h3 {
     }
 }
 
-// work
+
 
 .work {
     padding-top: 150px;
@@ -3084,7 +3084,7 @@ h3 {
     }
 }
 
-// our service center
+
 
 .our_service_center {
     padding-top: 150px;
@@ -3135,7 +3135,7 @@ h3 {
     }
 }
 
-// courier
+
 
 
 .courier {
@@ -3242,7 +3242,7 @@ h3 {
        }
 }
 
-// contacts
+
 
 .contacts {
     padding-top: 150px;
@@ -3443,7 +3443,7 @@ h3 {
     }
 }
 
-// footer
+
 
 
 .footer {
@@ -3684,7 +3684,6 @@ h3 {
     }
 }
 
-// footer mobile
 
 
 .footer-mobile {
