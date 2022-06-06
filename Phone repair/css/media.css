@@ -844,17 +844,17 @@
     .repair .container .right__blocks .close5 {
       position: absolute;
       right: 32px;
-      top: 170px;
+      top: 40px;
       display: none; }
     .repair .container .right__blocks .close6 {
       position: absolute;
       right: 32px;
-      top: 300px;
+      top: 40px;
       display: none; }
     .repair .container .right__blocks .close7 {
       position: absolute;
       right: 32px;
-      top: 430px;
+      top: 40px;
       display: none; }
     .repair .container .right__blocks .wrap-battery-mobile {
       display: block;
@@ -918,7 +918,6 @@
       height: 100px;
       border: 1px solid #fff;
       padding: 0.1px;
-      position: relative;
       margin-bottom: 30px;
       border: 2px solid #fff;
       background-color: #fff;
@@ -963,7 +962,6 @@
       height: 100px;
       border: 1px solid #fff;
       padding: 0.1px;
-      position: relative;
       margin-bottom: 30px;
       border: 2px solid #fff;
       background-color: #fff;
@@ -1008,7 +1006,6 @@
       height: 100px;
       border: 1px solid #fff;
       padding: 0.1px;
-      position: relative;
       margin-bottom: 30px;
       border: 2px solid #fff;
       background-color: #fff;
