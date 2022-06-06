@@ -2340,15 +2340,27 @@ $bold800: 800;
 
             #display-mobile {
                 width: 320px;
+                h6 {
+                        font-size: $fz15;
+                    }
             }
             #dinamics-mobile {
                 width: 320px;
+                h6 {
+                        font-size: $fz15;
+                    }
             }
             #buttons-mobile {
                 width: 320px;
+                h6 {
+                        font-size: $fz15;
+                    }
             }
             #net-mobile {
                 width: 320px;
+                h6 {
+                        font-size: $fz15;
+                    }
             }
             
         }
@@ -2358,18 +2370,31 @@ $bold800: 800;
 
             #battery-mobile {
                 width: 320px;
+                h6 {
+                    font-size: $fz15;
+                }
             }
 
             #camera-mobile {
                 width: 320px;
+                h6 {
+                        font-size: $fz15;
+                    }
             }
 
             #speaker-mobile {
                 width: 320px;
+                
+                h6 {
+                    font-size: $fz15;
+                }
             }
 
             #other-problems-mobile {
                 width: 320px;
+                h6 {
+                        font-size: $fz15;
+                    }
             }
         }
     }
@@ -2380,6 +2405,8 @@ $bold800: 800;
 
             .slide_1 {
                 width: auto;
+                height: auto;
+                
 
                 ul {
                     height: auto;
@@ -2397,22 +2424,71 @@ $bold800: 800;
                             font-size: $fz18 + 2;
 
                         }
+                        
                     }
+
+                    
                 }
 
                 .wrap {
+                    background: url(../img/opacity-mobile-sale.png) no-repeat center;
+                    height: 584px;
 
                     .typewriter {
-                        animation: none;
+                       display: none;
+                        
+                    }
+
+                    .prise-sale {
+                        font-size: $fz48 !important;
+
+                        span {
+                            font-size: $fz48 !important;
+                        }
+                    }
+
+                    .links_wrap1 {
+                        margin-top: 0px;
+                        margin-left: 0px;
+
+                        a:nth-child(1) {
+                            width: 286px;
+                            height: 50px;
+                            display: block;
+                            margin: 0 auto;
+                            margin-top: 35px;
+                        }
+
+                        a:nth-child(2) {
+                            display: block;
+                            margin-left: 20px;
+                            margin-top: 25px;
+                            width: 253px;
+                            padding-left: 30px;
+                            color: $gray;
+                            font-weight: $bold;
+                        }
+                    }
+
+
+                    .mobile-headling {
+                        display: block;
+                        width: 291px;
+                        height: 76px;
+                        font-size: $fz28;
+                        line-height: 37.8px;
                         color: $black;
-                        width: 280px;
-                        font-size: $fz - 2;
+                        margin-left: 0px;
                     }
 
                     ul {
 
+                        li {
+                            width: auto;
+                        }
+
                         li:nth-child(2) {
-                            width: 299px;
+                            width: auto;
                             font-size: $fz36;
 
                             span {
