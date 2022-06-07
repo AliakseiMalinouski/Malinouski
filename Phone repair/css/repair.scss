@@ -1,4 +1,3 @@
-
 $bold-pink: #ff005c;
 $light-pink: #ff6099;
 $light-blue: #BFE0FF;
@@ -8,9 +7,6 @@ $gray: #C4C4C4;
 $light-gray: #E5E5E5;
 $bold-gray: #797979;
 $blue: #0085FF;
-
-
-
 $fz: 16px;
 $fz12: $fz - 4;
 $fz15: $fz - 1;
@@ -20,35 +16,23 @@ $fz26: $fz + 10;
 $fz28: $fz + 12;
 $fz36: $fz + 20;
 $fz48: $fz + 32;
-
-
-
-
 $light: 300;
 $regular: 400;
 $medium: 500;
 $bold: 600;
 $extra-bold: 700;
 $bold800: 800;
-
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
-}
 
+}
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: $fz;
     font-weight: $light;
 }
-
-
-
-
 a {
     text-decoration: none;
 }
@@ -56,9 +40,6 @@ a {
 li {
     list-style-type: none;
 }
-
-
-
 h1 {
     font-weight: $extra-bold;
     font-size: $fz48;
@@ -67,8 +48,6 @@ h1 {
     width: 466px;
     height: 118px;
 }
-
-
 h2 {
     width: 683px;
     height: 49px;
@@ -78,7 +57,6 @@ h2 {
     color: $black;
     text-transform: uppercase;
 }
-
 h3 {
     font-size: $fz28;
     font-weight: $extra-bold;
@@ -88,15 +66,10 @@ h3 {
     text-align: center;
     margin-bottom: 45px;
 }
-
-
 .container {
     width: 1224px;
     margin: 0 auto;
 }
-
-
-
 .header {
     height: 80px;
 
@@ -243,9 +216,6 @@ h3 {
     }
 
 }
-
-
-
 .hero {
     padding-top: 65px;
     
@@ -381,8 +351,6 @@ h3 {
         }
     }
 }
-
-
 .slider {
    padding-top: 150px;
 
@@ -672,9 +640,6 @@ h3 {
       }
    }
 }
-
-
-
 .repair {
     padding-top: 150px;
 
@@ -1366,9 +1331,6 @@ h3 {
         }
     }
 }
-
-
-
 .brands {
     padding-top: 150px;
 
@@ -2460,9 +2422,6 @@ h3 {
         
     }
 }
-
-
-
 .reviews {
     padding-top: 45px;
 
@@ -2575,9 +2534,6 @@ h3 {
         }
     }
 }
-
-
-
 .sale {
     padding-top: 150px;
 
@@ -2708,9 +2664,6 @@ h3 {
 
     }
 }
-
-
-
 .master {
     padding-top: 150px;
 
@@ -2822,9 +2775,6 @@ h3 {
     }
     }
 }
-
-
-
 .work {
     padding-top: 150px;
 
@@ -3128,9 +3078,6 @@ h3 {
         }
     }
 }
-
-
-
 .our_service_center {
     padding-top: 150px;
 
@@ -3179,10 +3126,6 @@ h3 {
         }
     }
 }
-
-
-
-
 .courier {
     padding-top: 150px;
        .container {
@@ -3286,9 +3229,6 @@ h3 {
         }
        }
 }
-
-
-
 .contacts {
     padding-top: 150px;
 
@@ -4092,10 +4032,6 @@ h3 {
         }
     }
 }
-
-
-
-
 .footer {
     padding-top: 152px;
 
@@ -4333,9 +4269,6 @@ h3 {
       
     }
 }
-
-
-
 .footer-mobile {
     display: none;
 }
