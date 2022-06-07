@@ -2341,6 +2341,7 @@ $bold800: 800;
             .slide_1 {
                 width: auto;
                 height: auto;
+                border: none;
                 
 
                 ul {
@@ -2366,7 +2367,7 @@ $bold800: 800;
                 }
 
                 .wrap {
-                    background: url(../img/opacity-mobile-sale.png) no-repeat center;
+                    background: url(../img/opacity-mobile-sale.png) no-repeat bottom;
                     height: 584px;
 
                     .typewriter {
