@@ -186,32 +186,72 @@
     width: auto; }
   .contacts .container .map {
     width: auto; }
-    .contacts .container .map #union1 {
-      left: 220px; }
-    .contacts .container .map #union2 {
-      left: 425px; }
-    .contacts .container .map #union3 {
-      left: 285px; }
-    .contacts .container .map #union4 {
-      left: 510px;
-      top: 100px; }
-    .contacts .container .map #union5 {
-      left: 140px; }
-    .contacts .container .map #union6 {
-      left: 365px; }
-    .contacts .container .map #union7 {
-      left: 562px;
-      top: 260px; }
-    .contacts .container .map #union8 {
-      left: 190px;
-      top: 310px; }
-    .contacts .container .map #union9 {
-      left: 380px;
-      top: 345px; }
-    .contacts .container .map #union10 {
-      left: 30px; }
-    .contacts .container .map #union11 {
-      left: 320px; }
+    .contacts .container .map .location_1 {
+      width: 934px; }
+      .contacts .container .map .location_1 .wrap-loc1 {
+        width: 934px; }
+        .contacts .container .map .location_1 .wrap-loc1 iframe {
+          width: 934px; }
+    .contacts .container .map .location_2 {
+      width: 934px; }
+      .contacts .container .map .location_2 .wrap-loc2 {
+        width: 934px; }
+        .contacts .container .map .location_2 .wrap-loc2 iframe {
+          width: 934px; }
+    .contacts .container .map .location_3 {
+      width: 934px; }
+      .contacts .container .map .location_3 .wrap-loc3 {
+        width: 934px; }
+        .contacts .container .map .location_3 .wrap-loc3 iframe {
+          width: 934px; }
+    .contacts .container .map .location_4 {
+      width: 934px; }
+      .contacts .container .map .location_4 .wrap-loc4 {
+        width: 934px; }
+        .contacts .container .map .location_4 .wrap-loc4 iframe {
+          width: 934px; }
+    .contacts .container .map .location_5 {
+      width: 934px; }
+      .contacts .container .map .location_5 .wrap-loc5 {
+        width: 934px; }
+        .contacts .container .map .location_5 .wrap-loc5 iframe {
+          width: 934px; }
+    .contacts .container .map .location_6 {
+      width: 934px; }
+      .contacts .container .map .location_6 .wrap-loc6 {
+        width: 934px; }
+        .contacts .container .map .location_6 .wrap-loc6 iframe {
+          width: 934px; }
+    .contacts .container .map .location_7 {
+      width: 934px; }
+      .contacts .container .map .location_7 .wrap-loc7 {
+        width: 934px; }
+        .contacts .container .map .location_7 .wrap-loc7 iframe {
+          width: 934px; }
+    .contacts .container .map .location_8 {
+      width: 934px; }
+      .contacts .container .map .location_8 .wrap-loc8 {
+        width: 934px; }
+        .contacts .container .map .location_8 .wrap-loc8 iframe {
+          width: 934px; }
+    .contacts .container .map .location_9 {
+      width: 934px; }
+      .contacts .container .map .location_9 .wrap-loc9 {
+        width: 934px; }
+        .contacts .container .map .location_9 .wrap-loc9 iframe {
+          width: 934px; }
+    .contacts .container .map .location_10 {
+      width: 934px; }
+      .contacts .container .map .location_10 .wrap-loc10 {
+        width: 934px; }
+        .contacts .container .map .location_10 .wrap-loc10 iframe {
+          width: 934px; }
+    .contacts .container .map .location_11 {
+      width: 934px; }
+      .contacts .container .map .location_11 .wrap-loc11 {
+        width: 934px; }
+        .contacts .container .map .location_11 .wrap-loc11 iframe {
+          width: 934px; }
 
   .footer .container .wrap_footer {
     flex-direction: column;
