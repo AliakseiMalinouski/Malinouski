@@ -144,6 +144,8 @@
 
   .master .container .form {
     width: 944px; }
+    .master .container .form .thanks2 {
+      left: 210px; }
 
   .work .container .criteria_1 {
     width: auto;
