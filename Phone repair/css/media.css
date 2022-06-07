@@ -395,6 +395,9 @@
       width: auto;
       height: 500px;
       background: none; }
+      .master .container .form .thanks2 {
+        left: 0px;
+        width: 100%; }
       .master .container .form .about-form {
         width: auto;
         height: auto;

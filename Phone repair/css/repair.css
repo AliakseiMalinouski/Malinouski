@@ -1888,7 +1888,7 @@ h3 {
         font-size: 15px;
         font-weight: 500;
         line-height: 20.25px; }
-      .master .container .form .block-form button {
+      .master .container .form .block-form a {
         display: block;
         width: 300px;
         height: 50px;
@@ -1898,7 +1898,47 @@ h3 {
         color: #fff;
         font-size: 15px;
         line-height: 20.25px;
-        margin-top: 25px; }
+        margin-top: 25px;
+        padding-left: 50px;
+        padding-top: 15px; }
+    .master .container .form .thanks2 {
+      position: absolute;
+      width: 560px;
+      height: 198px;
+      display: none;
+      left: 360px;
+      top: 60px; }
+      .master .container .form .thanks2 .wrap-thanks2 {
+        width: 100%;
+        height: 100%;
+        background-color: lightcoral;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border: 1px solid #fff;
+        -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+        box-shadow: 0px 0px 37px -9px #bfe0ff;
+        position: relative; }
+        .master .container .form .thanks2 .wrap-thanks2 h5 {
+          font-size: 28px;
+          line-height: 37.8px;
+          color: #000000;
+          font-weight: 700;
+          text-transform: uppercase; }
+        .master .container .form .thanks2 .wrap-thanks2 p {
+          font-size: 18px;
+          line-height: 29.7px;
+          color: #000000;
+          font-weight: 700;
+          width: 403px; }
+        .master .container .form .thanks2 .wrap-thanks2 img {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          cursor: pointer; }
 
 .work {
   padding-top: 150px; }
