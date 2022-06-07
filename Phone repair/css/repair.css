@@ -2542,7 +2542,10 @@ h3 {
           position: absolute;
           right: 15px;
           top: 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
     .contacts .container .map .open-location-8 {
       width: 160px;
       height: 30px;
