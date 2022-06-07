@@ -188,7 +188,6 @@ function myFunctionOpen() {
     document.getElementById('footer').style.filter = 'blur(5px)';
     document.getElementById('footer-mobile').style.filter = 'blur(5px)';
 }
-
 function myFunctionClose() {
     document.getElementById('call').style.display = 'none';
     document.getElementById('rel-opacity').style.opacity = '1';
@@ -227,99 +226,53 @@ function myFunctionClose() {
     document.getElementById('footer').style.filter = '';
     document.getElementById('footer-mobile').style.filter = '';
 }
-
-
-
-
-// loction1
-
 function OpenMapUnion1() {
     document.getElementById('location_1').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
-
-
- 
 }
-
-// location 2
-
 function OpenMapUnion2() {
     document.getElementById('location_2').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
 }
-
-
-// location 3
-
 function OpenMapUnion3() {
     document.getElementById('location_3').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
     
 }
-
-// loction 4
-
 function OpenMapUnion4() {
     document.getElementById('location_4').style.display = 'block';
-    document.getElementById('open-loc').style.display = 'none';
-    
-    
+    document.getElementById('open-loc').style.display = 'none';  
 }
-
-// location 5
-
 function OpenMapUnion5() {
     document.getElementById('location_5').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
 
 }
-
-
-// location 6
-
 function OpenMapUnion6() {
     document.getElementById('location_6').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
    
 }
-
-// location 7
-
 function OpenMapUnion7() {
     document.getElementById('location_7').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
 }
-
-// location 8
-
 function OpenMapUnion8() {
     document.getElementById('location_8').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
 }
-
-// location 9
-
 function OpenMapUnion9() {
     document.getElementById('location_9').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
 }
-
-// location 10
-
 function OpenMapUnion10() {
     document.getElementById('location_10').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
 }
-
-// location 11
-
-
 function OpenMapUnion11() {
     document.getElementById('location_11').style.display = 'block';
     document.getElementById('open-loc').style.display = 'none';
 }
-
-
 function CloseMapUnion() {
     document.getElementById('location_1').style.display = 'none';
     document.getElementById('open-loc').style.display = 'block';
@@ -333,6 +286,5 @@ function CloseMapUnion() {
     document.getElementById('location_9').style.display = 'none';
     document.getElementById('location_10').style.display = 'none';
     document.getElementById('location_11').style.display = 'none';
-    
 }
 
