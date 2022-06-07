@@ -2174,7 +2174,8 @@ h3 {
       -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
       -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
       box-shadow: 0px 0px 37px -9px #bfe0ff;
-      background: url(../img/opacity.png) left no-repeat, url(../img/call\ to\ courrier.png) 0% 0% no-repeat; }
+      background: url(../img/opacity.png) left no-repeat, url(../img/call\ to\ courrier.png) 0% 0% no-repeat;
+      position: relative; }
       .courier .container .call-up .information-call-up {
         display: flex;
         flex-direction: column;
@@ -2217,7 +2218,7 @@ h3 {
           font-size: 15px;
           font-weight: 500;
           line-height: 20.25px; }
-        .courier .container .call-up .block-form-call-up button {
+        .courier .container .call-up .block-form-call-up a {
           display: block;
           width: 300px;
           height: 50px;
@@ -2227,7 +2228,45 @@ h3 {
           color: #fff;
           font-size: 15px;
           line-height: 20.25px;
-          margin-top: 25px; }
+          margin-top: 25px;
+          padding-left: 50px;
+          padding-top: 15px; }
+      .courier .container .call-up .thanks {
+        position: absolute;
+        width: 560px;
+        height: 198px;
+        display: none; }
+        .courier .container .call-up .thanks .wrap-thanks {
+          width: 100%;
+          height: 100%;
+          background-color: lightcoral;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+          border: 1px solid #fff;
+          -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+          -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+          box-shadow: 0px 0px 37px -9px #bfe0ff;
+          position: relative; }
+          .courier .container .call-up .thanks .wrap-thanks h5 {
+            font-size: 28px;
+            line-height: 37.8px;
+            color: #000000;
+            font-weight: 700;
+            text-transform: uppercase; }
+          .courier .container .call-up .thanks .wrap-thanks p {
+            font-size: 18px;
+            line-height: 29.7px;
+            color: #000000;
+            font-weight: 700;
+            width: 403px; }
+          .courier .container .call-up .thanks .wrap-thanks img {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer; }
 
 .contacts {
   padding-top: 150px; }

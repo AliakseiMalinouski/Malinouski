@@ -3147,6 +3147,7 @@ h3 {
             -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
             box-shadow: 0px 0px 37px -9px #bfe0ff;
             background: url(../img/opacity.png) left no-repeat, url(../img/call\ to\ courrier.png) 0% 0% no-repeat;
+            position: relative;
 
             .information-call-up {
                 display: flex;
@@ -3214,7 +3215,7 @@ h3 {
                     line-height: 20.25px;
                 }
 
-                button {
+                a {
                     display: block;
                     width: 300px;
                     height: 50px;
@@ -3225,9 +3226,58 @@ h3 {
                     font-size: $fz15;
                     line-height: 20.25px;
                     margin-top: 25px;
+                    padding-left: 50px;
+                    padding-top: 15px;
+                    
                 
             }
             }
+
+           .thanks {
+               position: absolute;
+               width: 560px;
+               height: 198px;
+               display: none;
+
+               .wrap-thanks {
+                   width: 100%;
+                   height: 100%;
+                   background-color: lightcoral;
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   justify-content: center;
+                   background-color: $white;
+                   border: 1px solid $white;
+                    -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                    -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+                    box-shadow: 0px 0px 37px -9px #bfe0ff;
+                    position: relative;
+
+                   h5 {
+                       font-size: $fz28;
+                       line-height: 37.8px;
+                       color: $black;
+                       font-weight: $extra-bold;
+                       text-transform: uppercase;
+
+                   }
+                   p {
+                       font-size: $fz18;
+                       line-height: 29.7px ;
+                       color: $black;
+                       font-weight: $extra-bold;
+                       width: 403px;
+                   }
+
+                   img {
+                       position: absolute;
+                       top: 5px;
+                       right: 5px;
+                       cursor: pointer;
+                   }
+               }
+           }
         }
        }
 }

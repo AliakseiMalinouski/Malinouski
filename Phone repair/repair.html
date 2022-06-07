@@ -736,9 +736,17 @@
                     <h6>Заполните форму:</h6>
                     <form action="#" method="get">
                         <input type="text" placeholder="Ваш телефон">
-                        <button  id="to_the_house" >Вызвать курьера на дом</button>
+                        <a href="javascript:CallingToCourierOpen()"  id="to_the_house">Вызвать курьера на дом</a>
                     </form>
                 </div>
+                <div id="thanks" class="thanks">
+                    <div class="wrap-thanks">
+                        <h5>Заявка отправлена</h5>
+                        <p>Большое спасибо, что отправили заявку.
+                            Совсем скоро мы Вам перезвоним!</p>
+                            <img onclick="CallingToCourierClose()" src="../Phone repair/img/cross-close.png" alt="Закрыть">
+                    </div>
+            </div>
             </div>
         </div>
     </div>

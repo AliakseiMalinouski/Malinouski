@@ -287,4 +287,12 @@ function CloseMapUnion() {
     document.getElementById('location_10').style.display = 'none';
     document.getElementById('location_11').style.display = 'none';
 }
+function CallingToCourierOpen($e) {
+    document.getElementById('thanks').style.display = 'block';
+    document.getElementById('over').overflowY = 'hidden';
+
+}
+function CallingToCourierClose() {
+    document.getElementById('thanks').style.display = 'none';
+}
 
