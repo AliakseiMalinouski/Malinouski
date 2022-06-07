@@ -1888,7 +1888,7 @@ h3 {
         font-size: 15px;
         font-weight: 500;
         line-height: 20.25px; }
-      .master .container .form .block-form button {
+      .master .container .form .block-form a {
         display: block;
         width: 300px;
         height: 50px;
@@ -1898,7 +1898,9 @@ h3 {
         color: #fff;
         font-size: 15px;
         line-height: 20.25px;
-        margin-top: 25px; }
+        margin-top: 25px;
+        padding-left: 50px;
+        padding-top: 15px; }
 
 .work {
   padding-top: 150px; }
