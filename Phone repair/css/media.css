@@ -451,8 +451,8 @@
     background: url(../img/map-mobile.png) no-repeat center;
     height: 620px;
     background-size: 100%; }
-    .contacts .container .map img {
-      display: none !important; }
+    .contacts .container .map div {
+      display: none; }
   .contacts .container .about-center .next-about {
     transform: none; }
 
