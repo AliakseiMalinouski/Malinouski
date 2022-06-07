@@ -1175,10 +1175,13 @@
   .container {
     width: 320px; }
 
-  .header .container {
+  .main {
     position: relative; }
-    .header .container .menu {
-      margin-left: 70px; }
+
+  .header .container .menu {
+    margin-left: 70px; }
+  .header .container .nav-header {
+    width: 100%; }
 
   .hero .container .modal_hero {
     width: 320px;

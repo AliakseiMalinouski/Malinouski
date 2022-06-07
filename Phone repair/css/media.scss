@@ -2227,13 +2227,21 @@ $bold800: 800;
         width: 320px;
     }
 
+    .main {
+        position: relative;
+    }
+
     .header {
 
         .container {
-            position: relative;
+            
 
             .menu {
                 margin-left: 70px;
+            }
+
+            .nav-header {
+                width: 100%;
             }
 
             
