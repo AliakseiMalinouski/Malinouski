@@ -20,7 +20,8 @@
     margin-bottom: 20px; }
   .hero .container .hero-fone-mobile {
     width: 545px;
-    height: 475px; }
+    height: 475px;
+    animation: none; }
     .hero .container .hero-fone-mobile img:nth-child(1) {
       width: 500px; }
     .hero .container .hero-fone-mobile img:nth-child(2) {

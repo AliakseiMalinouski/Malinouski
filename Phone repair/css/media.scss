@@ -62,6 +62,7 @@ $bold800: 800;
             .hero-fone-mobile {
                 width: 545px;
                 height: 475px;
+                animation: none;
                 img:nth-child(1) {
                 width: 500px;
                 }
@@ -219,10 +220,6 @@ $bold800: 800;
             }
         }
     }
-
-
-    // opinion
-
     .opinion {
 
         .container {
@@ -248,11 +245,7 @@ $bold800: 800;
 
         }
     }
-
-    // .reviews 
-
-
-    .reviews {
+   .reviews {
 
         .container {
 
@@ -283,9 +276,6 @@ $bold800: 800;
             }
         }
     }
-
-    // sale
-
     .sale {
 
         .container {
@@ -326,9 +316,6 @@ $bold800: 800;
             }
         }
     }
-
-    // master
-
     .master {
 
         .container {
@@ -339,10 +326,6 @@ $bold800: 800;
             }
         }
     }
-    
-
-    // work
-
     .work {
 
         .container {
@@ -388,10 +371,6 @@ $bold800: 800;
             }
         }
     }
-
-
-    // our service center
-
     .our_service_center {
 
         .container {
@@ -417,11 +396,6 @@ $bold800: 800;
                         }
         }
     }
-
-
-    // courier 
-
-
     .courier {
 
         .container {
@@ -431,10 +405,6 @@ $bold800: 800;
             }
         }
     }
-
-    // contacts
-
-
     .contacts {
 
         .container {
@@ -570,9 +540,6 @@ $bold800: 800;
             }
         }
     }
-
-    // footer 
-
     .footer {
 
         .container {
@@ -608,9 +575,6 @@ $bold800: 800;
     .container {
         width: 560px;
     }
-
-    // header
-
     .header {
 
         .container {
@@ -632,9 +596,6 @@ $bold800: 800;
                 }
         }
     }
-
-    // hero 
-
     .hero {
 
         .container {
@@ -676,9 +637,6 @@ $bold800: 800;
             }
         }
     }
-
-    // repair {
-
     .repair {
 
         .container {
@@ -726,10 +684,6 @@ $bold800: 800;
             }
         }
     }
-
-
-    // opinion
-
     .opinion {
 
         .container {
@@ -822,7 +776,6 @@ $bold800: 800;
             
         }
     }
-
     .sale {
 
         .container {
@@ -871,9 +824,6 @@ $bold800: 800;
             }
         }
     }
-
-    // master
-
     .master {
 
         .container {
@@ -913,10 +863,6 @@ $bold800: 800;
 
         }
     }
-
-    // work
-
-
     .work {
 
         .container {
@@ -945,9 +891,6 @@ $bold800: 800;
             }
         }
     }
-
-    // our service center 
-
     .our_service_center {
 
         .container {
@@ -965,10 +908,6 @@ $bold800: 800;
             
         }
     }
-
-    // courier 
-
-
     .courier {
 
         .container {
@@ -982,10 +921,6 @@ $bold800: 800;
             }
         }
     }
-
-
-    // contacts
-
     .contacts {
 
         .container {
@@ -1065,9 +1000,6 @@ $bold800: 800;
             }
         }
     }
-
-    // footer
-
     .footer {
 
         .container {
