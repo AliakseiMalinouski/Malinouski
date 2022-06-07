@@ -1040,10 +1040,11 @@ $bold800: 800;
     // hero 
 
     .hero {
+        background: url(../img/fone-header-mobile.png) no-repeat right;
 
         .container {
             height: 597px;
-            background: url(../img/fone-header-mobile.png) no-repeat right;
+            background: none;
             align-items: flex-start;
             flex-direction: column;
 

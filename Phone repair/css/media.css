@@ -470,23 +470,25 @@
   .header .container .menu {
     margin-left: 220px; }
 
-  .hero .container {
-    height: 597px;
-    background: url(../img/fone-header-mobile.png) no-repeat right;
-    align-items: flex-start;
-    flex-direction: column; }
-    .hero .container .hero-fone-mobile {
-      display: none; }
-    .hero .container h1 {
-      font-size: 48px;
-      height: auto;
-      width: 270px; }
-    .hero .container .relative {
-      height: 376px;
-      display: flex;
+  .hero {
+    background: url(../img/fone-header-mobile.png) no-repeat right; }
+    .hero .container {
+      height: 597px;
+      background: none;
+      align-items: flex-start;
       flex-direction: column; }
-    .hero .container .modal_hero {
-      left: 20px; }
+      .hero .container .hero-fone-mobile {
+        display: none; }
+      .hero .container h1 {
+        font-size: 48px;
+        height: auto;
+        width: 270px; }
+      .hero .container .relative {
+        height: 376px;
+        display: flex;
+        flex-direction: column; }
+      .hero .container .modal_hero {
+        left: 20px; }
 
   .opinion {
     display: none; }
