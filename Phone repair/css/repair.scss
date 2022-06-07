@@ -3420,7 +3420,271 @@ h3 {
         .map {
             width: 1204px;
             height: 500px;
-            background: url(../img/big-map.png) no-repeat;
+            background-image: url(../img/big-map.png);
+            background-repeat: no-repeat;
+            position: relative;
+
+
+            .open-location-1 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                left: 380px;
+                top: 39px;
+                cursor: pointer;
+            }
+
+
+            .location_1 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+
+                .wrap-loc1 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+                    
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+            .open-location-2 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                left: 586px;
+                top: 54px;
+                
+                    
+            }
+
+                .location_2 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc2 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+             .open-location-3 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                left: 456px;
+                top: 134px;
+               
+                
+                    
+            }
+
+                .location_3 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc3 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .open-location-4 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                left: 700px;
+                top: 154px;
+               
+                
+                    
+            }
+
+                .location_4 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc4 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .open-location-5 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                left: 317px;
+                top: 199px;
+                
+                
+                    
+            }
+
+                .location_5 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc5 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
              
             
         }
