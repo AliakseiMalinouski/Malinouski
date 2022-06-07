@@ -3466,6 +3466,9 @@ h3 {
                         right: 15px;
                         top: 15px;
                         cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
                     }
                 }
             }
@@ -3519,6 +3522,9 @@ h3 {
                         right: 15px;
                         top: 15px;
                         cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
                     }
                 }
             }
@@ -3574,6 +3580,9 @@ h3 {
                         right: 15px;
                         top: 15px;
                         cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
                     }
                 }
             }
@@ -3628,6 +3637,9 @@ h3 {
                         right: 15px;
                         top: 15px;
                         cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
                     }
                 }
             }
@@ -3682,6 +3694,345 @@ h3 {
                         right: 15px;
                         top: 15px;
                         cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
+                    }
+                }
+            }
+
+
+            .open-location-6 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                left: 538px;
+                top: 243px;
+                
+                
+                    
+            }
+
+                .location_6 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc6 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
+                    }
+                }
+            }
+
+            .open-location-7 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                left: 700px;
+                top: 304px;
+                
+                
+                    
+            }
+
+                .location_7 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc7 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .open-location-8 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                top: 367px;
+                left: 344px;
+                
+                
+                    
+            }
+
+                .location_8 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc8 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
+                    }
+                }
+            }
+            .open-location-9 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                top: 380px;
+                left: 555px;
+                    
+                
+                
+                    
+            }
+
+                .location_9 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc9 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
+                    }
+                }
+            }
+            .open-location-10 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                top: 442px;
+                left: 502px;
+                
+                
+                    
+            }
+
+                .location_10 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc10 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
+                    }
+                }
+            }
+            .open-location-11 {
+                width: 160px;
+                height: 30px;
+                position: absolute;
+                cursor: pointer;
+                left: 202px;
+                top: 442px;
+                
+                    
+            }
+
+                .location_11 {
+                position: absolute;
+                width: 1204px;
+                height: 500px;
+                top: 0;
+                left: 0px;
+                display: none;
+                
+
+
+
+                @keyframes loc {
+                    from{
+                       height: 0;
+                    }
+                    to {
+                        height: 500px;
+                    }
+                }
+
+
+
+                .wrap-loc11 {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    iframe {
+                        animation: loc 0.4s linear;
+                    }
+                    
+
+
+                    img {
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        cursor: pointer;
+                        border: 2px solid $black;
+                        border-radius: 50px;
+                        background-color: $bold-pink;
                     }
                 }
             }
@@ -3722,18 +4073,8 @@ h3 {
             .next-about {
 
                 display: none;
-                animation: next-about 0.5s linear;
-                transform: translateY(10%);
-
-                @keyframes next-about {
-                    from {
-                            height: 0;
-                        }
-                    
-                        to {
-                            height: 275px;
-                        }
-                }
+                
+                
 
                 p {
                     color: $black;

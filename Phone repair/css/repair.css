@@ -2341,7 +2341,10 @@ h3 {
           position: absolute;
           right: 15px;
           top: 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
     .contacts .container .map .open-location-2 {
       width: 160px;
       height: 30px;
@@ -2371,7 +2374,10 @@ h3 {
           position: absolute;
           right: 15px;
           top: 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
     .contacts .container .map .open-location-3 {
       width: 160px;
       height: 30px;
@@ -2401,7 +2407,10 @@ h3 {
           position: absolute;
           right: 15px;
           top: 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
     .contacts .container .map .open-location-4 {
       width: 160px;
       height: 30px;
@@ -2431,7 +2440,10 @@ h3 {
           position: absolute;
           right: 15px;
           top: 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
     .contacts .container .map .open-location-5 {
       width: 160px;
       height: 30px;
@@ -2461,7 +2473,205 @@ h3 {
           position: absolute;
           right: 15px;
           top: 15px;
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
+    .contacts .container .map .open-location-6 {
+      width: 160px;
+      height: 30px;
+      position: absolute;
+      cursor: pointer;
+      left: 538px;
+      top: 243px; }
+    .contacts .container .map .location_6 {
+      position: absolute;
+      width: 1204px;
+      height: 500px;
+      top: 0;
+      left: 0px;
+      display: none; }
+@keyframes loc {
+  from {
+    height: 0; }
+  to {
+    height: 500px; } }
+      .contacts .container .map .location_6 .wrap-loc6 {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .contacts .container .map .location_6 .wrap-loc6 iframe {
+          animation: loc 0.4s linear; }
+        .contacts .container .map .location_6 .wrap-loc6 img {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
+    .contacts .container .map .open-location-7 {
+      width: 160px;
+      height: 30px;
+      position: absolute;
+      cursor: pointer;
+      left: 700px;
+      top: 304px; }
+    .contacts .container .map .location_7 {
+      position: absolute;
+      width: 1204px;
+      height: 500px;
+      top: 0;
+      left: 0px;
+      display: none; }
+@keyframes loc {
+  from {
+    height: 0; }
+  to {
+    height: 500px; } }
+      .contacts .container .map .location_7 .wrap-loc7 {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .contacts .container .map .location_7 .wrap-loc7 iframe {
+          animation: loc 0.4s linear; }
+        .contacts .container .map .location_7 .wrap-loc7 img {
+          position: absolute;
+          right: 15px;
+          top: 15px;
           cursor: pointer; }
+    .contacts .container .map .open-location-8 {
+      width: 160px;
+      height: 30px;
+      position: absolute;
+      cursor: pointer;
+      top: 367px;
+      left: 344px; }
+    .contacts .container .map .location_8 {
+      position: absolute;
+      width: 1204px;
+      height: 500px;
+      top: 0;
+      left: 0px;
+      display: none; }
+@keyframes loc {
+  from {
+    height: 0; }
+  to {
+    height: 500px; } }
+      .contacts .container .map .location_8 .wrap-loc8 {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .contacts .container .map .location_8 .wrap-loc8 iframe {
+          animation: loc 0.4s linear; }
+        .contacts .container .map .location_8 .wrap-loc8 img {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
+    .contacts .container .map .open-location-9 {
+      width: 160px;
+      height: 30px;
+      position: absolute;
+      cursor: pointer;
+      top: 380px;
+      left: 555px; }
+    .contacts .container .map .location_9 {
+      position: absolute;
+      width: 1204px;
+      height: 500px;
+      top: 0;
+      left: 0px;
+      display: none; }
+@keyframes loc {
+  from {
+    height: 0; }
+  to {
+    height: 500px; } }
+      .contacts .container .map .location_9 .wrap-loc9 {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .contacts .container .map .location_9 .wrap-loc9 iframe {
+          animation: loc 0.4s linear; }
+        .contacts .container .map .location_9 .wrap-loc9 img {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
+    .contacts .container .map .open-location-10 {
+      width: 160px;
+      height: 30px;
+      position: absolute;
+      cursor: pointer;
+      top: 442px;
+      left: 502px; }
+    .contacts .container .map .location_10 {
+      position: absolute;
+      width: 1204px;
+      height: 500px;
+      top: 0;
+      left: 0px;
+      display: none; }
+@keyframes loc {
+  from {
+    height: 0; }
+  to {
+    height: 500px; } }
+      .contacts .container .map .location_10 .wrap-loc10 {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .contacts .container .map .location_10 .wrap-loc10 iframe {
+          animation: loc 0.4s linear; }
+        .contacts .container .map .location_10 .wrap-loc10 img {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
+    .contacts .container .map .open-location-11 {
+      width: 160px;
+      height: 30px;
+      position: absolute;
+      cursor: pointer;
+      left: 202px;
+      top: 442px; }
+    .contacts .container .map .location_11 {
+      position: absolute;
+      width: 1204px;
+      height: 500px;
+      top: 0;
+      left: 0px;
+      display: none; }
+@keyframes loc {
+  from {
+    height: 0; }
+  to {
+    height: 500px; } }
+      .contacts .container .map .location_11 .wrap-loc11 {
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .contacts .container .map .location_11 .wrap-loc11 iframe {
+          animation: loc 0.4s linear; }
+        .contacts .container .map .location_11 .wrap-loc11 img {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          cursor: pointer;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          background-color: #ff005c; }
   .contacts .container .about-center {
     padding-top: 7px; }
     .contacts .container .about-center p {
@@ -2485,14 +2695,7 @@ h3 {
       content: 'v';
       margin-left: 7px; }
     .contacts .container .about-center .next-about {
-      display: none;
-      animation: next-about 0.5s linear;
-      transform: translateY(10%); }
-@keyframes next-about {
-  from {
-    height: 0; }
-  to {
-    height: 275px; } }
+      display: none; }
       .contacts .container .about-center .next-about p {
         color: #000000;
         line-height: 24.75px;
