@@ -238,11 +238,6 @@ h3 {
         margin-left: 53px; }
         .change-display2 .container div:nth-child(1) ul li {
           margin-bottom: 20px; }
-        .change-display2 .container div:nth-child(1) ul li:hover {
-          margin-bottom: 20px;
-          animation: li 3s;
-          transform: scale(1.05);
-          transition: 2s; }
         .change-display2 .container div:nth-child(1) ul li:nth-child(1) a {
           font-size: 24px;
           line-height: 45.6px;
@@ -275,6 +270,9 @@ h3 {
             font-weight: 500;
             font-size: 36px;
             margin-left: 10px; }
+      .change-display2 .container div:nth-child(1) ul:hover {
+        transform: scale(1.05);
+        transition: 1s; }
       .change-display2 .container div:nth-child(1) .take-sale {
         display: block;
         width: 286px;
@@ -404,8 +402,82 @@ h3 {
             color: #ff005c;
             font-weight: 700;
             line-height: 48px;
-            font-size: 24px; }
+            font-size: 24px;
+            margin-right: 10px; }
   .change-display3 .container .descr:hover {
+    transform: scale(1.06);
+    transition: 2s; }
+
+.repair-now {
+  padding-top: 100px; }
+  .repair-now .container .wrap-repair-now {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-left: 52px;
+    padding-right: 52px;
+    -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+    -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+    box-shadow: 0px 0px 37px -9px #bfe0ff;
+    background: url(../img/brokendisplay.png) no-repeat center; }
+    .repair-now .container .wrap-repair-now div:nth-child(1) {
+      height: 249px;
+      width: 390px;
+      padding: 0.1px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) h4 {
+        line-height: 24.3px;
+        font-size: 18px;
+        color: #000000;
+        font-weight: 700;
+        margin-bottom: 30px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) p {
+        width: 390px;
+        height: 75px;
+        font-size: 15px;
+        color: #000000;
+        font-weight: 500;
+        margin-bottom: 20px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) ul li:nth-child(1) {
+        color: #ff005c;
+        line-height: 29.7px;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) ul li:nth-child(2) {
+        font-weight: 500;
+        font-size: 15px;
+        color: #000000;
+        line-height: 24.75px;
+        width: 228px;
+        height: 75px; }
+    .repair-now .container .wrap-repair-now div:nth-child(2) {
+      height: 254px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) input {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #E5E5E5;
+        padding-left: 20px; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) ::placeholder {
+        color: #C4C4C4;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20.25px; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) button {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #ff005c;
+        background-color: #ff005c;
+        line-height: 20.25px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff; }
+  .repair-now .container .wrap-repair-now:hover {
     transform: scale(1.06);
     transition: 2s; }
 

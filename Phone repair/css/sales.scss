@@ -390,12 +390,7 @@ h3 {
                 li{
                     margin-bottom: 20px;
                 }
-                li:hover {
-                    margin-bottom: 20px;
-                    animation: li 3s;
-                    transform: scale(1.05);
-                    transition: 2s;
-                }
+                
 
                 li:nth-child(1) {
                     
@@ -452,6 +447,10 @@ h3 {
                         }
                     }
                 }
+            }
+             ul:hover {
+                transform: scale(1.05);
+                transition: 1s;
             }
             .take-sale {
                     display: block;
@@ -557,7 +556,7 @@ h3 {
                     margin-top: 42px;
                    
                 }
-                                .take-sale:hover {
+                .take-sale:hover {
                     animation: take-sale 0.5s forwards;
                     
                         @keyframes take-sale {
@@ -646,10 +645,12 @@ h3 {
                             font-weight: $extra-bold;
                             line-height: 48px;
                             font-size: $fz24;
+                            margin-right: 10px;
                         }
                     }
                 }
             }
+            
         }
         .descr:hover {
             transform: scale(1.06);
@@ -657,3 +658,112 @@ h3 {
         }
     }
 }
+
+.repair-now {
+    padding-top: 100px;
+
+    .container {
+
+        .wrap-repair-now {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 45px;
+            padding-bottom: 50px;
+            padding-left: 52px;
+            padding-right: 52px;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
+            background: url(../img/brokendisplay.png) no-repeat center;
+            
+            div:nth-child(1) {
+                height: 249px;
+                width: 390px;
+                padding: 0.1px;
+
+                h4 {
+                    line-height: 24.3px;
+                    font-size: $fz18;
+                    color: $black;
+                    font-weight: $extra-bold;
+                    margin-bottom: 30px;
+                }
+                
+                p {
+                    width: 390px;
+                    height: 75px;
+                    font-size: $fz15;
+                    color: $black;
+                    font-weight: $medium;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    
+                    li:nth-child(1) {
+                        color: $bold-pink;
+                        line-height: 29.7px;
+                        font-size: $fz18;
+                        font-weight: $extra-bold;
+                        margin-bottom: 20px;
+                    }
+
+                    li:nth-child(2) {
+                        font-weight: $medium;
+                        font-size: $fz15;
+                        color: $black;
+                        line-height: 24.75px;
+                        width: 228px;
+                        height: 75px;
+                    }
+                }
+            }
+
+            
+
+            div:nth-child(2) {
+                height: 254px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                input {
+                    width: 300px;
+                    height: 50px;
+                    border: 1px solid #E5E5E5;
+                    padding-left: 20px;;
+                }
+
+                ::placeholder {
+                    color: $gray;
+                    font-weight: $medium;
+                    font-size: $fz15;
+                    line-height: 20.25px;
+                }
+
+                button {
+                    width: 300px;
+                    height: 50px;
+                    border: 1px solid $bold-pink;
+                    background-color: $bold-pink;
+                    line-height: 20.25px;
+                    font-weight: $medium;
+                    font-size: $fz15;
+                    color: $white;
+
+                }
+            }
+
+           
+        }
+        .wrap-repair-now:hover {
+                 transform: scale(1.06);
+                 transition: 2s;
+            }      
+    }
+}
+
+
+    
