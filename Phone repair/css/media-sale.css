@@ -63,6 +63,25 @@
     .header .container ul {
       display: none; }
     .header .container .tel {
-      display: none; } }
+      display: none; }
+
+  .change-display1 .container .description-one {
+    background-size: 60%;
+    background-position: 0% 120%; }
+    .change-display1 .container .description-one .first-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .change-display1 .container .description-one .first-mobile h2 {
+        display: none; }
+      .change-display1 .container .description-one .first-mobile h3 {
+        display: block; }
+
+  .change-display2 .container {
+    flex-direction: column;
+    align-items: center; }
+    .change-display2 .container div:nth-child(1) {
+      margin-right: 0px;
+      margin-bottom: 30px; } }
 
 /*# sourceMappingURL=media-sale.css.map */

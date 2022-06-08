@@ -151,6 +151,9 @@ h3 {
         height: auto;
         margin-left: 53px;
         margin-top: 52px; }
+        .change-display1 .container .description-one .first-mobile h3 {
+          display: none;
+          width: 440px; }
         .change-display1 .container .description-one .first-mobile h2 {
           width: 685px;
           height: 49px;
