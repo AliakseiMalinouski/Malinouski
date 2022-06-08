@@ -285,6 +285,21 @@ h3 {
       .change-display2 .container div:nth-child(2) ul {
         margin-left: 53px; }
         .change-display2 .container div:nth-child(2) ul li {
-          margin-bottom: 20px; }
+          margin-bottom: 10px; }
+          .change-display2 .container div:nth-child(2) ul li a {
+            font-size: 24px;
+            line-height: 45.6px;
+            color: #000000;
+            font-weight: 600; }
+            .change-display2 .container div:nth-child(2) ul li a span {
+              line-height: auto;
+              color: #ff005c;
+              font-weight: 700;
+              font-size: 24px;
+              margin-left: 10px;
+              margin-right: 10px; }
+      .change-display2 .container div:nth-child(2) ul:hover {
+        transform: scale(1.05);
+        transition: 1s; }
 
 /*# sourceMappingURL=sales.css.map */

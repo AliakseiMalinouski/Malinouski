@@ -464,10 +464,33 @@ h3 {
 
             ul {
                 margin-left: 53px;
+                
 
                 li {
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
+
+                    a {
+                        font-size: $fz24;
+                        line-height: 45.6px;
+                        color: $black;
+                        font-weight: $bold;
+
+                        span {
+                            line-height: auto;
+                            color: $bold-pink;
+                            font-weight: $extra-bold;
+                            font-size: $fz24;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                    }
                 }
+                
+            }
+
+            ul:hover {
+                transform: scale(1.05);
+                transition: 1s;
             }
         }
     }
