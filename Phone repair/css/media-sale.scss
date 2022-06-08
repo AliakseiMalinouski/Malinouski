@@ -422,11 +422,19 @@ $bold800: 800;
       .container {
           width: 320px;
       }
+      .header {
+          .container {
+              .nav-header {
+                  width: 100%;
+              }
+          }
+      }
       .change-display1 {
           .container {
               .description-one {
                   align-items: flex-start;
-                  height: 616px;
+                  height: 646px;
+                  background: url(../img/ds3-mobile.png) no-repeat bottom;
                   .first-mobile {
                       margin-left: 0px;
                       
@@ -457,6 +465,41 @@ $bold800: 800;
                   }
                   }
                  
+              }
+          }
+      }
+      .change-display2 {
+          .container {
+              height: 1172px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+
+              div:nth-child(1) {
+                  width: 320px;
+                  background: none;
+                  background: url(../img/ds1-mobile.png) no-repeat right;
+
+                  h2 {
+                      width: 291px;
+                      height: 76px;
+                      font-size: $fz28;
+                      line-height: 37.8px;
+                  }
+              }
+              div:nth-child(2) {
+                  width: 320px;
+                  background: none;
+                  background: url(../img/ds2-mobile.png) no-repeat 110% 50%;
+
+                  h2 {
+                      width: 291px;
+                      height: 76px;
+                      font-size: $fz28;
+                      line-height: 37.8px;
+                  }
+
               }
           }
       }
