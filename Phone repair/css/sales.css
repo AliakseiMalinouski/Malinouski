@@ -62,7 +62,7 @@ h3 {
     .header .container .nav-header {
       display: none;
       width: 320px;
-      background-color: #fff;
+      background-color: #E5E5E5;
       height: 530px;
       position: absolute;
       z-index: 3;
@@ -92,7 +92,7 @@ h3 {
           margin-top: 60px;
           margin-bottom: 30px;
           height: 30px;
-          border-bottom: 2px solid #E5E5E5; }
+          border-bottom: 2px solid #fff; }
         .header .container .nav-header .interior-modal #close-modal-header {
           position: absolute;
           top: 15px;

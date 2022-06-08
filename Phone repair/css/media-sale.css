@@ -50,5 +50,19 @@
 
   .repair-now .container .wrap-repair-now {
     background-position: 60% 65%; } }
+@media all and (max-width: 992px) {
+  .container {
+    width: 560px; }
+
+  .header .container {
+    position: relative; }
+    .header .container .menu {
+      position: absolute;
+      display: block;
+      left: 480px; }
+    .header .container ul {
+      display: none; }
+    .header .container .tel {
+      display: none; } }
 
 /*# sourceMappingURL=media-sale.css.map */

@@ -130,3 +130,26 @@ $bold800: 800;
         }
     }
 }
+@media all and (max-width:992px) {
+    .container {
+        width: 560px;
+    }
+     .header {
+
+        .container {
+            position: relative;
+            .menu{
+                position: absolute;
+                display: block;
+                left: 480px;
+            }
+            ul{
+                display: none;
+            }
+
+            .tel {
+                display: none;
+            }
+        }
+    }
+}
