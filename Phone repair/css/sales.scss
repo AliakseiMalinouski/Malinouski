@@ -765,5 +765,247 @@ h3 {
     }
 }
 
+.footer {
+    padding-top: 152px;
+
+    .container {
+        padding: 0.1px;
+        
+
+        .wrap_footer {
+            padding: 0.1px;
+            display: flex;
+            justify-content: space-between; 
+            
+            .arrive {
+            padding: 0.1px;
+            width: 611px;
+            border-right: 2px solid $light-blue;
+
+
+            ul:nth-child(1) {
+            width: 425px;
+            height: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            
+
+                li:nth-child(1) {
+                    font-size: $fz26;
+                        font-weight: $light;
+                        color: $black;
+                        line-height: 31.69px;
+                    
+                        span {
+                            color: $bold-pink;
+                            font-size: $fz26;
+                            font-weight: $bold800;
+                            line-height: 31.69px;
+                            text-transform: uppercase;
+                    
+                        }
+                }
+
+                li:nth-child(2) {
+                    color: $gray;
+                    line-height: 21.94px;
+                    font-weight: $regular;
+                    font-size: $fz18 - 2;
+                }
+            }
+
+            h6 {
+               color: $black;
+               font-size: $fz18;
+               font-weight: $extra-bold;
+               line-height: 24.3px;
+               margin-left: 30px;
+               margin-bottom: 30px;
+            }
+
+            .list_2{
+                width: 519px;
+                height: 30px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                
+
+                li:nth-child(1){
+                    color: $bold-pink;
+                    font-weight: $bold;
+                    line-height: 29.7px;
+                    font-size: $fz18;
+                }
+
+                li:nth-child(2){
+                    color: $gray;
+                    font-weight: $medium;
+                    font-size: $fz15;
+                    line-height: 20.25px;
+                }
+            }
+
+            p {
+                width: 531px;
+                height: 125px;
+                color: $black;
+                font-size: $fz15;
+                font-weight: $medium;
+                line-height: 24.75px;
+                margin-left: 30px;
+                margin-bottom: 30px;
+            }
+
+            ul:last-child {
+               width: 403px;
+               height: 54px;
+               display: flex;
+               justify-content: space-between;
+               margin-bottom: 30px;
+               background-image: url(../img/metro.png);
+               background-repeat: no-repeat;
+               background-position: 54% 50%;
+               align-items: center;
+
+               li:nth-child(1) {
+                   width: 178px;
+                   height: 54px;
+                   color: $gray;
+                   font-size: $fz15;
+                   line-height: 20.25px;
+                   font-weight: $medium;
+
+                   span {
+                       color: $bold-pink;
+                       line-height: 29.7px;
+                       font-weight: $bold;
+                       font-size: $fz18 - 2;
+                   }
+               }
+
+               li:nth-child(2) {
+                   line-height: 20.25px;
+                   font-size: $fz15;
+                   font-weight: $medium;
+                   color: $black;
+               }
+            }
+        }
+        .company {
+            width: 243px;
+            height: 396px;
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            border-right: 2px solid $light-blue;
+            
+
+            ul {
+               
+
+                li {
+                    margin-bottom: 25px
+                }
+
+                li:first-child {
+                    color: $black;
+                    font-size: $fz18;
+                    line-height: 24.3px;
+                    font-weight: $extra-bold;
+                }
+
+                li:nth-child(2) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(3) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(4) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(5) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                li:nth-child(6) {
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+                
+                
+            }
+        }
+
+        .repair-brands {
+            width: 288px;
+            height: 396px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.1px;
+
+            ul {
+
+                li {
+                    margin-bottom: 20px;
+                    color: $black;
+                    font-weight: $medium;
+                    line-height: 20.25px;
+                    font-size: $fz15;
+                }
+            }
+
+            ul:first-child {
+                margin-top: 54px;
+
+                li:nth-child(1) {
+                    color: $black;
+                    font-size: $fz18 - 2;
+                    line-height: 24.3px;
+                    font-weight: $extra-bold;
+                }
+            }
+
+            ul:last-child{
+                margin-top: 98px;
+            }
+        }
+        }
+
+        .end_footer {
+            width: 1224px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+
+            h6 {
+                color: $gray;
+                font-size: $fz15;
+                font-weight: $medium;
+                line-height: 18.29px;
+            }
+        }
+
+      
+    }
+}
+
 
     
