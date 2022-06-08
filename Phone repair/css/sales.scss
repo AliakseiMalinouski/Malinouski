@@ -349,6 +349,12 @@ h3 {
                 }
             }
         }
+
+        .description-one:hover {
+            transform: scale(1.06);
+            transition: 2s;
+            
+        }
     }
 }
 
@@ -368,6 +374,7 @@ h3 {
             -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
             -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
             box-shadow: 0px 0px 37px -9px #bfe0ff;
+            background: url(../img/change-display.png) no-repeat right bottom;
             
             h2 {
                 line-height: 48.6px;
@@ -447,11 +454,18 @@ h3 {
                 }
             }
         }
+        div:nth-child(1):hover {
+            transform: scale(1.06);
+            transition: 2s;
+        }
         div:nth-child(2){
             width: 590px;
             height: 570px;
-            background-color: aquamarine;
             padding-top: 52px;
+            -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+            box-shadow: 0px 0px 37px -9px #bfe0ff;
+            background: url(../img/changedisplay3.png) no-repeat right bottom;
 
             h2 {
                 line-height: 48.6px;
@@ -492,6 +506,10 @@ h3 {
                 transform: scale(1.05);
                 transition: 1s;
             }
+        }
+        div:nth-child(2):hover {
+            transform: scale(1.06);
+            transition: 2s;
         }
     }
 }

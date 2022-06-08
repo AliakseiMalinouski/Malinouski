@@ -209,6 +209,10 @@ h3 {
     transform: rotate(8deg); }
   to {
     transform: rotate(0deg); } }
+    .change-display1 .container .description-one:hover {
+      transform: scale(1.06);
+      transition: 2s; }
+
 .change-display2 {
   padding-top: 40px; }
   .change-display2 .container {
@@ -221,7 +225,8 @@ h3 {
       padding-top: 52px;
       -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
       -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
-      box-shadow: 0px 0px 37px -9px #bfe0ff; }
+      box-shadow: 0px 0px 37px -9px #bfe0ff;
+      background: url(../img/change-display.png) no-repeat right bottom; }
       .change-display2 .container div:nth-child(1) h2 {
         line-height: 48.6px;
         font-size: 36px;
@@ -270,11 +275,17 @@ h3 {
             font-weight: 500;
             font-size: 36px;
             margin-left: 10px; }
+    .change-display2 .container div:nth-child(1):hover {
+      transform: scale(1.06);
+      transition: 2s; }
     .change-display2 .container div:nth-child(2) {
       width: 590px;
       height: 570px;
-      background-color: aquamarine;
-      padding-top: 52px; }
+      padding-top: 52px;
+      -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+      -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+      box-shadow: 0px 0px 37px -9px #bfe0ff;
+      background: url(../img/changedisplay3.png) no-repeat right bottom; }
       .change-display2 .container div:nth-child(2) h2 {
         line-height: 48.6px;
         font-size: 36px;
@@ -301,5 +312,8 @@ h3 {
       .change-display2 .container div:nth-child(2) ul:hover {
         transform: scale(1.05);
         transition: 1s; }
+    .change-display2 .container div:nth-child(2):hover {
+      transform: scale(1.06);
+      transition: 2s; }
 
 /*# sourceMappingURL=sales.css.map */
