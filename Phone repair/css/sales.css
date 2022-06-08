@@ -61,7 +61,7 @@ h3 {
       display: none; }
     .header .container .nav-header {
       display: none;
-      width: 320px;
+      width: 50%;
       background-color: #E5E5E5;
       height: 530px;
       position: absolute;
@@ -391,6 +391,8 @@ h3 {
     width: 0px; }
   to {
     width: 649px; } }
+    .change-display3 .container .descr h3 {
+      display: none; }
     .change-display3 .container .descr ul {
       margin-left: 53px;
       margin-top: 23px; }

@@ -103,7 +103,7 @@ h3 {
 
         .nav-header {
             display: none;
-            width: 320px;
+            width: 50%;
             background-color: $light-gray;
             height: 530px;
             position: absolute;
@@ -111,6 +111,7 @@ h3 {
             right: 0;
             top: 0px;
             animation: nav-header 0.4s linear;
+            
 
             @keyframes nav-header {
                 from {
@@ -632,6 +633,9 @@ h3 {
                             width: 649px;
                         }
                     }
+            }
+            h3 {
+                display: none;
             }
 
             ul {
