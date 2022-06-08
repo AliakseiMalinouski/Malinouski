@@ -226,7 +226,7 @@ h3 {
       -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
       -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
       box-shadow: 0px 0px 37px -9px #bfe0ff;
-      background: url(../img/change-display.png) no-repeat right bottom; }
+      background: url(../img/change-display.png) no-repeat right; }
       .change-display2 .container div:nth-child(1) h2 {
         line-height: 48.6px;
         font-size: 36px;
@@ -275,6 +275,30 @@ h3 {
             font-weight: 500;
             font-size: 36px;
             margin-left: 10px; }
+      .change-display2 .container div:nth-child(1) .take-sale {
+        display: block;
+        width: 286px;
+        height: 50px;
+        padding-left: 40px;
+        padding-top: 16px;
+        font-weight: 700;
+        font-size: 15px;
+        color: #fff;
+        line-height: 18.29px;
+        border: 1px solid #ff005c;
+        background-color: #ff005c;
+        margin-left: 53px; }
+      .change-display2 .container div:nth-child(1) .take-sale:hover {
+        animation: take-sale 0.5s forwards; }
+@keyframes take-sale {
+  from {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-2deg); }
+  80% {
+    transform: rotate(2deg); }
+  to {
+    transform: rotate(0deg); } }
     .change-display2 .container div:nth-child(1):hover {
       transform: scale(1.06);
       transition: 2s; }
@@ -309,6 +333,31 @@ h3 {
               font-size: 24px;
               margin-left: 10px;
               margin-right: 10px; }
+      .change-display2 .container div:nth-child(2) .take-sale {
+        display: block;
+        width: 286px;
+        height: 50px;
+        padding-left: 40px;
+        padding-top: 16px;
+        font-weight: 700;
+        font-size: 15px;
+        color: #fff;
+        line-height: 18.29px;
+        border: 1px solid #ff005c;
+        background-color: #ff005c;
+        margin-left: 53px;
+        margin-top: 42px; }
+      .change-display2 .container div:nth-child(2) .take-sale:hover {
+        animation: take-sale 0.5s forwards; }
+@keyframes take-sale {
+  from {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-2deg); }
+  80% {
+    transform: rotate(2deg); }
+  to {
+    transform: rotate(0deg); } }
       .change-display2 .container div:nth-child(2) ul:hover {
         transform: scale(1.05);
         transition: 1s; }
