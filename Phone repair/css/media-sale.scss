@@ -534,6 +534,30 @@ $bold800: 800;
                           width: 330px;
                       }
                   }
+                   div:nth-child(2) {
+
+                    .thanks {
+                        width: 311px;
+                        
+
+                        .wrap-thanks {
+                             h5 {
+                            font-size: $fz18;
+                            
+                        }
+                        p {
+                                font-size: 14px;
+                                line-height: 29.7px;
+                                color: #000000;
+                                font-weight: 700;
+                                width: auto;
+                                margin-left: 30px;
+                        }
+                        }
+
+                       
+                    }
+                   }
               }
           }
       }
