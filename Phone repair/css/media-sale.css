@@ -290,6 +290,17 @@
         font-size: 28px;
         line-height: 37.8px; }
 
+  .change-display3 .container .descr h3 {
+    width: 291px;
+    height: 76px;
+    font-size: 28px;
+    line-height: 37.8px; }
+  .change-display3 .container .descr ul {
+    margin-top: 10px;
+    margin-left: 10px; }
+    .change-display3 .container .descr ul li a {
+      font-size: 22px; }
+
   .repair-now .container .wrap-repair-now {
     background: url(../img/fone-r-mobile.png) no-repeat center;
     height: 860px; }

@@ -503,6 +503,29 @@ $bold800: 800;
               }
           }
       }
+      .change-display3 {
+          .container {
+              .descr {
+                  h3 {
+                      width: 291px;
+                      height: 76px;
+                      font-size: $fz28;
+                      line-height: 37.8px;
+                  }
+
+                  ul {
+                      margin-top: 10px;
+                      margin-left: 10px;
+
+                      li {
+                          a {
+                              font-size: $fz24 - 2;
+                          }
+                      }
+                  }
+              }
+          }
+      }
       .repair-now {
           .container {
               .wrap-repair-now {
