@@ -142,9 +142,8 @@ $bold800: 800;
         .container {
             
             .menu{
-                position: absolute;
                 display: block;
-                left: 700px;
+                
             }
             ul{
                 display: none;
@@ -193,7 +192,7 @@ $bold800: 800;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background-color: none;
+                background: none;
                 h2 {
                     display: none;
                 }
@@ -404,8 +403,75 @@ $bold800: 800;
                 div:nth-child(1) {
                     margin-left: 90px;
                     margin-bottom: 30px;
+                    
+                    
+                }
+
+                div:nth-child(2) {
+                    .thanks {
+                        left: -85px;
+                        top: 230px;
+                        width: 550px;
+                    }
                 }
             }
         }
     }
+}
+@media all and (max-width:560px) {
+      .container {
+          width: 320px;
+      }
+      .change-display1 {
+          .container {
+              .description-one {
+                  align-items: flex-start;
+                  height: 616px;
+                  .first-mobile {
+                      margin-left: 0px;
+                      
+                      h3 {
+                      font-size: $fz28;
+                      color: $black;
+                      line-height: 37.8px;
+                      width: 291px ;
+                      height: 76px;
+                  }
+
+                  ul {
+                      width: 320px;
+                      height: 92px;
+
+                      li {
+                          a {
+                              line-height: 45.6px;
+                              font-size: $fz24 - 1;
+                          }
+                      }
+                  }
+                  p {
+                       font-size: $fz48 + 12;
+                    span {
+
+                    }
+                  }
+                  }
+                 
+              }
+          }
+      }
+      .repair-now {
+          .container {
+              .wrap-repair-now {
+                  background: url(../img/fone-r-mobile.png) no-repeat center;
+                  height: 860px;
+
+                  div:nth-child(1) {
+                      p {
+                          width: 330px;
+                      }
+                  }
+              }
+          }
+      }
 }

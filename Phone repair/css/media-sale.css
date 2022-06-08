@@ -58,9 +58,7 @@
     position: relative; }
 
   .header .container .menu {
-    position: absolute;
-    display: block;
-    left: 700px; }
+    display: block; }
   .header .container ul {
     display: none; }
   .header .container .tel {
@@ -89,7 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: none; }
+    background: none; }
     .change-display3 .container .descr h2 {
       display: none; }
     .change-display3 .container .descr h3 {
@@ -235,6 +233,39 @@
     background: none; }
     .repair-now .container .wrap-repair-now div:nth-child(1) {
       margin-left: 90px;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+    .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
+      left: -85px;
+      top: 230px;
+      width: 550px; } }
+@media all and (max-width: 560px) {
+  .container {
+    width: 320px; }
+
+  .change-display1 .container .description-one {
+    align-items: flex-start;
+    height: 616px; }
+    .change-display1 .container .description-one .first-mobile {
+      margin-left: 0px; }
+      .change-display1 .container .description-one .first-mobile h3 {
+        font-size: 28px;
+        color: #000000;
+        line-height: 37.8px;
+        width: 291px;
+        height: 76px; }
+      .change-display1 .container .description-one .first-mobile ul {
+        width: 320px;
+        height: 92px; }
+        .change-display1 .container .description-one .first-mobile ul li a {
+          line-height: 45.6px;
+          font-size: 23px; }
+      .change-display1 .container .description-one .first-mobile p {
+        font-size: 60px; }
+
+  .repair-now .container .wrap-repair-now {
+    background: url(../img/fone-r-mobile.png) no-repeat center;
+    height: 860px; }
+    .repair-now .container .wrap-repair-now div:nth-child(1) p {
+      width: 330px; } }
 
 /*# sourceMappingURL=media-sale.css.map */
