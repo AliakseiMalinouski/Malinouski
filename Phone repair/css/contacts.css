@@ -163,15 +163,15 @@ h3 {
         color: #C4C4C4;
         font-weight: 500;
         line-height: 20.25px; }
-      .our-contacts .container .about-contacts div:nth-child(1) ul li:nth-child(2) {
+      .our-contacts .container .about-contacts div:nth-child(1) ul li:nth-child(2) a {
         line-height: 29.7px;
         font-size: 18px;
         font-weight: 700;
         color: #000000; }
-        .our-contacts .container .about-contacts div:nth-child(1) ul li:nth-child(2) span {
-          font-size: 16px;
-          color: #ff005c;
-          font-weight: 500; }
+      .our-contacts .container .about-contacts div:nth-child(1) ul li:nth-child(2) span {
+        font-size: 16px;
+        color: #ff005c;
+        font-weight: 500; }
     .our-contacts .container .about-contacts .list2 {
       width: 156px;
       height: 75px;
