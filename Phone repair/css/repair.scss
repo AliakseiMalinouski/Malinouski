@@ -100,64 +100,150 @@ h3 {
         display: none;
     }
 
-    .nav-header {
-        display: none;
-        width: 320px;
-        background-color: $white;
-        height: 530px;
-        position: absolute;
-        z-index: 3;
-        right: 0;
-        top: 0px;
-        animation: nav-header 0.4s linear;
-
-        @keyframes nav-header {
-            from {
-                    width: 0;
+        .nav-header {
+            display: none;
+            width: 320px;
+            background-color: $white;
+            height: auto;
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 0px;
+            animation: nav-header 0.4s linear;
+            padding-left: 20px;
+            padding-bottom: 25px;
+    
+    
+    
+            @keyframes nav-header {
+                from {
+                    right: -100px;
                 }
-            
+    
                 to {
-                    width: 320px;
+                    right: 0px;
                 }
-        }
-
-        .interior-modal {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            display: block;
-            padding: 0.1px;
-
-            a {
+            }
+    
+    
+    
+            .interior-modal {
                 width: 100%;
-                color: $black;
-                font-size: $fz26;
-                line-height: 18.29px;
-                font-weight: $medium;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin-top: 60px;
-                margin-bottom: 30px;
-                height: 30px;
-                border-bottom: 2px solid $light-gray;
-            }
-
-           
-
-
-            #close-modal-header {
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                width: 40px;
-                height: 40px;
-                border: 2px solid $black;
-                border-radius: 50px;
-                background-color: lightpink;
+                height: 100%;
+                position: relative;
+                display: block;
+                padding: 0.1px;
+                padding-top: 24px;
+    
+                a {
+                    width: 100%;
+                    color: $black;
+                    font-size: $fz15;
+                    line-height: 18.29px;
+                    font-weight: $medium;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom: 25px;
+                }
+    
+    
+                h6 {
+                    font-size: $fz26;
+                    font-weight: $light;
+                    color: $black;
+                    line-height: 31.69px;
+                    margin-bottom: 74px;
+    
+                    span {
+                        color: $bold-pink;
+                        font-size: $fz26;
+                        font-weight: $bold800;
+                        line-height: 31.69px;
+                        text-transform: uppercase;
+    
+                    }
+                }
+    
+                p {
+                    color: $black;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    line-height: 24.3px;
+                    margin-bottom: 30px;
+                }
+    
+                .modal-list1 {
+                    display: block;
+                    margin-bottom: 25px;
+    
+                    li:nth-child(1) {
+                        color: $bold-pink;
+                        font-size: $fz18;
+                        font-weight: $bold;
+                        line-height: 29.7px;
+                    }
+    
+                    li:nth-child(2) {
+                        line-height: 29.7px;
+                        font-size: $fz18 - 3;
+                        color: $gray;
+                        font-weight: $regular;
+                    }
+                }
+    
+                .modal-list2 {
+                    display: block;
+    
+                    li:nth-child(1) {
+                        line-height: 20.25px;
+                        color: #C4C4C4;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                        font-size: $fz15;
+                    }
+    
+                    li:nth-child(2) {
+                        font-size: 18px;
+                        color: #ff005c;
+                        font-weight: 600;
+                        line-height: 29.7px;
+                        margin-bottom: 5px;
+                    }
+    
+                    li:nth-child(3) {
+                        color: $black;
+                        font-weight: $medium;
+                    }
+                }
+    
+                button {
+                    padding-left: 48px;
+                    padding-right: 48px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background-color: $bold-pink;
+                    color: $white;
+                    font-weight: $extra-bold;
+                    line-height: 18.29px;
+                    font-size: $fz15;
+                    border: 1px solid $bold-pink;
+                    display: block;
+                    margin-top: 50px;
+                }
+    
+                #close-modal-header {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid $black;
+                    border-radius: 50px;
+                    background-color: lightpink;
+                }
             }
         }
-    }
 
     ul {
         display: flex;

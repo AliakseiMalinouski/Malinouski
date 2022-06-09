@@ -70,36 +70,97 @@ h3 {
       display: none;
       width: 320px;
       background-color: #fff;
-      height: 530px;
+      height: auto;
       position: absolute;
       z-index: 3;
       right: 0;
       top: 0px;
-      animation: nav-header 0.4s linear; }
+      animation: nav-header 0.4s linear;
+      padding-left: 20px;
+      padding-bottom: 25px; }
 @keyframes nav-header {
   from {
-    width: 0; }
+    right: -100px; }
   to {
-    width: 320px; } }
+    right: 0px; } }
       .header .container .nav-header .interior-modal {
         width: 100%;
         height: 100%;
         position: relative;
         display: block;
-        padding: 0.1px; }
+        padding: 0.1px;
+        padding-top: 24px; }
         .header .container .nav-header .interior-modal a {
           width: 100%;
           color: #000000;
-          font-size: 26px;
+          font-size: 15px;
           line-height: 18.29px;
           font-weight: 500;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          margin-top: 60px;
-          margin-bottom: 30px;
-          height: 30px;
-          border-bottom: 2px solid #E5E5E5; }
+          margin-bottom: 25px; }
+        .header .container .nav-header .interior-modal h6 {
+          font-size: 26px;
+          font-weight: 300;
+          color: #000000;
+          line-height: 31.69px;
+          margin-bottom: 74px; }
+          .header .container .nav-header .interior-modal h6 span {
+            color: #ff005c;
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 31.69px;
+            text-transform: uppercase; }
+        .header .container .nav-header .interior-modal p {
+          color: #000000;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24.3px;
+          margin-bottom: 30px; }
+        .header .container .nav-header .interior-modal .modal-list1 {
+          display: block;
+          margin-bottom: 25px; }
+          .header .container .nav-header .interior-modal .modal-list1 li:nth-child(1) {
+            color: #ff005c;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 29.7px; }
+          .header .container .nav-header .interior-modal .modal-list1 li:nth-child(2) {
+            line-height: 29.7px;
+            font-size: 15px;
+            color: #C4C4C4;
+            font-weight: 400; }
+        .header .container .nav-header .interior-modal .modal-list2 {
+          display: block; }
+          .header .container .nav-header .interior-modal .modal-list2 li:nth-child(1) {
+            line-height: 20.25px;
+            color: #C4C4C4;
+            font-weight: 500;
+            margin-bottom: 5px;
+            font-size: 15px; }
+          .header .container .nav-header .interior-modal .modal-list2 li:nth-child(2) {
+            font-size: 18px;
+            color: #ff005c;
+            font-weight: 600;
+            line-height: 29.7px;
+            margin-bottom: 5px; }
+          .header .container .nav-header .interior-modal .modal-list2 li:nth-child(3) {
+            color: #000000;
+            font-weight: 500; }
+        .header .container .nav-header .interior-modal button {
+          padding-left: 48px;
+          padding-right: 48px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          background-color: #ff005c;
+          color: #fff;
+          font-weight: 700;
+          line-height: 18.29px;
+          font-size: 15px;
+          border: 1px solid #ff005c;
+          display: block;
+          margin-top: 50px; }
         .header .container .nav-header .interior-modal #close-modal-header {
           position: absolute;
           top: 15px;
