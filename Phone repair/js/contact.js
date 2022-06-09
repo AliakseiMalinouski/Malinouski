@@ -21,8 +21,8 @@ function CloseModalMobile() {
 }
 
 
-// input.onfocus = function () {
-//     if (true) {
+input.onfocus = function () {
+    if (true) {
         
-//     }
-// }
+    }
+}

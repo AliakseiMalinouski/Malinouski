@@ -348,14 +348,20 @@ $bold800: 800;
                   height: 860px;
 
                   div:nth-child(1) {
+                      width: 320px;
+                      margin-left: 0px;
                       p {
-                          width: 330px;
+                          width: 320px;
+                      }
+                      h4 {
+                          width: 200px;
                       }
                   }
                    div:nth-child(2) {
 
                     .thanks {
                         width: 311px;
+                        left: 5px;
                         
 
                         .wrap-thanks {
@@ -376,6 +382,10 @@ $bold800: 800;
                        
                     }
                    }
+              }
+              .wrap-repair-now:not([disabled]):hover {
+                 transform: none;
+                 
               }
           }
       }
