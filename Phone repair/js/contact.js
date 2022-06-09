@@ -18,3 +18,5 @@ function CloseModalMobile() {
     document.getElementById('logo-con').style.filter = '';
     document.getElementById('wrap').style.filter = '';   
 }
+
+
