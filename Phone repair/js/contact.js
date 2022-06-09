@@ -1,5 +1,6 @@
 function ThanskForFeedBackOpen() {
     document.getElementById('thanks').style.display = 'block';
+    
 }
 function ThanskForFeedBackClose() {
     document.getElementById('thanks').style.display = 'none';
@@ -20,11 +21,8 @@ function CloseModalMobile() {
 }
 
 
-input.onfocus = function () {
-    if (true) {
-        document.getElementById('form').style.position = 'absolute';
-        document.getElementById('form').style.left = '450px';
-        document.getElementById('wrap-form').style.backgroundPosition = 'right';
-        document.getElementById('contacts-us').style.filter = 'blur(5px)';
-    }
-}
+// input.onfocus = function () {
+//     if (true) {
+        
+//     }
+// }

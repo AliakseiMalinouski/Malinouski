@@ -450,7 +450,7 @@ h3 {
                     line-height: 20.25px;
                 }
 
-                button {
+                a {
                     width: 300px;
                     height: 50px;
                     border: 1px solid $bold-pink;
@@ -460,6 +460,9 @@ h3 {
                     font-size: $fz15;
                     color: $white;
                     cursor: pointer;
+                    display: block;
+                    padding-left: 83px;
+                    padding-top: 15px;
 
                 }
 
@@ -469,6 +472,7 @@ h3 {
                height: 198px;
                left: 340px;
                display: none;
+               
                
 
                .wrap-thanks {
