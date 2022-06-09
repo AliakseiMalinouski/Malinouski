@@ -377,7 +377,6 @@ h3 {
         .carousel {
             width: 590px;
             height: 511px;
-            background-color: lightgreen;
             -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
             -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
             box-shadow: 0px 0px 37px -9px #bfe0ff;
@@ -427,6 +426,11 @@ h3 {
             }
 
             button:active {
+                background-color: $bold-pink;
+            }
+            
+
+            button:hover {
                 background-color: $bold-pink;
             }
 
