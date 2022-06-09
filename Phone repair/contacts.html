@@ -77,8 +77,8 @@
     <div id="repair-now-con" class="repair-now">
         <div class="container">
             <h3>Починить сейчас</h3>
-            <div class="wrap-repair-now">
-            <div>
+            <div class="wrap-repair-now" id="wrap-form">
+            <div id="contacts-us">
                 <h4>Связаться с нами:</h4>
                 <p>Заполните форму и мы сразу Вам перезвоним.Так же можете самостоятельно связаться с нами,
                 позвонив по номеру телефона:</p>
@@ -88,11 +88,13 @@
                     заявок и звонков!</li>
                 </ul>
             </div>
-            <div>
+            <div id="form">
                 <h4>Заполните форму:</h4>
-                <input id="elem" type="text" placeholder="Ваше имя">
-                <input id="lastname" type="text" placeholder="Ваша фамилия">
+                <form action="#" method="get">
+                <input required id="input" type="text" placeholder="Ваше имя">
+                <input required id="lastname" type="text" placeholder="Ваша фамилия">
                 <button onclick="ThanskForFeedBackOpen()" type="submit">Оставить заявку</button>
+               </form>
                 <div id="thanks" class="thanks">
                     <div class="wrap-thanks">
                         <h5>Заявка отправлена</h5>
