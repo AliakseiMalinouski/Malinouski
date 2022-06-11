@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image-png" href="../Phone repair/img/head-icon.png">
+    <link rel="stylesheet" href="css/news.css">
+    <title>Новости</title>
+</head>
+<body>
+    <div id="header" class="header">
+        <div class="container" id="con-header">
+            <h4 id="logo"><span>BRAND</span>Сервис</h4>
+            <img onclick="OpenModalMobile()" class="menu" src="../Phone repair/img/nav.svg" alt="Меню">
+            <div id="nav-header" class="nav-header">
+                <div class="interior-modal">
+                    <img onclick="CloseModalMobile()" id="close-modal-header" src="../Phone repair/img/cross-close.png"
+                        alt="Закрыть">
+                    <h6><span>BRAND</span>Сервис</h6>
+                    <p>Навигация</p>
+                    <a href="./repair.html">Главная</a>
+                    <a href="#">Бренды</a>
+                    <a href="#">Поломки</a>
+                    <a href="#">Новости</a>
+                    <a href="./contacts.html">Контакты</a>
+                    <p>Приходите к нам</p>
+                    <ul class="modal-list1">
+                        <li>+7 (812) 509-20-43</li>
+                        <li>Пн-Пт: с 10 до 21, Сб-Вс: с 11 до 20</li>
+                    </ul>
+                    <ul class="modal-list2">
+                        <li>г. Санкт-Петербург</li>
+                        <li>Ленинский пр, 136</li>
+                        <li>м. Ленинский проспект</li>
+                    </ul>
+                    <button type="button">Позвонить нам</button>
+                </div>
+            </div>
+            <ul>
+                <li><a href="./repair.html">Главная</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Поломки</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+            <div class="tel">
+                <a href="tel:+7 (812) 509-20-43"><img src="../Phone repair/img/tel.svg" alt="Телефон"></a>
+                <a href="tel:+7 (812) 509-20-43">+7 (812) 509-20-43</a>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <h3>Новости</h3>
+            <div class="slider">
+                <div class="slider-line">
+                    <div class="first-slide">
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                    </div>
+                    <div class="second-slide">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev">prev</button>
+            <button class="next">next</button>
+        </div>
+    </div>
+    <script src="../Phone repair/js/news.js"></script>
+</body>
+</html>
