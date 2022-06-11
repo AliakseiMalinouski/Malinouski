@@ -37,8 +37,4 @@ function CloseModalMobile() {
     document.getElementById('repair-now').style.filter = '';
     document.getElementById('footer-mobile').style.filter = '';
     document.getElementById('logo').style.opacity = '1';
-    
-    
-    
-   
 }
