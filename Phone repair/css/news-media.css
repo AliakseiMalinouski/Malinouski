@@ -216,6 +216,17 @@
     .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
       left: -85px;
       top: 230px;
-      width: 550px; } }
+      width: 550px; }
+
+  .news .container {
+    width: 560px; }
+    .news .container .slider {
+      width: 560px; }
+      .news .container .slider .slider-line .first-slide {
+        margin-left: 72px; }
+    .news .container .prev {
+      left: 250px; }
+    .news .container .next {
+      left: 290px; } }
 
 /*# sourceMappingURL=news-media.css.map */
