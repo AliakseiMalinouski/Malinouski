@@ -303,8 +303,11 @@
   .repair-now .container .wrap-repair-now {
     background: url(../img/fone-r-mobile.png) no-repeat center;
     height: 860px; }
-    .repair-now .container .wrap-repair-now div:nth-child(1) p {
-      width: 330px; }
+    .repair-now .container .wrap-repair-now div:nth-child(1) {
+      width: 320px;
+      margin-left: 0px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) p {
+        width: 320px; }
     .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
       width: 311px; }
       .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks h5 {
