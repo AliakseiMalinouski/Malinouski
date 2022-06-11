@@ -1,0 +1,57 @@
+@media all and (max-width: 1280px) {
+  .container {
+    width: 960px; }
+
+  .header .container h4 {
+    font-size: 24px; }
+    .header .container h4 span {
+      font-size: 24px; }
+  .header .container ul li {
+    margin-right: 30px; }
+  .header .container .tel a:nth-child(2) {
+    font-size: 16px; }
+
+  .footer .container .wrap_footer {
+    flex-direction: column;
+    align-items: center; }
+    .footer .container .wrap_footer .arrive {
+      border-right: none;
+      border-bottom: 2px solid #BFE0FF; }
+    .footer .container .wrap_footer .company {
+      border-right: none;
+      border-bottom: 2px solid #BFE0FF; }
+    .footer .container .wrap_footer .repair-brands {
+      border-right: none;
+      border-bottom: 2px solid #BFE0FF; }
+  .footer .container .end_footer {
+    width: auto; }
+
+  .repair-now .container .wrap-repair-now {
+    background-position: 60% 65%; }
+
+  .news .container {
+    height: 1400px; }
+    .news .container .slider {
+      height: 1280px; }
+      .news .container .slider .slider-line {
+        height: 1000px; }
+        .news .container .slider .slider-line .first-slide {
+          height: 1000px;
+          margin-left: 395px;
+          margin-right: 794px;
+          flex-direction: column;
+          align-items: center; }
+          .news .container .slider .slider-line .first-slide div {
+            margin-bottom: 30px; }
+        .news .container .slider .slider-line .second-slide {
+          flex-direction: column;
+          align-items: center;
+          align-items: center; }
+          .news .container .slider .slider-line .second-slide div {
+            margin-bottom: 30px; }
+    .news .container .next {
+      top: 1380px; }
+    .news .container .prev {
+      top: 1380px; } }
+
+/*# sourceMappingURL=news-media.css.map */
