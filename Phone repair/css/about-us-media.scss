@@ -356,3 +356,92 @@ $bold800: 800;
         }
     }
 }
+@media all and (max-width:600px) {
+    .container {
+        width: 320px;
+    }
+    .header {
+          .container {
+              .nav-header {
+                  width: 100%;
+              }
+          }
+      }
+      .repair-now {
+          .container {
+              .wrap-repair-now {
+                  background: url(../img/fone-r-mobile.png) no-repeat center;
+                  height: 860px;
+
+                  div:nth-child(1) {
+                      p {
+                          width: 330px;
+                      }
+                  }
+                   div:nth-child(2) {
+
+                    .thanks {
+                        width: 311px;
+                        
+
+                        .wrap-thanks {
+                             h5 {
+                            font-size: $fz18;
+                            
+                        }
+                        p {
+                                font-size: 14px;
+                                line-height: 29.7px;
+                                color: #000000;
+                                font-weight: 700;
+                                width: auto;
+                                margin-left: 30px;
+                        }
+                        }
+
+                       
+                    }
+                   }
+              }
+          }
+      }
+      .qualities {
+        .container {
+            .sert {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                padding: 0.1px;
+                width: 320px;
+                
+                img:nth-child(2) {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
+            }
+            .carousel {
+                width: 320px;
+                padding: 0.1px;
+                .slider {
+                    width: 320px;
+                }
+                .slider-line {
+                  
+               img {
+                width: 300px;
+                margin-right: 40px;
+                margin-left: 10px !important;
+               }
+                }
+                .prev {
+                    left: 130px;
+                }
+                .next {
+                    left: 160px;
+                }
+            }
+        }
+      }
+}
