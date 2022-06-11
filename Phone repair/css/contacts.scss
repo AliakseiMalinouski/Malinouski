@@ -761,38 +761,49 @@ h3 {
                     }
 
                     li:nth-child(2) {
+                        
+                        a {
                         color: $black;
                         font-weight: $medium;
                         line-height: 20.25px;
                         font-size: $fz15;
+                        }
                     }
 
                     li:nth-child(3) {
+                        a {
                         color: $black;
                         font-weight: $medium;
                         line-height: 20.25px;
                         font-size: $fz15;
+                        }
                     }
 
                     li:nth-child(4) {
+                        a {
                         color: $black;
                         font-weight: $medium;
                         line-height: 20.25px;
                         font-size: $fz15;
+                        }
                     }
 
                     li:nth-child(5) {
+                        a {
                         color: $black;
                         font-weight: $medium;
                         line-height: 20.25px;
                         font-size: $fz15;
+                        }
                     }
 
                     li:nth-child(6) {
+                       a {
                         color: $black;
                         font-weight: $medium;
                         line-height: 20.25px;
                         font-size: $fz15;
+                        }
                     }
 
 
@@ -810,10 +821,12 @@ h3 {
 
                     li {
                         margin-bottom: 20px;
+                        a {
                         color: $black;
                         font-weight: $medium;
                         line-height: 20.25px;
                         font-size: $fz15;
+                        }
                     }
                 }
 
@@ -821,10 +834,12 @@ h3 {
                     margin-top: 62px;
 
                     li:nth-child(1) {
+                        a {
                         color: $black;
-                        font-size: $fz18 - 2;
-                        line-height: 24.3px;
-                        font-weight: $extra-bold;
+                        font-weight: $medium;
+                        line-height: 20.25px;
+                        font-size: $fz15;
+                        }
                     }
                 }
 
