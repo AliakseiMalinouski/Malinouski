@@ -52,5 +52,6 @@ function CloseModalMobile() {
     document.getElementById('company').style.opacity = '1';
     document.getElementById('qualities').style.opacity = '1';
     document.getElementById('company').style.filter = '';
-    document.getElementById('qualities').style.filter = ''; 
+    document.getElementById('qualities').style.filter = '';
+ 
 }
