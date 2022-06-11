@@ -16,3 +16,12 @@ document.querySelector('.prev').addEventListener('click', function () {
     }
     SliderLine.style.left = -offset + 'px';
 });
+
+function ThanskForFeedBackOpen() {
+    document.getElementById('thanks').style.display = 'block';
+    
+
+}
+function ThanskForFeedBackClose() {
+    document.getElementById('thanks').style.display = 'none';
+}

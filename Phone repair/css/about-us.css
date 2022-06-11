@@ -266,7 +266,6 @@ h3 {
         width: 370px;
         height: 250px;
         overflow: hidden;
-        border: 1px solid black;
         margin: 20px auto; }
         .qualities .container .carousel .slider .slider-line {
           display: flex;
@@ -293,5 +292,287 @@ h3 {
       .qualities .container .carousel .next {
         position: absolute;
         left: 290px; }
+
+.repair-now {
+  padding-top: 100px; }
+  .repair-now .container .wrap-repair-now {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-left: 52px;
+    padding-right: 52px;
+    -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+    -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+    box-shadow: 0px 0px 37px -9px #bfe0ff;
+    background: url(../img/brokendisplay.png) no-repeat center;
+    position: relative; }
+    .repair-now .container .wrap-repair-now div:nth-child(1) {
+      height: 249px;
+      width: 390px;
+      padding: 0.1px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) h4 {
+        line-height: 24.3px;
+        font-size: 18px;
+        color: #000000;
+        font-weight: 700;
+        margin-bottom: 30px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) p {
+        width: 390px;
+        height: 75px;
+        font-size: 15px;
+        color: #000000;
+        font-weight: 500;
+        margin-bottom: 20px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) ul li:nth-child(1) {
+        color: #ff005c;
+        line-height: 29.7px;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) ul li:nth-child(2) {
+        font-weight: 500;
+        font-size: 15px;
+        color: #000000;
+        line-height: 24.75px;
+        width: 228px;
+        height: 75px; }
+    .repair-now .container .wrap-repair-now div:nth-child(2) {
+      height: 254px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) input {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #E5E5E5;
+        padding-left: 20px; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) ::placeholder {
+        color: #C4C4C4;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20.25px; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) button {
+        width: 300px;
+        height: 50px;
+        border: 1px solid #ff005c;
+        background-color: #ff005c;
+        line-height: 20.25px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+        cursor: pointer; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
+        position: absolute;
+        width: 560px;
+        height: 198px;
+        left: 340px;
+        display: none; }
+        .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks {
+          width: 100%;
+          height: 100%;
+          background-color: lightcoral;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+          border: 1px solid #fff;
+          -webkit-box-shadow: 0px 0px 37px -9px #bfe0ff;
+          -moz-box-shadow: 0px 0px 37px -9px #bfe0ff;
+          box-shadow: 0px 0px 37px -9px #bfe0ff;
+          position: relative; }
+          .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks h5 {
+            font-size: 28px;
+            line-height: 37.8px;
+            color: #000000;
+            font-weight: 700;
+            text-transform: uppercase; }
+          .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks p {
+            font-size: 18px;
+            line-height: 29.7px;
+            color: #000000;
+            font-weight: 700;
+            width: 403px; }
+          .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks img {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer; }
+  .repair-now .container .wrap-repair-now:hover {
+    transform: scale(1.06);
+    transition: 2s; }
+
+.footer {
+  padding-top: 152px; }
+  .footer .container {
+    padding: 0.1px; }
+    .footer .container .wrap_footer {
+      padding: 0.1px;
+      display: flex;
+      justify-content: space-between; }
+      .footer .container .wrap_footer .arrive {
+        padding: 0.1px;
+        width: 611px;
+        border-right: 2px solid #BFE0FF; }
+        .footer .container .wrap_footer .arrive ul:nth-child(1) {
+          width: 425px;
+          height: 32px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px; }
+          .footer .container .wrap_footer .arrive ul:nth-child(1) li:nth-child(1) {
+            font-size: 26px;
+            font-weight: 300;
+            color: #000000;
+            line-height: 31.69px; }
+            .footer .container .wrap_footer .arrive ul:nth-child(1) li:nth-child(1) span {
+              color: #ff005c;
+              font-size: 26px;
+              font-weight: 800;
+              line-height: 31.69px;
+              text-transform: uppercase; }
+          .footer .container .wrap_footer .arrive ul:nth-child(1) li:nth-child(2) {
+            color: #C4C4C4;
+            line-height: 21.94px;
+            font-weight: 400;
+            font-size: 16px; }
+        .footer .container .wrap_footer .arrive h6 {
+          color: #000000;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24.3px;
+          margin-left: 30px;
+          margin-bottom: 30px; }
+        .footer .container .wrap_footer .arrive .list_2 {
+          width: 519px;
+          height: 30px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px; }
+          .footer .container .wrap_footer .arrive .list_2 li:nth-child(1) {
+            color: #ff005c;
+            font-weight: 600;
+            line-height: 29.7px;
+            font-size: 18px; }
+          .footer .container .wrap_footer .arrive .list_2 li:nth-child(2) {
+            color: #C4C4C4;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20.25px; }
+        .footer .container .wrap_footer .arrive p {
+          width: 531px;
+          height: 125px;
+          color: #000000;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 24.75px;
+          margin-left: 30px;
+          margin-bottom: 30px; }
+        .footer .container .wrap_footer .arrive ul:last-child {
+          width: 403px;
+          height: 54px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          background-image: url(../img/metro.png);
+          background-repeat: no-repeat;
+          background-position: 54% 50%;
+          align-items: center; }
+          .footer .container .wrap_footer .arrive ul:last-child li:nth-child(1) {
+            width: 178px;
+            height: 54px;
+            color: #C4C4C4;
+            font-size: 15px;
+            line-height: 20.25px;
+            font-weight: 500; }
+            .footer .container .wrap_footer .arrive ul:last-child li:nth-child(1) span {
+              color: #ff005c;
+              line-height: 29.7px;
+              font-weight: 600;
+              font-size: 16px; }
+          .footer .container .wrap_footer .arrive ul:last-child li:nth-child(2) {
+            line-height: 20.25px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #000000; }
+      .footer .container .wrap_footer .company {
+        width: 243px;
+        height: 396px;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        border-right: 2px solid #BFE0FF; }
+        .footer .container .wrap_footer .company ul li {
+          margin-bottom: 25px; }
+        .footer .container .wrap_footer .company ul li:first-child {
+          color: #000000;
+          font-size: 18px;
+          line-height: 24.3px;
+          font-weight: 700; }
+        .footer .container .wrap_footer .company ul li:nth-child(2) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(3) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(4) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(5) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .company ul li:nth-child(6) {
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+      .footer .container .wrap_footer .repair-brands {
+        width: 288px;
+        height: 396px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.1px; }
+        .footer .container .wrap_footer .repair-brands ul li {
+          margin-bottom: 20px;
+          color: #000000;
+          font-weight: 500;
+          line-height: 20.25px;
+          font-size: 15px; }
+        .footer .container .wrap_footer .repair-brands ul:first-child {
+          margin-top: 62px; }
+          .footer .container .wrap_footer .repair-brands ul:first-child li:nth-child(1) {
+            color: #000000;
+            font-size: 16px;
+            line-height: 24.3px;
+            font-weight: 700; }
+        .footer .container .wrap_footer .repair-brands ul:last-child {
+          margin-top: 106px; }
+    .footer .container .end_footer {
+      width: 1224px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px; }
+      .footer .container .end_footer h6 {
+        color: #C4C4C4;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18.29px; }
+
+.footer-mobile {
+  display: none; }
 
 /*# sourceMappingURL=about-us.css.map */
