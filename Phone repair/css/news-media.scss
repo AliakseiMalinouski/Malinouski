@@ -22,9 +22,6 @@ $medium: 500;
 $bold: 600;
 $extra-bold: 700;
 $bold800: 800;
-* {
-    outline: 1px solid red;
-}
 @media all and (max-width:1280px) {
     .container {
         width: 960px;
@@ -388,6 +385,93 @@ $bold800: 800;
                 }
                 .next {
                     left: 290px;
+                }
+            }
+        }
+}
+@media all and (max-width:600px) {
+    .container {
+        width: 320px;
+    }
+    .header {
+          .container {
+              .nav-header {
+                  width: 100%;
+              }
+          }
+      }
+          .repair-now {
+              .container {
+                  .wrap-repair-now {
+                      background: url(../img/fone-r-mobile.png) no-repeat center;
+                      height: 860px;
+    
+                      div:nth-child(1) {
+                          width: 320px;
+                          margin-left: 0px;
+    
+                          p {
+                              width: 320px;
+                          }
+                      }
+    
+                      div:nth-child(2) {
+    
+    
+                          .thanks {
+                              width: 311px;
+    
+    
+                              .wrap-thanks {
+                                  h5 {
+                                      font-size: $fz18;
+    
+                                  }
+    
+                                  p {
+                                      font-size: 14px;
+                                      line-height: 29.7px;
+                                      color: #000000;
+                                      font-weight: 700;
+                                      width: auto;
+                                      margin-left: 30px;
+                                  }
+                              }
+    
+    
+                          }
+                      }
+                  }
+              }
+          }
+        .news {
+            .container {
+                width: 320px;
+                .slider {
+                    width: 320px;
+                    .slider-line {
+                        width: 320px;
+                        .first-slide {
+                            width: 320px;
+                            margin-left: 0px;
+                            margin-right: 904px;
+                            div {
+                                width: 320px;
+                            }
+                        }
+                        .second-slide {
+                            width: 320px;
+                            div {
+                                width: 320px;
+                            }
+                        }
+                    }
+                }
+                .prev {
+                    left: 130px;
+                }
+                .next {
+                    left: 170px;
                 }
             }
         }

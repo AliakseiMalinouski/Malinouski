@@ -1,6 +1,3 @@
-* {
-  outline: 1px solid red; }
-
 @media all and (max-width: 1280px) {
   .container {
     width: 960px; }
@@ -228,5 +225,52 @@
       left: 250px; }
     .news .container .next {
       left: 290px; } }
+@media all and (max-width: 600px) {
+  .container {
+    width: 320px; }
+
+  .header .container .nav-header {
+    width: 100%; }
+
+  .repair-now .container .wrap-repair-now {
+    background: url(../img/fone-r-mobile.png) no-repeat center;
+    height: 860px; }
+    .repair-now .container .wrap-repair-now div:nth-child(1) {
+      width: 320px;
+      margin-left: 0px; }
+      .repair-now .container .wrap-repair-now div:nth-child(1) p {
+        width: 320px; }
+    .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
+      width: 311px; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks h5 {
+        font-size: 18px; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks p {
+        font-size: 14px;
+        line-height: 29.7px;
+        color: #000000;
+        font-weight: 700;
+        width: auto;
+        margin-left: 30px; }
+
+  .news .container {
+    width: 320px; }
+    .news .container .slider {
+      width: 320px; }
+      .news .container .slider .slider-line {
+        width: 320px; }
+        .news .container .slider .slider-line .first-slide {
+          width: 320px;
+          margin-left: 0px;
+          margin-right: 904px; }
+          .news .container .slider .slider-line .first-slide div {
+            width: 320px; }
+        .news .container .slider .slider-line .second-slide {
+          width: 320px; }
+          .news .container .slider .slider-line .second-slide div {
+            width: 320px; }
+    .news .container .prev {
+      left: 130px; }
+    .news .container .next {
+      left: 170px; } }
 
 /*# sourceMappingURL=news-media.css.map */
