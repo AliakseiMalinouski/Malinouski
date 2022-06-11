@@ -198,13 +198,15 @@ h3 {
   .news .container {
     width: 1224px;
     height: 560px;
-    background-color: green; }
+    background-color: green;
+    position: relative; }
     .news .container .slider {
       width: 1224px;
       height: 407px;
       border: 1px solid black;
       overflow: hidden;
-      padding: 0.1px; }
+      padding: 0.1px;
+      position: relative; }
       .news .container .slider .slider-line {
         width: 1110px;
         height: 407px;
@@ -235,5 +237,27 @@ h3 {
             background-color: lightcoral;
             margin-left: 30px;
             margin-right: 30px; }
+    .news .container .prev {
+      width: 15px;
+      height: 15px;
+      background-color: #C4C4C4;
+      border: none;
+      border-radius: 50px;
+      position: absolute;
+      left: 590px;
+      top: 520px; }
+    .news .container button:active {
+      background-color: #ff005c; }
+    .news .container button:hover {
+      background-color: #ff005c; }
+    .news .container .next {
+      width: 15px;
+      height: 15px;
+      border: none;
+      background-color: #C4C4C4;
+      border-radius: 50px;
+      position: absolute;
+      left: 630px;
+      top: 520px; }
 
 /*# sourceMappingURL=news.css.map */

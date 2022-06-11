@@ -312,6 +312,7 @@ h3 {
         width: 1224px;
         height: 560px;
         background-color: green;
+        position: relative;
         
         .slider {
             width: 1224px;
@@ -319,6 +320,7 @@ h3 {
             border: 1px solid black;
             overflow: hidden;
             padding: 0.1px;
+            position: relative;
             .slider-line {
                 width: 1110px;
                 height: 407px;
@@ -356,6 +358,32 @@ h3 {
                     }
                 }
             }
+        }
+        .prev {
+            width: 15px;
+            height: 15px;
+            background-color: $gray;
+            border: none;
+            border-radius: 50px;
+            position: absolute;
+            left: 590px;
+            top: 520px;
+        }
+        button:active {
+            background-color: $bold-pink;
+        }
+        button:hover {
+            background-color: $bold-pink;
+        }
+        .next {
+            width: 15px;
+            height: 15px;
+            border: none;
+            background-color: $gray;
+            border-radius: 50px;
+            position: absolute;
+            left: 630px;
+            top: 520px;
         }
     }
 }
