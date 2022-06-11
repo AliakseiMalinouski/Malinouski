@@ -225,7 +225,68 @@ h3 {
             height: 407px;
             background-color: red;
             margin-left: 30px;
-            margin-right: 30px; }
+            margin-right: 30px;
+            padding: 0.1px;
+            padding-top: 255px;
+            padding-left: 26px;
+            padding-bottom: 34px; }
+          .news .container .slider .slider-line .first-slide div:nth-child(1) {
+            background: url(../img/xiaomi-bg.png) no-repeat 50% 10%;
+            background-size: 70%; }
+            .news .container .slider .slider-line .first-slide div:nth-child(1) p {
+              width: 282px;
+              height: 72px;
+              margin-bottom: 28px;
+              line-height: 24.3px;
+              font-weight: 700;
+              font-size: 18px;
+              color: #000000; }
+            .news .container .slider .slider-line .first-slide div:nth-child(1) a {
+              color: #C4C4C4;
+              font-size: 15px;
+              font-weight: 700;
+              line-height: 18.29px; }
+            .news .container .slider .slider-line .first-slide div:nth-child(1) a:after {
+              content: '>';
+              margin-left: 10px; }
+          .news .container .slider .slider-line .first-slide div:nth-child(2) {
+            background: url(../img/low.png) no-repeat 50% 10%;
+            background-size: 90%; }
+            .news .container .slider .slider-line .first-slide div:nth-child(2) p {
+              width: 220px;
+              height: 72px;
+              font-size: 18px;
+              color: #000000;
+              font-weight: 700;
+              line-height: 24.3px;
+              margin-bottom: 28px; }
+            .news .container .slider .slider-line .first-slide div:nth-child(2) a {
+              color: #C4C4C4;
+              font-size: 15px;
+              font-weight: 700;
+              line-height: 18.29px; }
+            .news .container .slider .slider-line .first-slide div:nth-child(2) a:after {
+              content: '>';
+              margin-left: 10px; }
+          .news .container .slider .slider-line .first-slide div:nth-child(3) {
+            background: url(../img/new-s.png) no-repeat 50% 10%;
+            background-size: 111%; }
+            .news .container .slider .slider-line .first-slide div:nth-child(3) p {
+              width: 292px;
+              height: 72px;
+              color: #000000;
+              line-height: 24.3px;
+              font-weight: 700;
+              font-size: 18px;
+              margin-bottom: 26px; }
+            .news .container .slider .slider-line .first-slide div:nth-child(3) a {
+              color: #C4C4C4;
+              font-size: 15px;
+              font-weight: 700;
+              line-height: 18.29px; }
+            .news .container .slider .slider-line .first-slide div:nth-child(3) a:after {
+              content: '>';
+              margin-left: 10px; }
         .news .container .slider .slider-line .second-slide {
           display: flex;
           justify-content: space-between;
@@ -238,26 +299,26 @@ h3 {
             margin-left: 30px;
             margin-right: 30px; }
     .news .container .prev {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       background-color: #C4C4C4;
       border: none;
       border-radius: 50px;
       position: absolute;
-      left: 590px;
+      left: 580px;
       top: 520px; }
     .news .container button:active {
       background-color: #ff005c; }
     .news .container button:hover {
       background-color: #ff005c; }
     .news .container .next {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       border: none;
       background-color: #C4C4C4;
       border-radius: 50px;
       position: absolute;
-      left: 630px;
+      left: 620px;
       top: 520px; }
 
 /*# sourceMappingURL=news.css.map */
