@@ -22,6 +22,9 @@ $medium: 500;
 $bold: 600;
 $extra-bold: 700;
 $bold800: 800;
+* {
+    outline: 1px solid red;
+}
 @media all and (max-width:1280px) {
     .container {
         width: 960px;
@@ -91,15 +94,18 @@ $bold800: 800;
         }
         .news {
             .container {
-                
+                width: 960px;
                 height: 1400px;
                 .slider {
+                    width: 960px;
                     height: 1280px;
+                    display: flex;
+                    align-items: center;
                     .slider-line {
-                        height: 1000px;
+                        height: 1280px;
                         .first-slide {
-                            height: 1000px;
-                            margin-left: 395px;
+                            height: 1280px;
+                            margin-left: 272px;
                             margin-right: 794px;
                             flex-direction: column;
                             align-items: center;
@@ -119,9 +125,11 @@ $bold800: 800;
                 }
                 .next {
                     top: 1380px;
+                    left: 500px;
                 }
                 .prev {
                     top: 1380px;
+                    left: 450px;
                 }
             }
         }
