@@ -1180,13 +1180,13 @@
       opacity: 1; } } }
 @media all and (max-width: 500px) {
   .container {
-    width: 100%; }
+    width: 320px; }
 
   .main {
     position: relative; }
 
   .header .container .menu {
-    margin-left: 230px; }
+    margin-left: 70px; }
   .header .container .nav-header {
     width: 100%; }
 
