@@ -474,6 +474,8 @@
 
   .header .container .menu {
     margin-left: 220px; }
+  .header .container .nav-header {
+    width: 100%; }
 
   .hero {
     background: url(../img/fone-header-mobile.png) no-repeat right; }
