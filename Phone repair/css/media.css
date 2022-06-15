@@ -587,8 +587,7 @@
         .contacts .container .contacts-information div:nth-child(2) ul a {
           font-size: 24px !important; }
     .contacts .container .contacts-information div:nth-child(3) {
-      width: 100%;
-      margin-bottom: 5px; }
+      width: 100%; }
       .contacts .container .contacts-information div:nth-child(3) ul {
         width: 100%;
         display: flex;
