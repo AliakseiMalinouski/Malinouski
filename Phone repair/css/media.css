@@ -519,6 +519,8 @@
       display: none;
       height: auto;
       animation: brands_2 1.1s linear; }
+      .brands .container .all-brands .mobile_brands_block_two .samsung {
+        margin-top: 30px; }
   @keyframes brands_2 {
     from {
       opacity: 0.5; }
@@ -526,6 +528,8 @@
       opacity: 1; } }
     .brands .container .all-brands .open-second-brands {
       display: block; }
+    .brands .container .all-brands .close-second-brands p {
+      padding-left: 75px; }
 
   .master {
     display: none; }
@@ -555,7 +559,8 @@
   .contacts .container .contacts-information {
     flex-direction: column; }
     .contacts .container .contacts-information div:nth-child(1) {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 30px; }
       .contacts .container .contacts-information div:nth-child(1) ul {
         width: 100%;
         display: flex;
@@ -568,7 +573,8 @@
         .contacts .container .contacts-information div:nth-child(1) ul a {
           font-size: 24px !important; }
     .contacts .container .contacts-information div:nth-child(2) {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 30px; }
       .contacts .container .contacts-information div:nth-child(2) ul {
         width: 100%;
         display: flex;
@@ -581,7 +587,8 @@
         .contacts .container .contacts-information div:nth-child(2) ul a {
           font-size: 24px !important; }
     .contacts .container .contacts-information div:nth-child(3) {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 5px; }
       .contacts .container .contacts-information div:nth-child(3) ul {
         width: 100%;
         display: flex;
