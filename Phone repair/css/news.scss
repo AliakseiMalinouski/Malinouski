@@ -513,6 +513,7 @@ h3 {
             position: absolute;
             left: 580px;
             top: 520px;
+            cursor: pointer;
         }
         button:active {
             background-color: $bold-pink;
@@ -527,8 +528,9 @@ h3 {
             background-color: $gray;
             border-radius: 50px;
             position: absolute;
-            left: 620px;
+            left: 610px;
             top: 520px;
+            cursor: pointer;
         }
     }
 }
@@ -609,7 +611,7 @@ h3 {
                     height: 50px;
                     border: 1px solid #E5E5E5;
                     padding-left: 20px;
-                    ;
+                    
                 }
 
                 ::placeholder {

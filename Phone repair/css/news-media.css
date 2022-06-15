@@ -28,6 +28,8 @@
 
   .repair-now .container .wrap-repair-now {
     background-position: 60% 65%; }
+    .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
+      left: 210px; }
 
   .news .container {
     width: 960px;
@@ -119,6 +121,8 @@
           width: 100%;
           display: flex;
           height: auto; }
+          .footer-mobile .container .footer-mobile-block-one .lists-footer-mobile ul:nth-child(2) {
+            margin-left: 82px; }
           .footer-mobile .container .footer-mobile-block-one .lists-footer-mobile li {
             margin-bottom: 25px; }
             .footer-mobile .container .footer-mobile-block-one .lists-footer-mobile li a {
@@ -214,6 +218,9 @@
       left: -85px;
       top: 230px;
       width: 550px; }
+  .repair-now .container .wrap-repair-now:not([disabled]):hover {
+    transform: none;
+    transition: none; }
 
   .news .container {
     width: 560px; }
@@ -241,7 +248,9 @@
       .repair-now .container .wrap-repair-now div:nth-child(1) p {
         width: 320px; }
     .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
-      width: 311px; }
+      width: 311px;
+      left: 5px;
+      top: 316px; }
       .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks h5 {
         font-size: 18px; }
       .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks p {
@@ -251,6 +260,9 @@
         font-weight: 700;
         width: auto;
         margin-left: 30px; }
+  .repair-now .container .wrap-repair-now:not([disabled]):hover {
+    transform: none;
+    transition: none; }
 
   .news .container {
     width: 320px; }

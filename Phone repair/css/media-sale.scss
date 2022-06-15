@@ -264,6 +264,9 @@ $bold800: 800;
                     width: 100%;
                     display: flex;
                     height: auto;
+                    ul:nth-child(2) {
+                        margin-left: 82px;
+                    }
 
                     li {
                         margin-bottom: 25px;
@@ -415,6 +418,10 @@ $bold800: 800;
                     }
                 }
             }
+            .wrap-repair-now:not([disabled]):hover {
+                transform: none;
+                transition: none;
+            }
         }
     }
 }
@@ -456,12 +463,22 @@ $bold800: 800;
                               font-size: $fz24 - 1;
                           }
                       }
+                      li:not([disabled]):hover{
+                        transform: none;
+                        transition: none;
+                      }
                   }
+                  
+                  
                   p {
                        font-size: $fz48 + 12;
                   }
                   }
                  
+              }
+              .description-one:not([disabled]):hover {
+                transform: none;
+                transition: none;
               }
           }
       }
@@ -485,6 +502,10 @@ $bold800: 800;
                       line-height: 37.8px;
                   }
               }
+              div:nth-child(1):not([disabled]):hover {
+                transition: none;
+                transform: none;
+              }
               div:nth-child(2) {
                   width: 320px;
                   background: none;
@@ -497,6 +518,10 @@ $bold800: 800;
                       line-height: 37.8px;
                   }
 
+              }
+              div:nth-child(2):not([disabled]):hover {
+                transform: none;
+                transition: none;
               }
           }
       }
@@ -521,6 +546,10 @@ $bold800: 800;
                       }
                   }
               }
+              .descr:not([disabled]):hover {
+                transform: none;
+                transition: none;
+              }
           }
       }
       .repair-now {
@@ -540,7 +569,9 @@ $bold800: 800;
                     
 
                     .thanks {
-                        width: 311px;
+                        width: 290px;
+                        top: 320px;
+                        left: 14px;
                         
 
                         .wrap-thanks {
@@ -556,11 +587,19 @@ $bold800: 800;
                                 width: auto;
                                 margin-left: 30px;
                         }
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
                         }
 
                        
                     }
                    }
+              }
+              .wrap-repair-now:not([disabled]):hover{
+                transform: none;
+                transition: none;
               }
           }
       }

@@ -142,6 +142,8 @@
           width: 100%;
           display: flex;
           height: auto; }
+          .footer-mobile .container .footer-mobile-block-one .lists-footer-mobile ul:nth-child(2) {
+            margin-left: 82px; }
           .footer-mobile .container .footer-mobile-block-one .lists-footer-mobile li {
             margin-bottom: 25px; }
             .footer-mobile .container .footer-mobile-block-one .lists-footer-mobile li a {
@@ -236,7 +238,10 @@
     .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
       left: -85px;
       top: 230px;
-      width: 550px; } }
+      width: 550px; }
+  .repair-now .container .wrap-repair-now:not([disabled]):hover {
+    transform: none;
+    transition: none; } }
 @media all and (max-width: 560px) {
   .container {
     width: 320px; }
@@ -262,8 +267,14 @@
         .change-display1 .container .description-one .first-mobile ul li a {
           line-height: 45.6px;
           font-size: 23px; }
+        .change-display1 .container .description-one .first-mobile ul li:not([disabled]):hover {
+          transform: none;
+          transition: none; }
       .change-display1 .container .description-one .first-mobile p {
         font-size: 60px; }
+  .change-display1 .container .description-one:not([disabled]):hover {
+    transform: none;
+    transition: none; }
 
   .change-display2 .container {
     height: 1172px;
@@ -279,6 +290,9 @@
         height: 76px;
         font-size: 28px;
         line-height: 37.8px; }
+    .change-display2 .container div:nth-child(1):not([disabled]):hover {
+      transition: none;
+      transform: none; }
     .change-display2 .container div:nth-child(2) {
       width: 320px;
       background: none;
@@ -288,6 +302,9 @@
         height: 76px;
         font-size: 28px;
         line-height: 37.8px; }
+    .change-display2 .container div:nth-child(2):not([disabled]):hover {
+      transform: none;
+      transition: none; }
 
   .change-display3 .container .descr h3 {
     width: 291px;
@@ -299,6 +316,9 @@
     margin-left: 10px; }
     .change-display3 .container .descr ul li a {
       font-size: 22px; }
+  .change-display3 .container .descr:not([disabled]):hover {
+    transform: none;
+    transition: none; }
 
   .repair-now .container .wrap-repair-now {
     background: url(../img/fone-r-mobile.png) no-repeat center;
@@ -309,7 +329,9 @@
       .repair-now .container .wrap-repair-now div:nth-child(1) p {
         width: 320px; }
     .repair-now .container .wrap-repair-now div:nth-child(2) .thanks {
-      width: 311px; }
+      width: 290px;
+      top: 320px;
+      left: 14px; }
       .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks h5 {
         font-size: 18px; }
       .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks p {
@@ -318,6 +340,12 @@
         color: #000000;
         font-weight: 700;
         width: auto;
-        margin-left: 30px; } }
+        margin-left: 30px; }
+      .repair-now .container .wrap-repair-now div:nth-child(2) .thanks .wrap-thanks img {
+        width: 30px;
+        height: 30px; }
+  .repair-now .container .wrap-repair-now:not([disabled]):hover {
+    transform: none;
+    transition: none; } }
 
 /*# sourceMappingURL=media-sale.css.map */

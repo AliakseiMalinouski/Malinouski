@@ -363,7 +363,8 @@ h3 {
       border-radius: 50px;
       position: absolute;
       left: 580px;
-      top: 520px; }
+      top: 520px;
+      cursor: pointer; }
     .news .container button:active {
       background-color: #ff005c; }
     .news .container button:hover {
@@ -375,8 +376,9 @@ h3 {
       background-color: #C4C4C4;
       border-radius: 50px;
       position: absolute;
-      left: 620px;
-      top: 520px; }
+      left: 610px;
+      top: 520px;
+      cursor: pointer; }
 
 .repair-now {
   padding-top: 100px; }
