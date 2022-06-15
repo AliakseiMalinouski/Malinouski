@@ -611,12 +611,13 @@ h3 {
     animation: size 2s;
     @keyframes size {
             0% {
-                color: $white;
+                
+                opacity: 0.1;
                 transform: scale(0, .025)
             }
     
             50% {
-                color: $black;
+                opacity: 1;
                 transform: scale(1, .025)
             }
         }

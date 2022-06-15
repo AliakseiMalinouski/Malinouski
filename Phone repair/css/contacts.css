@@ -411,10 +411,10 @@ h3 {
   animation: size 2s; }
 @keyframes size {
   0% {
-    color: #fff;
+    opacity: 0.1;
     transform: scale(0, 0.025); }
   50% {
-    color: #000000;
+    opacity: 1;
     transform: scale(1, 0.025); } }
 .footer {
   padding-top: 152px; }
