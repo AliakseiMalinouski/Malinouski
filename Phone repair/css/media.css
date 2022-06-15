@@ -1196,6 +1196,46 @@
     width: 320px;
     left: 0px; }
 
+  .slider .container .first-slide .quality .border-quality {
+    padding-left: 20px; }
+    .slider .container .first-slide .quality .border-quality h4 {
+      font-size: 16px; }
+    .slider .container .first-slide .quality .border-quality p {
+      font-size: 14px; }
+  .slider .container .first-slide .prise .border-prise {
+    padding-left: 20px; }
+    .slider .container .first-slide .prise .border-prise h4 {
+      font-size: 16px; }
+    .slider .container .first-slide .prise .border-prise p {
+      font-size: 14px; }
+  .slider .container .first-slide .warranty .border-warranty {
+    padding-left: 20px; }
+    .slider .container .first-slide .warranty .border-warranty h4 {
+      font-size: 16px; }
+    .slider .container .first-slide .warranty .border-warranty p {
+      font-size: 14px; }
+  .slider .container .second-slide .professional-staff .border-staff {
+    padding-left: 10px; }
+    .slider .container .second-slide .professional-staff .border-staff h4 {
+      font-size: 16px; }
+    .slider .container .second-slide .professional-staff .border-staff p {
+      font-size: 14px;
+      width: 290px; }
+  .slider .container .second-slide .special-equipment .border-equipment {
+    padding-left: 10px; }
+    .slider .container .second-slide .special-equipment .border-equipment h4 {
+      font-size: 16px; }
+    .slider .container .second-slide .special-equipment .border-equipment p {
+      font-size: 14px;
+      width: 290px; }
+  .slider .container .second-slide .direct-deliveries .border-delivery {
+    padding-left: 10px; }
+    .slider .container .second-slide .direct-deliveries .border-delivery h4 {
+      font-size: 16px; }
+    .slider .container .second-slide .direct-deliveries .border-delivery p {
+      font-size: 14px;
+      width: 290px; }
+
   .repair .left__blocks {
     width: 320px !important; }
     .repair .left__blocks #display-mobile {

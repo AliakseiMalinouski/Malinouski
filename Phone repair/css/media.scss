@@ -2274,7 +2274,89 @@ $bold800: 800;
             }
         }
     }
-
+    .slider {
+        .container {
+           .first-slide {
+             .quality {
+                .border-quality {
+                    padding-left: 20px;
+                    h4 {
+                        font-size: $fz;
+                        
+                    }
+                    p {
+                        font-size: $fz - 2;
+                    }
+                }
+             }
+             .prise {
+                .border-prise {
+                    padding-left: 20px;
+                    h4 {
+                        font-size: $fz;
+                        
+                    }
+                    p {
+                        font-size: $fz - 2;
+                    }
+                }
+             }
+             .warranty {
+                .border-warranty {
+                    padding-left: 20px;
+                    h4 {
+                        font-size: $fz;
+                        
+                    }
+                    p {
+                        font-size: $fz - 2;
+                    }
+                }
+             }
+           }
+           .second-slide {
+              .professional-staff {
+                .border-staff {
+                    padding-left: 10px;
+                    h4 {
+                        font-size: $fz;
+                        
+                    }
+                    p {
+                        font-size: $fz - 2;
+                        width: 290px;
+                    }
+                }
+              }
+              .special-equipment{
+                .border-equipment {
+                    padding-left: 10px;
+                    h4 {
+                        font-size: $fz;
+                        
+                    }
+                    p {
+                        font-size: $fz - 2;
+                        width: 290px;
+                    }
+                }
+              }
+              .direct-deliveries {
+                .border-delivery {
+                    padding-left: 10px;
+                    h4 {
+                        font-size: $fz;
+                        
+                    }
+                    p {
+                        font-size: $fz - 2;
+                        width: 290px;
+                    }
+                }
+              }
+           }
+        }
+    }
     .repair {
 
         .left__blocks {

@@ -125,12 +125,14 @@ h3 {
             color: #ff005c;
             font-size: 18px;
             font-weight: 600;
-            line-height: 29.7px; }
+            line-height: 29.7px;
+            display: block; }
           .header .container .nav-header .interior-modal .modal-list1 li:nth-child(2) {
             line-height: 29.7px;
             font-size: 15px;
             color: #C4C4C4;
-            font-weight: 400; }
+            font-weight: 400;
+            display: block; }
         .header .container .nav-header .interior-modal .modal-list2 {
           display: block; }
           .header .container .nav-header .interior-modal .modal-list2 li:nth-child(1) {
@@ -138,16 +140,19 @@ h3 {
             color: #C4C4C4;
             font-weight: 500;
             margin-bottom: 5px;
-            font-size: 15px; }
+            font-size: 15px;
+            display: block; }
           .header .container .nav-header .interior-modal .modal-list2 li:nth-child(2) {
             font-size: 18px;
             color: #ff005c;
             font-weight: 600;
             line-height: 29.7px;
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            display: block; }
           .header .container .nav-header .interior-modal .modal-list2 li:nth-child(3) {
             color: #000000;
-            font-weight: 500; }
+            font-weight: 500;
+            display: block; }
         .header .container .nav-header .interior-modal button {
           padding-left: 48px;
           padding-right: 48px;
