@@ -1,3 +1,4 @@
+// slider
 let offset = 0;
 const SliderLine = document.querySelector('.slider-line');
 
@@ -16,6 +17,16 @@ document.querySelector('.prev').addEventListener('click', function () {
     }
     SliderLine.style.left = -offset + 'px';
 });
+
+// size
+let observe = new IntersectionObserver(size => {
+    size.forEach(size => {
+        if (size.isIntersecting) {
+            size.target.classList.add('animation-on');
+        }
+    });
+});
+observe.observe(document.querySelector('.about-our-company'));
 
 function ThanskForFeedBackOpen() {
     document.getElementById('thanks').style.display = 'block';
@@ -52,6 +63,5 @@ function CloseModalMobile() {
     document.getElementById('company').style.opacity = '1';
     document.getElementById('qualities').style.opacity = '1';
     document.getElementById('company').style.filter = '';
-    document.getElementById('qualities').style.filter = '';
- 
+    document.getElementById('qualities').style.filter = ''; 
 }

@@ -407,6 +407,15 @@ h3 {
     transform: scale(1.06);
     transition: 2s; }
 
+.animation-on {
+  animation: size 2s; }
+@keyframes size {
+  0% {
+    color: #fff;
+    transform: scale(0, 0.025); }
+  50% {
+    color: #000000;
+    transform: scale(1, 0.025); } }
 .footer {
   padding-top: 152px; }
   .footer .container {

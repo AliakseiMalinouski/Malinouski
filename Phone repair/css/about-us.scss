@@ -340,6 +340,21 @@ h3 {
         }
     }
 }
+.animation-on {
+    animation: size 2s;
+
+    @keyframes size {
+        0% {
+            color: white;
+            transform: scale(0, .025)
+        }
+
+        50% {
+            color: black;
+            transform: scale(1, .025)
+        }
+    }
+}
 
 .qualities {
     padding-top: 100px;

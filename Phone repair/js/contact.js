@@ -19,5 +19,12 @@ function CloseModalMobile() {
     document.getElementById('logo-con').style.filter = '';
     document.getElementById('wrap').style.filter = '';   
 }
-
-
+// size
+let observer = new IntersectionObserver(size => {
+    size.forEach(size => {
+        if (size.isIntersecting) {
+            size.target.classList.add('animation-on');
+        }
+    });
+});
+observer.observe(document.querySelector('.our-contacts'));
