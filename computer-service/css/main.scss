@@ -172,6 +172,7 @@ li {
             position: relative;
             padding: 0.1px;
             form {
+                position: relative;
                 input {
                     width: 690px;
                     height: 40px;
@@ -183,6 +184,12 @@ li {
                         color: $gray;
                         font-weight: $reg;
                     }
+                }
+                img {
+                    position: absolute;
+                    cursor: pointer;
+                    left: 640px;
+                    top: 10px;
                 }
                 
             }

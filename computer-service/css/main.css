@@ -110,16 +110,23 @@ li {
     justify-content: space-between;
     position: relative;
     padding: 0.1px; }
-    .header .container .form form input {
-      width: 690px;
-      height: 40px;
-      padding-left: 28px;
-      border: 1px solid lightgray; }
-      .header .container .form form input ::placeholder {
-        font-size: 14px;
-        line-height: 20.9px;
-        color: #4A4D4A;
-        font-weight: 400; }
+    .header .container .form form {
+      position: relative; }
+      .header .container .form form input {
+        width: 690px;
+        height: 40px;
+        padding-left: 28px;
+        border: 1px solid lightgray; }
+        .header .container .form form input ::placeholder {
+          font-size: 14px;
+          line-height: 20.9px;
+          color: #4A4D4A;
+          font-weight: 400; }
+      .header .container .form form img {
+        position: absolute;
+        cursor: pointer;
+        left: 640px;
+        top: 10px; }
     .header .container .form img {
       position: absolute;
       left: 765px;
