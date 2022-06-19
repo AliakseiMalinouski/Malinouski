@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  height: 10000px; }
+
+.container {
+  width: 1410px;
+  margin: 0 auto;
+  background-color: lightblue; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+.header {
+  height: 264px; }
+  .header .container .header-wrap {
+    display: flex;
+    justify-content: space-between; }
+    .header .container .header-wrap .logo {
+      width: 329px;
+      height: 138px; }
+    .header .container .header-wrap .navigation {
+      width: 75%;
+      background-color: lightcoral;
+      padding: 0.1px;
+      padding-top: 18px; }
+      .header .container .header-wrap .navigation div:nth-child(1) {
+        margin-bottom: 28px; }
+        .header .container .header-wrap .navigation div:nth-child(1) ul {
+          display: flex;
+          justify-content: space-between; }
+          .header .container .header-wrap .navigation div:nth-child(1) ul li a {
+            line-height: 23.7px;
+            font-size: 20px;
+            color: #4A4D4A;
+            font-weight: 500;
+            font-family: 'Rubik'; }
+      .header .container .header-wrap .navigation div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        position: relative; }
+        .header .container .header-wrap .navigation div:nth-child(2) p {
+          width: 403px;
+          height: 25px;
+          color: #4A4D4A;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 21.33px;
+          font-family: 'Rubik'; }
+        .header .container .header-wrap .navigation div:nth-child(2) img {
+          position: absolute;
+          left: 440px; }
+        .header .container .header-wrap .navigation div:nth-child(2) a:nth-child(3) {
+          color: #4A4D4A;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 36.57px;
+          font-family: 'Rubik'; }
+        .header .container .header-wrap .navigation div:nth-child(2) button {
+          width: 240px;
+          height: 37px;
+          background-color: #FFAF37;
+          color: #FFF;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21.33px;
+          font-family: 'Rubik';
+          border: 1px solid #FFAF37;
+          cursor: pointer; }
+  .header .container .form {
+    display: flex;
+    justify-content: space-between; }
+    .header .container .form form input {
+      width: 690px;
+      height: 40px;
+      padding-left: 28px;
+      border: 1px solid lightgray; }
+      .header .container .form form input ::placeholder {
+        font-size: 14px;
+        line-height: 20.9px;
+        color: #4A4D4A;
+        font-weight: 400; }
+    .header .container .form a:nth-child(2) {
+      width: 110px;
+      height: 34px;
+      color: #4A4D4A;
+      line-height: 17.08px;
+      font-size: 14px;
+      font-weight: 500; }
+      .header .container .form a:nth-child(2) span {
+        color: #4A4D4A;
+        line-height: 17.08px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 10px; }
+    .header .container .form a:nth-child(3) {
+      color: #4A4D4A;
+      width: 130px;
+      height: 16px;
+      line-height: 21.33px;
+      font-size: 18px; }
+
+/*# sourceMappingURL=main.css.map */

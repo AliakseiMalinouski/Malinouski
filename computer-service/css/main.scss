@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    height: 10000px;
+}
+$gray: #4A4D4A;
+$orange: #FFAF37;
+$darkblue: #001569;
+$white: #FFF;
+$black: #000000;
+$reg: 400;
+$medium: 500;
+$bold: 600;
+$extra-bold: 700;
+$fz: 16px;
+$fz10: $fz - 6;
+$fz14: $fz - 2;
+$fz18: $fz + 2;
+$fz20: $fz + 4;
+$fz24: $fz + 8;
+$fz30: $fz + 14;
+$fz36: $fz + 20;
+.container {
+    width: 1410px;
+    margin: 0 auto;
+    background-color: lightblue;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+
+.header {
+    height: 264px;
+    .container {
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+             .logo {
+            width: 329px;
+            height: 138px;
+            
+        }
+        .navigation {
+            width: 75%;
+            background-color: lightcoral;
+            padding: 0.1px;
+            padding-top: 18px;
+            div:nth-child(1) {
+                margin-bottom: 28px;
+                
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        a {
+                            line-height: 23.7px;
+                            font-size: $fz20;
+                            color: $gray;
+                            font-weight: $medium;
+                            font-family: 'Rubik';
+                            
+                        }
+                    }
+                }
+            }
+            div:nth-child(2) {
+                 display: flex;
+                 justify-content: space-between;
+                 position: relative;
+                 p {
+                    width: 403px;
+                    height: 25px;
+                    color: $gray;
+                    font-size: $fz18;
+                    font-weight: $medium;
+                    line-height: 21.33px;
+                    font-family: 'Rubik';
+                 }
+                 img {
+                    position: absolute;
+                    left: 440px;
+                 }
+                 a:nth-child(3) {
+                    color: $gray;
+                    font-size: $fz30;
+                    font-weight: $extra-bold;
+                    line-height: 36.57px;
+                    font-family: 'Rubik';
+                 }
+                 button {
+                    width: 240px;
+                    height: 37px;
+                    background-color: $orange;
+                    color: $white;                    
+                    font-weight: $extra-bold;
+                    font-size: $fz18;
+                    line-height: 21.33px;
+                    font-family: 'Rubik';
+                    border: 1px solid $orange;
+                    cursor: pointer;
+                 }
+            }
+        }
+        }
+        .form {
+            display: flex;
+            justify-content: space-between;
+            form {
+                input {
+                    width: 690px;
+                    height: 40px;
+                    padding-left: 28px;
+                    border: 1px solid lightgray;
+                    ::placeholder {
+                        font-size: $fz14;
+                        line-height: 20.9px;
+                        color: $gray;
+                        font-weight: $reg;
+                    }
+                }
+                
+            }
+            a:nth-child(2) {
+                width: 110px;
+                height: 34px;
+                color: $gray;
+                line-height: 17.08px;
+                font-size: $fz14;
+                font-weight: $medium;
+                span {
+                    color: $gray;
+                    line-height: 17.08px;
+                    font-size: $fz14;
+                    font-weight: $medium;
+                    margin-left: 10px;
+                }
+            }
+            a:nth-child(3) {
+                color: $gray;
+                width: 130px;
+                height: 16px;
+                line-height: 21.33px;
+                font-size: $fz18;
+            }
+        }
+       
+    }
+}
