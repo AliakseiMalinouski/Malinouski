@@ -337,3 +337,61 @@ li {
         }
     }
 }
+.catalog_slider {
+    padding-top: 48px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .catalog {
+             width: 448px;
+             height: 736px;
+             .headling-catalog{
+                width: 448px;
+                height: 60px;
+                background-color: $fone-cat;
+                padding-left: 21px;
+                padding-top: 17px;
+                h6 {
+                    width: 106px;
+                    height: 26px;
+                    color: $gray;
+                    font-size: $fz24;
+                    font-weight: $medium;
+                    line-height: 29.28px;
+                    font-family: 'Rubik';
+                }
+             }
+             .catalog_menu {
+                background-color: red;
+                padding: 0.1px;
+                div {
+                    margin-bottom: 22px;
+                    background-color: lightgreen;
+                    padding-left: 54px;
+                    position: relative;
+                    a {
+                        color: $gray;
+                        font-size: $fz18 - 1;
+                        line-height: 21.33px;
+                        font-weight: $fz18;
+                    }
+                    a:hover {
+                        color: $orange;
+                    }
+                    .icon-catalog {
+                        position: absolute;
+                        top: 2.5px;
+                        left: 20px;
+                    }
+                    .open-button {
+                        position: absolute;
+                        top: 2.5px;
+                        right: 15px;
+                        cursor: pointer;
+                    }
+                }
+                
+             }
+        }
+    }
+}

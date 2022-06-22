@@ -233,5 +233,51 @@ li {
   20%,
                 40% {
     transform: rotate(3deg); } }
+.catalog_slider {
+  padding-top: 48px; }
+  .catalog_slider .container {
+    display: flex;
+    justify-content: space-between; }
+    .catalog_slider .container .catalog {
+      width: 448px;
+      height: 736px; }
+      .catalog_slider .container .catalog .headling-catalog {
+        width: 448px;
+        height: 60px;
+        background-color: #F0F0FF;
+        padding-left: 21px;
+        padding-top: 17px; }
+        .catalog_slider .container .catalog .headling-catalog h6 {
+          width: 106px;
+          height: 26px;
+          color: #4A4D4A;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 29.28px;
+          font-family: 'Rubik'; }
+      .catalog_slider .container .catalog .catalog_menu {
+        background-color: red;
+        padding: 0.1px; }
+        .catalog_slider .container .catalog .catalog_menu div {
+          margin-bottom: 22px;
+          background-color: lightgreen;
+          padding-left: 54px;
+          position: relative; }
+          .catalog_slider .container .catalog .catalog_menu div a {
+            color: #4A4D4A;
+            font-size: 17px;
+            line-height: 21.33px;
+            font-weight: 18px; }
+          .catalog_slider .container .catalog .catalog_menu div a:hover {
+            color: #FFAF37; }
+          .catalog_slider .container .catalog .catalog_menu div .icon-catalog {
+            position: absolute;
+            top: 2.5px;
+            left: 20px; }
+          .catalog_slider .container .catalog .catalog_menu div .open-button {
+            position: absolute;
+            top: 2.5px;
+            right: 15px;
+            cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
