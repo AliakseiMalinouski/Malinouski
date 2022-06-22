@@ -351,6 +351,7 @@ li {
                 background-color: $fone-cat;
                 padding-left: 21px;
                 padding-top: 17px;
+                margin-bottom: 9px;
                 h6 {
                     width: 106px;
                     height: 26px;
@@ -362,11 +363,9 @@ li {
                 }
              }
              .catalog_menu {
-                background-color: red;
                 padding: 0.1px;
                 div {
                     margin-bottom: 22px;
-                    background-color: lightgreen;
                     padding-left: 54px;
                     position: relative;
                     a {
@@ -392,6 +391,201 @@ li {
                 }
                 
              }
+        }
+        .description {
+            width: 922px;
+            height: 742px;
+            padding: 0.1px;
+            position: relative;
+            .about {
+                padding: 0.1px;
+                margin-bottom: 20px;
+                p {
+                    width: 922px;
+                    height: 132px;
+                    color: $gray;
+                    font-size: $fz36 - 6;
+                    font-weight: $reg;
+                    span:nth-child(1) {
+                        font-weight: $medium;
+                        color: $gray;
+                        font-size: $fz36 - 1;
+                    }
+                    span:nth-child(2) {
+                        color: $orange;
+                        font-weight: $medium;
+                        font-size: $fz36 - 1;
+                    }
+                }
+            }
+            .slider {
+                width: 992px;
+                height: 590px;
+                position: relative;
+                overflow: hidden;
+                .slider-line {
+                    height: 590px;
+                    width: 4960px;
+                    position: relative;
+                    display: flex;
+                    transition: all ease 1s;
+                    .slide1 {
+                        position: relative;
+                        width: 992px;
+                        height: 590px;
+                        p {
+                            position: absolute;
+                            color: $white;
+                            width: 422px;
+                            height: 116px;
+                            font-size: $fz30;
+                            font-weight: $medium;
+                            line-height: 37.02px;
+                            top: 214px;
+                            left: 448px;
+                            z-index: 3;
+                            span:nth-child(1) {
+                                color: $white;
+                                font-size: $fz30;
+                                font-weight: $medium;
+                                line-height: 37.02px;
+                                margin-left: 38px;
+                            }
+                            .key {
+                                color: $white;
+                                font-size: $fz30;
+                                font-weight: $medium;
+                                line-height: 37.02px;
+                                margin-left: 98px;
+                            }
+                        }
+                        a {
+                            position: absolute;
+                            left: 478px;
+                            top: 352px;
+                            color: $white;
+                            background-color: $orange;
+                            width: 330px;
+                            height: 68px;
+                            padding-top: 24px;
+                            padding-left: 37px;
+                            font-size: $fz18;
+                            line-height: 21.33px;
+                            font-weight: $extra-bold;
+                            z-index: 3;
+                        }
+                        .fone {
+                            position: absolute;
+                            
+                        }
+                        .shadow {
+                            position: absolute;
+                            z-index: 2;
+                        }
+                    }
+                   .slide2 {
+                     position: relative;
+                     padding: 0.1px;
+                     left: -65px;
+                     a {
+                            color: $white;
+                            background-color: $orange;
+                            width: 402px;
+                            height: 69px;
+                            padding-top: 25px;
+                            padding-left: 24px;
+                            font-size: $fz18;
+                            line-height: 21.33px;
+                            font-weight: $extra-bold;
+                            display: block;
+                            text-transform: uppercase;
+                            position: absolute;
+                            z-index: 2;
+                            left: 458px;
+                            top: 382px;
+
+                     }
+                     p:nth-child(3) {
+                        line-height: 37.02px;
+                        font-weight: $medium;
+                        font-size: $fz30;
+                        color: $white;
+                        position: absolute;
+                        z-index: 3;
+                        left: 551px;
+                        top: 230px;
+                        width: 300px;
+                        height: 74px;
+                        span {
+                            margin-left: 68px;
+                        }
+                     }
+                     p:nth-child(4) {
+                        position: absolute;
+                        width: 434px;
+                        height: 42px;
+                        left: 447px;
+                        top: 322px;
+                        color: $white;
+                        font-weight: $reg;
+                        line-height: 21.33px;
+                        font-size: $fz18;
+                        padding: 0.1px;
+                        span {
+                            margin-left: 70px;
+                            color: $white;
+                            font-weight: $reg;
+                            line-height: 21.33px;
+                            font-size: $fz18;
+                        }
+                     }
+                     .fone2 {
+                        position: absolute;
+                     }
+                     .shadow2 {
+                        position: absolute;
+                     }
+                   }
+                }
+            }
+            .prev {
+                position: absolute;
+                top: 425px;
+                z-index: 4;
+                cursor: pointer;
+                
+            }
+            .next {
+                position: absolute;
+                top: 430px;
+                right: 0px;
+                z-index: 4;
+                cursor: pointer;
+            }
+            .page1 {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                background-color: $gray;
+                cursor: pointer;
+                top: 707px;
+                left: 370px;
+            }
+            .page2 {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                background-color: $gray;
+                top: 707px;
+                left: 400px;
+                z-index: 4;
+                cursor: pointer;
+            }
+            .active {
+                background-color: $orange;
+            }
         }
     }
 }

@@ -246,7 +246,8 @@ li {
         height: 60px;
         background-color: #F0F0FF;
         padding-left: 21px;
-        padding-top: 17px; }
+        padding-top: 17px;
+        margin-bottom: 9px; }
         .catalog_slider .container .catalog .headling-catalog h6 {
           width: 106px;
           height: 26px;
@@ -256,11 +257,9 @@ li {
           line-height: 29.28px;
           font-family: 'Rubik'; }
       .catalog_slider .container .catalog .catalog_menu {
-        background-color: red;
         padding: 0.1px; }
         .catalog_slider .container .catalog .catalog_menu div {
           margin-bottom: 22px;
-          background-color: lightgreen;
           padding-left: 54px;
           position: relative; }
           .catalog_slider .container .catalog .catalog_menu div a {
@@ -279,5 +278,170 @@ li {
             top: 2.5px;
             right: 15px;
             cursor: pointer; }
+    .catalog_slider .container .description {
+      width: 922px;
+      height: 742px;
+      padding: 0.1px;
+      position: relative; }
+      .catalog_slider .container .description .about {
+        padding: 0.1px;
+        margin-bottom: 20px; }
+        .catalog_slider .container .description .about p {
+          width: 922px;
+          height: 132px;
+          color: #4A4D4A;
+          font-size: 30px;
+          font-weight: 400; }
+          .catalog_slider .container .description .about p span:nth-child(1) {
+            font-weight: 500;
+            color: #4A4D4A;
+            font-size: 35px; }
+          .catalog_slider .container .description .about p span:nth-child(2) {
+            color: #FFAF37;
+            font-weight: 500;
+            font-size: 35px; }
+      .catalog_slider .container .description .slider {
+        width: 992px;
+        height: 590px;
+        position: relative;
+        overflow: hidden; }
+        .catalog_slider .container .description .slider .slider-line {
+          height: 590px;
+          width: 4960px;
+          position: relative;
+          display: flex;
+          transition: all ease 1s; }
+          .catalog_slider .container .description .slider .slider-line .slide1 {
+            position: relative;
+            width: 992px;
+            height: 590px; }
+            .catalog_slider .container .description .slider .slider-line .slide1 p {
+              position: absolute;
+              color: #FFF;
+              width: 422px;
+              height: 116px;
+              font-size: 30px;
+              font-weight: 500;
+              line-height: 37.02px;
+              top: 214px;
+              left: 448px;
+              z-index: 3; }
+              .catalog_slider .container .description .slider .slider-line .slide1 p span:nth-child(1) {
+                color: #FFF;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 37.02px;
+                margin-left: 38px; }
+              .catalog_slider .container .description .slider .slider-line .slide1 p .key {
+                color: #FFF;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 37.02px;
+                margin-left: 98px; }
+            .catalog_slider .container .description .slider .slider-line .slide1 a {
+              position: absolute;
+              left: 478px;
+              top: 352px;
+              color: #FFF;
+              background-color: #FFAF37;
+              width: 330px;
+              height: 68px;
+              padding-top: 24px;
+              padding-left: 37px;
+              font-size: 18px;
+              line-height: 21.33px;
+              font-weight: 700;
+              z-index: 3; }
+            .catalog_slider .container .description .slider .slider-line .slide1 .fone {
+              position: absolute; }
+            .catalog_slider .container .description .slider .slider-line .slide1 .shadow {
+              position: absolute;
+              z-index: 2; }
+          .catalog_slider .container .description .slider .slider-line .slide2 {
+            position: relative;
+            padding: 0.1px;
+            left: -65px; }
+            .catalog_slider .container .description .slider .slider-line .slide2 a {
+              color: #FFF;
+              background-color: #FFAF37;
+              width: 402px;
+              height: 69px;
+              padding-top: 25px;
+              padding-left: 24px;
+              font-size: 18px;
+              line-height: 21.33px;
+              font-weight: 700;
+              display: block;
+              text-transform: uppercase;
+              position: absolute;
+              z-index: 2;
+              left: 458px;
+              top: 382px; }
+            .catalog_slider .container .description .slider .slider-line .slide2 p:nth-child(3) {
+              line-height: 37.02px;
+              font-weight: 500;
+              font-size: 30px;
+              color: #FFF;
+              position: absolute;
+              z-index: 3;
+              left: 551px;
+              top: 230px;
+              width: 300px;
+              height: 74px; }
+              .catalog_slider .container .description .slider .slider-line .slide2 p:nth-child(3) span {
+                margin-left: 68px; }
+            .catalog_slider .container .description .slider .slider-line .slide2 p:nth-child(4) {
+              position: absolute;
+              width: 434px;
+              height: 42px;
+              left: 447px;
+              top: 322px;
+              color: #FFF;
+              font-weight: 400;
+              line-height: 21.33px;
+              font-size: 18px;
+              padding: 0.1px; }
+              .catalog_slider .container .description .slider .slider-line .slide2 p:nth-child(4) span {
+                margin-left: 70px;
+                color: #FFF;
+                font-weight: 400;
+                line-height: 21.33px;
+                font-size: 18px; }
+            .catalog_slider .container .description .slider .slider-line .slide2 .fone2 {
+              position: absolute; }
+            .catalog_slider .container .description .slider .slider-line .slide2 .shadow2 {
+              position: absolute; }
+      .catalog_slider .container .description .prev {
+        position: absolute;
+        top: 425px;
+        z-index: 4;
+        cursor: pointer; }
+      .catalog_slider .container .description .next {
+        position: absolute;
+        top: 430px;
+        right: 0px;
+        z-index: 4;
+        cursor: pointer; }
+      .catalog_slider .container .description .page1 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: #4A4D4A;
+        cursor: pointer;
+        top: 707px;
+        left: 370px; }
+      .catalog_slider .container .description .page2 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: #4A4D4A;
+        top: 707px;
+        left: 400px;
+        z-index: 4;
+        cursor: pointer; }
+      .catalog_slider .container .description .active {
+        background-color: #FFAF37; }
 
 /*# sourceMappingURL=main.css.map */
