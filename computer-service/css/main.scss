@@ -341,11 +341,16 @@ li {
 }
 .catalog_slider {
     padding-top: 48px;
-    background: url(../img/deg1.png) no-repeat 88% 100%;
-    padding-bottom: 40px;
     .container {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 80px;
+        position: relative;
+        // .corner {
+        //     position: absolute;
+        //     top: 590px;
+        //     left: 1190px;
+        // }
         .catalog {
              width: 448px;
              height: 736px;
