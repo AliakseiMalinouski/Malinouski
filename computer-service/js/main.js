@@ -37,9 +37,17 @@ document.querySelector('.prev').addEventListener('click', function () {
     SliderLine.style.left = -distance + 'px';
 });
 // catalog open menu
-let catalog = document.querySelector('.open-menu-catalog');
+let catalogOpen = document.querySelector('.open-menu-catalog');
+let catalogClose = document.querySelector('.close-menu-catalog');
 document.querySelector('.open-menu-catalog').addEventListener('click', function ($) {
     document.getElementById('catalog_menu').style.display = 'block';
+    document.getElementById('open-menu-catalog').style.display = 'none';
+    document.getElementById('close-menu-catalog').style.display = 'block';
+});
+document.querySelector('.close-menu-catalog').addEventListener('click', function ($) {
+    document.getElementById('close-menu-catalog').style.display = 'none';
+    document.getElementById('open-menu-catalog').style.display = 'block';
+    document.getElementById('catalog_menu').style.display = 'none';
 });
 
 

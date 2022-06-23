@@ -311,10 +311,12 @@ li {
                     border-bottom: 2px dotted $gray;
                     font-family: 'Rubik';
                 }
+                a:hover {
+                    color: $orange;
+                }
             }
             li:hover {
                     animation: link 2s ease-in-out 0s normal none infinite running;
-                    
                    }
                    @keyframes link {
             0%,
@@ -368,10 +370,18 @@ li {
                     right: 15px;
                     cursor: pointer;
                 }
+                .close-menu-catalog {
+                    position: absolute;
+                    top: 20px;
+                    right: 10px;
+                    display: none;
+                    cursor: pointer;
+                }
              }
              .catalog_menu {
                 padding: 0.1px;
                 display: none;
+                animation: catalog 1s;
                 div {
                     margin-bottom: 22px;
                     padding-left: 54px;
@@ -396,10 +406,21 @@ li {
                         right: 15px;
                         cursor: pointer;
                     }
+
                 }
                 
              }
-             
+             @keyframes catalog {
+                from {
+                    opacity: 0.5;
+                    transition: 1.5s;
+                    transform: scale(1.05)
+                }
+                to {
+                    opacity: 1;
+                    transform: none;
+                }
+             }
         }
         .description {
             width: 922px;
