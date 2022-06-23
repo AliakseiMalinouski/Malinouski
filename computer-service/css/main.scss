@@ -852,13 +852,13 @@ li {
                 background-color: $white;
                 width: 690px;
                 height: 250px;
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
+                box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
                 img:nth-child(1) {
                 position: absolute;
                 left: 311px;
                 top: 22px;
-                -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
-                -moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
-                box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
             }
             p:nth-child(2) {
                 color: $gray;

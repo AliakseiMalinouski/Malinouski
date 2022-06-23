@@ -668,14 +668,14 @@ li {
         border-radius: 11px;
         background-color: #FFF;
         width: 690px;
-        height: 250px; }
+        height: 250px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
+        box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45); }
         .dignities .container .second-line div:nth-child(1) img:nth-child(1) {
           position: absolute;
           left: 311px;
-          top: 22px;
-          -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
-          -moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45);
-          box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.45); }
+          top: 22px; }
         .dignities .container .second-line div:nth-child(1) p:nth-child(2) {
           color: #4A4D4A;
           position: absolute;
