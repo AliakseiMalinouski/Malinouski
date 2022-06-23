@@ -23,7 +23,7 @@ const SliderLine = document.querySelector('.slider-line');
 
 document.querySelector('.next').addEventListener('click', function () {
     distance = distance + 922;
-    if (distance > 922) {
+    if (distance > 2466) {
         distance = 0;
     }
     SliderLine.style.left = -distance + 'px';
@@ -32,46 +32,14 @@ document.querySelector('.next').addEventListener('click', function () {
 document.querySelector('.prev').addEventListener('click', function () {
     distance = distance - 922;
     if (distance < 0 ) {
-        distance = 922;
+        distance = 1846;
     }
     SliderLine.style.left = -distance + 'px';
 });
-document.querySelector('.page1').addEventListener('click', function () {
-    distance = 0;
-    if (distance > 922) {
-        distance = 0;
-    }
-    SliderLine.style.left = -distance + 'px';
-});
-document.querySelector('.page2').addEventListener('click', function () {
-    distance = distance + 922;
-    if (distance > 922) {
-        distance = 0;
-    }
-    SliderLine.style.left = -distance + 'px';
-});
-
-let page2 = document.querySelector('.page2');
-document.querySelector('.page2').addEventListener('mousedown', function () {
-    if (true) {
-        document.querySelector('.page2').classList.add('active');
-    }
-});
-document.querySelector('.page2').addEventListener('mouseout', function () {
-    if (true) {
-        document.querySelector('.page2').classList.remove('active');
-    }
-});
-let page1 = document.querySelector('.page1');
-document.querySelector('.page1').addEventListener('mousedown', function () {
-    if (true) {
-        document.querySelector('.page1').classList.add('active');
-    }
-});
-document.querySelector('.page1').addEventListener('mouseout', function () {
-    if (true) {
-        document.querySelector('.page1').classList.remove('active');
-    }
+// catalog open menu
+let catalog = document.querySelector('.open-menu-catalog');
+document.querySelector('.open-menu-catalog').addEventListener('click', function ($) {
+    document.getElementById('catalog_menu').style.display = 'block';
 });
 
 

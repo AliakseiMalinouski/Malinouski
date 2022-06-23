@@ -247,7 +247,8 @@ li {
         background-color: #F0F0FF;
         padding-left: 21px;
         padding-top: 17px;
-        margin-bottom: 9px; }
+        margin-bottom: 9px;
+        position: relative; }
         .catalog_slider .container .catalog .headling-catalog h6 {
           width: 106px;
           height: 26px;
@@ -256,8 +257,14 @@ li {
           font-weight: 500;
           line-height: 29.28px;
           font-family: 'Rubik'; }
+        .catalog_slider .container .catalog .headling-catalog .open-menu-catalog {
+          position: absolute;
+          top: 25px;
+          right: 15px;
+          cursor: pointer; }
       .catalog_slider .container .catalog .catalog_menu {
-        padding: 0.1px; }
+        padding: 0.1px;
+        display: none; }
         .catalog_slider .container .catalog .catalog_menu div {
           margin-bottom: 22px;
           padding-left: 54px;
@@ -301,7 +308,7 @@ li {
             font-weight: 500;
             font-size: 35px; }
       .catalog_slider .container .description .slider {
-        width: 992px;
+        width: 920px;
         height: 590px;
         position: relative;
         overflow: hidden; }
@@ -360,7 +367,9 @@ li {
           .catalog_slider .container .description .slider .slider-line .slide2 {
             position: relative;
             padding: 0.1px;
-            left: -65px; }
+            left: -70px;
+            width: 992px;
+            height: 590px; }
             .catalog_slider .container .description .slider .slider-line .slide2 a {
               color: #FFF;
               background-color: #FFAF37;
@@ -411,6 +420,57 @@ li {
               position: absolute; }
             .catalog_slider .container .description .slider .slider-line .slide2 .shadow2 {
               position: absolute; }
+          .catalog_slider .container .description .slider .slider-line .slide3 {
+            position: relative;
+            width: 992px;
+            height: 590px;
+            padding: 0.1px;
+            left: -143px; }
+            .catalog_slider .container .description .slider .slider-line .slide3 .fone3 {
+              position: absolute; }
+            .catalog_slider .container .description .slider .slider-line .slide3 .shadow3 {
+              position: absolute;
+              z-index: 2;
+              left: 5px; }
+            .catalog_slider .container .description .slider .slider-line .slide3 p:nth-child(3) {
+              position: absolute;
+              top: 217px;
+              left: 206px;
+              width: 682px;
+              height: 100px;
+              color: #FFF;
+              line-height: 37.02px;
+              font-size: 30px;
+              font-weight: 500;
+              z-index: 3; }
+              .catalog_slider .container .description .slider .slider-line .slide3 p:nth-child(3) span {
+                margin-left: 240px; }
+            .catalog_slider .container .description .slider .slider-line .slide3 p:nth-child(4) {
+              position: absolute;
+              top: 335px;
+              left: 206px;
+              width: 652px;
+              height: 63px;
+              color: #FFF;
+              font-size: 400;
+              line-height: 21.33px;
+              font-weight: 500;
+              z-index: 4; }
+            .catalog_slider .container .description .slider .slider-line .slide3 a {
+              position: absolute;
+              width: 324px;
+              height: 69px;
+              background-color: #FFAF37;
+              padding-left: 28px;
+              padding-top: 24px;
+              color: #FFF;
+              line-height: 21.33px;
+              font-weight: 700;
+              font-size: 18px;
+              z-index: 4;
+              text-transform: uppercase;
+              left: 486px;
+              top: 438px; }
       .catalog_slider .container .description .prev {
         position: absolute;
         top: 425px;
@@ -440,6 +500,15 @@ li {
         top: 707px;
         left: 400px;
         z-index: 4;
+        cursor: pointer; }
+      .catalog_slider .container .description .page3 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        background-color: #4A4D4A;
+        top: 707px;
+        left: 430px;
         cursor: pointer; }
       .catalog_slider .container .description .active {
         background-color: #FFAF37; }

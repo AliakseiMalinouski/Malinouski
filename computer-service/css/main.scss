@@ -352,6 +352,7 @@ li {
                 padding-left: 21px;
                 padding-top: 17px;
                 margin-bottom: 9px;
+                position: relative;
                 h6 {
                     width: 106px;
                     height: 26px;
@@ -361,9 +362,16 @@ li {
                     line-height: 29.28px;
                     font-family: 'Rubik';
                 }
+                .open-menu-catalog {
+                    position: absolute;
+                    top: 25px;
+                    right: 15px;
+                    cursor: pointer;
+                }
              }
              .catalog_menu {
                 padding: 0.1px;
+                display: none;
                 div {
                     margin-bottom: 22px;
                     padding-left: 54px;
@@ -391,6 +399,7 @@ li {
                 }
                 
              }
+             
         }
         .description {
             width: 922px;
@@ -419,7 +428,7 @@ li {
                 }
             }
             .slider {
-                width: 992px;
+                width: 920px;
                 height: 590px;
                 position: relative;
                 overflow: hidden;
@@ -486,7 +495,9 @@ li {
                    .slide2 {
                      position: relative;
                      padding: 0.1px;
-                     left: -65px;
+                     left: -70px;
+                     width: 992px;
+                     height: 590px;
                      a {
                             color: $white;
                             background-color: $orange;
@@ -546,6 +557,64 @@ li {
                         position: absolute;
                      }
                    }
+                   .slide3 {
+                     position: relative;
+                     width: 992px;
+                     height: 590px;
+                     padding: 0.1px;
+                     left: -143px;
+                     .fone3 {
+                        position: absolute;
+                     }
+                     .shadow3 {
+                        position: absolute;
+                        z-index: 2;
+                        left: 5px;
+                     }
+                     p:nth-child(3) {
+                        position: absolute;
+                        top: 217px;
+                        left: 206px;
+                        width: 682px;
+                        height: 100px;
+                        color: $white;
+                        line-height: 37.02px;
+                        font-size: $fz30;
+                        font-weight: $medium;
+                        z-index: 3;
+                        span {
+                            margin-left: 240px;
+                        }
+                     }
+                     p:nth-child(4) {
+                        position: absolute;
+                        top: 335px;
+                        left: 206px;
+                        width: 652px;
+                        height: 63px;
+                        color: $white;
+                        font-size: $reg;
+                        line-height: 21.33px;
+                        font-weight: $medium;
+                        z-index: 4;
+                     }
+                     a {
+                        position: absolute;
+                        width: 324px;
+                        height: 69px;
+                        background-color: $orange;
+                        padding-left: 28px;
+                        padding-top: 24px;
+                        color: $white;
+                        line-height: 21.33px;
+                        font-weight: $extra-bold;
+                        font-size: $fz18;
+                        z-index: 4;
+                        text-transform: uppercase;
+                        left: 486px;
+                        top: 438px;
+                     }
+                   }
                 }
             }
             .prev {
@@ -581,6 +650,16 @@ li {
                 top: 707px;
                 left: 400px;
                 z-index: 4;
+                cursor: pointer;
+            }
+            .page3 {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                background-color: $gray;
+                top: 707px;
+                left: 430px;
                 cursor: pointer;
             }
             .active {
