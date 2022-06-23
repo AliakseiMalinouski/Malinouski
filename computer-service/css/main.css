@@ -650,5 +650,8 @@ li {
         position: absolute;
         left: 135px;
         top: 31px; }
+    .dignities .container .first-line div:hover {
+      transform: scale(1.05);
+      transition: 1.5s; }
 
 /*# sourceMappingURL=main.css.map */
