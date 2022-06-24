@@ -32,9 +32,14 @@ li {
       width: 800px;
       height: 500px;
       border-radius: 11px;
-      background-color: #F0F0FF;
+      background-color: #E3E1FF;
       position: relative;
       animation: modal_call 1s; }
+      .wrap .modal-wrap .modal_call img {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer; }
 @keyframes modal_call {
   from {
     opacity: 0.5;

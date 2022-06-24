@@ -52,9 +52,15 @@ li {
             width: 800px;
             height: 500px;
             border-radius: 11px;
-            background-color: $fone-cat;
+            background-color: $banner4;
             position: relative;
             animation: modal_call 1s;
+            img {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                cursor: pointer;
+            }
     }
     }
     @keyframes modal_call {

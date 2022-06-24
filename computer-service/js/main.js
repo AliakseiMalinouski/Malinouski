@@ -65,6 +65,22 @@ document.querySelector('.call').addEventListener('click', function ($) {
     document.querySelector('.partners').style.backgroundColor = 'rgba(0,0,0,.7)';
     document.querySelector('.partners').style.filter = 'blur(5px)';
 });
+let crossClose = document.querySelector('.cross-close');
+document.querySelector('.cross-close').addEventListener('click', function ($) {
+    document.querySelector('.modal_call').style.display = 'none';
+    document.querySelector('.header').style.backgroundColor = '';
+    document.querySelector('.header').style.filter = '';
+    document.querySelector('.categories').style.backgroundColor = '';
+    document.querySelector('.categories').style.filter = '';
+    document.querySelector('.catalog_slider').style.backgroundColor = '';
+    document.querySelector('.catalog_slider').style.filter = '';
+    document.querySelector('.dignities').style.backgroundColor = '';
+    document.querySelector('.dignities').style.filter = '';
+    document.querySelector('.banners').style.backgroundColor = '';
+    document.querySelector('.banners').style.filter = '';
+    document.querySelector('.partners').style.backgroundColor = '';
+    document.querySelector('.partners').style.filter = '';
+});
 
 
 
