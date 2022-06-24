@@ -49,6 +49,22 @@ document.querySelector('.close-menu-catalog').addEventListener('click', function
     document.getElementById('open-menu-catalog').style.display = 'block';
     document.getElementById('catalog_menu').style.display = 'none';
 });
+let call = document.querySelector('.call');
+document.querySelector('.call').addEventListener('click', function ($) {
+    document.querySelector('.modal_call').style.display = 'block';
+    document.querySelector('.header').style.backgroundColor = 'rgba(0,0,0,.7)';
+    document.querySelector('.header').style.filter = 'blur(5px)';
+    document.querySelector('.categories').style.backgroundColor = 'rgba(0,0,0,.7)';
+    document.querySelector('.categories').style.filter = 'blur(5px)';
+    document.querySelector('.catalog_slider').style.backgroundColor = 'rgba(0,0,0,.7)';
+    document.querySelector('.catalog_slider').style.filter = 'blur(5px)';
+    document.querySelector('.dignities').style.backgroundColor = 'rgba(0,0,0,.7)';
+    document.querySelector('.dignities').style.filter = 'blur(5px)';
+    document.querySelector('.banners').style.backgroundColor = 'rgba(0,0,0,.7)';
+    document.querySelector('.banners').style.filter = 'blur(5px)';
+    document.querySelector('.partners').style.backgroundColor = 'rgba(0,0,0,.7)';
+    document.querySelector('.partners').style.filter = 'blur(5px)';
+});
 
 
 

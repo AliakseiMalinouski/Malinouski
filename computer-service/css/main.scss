@@ -38,7 +38,32 @@ li {
     list-style: none;
 }
 
-
+.wrap {
+    position: relative;
+    .modal_call {
+        display: none;
+        width: 800px;
+        height: 500px;
+        border-radius: 11px;
+        background-color: $fone-cat;
+        position: absolute;
+        left: 200px;
+        top: 50px;
+        left: 550px;
+        top: 192px;
+        z-index: 6;
+        animation: modal_call 1s;
+    }
+    @keyframes modal_call {
+        from {
+            opacity: 0.5;
+            transform: scale(1.005);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
 .header {
     height: 264px;
     padding-bottom: 26px;
@@ -1241,4 +1266,5 @@ li {
             }
         }
     }
+}
 }
