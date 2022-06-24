@@ -902,5 +902,7 @@ li {
   20%,
                 40% {
     transform: rotate(5deg); } }
+.partners {
+  padding-top: 100px; }
 
 /*# sourceMappingURL=main.css.map */
