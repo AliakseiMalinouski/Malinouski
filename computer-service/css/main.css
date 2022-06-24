@@ -777,4 +777,67 @@ li {
         transform: scale(1.05);
         transition: 1.5s; }
 
+.banners {
+  padding-top: 129px; }
+  .banners .container div:nth-child(1) {
+    position: relative;
+    background-color: #F0F0FF;
+    padding: 0.1px;
+    padding-top: 76px;
+    padding-bottom: 78px;
+    padding-right: 44px;
+    width: 690px;
+    height: 402px; }
+    .banners .container div:nth-child(1) img:nth-child(1) {
+      position: absolute;
+      left: 15px;
+      top: 29px; }
+    .banners .container div:nth-child(1) img:nth-child(2) {
+      position: absolute;
+      left: 1px;
+      top: 172px; }
+    .banners .container div:nth-child(1) p:nth-child(3) {
+      width: 476px;
+      height: 90px;
+      line-height: 29.28px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #4A4D4A;
+      margin-left: 160px; }
+    .banners .container div:nth-child(1) p:nth-child(4) {
+      font-size: 18px;
+      font-weight: 400;
+      color: #4A4D4A;
+      line-height: 21.33px;
+      width: 292px;
+      height: 42px;
+      margin-left: 320px; }
+    .banners .container div:nth-child(1) a {
+      width: 300px;
+      height: 70px;
+      background-color: #FFAF37;
+      padding-top: 23px;
+      padding-left: 50px;
+      color: #FFF;
+      text-transform: uppercase;
+      line-height: 21.33px;
+      font-size: 18px;
+      font-weight: 700;
+      position: absolute;
+      top: 254px;
+      left: 346px; }
+    .banners .container div:nth-child(1) a:hover {
+      animation: link 2s ease-in-out 0s normal none infinite running; }
+@keyframes link {
+  0%,
+                50%,
+                100% {
+    transform: rotate(0deg); }
+  10%,
+                30% {
+    transform: rotate(-5deg); }
+  20%,
+                40% {
+    transform: rotate(5deg); } }
+
 /*# sourceMappingURL=main.css.map */
