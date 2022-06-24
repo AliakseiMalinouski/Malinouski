@@ -20,19 +20,21 @@ li {
 
 .wrap {
   position: relative; }
-  .wrap .modal_call {
-    display: none;
-    width: 800px;
-    height: 500px;
-    border-radius: 11px;
-    background-color: #F0F0FF;
+  .wrap .modal-wrap {
     position: absolute;
     left: 200px;
     top: 50px;
     left: 550px;
     top: 192px;
-    z-index: 6;
-    animation: modal_call 1s; }
+    z-index: 6; }
+    .wrap .modal-wrap .modal_call {
+      display: none;
+      width: 800px;
+      height: 500px;
+      border-radius: 11px;
+      background-color: #F0F0FF;
+      position: relative;
+      animation: modal_call 1s; }
 @keyframes modal_call {
   from {
     opacity: 0.5;

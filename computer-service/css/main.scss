@@ -40,19 +40,22 @@ li {
 
 .wrap {
     position: relative;
-    .modal_call {
-        display: none;
-        width: 800px;
-        height: 500px;
-        border-radius: 11px;
-        background-color: $fone-cat;
+    .modal-wrap {
         position: absolute;
         left: 200px;
         top: 50px;
         left: 550px;
         top: 192px;
         z-index: 6;
-        animation: modal_call 1s;
+        .modal_call {
+            display: none;
+            width: 800px;
+            height: 500px;
+            border-radius: 11px;
+            background-color: $fone-cat;
+            position: relative;
+            animation: modal_call 1s;
+    }
     }
     @keyframes modal_call {
         from {
