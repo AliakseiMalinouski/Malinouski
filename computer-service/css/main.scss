@@ -14,6 +14,7 @@ $darkblue: #001569;
 $white: #FFF;
 $black: #000000;
 $fone-cat: #F0F0FF;
+$banner4: #E3E1FF;
 $reg: 400;
 $medium: 500;
 $bold: 600;
@@ -985,6 +986,8 @@ li {
 .banners {
     padding-top: 129px;
     .container {
+        display: flex;
+        justify-content: space-between;
         div:nth-child(1) {
             position: relative;
             background-color: $fone-cat;
@@ -1036,6 +1039,79 @@ li {
                 position: absolute;
                 top: 254px;
                 left: 346px;
+            }
+            a:hover {
+                animation: link 2s ease-in-out 0s normal none infinite running;
+            }
+            @keyframes link {
+            0%,
+                50%,
+                100% {
+                    transform: rotate(0deg);
+                }
+            
+                10%,
+                30% {
+                    transform: rotate(-5deg);
+                }
+            
+                20%,
+                40% {
+                    transform: rotate(5deg);
+                }
+        }
+        }
+        div:nth-child(2) {
+            position: relative;
+            background-color: $banner4;
+            padding: 0.1px;
+            padding-top: 84px;
+            padding-bottom: 77px;
+            padding-right: 36px;
+            width: 690px;
+            height: 402px;
+            img:nth-child(1) {
+                position: absolute;
+                top: 27px;
+                left: 20px;
+            }
+            img:nth-child(2) {
+                position: absolute;
+                top: 111px;
+            }
+            p:nth-child(3) {
+                margin-left: 416px;
+                color: $gray;
+                line-height: 29.28px;
+                font-weight: $medium;
+                font-size: $fz24;
+                width: 226px;
+                height: 50px;
+                margin-bottom: 18px;
+            }
+            p:nth-child(4) {
+                margin-left: 416px;
+                color: $gray;
+                font-size: $fz18;
+                font-weight: $reg;
+                line-height: 21.33px;
+                width: 256px;
+                height: 84px;
+            }
+            a {
+                position: absolute;
+                left: 389px;
+                top: 254px;
+                width: 268px;
+                height: 69px;
+                background-color: $orange;
+                padding-left: 64px;
+                padding-top: 24px;
+                text-transform: uppercase;
+                color: $white;
+                font-weight: $extra-bold;
+                font-size: $fz18;
+                line-height: 21.33px;
             }
             a:hover {
                 animation: link 2s ease-in-out 0s normal none infinite running;
