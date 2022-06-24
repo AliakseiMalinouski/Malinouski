@@ -31,15 +31,61 @@ li {
       display: none;
       width: 800px;
       height: 500px;
+      padding: 0.1px;
       border-radius: 11px;
       background-color: #E3E1FF;
       position: relative;
-      animation: modal_call 1s; }
+      animation: modal_call 1s;
+      padding-top: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px; }
       .wrap .modal-wrap .modal_call img {
         position: absolute;
         top: 15px;
         right: 15px;
         cursor: pointer; }
+      .wrap .modal-wrap .modal_call p {
+        font-size: 24px;
+        color: #4A4D4A;
+        font-weight: 500;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 30px; }
+      .wrap .modal-wrap .modal_call form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 200px;
+        align-items: center; }
+        .wrap .modal-wrap .modal_call form input:nth-child(2) {
+          display: block;
+          width: 300px;
+          height: 50px;
+          background-color: #FFF;
+          border: 1px solid #FFF;
+          border-radius: 11px;
+          padding-left: 25px; }
+        .wrap .modal-wrap .modal_call form input:nth-child(1) {
+          width: 300px;
+          height: 50px;
+          background-color: #FFF;
+          border: 1px solid #FFF;
+          border-radius: 11px;
+          padding-left: 25px;
+          display: block; }
+        .wrap .modal-wrap .modal_call form button {
+          width: 300px;
+          height: 50px;
+          background-color: #FFAF37;
+          border: 1px solid #FFAF37;
+          color: #FFF;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding-left: 10px;
+          font-weight: 700;
+          cursor: pointer; }
 @keyframes modal_call {
   from {
     opacity: 0.5;
