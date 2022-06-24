@@ -112,6 +112,15 @@ li {
                 cursor: pointer;
             }
             }
+            .modal-thanks {
+                display: none;
+                position: absolute;
+                width: 450px;
+                height: 220px;
+                background-color: $white;
+                top: 210px;
+                left: 170px;
+            }
     }
     }
     @keyframes modal_call {
