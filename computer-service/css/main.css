@@ -1080,15 +1080,75 @@ li {
         justify-content: space-between; }
         .wrap .accessories .container .block1 div {
           width: 330px;
-          height: 248px;
-          background-color: red; }
+          height: 248px; }
+        .wrap .accessories .container .block1 div:hover {
+          transform: scale(1.005);
+          transition: 1.2s; }
+        .wrap .accessories .container .block1 div:nth-child(1) {
+          background-color: #F0F0FF;
+          padding: 0.1px;
+          padding-left: 51px;
+          padding-top: 81px; }
+          .wrap .accessories .container .block1 div:nth-child(1) p {
+            color: #4A4D4A;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 37.03px;
+            padding: 0.1px; }
+            .wrap .accessories .container .block1 div:nth-child(1) p span {
+              margin-left: 70px; }
+        .wrap .accessories .container .block1 div:nth-child(2) {
+          position: relative;
+          background-color: #FFF; }
+          .wrap .accessories .container .block1 div:nth-child(2) img {
+            position: absolute;
+            top: 18px;
+            left: 84px; }
+        .wrap .accessories .container .block1 div:nth-child(3) {
+          position: relative;
+          background-color: #FFF; }
+          .wrap .accessories .container .block1 div:nth-child(3) img {
+            position: absolute;
+            left: 84px;
+            top: 18px; }
+        .wrap .accessories .container .block1 div:nth-child(4) {
+          background-color: #FFF;
+          position: relative; }
+          .wrap .accessories .container .block1 div:nth-child(4) img {
+            position: absolute;
+            top: 18px;
+            left: 84px; }
       .wrap .accessories .container .block2 {
         width: 100%;
         height: 248px;
+        display: flex;
+        justify-content: space-between;
         background-color: lightcyan; }
+        .wrap .accessories .container .block2 div {
+          background-color: blue;
+          width: 330px;
+          height: 248px; }
+        .wrap .accessories .container .block2 div:nth-child(1) {
+          position: relative;
+          background-color: #FFF; }
+          .wrap .accessories .container .block2 div:nth-child(1) img:nth-child(1) {
+            position: absolute;
+            top: 18px;
+            left: 84px; }
+          .wrap .accessories .container .block2 div:nth-child(1) img:nth-child(2) {
+            position: absolute;
+            top: 205px;
+            right: 43px;
+            cursor: pointer; }
       .wrap .accessories .container .block3 {
         width: 100%;
         height: 248px;
+        display: flex;
+        justify-content: space-between;
         background-color: lightskyblue; }
+        .wrap .accessories .container .block3 div {
+          width: 330px;
+          height: 248px;
+          background-color: lightgreen; }
 
 /*# sourceMappingURL=main.css.map */
