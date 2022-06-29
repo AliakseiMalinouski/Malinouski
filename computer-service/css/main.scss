@@ -1353,6 +1353,19 @@ li {
             div {
                 width: 330px;
                 height: 248px;
+                background-color: $white;
+                position: relative;
+                 img:nth-child(1) {
+                    position: absolute;
+                    top: 18px;
+                    left: 84px;
+                }
+                img:nth-child(2) {
+                    position: absolute;
+                    top: 205px;
+                    right: 43px;
+                    cursor: pointer;
+                }
             }
             div:hover {
                 transform: scale(1.005);
@@ -1374,33 +1387,7 @@ li {
                     }
                 }
             }
-            div:nth-child(2) {
-                position: relative;
-                background-color: $white;
-                img {
-                    position: absolute;
-                    top: 18px;
-                    left: 84px;
-                }
-            }
-            div:nth-child(3) {
-                position: relative;
-                background-color: $white;
-                img {
-                    position: absolute;
-                    left: 84px;
-                    top: 18px;
-                }
-            }
-            div:nth-child(4) {
-                background-color: $white;
-                position: relative;
-                img {
-                    position: absolute;
-                    top: 18px;
-                    left: 84px;
-                }
-            }
+          
         }
         .block2 {
             width: 100%;
@@ -1409,13 +1396,10 @@ li {
             justify-content: space-between;
             background-color: lightcyan;
             div{
-                background-color: blue;
                 width: 330px;
                 height: 248px;
-            }
-            div:nth-child(1) {
-                position: relative;
                 background-color: $white;
+                position: relative;
                 img:nth-child(1) {
                     position: absolute;
                     top: 18px;
@@ -1428,6 +1412,10 @@ li {
                     cursor: pointer;
                 }
             }
+             div:hover {
+                transform: scale(1.005);
+                transition: 1.2s;
+            }
         }
         .block3 {
             width: 100%;
@@ -1436,10 +1424,28 @@ li {
             justify-content: space-between;
             background-color: lightskyblue;
             div {
-                width: 330px;
-                height: 248px;
-                background-color: lightgreen;
-            }
+                    width: 330px;
+                    height: 248px;
+                    background-color: $white;
+                    position: relative;
+            
+                    img:nth-child(1) {
+                        position: absolute;
+                        top: 18px;
+                        left: 84px;
+                    }
+            
+                    img:nth-child(2) {
+                        position: absolute;
+                        top: 205px;
+                        right: 43px;
+                        cursor: pointer;
+                    }
+                }           
+                div:hover {
+                    transform: scale(1.005);
+                    transition: 1.2s;
+                }
         }
     }
 }

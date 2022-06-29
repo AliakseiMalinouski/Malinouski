@@ -1080,7 +1080,18 @@ li {
         justify-content: space-between; }
         .wrap .accessories .container .block1 div {
           width: 330px;
-          height: 248px; }
+          height: 248px;
+          background-color: #FFF;
+          position: relative; }
+          .wrap .accessories .container .block1 div img:nth-child(1) {
+            position: absolute;
+            top: 18px;
+            left: 84px; }
+          .wrap .accessories .container .block1 div img:nth-child(2) {
+            position: absolute;
+            top: 205px;
+            right: 43px;
+            cursor: pointer; }
         .wrap .accessories .container .block1 div:hover {
           transform: scale(1.005);
           transition: 1.2s; }
@@ -1097,27 +1108,6 @@ li {
             padding: 0.1px; }
             .wrap .accessories .container .block1 div:nth-child(1) p span {
               margin-left: 70px; }
-        .wrap .accessories .container .block1 div:nth-child(2) {
-          position: relative;
-          background-color: #FFF; }
-          .wrap .accessories .container .block1 div:nth-child(2) img {
-            position: absolute;
-            top: 18px;
-            left: 84px; }
-        .wrap .accessories .container .block1 div:nth-child(3) {
-          position: relative;
-          background-color: #FFF; }
-          .wrap .accessories .container .block1 div:nth-child(3) img {
-            position: absolute;
-            left: 84px;
-            top: 18px; }
-        .wrap .accessories .container .block1 div:nth-child(4) {
-          background-color: #FFF;
-          position: relative; }
-          .wrap .accessories .container .block1 div:nth-child(4) img {
-            position: absolute;
-            top: 18px;
-            left: 84px; }
       .wrap .accessories .container .block2 {
         width: 100%;
         height: 248px;
@@ -1125,21 +1115,22 @@ li {
         justify-content: space-between;
         background-color: lightcyan; }
         .wrap .accessories .container .block2 div {
-          background-color: blue;
           width: 330px;
-          height: 248px; }
-        .wrap .accessories .container .block2 div:nth-child(1) {
-          position: relative;
-          background-color: #FFF; }
-          .wrap .accessories .container .block2 div:nth-child(1) img:nth-child(1) {
+          height: 248px;
+          background-color: #FFF;
+          position: relative; }
+          .wrap .accessories .container .block2 div img:nth-child(1) {
             position: absolute;
             top: 18px;
             left: 84px; }
-          .wrap .accessories .container .block2 div:nth-child(1) img:nth-child(2) {
+          .wrap .accessories .container .block2 div img:nth-child(2) {
             position: absolute;
             top: 205px;
             right: 43px;
             cursor: pointer; }
+        .wrap .accessories .container .block2 div:hover {
+          transform: scale(1.005);
+          transition: 1.2s; }
       .wrap .accessories .container .block3 {
         width: 100%;
         height: 248px;
@@ -1149,6 +1140,19 @@ li {
         .wrap .accessories .container .block3 div {
           width: 330px;
           height: 248px;
-          background-color: lightgreen; }
+          background-color: #FFF;
+          position: relative; }
+          .wrap .accessories .container .block3 div img:nth-child(1) {
+            position: absolute;
+            top: 18px;
+            left: 84px; }
+          .wrap .accessories .container .block3 div img:nth-child(2) {
+            position: absolute;
+            top: 205px;
+            right: 43px;
+            cursor: pointer; }
+        .wrap .accessories .container .block3 div:hover {
+          transform: scale(1.005);
+          transition: 1.2s; }
 
 /*# sourceMappingURL=main.css.map */
