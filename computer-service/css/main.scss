@@ -1446,6 +1446,43 @@ li {
                     transform: scale(1.005);
                     transition: 1.2s;
                 }
+                div:last-child {
+                    padding: 0.1px;
+                    padding-left: 24px;
+                    padding-top: 89px;
+                    a {
+                        display: block;
+                        width: 283px;
+                        height: 70px;
+                        background-color: $orange;
+                        color: $white;
+                        font-size: $fz14;
+                        font-weight: $medium;
+                        line-height: 17.08px;
+                        padding-top: 26px;
+                        padding-left: 35px;
+                    }
+                    a:hover {
+                        animation: link-block3 2s;
+                    }
+                    @keyframes link-block3{
+            0%,
+                50%,
+                100% {
+                    transform: rotate(0deg);
+                }
+            
+                10%,
+                30% {
+                    transform: rotate(-5deg);
+                }
+            
+                20%,
+                40% {
+                    transform: rotate(5deg);
+                }
+        }
+                }
         }
     }
 }
