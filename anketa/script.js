@@ -40,9 +40,19 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
                 pension = 'Да';
             }
         }
+        if (gender == 'Мужской') {
+            if (age < 65) {
+                pension = 'Нет';
+            }
+        }
         if (gender == 'Женский') {
             if (age > 55) {
                 pension = 'Да';
+            }
+        }
+        if (gender == 'Женский') {
+            if (age < 55) {
+                pension = 'Нет';
             }
         }
 }
@@ -51,15 +61,3 @@ else {
 }
 let code = 'Код появится после закрытия окна';
 alert(`Ваше ФИО: ${lastname} ${firstname} ${patronymic}; \n\n Ваш возраст в годах: ${age}; \n\n Ваш возраст в днях: ${ageinday}; \n\n Через пять лет вам будет: ${through}; \n\n Ваш пол: ${gender}; \n\n Вы на пенсии: ${pension}; \n\n ${code};`);
-// if (gender) {
-//             gender = 'Мужской';
-//         }
-//         else {
-//             gender = 'Женский';
-//         }
-//         if (age > 65) {
-//             pension = 'Да';
-//         }
-//         else {
-//             pension = 'Нет';
-//         }
