@@ -30,13 +30,21 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
         through = parseInt(age) + 5;
         gender = confirm('Вы мужчина?');
         if(gender) {
-            gender = "Мужской";
+            gender = 'Мужской';
         }
         else {
-            gender = "Женский";
+            gender = 'Женский';
         }
-        
-    
+        if (gender == 'Мужской') {
+            if (age > 65) {
+                pension = 'Да';
+            }
+        }
+        if (gender == 'Женский') {
+            if (age > 55) {
+                pension = 'Да';
+            }
+        }
 }
 else {
     alert('К сожалению, Вы отказались.')
