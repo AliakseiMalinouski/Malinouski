@@ -17,10 +17,12 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
     do {
         patronymic = prompt('Ваше отчество:');
     } while (!patronymic);
-    age = prompt('Ваш возраст в годах:');
-    if (age.replace(/\d/g, '').length) {
+    do {
+        age = prompt('Ваш возраст в годах:');
+        if (age.replace(/\d/g, '').length) {
         age = prompt('Вы ввели не числовое значение. Повторите попытку. Ваш возраст в годах:')
     }
+    } while (!age)
         ageinday = age * 365;
         through = parseInt(age) + 5;
         gender = confirm('Вы мужчина?');
@@ -29,14 +31,8 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
         }
         else {
             gender = 'Женский';
-    }
-        if ((age > 65) && (gender = 'Мужской')) {
-            pension = 'Да';
         }
-        else {
-            pension = 'Нет';
-        }
-        if ((age > 60) && (age < 65) && (gender = 'Женский')) {
+        if (age > 65) {
             pension = 'Да';
         }
         else {
@@ -46,4 +42,5 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
 else {
     alert('К сожалению, Вы отказались.')
 }
-alert(`Ваше ФИО: ${lastname} ${firstname} ${patronymic}; \n\n Ваш возраст в годах: ${age} \n\n Ваш возраст в днях: ${ageinday} \n\n Через пять лет вам будет: ${through} \n\n Ваш пол: ${gender} \n\n Вы на пенсии: ${pension}`);
+let code = 'Код появится после закрытия окна';
+alert(`Ваше ФИО: ${lastname} ${firstname} ${patronymic}; \n\n Ваш возраст в годах: ${age}; \n\n Ваш возраст в днях: ${ageinday}; \n\n Через пять лет вам будет: ${through}; \n\n Ваш пол: ${gender}; \n\n Вы на пенсии: ${pension}; \n\n ${code};`);
