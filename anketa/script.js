@@ -18,29 +18,40 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
         patronymic = prompt('Ваше отчество:');
     } while (!patronymic);
     do {
-        age = prompt('Ваш возраст в годах:');
+        do {
+            age = prompt('Ваш возраст в годах:');
+        } while(!age)
+       
         if (age.replace(/\d/g, '').length) {
-        age = prompt('Вы ввели не числовое значение. Повторите попытку. Ваш возраст в годах:')
+        age = prompt('Вы ввели не числовое значение. Повторите попытку. Ваш возраст в годах:');
     }
     } while (!age)
         ageinday = age * 365;
         through = parseInt(age) + 5;
         gender = confirm('Вы мужчина?');
-        if (gender) {
-            gender = 'Мужской';
+        if(gender) {
+            gender = "Мужской";
         }
         else {
-            gender = 'Женский';
+            gender = "Женский";
         }
-        if (age > 65) {
-            pension = 'Да';
-        }
-        else {
-            pension = 'Нет';
-        }
+        
+    
 }
 else {
     alert('К сожалению, Вы отказались.')
 }
 let code = 'Код появится после закрытия окна';
 alert(`Ваше ФИО: ${lastname} ${firstname} ${patronymic}; \n\n Ваш возраст в годах: ${age}; \n\n Ваш возраст в днях: ${ageinday}; \n\n Через пять лет вам будет: ${through}; \n\n Ваш пол: ${gender}; \n\n Вы на пенсии: ${pension}; \n\n ${code};`);
+// if (gender) {
+//             gender = 'Мужской';
+//         }
+//         else {
+//             gender = 'Женский';
+//         }
+//         if (age > 65) {
+//             pension = 'Да';
+//         }
+//         else {
+//             pension = 'Нет';
+//         }
