@@ -5,6 +5,7 @@ let patronymic;
 let age;
 let ageinday;
 let through;
+let genderChoice;
 let gender;
 let pension;
 if (confirm('Предлагаем Вам заполнить анкету. Если Вы согласны, нажмите "Да"(Каждое поле обязательное), в случае отказа нажмите "Нет"')) {
@@ -34,8 +35,8 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
     } while (!age)
         ageinday = age * 365;
         through = parseInt(age) + 5;
-        gender = confirm('Вы мужчина?');
-        if(gender) {
+        genderChoice = confirm('Вы мужчина?');
+        if(genderChoice == true) {
             gender = 'Мужской';
         }
         else {
