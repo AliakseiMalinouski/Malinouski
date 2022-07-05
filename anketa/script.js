@@ -7,6 +7,10 @@ let ageinday;
 let through;
 let genderChoice;
 let gender;
+let male = 'Мужской';
+let female = 'Женский';
+let retired = 'Да';
+let notRetired = 'Нет';
 let pension;
 if (confirm('Предлагаем Вам заполнить анкету. Если Вы согласны, нажмите "Да"(Каждое поле обязательное), в случае отказа нажмите "Нет"')) {
     do {
@@ -37,29 +41,29 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
         through = parseInt(age) + 5;
         genderChoice = confirm('Вы мужчина?');
         if(genderChoice == true) {
-            gender = 'Мужской';
+            gender = male;
         }
         else {
-            gender = 'Женский';
+            gender = female;
         }
-        if (gender == 'Мужской') {
+        if (gender == male) {
             if (age > 65) {
-                pension = 'Да';
+                pension = retired;
             }
         }
-        if (gender == 'Мужской') {
+        if (gender == male) {
             if (age < 65) {
-                pension = 'Нет';
+                pension = notRetired;
             }
         }
-        if (gender == 'Женский') {
+        if (gender == female) {
             if (age > 55) {
-                pension = 'Да';
+                pension = retired;
             }
         }
-        if (gender == 'Женский') {
+        if (gender == female) {
             if (age < 55) {
-                pension = 'Нет';
+                pension = notRetired;
             }
         }
 }
