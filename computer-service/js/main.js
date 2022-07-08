@@ -52,6 +52,7 @@ document.querySelector('.close-menu-catalog').addEventListener('click', function
 let call = document.querySelector('.call');
 document.querySelector('.call').addEventListener('click', function ($) {
     document.querySelector('.modal_call').style.display = 'block';
+    document.getElementById('body').style.overflowY = 'hidden';
     document.querySelector('.header').style.backgroundColor = 'rgba(0,0,0,.7)';
     document.querySelector('.header').style.filter = 'blur(5px)';
     document.querySelector('.categories').style.backgroundColor = 'rgba(0,0,0,.7)';
@@ -64,10 +65,13 @@ document.querySelector('.call').addEventListener('click', function ($) {
     document.querySelector('.banners').style.filter = 'blur(5px)';
     document.querySelector('.partners').style.backgroundColor = 'rgba(0,0,0,.7)';
     document.querySelector('.partners').style.filter = 'blur(5px)';
+    document.querySelector('.accessories').style.backgroundColor = 'rgba(0,0,0,.7)';
+    document.querySelector('.accessories').style.filter = 'blur(5px)';
 });
 let crossClose = document.querySelector('.cross-close');
 document.querySelector('.cross-close').addEventListener('click', function ($) {
     document.querySelector('.modal_call').style.display = 'none';
+    document.getElementById('body').style.overflowY = '';
     document.querySelector('.header').style.backgroundColor = '';
     document.querySelector('.header').style.filter = '';
     document.querySelector('.categories').style.backgroundColor = '';
@@ -80,6 +84,8 @@ document.querySelector('.cross-close').addEventListener('click', function ($) {
     document.querySelector('.banners').style.filter = '';
     document.querySelector('.partners').style.backgroundColor = '';
     document.querySelector('.partners').style.filter = '';
+    document.querySelector('.accessories').style.backgroundColor = '';
+    document.querySelector('.accessories').style.filter = '';
 });
 
 
