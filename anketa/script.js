@@ -25,7 +25,8 @@ if (confirm('Предлагаем Вам заполнить анкету. Есл
     do {
         do {
             age = prompt('Ваш возраст в годах:');
-        } while(!age)
+            age == Number(age);
+        } while (!age)
         if (age.replace(/\d/g, '').length) {
             do {
             age = prompt('Вы ввели не числовое значение. Повторите попытку. Ваш возраст в годах:');
