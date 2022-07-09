@@ -1,14 +1,20 @@
 "use strict"
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-function treeSum(arr) {
-    if (arr.length == 0) {
-        return 0;
+let arr =  [ 5, 7, 
+        [ 4, [2], 8, [1,3], 2 ], 
+        [ 9, [] ], 
+        1, 8
+      ]
+let sum = 0;
+arr = arr.flat(Infinity);
+function test() {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr.length == 0) {
+            return 0;
+        }
+        sum += arr[i];
     }
-    return arr[0] + treeSum(arr.slice(1));
+    return sum;
 }
-console.log(treeSum(arr));
-
-
+console.log(test())
 
