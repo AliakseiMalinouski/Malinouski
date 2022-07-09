@@ -7,7 +7,7 @@ let arr =  [ 5, 7,
       ]
 let sum = 0;
 arr = arr.flat(Infinity);
-function test() {
+function treeSum() {
     for (let i = 0; i < arr.length; i++) {
         if (arr.length == 0) {
             return 0;
@@ -16,5 +16,5 @@ function test() {
     }
     return sum;
 }
-console.log(test())
+console.log(treeSum())
 
