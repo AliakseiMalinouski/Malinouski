@@ -8,7 +8,6 @@ function findLetter() {
         for (let n = 0; n < arr.length; n++) {
             if (message[i] === arr[n]) {
                 count++;
-                break;
             }
         }
     }
