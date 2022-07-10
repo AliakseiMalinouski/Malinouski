@@ -20,16 +20,6 @@ do {
 let ageinday = age * 365;
 let through = age + 5;
 let genderChoice = confirm('Вы мужчина?');
-// if (genderChoice === true) {
-//     gender = 'Мужской';
-// }
-// if (genderChoice === false) {
-//     gender = 'Женский';
-// }
-// // let pension = gender ?
-// //     ((age > 65) ? 'Да' : 'Нет') : ((age > 60) ? 'Да' : 'Нет');
-// let retirement = gender ? 65 : 60;
-// let pension = (age > retirement) ? 'Да' : 'Нет';
 let gender = genderChoice ? 'м' : 'ж'; 
 let pension = genderChoice ? ((age > 65) ? 'Да' : 'Нет') : ((age > 60) ? 'Да' : 'Нет');
 alert(
