@@ -19,8 +19,9 @@ do {
 } while (isNaN(age) || ageStr === '');
 let ageinday = age * 365;
 let through = age + 5;
-let gender = confirm('Вы мужчина?');
-if (gender === true) {
+let genderChoice = confirm('Вы мужчина?');
+let gender;
+if (genderChoice === true) {
     gender = 'Мужской';
 }
 else {
