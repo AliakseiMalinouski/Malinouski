@@ -1178,5 +1178,67 @@ li {
   20%,
                 40% {
     transform: rotate(5deg); } }
+  .wrap .banner2 {
+    padding-top: 100px; }
+    .wrap .banner2 .container {
+      display: flex;
+      justify-content: space-between; }
+      .wrap .banner2 .container div:nth-child(1) {
+        width: 690px;
+        height: 402px;
+        background-color: #F0F0FF;
+        position: relative;
+        padding-top: 97px;
+        padding-bottom: 78px;
+        padding-left: 136px; }
+        .wrap .banner2 .container div:nth-child(1) img {
+          position: absolute;
+          top: 32px;
+          left: 15px; }
+        .wrap .banner2 .container div:nth-child(1) p:nth-child(2) {
+          width: 520px;
+          height: 84px;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 29.28px;
+          color: #4A4D4A; }
+        .wrap .banner2 .container div:nth-child(1) p:nth-child(3) {
+          width: 464px;
+          height: 62px;
+          font-size: 18px;
+          font-weight: 400;
+          color: #4A4D4A;
+          line-height: 21.33px;
+          margin-left: 30px; }
+        .wrap .banner2 .container div:nth-child(1) button {
+          width: 348px;
+          height: 65px;
+          background-color: #FFAF37;
+          border: none;
+          cursor: pointer;
+          text-transform: uppercase;
+          color: #FFF;
+          font-weight: 700; }
+        .wrap .banner2 .container div:nth-child(1) button:hover {
+          animation: banner4 1s linear; }
+@keyframes banner4 {
+  0%, 30% {
+    transform: rotate(0deg); }
+  40%, 50% {
+    transform: rotate(-5deg); }
+  60%,70% {
+    transform: rotate(5deg); }
+  90%,100% {
+    transform: rotate(0deg); } }
+      .wrap .banner2 .container div:nth-child(2) {
+        width: 690px;
+        height: 402px;
+        background-color: #E3E1FF;
+        padding-top: 97px;
+        padding-bottom: 78px; }
+        .wrap .banner2 .container div:nth-child(2) img {
+          position: absolute;
+          top: 32px;
+          left: 15px; }
 
 /*# sourceMappingURL=main.css.map */
