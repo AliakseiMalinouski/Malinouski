@@ -87,6 +87,10 @@ document.querySelector('.cross-close').addEventListener('click', function ($) {
     document.querySelector('.accessories').style.backgroundColor = '';
     document.querySelector('.accessories').style.filter = '';
 });
+let consumables = document.getElementById('consumables');
+document.querySelector('.consumables_click').addEventListener('click', function ($) {
+    consumables.classList.add('active');
+});
 
 
 

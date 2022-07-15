@@ -381,6 +381,11 @@ li {
               top: 2.5px;
               right: 15px;
               cursor: pointer; }
+            .wrap .catalog_slider .container .catalog .catalog_menu div .consumables_click {
+              position: absolute;
+              top: 2.5px;
+              right: 15px;
+              cursor: pointer; }
 @keyframes catalog {
   from {
     opacity: 0.5;
@@ -389,6 +394,45 @@ li {
   to {
     opacity: 1;
     transform: none; } }
+      .wrap .catalog_slider .container .active {
+        display: block; }
+      .wrap .catalog_slider .container .disable {
+        display: none; }
+      .wrap .catalog_slider .container .consumables {
+        display: none;
+        position: absolute;
+        width: 928px;
+        height: 539px;
+        background-color: #F0F0FF;
+        z-index: 6;
+        left: 485px;
+        background-image: url(../img/hp-cartg.png);
+        background-position: 5% 15%;
+        background-repeat: no-repeat;
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        border-radius: 10px;
+        padding-left: 23px;
+        padding-bottom: 29px;
+        animation: consumables 0.5s linear; }
+        .wrap .catalog_slider .container .consumables .wrap_consumables {
+          width: 100%;
+          height: 100%;
+          position: relative; }
+          .wrap .catalog_slider .container .consumables .wrap_consumables img:nth-child(1) {
+            position: absolute;
+            left: 375px;
+            top: 23px; }
+          .wrap .catalog_slider .container .consumables .wrap_consumables img:nth-child(2) {
+            position: absolute;
+            left: 375px;
+            top: 71px; }
+@keyframes consumables {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1.05); } }
       .wrap .catalog_slider .container .description {
         width: 922px;
         height: 742px;
