@@ -45,5 +45,5 @@ function vowelsReduce() {
     }, 0);
     return fun;
 }
-console.log('Количество гласных в третеьй строке:');
+console.log('Количество гласных в третьей строке:');
 console.log(vowelsReduce());
