@@ -16,7 +16,7 @@ function mood(colorsCount) {
             blue: 'голубой',
             sky: 'синий',
             purple: 'фиолетовый'};
-            var n=randomDiap(1,7);
+            var n=randomDiap(1, colors.length - 1);
             var colorName = colors[n];
             var colorName = colors.splice(n, 1)[0];
             console.log( colorName );
