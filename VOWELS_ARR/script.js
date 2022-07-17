@@ -21,7 +21,7 @@ function vowelsFilter() {
     let cnt = 0;
     let array = ['а', 'е', 'и', 'у', 'ы', 'ё', 'я', 'э', 'ю', 'о', 'A', 'И', 'Е', 'У', 'Ы', 'Ё', 'О', 'Э', 'Ю', 'Я'];
     array.filter(function (element) {
-        let message3 = message2.toLocaleLowerCase();
+        let message3 = message2.toLowerCase();
         if (message3.includes(element)) {
             cnt++;
         }
