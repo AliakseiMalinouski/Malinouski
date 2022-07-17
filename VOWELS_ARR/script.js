@@ -37,13 +37,12 @@ let message4 = prompt('Введите третью строку:');
 let message4L = message4.toLowerCase();
 let ar = ['а', 'е', 'и', 'у', 'ы', 'ё', 'я', 'ю', 'о', 'A', 'И', 'Е', 'У', 'Ы', 'Ё', 'О', 'Ю', 'Я'];
 let sumVowels = ar.reduce(function (prev, item, index, array) {
-    let cn = 0;
     for (let i = 0; i < message4L.length; i++) {
         if (ar[item] === message4L[i]) {
-            cn++;
+            prev++;
         }
     }
-    return cn;
+    return prev;
 }, 0);
 console.log('Количество гласных в третьей строке:');
 console.log(sumVowels);
