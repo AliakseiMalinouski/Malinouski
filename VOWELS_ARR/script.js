@@ -45,4 +45,5 @@ let sumVowels = ar.reduce(function (prev, item, index, array) {
     }
     return cn;
 }, 0);
+console.log('Количество гласных в третьей строке:');
 console.log(sumVowels);
