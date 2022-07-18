@@ -1,6 +1,6 @@
 'use strict'
 
-let text = prompt('Введите строку:')
+let text = prompt('Введите строку:');
  function vowelsForEach(text) {
     let letters = "аоиеёэыуюяAОИЕЁЭЫУЮЯ";
     let count = 0;
@@ -22,7 +22,7 @@ console.log('----------------------------------------------');
 
 function vowelsReduce(text) {
     let letters = "аоиеёэыуюяAОИЕЁЭЫУЮЯ";
-    let cn = [...text].reduce((a, b) => letters.includes(b) ? a + 1 : a, 0);
+    let cn = [...text].reduce((prev, item) => letters.includes(item) ? prev + 1 : prev, 0);
     return cn;
 }
 console.log('Количество гласных в строке методом "Reduce":');
