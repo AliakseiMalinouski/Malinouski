@@ -1,49 +1,29 @@
 'use strict'
-let message = prompt('Введите первую строку:')
-function vowelsForEach() {
+
+let text = prompt('Введите строку:')
+ function vowelsForEach(text) {
+    let letters = "аоиеёэыуюяAОИЕЁЭЫУЮЯ";
     let count = 0;
-    let arr = ['а', 'е', 'и', 'у', 'ы', 'ё', 'я', 'э', 'ю', 'о', 'A', 'И', 'Е', 'У', 'Ы', 'Ё', 'О', 'Э', 'Ю', 'Я'];
-    arr.forEach(function (elem) {
-        let message1 = message.toLowerCase();
-        if (message1.includes(elem)) {
-            count++;
-       } 
-    });
+    [...text].forEach(elem => letters.includes(elem) ? count++ : 'Ничего не найдено');
     return count;
 }
-console.log('Количество гласных в первой строке:');
-console.log(vowelsForEach());
+console.log('Количество гласных в строке методом "forEach":');
+console.log(vowelsForEach(text));
+console.log('----------------------------------------------');
 
-console.log('----------------------------------');
-
-let message2 = prompt('Введите вторую строку:');
-function vowelsFilter() {
-    let cnt = 0;
-    let array = ['а', 'е', 'и', 'у', 'ы', 'ё', 'я', 'э', 'ю', 'о', 'A', 'И', 'Е', 'У', 'Ы', 'Ё', 'О', 'Э', 'Ю', 'Я'];
-    array.filter(function (element) {
-        let message3 = message2.toLowerCase();
-        if (message3.includes(element)) {
-            cnt++;
-        }
-    });
+function vowelsFilter(text) {
+    let letters = "аоиеёэыуюяAОИЕЁЭЫУЮЯ";
+    let cnt = [...text].filter((element) => letters.includes(element)).length;
     return cnt;
 }
-console.log('Количество гласных во второй строке:');
-console.log(vowelsFilter());
+console.log('Количество гласных в строке методом "Filter":');
+console.log(vowelsFilter(text));
+console.log('----------------------------------------------');
 
-console.log('----------------------------------');
-
-let message4 = prompt('Введите третью строку:');
-let message4L = message4.toLowerCase();
-function vowelsReduce() {
-    let ar = ['а', 'е', 'и', 'у', 'ы', 'ё', 'я', 'ю', 'э', 'о', 'A', 'И', 'Е', 'У', 'Ы', 'Ё', 'О', 'Ю', 'Э', 'Я'];
-    let fun = ar.reduce(function (prev, item) {
-        if (message4L.includes(item)) {
-            prev++;
-        }
-        return prev;
-    }, 0);
-    return fun;
+function vowelsReduce(text) {
+    let letters = "аоиеёэыуюяAОИЕЁЭЫУЮЯ";
+    let cn = [...text].reduce((a, b) => letters.includes(b) ? a + 1 : a, 0);
+    return cn;
 }
-console.log('Количество гласных в третьей строке:');
-console.log(vowelsReduce());
+console.log('Количество гласных в строке методом "Reduce":');
+console.log(vowelsReduce(text));
