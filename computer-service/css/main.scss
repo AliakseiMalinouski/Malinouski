@@ -528,12 +528,6 @@ li {
                 }
              }
         }
-        .active {
-            display: block;
-        }
-        .disable {
-            display: none;
-        }
         .consumables {
             display: none;
             position: absolute;
@@ -566,6 +560,12 @@ li {
                     left: 375px;
                     top: 71px;
                 }
+                img:nth-child(3) {
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                    cursor: pointer;
+                }
             }
         }
         @keyframes consumables {
@@ -581,6 +581,7 @@ li {
             height: 742px;
             padding: 0.1px;
             position: relative;
+            animation: des 0.9s linear;
             .about {
                 padding: 0.1px;
                 margin-bottom: 20px;
@@ -839,6 +840,14 @@ li {
             }
             .active {
                 background-color: $orange;
+            }
+        }
+        @keyframes des {
+            from {
+                left: 500px;
+            }
+            to {
+                left: 0px;
             }
         }
     }

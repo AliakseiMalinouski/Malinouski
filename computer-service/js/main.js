@@ -87,10 +87,15 @@ document.querySelector('.cross-close').addEventListener('click', function ($) {
     document.querySelector('.accessories').style.backgroundColor = '';
     document.querySelector('.accessories').style.filter = '';
 });
-let consumables = document.getElementById('consumables');
 document.querySelector('.consumables_click').addEventListener('click', function ($) {
-    consumables.classList.add('active');
+    document.getElementById('consumables').style.display = 'block';
+    document.getElementById('description').style.display = 'none';
 });
+document.querySelector('.close-consumables-block').addEventListener('click', function ($) {
+    document.getElementById('consumables').style.display = 'none';
+    document.getElementById('description').style.display = 'block';
+});
+
 
 
 
