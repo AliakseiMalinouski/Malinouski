@@ -1,7 +1,7 @@
 "use strict"
 
 function squareRoots(a, b, c) {
-        if (a == 0) {
+        if (a === 0) {
             const x1 = (-c / b);  // исправление тут
             return [x1];
         }
