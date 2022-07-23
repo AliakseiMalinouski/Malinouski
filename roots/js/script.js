@@ -1,11 +1,11 @@
 "use strict"
 
- function squareRoots(a,b,c) {
-        const d=b*b-4*a*c; // дискриминант
+function squareRoots(a, b, c) {
         if (a == 0) {
             const x1 = (-c / b);  // исправление тут
             return [x1];
         }
+        const d=b*b-4*a*c; // дискриминант
         if ( d<0 )
             return []; // нет корней
 
