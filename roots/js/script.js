@@ -3,7 +3,7 @@
  function squareRoots(a,b,c) {
         const d=b*b-4*a*c; // дискриминант
         if (a == 0) {
-            const x1 = (-c / b);
+            const x1 = (-c / b);  // исправление тут
             return [x1];
         }
         if ( d<0 )
