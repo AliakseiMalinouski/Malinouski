@@ -16,6 +16,6 @@ function HashStorageFunc(){
     let way = wayS.trim().toLocaleLowerCase();
     objTypeAndWay.way = way;
     drinkStorage.addValue(InfoItem,objTypeAndWay);
-    console.log(objTypeAndWay);
+    // console.log(objTypeAndWay);
 }
-drinkStorage = new HashStorageFunc();
+let drinkStorage = new HashStorageFunc();
