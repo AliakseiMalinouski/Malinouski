@@ -1,5 +1,4 @@
 "use strict"
-let drinkStorage = {};
 drinkStorage = HashStorageFunc();
 function writeInfoItem() {
     let nameDrinkS = prompt('Введите название напитка:');
