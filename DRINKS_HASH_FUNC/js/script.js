@@ -22,7 +22,7 @@ function HashStorageFunc() {
             return false;
         }
     });
-    self.getKeys((key) => {
+    self.getKeys(() => {
         let arrKeys = [];
         for (let key in self.storage) {
             arrKeys.push(key);
