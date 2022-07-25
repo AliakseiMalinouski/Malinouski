@@ -1,6 +1,6 @@
 "use strict"
-drinkStorage = HashStorageFunc();
-function writeInfoItem() {
+
+function HashStorageFunc(){
     let nameDrinkS = prompt('Введите название напитка:');
     let nameDrink = nameDrinkS.trim().toLocaleLowerCase();
     let objTypeAndWay = {};
@@ -15,7 +15,7 @@ function writeInfoItem() {
     let wayS = prompt('Введите, пожалуйста, рецепт вашего напитка:');
     let way = wayS.trim().toLocaleLowerCase();
     objTypeAndWay.way = way;
-    drinkStorage.addValue(InfoItem.objTypeAndWay);
+    drinkStorage.addValue(InfoItem,objTypeAndWay);
     console.log(objTypeAndWay);
 }
-
+drinkStorage = new HashStorageFunc();
