@@ -1,9 +1,9 @@
 "use strict"
 function HashStorageFunc() {
     let self = this;
-    self.addValue = function (key, value) {
-        self[key] = value;
-    }
+    self.addValue((key, value) => {
+        self[key] = value; 
+    });
     self.getValue((key) => {
         if (key in self) {
             return self[key];
@@ -15,6 +15,7 @@ function HashStorageFunc() {
     self.deleteValue((key) => {
         if (key in self) {
             delete self[key];
+            return true;
         }
         else {
             return false;
@@ -28,4 +29,3 @@ function HashStorageFunc() {
         return arrKeys;
     });
 }
-
