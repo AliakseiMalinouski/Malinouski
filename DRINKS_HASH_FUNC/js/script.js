@@ -1,5 +1,6 @@
 "use strict"
-let drinkStorage = HashStorageFunc();
+let drinkStorage = {};
+drinkStorage = HashStorageFunc();
 function writeInfoItem() {
     let nameDrinkS = prompt('Введите название напитка:');
     let nameDrink = nameDrinkS.trim().toLocaleLowerCase();
