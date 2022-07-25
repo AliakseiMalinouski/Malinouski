@@ -1,21 +1,33 @@
 "use strict"
-
-function HashStorageFunc(){
-    let nameDrinkS = prompt('Введите название напитка:');
-    let nameDrink = nameDrinkS.trim().toLocaleLowerCase();
-    let objTypeAndWay = {};
-    objTypeAndWay.name = nameDrink;
-    objTypeAndWay.type = confirm(nameDrink + ' - это алкольный напиток?');
-    if (objTypeAndWay[1] === false) {
-        objTypeAndWay.type = 'Неалкогольный';
+function HashStorageFunc() {
+    let self = this;
+    self.addValue = function (key, value) {
+        self[key] = value;
     }
-    else {
-        objTypeAndWay.type = 'Алкогольный';
-    }
-    let wayS = prompt('Введите, пожалуйста, рецепт вашего напитка:');
-    let way = wayS.trim().toLocaleLowerCase();
-    objTypeAndWay.way = way;
-    drinkStorage.addValue(InfoItem,objTypeAndWay);
-    // console.log(objTypeAndWay);
+    self.getValue((key) => {
+        if (key in self) {
+            return self[key];
+        }
+        else {
+            return undefined;
+        }
+    });
+    self.deleteValue((key) => {
+        if (key in self) {
+            delete self[key];
+        }
+        else {
+            return false;
+        }
+    });
+    self.getKeys((key) => {
+        let arrKeys = [];
+        for (let i = 0; i < arrKeys.length; i++) {
+            if (key in allKeys) {
+                arrKeys.push(key);
+            }
+        }
+        return arrKeys;
+    });
 }
-let drinkStorage = new HashStorageFunc();
+
