@@ -16,7 +16,7 @@ function writeInfoItem() {
     let wayS = prompt('Введите, пожалуйста, рецепт вашего напитка:');
     let way = wayS.trim().toLocaleLowerCase();
     objTypeAndWay.way = way;
-    drinkStorage = addValue(objTypeAndWay.name, objTypeAndWay.type, objTypeAndWay.way);
+    drinkStorage = addValue(objTypeAndWay);
     console.log(objTypeAndWay);
 }
 
