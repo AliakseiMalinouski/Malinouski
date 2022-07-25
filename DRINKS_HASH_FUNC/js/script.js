@@ -1,6 +1,6 @@
 "use strict"
-
-document.querySelector(".info_item").addEventListener('click', function () {
+let drinkStorage = HashStorageFunc();
+function writeInfoItem() {
     let nameDrinkS = prompt('Введите название напитка:');
     let nameDrink = nameDrinkS.trim().toLocaleLowerCase();
     let objTypeAndWay = {};
@@ -15,6 +15,7 @@ document.querySelector(".info_item").addEventListener('click', function () {
     let wayS = prompt('Введите, пожалуйста, рецепт вашего напитка:');
     let way = wayS.trim().toLocaleLowerCase();
     objTypeAndWay.way = way;
+    drinkStorage = addValue(objTypeAndWay.name, objTypeAndWay.type, objTypeAndWay.way);
     console.log(objTypeAndWay);
-});
+}
 
