@@ -23,9 +23,7 @@ function HashStorageFunc() {
     self.getKeys((key) => {
         let arrKeys = [];
         for (let i = 0; i < arrKeys.length; i++) {
-            if (key in allKeys) {
-                arrKeys.push(key);
-            }
+            arrKeys.includes(key) ? arrKeys.push(key) : arrKeys;
         }
         return arrKeys;
     });
