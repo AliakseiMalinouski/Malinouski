@@ -141,13 +141,14 @@ li {
         .block_results {
             margin-top: 30px;
             display: none;
-            width: 500px;
+            width: 550px;
             height: 250px;
             background-color: $gray;
             border: 1px solid $gray;
-            padding-left: 150px;
+            padding-left: 50px;
             padding-top: 30px;
             align-self: center;
+            border-radius: 13px;
         }
     }
 }

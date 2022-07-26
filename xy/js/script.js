@@ -14,6 +14,9 @@ function findRoots(a, b, c) {
     let oneRoot = "Один корень:";
     let twoRoots = "Два корня:";
     let nothing = "Нет корней! Дискриминант отрицательный:";
+    if (a == '' || b == '' || c== '') {
+        alert('Вы не ввели числовые занчения, попробуйте еще раз!');
+    }
     if (a === 0) {
         x1 = (-c / b);
         return `${oneRoot} ${x1} `;
@@ -21,7 +24,7 @@ function findRoots(a, b, c) {
     if (d > 0) {
         x1 = (-b + Math.sqrt(d)) / (2 * a);
         x2 = (-b - Math.sqrt(d)) / (2 * a);
-        return `${twoRoots} ${x1} и ${x2}, Дискриминант: ${d}`;
+        return `${twoRoots} ${x1} и ${x2}, \nДискриминант: ${d}`;
     }
     else if (d == 0) {
         x1 = -b / (2 * a);
