@@ -7,7 +7,6 @@ function ttt() {
     document.getElementById('results').textContent = results;
     document.getElementById('block_results').style.display = 'block';
 }
-
 function findRoots(a, b, c) {
     let d = b * b - 4 * a * c;
     let x1, x2;
@@ -37,7 +36,6 @@ function findRoots(a, b, c) {
         return `${nothing} ${d}`;
     }
 }
-
 document.getElementById('close').addEventListener('click', (event) => {
     document.getElementById('block_results').style.display = 'none';
     let a = document.getElementById('a').value = null;
