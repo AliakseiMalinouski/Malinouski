@@ -30,3 +30,4 @@ function HashStorageFunc() {
         return arrKeys;
     });
 }
+let drinksStorage = new HashStorageFunc();
