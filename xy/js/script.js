@@ -21,6 +21,9 @@ function findRoots(a, b, c) {
         x1 = (-c / b);
         return `${oneRoot} ${x1} `;
     }
+    else if (a == '') {
+        return "Вы ничего не ввели";
+    }
     if (d > 0) {
         x1 = (-b + Math.sqrt(d)) / (2 * a);
         x2 = (-b - Math.sqrt(d)) / (2 * a);
@@ -33,4 +36,11 @@ function findRoots(a, b, c) {
     else if (d < 0) {
         return `${nothing} ${d}`;
     }
-} 
+}
+
+document.getElementById('close').addEventListener('click', (event) => {
+    document.getElementById('block_results').style.display = 'none';
+    let a = document.getElementById('a').value = null;
+    let b = document.getElementById('b').value = null;
+    let c = document.getElementById('c').value = null;
+});

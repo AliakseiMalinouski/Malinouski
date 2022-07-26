@@ -112,6 +112,12 @@ li {
     padding-left: 50px;
     padding-top: 30px;
     align-self: center;
-    border-radius: 13px; }
+    border-radius: 13px;
+    position: relative; }
+    .wrap .container .block_results img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
