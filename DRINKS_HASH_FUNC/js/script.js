@@ -41,7 +41,7 @@ infoItem.addEventListener('click', () => {
 });
 let getInfoItem = document.querySelector('.get_info+item');
 getInfoItem.addEventListener('click', () => {
-    let aboutItem = prompt('Введите название Вашего напитка:');
+    let aboutItem = trim(prompt('Введите название Вашего напитка:'));
     let modalItem = document.querySelector('.modal_about_item');
     let feedback = drinkStorage.getValue(aboutItem);
     if (drinkStorage.getValue(aboutItem) !== undefined) {
