@@ -2,10 +2,10 @@
 function HashStorageFunc() {
     let self = this;
     self.storage = {};
-    self.addValue((key, value) => {
+    self.addValue = ((key, value) => {
         self.storage[key] = value; 
     });
-    self.getValue((key) => {
+    self.getValue = ((key) => {
         if (key in self.storage) {
             return self.storage[key];
         }
@@ -13,7 +13,7 @@ function HashStorageFunc() {
             return undefined;
         }
     });
-    self.deleteValue((key) => {
+    self.deleteValue = ((key) => {
         if (key in self.storage) {
             delete self.storage[key];
             return true;
@@ -22,7 +22,7 @@ function HashStorageFunc() {
             return false;
         }
     });
-    self.getKeys(() => {
+    self.getKeys = (() => {
         let arrKeys = [];
         for (let key in self.storage) {
             arrKeys.push(key);
@@ -33,7 +33,7 @@ function HashStorageFunc() {
 let drinkStorage = new HashStorageFunc();
 let infoItem = document.querySelector('.info_item');
 infoItem.addEventListener('click', () => {
-    let keyName = trim(prompt('Введите название напитка:'));
+    let keyName = prompt('Введите название напитка:');
     let objValue = {};
     objValue.type = confirm(keyName + '- это алкогольный напиток?');
     objValue.way = trim(prompt('Введите, пожалуйста, рецепт' + keyName));
@@ -41,7 +41,7 @@ infoItem.addEventListener('click', () => {
 });
 let getInfoItem = document.querySelector('.get_info+item');
 getInfoItem.addEventListener('click', () => {
-    let aboutItem = trim(prompt('Введите название Вашего напитка:'));
+    let aboutItem = prompt('Введите название Вашего напитка:');
     let modalItem = document.querySelector('.modal_about_item');
     let feedback = drinkStorage.getValue(aboutItem);
     if (drinkStorage.getValue(aboutItem) !== undefined) {
