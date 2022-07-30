@@ -45,10 +45,10 @@ getInfoItem.addEventListener('click', () => {
     let modalItem = document.querySelector('.modal_about_item');
     let feedback = drinkStorage.getValue(aboutItem);
     if (drinkStorage.getValue(aboutItem) !== undefined) {
-        modalItem.innerHTML = 'Ваш напиток: ' + aboutItem + "Тип: " + feedback.type === true ? "Алкогольный" : "Неалкогольный" + "////" + "Рецепт Вашего напитка: " + feedback.way ? feedback.way : "Рецепт не был найден";
+        modalItem.textContent = 'Ваш напиток: ' + aboutItem + "Тип: " + feedback.type === true ? "Алкогольный" : "Неалкогольный" + "////" + "Рецепт Вашего напитка: " + feedback.way ? feedback.way : "Рецепт не был найден";
     }
     else {
-        modalItem.innerHTML = 'Данный напиток не был найден';
+        modalItem.textContent = 'Данный напиток не был найден';
     }
 });
 let deleteInfoItem = document.querySelector('.delete_info_item');
@@ -56,14 +56,14 @@ deleteInfoItem.addEventListener('click', () => {
     let aboutDeleteItem = prompt('Введите название Вашего напитка:');
     let modalItem = document.querySelector('.modal_about_item');
     if (drinkStorage.deleteValue(aboutDeleteItem) == true) {
-        modalItem.innerHTML = 'Ваш напиток: ' + aboutDeleteItem + ' Был найден и успешно удалён';
+        modalItem.textContent = 'Ваш напиток: ' + aboutDeleteItem + ' Был найден и успешно удалён';
     }
     else {
-        modalItem.innerHTML = 'К сожалению, такого напитка нет!';
+        modalItem.textContent = 'К сожалению, такого напитка нет!';
     }
 });
 let listItems = document.querySelector('.list_items');
 listItems.addEventListener('click', () => {
     let modalItem = document.querySelector('.modal_about_item');
-    modalItem.innerHTML = drinkStorage.getKeys();
+    modalItem.textContent = drinkStorage.getKeys();
 });
