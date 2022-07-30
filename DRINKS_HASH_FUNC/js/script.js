@@ -32,15 +32,15 @@ function HashStorageFunc() {
 }
 let drinkStorage = new HashStorageFunc();
 let infoItem = document.querySelector('.info_item');
-infoItem.addEventListener('click', () => {
+function addInfoItem() {
     let keyName = prompt('Введите название напитка:');
     let objValue = {};
     objValue.type = confirm(keyName + '- это алкогольный напиток?');
-    objValue.way = trim(prompt('Введите, пожалуйста, рецепт' + keyName));
+    objValue.way = prompt('Введите, пожалуйста, рецепт ' + keyName)
     drinkStorage.addValue(keyName, objValue);
-});
+}
 let getInfoItem = document.querySelector('.get_info+item');
-getInfoItem.addEventListener('click', () => {
+function itemGet() {
     let aboutItem = prompt('Введите название Вашего напитка:');
     let modalItem = document.querySelector('.modal_about_item');
     let feedback = drinkStorage.getValue(aboutItem);
@@ -50,9 +50,9 @@ getInfoItem.addEventListener('click', () => {
     else {
         modalItem.textContent = 'Данный напиток не был найден';
     }
-});
+}
 let deleteInfoItem = document.querySelector('.delete_info_item');
-deleteInfoItem.addEventListener('click', () => {
+function itemDelete() {
     let aboutDeleteItem = prompt('Введите название Вашего напитка:');
     let modalItem = document.querySelector('.modal_about_item');
     if (drinkStorage.deleteValue(aboutDeleteItem) == true) {
@@ -61,9 +61,9 @@ deleteInfoItem.addEventListener('click', () => {
     else {
         modalItem.textContent = 'К сожалению, такого напитка нет!';
     }
-});
+}
 let listItems = document.querySelector('.list_items');
-listItems.addEventListener('click', () => {
+function itemKeys() {
     let modalItem = document.querySelector('.modal_about_item');
     modalItem.textContent = drinkStorage.getKeys();
-});
+}
