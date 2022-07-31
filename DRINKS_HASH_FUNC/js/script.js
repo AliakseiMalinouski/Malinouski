@@ -31,7 +31,6 @@ function HashStorageFunc() {
     });
 }
 let drinkStorage = new HashStorageFunc();
-let infoItem = document.querySelector('.info_item');
 function addInfoItem() {
     let keyName = prompt('Введите название напитка:');
     let objValue = {};
@@ -39,7 +38,6 @@ function addInfoItem() {
     objValue.way = prompt('Введите, пожалуйста, рецепт ' + keyName)
     drinkStorage.addValue(keyName, objValue);
 }
-let getInfoItem = document.querySelector('.get_info+item');
 function itemGet() {
     let aboutItem = prompt('Введите название Вашего напитка:');
     let modalItem = document.querySelector('.modal_about_item');
@@ -56,7 +54,6 @@ function itemGet() {
         modalItem.textContent = 'Данный напиток не был найден';
     }
 }
-let deleteInfoItem = document.querySelector('.delete_info_item');
 function itemDelete() {
     let aboutDeleteItem = prompt('Введите название Вашего напитка:');
     let modalItem = document.querySelector('.modal_about_item');
@@ -67,7 +64,6 @@ function itemDelete() {
         modalItem.textContent = 'К сожалению, такого напитка нет!';
     }
 }
-let listItems = document.querySelector('.list_items');
 function itemKeys() {
     let modalItem = document.querySelector('.modal_about_item');
     modalItem.textContent = drinkStorage.getKeys();
