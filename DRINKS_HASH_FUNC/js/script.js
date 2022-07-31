@@ -46,15 +46,14 @@ function itemGet() {
     let feedback = drinkStorage.getValue(aboutItem);
     if (feedback !== undefined) {
         if (feedback.type == true) {
-            feedback.type = 'алкогольный';
+            modalItem.innerHTML = `Ваш напиток: ${aboutItem} - алкогольный <br> Рецепт: ${feedback.way}`;
         }
         else {
-            feedback.type = 'неалкогольный';
+            modalItem.innerHTML = `Ваш напиток: ${aboutItem} - неалкогольный <br> Рецепт: ${feedback.way}`;
         }
-        modalItem.innerHTML = `Ваш напиток: ${aboutItem} - ${feedback.type} <br> Рецепт: ${feedback.way}`;
     }
     else {
-        modalItem.textContent = 'Данный напиток не найден';
+        modalItem.textContent = 'Данный напиток не был найден';
     }
 }
 let deleteInfoItem = document.querySelector('.delete_info_item');
