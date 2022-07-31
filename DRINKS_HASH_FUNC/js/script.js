@@ -35,7 +35,7 @@ let infoItem = document.querySelector('.info_item');
 function addInfoItem() {
     let keyName = prompt('Введите название напитка:');
     let objValue = {};
-    objValue.type = confirm(keyName + '- это алкогольный напиток?');
+    objValue.type = confirm(keyName + ' - это алкогольный напиток?');
     objValue.way = prompt('Введите, пожалуйста, рецепт ' + keyName)
     drinkStorage.addValue(keyName, objValue);
 }
@@ -44,11 +44,17 @@ function itemGet() {
     let aboutItem = prompt('Введите название Вашего напитка:');
     let modalItem = document.querySelector('.modal_about_item');
     let feedback = drinkStorage.getValue(aboutItem);
-    if (drinkStorage.getValue(aboutItem) !== undefined) {
-        modalItem.textContent = 'Ваш напиток: ' + aboutItem + "Тип: " + feedback.type === true ? "Алкогольный" : "Неалкогольный" + "////" + "Рецепт Вашего напитка: " + feedback.way ? feedback.way : "Рецепт не был найден";
+    if (feedback !== undefined) {
+        if (feedback.type == true) {
+            feedback.type = 'алкогольный';
+        }
+        else {
+            feedback.type = 'неалкогольный';
+        }
+        modalItem.innerHTML = `Ваш напиток: ${aboutItem} - ${feedback.type} <br> Рецепт: ${feedback.way}`;
     }
     else {
-        modalItem.textContent = 'Данный напиток не был найден';
+        modalItem.textContent = 'Данный напиток не найден';
     }
 }
 let deleteInfoItem = document.querySelector('.delete_info_item');
