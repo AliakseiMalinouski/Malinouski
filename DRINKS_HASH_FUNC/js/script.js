@@ -43,12 +43,7 @@ function itemGet() {
     let modalItem = document.querySelector('.modal_about_item');
     let feedback = drinkStorage.getValue(aboutItem);
     if (feedback !== undefined) {
-        if (feedback.type == true) {
-            modalItem.innerHTML = `Ваш напиток: ${aboutItem} - алкогольный <br> Рецепт: ${feedback.way}`;
-        }
-        else {
-            modalItem.innerHTML = `Ваш напиток: ${aboutItem} - неалкогольный <br> Рецепт: ${feedback.way}`;
-        }
+        modalItem.innerHTML = `Ваш напиток: ${aboutItem} - ${ feedback.type ? "алкогольный" : "неалкогольный" } <br> Рецепт: ${feedback.way}`;
     }
     else {
         modalItem.textContent = 'Данный напиток не был найден';
