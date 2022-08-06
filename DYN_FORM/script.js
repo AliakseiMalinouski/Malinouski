@@ -24,6 +24,9 @@ var formDef2=
     ];
 function createForm(F1, F2) {
     let tag;
+    let radio1;
+    let radio2;
+    let radio3;
     F1.forEach(elem => {
         if (elem.name == 'sitename') {
             let label = document.createElement('label');
@@ -49,13 +52,46 @@ function createForm(F1, F2) {
             F2.appendChild(tag);
         }
         if (elem.kind == 'number') {
+            let label = document.createElement('label');
+            label.innerHTML = elem.label;
+            F2.appendChild(label);
             tag = document.createElement('input');
             tag.setAttribute('type', 'number');
-            F2.appendChild(tag);
             tag.classList.add('n');
             tag.classList.add('block');
             tag.classList.add('margin');
-        }
+            F2.appendChild(tag);
+      }
+        if (elem.name == 'email') {
+          let label = document.createElement('label');
+          label.innerHTML = elem.label;
+          F2.appendChild(label);
+          tag = document.createElement('input');
+          tag.setAttribute('type', 'email');
+          tag.classList.add('block');
+          tag.classList.add('margin');
+          tag.classList.add('email');
+          F2.appendChild(tag);
+      }
+      if (elem.name == 'payment') {
+        let label = document.createElement('label');
+        label.innerHTML = elem.label;
+        F2.appendChild(label);
+        let div = document.createElement('div');
+        elem.variants.forEach(underElement => {
+        tag = document.createElement('input');
+        tag.setAttribute('type', 'radio');
+        tag.name="payment";
+        tag.setAttribute('value', underElement.value);          
+        let span = document.createElement('span');
+        span.textContent=underElement.text;
+        div.appendChild(tag);
+        span.classList.add('mr');
+        div.appendChild(span);
+        });
+        div.classList.add('block-radio-buttons')
+        F2.appendChild(div);
+    }
     });
 }
 createForm(formDef1, document.forms.form1);
