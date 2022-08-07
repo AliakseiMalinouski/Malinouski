@@ -84,7 +84,9 @@ function createForm(F1, F2) {
           tag.appendChild(option);
           });
           let br = document.createElement('br');
+          let brr = document.createElement('br');
           F2.appendChild(br);
+          F2.appendChild(brr);
       }
       if (elem.name == 'payment') {
         let label = document.createElement('label');
