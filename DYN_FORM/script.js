@@ -25,7 +25,7 @@ var formDef2=
 function createForm(F1, F2) {
     let tag;
     F1.forEach(elem => {
-        if (elem.name == 'sitename') {
+        if (elem.name == 'sitename' || elem.name == 'lastname') {
             let label = document.createElement('label');
             label.innerHTML = elem.label;
             label.classList.add('label');
@@ -37,7 +37,7 @@ function createForm(F1, F2) {
             tag.classList.add('margin');
             F2.appendChild(tag);
         }
-        if (elem.name == 'siteurl') {
+        if (elem.name == 'siteurl' || elem.name == 'firstname' || elem.name == 'secondname') {
             let label = document.createElement('label');
             label.innerHTML = elem.label;
             F2.appendChild(label)
@@ -106,8 +106,42 @@ function createForm(F1, F2) {
         });
         div.classList.add('block-radio-buttons')
         F2.appendChild(div);
-    }
+        let br = document.createElement('br');
+        F2.appendChild(br);
+      }
+      if (elem.name == 'votes') {
+        let label = document.createElement('label');
+        label.innerHTML = elem.label;
+        label.classList.add('mr');
+        F2.appendChild(label);
+        tag = document.createElement('input');
+        tag.setAttribute('type', 'checkbox');
+        tag.setAttribute('checked', true);
+        F2.appendChild(tag);
+        let br = document.createElement('br');
+        F2.appendChild(br);
+      }
+      if (elem.name == 'description') {
+        let label = document.createElement('label');
+        label.innerHTML = elem.label;
+        F2.appendChild(label);
+        let br = document.createElement('br');
+        F2.appendChild(br);
+        tag = document.createElement('textarea');
+        tag.classList.add('n');
+        tag.classList.add('block');
+        F2.appendChild(tag);
+      }
+      if (elem.kind == 'submit') {
+        let button = document.createElement('button');
+        button.setAttribute('type', 'submit');
+        button.innerHTML = elem.caption;
+        F2.appendChild(button);
+        let br = document.createElement('br');
+        F2.appendChild(br);
+      }
     });
 }
 createForm(formDef1, document.forms.form1);
+createForm(formDef2, document.forms.form2);
 
