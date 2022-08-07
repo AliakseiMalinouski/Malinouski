@@ -9,10 +9,11 @@ let str = prompt('Введите строку:');
 
 
 function deleteWhiteSpace(str) {
-    if (str.charAt(0) == ' ') {
+    if (str.charAt(0) == ' ' || str.charAt(str.lenght - 1) == ' ') {
         str = str.slice(1);
         str = deleteWhiteSpace(str);
     }
+    return str;
 } 
 
 alert(`Строка без пробелов: ${deleteWhiteSpace(str)}`);
