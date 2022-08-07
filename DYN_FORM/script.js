@@ -23,126 +23,101 @@ var formDef2=
   {caption:'Зарегистрироваться',kind:'submit'},
     ];
 function createForm(F1, F2) {
-    let tag;
-    F1.forEach(elem => {
-        if (elem.name == 'sitename' || elem.name == 'lastname') {
-            let label = document.createElement('label');
-            label.innerHTML = elem.label;
-            label.classList.add('label');
-            F2.appendChild(label)
-            tag = document.createElement('input');
-            tag.setAttribute('type', 'text');
-            tag.classList.add('wh');
-            tag.classList.add('block');
-            tag.classList.add('margin');
-            F2.appendChild(tag);
-        }
-        if (elem.name == 'siteurl' || elem.name == 'firstname' || elem.name == 'secondname') {
-            let label = document.createElement('label');
-            label.innerHTML = elem.label;
-            F2.appendChild(label)
-            tag = document.createElement('input');
-            tag.setAttribute('type', 'text');
-            tag.classList.add('wh');
-            tag.classList.add('block');
-            tag.classList.add('margin');
-            F2.appendChild(tag);
-        }
-        if (elem.kind == 'number') {
-            let label = document.createElement('label');
-            label.innerHTML = elem.label;
-            F2.appendChild(label);
-            tag = document.createElement('input');
-            tag.setAttribute('type', 'number');
-            tag.classList.add('n');
-            tag.classList.add('block');
-            tag.classList.add('margin');
-            F2.appendChild(tag);
-      }
-        if (elem.name == 'email') {
-          let label = document.createElement('label');
-          label.innerHTML = elem.label;
-          F2.appendChild(label);
-          tag = document.createElement('input');
-          tag.setAttribute('type', 'email');
-          tag.classList.add('block');
-          tag.classList.add('margin');
-          tag.classList.add('email');
-          F2.appendChild(tag);
-      }
-      if (elem.name == 'division') {
-          let label = document.createElement('label');
-          label.innerHTML = elem.label;
-          label.classList.add('mr');
-          F2.appendChild(label);
-          tag = document.createElement('select');
-          F2.appendChild(tag);
-          elem.variants.forEach((underElement) => {
+let tag;
+F1.forEach(elem => {
+  if (elem.kind == 'longtext') {
+      let label = document.createElement('label');
+      label.innerHTML = elem.label;
+      let br = document.createElement('br');
+      F2.appendChild(label);
+      F2.appendChild(br);
+      tag = document.createElement('input');
+      tag.setAttribute('type', 'text');
+      F2.appendChild(tag);
+      F2.appendChild(br);
+  }
+  if (elem.kind == 'number') {
+      let label = document.createElement('label');
+      label.innerHTML = elem.label;
+      let br = document.createElement('br');
+      F2.appendChild(label);
+      F2.appendChild(br);
+      tag = document.createElement('input');
+      tag.setAttribute('type', 'number');
+      F2.appendChild(tag);
+      F2.appendChild(br);
+  }
+  if (elem.kind == 'shorttext') {
+      let label = document.createElement('label');
+      label.innerHTML = elem.label;
+      let br = document.createElement('br');
+      F2.appendChild(label);
+      F2.appendChild(br);
+      tag = document.createElement('input');
+      tag.type = 'text'; 
+      F2.appendChild(tag);
+      F2.appendChild(br);
+  }
+  if (elem.kind == 'combo') {
+      let label = document.createElement('label');
+      label.innerHTML = elem.label;
+      let br = document.createElement('br');
+      F2.appendChild(label);
+      tag = document.createElement('select');
+      F2.appendChild(tag);
+      elem.variants.forEach(underElem => {
           let option = document.createElement('option');
-          option.setAttribute('value', underElement.value);
-          option.textContent = underElement.text;
+          option.setAttribute("value", underElem.value);
+          option.textContent = underElem.text;
           tag.appendChild(option);
-          });
-          let br = document.createElement('br');
-          let brr = document.createElement('br');
-          F2.appendChild(br);
-          F2.appendChild(brr);
-      }
-      if (elem.name == 'payment') {
-        let label = document.createElement('label');
-        label.innerHTML = elem.label;
-        F2.appendChild(label);
-        let div = document.createElement('div');
-        elem.variants.forEach(underElement => {
-        tag = document.createElement('input');
-        tag.setAttribute('type', 'radio');
-        tag.name="payment";
-        tag.setAttribute('value', underElement.value);          
-        let span = document.createElement('span');
-        span.textContent=underElement.text;
-        div.appendChild(tag);
-        span.classList.add('mr');
-        div.appendChild(span);
-        });
-        div.classList.add('block-radio-buttons')
-        F2.appendChild(div);
-        let br = document.createElement('br');
-        F2.appendChild(br);
-      }
-      if (elem.name == 'votes') {
-        let label = document.createElement('label');
-        label.innerHTML = elem.label;
-        label.classList.add('mr');
-        F2.appendChild(label);
-        tag = document.createElement('input');
-        tag.setAttribute('type', 'checkbox');
-        tag.setAttribute('checked', true);
-        F2.appendChild(tag);
-        let br = document.createElement('br');
-        F2.appendChild(br);
-      }
-      if (elem.name == 'description') {
-        let label = document.createElement('label');
-        label.innerHTML = elem.label;
-        F2.appendChild(label);
-        let br = document.createElement('br');
-        F2.appendChild(br);
-        tag = document.createElement('textarea');
-        tag.classList.add('n');
-        tag.classList.add('block');
-        F2.appendChild(tag);
-      }
-      if (elem.kind == 'submit') {
-        let button = document.createElement('button');
-        button.setAttribute('type', 'submit');
-        button.innerHTML = elem.caption;
-        button.classList.add('block');
-        F2.appendChild(button);
-        let br = document.createElement('br');
-        F2.appendChild(br);
-      }
+      });
+  }
+  if (elem.kind == 'radio') {
+    let label = document.createElement('label');
+    label.innerHTML = elem.label;
+    let br = document.createElement('br');
+    F2.appendChild(br);
+    F2.appendChild(label);
+    elem.variants.forEach(underElem => {
+      tag = document.createElement('input');
+      tag.setAttribute('type', 'radio');
+      tag.setAttribute('value', underElem.value);
+      tag.name = 'payment';
+      F2.appendChild(tag);
+      let span = document.createElement('span');
+      let br = document.createElement('br');
+      span.innerHTML = underElem.text;
+      F2.appendChild(span);
+      
     });
-}
+  }
+  let div = document.createElement('div');
+  F2.appendChild(div);
+  if (elem.kind == 'check') {
+    let label = document.createElement('label');
+    label.innerHTML = elem.label;
+    F2.appendChild(label);
+    tag = document.createElement('input'); 
+    tag.setAttribute('type', 'checkbox');
+    F2.appendChild(tag);
+  }
+  if (elem.kind == 'memo') {
+    let label = document.createElement('label');
+    label.innerHTML = elem.label;
+    F2.appendChild(label);
+    let br = document.createElement('br');
+    F2.appendChild(br);
+    tag = document.createElement('textarea');
+    tag.classList.add('n');
+    F2.appendChild(tag);
+  }
+  if (elem.kind == 'submit') {
+    tag = document.createElement('button');
+    tag.setAttribute('type', 'submit');
+    tag.innerHTML = elem.caption;
+    F2.appendChild(tag);
+  }
+});
+} 
 createForm(formDef1, document.forms.form1);
 createForm(formDef2, document.forms.form2);
-
