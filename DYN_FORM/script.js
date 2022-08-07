@@ -24,9 +24,6 @@ var formDef2=
     ];
 function createForm(F1, F2) {
     let tag;
-    let radio1;
-    let radio2;
-    let radio3;
     F1.forEach(elem => {
         if (elem.name == 'sitename') {
             let label = document.createElement('label');
@@ -72,6 +69,22 @@ function createForm(F1, F2) {
           tag.classList.add('margin');
           tag.classList.add('email');
           F2.appendChild(tag);
+      }
+      if (elem.name == 'division') {
+          let label = document.createElement('label');
+          label.innerHTML = elem.label;
+          label.classList.add('mr');
+          F2.appendChild(label);
+          tag = document.createElement('select');
+          F2.appendChild(tag);
+          elem.variants.forEach((underElement) => {
+          let option = document.createElement('option');
+          option.setAttribute('value', underElement.value);
+          option.textContent = underElement.text;
+          tag.appendChild(option);
+          });
+          let br = document.createElement('br');
+          F2.appendChild(br);
       }
       if (elem.name == 'payment') {
         let label = document.createElement('label');
