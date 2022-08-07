@@ -136,6 +136,7 @@ function createForm(F1, F2) {
         let button = document.createElement('button');
         button.setAttribute('type', 'submit');
         button.innerHTML = elem.caption;
+        button.classList.add('block');
         F2.appendChild(button);
         let br = document.createElement('br');
         F2.appendChild(br);
