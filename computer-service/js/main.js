@@ -122,6 +122,29 @@ document.querySelector('#search').oninput = function () {
 function addColor(str,position,sim) {
     return str.slice(0, position) + '<mark>' + str.slice(position, position + sim) + '</mark>' + str.slice(position + sim);
 }
+// form
+let formContainer = document.querySelector('#container-form');
+let formArray = [
+    { label: "Введите ваше имя", kind: "longtext", name: "name" },
+    { label: "Введите вашу фамилию", kind: "longtext", name: "lastname" },
+    { label: "Введите ваш номер телефона", kind: "shorttext", name: "phonenumber" },
+    { label: "Введите вашу электронную почту:", kind: "shorttext", name: "email" },
+];
+function createForm(array, form) {
+    let tag;
+    array.forEach((elem) => {
+        if (elem.kind == 'longtext') {
+            let label = document.createElement('label');
+            label.innerHTML = elem.label;
+            form.appendChild(label);
+            tag = document.createElement('input');
+            tag.setAttribute('type', 'text');
+            
+        }
+    });
+}
+createForm(formArray, document.forms.form1);
+
 
 
 
