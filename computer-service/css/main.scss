@@ -382,7 +382,25 @@ li {
                 }
             }
         }
-       
+        .search-variants {
+            width: 690px;
+            height: 60px;
+            .variants {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                color: $black;
+                font-size: $fz - 1px;
+                cursor: pointer;
+                
+            }
+            .hide {
+                display: none;
+            }
+            mark {
+                background-color: $orange;
+            }
+        }
     }
 }
 .categories {

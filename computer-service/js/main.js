@@ -95,8 +95,33 @@ document.querySelector('.close-consumables-block').addEventListener('click', fun
     document.getElementById('consumables').style.display = 'none';
     document.getElementById('description').style.display = 'block';
 });
+// search
+document.querySelector('#search').oninput = function () {
+    let self = this.value.trim();
+    let variants = document.querySelectorAll('.variants li');
+    if (self != '') {
+        variants.forEach(elem => {
+            if (elem.innerText.search(self) == -1) {
+                elem.classList.add('hide');
+            }
+            else {
+                elem.classList.remove('hide');
+                let strS = elem.textContent;
+                elem.innerHTML = addColor(strS, elem.innerText.search(self), self.length);
+            }
+        });
+    }
+    else {
+        variants.forEach(elem => {
+            elem.classList.remove('hide');
+            elem.innerHTML = elem.innerText;
+        });
+    }
+}
 
-
+function addColor(str,position,sim) {
+    return str.slice(0, position) + '<mark>' + str.slice(position, position + sim) + '</mark>' + str.slice(position + sim);
+}
 
 
 

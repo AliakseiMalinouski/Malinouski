@@ -285,6 +285,20 @@ li {
         .wrap .header .container .form p:nth-child(7):hover .look {
           display: block;
           color: #FFAF37; }
+    .wrap .header .container .search-variants {
+      width: 690px;
+      height: 60px; }
+      .wrap .header .container .search-variants .variants {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: #000000;
+        font-size: 15px;
+        cursor: pointer; }
+      .wrap .header .container .search-variants .hide {
+        display: none; }
+      .wrap .header .container .search-variants mark {
+        background-color: #FFAF37; }
   .wrap .categories {
     height: 60px;
     background-color: #F0F0FF; }
