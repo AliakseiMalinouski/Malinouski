@@ -19,7 +19,7 @@ let str = prompt('Введите строку:');
 // alert(`Строка без пробелов: ${deleteWhiteSpace(str)}`);
 
 let deleteWhiteSpace = function (str) {
-    let firstChar = undefined;
+    let firstChar;
     let lastChar;
     for (let i = 0; i < str.length; i++) {
         if (str[i] !== ' ') {
