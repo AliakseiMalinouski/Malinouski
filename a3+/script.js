@@ -5,10 +5,10 @@ function findPol(str) {
     let lastChar = str.length - 1;
     for (let i = 0; i < str.length / 2; i++) {
         if (str[i] !== str[lastChar - i]) {
-            return `Слово ${str} не палиндром`;
+            return false;
         }
     }
-    return `Слово ${str} - это палиндром`;
+    return true;
 }
-alert(findPol(str));
+alert(findPol(str) ? "это палиндром" : "это не палиндром" );
 console.log(findPol(str));
