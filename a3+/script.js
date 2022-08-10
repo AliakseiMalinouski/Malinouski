@@ -4,7 +4,6 @@ function findPol(str) {
     str = str.toLowerCase().replace(/ё/g, "е").replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "").replace(/\s/g, "");
     let lastChar = str.length - 1;
     for (let i = 0; i < Math.floor(str.length / 2); i++) {
-        console.log(str[i])
         if (str[i] !== str[lastChar - i]) {
             return false;
         }
