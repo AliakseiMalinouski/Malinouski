@@ -18,31 +18,35 @@ let str = prompt('Введите строку:');
 
 // alert(`Строка без пробелов: ${deleteWhiteSpace(str)}`);
 
-let deleteWhiteSpace = function (str) {
-    let firstChar;
-    let lastChar;
-    if (str.charAt(0) !== ' ' && str.charAt(str.length - 1) !== ' ') {
-        console.log('проверка');
-        return str;
-    }
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] !== ' ') {
-            firstChar = i;
-            // console.log(str[i]); проверка
-            break;
-        }
-    }
-    if (firstChar === undefined) {
-        return "";
-    }
-    for (let i = str.length - 1; ; --i) {
-        if (str[i] !== ' ') {
-            lastChar = i;
-            // console.log(str[i]); проверка
-            break;
-        }
-    }
-    return str.substring(firstChar, lastChar + 1);
+// let deleteWhiteSpace = function (str) {
+//     let firstChar;
+//     let lastChar;
+//     if (str.charAt(0) !== ' ' && str.charAt(str.length - 1) !== ' ') {
+//         console.log('проверка');
+//         return str;
+//     }
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] !== ' ') {
+//             firstChar = i;
+//             // console.log(str[i]); проверка
+//             break;
+//         }
+//     }
+//     if (firstChar === undefined) {
+//         return "";
+//     }
+//     for (let i = str.length - 1; ; --i) {
+//         if (str[i] !== ' ') {
+//             lastChar = i;
+//             // console.log(str[i]); проверка
+//             break;
+//         }
+//     }
+//     return str.substring(firstChar, lastChar + 1);
+// }
+
+function deleteWhiteSpace(str) {
+    return str.replace(/\s/g, '');
 }
 
 alert(`Строка без пробелов: <${deleteWhiteSpace(str)}>`);
