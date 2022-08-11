@@ -1558,4 +1558,37 @@ li {
         }
     }
 }
+.form {
+    padding-top: 100px;
+    .container {
+        padding: 0.1px;
+    }
+    .wrap_form {
+        width: 600px;
+        height: 800px;
+        padding-top: 50px;
+        padding-left: 85px;
+        background-color: $banner4;
+        .input_style {
+                display: block;
+                margin-bottom: 30px;
+                width: 400px;
+                height: 40px;
+                border: 1px solid $orange;
+                border-radius: 13px;
+                padding-left: 20px;
+                margin-top: 15px;
+            }
+        
+            input:focus {
+                outline: 0;
+                outline-offset: 0;
+            }
+        
+            .label {
+                color: $black;
+                font-size: $fz20;
+            }
+    }
+}
 }

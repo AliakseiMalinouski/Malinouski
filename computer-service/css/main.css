@@ -1243,5 +1243,30 @@ li {
   20%,
                 40% {
     transform: rotate(5deg); } }
+  .wrap .form {
+    padding-top: 100px; }
+    .wrap .form .container {
+      padding: 0.1px; }
+    .wrap .form .wrap_form {
+      width: 600px;
+      height: 800px;
+      padding-top: 50px;
+      padding-left: 85px;
+      background-color: #E3E1FF; }
+      .wrap .form .wrap_form .input_style {
+        display: block;
+        margin-bottom: 30px;
+        width: 400px;
+        height: 40px;
+        border: 1px solid #FFAF37;
+        border-radius: 13px;
+        padding-left: 20px;
+        margin-top: 15px; }
+      .wrap .form .wrap_form input:focus {
+        outline: 0;
+        outline-offset: 0; }
+      .wrap .form .wrap_form .label {
+        color: #000000;
+        font-size: 20px; }
 
 /*# sourceMappingURL=main.css.map */

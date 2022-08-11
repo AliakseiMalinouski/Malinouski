@@ -136,10 +136,14 @@ function createForm(array, form) {
         if (elem.kind == 'longtext') {
             let label = document.createElement('label');
             label.innerHTML = elem.label;
+            label.classList.add('label');
             form.appendChild(label);
             tag = document.createElement('input');
             tag.setAttribute('type', 'text');
-            
+            tag.setAttribute('placeholder', 'Ввод данных');
+            tag.classList.add('input_style');
+            form.appendChild(tag);
+            tag.addEventListener('focus', () => tag.classList.add('no-focus'))
         }
     });
 }
