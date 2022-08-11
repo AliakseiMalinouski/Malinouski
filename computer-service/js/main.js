@@ -126,7 +126,6 @@ function addColor(str,position,sim) {
 let formContainer = document.querySelector('#container-form');
 let formArray = [
     { label: "Введите ваше имя", kind: "longtext", name: "name" },
-    { label: "Введите вашу фамилию", kind: "longtext", name: "lastname" },
     { label: "Введите ваш номер телефона", kind: "shorttext", name: "phonenumber" },
     { label: "Введите вашу электронную почту:", kind: "shorttext", name: "email" },
 ];
@@ -140,18 +139,32 @@ function createForm(array, form) {
             form.appendChild(label);
             tag = document.createElement('input');
             tag.setAttribute('type', 'text');
-            tag.setAttribute('placeholder', 'Ввод данных');
+            tag.setAttribute('placeholder', '*Имя');
+            tag.setAttribute('maxlength', '20');
             tag.classList.add('input_style');
             form.appendChild(tag);
-            tag.addEventListener('focus', () => tag.classList.add('no-focus'))
+            tag.addEventListener('focus', () => {
+                tag.classList.add('focus');
+            });
+            tag.addEventListener('blur', () => {
+                if (tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+            });
+            let out = document.getElementById('out');
+            let btn = document.getElementById('btn');
+            console.log(btn);
+            console.log(out);
+            let delArr = ['?', '!', '.']
+            btn.addEventListener('click', () => {
+                delArr.forEach((char) => {
+                    if (tag.value.includes(char)) {
+                        
+                    }
+                });
+                out.innerHTML = tag.value;
+            });
         }
+        
     });
+    
 }
 createForm(formArray, document.forms.form1);
-
-
-
-
-
-
-
