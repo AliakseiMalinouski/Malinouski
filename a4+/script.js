@@ -8,7 +8,7 @@ function findPol(str) {
     if (str[0] != str[str.length - 1]) {
         return false;
     }
-    return findPol(str.substr(1, str.length-2));
+    return findPol(str.substr(1, str.length - 2));
 }
 alert(findPol(str) ? "это палиндром" : "это не палиндром" );
 console.log(findPol(str));
