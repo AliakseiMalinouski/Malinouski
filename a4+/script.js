@@ -1,7 +1,6 @@
 "use strict" 
-let str = prompt('Введите строку:')
+let str = prompt('Введите строку:').toLowerCase().replace(/ё/g, "е").replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "").replace(/\s/g, "");
 function findPol(str) {
-    str = str.toLowerCase().replace(/ё/g, "е").replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "").replace(/\s/g, "");
     if (str.length < 2) {
         return true;
     }
