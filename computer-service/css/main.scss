@@ -1580,7 +1580,11 @@ li {
                     padding-left: 20px;
                     margin-top: 15px;
                 }
-            
+                .error {
+                    margin-top: -27px;
+                    margin-bottom: 5px;
+                    color: red;
+                }
                 .focus {
                     outline: 0;
                     outline-offset: 0;

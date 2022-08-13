@@ -146,21 +146,23 @@ function createForm(array, form) {
             tag.addEventListener('focus', () => {
                 tag.classList.add('focus');
             });
+            let divError = document.createElement('div');
+            let delArr = ['?', '!', '.', '{', '}', '<', '>', '/', '*', '&', 'А', 'Н', 'Я'];
             tag.addEventListener('blur', () => {
                 if (tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
-            });
-            let out = document.getElementById('out');
-            let btn = document.getElementById('btn');
-            console.log(btn);
-            console.log(out);
-            let delArr = ['?', '!', '.']
-            btn.addEventListener('click', () => {
                 delArr.forEach((char) => {
-                    if (tag.value.includes(char)) {
-                        
+                    if (tag.blur && tag.value.includes(char)) {
+                        alert('error');
+                        tag.value = null;
+                        divError.innerHTML = 'Вы ввели недопустимые данные';
+                        form.appendChild(divError);
+                        divError.classList.add('error');
                     }
                 });
-                out.innerHTML = tag.value;
+                tag.value.toLowerCase();
+                console.log(tag.value)
+            });
+            btn.addEventListener('click', () => {
             });
         }
         

@@ -1263,6 +1263,10 @@ li {
           border: 1px solid #4A4D4A;
           padding-left: 20px;
           margin-top: 15px; }
+        .wrap .form .container .wrap_form .error {
+          margin-top: -27px;
+          margin-bottom: 5px;
+          color: red; }
         .wrap .form .container .wrap_form .focus {
           outline: 0;
           outline-offset: 0; }

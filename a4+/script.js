@@ -1,5 +1,5 @@
 "use strict" 
-let str = prompt('Введите строку:').toLowerCase().replace(/ё/g, "е").replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "").replace(/\s/g, "");
+let str = prompt('Введите строку:');
 function findPol(str) {
     if (str.length < 2) {
         return true;
@@ -9,5 +9,7 @@ function findPol(str) {
     }
     return findPol(str.substr(1, str.length - 2));
 }
-alert(findPol(str) ? "это палиндром" : "это не палиндром" );
-console.log(findPol(str));
+alert(findPol(str.toLowerCase().replace(/ё/g, "е").replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "").replace(/\s/g, "")) ? "это палиндром" : "это не палиндром" );
+console.log(findPol(str.toLowerCase().replace(/ё/g, "е").replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "").replace(/\s/g, "")));
+
+
