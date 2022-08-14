@@ -152,9 +152,9 @@ function createForm(array, form) {
                 if (tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
                 delArr.forEach((char) => {
                     if (tag.blur && tag.value.includes(char)) {
-                        alert('error');
+                        alert('В строке для ввода имени недопустимые символы, пожалуйста, повторите попытку');
                         tag.value = null;
-                        divError.innerHTML = 'Вы ввели недопустимые данные';
+                        divError.innerHTML = 'Вы ввели недопустимые значения';
                         form.appendChild(divError);
                         divError.classList.add('error');
                     }
