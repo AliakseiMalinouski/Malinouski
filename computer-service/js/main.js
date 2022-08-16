@@ -127,9 +127,10 @@ let formContainer = document.querySelector('#container-form');
 let formArray = [
     { label: "Введите ваше имя", kind: "longtext", name: "name" },
     { label: "Введите ваш номер телефона", kind: "shorttext", name: "phonenumber" },
-    { label: "Введите вашу электронную почту:", kind: "shorttext", name: "email" },
+    { label: "Введите вашу электронную почту:", kind: "email", name: "email" },
 ];
 function createForm(array, form) {
+    const formTag = document.forms.info;
     let tag;
     array.forEach((elem) => {
         if (elem.kind == 'longtext') {
@@ -139,33 +140,41 @@ function createForm(array, form) {
             form.appendChild(label);
             tag = document.createElement('input');
             tag.setAttribute('type', 'text');
-            tag.setAttribute('placeholder', '*Имя');
+            tag.name = elem.name;
+            tag.setAttribute('placeholder', 'Имя*');
             tag.setAttribute('maxlength', '20');
             tag.classList.add('input_style');
             form.appendChild(tag);
-            tag.addEventListener('focus', () => {
-                tag.classList.add('focus');
-            });
-            let divError = document.createElement('div');
             let delArr = ['?', '!', '.', '{', '}', '<', '>', '/', '*', '&', 'А', 'Н', 'Я'];
             tag.addEventListener('blur', () => {
-                if (tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+                if (tag.value == '') {
+                    alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+                }
                 delArr.forEach((char) => {
                     if (tag.blur && tag.value.includes(char)) {
                         alert('В строке для ввода имени недопустимые символы, пожалуйста, повторите попытку');
-                        tag.value = null;
-                        divError.innerHTML = 'Вы ввели недопустимые значения';
-                        form.appendChild(divError);
-                        divError.classList.add('error');
                     }
                 });
-                tag.value.toLowerCase();
-                console.log(tag.value)
-            });
-            btn.addEventListener('click', () => {
+                tag.value.toLowerCase().replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "");
             });
         }
-        
+        if (elem.kind == 'shorttext') {
+            let label = document.createElement('label');
+            label.innerHTML = elem.label;
+            label.classList.add('label');
+            form.appendChild(label);
+            tag = document.createElement('input');
+            tag.setAttribute('type', 'number');
+            tag.setAttribute('placeholder', '+7 --- --- -- --*');
+            tag.setAttribute('maxlength', '20');
+            tag.name = elem.name;
+            tag.classList.add('input_style');
+            form.appendChild(tag);
+            let divError = document.createElement('div');
+            tag.addEventListener('blur', () => {
+                if(tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+            });
+        }
     });
     
 }

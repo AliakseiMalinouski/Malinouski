@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            margin-right: 15px;
+            font-size: 24px;
+        }
+        .longtext {
+            width: 450px;
+            height: 20px;
+        }
+        .shorttext {
+            height: 20px;
+        }
+        #error0 {
+            display: none;
+        }
+        #error1 {
+            display: none;
+        }
+        #error2 {
+            display: none;
+        }
+        #error3 {
+            display: none;
+        }
+        #error4 {
+            display: none;
+        }
+        #error5 {
+            display: none;
+        }
+        #error6 {
+            display: none;
+        }
+        #error7 {
+            display: none;
+        }
+        #error8 {
+            display: none;
+        }
+        #error9 {
+            display: none;
+        }
+        .disable {
+            display: none;
+        }
+        .red {
+            color: red;
+            margin-left: 15px;
+            font-style: italic;
+            display: inline !important;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="form" id="form">
+        <span>Разработчики:</span><input type="text" name="developers" id="developers" class="longtext"><span id="error0">Ошибка</span>
+        <br><br>
+        <span>Название сайта:</span><input type="text" name="name" id="sitename" class="longtext"><span id="error1">Ошибка</span>
+        <br><br>
+        <span>URL сайта:</span><input type="text" name="url" id="siteadress" class="longtext"><span id="error2">Ошибка</span>
+        <br><br>
+        <span>Дата запуска сайта</span><input type="date" name="date" id="startwork" class="shorttext"><span id="error3">Ошибка</span>
+        <br><br>
+        <span>Посетителей в сутки:</span><input type="number" name="visitors" id="visit"><span id="error4">Ошибка</span>
+        <br><br>
+        <span>E-mail для связи:</span><input type="email" name="email" id="emailadress"><span id="error5">Ошибка</span>
+        <br></br>
+        <span>Рубрика каталога:</span><select name="catalog" id="catalog" id="select">
+            <option value="0"></option>
+            <option value="1">бытовая техника</option>
+            <option value="2">здоровье</option>
+            <option value="3">уют</option>
+        </select> <span id="error9">Ошибка</span>
+        <br><br>
+        <span>Размещение:</span><input id="rad1" type="radio">Бесплатное<input id="rad2" type="radio">Платное<input id="rad3" type="radio">VIP <span id="error6">Ошибка</span>
+        <br><br>
+        <span>Разрешить отзывы:</span><input type="checkbox" id="check"><span id="error7">Ошибка</span>
+        <br><br>
+        <span>Описание сайта:</span><br><textarea name="text" id="about" cols="80" rows="4"></textarea><br><span id="error8">Ошибка</span>
+        <button type="submit" id="push">Опубликовать</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
