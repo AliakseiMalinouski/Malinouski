@@ -24,6 +24,11 @@ const error6 = document.getElementById('error6');
 const error7 = document.getElementById('error7');
 const error8 = document.getElementById('error8');
 const error9 = document.getElementById("error9");
+const results = document.getElementById('results');
+let arrayRadioButtons = [];
+arrayRadioButtons.push(radioButton1);
+arrayRadioButtons.push(radioButton2);
+arrayRadioButtons.push(radioButton3);
 let arraySpanError = [];
 arraySpanError.push(error0);
 arraySpanError.push(error1);
@@ -69,17 +74,29 @@ mainForm.addEventListener('submit', function (event) {
             error5.classList.add('disable');
         }
         for (let opt = 0; opt < catalog.length; opt++) {
-            if (catalog[opt].value === '1' || catalog[opt].value === '2' || catalog[opt].value === '3') {
-                error9.classList.add('disable');
+            if (opt.selected) {
+                console.log('gg')
             }
+        }
+        for (let rad of arrayRadioButtons) {
+            if (rad.checked) {
+                error6.classList.add('disable');
+            }
+        }
+        if (arrayElementsForm[10].checked) {
+            error7.classList.add('disable');
+        }
+        if (arrayElementsForm[11].value) {
+            error8.classList.add('disable');
         }
         if (arrayElementsForm[i].value == '') {
             alert('Произошла ошибка при вводе данных, пожалуйста, повторите попытку');
-            arraySpanError.forEach((elem) => {
+            arraySpanError.forEach((elem)  => {
                 elem.className += 'red';
             });
             event.preventDefault();
             break;
         }
     }
+    return console.log('ggg')
 });

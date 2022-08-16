@@ -42,13 +42,19 @@
             display: none;
         }
         #error8 {
+            position: absolute;
             display: none;
+            left: 650px;
+            top: 470px;
         }
         #error9 {
             display: none;
         }
         .disable {
             display: none;
+        }
+        .block {
+            display: block;
         }
         .red {
             color: red;
@@ -77,13 +83,14 @@
             <option value="1">бытовая техника</option>
             <option value="2">здоровье</option>
             <option value="3">уют</option>
-        </select> <span id="error9">Ошибка</span>
+        </select> <span id="error9">Выбор обязателен</span>
         <br><br>
         <span>Размещение:</span><input id="rad1" type="radio">Бесплатное<input id="rad2" type="radio">Платное<input id="rad3" type="radio">VIP <span id="error6">Ошибка</span>
         <br><br>
-        <span>Разрешить отзывы:</span><input type="checkbox" id="check"><span id="error7">Ошибка</span>
+        <span>Разрешить отзывы:</span><input type="checkbox" id="check"><span id="error7">Вы не согласились с правилами</span>
         <br><br>
         <span>Описание сайта:</span><br><textarea name="text" id="about" cols="80" rows="4"></textarea><br><span id="error8">Ошибка</span>
+        <p id="results"></p>
         <button type="submit" id="push">Опубликовать</button>
     </form>
     <script src="./script.js"></script>
