@@ -62,11 +62,25 @@
             font-style: italic;
             display: inline !important;
         }
+        .btn {
+            display: none;
+        }
+        .on {
+            color: red;
+            font-style: italic;
+            margin-left: 15px;
+            display: inline !important;
+        }
+        .gd {
+            background-color: lightgreen;
+            border: 1px solid lightgreen;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
     <form action="#" name="form" id="form">
-        <span>Разработчики:</span><input type="text" name="developers" id="developers" class="longtext"><span id="error0">Ошибка</span>
+        <span>Разработчики:</span><input d type="text" name="developers" id="developers" class="longtext"><span id="error0">Ошибка</span>
         <br><br>
         <span>Название сайта:</span><input type="text" name="name" id="sitename" class="longtext"><span id="error1">Ошибка</span>
         <br><br>
@@ -89,10 +103,12 @@
         <br><br>
         <span>Разрешить отзывы:</span><input type="checkbox" id="check"><span id="error7">Вы не согласились с правилами</span>
         <br><br>
-        <span>Описание сайта:</span><br><textarea name="text" id="about" cols="80" rows="4"></textarea><br><span id="error8">Ошибка</span>
+        <span>Описание сайта:</span><br><textarea name="text" id="about" cols="80" rows="4" maxlength="40"></textarea><br><span id="error8">Ошибка</span>
+        <p id="cnt"></p>
         <p id="results"></p>
         <button type="submit" id="push">Опубликовать</button>
     </form>
+    <button id="btn" class="btn">Убрать предупреждения об ошибках</button>
     <script src="./script.js"></script>
 </body>
 </html>

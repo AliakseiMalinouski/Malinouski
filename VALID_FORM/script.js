@@ -1,6 +1,7 @@
 "use strict"
 let mainForm = document.getElementById('form');
 let spanError = document.getElementById('error');
+let btn = document.getElementById("btn");
 const developers = document.getElementById('developers');
 const siteName = document.getElementById('sitename');
 const siteAdress = document.getElementById('siteadress');
@@ -24,7 +25,6 @@ const error6 = document.getElementById('error6');
 const error7 = document.getElementById('error7');
 const error8 = document.getElementById('error8');
 const error9 = document.getElementById("error9");
-const results = document.getElementById('results');
 let arrayRadioButtons = [];
 arrayRadioButtons.push(radioButton1);
 arrayRadioButtons.push(radioButton2);
@@ -73,10 +73,8 @@ mainForm.addEventListener('submit', function (event) {
         if (arrayElementsForm[5].value) {
             error5.classList.add('disable');
         }
-        for (let opt = 0; opt < catalog.length; opt++) {
-            if (opt.selected) {
-                console.log('gg')
-            }
+        if (arrayElementsForm[6].value == '1' || arrayElementsForm[6].value == '2' || arrayElementsForm[6].value == '3') {
+            error9.classList.add('disable');
         }
         for (let rad of arrayRadioButtons) {
             if (rad.checked) {
@@ -91,12 +89,79 @@ mainForm.addEventListener('submit', function (event) {
         }
         if (arrayElementsForm[i].value == '') {
             alert('Произошла ошибка при вводе данных, пожалуйста, повторите попытку');
-            arraySpanError.forEach((elem)  => {
+
+            arraySpanError.forEach((elem) => {
+                btn.classList.remove('btn')
+                btn.classList.add('block');
+                btn.style.marginTop = '15px';
                 elem.className += 'red';
             });
             event.preventDefault();
             break;
         }
     }
-    return console.log('ggg')
+    btn.addEventListener('click', function (e) {
+        error0.classList.remove('red')
+        error0.style.display = 'none';
+        error1.classList.remove('red')
+        error1.style.display = 'none';
+        error2.classList.remove('red')
+        error2.style.display = 'none';
+        error3.classList.remove('red')
+        error3.style.display = 'none';
+        error4.classList.remove('red')
+        error4.style.display = 'none';
+        error5.classList.remove('red')
+        error5.style.display = 'none';
+        error6.classList.remove('red')
+        error6.style.display = 'none';
+        error7.classList.remove('red')
+        error7.style.display = 'none';
+        error8.classList.remove('red')
+        error8.style.display = 'none';
+        error9.classList.remove('red')
+        error9.style.display = 'none';
+});
+});
+// textarea
+const maxLength = textArea.getAttribute('maxlength');
+const cnt = document.getElementById('cnt');
+cnt.innerHTML = 'Осталось символов: ' +  maxLength;
+textArea.addEventListener('keyup', counter);
+textArea.addEventListener('keyup', function (EO) {
+    if (EO.repeat) {
+        counter();
+    }
+});
+function counter() {
+    const results = maxLength - textArea.value.length;
+    cnt.innerHTML = 'Осталось символов: ' + results;
+}
+// developers
+let arrayDeleteSymbolsDevelopers = ['{', '}', '/', '*', '&', '-', '+', '.', ];
+developers.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (developers.value == '') {
+        error0.style.display = 'inline';
+        error0.style.color = 'red';
+        error0.style.fontStyle = 'italic';
+        error0.style.fontSize = '24px';
+        error0.style.marginLeft = '15px';
+    }
+    for (let i = 0; i < arrayDeleteSymbolsDevelopers.length; i++) {
+        if (developers.value.includes(arrayDeleteSymbolsDevelopers[i])) {
+            error0.style.display = 'inline';
+            error0.style.color = 'red';
+            error0.style.fontStyle = 'italic';
+            error0.style.fontSize = '24px';
+            error0.style.marginLeft = '15px';
+            error0.innerHTML = 'Ошибка, недопустимые символы';
+            developers.value = null;
+        }
+    }
+    if (developers.value) {
+        developers.classList.add('gd');
+        developers.disabled = true;
+        error0.style.display = 'none';
+    }
 });
