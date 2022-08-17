@@ -89,7 +89,7 @@ mainForm.addEventListener('submit', function (event) {
         }
         if (arrayElementsForm[i].value == '') {
             alert('Произошла ошибка при вводе данных, пожалуйста, повторите попытку');
-
+            arrayElementsForm[i].focus();
             arraySpanError.forEach((elem) => {
                 btn.classList.remove('btn')
                 btn.classList.add('block');
@@ -138,7 +138,7 @@ function counter() {
     cnt.innerHTML = 'Осталось символов: ' + results;
 }
 // developers
-let arrayDeleteSymbolsDevelopers = ['{', '}', '/', '*', '&', '-', '+', '.', ];
+let arrayDeleteSymbolsDevelopers = ['{', '}', '/', '*', '&', '-', '+', '.', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~'];
 developers.addEventListener('blur', function (EO) {
     EO = EO || window.event;
     if (developers.value == '') {
@@ -162,6 +162,7 @@ developers.addEventListener('blur', function (EO) {
     if (developers.value) {
         developers.classList.add('gd');
         developers.disabled = true;
+        error0.innerHTML = '';
         error0.style.display = 'none';
     }
 });
