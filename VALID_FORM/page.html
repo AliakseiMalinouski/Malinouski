@@ -76,6 +76,34 @@
             border: 1px solid lightgreen;
             opacity: 0.7;
         }
+        .lower {
+            text-transform: lowercase;
+        }
+        .e {
+            color: red;
+            font-size: 20px;
+            font-style: italic;
+            margin-left: 15px;
+            display: inline !important;
+        }
+        .colorGreen {
+            color: green;
+        }
+        .colorYellowGreen {
+            color: #9ACD32;
+        }
+        .colorOrange {
+            color: #FFA500;
+        }
+        .colorOrangeRed {
+            color: #FF4500;
+        }
+        .colorRed {
+            color: red;
+        }
+        .colorBlack {
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -105,7 +133,6 @@
         <br><br>
         <span>Описание сайта:</span><br><textarea name="text" id="about" cols="80" rows="4" maxlength="40"></textarea><br><span id="error8">Ошибка</span>
         <p id="cnt"></p>
-        <p id="results"></p>
         <button type="submit" id="push">Опубликовать</button>
     </form>
     <button id="btn" class="btn">Убрать предупреждения об ошибках</button>

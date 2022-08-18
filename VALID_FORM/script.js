@@ -128,17 +128,37 @@ const maxLength = textArea.getAttribute('maxlength');
 const cnt = document.getElementById('cnt');
 cnt.innerHTML = 'Осталось символов: ' +  maxLength;
 textArea.addEventListener('keyup', counter);
-textArea.addEventListener('keyup', function (EO) {
+textArea.addEventListener('keydown', function (EO) {
     if (EO.repeat) {
         counter();
     }
 });
 function counter() {
     const results = maxLength - textArea.value.length;
+    if (results < 39 && results > 30) {
+        cnt.classList.add('colorGreen');
+        cnt.innerHTML = 'Осталось символов: ' + results;
+    }
+    if (results < 30 && results > 20) {
+        cnt.classList.add('colorYellowGreen');
+    }
+    if (results < 20 && results > 10) {
+        cnt.classList.add('colorOrange');
+    }
+    if (results < 10 && results > 5) {
+        cnt.classList.add('colorOrangeRed');
+    }
+    if (results < 5 && results > 0) {
+        cnt.classList.add('colorRed');
+    }
+    if (results == 40) {
+        cnt.classList.add('colorBlack');
+    }
     cnt.innerHTML = 'Осталось символов: ' + results;
 }
 // developers
 let arrayDeleteSymbolsDevelopers = ['{', '}', '/', '*', '&', '-', '+', '.', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~'];
+developers.classList.add('lower');
 developers.addEventListener('blur', function (EO) {
     EO = EO || window.event;
     if (developers.value == '') {
@@ -164,5 +184,20 @@ developers.addEventListener('blur', function (EO) {
         developers.disabled = true;
         error0.innerHTML = '';
         error0.style.display = 'none';
+        if (developers.value.length < 3) {
+            error0.classList.add('e');
+            developers.classList.remove('gd');
+            developers.disabled = false;
+            error0.innerHTML = 'Возможно, вы что-то забыли указать, длина строки слишком мала';
+        }
+        if (developers.value.length > 20) {
+            error0.classList.add('e');
+            developers.classList.remove('gd');
+            developers.disabled = false;
+            developers.value = null;
+            error0.innerHTML = 'Был превышен лимит символов в строке';
+        }
     }
 });
+let arrayDeleteSymbolsSiteName = [...arrayDeleteSymbolsDevelopers];
+
