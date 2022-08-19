@@ -95,32 +95,41 @@ mainForm.addEventListener('submit', function (event) {
                 btn.classList.remove('btn')
                 btn.classList.add('block');
                 btn.style.marginTop = '15px';
-                elem.className += 'red';
             });
+            error0.classList.add('e');
+            error1.classList.add('e');
+            error2.classList.add('e');
+            error3.classList.add('e');
+            error4.classList.add('e');
+            error5.classList.add('e');
+            error6.classList.add('e');
+            error7.classList.add('e');
+            error8.classList.add('e');
+            error9.classList.add('e');
             event.preventDefault();
             break;
         }
     }
     btn.addEventListener('click', function (e) {
-        error0.classList.remove('red')
+        error0.classList.remove('e')
         error0.style.display = 'none';
-        error1.classList.remove('red')
+        error1.classList.remove('e')
         error1.style.display = 'none';
-        error2.classList.remove('red')
+        error2.classList.remove('e')
         error2.style.display = 'none';
-        error3.classList.remove('red')
+        error3.classList.remove('e')
         error3.style.display = 'none';
-        error4.classList.remove('red')
+        error4.classList.remove('e')
         error4.style.display = 'none';
-        error5.classList.remove('red')
+        error5.classList.remove('e')
         error5.style.display = 'none';
-        error6.classList.remove('red')
+        error6.classList.remove('e')
         error6.style.display = 'none';
-        error7.classList.remove('red')
+        error7.classList.remove('e')
         error7.style.display = 'none';
-        error8.classList.remove('red')
+        error8.classList.remove('e')
         error8.style.display = 'none';
-        error9.classList.remove('red')
+        error9.classList.remove('e')
         error9.style.display = 'none';
 });
 });
@@ -375,4 +384,34 @@ btn1.addEventListener('click', function (EO) {
             arrayElementsForm[h].classList.remove('gd');
         }
     }
+});
+catalog.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    for (let s = 0; s < catalog.length; s++) {
+        if (catalog[s].value == '1' || catalog[s].value == '2' || catalog[s].value == '3') {
+            error9.innerHTML = '';
+        }
+    }
+});
+radioButton1.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    error6.innerHTML = '';
+});
+radioButton2.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    error6.innerHTML = '';
+});
+radioButton3.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    error6.innerHTML = '';
+});
+checkbox.addEventListener('change', function (EO) {
+    error7.innerHTML = '';
+    checkbox.disabled = true;
+});
+textArea.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (this.value) {
+    error8.innerHTML = '';
+}
 });
