@@ -2,6 +2,7 @@
 let mainForm = document.getElementById('form');
 let spanError = document.getElementById('error');
 let btn = document.getElementById("btn");
+let btn1 = document.getElementById('btn1');
 const developers = document.getElementById('developers');
 const siteName = document.getElementById('sitename');
 const siteAdress = document.getElementById('siteadress');
@@ -157,7 +158,7 @@ function counter() {
     cnt.innerHTML = 'Осталось символов: ' + results;
 }
 // developers
-let arrayDeleteSymbolsDevelopers = ['{', '}', '/', '*', '&', '-', '+', '.', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~'];
+let arrayDeleteSymbolsDevelopers = ['{', '}', '/', '*', '&', '-', '+', '.', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', ':'];
 developers.classList.add('lower');
 developers.addEventListener('blur', function (EO) {
     EO = EO || window.event;
@@ -195,9 +196,136 @@ developers.addEventListener('blur', function (EO) {
             developers.classList.remove('gd');
             developers.disabled = false;
             developers.value = null;
-            error0.innerHTML = 'Был превышен лимит символов в строке';
+            error0.innerHTML = 'Был превышен лимит символов в строке(20)';
+        }
+        // if (developers.value && developers.value.length >= 3) {
+        //     btn1.classList.remove('btn');
+        // }
+    }
+});
+developers.addEventListener('keydown', function (EO) {
+   if (['{', '}', '/', '*', '&', '-', '+', '.', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', ':'].includes(EO.key)) {
+        EO.preventDefault();
+    }  
+});
+let arrayDeleteSymbolsSiteName = [...arrayDeleteSymbolsDevelopers];
+siteName.classList.add('lower');
+siteName.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (siteName.value == '') {
+        error1.style.display = 'inline';
+        error1.style.color = 'red';
+        error1.style.fontStyle = 'italic';
+        error1.style.fontSize = '24px';
+        error1.style.marginLeft = '15px';
+    }
+    for (let i = 0; i < arrayDeleteSymbolsSiteName.length; i++) {
+        if (siteName.value.includes(arrayDeleteSymbolsSiteName[i])) {
+            error1.style.display = 'inline';
+            error1.style.color = 'red';
+            error1.style.fontStyle = 'italic';
+            error1.style.fontSize = '24px';
+            error1.style.marginLeft = '15px';
+            error1.innerHTML = 'Ошибка, недопустимые символы';
+            siteName.value = null;
+        }
+    }
+    if (siteName.value) {
+        siteName.classList.add('gd');
+        siteName.disabled = true;
+        error1.innerHTML = '';
+        error1.style.display = 'none';
+        if (siteName.value.length < 3) {
+            error1.classList.add('e');
+            siteName.classList.remove('gd');
+            siteName.disabled = false;
+            error1.innerHTML = 'Возможно, вы что-то забыли указать, длина строки слишком мала';
+        }
+        if (siteName.value.length > 20) {
+            error1.classList.add('e');
+            siteName.classList.remove('gd');
+            siteName.disabled = false;
+            siteName.value = null;
+            error1.innerHTML = 'Был превышен лимит символов в строке(20)';
         }
     }
 });
-let arrayDeleteSymbolsSiteName = [...arrayDeleteSymbolsDevelopers];
+siteName.addEventListener('keydown', function (EO) {
+   if (['{', '}', '/', '*', '&', '-', '+', '.', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', ':'].includes(EO.key)) {
+        EO.preventDefault();
+    }  
+});
+let arrayDeleteSymbolsUrl = ['{', '}', '*', '&', '+', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~'];
+siteAdress.classList.add('lower');
+siteAdress.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (siteAdress.value == '') {
+        error2.style.display = 'inline';
+        error2.style.color = 'red';
+        error2.style.fontStyle = 'italic';
+        error2.style.fontSize = '24px';
+        error2.style.marginLeft = '15px';
+    }
+    arrayDeleteSymbolsUrl.forEach((elem) => {
+        if (siteAdress.value.includes(elem)) {
+            error2.style.display = 'inline';
+            error2.style.color = 'red';
+            error2.style.fontStyle = 'italic';
+            error2.style.fontSize = '24px';
+            error2.style.marginLeft = '15px';
+            error2.innerHTML = 'Ошибка, недопустимые символы';
+            siteAdress.value = null;
+        }
+    });
+    if (siteAdress.value) {
+        siteAdress.classList.add('gd');
+        siteAdress.disabled = true;
+        error2.innerHTML = '';
+        error2.style.display = 'none';
+        if (siteAdress.value.length < 3) {
+            error2.classList.add('e');
+            siteAdress.classList.remove('gd');
+            siteAdress.disabled = false;
+            error2.innerHTML = 'Возможно, вы что-то забыли указать, длина строки слишком мала';
+        }
+        if (siteAdress.value.length > 125) {
+            error2.classList.add('e');
+            siteAdress.classList.remove('gd');
+            siteAdress.disabled = false;
+            siteAdress.value = null;
+            error2.innerHTML = 'Был превышен лимит символов в строке(75)';
+        }
+    }
+});
+siteAdress.addEventListener('keydown', function (EO) {
+   if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~'].includes(EO.key)) {
+        EO.preventDefault();
+    }  
+});
+start.addEventListener('focus', function (EO) {
+    EO = EO || window.event;
+    error3.classList.add('dataAlert');
+    error3.innerHTML = 'Данное поле должно быть полностью заполнено. Пример: 01.01.2001';
+});
+start.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (start.value == '') {
+        error3.style.color = 'red';
+        error3.innerHTML = 'Ошибка';
+        push.disabled = true;
+    }
+    if (start.value) {
+        push.disabled = false;
+        error3.style.display = 'none';
+        error3.innerHTML = '';
+        start.disabled = 'true';
+        start.classList.add('gd');
+    }
+});
+visit.addEventListener('keydown', function (EO) {
+    EO = EO || window.event;
+    if (['+', '-', 'e', 'E'].includes(EO.key)) {
+        EO.preventDefault();
+    } 
+});
 

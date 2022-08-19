@@ -104,6 +104,16 @@
         .colorBlack {
             color: black;
         }
+        .dataAlert {
+            display: inline !important;
+            color: red;
+            font-style: italic;
+            font-size: 18px;
+            margin-left: 15px;
+        }
+        #btn1 {
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -116,7 +126,7 @@
         <br><br>
         <span>Дата запуска сайта</span><input type="date" name="date" id="startwork" class="shorttext"><span id="error3">Ошибка</span>
         <br><br>
-        <span>Посетителей в сутки:</span><input type="number" name="visitors" id="visit"><span id="error4">Ошибка</span>
+        <span>Посетителей в сутки:</span><input type="number" min="0" name="visitors" id="visit"><span id="error4">Ошибка</span>
         <br><br>
         <span>E-mail для связи:</span><input type="email" name="email" id="emailadress"><span id="error5">Ошибка</span>
         <br></br>
@@ -136,6 +146,7 @@
         <button type="submit" id="push">Опубликовать</button>
     </form>
     <button id="btn" class="btn">Убрать предупреждения об ошибках</button>
+    <button id="btn1" class="btn">Сделать поле доступным</button>
     <script src="./script.js"></script>
 </body>
 </html>
