@@ -328,4 +328,16 @@ visit.addEventListener('keydown', function (EO) {
         EO.preventDefault();
     } 
 });
+const emailReg = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+function onInput() {
+  if (isEmailValid(email.value)) {
+    email.style.borderColor = 'green';
+  } else {
+    email.style.borderColor = 'red';
+  }
+}
+email.addEventListener('input', onInput);
 
+function isEmailValid(value) {
+    return emailReg.test(value);
+}
