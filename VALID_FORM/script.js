@@ -333,6 +333,11 @@ visit.addEventListener('blur', function (EO) {
     if (visit.value == '') {
         error4.classList.add('dataAlert');
     }
+    if (visit.value.length > 4) {
+        error4.classList.add('dataAlert');
+        error4.innerHTML = 'Введенное некорректное значение';
+        visit.value = null;
+    }
     if (visit.value) {
         error4.style.display = 'none';
         error4.innerHTML = '';
