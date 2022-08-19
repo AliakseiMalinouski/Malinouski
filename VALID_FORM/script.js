@@ -198,9 +198,9 @@ developers.addEventListener('blur', function (EO) {
             developers.value = null;
             error0.innerHTML = 'Был превышен лимит символов в строке(20)';
         }
-        // if (developers.value && developers.value.length >= 3) {
-        //     btn1.classList.remove('btn');
-        // }
+        if (developers.value && developers.value.length >= 3) {
+            btn1.classList.remove('btn');
+        }
     }
 });
 developers.addEventListener('keydown', function (EO) {
@@ -328,16 +328,46 @@ visit.addEventListener('keydown', function (EO) {
         EO.preventDefault();
     } 
 });
+visit.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (visit.value == '') {
+        error4.classList.add('dataAlert');
+    }
+    if (visit.value) {
+        error4.style.display = 'none';
+        error4.innerHTML = '';
+        visit.disabled = 'true';
+        visit.classList.add('gd');
+    }
+});
+email.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (email.value == '') {
+        error5.classList.add('dataAlert');
+    }
+});
 const emailReg = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 function onInput() {
   if (isEmailValid(email.value)) {
-    email.style.borderColor = 'green';
+      email.style.borderColor = 'green';
+      error5.classList.remove('dataAlert');
+      error5.style.display = 'none';
+      error5.innerHTML = '';
+      email.disabled = 'true';
   } else {
     email.style.borderColor = 'red';
   }
 }
 email.addEventListener('input', onInput);
-
 function isEmailValid(value) {
     return emailReg.test(value);
 }
+btn1.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    for (let h = 0; h < arrayElementsForm.length; h++) {
+        if (arrayElementsForm[h].disabled = true && arrayElementsForm[h].classList.contains('gd')) {
+            arrayElementsForm[h].disabled = false;
+            arrayElementsForm[h].classList.remove('gd');
+        }
+    }
+});
