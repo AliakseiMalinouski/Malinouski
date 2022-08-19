@@ -385,11 +385,14 @@ btn1.addEventListener('click', function (EO) {
         }
     }
 });
-catalog.addEventListener('blur', function (EO) {
+catalog.addEventListener('click', function (EO) {
     EO = EO || window.event;
     for (let s = 0; s < catalog.length; s++) {
         if (catalog[s].value == '1' || catalog[s].value == '2' || catalog[s].value == '3') {
             error9.innerHTML = '';
+        }
+        if (catalog.value == 0) {
+            error9.innerHTML = 'Выбор обязателен';
         }
     }
 });
