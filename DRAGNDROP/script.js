@@ -8,10 +8,11 @@ function changePos(EO) {
         let offsetX;
         let offsetY;
         let zIndex = 0;
-        img.addEventListener('mousedown', function (EO) {
+        img.addEventListener('mouseup', function (EO) {
             EO = EO || window.event;
             img.style.zIndex = zIndex;
             zIndex++;
+            zIndex > 1 ? zIndex = 0 : zIndex;
         });
         img.addEventListener('dragstart', EO => {
             offsetX = EO.offsetX;
