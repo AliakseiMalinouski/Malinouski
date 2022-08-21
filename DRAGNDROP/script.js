@@ -3,13 +3,16 @@ window.addEventListener('load', changePos);
 function changePos(EO) {
     EO = EO || window.event;
     let imgCollection = document.querySelectorAll('img');
-    for (var i = 0; i < imgCollection.length; i++) {
+    for (let i = 0; i < imgCollection.length; i++) {
         let img = imgCollection[i];
         let offsetX;
         let offsetY;
-        img.onmouseup = function () {
-            img.style.zIndex = '2';
-        }
+        let zIndex = 0;
+        img.addEventListener('mousedown', function (EO) {
+            EO = EO || window.event;
+            img.style.zIndex = zIndex;
+            zIndex++;
+        });
         img.addEventListener('dragstart', EO => {
             offsetX = EO.offsetX;
             offsetY = EO.offsetY;
@@ -19,7 +22,6 @@ function changePos(EO) {
             img.style.position = 'absolute';
             img.style.top = (EO.pageY - offsetY) + 'px';
             img.style.left = (EO.pageX - offsetX) + 'px';
-            console.log(EO.pageX, EO.pageY);
         });
     }
 }
