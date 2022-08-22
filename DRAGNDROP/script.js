@@ -13,6 +13,7 @@ function changePos(EO) {
             offsetY = EO.offsetY;
             dragElement.style.position = 'absolute';
             dragElement.style.zIndex = '1';
+            dragElement.style.cursor = 'move';
         }
         dragElement.onmousemove = function (EO) {
             EO = EO || window.event;
