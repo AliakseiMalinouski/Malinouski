@@ -148,6 +148,7 @@ function createForm(array, form) {
             let delArr = ['?', '!', '.', '{', '}', '<', '>', '/', '*', '&', 'А', 'Н', 'Я'];
             tag.addEventListener('blur', () => {
                 if (tag.value == '') {
+                    console.log(tag.value)
                     alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
                 }
                 delArr.forEach((char) => {
