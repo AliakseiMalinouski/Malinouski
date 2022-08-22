@@ -2,31 +2,25 @@
 window.addEventListener('load', changePos);
 function changePos(EO) {
     EO = EO || window.event;
+    let dragElement = document.getElementById('t');
     let offsetX;
     let offsetY;
-    let imgCollection = document.querySelectorAll('img');
-    for (let i = 0; i < imgCollection.length; i++) {
-        imgCollection[i].onmousedown = function (EO) {
-            EO = EO || window.event;
-            imgCollection[i].style.position = 'absolute';
-            imgCollection[i].style.zIndex = '1';
-            imgCollection[i].style.cursor = 'move';
-            offsetX = EO.offsetX;
-            offsetY = EO.offsetY;
-        }
-        imgCollection[i].onmousemove = function (EO) {
-            EO = EO || window.event;
-            let x = EO.pageX;
-            let y = EO.pageY;
-            imgCollection[i].style.top = (y - offsetY) + 'px';
-            imgCollection[i].style.left = (x - offsetX) + 'px';
-            if (EO.clientX <= 0 || EO.clientY <= 0) {
-                imgCollection[i].style.position = 'static';
-            }
-        }
-        imgCollection[i].onmouseleave = function (EO) {
-            EO = EO || window.event;
-            imgCollection[i].style.zIndex = '0';
-        }
+    dragElement.onmousedown = function (EO) {
+        EO = EO || window.event;
+        offsetX = EO.offsetX;
+        offsetY = EO.offsetY;
+        dragElement.style.position = 'absolute';
+        dragElement.style.zIndex = '1';
+    }
+    dragElement.onmousemove = function (EO) {
+        EO = EO || window.event;
+        let x = EO.pageX;
+        let y = EO.pageY;
+        dragElement.style.left = (x - offsetX) + 'px';
+        dragElement.style.top = (y - offsetY) + 'px';
+    }
+    dragElement.onmouseup = function (EO) {
+        EO = EO || window.event;
+        dragElement = null;
     }
 }
