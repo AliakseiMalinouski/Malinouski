@@ -144,19 +144,22 @@ function createForm(array, form) {
             tag.setAttribute('placeholder', 'Имя*');
             tag.setAttribute('maxlength', '20');
             tag.classList.add('input_style');
+            tag.classList.add('lower');
             form.appendChild(tag);
-            let delArr = ['?', '!', '.', '{', '}', '<', '>', '/', '*', '&', 'А', 'Н', 'Я'];
-            tag.addEventListener('blur', () => {
-                if (tag.value == '') {
-                    console.log(tag.value)
-                    alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
-                }
-                delArr.forEach((char) => {
-                    if (tag.blur && tag.value.includes(char)) {
-                        alert('В строке для ввода имени недопустимые символы, пожалуйста, повторите попытку');
+            let delArr = ['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+            tag.addEventListener('keydown', (EO) => {
+                if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(EO.key)) {
+                EO = EO || window.event;
+                EO.preventDefault();
+            } 
+            });
+            tag.addEventListener('blur', function (EO) {
+                EO = EO || window.event;
+                delArr.forEach((elem) => {
+                    if (tag.value.includes(elem)) {
+                        console.log('ggg')
                     }
                 });
-                tag.value.toLowerCase().replace(/[.,\/#!?$%\^&\*;:{}=\-_`~()ъь]/g, "");
             });
         }
         if (elem.kind == 'shorttext') {
@@ -172,8 +175,9 @@ function createForm(array, form) {
             tag.classList.add('input_style');
             form.appendChild(tag);
             let divError = document.createElement('div');
-            tag.addEventListener('blur', () => {
-                if(tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+            tag.addEventListener('blur', (EO) => {
+                EO = EO || window.event; 
+                if (tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить gggg');
             });
         }
     });

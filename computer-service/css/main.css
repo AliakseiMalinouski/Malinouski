@@ -1284,5 +1284,7 @@ li {
           color: red; }
         .wrap .form .container .wrap_form #span-error3 {
           color: red; }
+        .wrap .form .container .wrap_form .lower {
+          text-transform: lowercase; }
 
 /*# sourceMappingURL=main.css.map */
