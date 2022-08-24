@@ -48,49 +48,35 @@ document.querySelector('.close-menu-catalog').addEventListener('click', function
     document.getElementById('catalog_menu').style.display = 'none';
 });
 document.querySelector('.call').addEventListener('click', function ($) {
-    document.querySelector('.modal_call').style.display = 'block';
+    document.querySelector('.modal_call').classList.add('active_modal');
     document.getElementById('body').style.overflowY = 'hidden';
-    document.querySelector('.header').style.backgroundColor = 'rgba(0,0,0,.7)';
-    document.querySelector('.header').style.filter = 'blur(5px)';
-    document.querySelector('.categories').style.backgroundColor = 'rgba(0,0,0,.7)';
-    document.querySelector('.categories').style.filter = 'blur(5px)';
-    document.querySelector('.catalog_slider').style.backgroundColor = 'rgba(0,0,0,.7)';
-    document.querySelector('.catalog_slider').style.filter = 'blur(5px)';
-    document.querySelector('.dignities').style.backgroundColor = 'rgba(0,0,0,.7)';
-    document.querySelector('.dignities').style.filter = 'blur(5px)';
-    document.querySelector('.banners').style.backgroundColor = 'rgba(0,0,0,.7)';
-    document.querySelector('.banners').style.filter = 'blur(5px)';
-    document.querySelector('.partners').style.backgroundColor = 'rgba(0,0,0,.7)';
-    document.querySelector('.partners').style.filter = 'blur(5px)';
-    document.querySelector('.accessories').style.backgroundColor = 'rgba(0,0,0,.7)';
-    document.querySelector('.accessories').style.filter = 'blur(5px)';
+    document.querySelector('.header').classList.add('active');
+    document.querySelector('.categories').classList.add('active');
+    document.querySelector('.catalog_slider').classList.add('active');
+    document.querySelector('.dignities').classList.add('active');
+    document.querySelector('.banners').classList.add('active');
+    document.querySelector('.partners').classList.add('active');
+    document.querySelector('.accessories').classList.add('active');
 });
-
 document.querySelector('.cross-close').addEventListener('click', function ($) {
-    document.querySelector('.modal_call').style.display = 'none';
+    document.querySelector('.modal_call').classList.remove('active_modal');
     document.getElementById('body').style.overflowY = '';
-    document.querySelector('.header').style.backgroundColor = '';
-    document.querySelector('.header').style.filter = '';
-    document.querySelector('.categories').style.backgroundColor = '';
-    document.querySelector('.categories').style.filter = '';
-    document.querySelector('.catalog_slider').style.backgroundColor = '';
-    document.querySelector('.catalog_slider').style.filter = '';
-    document.querySelector('.dignities').style.backgroundColor = '';
-    document.querySelector('.dignities').style.filter = '';
-    document.querySelector('.banners').style.backgroundColor = '';
-    document.querySelector('.banners').style.filter = '';
-    document.querySelector('.partners').style.backgroundColor = '';
-    document.querySelector('.partners').style.filter = '';
-    document.querySelector('.accessories').style.backgroundColor = '';
-    document.querySelector('.accessories').style.filter = '';
+    document.querySelector('.header').classList.remove('active');
+    document.querySelector('.header').classList.remove('active');
+    document.querySelector('.categories').classList.remove('active');;
+    document.querySelector('.catalog_slider').classList.remove('active');
+    document.querySelector('.dignities').classList.remove('active');
+    document.querySelector('.banners').classList.remove('active');
+    document.querySelector('.partners').classList.remove('active');
+    document.querySelector('.accessories').classList.remove('active');
 });
 document.querySelector('.consumables_click').addEventListener('click', function ($) {
-    document.getElementById('consumables').style.display = 'block';
-    document.getElementById('description').style.display = 'none';
+    document.getElementById('consumables').classList.add('active_modal');
+    document.getElementById('description').classList.add('disabled');
 });
 document.querySelector('.close-consumables-block').addEventListener('click', function ($) {
-    document.getElementById('consumables').style.display = 'none';
-    document.getElementById('description').style.display = 'block';
+    document.getElementById('consumables').classList.remove('active_modal');
+    document.getElementById('description').classList.remove('disabled');
 });
 // search
 document.querySelector('#search').oninput = function () {
@@ -157,19 +143,19 @@ function createForm(array, form) {
             document.getElementById('tag').addEventListener('blur', function (EO) {
                 if (this.value == '') {
                     alert('Поле с именем не может быть пустным, пожалуйста, повторите попытку');
-                    spanError.classList.add('active');
+                    spanError.classList.add('active_form_class');
                     EO.preventDefault();
                 }
                 delArr.forEach((element) => {
                     if (this.value.includes(element)) {
                         alert('В строке с именем находятся недопустимые символы, пожалуйста, повторите попытку');
-                        spanError.classList.add('active');
+                        spanError.classList.add('active_form_class');
                         this.value = null;
                         EO.preventDefault();
                     }
                 });
                 if (this.value) {
-                    spanError.classList.remove('active');
+                    spanError.classList.remove('active_form_class');
                 }
             });
         }
@@ -189,20 +175,20 @@ function createForm(array, form) {
                 EO = EO || window.event; 
                 if (tag.value == '') {
                     alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
-                    spanErrorNumber.classList.add('active');
+                    spanErrorNumber.classList.add('active_form_class');
                     tag.value = null;
                     EO.preventDefault();
                 }
                 if (tag.value) {
-                    spanErrorNumber.classList.remove('active');
+                    spanErrorNumber.classList.remove('active_form_class');
                 }
                 if (tag.value.length < 12) {
                     alert('Номер введён некорректно: количество цифр в номере не соотвествует действительности, повторите попыку');
-                    spanErrorNumber.classList.add('active');
+                    spanErrorNumber.classList.add('active_form_class');
                 }
                 if (tag.value.length > 12) {
                     alert('Номер введён некорректно: количество цифр в номере не соотвествует действительности, повторите попыку');
-                    spanErrorNumber.classList.add('active');
+                    spanErrorNumber.classList.add('active_form_class');
                 }
             });
             tag.addEventListener('keydown', function (EO) {
@@ -232,7 +218,7 @@ function createForm(array, form) {
             tag.addEventListener('blur', function (EO) {
                 if (this.value == '') {
                     alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
-                    spanErrorEmail.classList.add('active');
+                    spanErrorEmail.classList.add('active_form_class');
                     EO.preventDefault();
                 }
                 if (this.value.length > 50) {
@@ -243,9 +229,9 @@ function createForm(array, form) {
             const emailReg = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
             function onInput() {
                 if (isEmailValid(tag.value)) {
-                spanErrorEmail.classList.remove('active');
+                spanErrorEmail.classList.remove('active_form_class');
             } else {
-                spanErrorEmail.classList.add('active');
+                spanErrorEmail.classList.add('active_form_class');
             }
             }
             tag.addEventListener('input', onInput);

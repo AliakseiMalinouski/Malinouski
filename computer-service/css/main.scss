@@ -39,7 +39,16 @@ a {
 li {
     list-style: none;
 }
-
+.active_modal {
+    display: block !important;
+}
+.active {
+    background-color: rgba(0, 0, 0, .7);
+    filter: blur(5px);
+}
+.disabled {
+    display: none;
+}
 .wrap {
     position: relative;
     .modal-wrap {
@@ -1578,6 +1587,9 @@ li {
             padding-left: 960px;
             padding-top: 22px;
             position: relative;
+            background-image: url(../img/иллюстра.png);
+            background-position: 10% 35%;
+            background-repeat: no-repeat;
                 .input_style {
                     display: block;
                     margin-bottom: 30px;
@@ -1625,7 +1637,7 @@ li {
                 .lower {
                     text-transform: lowercase;
                 }
-                .active {
+                .active_form_class {
                     display: inline !important;
                 }
     }
