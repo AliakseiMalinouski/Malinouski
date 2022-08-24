@@ -37,8 +37,6 @@ document.querySelector('.prev').addEventListener('click', function () {
     SliderLine.style.left = -distance + 'px';
 });
 // catalog open menu
-let catalogOpen = document.querySelector('.open-menu-catalog');
-let catalogClose = document.querySelector('.close-menu-catalog');
 document.querySelector('.open-menu-catalog').addEventListener('click', function ($) {
     document.getElementById('catalog_menu').style.display = 'block';
     document.getElementById('open-menu-catalog').style.display = 'none';
@@ -49,7 +47,6 @@ document.querySelector('.close-menu-catalog').addEventListener('click', function
     document.getElementById('open-menu-catalog').style.display = 'block';
     document.getElementById('catalog_menu').style.display = 'none';
 });
-let call = document.querySelector('.call');
 document.querySelector('.call').addEventListener('click', function ($) {
     document.querySelector('.modal_call').style.display = 'block';
     document.getElementById('body').style.overflowY = 'hidden';
@@ -68,7 +65,7 @@ document.querySelector('.call').addEventListener('click', function ($) {
     document.querySelector('.accessories').style.backgroundColor = 'rgba(0,0,0,.7)';
     document.querySelector('.accessories').style.filter = 'blur(5px)';
 });
-let crossClose = document.querySelector('.cross-close');
+
 document.querySelector('.cross-close').addEventListener('click', function ($) {
     document.querySelector('.modal_call').style.display = 'none';
     document.getElementById('body').style.overflowY = '';
@@ -122,16 +119,20 @@ document.querySelector('#search').oninput = function () {
 function addColor(str,position,sim) {
     return str.slice(0, position) + '<mark>' + str.slice(position, position + sim) + '</mark>' + str.slice(position + sim);
 }
-// form
+// form + validation
 let formContainer = document.querySelector('#container-form');
 let formArray = [
     { label: "Введите ваше имя", kind: "longtext", name: "name" },
     { label: "Введите ваш номер телефона", kind: "shorttext", name: "phonenumber" },
-    { label: "Введите вашу электронную почту:", kind: "email", name: "email" },
+    { label: "Введите вашу электронную почту:", kind: "contact", name: "e-mail" },
 ];
 function createForm(array, form) {
     const formTag = document.forms.info;
     let tag;
+    let spanError = document.getElementById('span-error1');
+    let spanErrorNumber = document.getElementById('span-error2');
+    let spanErrorEmail = document.getElementById('span-error3');
+    let delArr = ['{', '}', '*', '&', '+', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',];
     array.forEach((elem) => {
         if (elem.kind == 'longtext') {
             let label = document.createElement('label');
@@ -143,23 +144,33 @@ function createForm(array, form) {
             tag.name = elem.name;
             tag.setAttribute('placeholder', 'Имя*');
             tag.setAttribute('maxlength', '20');
+            tag.setAttribute('id', 'tag');
             tag.classList.add('input_style');
             tag.classList.add('lower');
             form.appendChild(tag);
-            let delArr = ['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
             tag.addEventListener('keydown', (EO) => {
                 if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(EO.key)) {
                 EO = EO || window.event;
                 EO.preventDefault();
             } 
             });
-            tag.addEventListener('blur', function (EO) {
-                EO = EO || window.event;
-                delArr.forEach((elem) => {
-                    if (tag.value.includes(elem)) {
-                        console.log('ggg')
+            document.getElementById('tag').addEventListener('blur', function (EO) {
+                if (this.value == '') {
+                    alert('Поле с именем не может быть пустным, пожалуйста, повторите попытку');
+                    spanError.classList.add('active');
+                    EO.preventDefault();
+                }
+                delArr.forEach((element) => {
+                    if (this.value.includes(element)) {
+                        alert('В строке с именем находятся недопустимые символы, пожалуйста, повторите попытку');
+                        spanError.classList.add('active');
+                        this.value = null;
+                        EO.preventDefault();
                     }
                 });
+                if (this.value) {
+                    spanError.classList.remove('active');
+                }
             });
         }
         if (elem.kind == 'shorttext') {
@@ -174,11 +185,73 @@ function createForm(array, form) {
             tag.name = elem.name;
             tag.classList.add('input_style');
             form.appendChild(tag);
-            let divError = document.createElement('div');
             tag.addEventListener('blur', (EO) => {
                 EO = EO || window.event; 
-                if (tag.value == '') alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить gggg');
+                if (tag.value == '') {
+                    alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+                    spanErrorNumber.classList.add('active');
+                    tag.value = null;
+                    EO.preventDefault();
+                }
+                if (tag.value) {
+                    spanErrorNumber.classList.remove('active');
+                }
+                if (tag.value.length < 12) {
+                    alert('Номер введён некорректно: количество цифр в номере не соотвествует действительности, повторите попыку');
+                    spanErrorNumber.classList.add('active');
+                }
+                if (tag.value.length > 12) {
+                    alert('Номер введён некорректно: количество цифр в номере не соотвествует действительности, повторите попыку');
+                    spanErrorNumber.classList.add('active');
+                }
             });
+            tag.addEventListener('keydown', function (EO) {
+                EO = EO || window.event;
+                if (['+', '-', 'e', 'E'].includes(EO.key)) {
+                    EO.preventDefault();
+                }
+            });
+            tag.addEventListener('paste', function (EO) {
+                EO = EO || window.event;
+                if (['+', '-', 'e', 'E'].includes(EO.key)) {
+                    EO.preventDefault();
+                }
+            })
+        }
+        if (elem.kind == 'contact') {
+            let label = document.createElement('label');
+            label.innerHTML = elem.label;
+            label.classList.add('label');
+            form.appendChild(label);
+            tag = document.createElement('input');
+            tag.setAttribute('type', 'email');
+            tag.setAttribute('placeholder', '*e-mail');
+            tag.name = elem.name;
+            tag.classList.add('input_style');
+            form.appendChild(tag);
+            tag.addEventListener('blur', function (EO) {
+                if (this.value == '') {
+                    alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+                    spanErrorEmail.classList.add('active');
+                    EO.preventDefault();
+                }
+                if (this.value.length > 50) {
+                    alert('Недопустимая длина e-mail, повторите попытку');
+                    this.value = null;
+                }
+            });
+            const emailReg = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+            function onInput() {
+                if (isEmailValid(tag.value)) {
+                spanErrorEmail.classList.remove('active');
+            } else {
+                spanErrorEmail.classList.add('active');
+            }
+            }
+            tag.addEventListener('input', onInput);
+            function isEmailValid(value) {
+                return emailReg.test(value);
+            }
         }
     });
     

@@ -16,6 +16,7 @@ $black: #000000;
 $fone-cat: #F0F0FF;
 $banner4: #E3E1FF;
 $color-input: #4A4D4A;
+$modal: rgba(0, 0, 0, .7);
 $reg: 400;
 $medium: 500;
 $bold: 600;
@@ -545,6 +546,11 @@ li {
                     opacity: 1;
                     transform: none;
                 }
+             }
+             .active {
+                display: block;
+                background-color: rgba(0, 0, 0, .7);
+                filter: blur(5px);
              }
         }
         .consumables {
@@ -1599,18 +1605,28 @@ li {
                     position: absolute;
                 }
                 #span-error1 {
+                    display: none;
                     color: red;
-                    top: 50px;
-                    left: 300px;
+                    top: 90px;
+                    left: 1310px;
                 }
                 #span-error2 {
+                    display: none;
                     color: red;
+                    top: 240px;
+                    left: 1310px;
                 }
                 #span-error3 {
+                    display: none;
                     color: red;
+                    top: 390px;
+                    right: 40px;
                 }
                 .lower {
                     text-transform: lowercase;
+                }
+                .active {
+                    display: inline !important;
                 }
     }
     }
