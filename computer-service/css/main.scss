@@ -1640,6 +1640,18 @@ li {
                 .active_form_class {
                     display: inline !important;
                 }
+                button {
+                    position: absolute;
+                    bottom: 40px;
+                    font-size: $fz18;
+                    font-weight: $extra-bold;
+                    color: $white;
+                    background-color: $orange;
+                    width: 330px;
+                    height: 40px;
+                    cursor: pointer;
+                    border: 1px solid $orange;
+                }
     }
     }
     

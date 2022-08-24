@@ -1313,5 +1313,16 @@ li {
           text-transform: lowercase; }
         .wrap .form .container .wrap_form .active_form_class {
           display: inline !important; }
+        .wrap .form .container .wrap_form button {
+          position: absolute;
+          bottom: 40px;
+          font-size: 18px;
+          font-weight: 700;
+          color: #FFF;
+          background-color: #FFAF37;
+          width: 330px;
+          height: 40px;
+          cursor: pointer;
+          border: 1px solid #FFAF37; }
 
 /*# sourceMappingURL=main.css.map */
