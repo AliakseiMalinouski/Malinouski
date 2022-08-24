@@ -105,6 +105,13 @@ document.querySelector('#search').oninput = function () {
 function addColor(str,position,sim) {
     return str.slice(0, position) + '<mark>' + str.slice(position, position + sim) + '</mark>' + str.slice(position + sim);
 }
+let computerTech = document.getElementById('computer_tech');
+let accessoriesComputer = document.getElementById('acc_block3_nth3');
+computerTech.onclick = function (EO) {
+    EO = EO || window.event;
+    window.scrollTo(0, 2900);
+    accessoriesComputer.classList.add('computer_tech_block');
+}
 // form + validation
 let formContainer = document.querySelector('#container-form');
 let formArray = [
@@ -112,13 +119,13 @@ let formArray = [
     { label: "Введите ваш номер телефона", kind: "shorttext", name: "phonenumber" },
     { label: "Введите вашу электронную почту:", kind: "contact", name: "e-mail" },
 ];
+let spanError = document.getElementById('span-error1');
+let spanErrorNumber = document.getElementById('span-error2');
+let spanErrorEmail = document.getElementById('span-error3');
 function createForm(array, form) {
     const formTag = document.forms.info;
     let tag;
-    let spanError = document.getElementById('span-error1');
-    let spanErrorNumber = document.getElementById('span-error2');
-    let spanErrorEmail = document.getElementById('span-error3');
-    let delArr = ['{', '}', '*', '&', '+', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',];
+    let delArr = ['{', '}', '*', '&', '+', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '@', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',];
     array.forEach((elem) => {
         if (elem.kind == 'longtext') {
             let label = document.createElement('label');
@@ -135,7 +142,7 @@ function createForm(array, form) {
             tag.classList.add('lower');
             form.appendChild(tag);
             tag.addEventListener('keydown', (EO) => {
-                if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(EO.key)) {
+                if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(EO.key)) {
                 EO = EO || window.event;
                 EO.preventDefault();
             } 
@@ -240,6 +247,23 @@ function createForm(array, form) {
             }
         }
     });
-    
 }
 createForm(formArray, document.forms.form1);
+let mainForm = document.getElementById('form1');
+for (let i = 0; i < mainForm.length; i++) {
+    mainForm.addEventListener('submit', function (EO) {
+        EO = EO || window.event;
+        if (mainForm[1].value === '') {
+            spanError.classList.add('active_form_class');
+            EO.preventDefault();
+        }
+        if (mainForm[2].value == '') {
+            spanErrorNumber.classList.add('active_form_class');
+            EO.preventDefault();
+        }
+        if (mainForm[3].value == '') {
+            spanErrorEmail.classList.add('active_form_class');
+            EO.preventDefault();
+        }
+    }) 
+}
