@@ -3,11 +3,11 @@ function _createModalWindow(title, closable, content, width ) {
     const defaultWidth = '400px';
     modal.classList.add('vmodal');
     modal.insertAdjacentHTML('afterbegin', `
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-close="true">
             <div class="modal-window" style="${width || defaultWidth}">
                 <div class="modal-header">
                     <h3 class="modal-title">${title || 'WindowAlert'}</h3>
-                    ${closable ? `<span class="modal-close">&times;</span>` : ''}
+                    ${closable ? `<span class="modal-close" data-close="true">&times;</span>` : ''}
                 </div>
                 <div class="modal-body">
                     ${content || ''}
@@ -35,7 +35,7 @@ const $modal = _createModalWindow(options.title, options.closable, options.conte
 $.modal = function (options) {
     const animationTime = 600;
     let closing = false;
-    return {
+    const modal = {
         open() {
             !closing && $modal.classList.add('open');
         },
@@ -48,8 +48,13 @@ $.modal = function (options) {
                 closing = false;
             }, animationTime);
         },
-        destroy() {
-            console.log("ggg")
+    };
+    $modal.addEventListener('click', EO => {
+        EO = EO || window.event;
+        console.log(EO.target.dataset.close)
+        if (EO.target.dataset.close) {
+            
         }
-    }
+    });
+    return modal;
 }
