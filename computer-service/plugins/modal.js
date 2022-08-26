@@ -1,16 +1,16 @@
-function _createModalWindow(options) {
+function _createModalWindow(title, closable, content, width ) {
     const modal = document.createElement('div');
     const defaultWidth = '400px';
     modal.classList.add('vmodal');
     modal.insertAdjacentHTML('afterbegin', `
     <div class="modal-overlay">
-            <div class="modal-window" style="width: ${options.width || defaultWidth}">
+            <div class="modal-window" style="${width || defaultWidth}">
                 <div class="modal-header">
-                    <h3 class="modal-title">${options.title || 'Window'}</h3>
-                    <span>&times;</span>
+                    <h3 class="modal-title">${title || 'WindowAlert'}</h3>
+                    ${closable ? `<span class="modal-close">&times;</span>` : ''}
                 </div>
                 <div class="modal-body">
-                    ${options.content || ''}
+                    ${content || ''}
                 </div>
                 <div class="modal-footer">
                     <button>OK</button>
@@ -23,9 +23,15 @@ function _createModalWindow(options) {
     document.body.appendChild(modal);
     return modal;
 }
-
-const $modal = _createModalWindow();
-
+options = {
+    title: 'ModalWindow',
+    closable: true,
+    content: `
+    <h4>Modal content<h4>
+    <p>TestTestTeSTtEST</p?`,
+    width: '400px',
+}
+const $modal = _createModalWindow(options.title, options.closable, options.content, options.width);
 $.modal = function (options) {
     const animationTime = 600;
     let closing = false;

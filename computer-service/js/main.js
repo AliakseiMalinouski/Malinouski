@@ -268,11 +268,4 @@ for (let i = 0; i < mainForm.length; i++) {
     });
 }
 // modalWindow
-const modal = $.modal({
-    title: 'ModalWindow',
-    closable: true,
-    content: `
-    <h4>Modal content<h4>
-    <p>TestTestTeSTtEST</p?`,
-    width: '400px',
-});
+const modal = $.modal;
