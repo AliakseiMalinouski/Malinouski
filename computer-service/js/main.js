@@ -265,5 +265,14 @@ for (let i = 0; i < mainForm.length; i++) {
             spanErrorEmail.classList.add('active_form_class');
             EO.preventDefault();
         }
-    }) 
+    });
 }
+// modalWindow
+const modal = $.modal({
+    title: 'ModalWindow',
+    closable: true,
+    content: `
+    <h4>Modal content<h4>
+    <p>TestTestTeSTtEST</p?`,
+    width: '400px',
+});
