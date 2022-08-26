@@ -265,6 +265,9 @@ for (let i = 0; i < mainForm.length; i++) {
             spanErrorEmail.classList.add('active_form_class');
             EO.preventDefault();
         }
+        if (mainForm[1].value && mainForm[2].value && mainForm[3].value) {
+            console.log("ggg")
+        }
     });
 }
 // modalWindow

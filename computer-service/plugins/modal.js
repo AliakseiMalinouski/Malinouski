@@ -20,7 +20,8 @@ function _createModalWindow(title, closable, content, width ) {
         </div>
     `   
     );
-    document.body.appendChild(modal);
+    // modal.style.display = 'none';
+    document.body.appendChild(modal)
     return modal;
 }
 options = {
