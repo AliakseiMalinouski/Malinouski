@@ -53,7 +53,7 @@ $.modal = function (options) {
         EO = EO || window.event;
         console.log(EO.target.dataset.close)
         if (EO.target.dataset.close) {
-            
+            modal.close();
         }
     });
     return modal;
