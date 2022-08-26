@@ -7,7 +7,7 @@ function _createModalWindow(title, closable, content, width ) {
             <div class="modal-window" style="${width || defaultWidth}">
                 <div class="modal-header">
                     <h3 class="modal-title">${title || 'WindowAlert'}</h3>
-                    ${closable ? `<span class="modal-close" data-close="true">&times;</span>` : ''}
+                    ${closable ? `<span style="cursor: pointer" class="modal-close" data-close="true">&times;</span>` : ''}
                 </div>
                 <div class="modal-body" data-content>
                     ${content || ''}

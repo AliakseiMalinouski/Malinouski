@@ -151,7 +151,7 @@ function createForm(array, form) {
             });
             document.getElementById('tag').addEventListener('blur', function (EO) {
                 if (this.value == '') {
-                    alert('Поле с именем не может быть пустным, пожалуйста, повторите попытку');
+                    modal().open();
                     spanError.classList.add('active_form_class');
                     EO.preventDefault();
                 }
@@ -206,12 +206,12 @@ function createForm(array, form) {
             form.appendChild(tag);
             tag.addEventListener('blur', function (EO) {
                 if (this.value == '') {
-                    alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
+                    modal().open();
                     spanErrorEmail.classList.add('active_form_class');
                     EO.preventDefault();
                 }
                 if (this.value.length > 50) {
-                    alert('Недопустимая длина e-mail, повторите попытку');
+                    modal().open();
                     this.value = null;
                 }
             });
@@ -231,10 +231,14 @@ function createForm(array, form) {
     });
 }
 createForm(formArray, document.forms.form1);
+let testObj = {
+    title: 'trrrrr',
+}
 let mainForm = document.getElementById('form1');
 for (let i = 0; i < mainForm.length; i++) {
     mainForm.addEventListener('submit', function (EO) {
         EO = EO || window.event;
+        if(mainForm[i].value == '') modal().open();
         if (mainForm[1].value === '') {
             spanError.classList.add('active_form_class');
             EO.preventDefault();
