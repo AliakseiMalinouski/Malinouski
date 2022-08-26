@@ -1,3 +1,5 @@
+// modalWindow
+const modal = $.modal;
 // input type text
 let search = document.getElementById('search');
 let magnifier = document.getElementById('magnifier');
@@ -172,41 +174,21 @@ function createForm(array, form) {
             label.classList.add('label');
             form.appendChild(label);
             tag = document.createElement('input');
-            tag.setAttribute('type', 'number');
+            tag.setAttribute('type', 'text');
             tag.setAttribute('placeholder', '+7 --- --- -- --*');
-            tag.setAttribute('maxlength', '20');
+            tag.setAttribute('maxlength', '12');
             tag.name = elem.name;
             tag.classList.add('input_style');
             form.appendChild(tag);
-            tag.addEventListener('blur', (EO) => {
-                EO = EO || window.event; 
-                if (tag.value == '') {
-                    alert('Вы не заполнили данные, попробуйте еще раз, чтобы продолжить');
-                    spanErrorNumber.classList.add('active_form_class');
-                    tag.value = null;
-                    EO.preventDefault();
-                }
-                if (tag.value) {
-                    spanErrorNumber.classList.remove('active_form_class');
-                }
-                if (tag.value.length < 12) {
-                    alert('Номер введён некорректно: количество цифр в номере не соотвествует действительности, повторите попыку');
-                    spanErrorNumber.classList.add('active_form_class');
-                }
-                if (tag.value.length > 12) {
-                    alert('Номер введён некорректно: количество цифр в номере не соотвествует действительности, повторите попыку');
-                    spanErrorNumber.classList.add('active_form_class');
-                }
-            });
             tag.addEventListener('keydown', function (EO) {
                 EO = EO || window.event;
-                if (['+', '-', 'e', 'E'].includes(EO.key)) {
+                if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ].includes(EO.key)) {
                     EO.preventDefault();
                 }
             });
             tag.addEventListener('paste', function (EO) {
                 EO = EO || window.event;
-                if (['+', '-', 'e', 'E'].includes(EO.key)) {
+                if (['-', 'e', 'E', '{', '}', '*', '&','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'] .includes(EO.key)) {
                     EO.preventDefault();
                 }
             })
@@ -270,5 +252,3 @@ for (let i = 0; i < mainForm.length; i++) {
         }
     });
 }
-// modalWindow
-const modal = $.modal;
