@@ -3,7 +3,6 @@ window.addEventListener('load', changePos);
 function changePos(EO) {
     EO = EO || window.event;
     let imgs = document.querySelectorAll('img');
-    let arrayCoor = [];
     let startX;
     let startY;
     for (let j = 0; j < imgs.length; j++) {
