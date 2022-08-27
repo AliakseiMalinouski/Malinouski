@@ -8,9 +8,11 @@ function changePos(EO) {
     for (let j = 0; j < imgs.length; j++) {
         startX = imgs[j].offsetLeft;
         startY = imgs[j].offsetTop;
-        imgs[j].style.position = 'absolute';
         imgs[j].style.left = startX + 'px';
         imgs[j].style.top = startY + 'px';
+    }
+    for (let n = 0; n < imgs.length; n++) {
+        imgs[n].style.position = 'absolute';
     }
     let offsetX;
     let offsetY;
