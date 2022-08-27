@@ -3,6 +3,16 @@ window.addEventListener('load', changePos);
 function changePos(EO) {
     EO = EO || window.event;
     let imgs = document.querySelectorAll('img');
+    let arrayCoor = [];
+    let startX;
+    let startY;
+    for (let j = 0; j < imgs.length; j++) {
+        startX = imgs[j].offsetLeft;
+        startY = imgs[j].offsetTop;
+        imgs[j].style.position = 'absolute';
+        imgs[j].style.left = startX + 'px';
+        imgs[j].style.top = startY + 'px';
+    }
     let offsetX;
     let offsetY;
     for (let i = 0; i < imgs.length; i++) {
