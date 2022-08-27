@@ -40,5 +40,5 @@ function changePos(EO) {
             EO = EO || window.event;
             dragElement = null;
         });
-    }
+    };
 }
