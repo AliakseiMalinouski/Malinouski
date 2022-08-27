@@ -1,5 +1,6 @@
 "use strict";
 window.addEventListener('load', changePos);
+let tt;
 function changePos(EO) {
     EO = EO || window.event;
     let imgs = document.querySelectorAll('img');
@@ -20,11 +21,12 @@ function changePos(EO) {
         let dragElement = imgs[i];
         dragElement.addEventListener('mousedown', function (EO) {
             EO = EO || window.event;
+            tt = dragElement;
             offsetX = EO.offsetX;
             offsetY = EO.offsetY;
             dragElement.style.zIndex = '1';
             dragElement.style.cursor = 'move';
-            dragElement.onmousemove = mouseMove;
+            window.onmousemove = mouseMove;
         });
         dragElement.ondragstart = function () {
             return false;
@@ -38,7 +40,7 @@ function changePos(EO) {
         }
         dragElement.addEventListener('mouseup', function (EO) {
             EO = EO || window.event;
-            dragElement = null;
+            window.onmousemove = false;
         });
     };
 }
