@@ -365,12 +365,12 @@ function checkSymbolsAfterBlurNumber(EO) {
     });
 }
 // sticky block
-let amountBasket = 0;
-let amountBasketSpan = document.getElementById('amount-basket')
-let tb = document.getElementById("test-button");
-tb.addEventListener('click', addAmountForBasket);
-function addAmountForBasket(EO) {
+let amountLiked = 0;
+let amountLikedSpan = document.getElementById('amount-liked');
+let likeButtonConsumables = document.getElementById('like_button_consumables');
+likeButtonConsumables.addEventListener('click', addAmountForLiked);
+function addAmountForLiked(EO) {
     EO = EO || window.event;
-    amountBasket++;
-    amountBasketSpan.innerHTML = amountBasket;
+    amountLiked++;
+    amountLikedSpan.innerHTML = amountLiked;
 }
