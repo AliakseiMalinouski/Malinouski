@@ -256,3 +256,70 @@ for (let i = 0; i < mainForm.length; i++) {
         }
     });
 }
+
+// feedback form
+const feedbackForm = document.getElementById('called_form');
+const modalFeedbackForm = document.querySelector('modal-call');
+const inputNameFeedbackForm = document.getElementById('inputNameFeedbackForm');
+const inputNumberFeedbackForm = document.getElementById('inputNumberFeedbackForm');
+let arrayFeedbackFormElements = [];
+arrayFeedbackFormElements.push(inputNameFeedbackForm);
+arrayFeedbackFormElements.push(inputNumberFeedbackForm);
+const spanErrorF = document.getElementById('error_1');
+const spanErrorF2 = document.getElementById('error_2');
+feedbackForm.addEventListener('submit', showSubmitAlert);
+function showSubmitAlert(EO) {
+    EO = EO || window.event;
+    for (let i = 0; i < arrayFeedbackFormElements.length; i++) {
+        if (arrayFeedbackFormElements[i].value == '') {
+            modal().open();
+            spanErrorF.textContent = 'Ошибка';
+            spanErrorF2.textContent = 'Ошибка';
+            EO.preventDefault();
+        }
+    }
+}
+inputNameFeedbackForm.addEventListener('keydown', checkSymbolsInputNameAtKeydown);
+function checkSymbolsInputNameAtKeydown(EO) {
+    EO = EO || window.event;
+    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ].includes(EO.key)) {
+        EO.preventDefault();
+    }
+}
+inputNameFeedbackForm.addEventListener('paste', checkSymbolsInputNameAtPaste);
+function checkSymbolsInputNameAtPaste(EO) {
+    EO = EO || window.event;
+    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ].includes(EO.key)) {
+        EO.preventDefault();
+    }
+}
+inputNumberFeedbackForm.addEventListener('keydown', clearBannedSymbols);
+function clearBannedSymbols(EO) {
+    EO = EO || window.event;
+    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ].includes(EO.key)) {
+        EO.preventDefault();
+    }
+}
+inputNumberFeedbackForm.addEventListener('paste', checkSymbolsInputNumberAtPaste);
+function checkSymbolsInputNumberAtPaste(EO) {
+    EO = EO || window.event;
+    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ].includes(EO.key)) {
+        EO.preventDefault();
+    }
+}
+inputNameFeedbackForm.addEventListener('blur', checkSymbolsAfterBlur);
+function checkSymbolsAfterBlur(EO) {
+    EO = EO || window.event;
+    let numbersAndSymbols = '1234567890?!{}[]~!@#$%^&*()-=+/|`';
+    let arrayNumbersAndSymbols = [...numbersAndSymbols].forEach(function (elem) {
+        if (inputNameFeedbackForm.value.includes(elem)) {
+            modal().open();
+            inputNameFeedbackForm.value = null;
+            spanErrorF.textContent = 'Ошибка';
+            EO.preventDefault();
+        }
+        if (inputNameFeedbackForm.value) {
+            
+        }
+    });
+}

@@ -105,6 +105,18 @@ li {
         background-color: #FFF;
         top: 210px;
         left: 170px; }
+      .wrap .modal-wrap .modal_call #error_1 {
+        position: absolute;
+        top: 190px;
+        left: 580px;
+        color: red; }
+      .wrap .modal-wrap .modal_call #error_2 {
+        position: absolute;
+        right: 160px;
+        top: 270px;
+        color: red; }
+      .wrap .modal-wrap .modal_call .lower {
+        text-transform: lowercase; }
 @keyframes modal_call {
   from {
     opacity: 0.5;
