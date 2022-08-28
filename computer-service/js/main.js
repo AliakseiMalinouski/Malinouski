@@ -318,8 +318,11 @@ function checkSymbolsAfterBlur(EO) {
             spanErrorF.textContent = 'Ошибка';
             EO.preventDefault();
         }
+        if (inputNameFeedbackForm.value == '') {
+            spanErrorF.textContent = 'Поле не может быть пустым';
+        }
         if (inputNameFeedbackForm.value) {
-            
+            spanErrorF.textContent = '';
         }
     });
 }

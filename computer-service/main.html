@@ -20,8 +20,8 @@
         <img src="./img/cross-close.png" alt="Закрыть" class="cross-close">
         <p>Заполните, пожалуйста, заявку. Мы с вами свяжемся!</p>
         <form action="#" method="get" id="called_form" name="feedback"> 
-            <input type="text" name="name" placeholder="Введите Ваше имя" id="inputNameFeedbackForm" required> 
-            <input type="text" name="lastname" placeholder="Введите Ваш номер телефона" id="inputNumberFeedbackForm" required>
+            <input type="text" name="name" placeholder="Введите Ваше имя" id="inputNameFeedbackForm"  maxlength="30"> 
+            <input type="text" name="lastname" placeholder="Введите Ваш номер телефона" id="inputNumberFeedbackForm" required maxlength="12">
             <button class="after-submit" type="submit">Отправить заявку</button>
             <span id="error_1"></span>
             <span id="error_2"></span>
