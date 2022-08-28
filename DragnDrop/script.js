@@ -6,6 +6,7 @@ function changePos(EO) {
     let imgs = document.querySelectorAll('img');
     let startX;
     let startY;
+    let zIndex = 0;
     for (let j = 0; j < imgs.length; j++) {
         startX = imgs[j].offsetLeft;
         startY = imgs[j].offsetTop;
@@ -24,7 +25,8 @@ function changePos(EO) {
             tt = dragElement;
             offsetX = EO.offsetX;
             offsetY = EO.offsetY;
-            dragElement.style.zIndex = '1';
+            zIndex++;
+            dragElement.style.zIndex = zIndex;
             dragElement.style.cursor = 'move';
             window.onmousemove = mouseMove;
         });
@@ -40,7 +42,7 @@ function changePos(EO) {
         }
         dragElement.addEventListener('mouseup', function (EO) {
             EO = EO || window.event;
-            window.onmousemove = false;
+            window.onmousemove = null;
         });
     };
 }
