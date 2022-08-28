@@ -107,12 +107,30 @@ document.querySelector('#search').oninput = function () {
 function addColor(str,position,sim) {
     return str.slice(0, position) + '<mark>' + str.slice(position, position + sim) + '</mark>' + str.slice(position + sim);
 }
+// scroll to items
 let computerTech = document.getElementById('computer_tech');
 let accessoriesComputer = document.getElementById('acc_block3_nth3');
-computerTech.onclick = function (EO) {
+computerTech.addEventListener('click', scrollToComputersItems); 
+function scrollToComputersItems(EO) {
     EO = EO || window.event;
     window.scrollTo(0, 2900);
-    accessoriesComputer.classList.add('computer_tech_block');
+    accessoriesComputer.classList.add('animation-after-scroll');
+}
+let laptops = document.getElementById('laptops');
+let accessoriesLaptops = document.getElementById('acc_block_laptops');
+laptops.addEventListener('click', scrollToLaptopsItems);
+function scrollToLaptopsItems(EO) {
+    EO = EO || window.event;
+    window.scrollTo(0, 2700);
+    accessoriesLaptops.classList.add('animation-after-scroll');
+}
+let printers = document.getElementById('printers');
+let accessoriesPrinters = document.getElementById('acc_block_printers');
+printers.addEventListener('click', scrollToPrintersItems);
+function scrollToPrintersItems(EO) {
+    EO = EO || window.event;
+    window.scrollTo(0, 2700);
+    accessoriesPrinters.classList.add('animation-after-scroll');
 }
 // form + validation
 let formContainer = document.querySelector('#container-form');
@@ -345,4 +363,14 @@ function checkSymbolsAfterBlurNumber(EO) {
             spanErrorF2.textContent = '';
         }
     });
+}
+// sticky block
+let amountBasket = 0;
+let amountBasketSpan = document.getElementById('amount-basket')
+let tb = document.getElementById("test-button");
+tb.addEventListener('click', addAmountForBasket);
+function addAmountForBasket(EO) {
+    EO = EO || window.event;
+    amountBasket++;
+    amountBasketSpan.innerHTML = amountBasket;
 }

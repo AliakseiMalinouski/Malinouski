@@ -14,7 +14,22 @@
     <title>CBC</title>
 </head>
 <body id="body">
+    <button id="test-button">click</button>
     <div class="wrap">
+        <div class="sticky-block">
+            <div>
+                <img src="./img/choce.png" alt="Корзина">
+                <span id="amount-basket">0</span>
+            </div>
+            <div>
+                <img src="./img/liked.png" alt="Понравилось">
+                <span>0</span>
+            </div>
+            <div>
+                <img src="./img/level.png" alt="Статистика">
+                <span>0</span>
+            </div>
+        </div>
         <div class="modal-wrap">
         <div class="modal_call">
         <img src="./img/cross-close.png" alt="Закрыть" class="cross-close">
@@ -72,8 +87,8 @@
         <div class="search-variants">
             <ul class="variants">
                 <li id="computer_tech">компьютерная техника</li>
-                <li>ноутбуки</li>
-                <li>принтеры</li>
+                <li id="laptops">ноутбуки</li>
+                <li id="printers">принтеры</li>
                 <li>микрофоны</li>
                 <li>видеокарты</li>
                 <li>мониторы</li>
@@ -339,7 +354,7 @@
                     <img src="./img/ryzen.png" alt="ryzen">
                     <img src="./img/more.png" alt="Ещё">
                 </div>
-                <div>
+                <div id="acc_block_laptops">
                     <img src="./img/laptops.png" alt="Ноутбуки">
                     <img src="./img/more.png" alt="Ещё">
                 </div>
@@ -353,7 +368,7 @@
                     <img src="./img/mon.png" alt="Мониторы">
                     <img src="./img/more.png" alt="Ещё">
                 </div>
-                <div>
+                <div id="acc_block_printers">
                     <img src="./img/print.png" alt="Принтеры">
                     <img src="./img/more.png" alt="Ещё">
                 </div>

@@ -159,6 +159,68 @@ li {
             transform: none;
         }
     }
+    .sticky-block {
+        position: fixed;
+        right: 0px;
+        top: 460px;
+        border-radius: 13px;
+        div {
+            width: 90px;
+            height: 90px;
+            span {
+                position: absolute;
+                top: 5px;
+                right: 20px;
+            }
+        }
+        div:nth-child(1) {
+            background-color: $darkblue;
+            position: relative;
+            border-top-left-radius: 13px;
+            img {
+                position: absolute;
+                left: 25px;
+                top: 25px;
+            }
+            span {
+                width: 15px;
+                height: 15px;
+                border: 1px solid $orange;
+                border-radius: 50%;
+                font-size: $fz10;
+                color: $white;
+                padding-left: 3.2px;
+                padding-top: 1px;
+            }
+        }
+        div:nth-child(2) {
+            position: relative;
+            img {
+                position: absolute;
+                left: 25px;
+                top: 25px;
+            }
+            span {
+                width: 15px;
+                height: 15px;
+                border: 1px solid $darkblue;
+                background-color: $darkblue;
+                border-radius: 50%;
+                font-size: $fz10;
+                color: $white;
+                padding-left: 3.2px;
+                padding-top: 1px;
+            }
+        }
+        div:nth-child(3) {
+            position: relative;
+            img {
+                position: absolute;
+                left: 25px;
+                top: 25px;
+            }
+        }
+    }
 .header {
     height: 264px;
     padding-bottom: 26px;
@@ -1595,19 +1657,21 @@ li {
                 }
         }
                 }
-                .computer_tech_block {
-                    animation: comp_tech_block 2s linear;
-                }
-                @keyframes comp_tech_block {
-                    from {
-                        transform: rotate(0deg);
-                    }
-                    to {
-                        transform: rotate(360deg);
-                    }
-                }
         }
     }
+     .animation-after-scroll {
+            animation: comp_tech_block 2s linear;
+        }
+
+        @keyframes comp_tech_block {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
 }
 .form {
     padding-top: 100px;
@@ -1691,5 +1755,4 @@ li {
     }
     
 }
-
 }
