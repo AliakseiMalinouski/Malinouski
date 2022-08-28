@@ -67,6 +67,8 @@
         border-bottom: 1px solid #eee;
         h3 {
             font-size: 22px;
+            font-weight: 400;
+            color: #FFAF37;
         }
     }
     .modal-body {
@@ -84,6 +86,12 @@
         padding-top: 10px;
         button {
             margin-right: 15px;
+            width: 40px;
+            height: 25px;
+            color: white;
+            border: 1px solid #FFAF37;
+            background-color: #FFAF37;
+            cursor: pointer;
         }
     }
 }

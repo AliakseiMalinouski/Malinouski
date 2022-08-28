@@ -231,9 +231,6 @@ function createForm(array, form) {
     });
 }
 createForm(formArray, document.forms.form1);
-let testObj = {
-    title: 'trrrrr',
-}
 let mainForm = document.getElementById('form1');
 for (let i = 0; i < mainForm.length; i++) {
     mainForm.addEventListener('submit', function (EO) {
@@ -319,7 +316,9 @@ function checkSymbolsAfterBlurInputName(EO) {
             EO.preventDefault();
         }
         if (inputNameFeedbackForm.value == '') {
+            modal().open();
             spanErrorF.textContent = 'Поле не может быть пустым';
+            EO.preventDefault();
         }
         if (inputNameFeedbackForm.value) {
             spanErrorF.textContent = '';
@@ -338,7 +337,9 @@ function checkSymbolsAfterBlurNumber(EO) {
             EO.preventDefault();
         }
         if (inputNumberFeedbackForm.value == '') {
+            modal().open();
             spanErrorF2.textContent = 'Ошибка';
+            EO.preventDefault();
         }
         if (inputNumberFeedbackForm.value) {
             spanErrorF2.textContent = '';

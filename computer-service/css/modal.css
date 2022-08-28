@@ -57,7 +57,9 @@
     justify-content: space-between;
     border-bottom: 1px solid #eee; }
     .modal-overlay .modal-header h3 {
-      font-size: 22px; }
+      font-size: 22px;
+      font-weight: 400;
+      color: #FFAF37; }
   .modal-overlay .modal-body {
     padding-left: 20px;
     padding-right: 20px; }
@@ -70,6 +72,12 @@
     justify-content: flex-end;
     padding-top: 10px; }
     .modal-overlay .modal-footer button {
-      margin-right: 15px; }
+      margin-right: 15px;
+      width: 40px;
+      height: 25px;
+      color: white;
+      border: 1px solid #FFAF37;
+      background-color: #FFAF37;
+      cursor: pointer; }
 
 /*# sourceMappingURL=modal.css.map */

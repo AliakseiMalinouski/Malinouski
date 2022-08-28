@@ -13,8 +13,8 @@ function _createModalWindow(title, closable, content, width ) {
                     ${content || ''}
                 </div>
                 <div class="modal-footer">
-                    <button>OK</button>
-                    <button>Close</button>
+                    <button data-close="true">OK</button>
+                    <button data-close="true">Close</button>
                 </div>
             </div>
         </div>
@@ -24,11 +24,10 @@ function _createModalWindow(title, closable, content, width ) {
     return modal;
 }
 options = {
-    title: 'ModalWindow',
+    title: 'Предупреждение о ошибке',
     closable: true,
     content: `
-    <h4>Modal content<h4>
-    <p>TestTestTeSTtEST</p?`,
+    <p>При заполнении данных произошла ошибка, ошибочные поля отмечены ошибкой, пожалуйста, повторите попытку еще раз.</p>`,
     width: '400px',
     footer: [
         {
