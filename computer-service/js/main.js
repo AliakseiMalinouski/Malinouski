@@ -296,19 +296,19 @@ function checkSymbolsInputNameAtPaste(EO) {
 inputNumberFeedbackForm.addEventListener('keydown', clearBannedSymbols);
 function clearBannedSymbols(EO) {
     EO = EO || window.event;
-    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ].includes(EO.key)) {
+    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'э', 'ю', 'я', 'ы' ].includes(EO.key)) {
         EO.preventDefault();
     }
 }
 inputNumberFeedbackForm.addEventListener('paste', checkSymbolsInputNumberAtPaste);
 function checkSymbolsInputNumberAtPaste(EO) {
     EO = EO || window.event;
-    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ].includes(EO.key)) {
+    if (['-', 'e', 'E', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'э', 'ю', 'я', 'ы' ].includes(EO.key)) {
         EO.preventDefault();
     }
 }
-inputNameFeedbackForm.addEventListener('blur', checkSymbolsAfterBlur);
-function checkSymbolsAfterBlur(EO) {
+inputNameFeedbackForm.addEventListener('blur', checkSymbolsAfterBlurInputName);
+function checkSymbolsAfterBlurInputName(EO) {
     EO = EO || window.event;
     let numbersAndSymbols = '1234567890?!{}[]~!@#$%^&*()-=+/|`';
     let arrayNumbersAndSymbols = [...numbersAndSymbols].forEach(function (elem) {
@@ -323,6 +323,25 @@ function checkSymbolsAfterBlur(EO) {
         }
         if (inputNameFeedbackForm.value) {
             spanErrorF.textContent = '';
+        }
+    });
+}
+inputNumberFeedbackForm.addEventListener('blur', checkSymbolsAfterBlurNumber);
+function checkSymbolsAfterBlurNumber(EO) {
+    EO = EO || window.event;
+    let letters = 'qwertyuiopasdfghjklzxcvbnmёйцукенгшщзфывапролдячсмитьъхжэ';
+    let arrayLetters = [...letters].forEach(function (elem) {
+        if (inputNameFeedbackForm.value.includes(elem)) {
+            modal().open();
+            inputNumberFeedbackForm.value = null;
+            spanErrorF2.textContent = 'Ошибка';
+            EO.preventDefault();
+        }
+        if (inputNumberFeedbackForm.value == '') {
+            spanErrorF2.textContent = 'Ошибка';
+        }
+        if (inputNumberFeedbackForm.value) {
+            spanErrorF2.textContent = '';
         }
     });
 }
