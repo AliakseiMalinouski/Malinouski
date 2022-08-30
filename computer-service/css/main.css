@@ -522,6 +522,8 @@ li {
             right: 15px;
             top: 15px;
             cursor: pointer; }
+          .wrap .catalog_slider .container .consumables .wrap_consumables .desabled {
+            opacity: 0.5; }
 @keyframes consumables {
   from {
     transform: scale(0); }

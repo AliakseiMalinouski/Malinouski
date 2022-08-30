@@ -373,4 +373,7 @@ function addAmountForLiked(EO) {
     EO = EO || window.event;
     amountLiked++;
     amountLikedSpan.innerHTML = amountLiked;
+    setTimeout(() => {
+        likeButtonConsumables.removeEventListener('click')
+    }, 0);
 }
