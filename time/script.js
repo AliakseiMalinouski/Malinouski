@@ -19,7 +19,7 @@ function getDate(time) {
         (M === 10) ? M = arrayMounth[11] : M;
         (M === 11) ? M = arrayMounth[12] : M;
     }
-    return `${Y} ${M}`;
+    return `${M} ${Y}`;
 }
 const currentDate = getDate(new Date());
 currentDateSpan.innerHTML = currentDate;
