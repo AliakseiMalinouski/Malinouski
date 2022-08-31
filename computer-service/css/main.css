@@ -524,6 +524,8 @@ li {
             cursor: pointer; }
           .wrap .catalog_slider .container .consumables .wrap_consumables .desabled {
             opacity: 0.5; }
+          .wrap .catalog_slider .container .consumables .wrap_consumables .pointer {
+            pointer-events: none; }
 @keyframes consumables {
   from {
     transform: scale(0); }

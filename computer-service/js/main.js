@@ -368,12 +368,25 @@ function checkSymbolsAfterBlurNumber(EO) {
 let amountLiked = 0;
 let amountLikedSpan = document.getElementById('amount-liked');
 let likeButtonConsumables = document.getElementById('like_button_consumables');
+let consumables = document.getElementById('consumables');
 likeButtonConsumables.addEventListener('click', addAmountForLiked);
 function addAmountForLiked(EO) {
     EO = EO || window.event;
     amountLiked++;
     amountLikedSpan.innerHTML = amountLiked;
     setTimeout(() => {
-        likeButtonConsumables.removeEventListener('click')
+        likeButtonConsumables.classList.add('pointer');
     }, 0);
+    let like = document.createElement('img');
+    like.setAttribute('src', './img/heart2.jpg');
+    like.style.width = '32px';
+    like.style.height = '29px';
+    like.style.position = 'absolute';
+    like.style.top = '23px';
+    like.style.left = '398px';
+    consumables.appendChild(like);
 }
+//     position: absolute;
+    // top: 24px;
+    // left: 398px;
+

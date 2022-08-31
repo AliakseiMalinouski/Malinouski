@@ -681,6 +681,9 @@ li {
                 .desabled {
                     opacity: 0.5;
                 }
+                .pointer {
+                    pointer-events: none;
+                }
             }
         }
         @keyframes consumables {
