@@ -3,21 +3,16 @@ const modal = $.modal;
 // input type text
 let search = document.getElementById('search');
 let magnifier = document.getElementById('magnifier');
-document.getElementById('search').addEventListener('focus', function () {
-    if (search.focus) {
-        document.getElementById('search').style.backgroundColor = '#FFFACD';
-        document.getElementById('search').style.transform = 'scale(1.05)';
-        document.getElementById('search').style.transition = '1s';
-        document.getElementById('magnifier').style.left = '669px';
-        
-    }
+search.addEventListener('focus', function () {
+    search.style.backgroundColor = '#FFFACD';
+    search.style.transform = 'scale(1.05)';
+    search.style.transition = '1s';
+    search.style.left = '669px';
 });
-document.getElementById('search').addEventListener('blur', function () {
-    if (search.blur) {
-        document.getElementById('search').style.backgroundColor = 'white';
-        document.getElementById('search').style.transform = '';
-        document.getElementById('magnifier').style.left = '640px';
-    }
+search.addEventListener('blur', function () {
+    search.style.backgroundColor = 'white';
+    search.style.transform = '';
+    magnifier.style.left = '640px';
 });
 // slider
 let distance = 0;
