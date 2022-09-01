@@ -360,11 +360,16 @@ function checkSymbolsAfterBlurNumber(EO) {
         }
     });
 }
-// sticky block
+// sticky block + items of catalog
 let amountLiked = 0;
 let amountLikedSpan = document.getElementById('amount-liked');
 let likeButtonConsumables = document.getElementById('like_button_consumables');
 let consumables = document.getElementById('consumables');
+let buttonConsumables = document.getElementById('button-consumables');
+// buttonConsumables.addEventListener('click', downToButtonConsumables);
+// function downToButtonConsumables(EO) {
+//     buttonConsumables.style.backgroundColor = 'orange';
+// }
 likeButtonConsumables.addEventListener('click', addAmountForLiked);
 function addAmountForLiked(EO) {
     EO = EO || window.event;
