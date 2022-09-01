@@ -17,7 +17,6 @@ search.addEventListener('blur', function () {
 // slider
 let distance = 0;
 const SliderLine = document.querySelector('.slider-line');
-
 document.querySelector('.next').addEventListener('click', function () {
     distance = distance + 922;
     if (distance > 2466) {
@@ -25,7 +24,6 @@ document.querySelector('.next').addEventListener('click', function () {
     }
     SliderLine.style.left = -distance + 'px';
 });
-
 document.querySelector('.prev').addEventListener('click', function () {
     distance = distance - 922;
     if (distance < 0 ) {
@@ -34,15 +32,18 @@ document.querySelector('.prev').addEventListener('click', function () {
     SliderLine.style.left = -distance + 'px';
 });
 // catalog open menu
-document.querySelector('.open-menu-catalog').addEventListener('click', function ($) {
-    document.getElementById('catalog_menu').style.display = 'block';
-    document.getElementById('open-menu-catalog').style.display = 'none';
-    document.getElementById('close-menu-catalog').style.display = 'block';
+let openCatalog = document.querySelector('.open-menu-catalog');
+let menuCatalog = document.getElementById('catalog_menu');
+let closeCatalog = document.getElementById('close-menu-catalog');
+openCatalog.addEventListener('click', function ($) {
+    menuCatalog.classList.add('active_modal');
+    openCatalog.classList.add('disabled');
+    closeCatalog.classList.add('active_modal');
 });
-document.querySelector('.close-menu-catalog').addEventListener('click', function ($) {
-    document.getElementById('close-menu-catalog').style.display = 'none';
-    document.getElementById('open-menu-catalog').style.display = 'block';
-    document.getElementById('catalog_menu').style.display = 'none';
+closeCatalog.addEventListener('click', function ($) {
+    closeCatalog.classList.remove('active_modal');
+    openCatalog.classList.remove('disabled');
+    menuCatalog.classList.remove('active_modal');
 });
 document.querySelector('.call').addEventListener('click', function ($) {
     document.querySelector('.modal_call').classList.add('active_modal');
