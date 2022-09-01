@@ -386,7 +386,5 @@ function addAmountForLiked(EO) {
     like.style.left = '398px';
     consumables.appendChild(like);
 }
-//     position: absolute;
-    // top: 24px;
-    // left: 398px;
+
 
