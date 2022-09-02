@@ -5,7 +5,7 @@ function buildWrapper(tag) {
     let newObj;
     return function (text, obj) {
         if (typeof obj === 'object') {
-            newObj = JSON.stringify(obj).replace(/[{-}-"]/g, '').replace(/:/g, '=');
+            newObj = JSON.stringify(obj).replace(/[{-}-"]/g, '').replace(/:/g, '=').replace(/,/g, ' ');
         }
         start = String(`<${tag} ${newObj}>`);
         end = String(`</${tag}>`);
