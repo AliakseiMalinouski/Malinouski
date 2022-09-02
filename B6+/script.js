@@ -1,8 +1,14 @@
 "use strict";
 function buildWrapper(tag) {
-    let start = String(`<${tag}>`);
-    let end = String(`</${tag}>`);
-    return function (text, lang) {
+    let start;
+    let end;
+    let newObj;
+    return function (text, obj) {
+        if (typeof obj === 'object') {
+            newObj = JSON.stringify(obj).replace(/[{-}-"]/g, '').replace(/:/g, '=');
+        }
+        start = String(`<${tag} ${newObj}>`);
+        end = String(`</${tag}>`);
         text = text.replace(/&/g, "&amp;");
         text = text.replace(/>/g, "&gt;");
         text = text.replace(/</g, "&lt;");
