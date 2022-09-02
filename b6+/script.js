@@ -6,6 +6,9 @@ function buildWrapper(tag) {
     return function (text, obj) {
         for (let char in obj) {
             newObj = `${char}="${obj[char]}"`;
+            if (tag === 'H1') {
+                newObj = `${char}="${obj[char]} ${Object.keys(obj)[0]}="${obj.align}"`;
+            }
         }
         start = String(`<${tag} ${newObj}>`);
         end = String(`</${tag}>`);
