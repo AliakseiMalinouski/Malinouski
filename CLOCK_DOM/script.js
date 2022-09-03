@@ -5,18 +5,17 @@ timer.setAttribute('class', 'timer');
 clock.appendChild(timer);
 for (let i = 0; i < 12; i++) {
     let arrayHours = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-    let backForTimer = document.createElement('div');
-    backForTimer.setAttribute('class', 'back-for-timer');
-    clock.appendChild(backForTimer);
-    backForTimer.style.transform = `rotate(${i * 30}deg)`;
+    let nextHourDiv = document.createElement('div');
+    nextHourDiv.setAttribute('class', 'next-our-div');
+    clock.appendChild(nextHourDiv);
+    nextHourDiv.style.transform = `rotate(${i * 30}deg)`;
     let number = document.createElement('span');
     number.setAttribute('class', 'number');
     number.textContent = arrayHours[i];
     number.style.transform = `rotate(-${i * 30}deg)`;
-    backForTimer.appendChild(number);
+    nextHourDiv.appendChild(number);
 }
 let divHands = document.createElement('div');
-divHands.setAttribute('class', 'clockHands'); 
 let hoursHand = document.createElement('div');
 hoursHand.setAttribute('class', 'hours');
 let minutesHand = document.createElement('div');
