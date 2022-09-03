@@ -3,8 +3,8 @@ let clock = document.getElementById('clock');
 let timer = document.createElement('span');
 timer.setAttribute('class', 'timer');
 clock.appendChild(timer);
-let arrayHours = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 for (let i = 0; i < 12; i++) {
+    let arrayHours = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
     let backForTimer = document.createElement('div');
     backForTimer.setAttribute('class', 'back-for-timer');
     clock.appendChild(backForTimer);
