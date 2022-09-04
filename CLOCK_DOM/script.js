@@ -28,19 +28,24 @@ divHands.appendChild(hoursHand);
 divHands.appendChild(minutesHand);
 divHands.appendChild(secondsHand);
 clock.appendChild(divHands);
-function updateTime(time) {
-    let timeSeconds = 6*time.getSeconds(); 
-    let timeMinutes = 6*(time.getMinutes() + (1/60)*time.getSeconds()); 
-    let timeHours = 30*(time.getHours() + (1/60)*time.getMinutes());
-    hoursHand.style.transform = `rotate(${timeHours}deg)`;
-    minutesHand.style.transform = `rotate(${timeMinutes}deg)`;
-    secondsHand.style.transform = `rotate(${timeSeconds}deg)`;
+function updateTime() {
+    let currentTime = new Date();
+    let hours = currentTime.getHours() % 12;
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
+
+    let hoursAngle = 360 / 12 * (hours + minutes / 60);
+    hoursHand.style.transform = `rotate(${hoursAngle}deg)`;
+    let minutesAngle = 360 / 60 * (minutes + seconds / 60);
+    minutesHand.style.transform = `rotate(${minutesAngle}deg)`;
+    let secondsAngle = 360 / 60 * seconds;
+    secondsHand.style.transform = `rotate(${secondsAngle}deg)`;
+    timer.innerHTML = currentTime.toLocaleTimeString();
+    console.log(currentTime.toLocaleTimeString())
 }
-function updateTimeSpan(time) {
-	timer.innerHTML  = time.toLocaleTimeString();
+function updateTimer() {
+    let currentTime = new Date();
+    timer.innerHTML = currentTime
 }
-setInterval(function(){
-    let time = new Date();
-    updateTimeSpan(time);
-    updateTime(time);
-}, 0);
+updateTime();
+setInterval(updateTime, 1000);
