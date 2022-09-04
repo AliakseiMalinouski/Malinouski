@@ -1,4 +1,6 @@
 "use strict";
+let size = document.getElementById('size');
+let buildClock = document.getElementById("buildClock");
 let clock = document.getElementById('clock');
 let timer = document.createElement('span');
 timer.setAttribute('class', 'timer');
@@ -14,6 +16,17 @@ for (let i = 0; i < 12; i++) {
     number.textContent = arrayHours[i];
     number.style.transform = `rotate(-${i * 30}deg)`;
     nextHourDiv.appendChild(number);
+    buildClock.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    let sizeValue = size.value;
+    clock.style.display = 'block';
+    clock.style.width = sizeValue + 'px';
+    clock.style.height = sizeValue + 'px';
+    if (sizeValue === '300') {
+        nextHourDiv.style.transformOrigin = '20px 147px';
+        nextHourDiv.style.left = '130px';
+    }
+});
 }
 let divHands = document.createElement('div');
 let hoursHand = document.createElement('div');
