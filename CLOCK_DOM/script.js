@@ -41,4 +41,4 @@ setInterval(function(){
     let time = new Date();
     updateTimeSpan(time);
     updateTime(time);
-}, 1000);
+}, 0);
