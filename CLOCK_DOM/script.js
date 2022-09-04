@@ -33,7 +33,6 @@ function updateTime() {
     let hours = currentTime.getHours() % 12;
     let minutes = currentTime.getMinutes();
     let seconds = currentTime.getSeconds();
-
     let hoursAngle = 360 / 12 * (hours + minutes / 60);
     hoursHand.style.transform = `rotate(${hoursAngle}deg)`;
     let minutesAngle = 360 / 60 * (minutes + seconds / 60);
