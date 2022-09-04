@@ -7,8 +7,7 @@ function buildWrapper(tag) {
         for (let char in obj) {
             newObj = `${char}="${obj[char]}"`;
             if (tag === 'H1') {
-                obj[char] = obj[char].replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-                newObj = `${char}="${obj[char]}" ${Object.keys(obj)[0]}="${obj.align}"`;
+                newObj = `${char}="${obj[char].replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;")}" ${Object.keys(obj)[0]}="${obj.align}"`;
             }
         }
         start = String(`<${tag} ${newObj}>`);
