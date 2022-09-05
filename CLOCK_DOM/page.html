@@ -7,9 +7,10 @@
     <title>Document</title>
     <style>
 #clock {
+    display: none;
     margin: 0 auto;
-    width: 400px;
-	height: 400px;
+	/* height: 400px;
+	width: 400px; */
 	background-color: #ffd942;
 	border-radius: 50%;
 	position: relative;
@@ -17,11 +18,11 @@
 .timer {
     font-family: Arial, sans-serif;
     font-size:2.5em;
-    color: black;
+    color:#000;
     top: 25%;
     width: 50%;
     text-align: center;
-    left: 100px;
+    left: calc(50% - 25%);
     position: absolute;
 }
 .next-our-div {
@@ -29,7 +30,7 @@
     width: 10%;
     background-color: #0b8;
     border-radius: 50%;
-    left: 180px;
+    left: calc(50% - 5%); /*50% clock width - clockFace width/2 */
     top: 4px;
     bottom: 200px;
     transform-origin: 20px 196px;
@@ -41,45 +42,48 @@
     z-index: 1;
 }
 .number {
+    font-family: Arial, sans-serif;
     position: absolute;
-    font-size: 18px;
+    font-size: 1.2em;
 }
 .hours {
     position: absolute;
     z-index: 1;
-    height: 100px;
+    height: calc(25% + 8px);
     width: 3%;
     top: 25%;
-    left: 193px;
-    background: black;
+    left: calc(50% - 1.5%);
+    background: rgba(0, 0, 0, 0.8);
     transform-origin: center 100px;
     border-radius: 5px;
 }
 .minutes {
     position: absolute;
     z-index: 2;
-    height: 179px;
+    height: calc(40% + 8px);
     width: 2%;
-    top: 41px;
-    left: 192px;
-    background: black;
+    top: 10%;
+    left: calc(50% - 1%);
+    background: rgba(0, 0, 0, 0.8);
     transform-origin: center 160px;
     border-radius: 5px;
 }
 .seconds {
     position: absolute;
     z-index: 3;
-    height: 180px;
+    height: calc(45% + 8px);
     width: 0.7%;
     top: 5%;
-    left: 202px;
+    left: calc(50% - 0.35%);
     border-radius: 5px;
-    background: black;
+    background: rgba(0, 0, 0, 0.8);
     transform-origin: center 180px;
 }
     </style>
 </head>
 <body>
+    <input type="number" id="size">
+    <button type="button" id="buildClock">Построить часы</button>
     <div id='clock'></div>
     <script src="./script.js"></script>
 </body>
