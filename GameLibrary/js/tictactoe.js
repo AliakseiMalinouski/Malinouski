@@ -13,7 +13,9 @@ let objResults =  {
     'x': 0,
     'o': 0,
 }
+// добавляем звук карандаша
 let audio = new Audio('./audio/podpis-karandashom.mp3');
+// нулевой счётчик
 resultsPlayerOne.innerHTML = count;
 resultsPlayerTwo.innerHTML = count;
 // создаём массив с позициями победы
