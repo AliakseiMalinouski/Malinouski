@@ -5,35 +5,12 @@ let clock = document.getElementById('clock');
 let timer = document.createElement('span');
 timer.setAttribute('class', 'timer');
 clock.appendChild(timer);
-let k = 0;
-let sizeClock = 0;
 buildClock.addEventListener('click', function (EO) {
     EO = EO || window.event;
     clock.style.display = 'block';
-    if (size.value == '200') {
-        k = 2;
-        sizeClock = 100 * k;
-        clock.style.width = sizeClock + 'px'
-        clock.style.height = sizeClock + 'px'
-    }
-    if (size.value == '400') {
-        k = 4;
-        sizeClock = 100 * k;
-        clock.style.width = sizeClock + 'px'
-        clock.style.height = sizeClock + 'px'
-    }
-    if (size.value == '600') {
-        k = 6;
-        sizeClock = 100 * k;
-        clock.style.width = sizeClock + 'px'
-        clock.style.height = sizeClock + 'px'
-    }
-    if (size.value == '800') {
-        k = 8;
-        sizeClock = 100 * k;
-        clock.style.width = sizeClock + 'px'
-        clock.style.height = sizeClock + 'px'
-    }
+    let sizeValue = size.value;
+    clock.style.width = sizeValue + 'px';
+    clock.style.height = sizeValue + 'px';
 });
 for (let i = 0; i < 12; i++) {
     let arrayHours = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
