@@ -41,6 +41,9 @@ function addPlayer(EO) {
     }
     if (getWinner(arrayPlayerPosition)) {
         alert(`Победил ${player}`);
+        for (let i = 0; i < cube.length; i++) {
+            cube[i].innerHTML = '';
+        }
     }
     else {
         let drawn = true;
@@ -50,7 +53,10 @@ function addPlayer(EO) {
             }
         }
         if (drawn) {
-            alert('Победила дружба!')
+            alert('Победила дружба!');
+            for (let i = 0; i < cube.length; i++) {
+            cube[i].innerHTML = '';
+            }   
         }
     }
     player = player == 'x' ? 'o' : 'x';
