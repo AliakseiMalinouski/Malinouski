@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 .container {
-    margin: 200px 100px 50px 50px;
     display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 250px 100px 100px;
+    padding-bottom: 280px;
+    background-color: lightblue;
 }
 .wrap {
     width: 152px;
     border: 1px solid black;
-    margin: 0 auto;
+    margin-left: 410px;
     font-size: 0px;
 }
 .cube {
@@ -23,4 +27,7 @@
     border: 1px solid black;
     vertical-align: middle;
     text-align: center;
+}
+.cursor-change {
+    cursor: url('../imgs/pen.jpg'), auto;
 }

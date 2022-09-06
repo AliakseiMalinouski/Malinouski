@@ -33,18 +33,21 @@ function addPlayer(EO) {
         alert('Клетка занята другим игроком');
         return;
     }
+// создаём массив, куда будем складировать позиции каждого игрока
     let arrayPlayerPosition = [];
     for (let j in cube) {
         if (cube[j].innerHTML == player) {
             arrayPlayerPosition.push(parseInt(cube[j].getAttribute('data-number')));
         }
     }
+// функция победы вызывается(расписана ниже), также после победы очищаем клетки
     if (getWinner(arrayPlayerPosition)) {
         alert(`Победил ${player}`);
         for (let i = 0; i < cube.length; i++) {
             cube[i].innerHTML = '';
         }
     }
+// ничья, также очищаем клетки
     else {
         let drawn = true;
         for (let n in cube) {
@@ -74,4 +77,13 @@ function getWinner(arrayPlayerPosition) {
         if(winner) return true
     }
     return false;
+}
+// создаём переключатель, котоырй будет отображать актуального игрока
+let namePlayer = document.querySelector('name-player');
+// получаем контейнер
+let containerOfContent = document.getElementById('container');
+containerOfContent.addEventListener('mouseenter', changeCursor);
+function changeCursor(EO) {
+    EO = EO || window.event;
+    containerOfContent.classList.add('cursor-change');
 }
