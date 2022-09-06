@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  margin: 200px 100px 50px 50px;
+  display: flex; }
+
+.wrap {
+  width: 152px;
+  border: 1px solid black;
+  margin: 0 auto;
+  font-size: 0px; }
+
+.cube {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid black;
+  vertical-align: middle;
+  text-align: center; }
+
+/*# sourceMappingURL=tictactoe.css.map */
