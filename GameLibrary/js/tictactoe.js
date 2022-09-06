@@ -1,7 +1,7 @@
 "use strict";
 // получаем элементы со страницы
 let wrapTicTacZone = document.getElementById('wrap');
-let cube = document.querySelectorAll('cude');
+let cube = document.getElementsByClassName('cube');
 // создаём первого игрока
 let player = 'x';
 // создаём массив с позициями победы
@@ -32,13 +32,12 @@ function addPlayer(EO) {
         alert('Клетка занята другим игроком');
         return;
     }
-    player = player == 'x' ? 'o' : 'x';
     let arrayPlayerPosition = [];
-    for (let i in cube) {
-        if (cube[i].innerHTML == player) {
-            arrayPlayerPosition.push(parseInt(cube[i].getAttribute('data-number')))
+    for (let j in cube) {
+        if (cube[j].innerHTML == player) {
+            arrayPlayerPosition.push(parseInt(cube[j].getAttribute('data-number')));
         }
     }
-    console.log(player)
+    player = player == 'x' ? 'o' : 'x';
     console.log(arrayPlayerPosition)
 }
