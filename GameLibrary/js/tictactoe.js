@@ -13,6 +13,7 @@ let arrayWin = [
     [2, 5, 8],
     [3, 6, 9],
     [3, 5, 7],
+    [1, 5, 9],
 ];
 // c помощью цикла создаём игровые клеточки
 for (let i = 1; i <= 9; i++) {
@@ -38,6 +39,33 @@ function addPlayer(EO) {
             arrayPlayerPosition.push(parseInt(cube[j].getAttribute('data-number')));
         }
     }
+    if (getWinner(arrayPlayerPosition)) {
+        alert(`Победил ${player}`);
+    }
+    else {
+        let drawn = true;
+        for (let n in cube) {
+            if (cube[n].innerHTML == '') {
+                drawn = false;
+            }
+        }
+        if (drawn) {
+            alert('Победила дружба!')
+        }
+    }
     player = player == 'x' ? 'o' : 'x';
-    console.log(arrayPlayerPosition)
+}
+function getWinner(arrayPlayerPosition) {
+    for (let i in arrayWin) {
+        let winner = true;
+        for (let j in arrayWin[i]) {
+            let id = arrayWin[i][j];
+            let index = arrayPlayerPosition.indexOf(id)
+            if (index == -1) {
+                winner = false
+            }
+        }
+        if(winner) return true
+    }
+    return false;
 }
