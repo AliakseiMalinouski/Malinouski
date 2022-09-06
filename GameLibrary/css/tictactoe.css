@@ -9,7 +9,8 @@
   margin: 0 auto;
   padding: 250px 100px 100px;
   padding-bottom: 280px;
-  background-color: lightblue; }
+  background-color: lightblue;
+  position: relative; }
 
 .wrap {
   width: 152px;
@@ -28,7 +29,34 @@
   vertical-align: middle;
   text-align: center; }
 
-.cursor-change {
-  cursor: url("../imgs/pen.jpg"), auto; }
+.name-player {
+  position: absolute;
+  left: 500px;
+  top: 200px; }
+
+.table-winner {
+  width: 240px;
+  height: 100px;
+  border: 1px solid black;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 5px;
+  top: 50px;
+  right: 50px; }
+  .table-winner div:nth-child(1) {
+    padding-left: 25px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+    height: 40px; }
+  .table-winner span {
+    position: absolute; }
+  .table-winner span:nth-child(2) {
+    bottom: 15px;
+    left: 60px; }
+  .table-winner span:nth-child(3) {
+    bottom: 15px;
+    left: 170px; }
 
 /*# sourceMappingURL=tictactoe.css.map */

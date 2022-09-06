@@ -4,6 +4,18 @@ let wrapTicTacZone = document.getElementById('wrap');
 let cube = document.getElementsByClassName('cube');
 // создаём первого игрока
 let player = 'x';
+// вывод кол-ва побед
+let resultsPlayerOne = document.getElementById('results-player1');
+let resultsPlayerTwo = document.getElementById('results-player2');
+let count = 0;
+// объект для хранения результатов
+let objResults =  {
+    'x': 0,
+    'o': 0,
+}
+let audio = new Audio('./audio/podpis-karandashom.mp3');
+resultsPlayerOne.innerHTML = count;
+resultsPlayerTwo.innerHTML = count;
 // создаём массив с позициями победы
 let arrayWin = [
     [1, 2, 3],
@@ -26,8 +38,16 @@ for (let i = 1; i <= 9; i++) {
 wrapTicTacZone.addEventListener('click', addPlayer);
 function addPlayer(EO) {
     EO = EO || window.event;
+    audio.play()
     if (!EO.target.innerHTML) {
         EO.target.innerHTML = player;
+        let namePlayer = document.getElementById('name-player');
+        if (EO.target.innerHTML == 'x') {
+            namePlayer.innerHTML = `Сейчас ходит: ИГРОК-2`;
+        }
+        else {
+            namePlayer.innerHTML = `Сейчас ходит: ИГРОК-1`;
+        }
     }
     else {
         alert('Клетка занята другим игроком');
@@ -42,9 +62,11 @@ function addPlayer(EO) {
     }
 // функция победы вызывается(расписана ниже), также после победы очищаем клетки
     if (getWinner(arrayPlayerPosition)) {
+        objResults[player] += 1;
         alert(`Победил ${player}`);
         for (let i = 0; i < cube.length; i++) {
             cube[i].innerHTML = '';
+            updateResults()
         }
     }
 // ничья, также очищаем клетки
@@ -58,7 +80,8 @@ function addPlayer(EO) {
         if (drawn) {
             alert('Победила дружба!');
             for (let i = 0; i < cube.length; i++) {
-            cube[i].innerHTML = '';
+                cube[i].innerHTML = '';
+                updateResults()
             }   
         }
     }
@@ -78,12 +101,9 @@ function getWinner(arrayPlayerPosition) {
     }
     return false;
 }
-// создаём переключатель, котоырй будет отображать актуального игрока
-let namePlayer = document.querySelector('name-player');
-// получаем контейнер
-let containerOfContent = document.getElementById('container');
-containerOfContent.addEventListener('mouseenter', changeCursor);
-function changeCursor(EO) {
-    EO = EO || window.event;
-    containerOfContent.classList.add('cursor-change');
+// обновляем результаты
+function updateResults() {
+    resultsPlayerOne.innerHTML = objResults.x;
+    resultsPlayerTwo.innerHTML = objResults.o;
 }
+
