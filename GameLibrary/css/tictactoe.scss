@@ -103,6 +103,7 @@
     width: 70px;
     height: 70px;
     position: absolute;
+    user-select: none;
 }
 .red-line {
     position: absolute;
@@ -112,7 +113,7 @@
     background-color: red;
     top: 18px;
     left: 700px;
-    z-index: 2;
+    z-index: 0;
 }
 .off-music {
     display: none;
