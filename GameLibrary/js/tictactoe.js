@@ -1,4 +1,8 @@
 "use strict";
+// добавляем веселую музыку на фон
+let backgroundAudio = new Audio('./audio/fonemusic.mp3');
+backgroundAudio.loop = true;
+backgroundAudio.play();
 // получаем элементы со страницы
 let wrapTicTacZone = document.getElementById('wrap');
 let cube = document.getElementsByClassName('cube');
@@ -136,7 +140,7 @@ function changePositionTableWinner(EO) {
             function changePostionToRight() {
                 newCount += 1;
                 tableWinner.style.right = newCount + 'px';
-                setTimeout(changePostionToRight, 10);
+                setTimeout(changePostionToRight, 80);
                 if (newCount > 790) {
                     changePostionToRight = false;
                     tableWinner.style.right = '790';
@@ -145,18 +149,17 @@ function changePositionTableWinner(EO) {
                         function changeTopPosition() {
                             continueCount--;
                             tableWinner.style.top = continueCount + 'px';
-                            setTimeout(changeTopPosition, 10);
+                            setTimeout(changeTopPosition, 80);
                             if (continueCount < 90) {
                                 changeTopPosition = false;
                                 console.log(tableWinner.offsetLeft, tableWinner.offsetTop)
                                 tableWinner.style.top = '88px';
-                                // tableWinner.style.left = '161px';
                                 if (tableWinner.offsetLeft == '158' && tableWinner.offsetTop == '88') {
                                     let lastCount = 790;
                                     function tt() {
                                         lastCount --;
                                         tableWinner.style.right = lastCount + 'px';
-                                        setTimeout(tt, 10);
+                                        setTimeout(tt, 80);
                                         if (lastCount == '50') {
                                             tt = false;
                                         }
@@ -172,6 +175,6 @@ function changePositionTableWinner(EO) {
             changePostionToRight()
         }
     } 
-    setTimeout(changePositionTableWinner, 10);
+    setTimeout(changePositionTableWinner, 80);
 }
 
