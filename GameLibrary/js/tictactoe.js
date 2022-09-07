@@ -1,12 +1,26 @@
 "use strict";
 // добавляем веселую музыку на фон
 let dynamic = document.getElementById('wrap-dynamic');
-dynamic.addEventListener('click', function (EO) {
+let offMusic = document.getElementById('red-line');
+let onMusic = document.getElementById('off-music');
+let foneAudio = new Audio('./audio/cf0fc01247f4fc1.mp3');
+dynamic.addEventListener('click', onMusicFone);
+function onMusicFone(EO) {
     EO = EO || window.event;
-    let foneAudio = new Audio('./audio/cf0fc01247f4fc1.mp3');
     foneAudio.loop = true;
     foneAudio.play();
-})
+    dynamic.style.zIndex = '0';
+    offMusic.style.display = 'none';
+    onMusic.style.display = 'block';
+}
+onMusic.addEventListener('click', off);
+function off(EO) {
+    EO = EO || window.event;
+    foneAudio.pause();
+    dynamic.style.zIndex = '2';
+    offMusic.style.display = 'block';
+    onMusic.style.display = 'none';
+}
 // получаем элементы со страницы
 let wrapTicTacZone = document.getElementById('wrap');
 let cube = document.getElementsByClassName('cube');

@@ -97,6 +97,7 @@
 .second-wrapper {
     position: relative;
     cursor: pointer;
+
 }
 #dynamic-on {
     width: 70px;
@@ -112,4 +113,15 @@
     top: 18px;
     left: 700px;
     z-index: 2;
+}
+.off-music {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 670px;
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    cursor: pointer;
+    opacity: 0;
 }
