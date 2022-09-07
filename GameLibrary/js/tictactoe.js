@@ -15,6 +15,10 @@ let objResults =  {
 }
 // добавляем звук карандаша
 let audio = new Audio('./audio/podpis-karandashom.mp3');
+// добавляем звук победы
+let audioWin = new Audio('./audio/victory.mp3');
+// добавляем звук ничьи
+let drawnAudio = new Audio('./audio/drawn.mp3');
 // нулевой счётчик
 resultsPlayerOne.innerHTML = count;
 resultsPlayerTwo.innerHTML = count;
@@ -65,6 +69,7 @@ function addPlayer(EO) {
 // функция победы вызывается(расписана ниже), также после победы очищаем клетки
     if (getWinner(arrayPlayerPosition)) {
         objResults[player] += 1;
+        audioWin.play();
         alert(`Победил ${player}`);
         for (let i = 0; i < cube.length; i++) {
             cube[i].innerHTML = '';
@@ -80,6 +85,7 @@ function addPlayer(EO) {
             }
         }
         if (drawn) {
+            drawnAudio.play();
             alert('Победила дружба!');
             for (let i = 0; i < cube.length; i++) {
                 cube[i].innerHTML = '';
@@ -87,6 +93,7 @@ function addPlayer(EO) {
             }   
         }
     }
+// переключение игрока
     player = player == 'x' ? 'o' : 'x';
 }
 function getWinner(arrayPlayerPosition) {
