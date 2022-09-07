@@ -115,4 +115,27 @@ function updateResults() {
     resultsPlayerOne.innerHTML = objResults.x;
     resultsPlayerTwo.innerHTML = objResults.o;
 }
-
+// получаем таблицу счёта
+let tableWinner = document.getElementById('table-winner');
+// создадим счётчик для нашей таблицы
+let countForTableWinnerAnimation = 0;
+// создадим функцию, бладаря которой будет осуществляться перемещение нашей таблицы
+window.addEventListener('load', changePositionTableWinner);
+function changePositionTableWinner(EO) {
+    EO = EO || window.event;
+    let staticRightTableWinner = 50; // статичная позиция справа
+    let staticTopTableWinner = 53; // статичная позиция сверху
+    countForTableWinnerAnimation += 1;
+    tableWinner.style.top = countForTableWinnerAnimation + 'px';
+    if (countForTableWinnerAnimation > 590) {
+        changePositionTableWinner = false
+        tableWinner.style.top = '590px';
+        countForTableWinnerAnimation = staticRightTableWinner;
+        return function test() {
+            countForTableWinnerAnimation++;
+            tableWinner.style.right = countForTableWinnerAnimation + 'px';
+            setTimeout(test, 10)
+        }
+    }
+    setTimeout(changePositionTableWinner, 10);
+}

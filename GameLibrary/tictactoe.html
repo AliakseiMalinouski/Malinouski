@@ -5,23 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tictactoe.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tictactoe.css">
     <title>Tic tac toe game</title>
 </head>
 <body>
     <div class="container" id="container">
         <p id="text">Крестики-нолики - игра, не совсем подручными средствами!</p>
         <div class="name-player" id="name-player">Сейчас ходит: Игрок-1</div>
-        <div class="table-winner">
+        <div class="table-winner" id="table-winner">
             <div>X:Игрок-1 O:Игрок-2</div>
             <span id="results-player1"></span>
             <span id="results-player2"></span>
         </div>
         <div class="wrap" id="wrap">
         </div>
+        <img id="t1" src="./imgs/t1.png" alt="Поле">
     </div>
     <script src="./js/tictactoe.js"></script>
 </body>

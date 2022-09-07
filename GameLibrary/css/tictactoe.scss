@@ -16,7 +16,7 @@
 .container::after {
     content: "";
     background: url(../imgs/fone.jpg);
-    opacity: 0.30;
+    opacity: 0.20;
     top: 0;
     left: 0;
     bottom: 0;
@@ -29,6 +29,7 @@
     border: 1px solid black;
     margin-left: 410px;
     font-size: 0px;
+    margin-top: 7px;
 }
 .cube {
     width: 50px;
@@ -44,7 +45,7 @@
 .name-player {
     position: absolute;
     left: 475px;
-    top: 200px;
+    top: 205px;
 }
 .table-winner {
     width: 250px;
@@ -55,7 +56,7 @@
     justify-content: space-between;
     flex-direction: column;
     padding-top: 5px;
-    top: 61px;
+    top: 53px;
     right: 50px;
     div:nth-child(1) {
         padding-left: 25px;
@@ -80,4 +81,10 @@
     top: 38px;
     left: 45px;
 
+}
+
+#t1 {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
 }
