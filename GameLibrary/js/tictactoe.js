@@ -1,8 +1,12 @@
 "use strict";
 // добавляем веселую музыку на фон
-let backgroundAudio = new Audio('./audio/fonemusic.mp3');
-backgroundAudio.loop = true;
-backgroundAudio.play();
+let dynamic = document.getElementById('wrap-dynamic');
+dynamic.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    let foneAudio = new Audio('./audio/cf0fc01247f4fc1.mp3');
+    foneAudio.loop = true;
+    foneAudio.play();
+})
 // получаем элементы со страницы
 let wrapTicTacZone = document.getElementById('wrap');
 let cube = document.getElementsByClassName('cube');

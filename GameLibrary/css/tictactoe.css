@@ -82,7 +82,29 @@
   left: 50px;
   bottom: 50px; }
 
-.check {
-  background-color: green; }
+.wrap-dynamic {
+  position: absolute;
+  top: 10px;
+  left: 670px;
+  cursor: pointer; }
+
+.second-wrapper {
+  position: relative;
+  cursor: pointer; }
+
+#dynamic-on {
+  width: 70px;
+  height: 70px;
+  position: absolute; }
+
+.red-line {
+  position: absolute;
+  width: 4px;
+  height: 47px;
+  transform: rotate(25deg);
+  background-color: red;
+  top: 18px;
+  left: 700px;
+  z-index: 2; }
 
 /*# sourceMappingURL=tictactoe.css.map */
