@@ -9,8 +9,20 @@
     margin: 0 auto;
     padding: 250px 100px 100px;
     padding-bottom: 280px;
-    background-color: lightblue;
     position: relative;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+}
+.container::after {
+    content: "";
+    background: url(../imgs/fone.jpg);
+    opacity: 0.30;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 .wrap {
     width: 152px;
@@ -25,17 +37,17 @@
     font-size: 24px;
     display: inline-block;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid blue;
     vertical-align: middle;
     text-align: center;
 }
 .name-player {
     position: absolute;
-    left: 500px;
+    left: 475px;
     top: 200px;
 }
 .table-winner {
-    width: 240px;
+    width: 250px;
     height: 100px;
     border: 1px solid black;
     position: absolute;
@@ -43,7 +55,7 @@
     justify-content: space-between;
     flex-direction: column;
     padding-top: 5px;
-    top: 50px;
+    top: 61px;
     right: 50px;
     div:nth-child(1) {
         padding-left: 25px;
@@ -62,4 +74,10 @@
         bottom: 15px;
         left: 170px;
     }
+}
+#text {
+    position: absolute;
+    top: 38px;
+    left: 45px;
+
 }

@@ -49,10 +49,10 @@ function addPlayer(EO) {
         EO.target.innerHTML = player;
         let namePlayer = document.getElementById('name-player');
         if (EO.target.innerHTML == 'x') {
-            namePlayer.innerHTML = `Сейчас ходит: ИГРОК-2`;
+            namePlayer.innerHTML = `Сейчас ходит: Игрок-2`;
         }
         else {
-            namePlayer.innerHTML = `Сейчас ходит: ИГРОК-1`;
+            namePlayer.innerHTML = `Сейчас ходит: Игрок-1`;
         }
     }
     else {
