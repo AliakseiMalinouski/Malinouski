@@ -140,24 +140,38 @@ function changePositionTableWinner(EO) {
                 if (newCount > 790) {
                     changePostionToRight = false;
                     tableWinner.style.right = '790';
-                    console.log(tableWinner.offsetLeft, tableWinner.offsetTop)
                     if (tableWinner.offsetLeft == '158' && tableWinner.offsetTop == '590') {
                         let continueCount = 590;
-                        function tt() {
+                        function changeTopPosition() {
                             continueCount--;
                             tableWinner.style.top = continueCount + 'px';
-                            setTimeout(tt, 10);
+                            setTimeout(changeTopPosition, 10);
                             if (continueCount < 90) {
-                                tt = false
+                                changeTopPosition = false;
+                                console.log(tableWinner.offsetLeft, tableWinner.offsetTop)
+                                tableWinner.style.top = '88px';
+                                // tableWinner.style.left = '161px';
+                                if (tableWinner.offsetLeft == '158' && tableWinner.offsetTop == '88') {
+                                    let lastCount = 790;
+                                    function tt() {
+                                        lastCount --;
+                                        tableWinner.style.right = lastCount + 'px';
+                                        setTimeout(tt, 10);
+                                        if (lastCount == '50') {
+                                            tt = false;
+                                        }
+                                    }
+                                    tt();
+                                }
                             }
                         }
-                        tt()
+                        changeTopPosition()
                     }
                 }
             }
             changePostionToRight()
         }
-    }
+    } 
     setTimeout(changePositionTableWinner, 10);
 }
 
