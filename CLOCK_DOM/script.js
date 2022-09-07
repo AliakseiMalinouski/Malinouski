@@ -12,16 +12,24 @@ buildClock.addEventListener('click', function (EO) {
     clock.style.width = sizeValue + 'px';
     clock.style.height = sizeValue + 'px';
 });
+let cx = 210;
+let r = 160;
+let dr = 30;
 for (let i = 0; i < 12; i++) {
-    let arrayHours = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    let arrayHours = [6, 5, 4, 3, 2, 1, 12, 11, 10, 9, 8, 7];
+    let angle = i * 360 / 12 / 180 * Math.PI;
+    let x = cx + r * Math.sin(angle);
+    let y = cx + r * Math.cos(angle);
     let nextHourDiv = document.createElement('div');
     nextHourDiv.setAttribute('class', 'next-our-div');
+    nextHourDiv.style.left = (x - dr) + 'px';
+    nextHourDiv.style.top = (y - dr) + 'px';
     clock.appendChild(nextHourDiv);
-    nextHourDiv.style.transform = `rotate(${i * 30}deg)`;
+    // nextHourDiv.style.transform = `rotate(${i * 30}deg)`;
     let number = document.createElement('span');
     number.setAttribute('class', 'number');
     number.textContent = arrayHours[i];
-    number.style.transform = `rotate(-${i * 30}deg)`;
+    // number.style.transform = `rotate(-${i * 50}deg)`;
     nextHourDiv.appendChild(number);
 }
 let divHands = document.createElement('div');

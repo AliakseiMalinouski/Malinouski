@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+#wrapper {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
 #clock {
     display: none;
     margin: 0 auto;
@@ -30,11 +36,9 @@
     width: 10%;
     background-color: #0b8;
     border-radius: 50%;
-    left: calc(50% - 5%); /*50% clock width - clockFace width/2 */
-    top: 4px;
     bottom: 200px;
-    transform-origin: 20px 196px;
-    transform: rotate(0deg);
+    /* transform-origin: 20px 196px;
+    transform: rotate(0deg); */
     position: absolute;
     display: flex;
     justify-content: center;
@@ -84,7 +88,9 @@
 <body>
     <input type="number" id="size">
     <button type="button" id="buildClock">Построить часы</button>
-    <div id='clock'></div>
+    <div id="wrapper">
+        <div id='clock'></div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
