@@ -121,21 +121,43 @@ let tableWinner = document.getElementById('table-winner');
 let countForTableWinnerAnimation = 0;
 // создадим функцию, бладаря которой будет осуществляться перемещение нашей таблицы
 window.addEventListener('load', changePositionTableWinner);
+// начальные позиции таблицы
+let staticRightTableWinner = 50; // статичная позиция справа
+let staticTopTableWinner = 53; // статичная позиция сверху
 function changePositionTableWinner(EO) {
     EO = EO || window.event;
-    let staticRightTableWinner = 50; // статичная позиция справа
-    let staticTopTableWinner = 53; // статичная позиция сверху
     countForTableWinnerAnimation += 1;
     tableWinner.style.top = countForTableWinnerAnimation + 'px';
     if (countForTableWinnerAnimation > 590) {
-        changePositionTableWinner = false
+        changePositionTableWinner = false;
         tableWinner.style.top = '590px';
-        countForTableWinnerAnimation = staticRightTableWinner;
-        return function test() {
-            countForTableWinnerAnimation++;
-            tableWinner.style.right = countForTableWinnerAnimation + 'px';
-            setTimeout(test, 10)
+        if (tableWinner.offsetTop == '590' && tableWinner.offsetLeft == '900') {
+            let newCount = 50;
+            function changePostionToRight() {
+                newCount += 1;
+                tableWinner.style.right = newCount + 'px';
+                setTimeout(changePostionToRight, 10);
+                if (newCount > 790) {
+                    changePostionToRight = false;
+                    tableWinner.style.right = '790';
+                    console.log(tableWinner.offsetLeft, tableWinner.offsetTop)
+                    if (tableWinner.offsetLeft == '158' && tableWinner.offsetTop == '590') {
+                        let continueCount = 590;
+                        function tt() {
+                            continueCount--;
+                            tableWinner.style.top = continueCount + 'px';
+                            setTimeout(tt, 10);
+                            if (continueCount < 90) {
+                                tt = false
+                            }
+                        }
+                        tt()
+                    }
+                }
+            }
+            changePostionToRight()
         }
     }
     setTimeout(changePositionTableWinner, 10);
 }
+
