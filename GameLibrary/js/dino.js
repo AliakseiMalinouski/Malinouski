@@ -4,7 +4,8 @@ let stone = document.getElementById('stone');
 let tree = document.getElementById('tree');
 let badDino = document.getElementById('bad-dino'); 
 let croco = document.getElementById('croco');
-let bird = document.getElementById('bird');
+let sky = document.getElementById('sky');
+let sky1 = document.getElementById('sky1');
 // получаем координаты человечка(сверху)
 let humanTop = human.offsetTop;
 // запуск функции прыжка злого динозавра и человечка
@@ -85,24 +86,35 @@ function animatedCroco() {
     }
 }
 animatedCroco();
-function animatedBird () {
-    let leftrBird = bird.offsetLeft;
-    let topBird = bird.offsetTop;
-    leftrBird--;
-    bird.style.left = leftrBird + 'px';
-    setTimeout(animatedBird, 0);
-    if (leftrBird == '0') {
-        bird.style.left = '1090px';
+function animatedSky () {
+    let leftSky = sky.offsetLeft;
+    leftSky--;
+    sky.style.left = leftSky + 'px';
+    setTimeout(animatedSky, 0);
+    if (leftSky == '0') {
+        sky.style.left = '1090px';
     }
-    if (parseInt(window.getComputedStyle(bird).getPropertyValue('left')) > 800) {
-        bird.style.opacity = '0';
+    if (parseInt(window.getComputedStyle(sky).getPropertyValue('left')) > 800) {
+        sky.style.opacity = '0';
     }
-    if (parseInt(window.getComputedStyle(bird).getPropertyValue('left')) < 800) {
-        bird.style.opacity = '1';
-    }
-    if ((human.offsetLeft == '650' && human.offsetTop == '233') && (bird.offsetLeft == '650' && bird.offsetTop == '233')) {
-        alert('GAME OVER!');
-        location.reload();
+    if (parseInt(window.getComputedStyle(sky).getPropertyValue('left')) < 800) {
+        sky.style.opacity = '1';
     }
 }
-animatedBird();
+animatedSky();
+function animatedSky1 () {
+    let leftSky1 = sky1.offsetLeft;
+    leftSky1--;
+    sky1.style.left = leftSky1 + 'px';
+    setTimeout(animatedSky1, 0);
+    if (leftSky1 == '0') {
+        sky1.style.left = '900px';
+    }
+    if (parseInt(window.getComputedStyle(sky1).getPropertyValue('left')) > 800) {
+        sky1.style.opacity = '0';
+    }
+    if (parseInt(window.getComputedStyle(sky1).getPropertyValue('left')) < 800) {
+        sky1.style.opacity = '1';
+    }
+}
+animatedSky1();

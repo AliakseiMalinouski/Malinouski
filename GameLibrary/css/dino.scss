@@ -78,15 +78,25 @@
         top: 263px;
         left: 1200px;
     }
-    #bird {
-        width: 50px;
-        height: 50px;
+    #sky {
+        width: 80px;
+        height: 80px;
         position: absolute;
-        background-image: url(../imgs/bird.gif);
+        background-image: url(../imgs/sky.png);
         background-size: 100% 100%;
         z-index: 1;
-        top: 214px;
+        top: 52px;
         left: 1090px;
+    }
+    #sky1 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-image: url(../imgs/sky1.jpg);
+        background-size: 100% 100%;
+        z-index: 1;
+        top: 62px;
+        left: 900px;
     }
 }
 
