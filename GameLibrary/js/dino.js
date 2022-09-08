@@ -7,10 +7,6 @@ document.addEventListener('keydown', function (EO) {
         upHuman()
     }
 });
-// document.addEventListener('keyup', function (EO) {
-//     EO = EO || window.event;
-//     human.style.top = '250px';
-// });
 function upHuman() {
     if (human.classList != 'up') {
         human.classList.add('up');
