@@ -100,7 +100,7 @@ function animatedBird () {
     if (parseInt(window.getComputedStyle(bird).getPropertyValue('left')) < 800) {
         bird.style.opacity = '1';
     }
-    if (parseInt(window.getComputedStyle(human).getPropertyValue('top')) == topBird) {
+    if ((human.offsetLeft == '650' && human.clientY == '233') && (bird.offsetLeft == '650' && bird.clientY == '233')) {
         alert('GAME OVER!');
         location.reload();
     }
