@@ -66,5 +66,14 @@
     z-index: 1;
     top: 263px;
     left: 1200px; }
+  .area-game #bird {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: url(../imgs/bird.gif);
+    background-size: 100% 100%;
+    z-index: 1;
+    top: 214px;
+    left: 1090px; }
 
 /*# sourceMappingURL=dino.css.map */
