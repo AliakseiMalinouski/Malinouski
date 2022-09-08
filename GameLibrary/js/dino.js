@@ -26,6 +26,7 @@ function t() {
     }
     if (leftStone == '99' && human.classList != 'up') {
         alert('GAME OVER!');
+        location.reload();
     }
 }
 t();
@@ -44,7 +45,8 @@ function g() {
         tree.style.opacity = '1';
     }
     if (leftTree == '99' && human.classList != 'up') {
-        alert('GAME OVER!')
+        alert('GAME OVER!');
+        location.reload();
     }
 }
 g();

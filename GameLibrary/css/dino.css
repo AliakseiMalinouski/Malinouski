@@ -46,5 +46,13 @@
     background-size: 50px 60px;
     top: 249px;
     left: 980px; }
+  .area-game #bad-dino {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-image: url(../imgs/badDino.gif);
+    background-size: 70px 70px;
+    top: 230px;
+    z-index: 3; }
 
 /*# sourceMappingURL=dino.css.map */
