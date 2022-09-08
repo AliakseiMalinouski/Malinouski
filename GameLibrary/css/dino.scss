@@ -4,68 +4,49 @@
     box-sizing: border-box;
 }
 .area-game {
-    margin: 0 auto;
     width: 800px;
-    height: 400px;
+    height: 300px;
     border-bottom: 2px solid black;
+    margin: 0 auto;
     position: relative;
-    .bad-dino-body {
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        background-image: url(../imgs/badDino.gif);
-        background-repeat: no-repeat;
-        background-size: 90px 60px;
-        top: 340px;
-        left: 40px;
-    }
     #human {
-        width: 60px;
-        height: 60px;
-        position: absolute;
+        width: 50px;
+        height: 50px;
         background-image: url(../imgs/human.gif);
-        background-repeat: no-repeat;
         background-size: 80px 80px;
-        top: 350px;
-        left: 100px;
+        position: absolute;
+        top: 250px;
+        left: 50px;
     }
     .up {
-        animation: up 1.5s linear;
+        animation: up 1.1s linear;
     }
     @keyframes up {
         0% {
-            top: 350px;
+            top: 250px;
         }
         30% {
-            top: 320px;
+            top: 190px;
         }
         50% {
-            top: 290px;
+            top: 170px;
         }
         80% {
-            top: 320px;
+            top: 190px;
         }
         100% {
-            top: 350px;
+            top: 250px;
         }
     }
-    .stone-body {
-        width: 20px;
-        height: 40px;
+    #stone {
         position: absolute;
+        width: 30px;
+        height: 40px;
         background-image: url(../imgs/stone.png);
-        background-repeat: no-repeat;
-        background-size: 20px 30px;
-        top: 367px;
-        left: 780px;
-        animation: stone 3s infinite linear;
+        background-size: 30px 40px;
+        left: 760px;
+        top: 258px;
+        animation: stone 2s infinite linear;
     }
-    @keyframes stone {
-        from {
-            left: 780px;
-        }
-        to {
-            left: 0px;
-        }
-    }
+    
 }
