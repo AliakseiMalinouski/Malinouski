@@ -45,4 +45,4 @@ function g() {
         tree.style.opacity = '1';
     }
 }
-g()
+g();
