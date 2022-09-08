@@ -31,60 +31,60 @@ function dinoUp() {
         badDino.classList.remove('up');
     }, 1000);
 }
-// function animatedStone() {
-//     let leftStone = stone.offsetLeft;
-//     leftStone--;
-//     stone.style.left = leftStone + 'px';
-//     setTimeout(animatedStone, 0);
-//     if (leftStone == '0') {
-//         stone.style.left = '780px';
-//     }
-//     if (leftStone == '99' && human.classList != 'up') {
-//         alert('GAME OVER!');
-//         location.reload();
-//     }
-// }
-// animatedStone();
-// function animatedTree() {
-//     let leftTree = tree.offsetLeft;
-//     leftTree--;
-//     tree.style.left = leftTree + 'px';
-//     setTimeout(animatedTree, 0);
-//     if (leftTree == '0') {
-//         tree.style.left = '1080px';
-//     }
-//     if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) > 800) {
-//         tree.style.opacity = '0';
-//     }
-//     if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) < 800) {
-//         tree.style.opacity = '1';
-//     }
-//     if (leftTree == '99' && human.classList != 'up') {
-//         alert('GAME OVER!');
-//         location.reload();
-//     }
-// }
-// animatedTree();
-// function animatedCroco() {
-//     let leftCroco = croco.offsetLeft;
-//     leftCroco--;
-//     croco.style.left = leftCroco + 'px';
-//     setTimeout(animatedCroco, 0);
-//     if (leftCroco == '0') {
-//         croco.style.left = '1200px';
-//     }
-//     if (parseInt(window.getComputedStyle(croco).getPropertyValue('left')) > 800) {
-//         croco.style.opacity = '0';
-//     }
-//     if (parseInt(window.getComputedStyle(croco).getPropertyValue('left')) < 800) {
-//         croco.style.opacity = '1';
-//     }
-//     if (leftCroco == '99' && human.classList != 'up') {
-//         alert('GAME OVER!');
-//         location.reload();
-//     }
-// }
-// animatedCroco();
+function animatedStone() {
+    let leftStone = stone.offsetLeft;
+    leftStone--;
+    stone.style.left = leftStone + 'px';
+    setTimeout(animatedStone, 0);
+    if (leftStone == '0') {
+        stone.style.left = '780px';
+    }
+    if (leftStone == '99' && human.classList != 'up') {
+        alert('GAME OVER!');
+        location.reload();
+    }
+}
+animatedStone();
+function animatedTree() {
+    let leftTree = tree.offsetLeft;
+    leftTree--;
+    tree.style.left = leftTree + 'px';
+    setTimeout(animatedTree, 0);
+    if (leftTree == '0') {
+        tree.style.left = '1080px';
+    }
+    if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) > 800) {
+        tree.style.opacity = '0';
+    }
+    if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) < 800) {
+        tree.style.opacity = '1';
+    }
+    if (leftTree == '99' && human.classList != 'up') {
+        alert('GAME OVER!');
+        location.reload();
+    }
+}
+animatedTree();
+function animatedCroco() {
+    let leftCroco = croco.offsetLeft;
+    leftCroco--;
+    croco.style.left = leftCroco + 'px';
+    setTimeout(animatedCroco, 0);
+    if (leftCroco == '0') {
+        croco.style.left = '1200px';
+    }
+    if (parseInt(window.getComputedStyle(croco).getPropertyValue('left')) > 800) {
+        croco.style.opacity = '0';
+    }
+    if (parseInt(window.getComputedStyle(croco).getPropertyValue('left')) < 800) {
+        croco.style.opacity = '1';
+    }
+    if (leftCroco == '99' && human.classList != 'up') {
+        alert('GAME OVER!');
+        location.reload();
+    }
+}
+animatedCroco();
 function animatedBird () {
     let leftrBird = bird.offsetLeft;
     let topBird = bird.offsetTop;
@@ -100,7 +100,7 @@ function animatedBird () {
     if (parseInt(window.getComputedStyle(bird).getPropertyValue('left')) < 800) {
         bird.style.opacity = '1';
     }
-    if ((human.offsetLeft == '650' && human.clientY == '233') && (bird.offsetLeft == '650' && bird.clientY == '233')) {
+    if ((human.offsetLeft == '650' && human.offsetTop == '233') && (bird.offsetLeft == '650' && bird.offsetTop == '233')) {
         alert('GAME OVER!');
         location.reload();
     }
