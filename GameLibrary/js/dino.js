@@ -28,11 +28,11 @@ function dinoUp() {
         badDino.classList.remove('up');
     }, 1000);
 }
-function t() {
+function animatedStone() {
     let leftStone = stone.offsetLeft;
     leftStone--;
     stone.style.left = leftStone + 'px';
-    setTimeout(t, 0);
+    setTimeout(animatedStone, 0);
     if (leftStone == '0') {
         stone.style.left = '780px';
     }
@@ -41,12 +41,12 @@ function t() {
         location.reload();
     }
 }
-t();
-function g() {
+animatedStone();
+function animatedTree() {
     let leftTree = tree.offsetLeft;
     leftTree--;
     tree.style.left = leftTree + 'px';
-    setTimeout(g, 0);
+    setTimeout(animatedTree, 0);
     if (leftTree == '0') {
         tree.style.left = '1080px';
     }
@@ -61,4 +61,4 @@ function g() {
         location.reload();
     }
 }
-g();
+animatedTree();
