@@ -9,6 +9,9 @@
     border-bottom: 2px solid #633708;
     margin: 0 auto;
     position: relative;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-05/1621445371_21-phonoteka_org-p-pikselnii-fon-les-23.jpg);
+    background-repeat: no-repeat;
+    background-size: 127% 127%;
     #human {
         width: 50px;
         height: 50px;
@@ -43,7 +46,7 @@
         position: absolute;
         width: 30px;
         height: 40px;
-        background-image: url(../imgs/stone.png);
+        background-image: url(../imgs/stone-removebg-preview.png);
         background-size: 30px 40px;
         left: 760px;
         top: 258px;
@@ -92,7 +95,7 @@
         width: 100px;
         height: 100px;
         position: absolute;
-        background-image: url(../imgs/sky1.jpg);
+        background-image: url(../imgs/sky1.png);
         background-size: 100% 100%;
         z-index: 1;
         top: 62px;
