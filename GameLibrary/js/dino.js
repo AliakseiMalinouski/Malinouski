@@ -16,7 +16,6 @@ function upHuman() {
         human.classList.remove('up');
     }, 1000);
 }
-console.log(typeof humanTop)
 function t() {
     let leftStone = stone.offsetLeft;
     leftStone--;
@@ -26,7 +25,7 @@ function t() {
         stone.style.left = '780px';
     }
     if (leftStone == '99' && human.classList != 'up') {
-        alert('gg')
+        alert('GAME OVER!');
     }
 }
 t();
@@ -43,6 +42,9 @@ function g() {
     }
     if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) < 800) {
         tree.style.opacity = '1';
+    }
+    if (leftTree == '99' && human.classList != 'up') {
+        alert('GAME OVER!')
     }
 }
 g();
