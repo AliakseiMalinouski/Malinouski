@@ -1,5 +1,6 @@
 let human = document.getElementById('human');
 let stone = document.getElementById('stone');
+let tree = document.getElementById('tree');
 let humanTop = human.offsetTop;
 document.addEventListener('keydown', function (EO) {
     EO = EO || window.event;
@@ -29,3 +30,19 @@ function t() {
     }
 }
 t();
+function g() {
+    let leftTree = tree.offsetLeft;
+    leftTree--;
+    tree.style.left = leftTree + 'px';
+    setTimeout(g, 0);
+    if (leftTree == '0') {
+        tree.style.left = '1080px';
+    }
+    if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) > 800) {
+        tree.style.opacity = '0';
+    }
+    if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) < 800) {
+        tree.style.opacity = '1';
+    }
+}
+g()

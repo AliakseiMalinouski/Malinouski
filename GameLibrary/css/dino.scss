@@ -46,7 +46,14 @@
         background-size: 30px 40px;
         left: 760px;
         top: 258px;
-        animation: stone 2s infinite linear;
     }
-    
+    #tree {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url(../imgs/tree.png);
+        background-size: 50px 60px;
+        top: 249px;
+        left: 980px;
+    }
 }
