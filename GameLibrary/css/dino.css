@@ -6,7 +6,7 @@
 .area-game {
   width: 800px;
   height: 300px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #633708;
   margin: 0 auto;
   position: relative; }
   .area-game #human {

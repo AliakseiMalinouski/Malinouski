@@ -1,11 +1,15 @@
+// получаем элементы со страницы
 let human = document.getElementById('human');
 let stone = document.getElementById('stone');
 let tree = document.getElementById('tree');
+let badDino = document.getElementById('bad-dino');
+// получаем координаты человечка(сверху)
 let humanTop = human.offsetTop;
 document.addEventListener('keydown', function (EO) {
     EO = EO || window.event;
     if (EO.code == 'Space') {
-        upHuman()
+        upHuman();
+        dinoUp();
     }
 });
 function upHuman() {
@@ -14,6 +18,14 @@ function upHuman() {
     }
     setTimeout(function () {
         human.classList.remove('up');
+    }, 1000);
+}
+function dinoUp() {
+    if (badDino.classList != 'up') {
+        badDino.classList.add('up');
+    }
+    setTimeout(function () {
+        badDino.classList.remove('up');
     }, 1000);
 }
 function t() {
