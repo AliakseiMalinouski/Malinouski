@@ -2,7 +2,8 @@
 let human = document.getElementById('human');
 let stone = document.getElementById('stone');
 let tree = document.getElementById('tree');
-let badDino = document.getElementById('bad-dino');
+let badDino = document.getElementById('bad-dino'); 
+let croco = document.getElementById('croco');
 // получаем координаты человечка(сверху)
 let humanTop = human.offsetTop;
 document.addEventListener('keydown', function (EO) {
@@ -62,3 +63,23 @@ function animatedTree() {
     }
 }
 animatedTree();
+function animatedCroco() {
+    let leftCroco = croco.offsetLeft;
+    leftCroco--;
+    croco.style.left = leftCroco + 'px';
+    setTimeout(animatedCroco, 0);
+    if (leftCroco == '0') {
+        croco.style.left = '1200px';
+    }
+    if (parseInt(window.getComputedStyle(croco).getPropertyValue('left')) > 800) {
+        croco.style.opacity = '0';
+    }
+    if (parseInt(window.getComputedStyle(croco).getPropertyValue('left')) < 800) {
+        croco.style.opacity = '1';
+    }
+    if (leftCroco == '99' && human.classList != 'up') {
+        alert('GAME OVER!');
+        location.reload();
+    }
+}
+animatedCroco();

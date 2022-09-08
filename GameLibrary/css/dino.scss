@@ -17,6 +17,7 @@
         position: absolute;
         top: 250px;
         left: 50px;
+        z-index: 3;
     }
     .up {
         animation: up 1.1s linear;
@@ -46,6 +47,7 @@
         background-size: 30px 40px;
         left: 760px;
         top: 258px;
+        z-index: 1;
     }
     #tree {
         position: absolute;
@@ -55,6 +57,7 @@
         background-size: 50px 60px;
         top: 249px;
         left: 980px;
+        z-index: 1;
     }
     #bad-dino {
         width: 80px;
@@ -64,5 +67,15 @@
         background-size: 70px 70px;
         top: 230px;
         z-index: 3;
+    }
+    #croco {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background-image: url(../imgs/croco.gif);
+        background-size: 100% 100%;
+        z-index: 1;
+        top: 263px;
+        left: 1200px;
     }
 }

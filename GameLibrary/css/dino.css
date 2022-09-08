@@ -16,7 +16,8 @@
     background-size: 80px 80px;
     position: absolute;
     top: 250px;
-    left: 50px; }
+    left: 50px;
+    z-index: 3; }
   .area-game .up {
     animation: up 1.1s linear; }
 @keyframes up {
@@ -37,7 +38,8 @@
     background-image: url(../imgs/stone.png);
     background-size: 30px 40px;
     left: 760px;
-    top: 258px; }
+    top: 258px;
+    z-index: 1; }
   .area-game #tree {
     position: absolute;
     width: 50px;
@@ -45,7 +47,8 @@
     background-image: url(../imgs/tree.png);
     background-size: 50px 60px;
     top: 249px;
-    left: 980px; }
+    left: 980px;
+    z-index: 1; }
   .area-game #bad-dino {
     width: 80px;
     height: 80px;
@@ -54,5 +57,14 @@
     background-size: 70px 70px;
     top: 230px;
     z-index: 3; }
+  .area-game #croco {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-image: url(../imgs/croco.gif);
+    background-size: 100% 100%;
+    z-index: 1;
+    top: 263px;
+    left: 1200px; }
 
 /*# sourceMappingURL=dino.css.map */
