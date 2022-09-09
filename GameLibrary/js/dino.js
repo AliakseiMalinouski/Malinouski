@@ -26,6 +26,12 @@ document.addEventListener('keydown', function (EO) {
         dinoUp();
     }
 });
+document.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    humanJumpAudio.play();
+    upHuman();
+    dinoUp();
+});
 function upHuman() {
     if (human.classList != 'up') {
         human.classList.add('up');
