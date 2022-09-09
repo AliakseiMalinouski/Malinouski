@@ -20,6 +20,11 @@ if (window.innerWidth > 770) {
     document.body.style.zoom = 2.5;
     document.body.style.overflowX = 'hidden';
 }
+if (window.innerWidth < 770) {
+    document.body.style.zoom = 0;
+    document.body.style.overflowY = 'hidden';
+    document.body.style.overflowX = 'hidden';
+}
 // получаем координаты человечка(сверху)
 let humanTop = human.offsetTop;
 // запуск функции прыжка злого динозавра и человечка
