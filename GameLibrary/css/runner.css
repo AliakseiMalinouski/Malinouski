@@ -4,10 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Press Start 2P', cursive;
-  background-image: url(../imgs/floor.png);
-  background-repeat: no-repeat;
-  background-position: 0% 300%; }
+  font-family: 'Press Start 2P', cursive; }
 
 .area-game {
   width: 800px;
