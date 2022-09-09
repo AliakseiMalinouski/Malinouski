@@ -15,12 +15,7 @@ let crocoEatHuman = new Audio('./audio/crocoEat.mp3');
 // меняем масштаб документа
 document.body.style.zoom = 2.5;
 document.body.style.overflowX = 'hidden';
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    alert('work')
-    document.body.style.transform = 'rotate(90deg)';
-  } else {
-    // код для обычных устройств
-}
+
 // получаем координаты человечка(сверху)
 let humanTop = human.offsetTop;
 // запуск функции прыжка злого динозавра и человечка
