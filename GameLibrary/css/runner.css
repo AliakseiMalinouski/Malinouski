@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  overflow: hidden; }
+
 body {
   font-family: 'Press Start 2P', cursive;
   background-image: url(../imgs/menuFone.jpg);
