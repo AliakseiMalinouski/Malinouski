@@ -1,4 +1,5 @@
 // получаем элементы со страницы
+let areaGame = document.getElementById('area-game');
 let human = document.getElementById('human');
 let stone = document.getElementById('stone');
 let tree = document.getElementById('tree');
@@ -70,6 +71,7 @@ function animatedTree() {
         tree.style.opacity = '1';
     }
     if (leftTree == '99' && human.classList != 'up') {
+        stoneAudio.play();
         alert('GAME OVER!');
         location.reload();
     }
@@ -130,3 +132,22 @@ function animatedSky1 () {
     }
 }
 animatedSky1();
+let sumScore = document.getElementById('sum-score');
+let startScore = 0;
+setInterval(function () {
+    startScore++;
+    sumScore.innerHTML = startScore;
+    if (startScore > 30) {
+        areaGame.style.backgroundImage = 'url("./imgs/secondFone.png")';
+        areaGame.style.backgroundSize = '123% 123%';
+    }
+    if (startScore > 60) {
+        areaGame.style.backgroundImage = 'url("./imgs/thirdFone.jpg")';
+        areaGame.style.backgroundSize = '123% 123%';
+    }
+    if (startScore > 90) {
+        areaGame.style.backgroundImage = 'url("./imgs/fFone.jpg")';
+        areaGame.style.backgroundSize = '123% 123%';
+    }
+}, 200);
+let backgroundAreaGame = getComputedStyle(areaGame).getPropertyValue('background-image');

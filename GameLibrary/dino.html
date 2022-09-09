@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/dino.css">
     <title>RunnerGame</title>
 </head>
 <body>
-    <div class="area-game">
+    <div class="area-game" id="area-game">
         <div id="bad-dino"></div>
         <div id="human"></div>
         <div class="stone-body" id="stone"></div>
@@ -16,6 +18,7 @@
         <div id="croco"></div>
         <div id="sky"></div>
         <div id="sky1"></div>
+        <div id="score">Score: <span id="sum-score"></span></div>
     </div>
     <script src="./js/dino.js"></script>
 </body>

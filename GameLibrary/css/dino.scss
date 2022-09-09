@@ -3,13 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Press Start 2P', cursive;
+}
 .area-game {
     width: 800px;
     height: 300px;
     border-bottom: 2px solid #633708;
     margin: 0 auto;
     position: relative;
-    background-image: url(https://phonoteka.org/uploads/posts/2021-05/1621445371_21-phonoteka_org-p-pikselnii-fon-les-23.jpg);
+    background-image: url(../imgs/startfone.jpg);
     background-repeat: no-repeat;
     background-size: 127% 127%;
     #human {
@@ -100,6 +103,14 @@
         z-index: 1;
         top: 62px;
         left: 900px;
+    }
+    #score {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .test {
+        background-image: url(../imgs/secondFone.png) !important;
     }
 }
 
