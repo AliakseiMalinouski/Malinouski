@@ -8,6 +8,7 @@ let sky = document.getElementById('sky');
 let sky1 = document.getElementById('sky1');
 // добавляем звуки-реакции на действия в игре
 let mainMusic = new Audio('./audio/foneMusicRun.mp3');
+let stoneAudio = new Audio('./audio/stoneAudio.mp3');
 let humanJumpAudio = new Audio('./audio/8bit-synth-bounce-short.mp3');
 let crocoEatHuman = new Audio('./audio/crocoEat.mp3');
 // получаем координаты человечка(сверху)
@@ -47,6 +48,7 @@ function animatedStone() {
         stone.style.left = '780px';
     }
     if (leftStone == '99' && human.classList != 'up') {
+        stoneAudio.play();
         alert('GAME OVER!');
         location.reload();
     }
