@@ -1,6 +1,3 @@
-window.onbeforeunload = function() {
-  return "Есть несохранённые изменения. Всё равно уходим?";
-};
 // получаем элементы со страницы
 let areaGame = document.getElementById('area-game');
 let human = document.getElementById('human');
@@ -10,6 +7,16 @@ let badDino = document.getElementById('bad-dino');
 let croco = document.getElementById('croco');
 let sky = document.getElementById('sky');
 let sky1 = document.getElementById('sky1');
+let playButton = document.getElementById('play');
+let menu = document.getElementById('menu');
+playButton.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    menu.style.display = 'none';
+    document.body.style.backgroundImage = 'none';
+    areaGame.style.display = 'block';
+    window.onbeforeunload = function() {
+  return "Есть несохранённые изменения. Всё равно уходим?";
+};
 // добавляем звуки-реакции на действия в игре
 let mainMusic = new Audio('./audio/foneMusicRun.mp3');
 let stoneAudio = new Audio('./audio/stoneAudio.mp3');
@@ -174,3 +181,4 @@ setInterval(function () {
     }
 }, 200);
 let backgroundAreaGame = getComputedStyle(areaGame).getPropertyValue('background-image');
+});

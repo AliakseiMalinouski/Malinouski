@@ -5,8 +5,13 @@
 }
 body {
     font-family: 'Press Start 2P', cursive;
+    background-image: url(../imgs/menuFone.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
 }
 .area-game {
+    display: none;
     width: 800px;
     height: 300px;
     border-bottom: 2px solid #633708;
@@ -116,4 +121,40 @@ body {
         top: 300px;
     }
 }
-
+.menu {
+    width: 400px;
+    height: 300px;
+    margin: 250px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.1px;
+    div {
+        height: 100px;
+        width: 400px;
+        text-align: center;
+        cursor: pointer;
+    }
+    div:nth-child(1) {
+        height: 80px;
+        background-color: #00003f;
+        padding-top: 25px;
+    }
+    div:nth-child(2) {
+        background-color: #800000;
+        padding-top: 40px;
+    }
+    div:nth-child(3) {
+        background-color: #006400;
+        padding-top: 40px;
+    }
+}
+#logo {
+    position: fixed;
+    color: white;
+    font-size: 50px;
+    transform: rotate(12deg);
+    top: 80px;
+    right: 50px;
+}
