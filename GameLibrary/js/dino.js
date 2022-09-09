@@ -6,12 +6,17 @@ let badDino = document.getElementById('bad-dino');
 let croco = document.getElementById('croco');
 let sky = document.getElementById('sky');
 let sky1 = document.getElementById('sky1');
+// добавляем звуки-реакции на действия в игре
+let mainMusic = new Audio('./audio/foneMusicRun.mp3');
+let humanJumpAudio = new Audio('./audio/8bit-synth-bounce-short.mp3');
+let crocoEatHuman = new Audio('./audio/crocoEat.mp3');
 // получаем координаты человечка(сверху)
 let humanTop = human.offsetTop;
 // запуск функции прыжка злого динозавра и человечка
 document.addEventListener('keydown', function (EO) {
     EO = EO || window.event;
     if (EO.code == 'Space') {
+        humanJumpAudio.play();
         upHuman();
         dinoUp();
     }
@@ -32,6 +37,7 @@ function dinoUp() {
         badDino.classList.remove('up');
     }, 1000);
 }
+// анимируем камень
 function animatedStone() {
     let leftStone = stone.offsetLeft;
     leftStone--;
@@ -46,6 +52,7 @@ function animatedStone() {
     }
 }
 animatedStone();
+// анимируем дерево
 function animatedTree() {
     let leftTree = tree.offsetLeft;
     leftTree--;
@@ -66,6 +73,7 @@ function animatedTree() {
     }
 }
 animatedTree();
+// анимируем крокодильчика
 function animatedCroco() {
     let leftCroco = croco.offsetLeft;
     leftCroco--;
@@ -81,11 +89,13 @@ function animatedCroco() {
         croco.style.opacity = '1';
     }
     if (leftCroco == '99' && human.classList != 'up') {
+        crocoEatHuman.play();
         alert('GAME OVER!');
         location.reload();
     }
 }
 animatedCroco();
+// анимируем облака
 function animatedSky () {
     let leftSky = sky.offsetLeft;
     leftSky--;
