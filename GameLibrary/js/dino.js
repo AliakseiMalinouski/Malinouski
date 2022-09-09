@@ -12,6 +12,9 @@ let mainMusic = new Audio('./audio/foneMusicRun.mp3');
 let stoneAudio = new Audio('./audio/stoneAudio.mp3');
 let humanJumpAudio = new Audio('./audio/8bit-synth-bounce-short.mp3');
 let crocoEatHuman = new Audio('./audio/crocoEat.mp3');
+// меняем масштаб документа
+document.body.style.zoom = 2.5;
+document.body.style.overflowX = 'hidden';
 // получаем координаты человечка(сверху)
 let humanTop = human.offsetTop;
 // запуск функции прыжка злого динозавра и человечка
