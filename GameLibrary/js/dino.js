@@ -1,3 +1,6 @@
+window.onbeforeunload = function() {
+  return "Есть несохранённые изменения. Всё равно уходим?";
+};
 // получаем элементы со страницы
 let areaGame = document.getElementById('area-game');
 let human = document.getElementById('human');
@@ -60,6 +63,7 @@ function animatedStone() {
     if (leftStone == '99' && human.classList != 'up') {
         stoneAudio.play();
         alert('GAME OVER!');
+        window.onbeforeunload = false;
         location.reload();
     }
 }
@@ -82,6 +86,7 @@ function animatedTree() {
     if (leftTree == '99' && human.classList != 'up') {
         stoneAudio.play();
         alert('GAME OVER!');
+        window.onbeforeunload = false;
         location.reload();
     }
 }
@@ -104,6 +109,7 @@ function animatedCroco() {
     if (leftCroco == '99' && human.classList != 'up') {
         crocoEatHuman.play();
         alert('GAME OVER!');
+        window.onbeforeunload = false;
         location.reload();
     }
 }
