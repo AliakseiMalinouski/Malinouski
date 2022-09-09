@@ -7,6 +7,20 @@
     overflow-x: hidden;
     position: absolute;
     top: 100%;
-    left: 0; } }
+    left: 0; }
+
+  #logo {
+    font-size: 24px;
+    top: 0px;
+    right: 0px; }
+
+  .menu {
+    margin: 0 auto;
+    width: 250px;
+    height: 180px; }
+    .menu div {
+      width: 250px;
+      height: 60px;
+      padding-top: 5px; } }
 
 /*# sourceMappingURL=runner.css.map */
