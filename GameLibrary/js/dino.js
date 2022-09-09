@@ -16,7 +16,8 @@ let crocoEatHuman = new Audio('./audio/crocoEat.mp3');
 document.body.style.zoom = 2.5;
 document.body.style.overflowX = 'hidden';
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    document.body.zoom = 0;
+    alert('work')
+    document.body.style.transform = 'rotate(90deg)';
   } else {
     // код для обычных устройств
 }
