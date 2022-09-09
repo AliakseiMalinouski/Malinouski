@@ -19,6 +19,7 @@ let crocoEatHuman = new Audio('./audio/crocoEat.mp3');
 if (window.innerWidth > 770) {
     document.body.style.zoom = 2.5;
     document.body.style.overflowX = 'hidden';
+    document.body.style.overflowY = 'hidden';
 }
 if (window.innerWidth < 770) {
     document.body.style.zoom = 0;

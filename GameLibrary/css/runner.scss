@@ -109,8 +109,11 @@ body {
         top: 20px;
         left: 20px;
     }
-    .test {
-        background-image: url(../imgs/secondFone.png) !important;
+    #floor {
+        position: absolute;
+        width: 800px;
+        height: 100px;
+        top: 300px;
     }
 }
 

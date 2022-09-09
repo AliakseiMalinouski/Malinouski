@@ -94,7 +94,10 @@ body {
     position: absolute;
     top: 20px;
     left: 20px; }
-  .area-game .test {
-    background-image: url(../imgs/secondFone.png) !important; }
+  .area-game #floor {
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    top: 300px; }
 
 /*# sourceMappingURL=runner.css.map */
