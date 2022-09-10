@@ -9,19 +9,21 @@ let sky = document.getElementById('sky');
 let sky1 = document.getElementById('sky1');
 let playButton = document.getElementById('play');
 let menu = document.getElementById('menu');
-playButton.addEventListener('click', function (EO) {
-    EO = EO || window.event;
-    menu.style.display = 'none';
-    document.body.style.backgroundImage = 'none';
-    areaGame.style.display = 'block';
-    window.onbeforeunload = function() {
-  return "Есть несохранённые изменения. Всё равно уходим?";
-};
 // добавляем звуки-реакции на действия в игре
 let mainMusic = new Audio('./audio/foneMusicRun.mp3');
 let stoneAudio = new Audio('./audio/stoneAudio.mp3');
 let humanJumpAudio = new Audio('./audio/8bit-synth-bounce-short.mp3');
 let crocoEatHuman = new Audio('./audio/crocoEat.mp3');
+playButton.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    menu.style.display = 'none';
+    document.body.style.backgroundImage = 'none';
+    areaGame.style.display = 'block';
+    mainMusic.play();
+    
+    window.onbeforeunload = function() {
+  return "Есть несохранённые изменения. Всё равно уходим?";
+};
 // меняем масштаб документа
 if (window.innerWidth > 770) {
     document.body.style.zoom = 2.5;
