@@ -20,7 +20,15 @@ playButton.addEventListener('click', function (EO) {
     document.body.style.backgroundImage = 'none';
     areaGame.style.display = 'block';
     mainMusic.play();
-    
+    document.addEventListener('keydown', function (EO) {
+        EO = EO || window.event;
+        if (EO.code == 'Digit1') {
+            mainMusic.pause();
+        }
+        if (EO.code == 'Digit2') {
+            mainMusic.play();
+        }
+    });
     window.onbeforeunload = function() {
   return "Есть несохранённые изменения. Всё равно уходим?";
 };
