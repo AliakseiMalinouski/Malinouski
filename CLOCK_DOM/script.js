@@ -9,8 +9,8 @@ buildClock.addEventListener('click', function (EO) {
     EO = EO || window.event;
     let sizeValue = size.value;
     let cx = sizeValue/2;
-    let r = 160;
-    let dr = 30;
+    let r = sizeValue/2;
+    let dr = 15;
     EO = EO || window.event;
     clock.style.display = 'block';
     clock.style.width = sizeValue + 'px';
