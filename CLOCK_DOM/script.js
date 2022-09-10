@@ -9,8 +9,7 @@ buildClock.addEventListener('click', function (EO) {
     EO = EO || window.event;
     let sizeValue = size.value;
     let cx = sizeValue/2;
-    let r = sizeValue/2;
-    let dr = 15;
+    let r = sizeValue/2 - 25;
     EO = EO || window.event;
     clock.style.display = 'block';
     clock.style.width = sizeValue + 'px';
@@ -22,6 +21,7 @@ buildClock.addEventListener('click', function (EO) {
     let y = cx + r * Math.cos(angle);
     let nextHourDiv = document.createElement('div');
     nextHourDiv.setAttribute('class', 'next-our-div');
+    let dr = 27;
     nextHourDiv.style.left = (x - dr) + 'px';
     nextHourDiv.style.top = (y - dr) + 'px';
     clock.appendChild(nextHourDiv);
