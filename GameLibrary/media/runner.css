@@ -34,6 +34,11 @@
       font-size: 14px;
       padding-bottom: 40px; }
     .menu div:nth-child(1) {
-      height: 50px; } }
+      height: 50px; }
+    .menu #play {
+      height: 70px; }
+      .menu #play span {
+        left: 90px;
+        top: 20px; } }
 
 /*# sourceMappingURL=runner.css.map */

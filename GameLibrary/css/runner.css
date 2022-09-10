@@ -123,15 +123,28 @@ body {
     text-align: center;
     cursor: pointer; }
   .menu div:nth-child(1) {
-    height: 80px;
+    height: 100px;
     background-color: #00003f;
-    padding-top: 25px; }
+    position: relative; }
+    .menu div:nth-child(1) span {
+      position: absolute;
+      top: 40px;
+      left: 150px; }
+  .menu #play:hover {
+    transform: scale(1.1);
+    transition: 1s; }
   .menu div:nth-child(2) {
     background-color: #800000;
     padding-top: 40px; }
+  .menu #reg:hover {
+    transform: scale(1.1);
+    transition: 1s; }
   .menu div:nth-child(3) {
     background-color: #006400;
     padding-top: 40px; }
+  .menu #table-winner:hover {
+    transform: scale(1.1);
+    transition: 1s; }
 
 #logo {
   position: fixed;
