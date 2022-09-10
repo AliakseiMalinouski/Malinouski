@@ -9,6 +9,7 @@ let sky = document.getElementById('sky');
 let sky1 = document.getElementById('sky1');
 let playButton = document.getElementById('play');
 let menu = document.getElementById('menu');
+let logo = document.getElementById('logo');
 // добавляем звуки-реакции на действия в игре
 let mainMusic = new Audio('./audio/foneMusicRun.mp3');
 let stoneAudio = new Audio('./audio/stoneAudio.mp3');
@@ -18,6 +19,7 @@ playButton.addEventListener('click', function (EO) {
     EO = EO || window.event;
     menu.style.display = 'none';
     document.body.style.backgroundImage = 'none';
+    logo.style.display = 'none';
     areaGame.style.display = 'block';
     mainMusic.play();
     document.addEventListener('keydown', function (EO) {
