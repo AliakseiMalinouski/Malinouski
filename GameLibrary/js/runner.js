@@ -12,6 +12,7 @@ let menu = document.getElementById('menu');
 let logo = document.getElementById('logo');
 let reg = document.getElementById('reg');
 let regBlock = document.getElementById('reg_block');
+let closeButtonRegBlock = document.getElementById('close');
 // фотографии Джо
 let jo1 = document.getElementById('jo_1');
 let jo2 = document.getElementById('jo_2');
@@ -206,4 +207,11 @@ let backgroundAreaGame = getComputedStyle(areaGame).getPropertyValue('background
 reg.addEventListener('click', function (EO) {
     EO = EO || window.event;
     regBlock.style.display = 'block';
+});
+closeButtonRegBlock.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    regBlock.style.display = 'none';
+});
+document.addEventListener('click', function (EO) {
+    
 });

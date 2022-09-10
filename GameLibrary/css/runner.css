@@ -215,5 +215,12 @@ body {
     line-height: 30px; }
     #reg_block p span {
       color: red; }
+  #reg_block #close {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=runner.css.map */
