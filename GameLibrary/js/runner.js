@@ -10,6 +10,8 @@ let sky1 = document.getElementById('sky1');
 let playButton = document.getElementById('play');
 let menu = document.getElementById('menu');
 let logo = document.getElementById('logo');
+let reg = document.getElementById('reg');
+let regBlock = document.getElementById('reg_block');
 // фотографии Джо
 let jo1 = document.getElementById('jo_1');
 let jo2 = document.getElementById('jo_2');
@@ -200,4 +202,8 @@ setInterval(function () {
     }
 }, 200);
 let backgroundAreaGame = getComputedStyle(areaGame).getPropertyValue('background-image');
+});
+reg.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    regBlock.style.display = 'block';
 });
