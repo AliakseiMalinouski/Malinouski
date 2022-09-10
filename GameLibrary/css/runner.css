@@ -154,4 +154,22 @@ body {
   top: 80px;
   right: 50px; }
 
+#jo_1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 250px;
+  height: 200px;
+  transform: rotate(9deg);
+  border: 4px solid white; }
+
+#jo_2 {
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  width: 250px;
+  height: 200px;
+  transform: rotate(-8deg);
+  border: 4px solid white; }
+
 /*# sourceMappingURL=runner.css.map */
