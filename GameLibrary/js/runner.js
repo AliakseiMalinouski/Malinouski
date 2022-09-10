@@ -201,6 +201,14 @@ setInterval(function () {
         areaGame.style.backgroundImage = 'url("./imgs/fFone.jpg")';
         areaGame.style.backgroundSize = '123% 123%';
     }
+    if (startScore > 120) {
+        areaGame.style.backgroundImage = 'url("./imgs/forestFone.png")';
+        areaGame.style.backgroundSize = '113% 113%';
+    }
+    if (startScore > 160) {
+        areaGame.style.backgroundImage = 'url("./imgs/foneGif.gif")';
+        areaGame.style.backgroundSize = '100% 100%';
+    }
 }, 200);
 let backgroundAreaGame = getComputedStyle(areaGame).getPropertyValue('background-image');
 });
