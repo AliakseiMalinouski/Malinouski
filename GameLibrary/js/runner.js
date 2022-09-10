@@ -212,6 +212,3 @@ closeButtonRegBlock.addEventListener('click', function (EO) {
     EO = EO || window.event;
     regBlock.style.display = 'none';
 });
-document.addEventListener('click', function (EO) {
-    
-});
