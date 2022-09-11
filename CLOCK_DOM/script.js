@@ -26,8 +26,8 @@ buildClock.addEventListener('click', function (EO) {
     clock.appendChild(nextHourDiv);
     let number = document.createElement('span');
     number.setAttribute('class', 'number');
-    // let numbers = [12,1,2,3,4,5,6,7,8,9,10,11];
-    // number.textContent = numbers[i];
+    let numbers = [12,1,2,3,4,5,6,7,8,9,10,11];
+    number.textContent = numbers[i];
     nextHourDiv.appendChild(number);
 }
 });
