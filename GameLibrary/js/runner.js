@@ -213,6 +213,7 @@ setInterval(function () {
 }, 200);
 let backgroundAreaGame = getComputedStyle(areaGame).getPropertyValue('background-image');
 });
+// открытие и закрытие блока "правила"
 reg.addEventListener('click', function (EO) {
     EO = EO || window.event;
     regBlock.style.display = 'block';
