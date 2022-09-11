@@ -29,20 +29,25 @@ buildClock.addEventListener('click', function (EO) {
     let numbers = [12,1,2,3,4,5,6,7,8,9,10,11];
     number.textContent = numbers[i];
     nextHourDiv.appendChild(number);
-}
-});
-let divHands = document.createElement('div');
-let hoursHand = document.createElement('div');
-hoursHand.setAttribute('class', 'hours');
-let minutesHand = document.createElement('div');
-minutesHand.setAttribute('class', 'minutes');
-let secondsHand = document.createElement('div');
-secondsHand.setAttribute('class', 'seconds');
-divHands.appendChild(hoursHand);
-divHands.appendChild(minutesHand);
-divHands.appendChild(secondsHand);
-clock.appendChild(divHands);
-function updateTime() {
+    }
+    let divHands = document.createElement('div');
+    let hoursHand = document.createElement('div');
+    hoursHand.style.left = cx + 'px';
+    hoursHand.style.top = cx/2 + 'px';
+    hoursHand.setAttribute('class', 'hours');
+    let minutesHand = document.createElement('div');
+    minutesHand.setAttribute('class', 'minutes');
+    minutesHand.style.left = cx + 20 + 'px';
+    minutesHand.style.top = cx/2 - 50 + 'px';
+    let secondsHand = document.createElement('div');
+    secondsHand.setAttribute('class', 'seconds');
+    secondsHand.style.left = cx + 'px';
+    secondsHand.style.top = cx/2 - 60 + 'px';
+    divHands.appendChild(hoursHand);
+    divHands.appendChild(minutesHand);
+    divHands.appendChild(secondsHand);
+    clock.appendChild(divHands);
+    function updateTime() {
     let currentTime = new Date();
     let hours = currentTime.getHours() % 12;
     let minutes = currentTime.getMinutes();
@@ -62,3 +67,4 @@ function updateTimer() {
 }
 updateTime();
 setInterval(updateTime, 1000);
+});
