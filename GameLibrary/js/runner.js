@@ -184,6 +184,7 @@ function animatedSky1 () {
     }
 }
 animatedSky1();
+// создаём игровой счёт
 let sumScore = document.getElementById('sum-score');
 let startScore = 0;
 setInterval(function () {
