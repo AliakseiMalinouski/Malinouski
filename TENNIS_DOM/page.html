@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper-game {
+            width: 500px;
+            height: 250px;
+            background-color: lightyellow;
+            border: 1px solid black;
+            margin: 300px auto;
+            position: relative;
+        }
+        #rocket-left {
+            background-color: green;
+            width: 10px;
+            height: 75px;
+            position: absolute;
+            top: 25px;
+        }
+        #rocket-right {
+            background-color: blue;
+            width: 10px;
+            height: 75px;
+            position: absolute;
+            bottom: 25px;
+            right: 1px;
+        }
+        #ball {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 110px;
+            left: 230px;
+        }
+        #start {
+            position: absolute;
+            top: 270px;
+            left: 710px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="start" type="button">start</button>
+    <div class="wrapper-game" id="wrapper-game">
+        <div id="rocket-left"></div>
+        <div id="rocket-right"></div>
+        <div id="ball"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
