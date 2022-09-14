@@ -1,24 +1,28 @@
 "use strict";
 function buildWrapper(tag) {
-    let start;
-    let end;
-    let newObj;
-    return function (text, obj) {
-        for (let char in obj) {
-            newObj = `${char}="${obj[char]}"`;
-            if (tag === 'H1') {
-                newObj = `${char}="${obj[char].replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;")}" ${Object.keys(obj)[0]}="${obj.align}"`;
-            }
-        }
-        start = String(`<${tag} ${newObj}>`);
-        end = String(`</${tag}>`);
-        text = text.replace(/&/g, "&amp;");
-        text = text.replace(/>/g, "&gt;");
-        text = text.replace(/</g, "&lt;");
-        text = text.replace(/"/g, "&quot;");
-        text = text.replace(/'/g, "&#039;");
-        return `${start}${text}${end}`;
+  function wrapFunc(text, getObj) {
+    let kov = '';
+    let objMnemonic = {
+      '\'': '&apos;',
+      '\"': '&quot;',
+      '\&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;'
     }
+    for (let k in getObj) {
+      let attribute = ` ${k}="${getObj[k]}"`;
+      kov += attribute;
+    }
+    for (let i = 0; i < text.length; i++) {
+      if (text[i] in objMnemonic) {
+        text = text.split(text[i]).join(objMnemonic[text[i]]);
+      }
+    }
+    let start = kov ? `<${tag}${kov}>` : `<${tag}>`;
+    let end = `</${tag}>`;
+    return `${start}${text}${end}`
+  }
+  return wrapFunc;
 }
 let wrapP = buildWrapper('P');
 console.log(wrapP("Однажды в <студёную> зимнюю пору", { lang: "ru" }));
