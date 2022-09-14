@@ -37,8 +37,8 @@ buildClock.addEventListener('click', function (EO) {
     hoursHand.setAttribute('class', 'hours');
     let minutesHand = document.createElement('div');
     minutesHand.setAttribute('class', 'minutes');
-    minutesHand.style.left = cx + 20 + 'px';
-    minutesHand.style.top = cx/2 - 50 + 'px';
+    minutesHand.style.left = cx/2 + 'px';
+    minutesHand.style.top = cx/2 + 'px';
     let secondsHand = document.createElement('div');
     secondsHand.setAttribute('class', 'seconds');
     secondsHand.style.left = cx + 'px';
