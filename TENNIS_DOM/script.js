@@ -1,11 +1,17 @@
 "use strict"
 let gameZone = document.getElementById('wrapper-game');
+const gameZoneWidth = 500;
+const gameZoneHeigth = 250;
 let start = document.getElementById('start');
 let rocketRight = document.getElementById('rocket-right');
 let rocketLeft = document.getElementById('rocket-left');
 document.addEventListener('keydown', moveRocketLeft);
 let counterRocketLeftTop = 25;
 let counterRocketLeftMinusTop = 0;
+let scorePlayerOne = document.getElementById('player1');
+let scorePlayerTwo = document.getElementById('player2');
+scorePlayerOne.innerHTML = 0;
+scorePlayerTwo.innerHTML = 0;
 function moveRocketLeft(EO) {
     EO = EO || window.event;
     let rocketLeftMaxTop = parseInt(getComputedStyle(rocketLeft).getPropertyValue('top'));
@@ -33,8 +39,8 @@ let ballH={
         posY : 110,
         speedX : 2,
         speedY : 1,
-        width : 50,
-        height: 50,
+        width : 30,
+        height: 30,
 
         update : function() {
             const ballElem=document.getElementById('ball');
@@ -59,12 +65,12 @@ let ballH={
         // вылетел ли мяч правее стены?
         if ( ballH.posX+ballH.width>areaH.width ) {
             ballH.speedX=-ballH.speedX;
-            ballH.posX=areaH.width-ballH.width;
+            ballH.posX = areaH.width - ballH.width;
         }
         // вылетел ли мяч левее стены?
         if ( ballH.posX<0 ) {
             ballH.speedX=-ballH.speedX;
-            ballH.posX=0;
+            ballH.posX = 0;
         }
 
         ballH.posY+=ballH.speedY;
@@ -78,8 +84,6 @@ let ballH={
             ballH.speedY=-ballH.speedY;
             ballH.posY=0;
         }
-
         ballH.update();
     }
-
     ballH.update();
