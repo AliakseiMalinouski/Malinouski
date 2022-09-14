@@ -17,12 +17,16 @@ function moveRocketLeft(EO) {
         rocketLeft.style.top = counterRocketLeftTop + 'px';
     }
     if (rocketLeftMaxTop > 170) {
-        rocketLeft.style.top = '25px';
+        rocketLeft.style.top = '165px';
         counterRocketLeftTop = 25;
     }
     if (EO.code == 'ShiftLeft') {
         counterRocketLeftMinusTop = rocketLeftMaxTop;
         counterRocketLeftMinusTop -= 5;
         rocketLeft.style.top = counterRocketLeftMinusTop + 'px';
+    }
+    if (rocketLeftMaxTop == 0) {
+        rocketLeft.style.top = '5px';
+        counterRocketLeftTop = 25;
     }
 }
