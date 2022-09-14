@@ -1,10 +1,8 @@
 "use strict"
-"use strict"
 let gameZone = document.getElementById('wrapper-game');
 let start = document.getElementById('start');
 let rocketRight = document.getElementById('rocket-right');
 let rocketLeft = document.getElementById('rocket-left');
-let ball = document.getElementById('ball');
 document.addEventListener('keydown', moveRocketLeft);
 let counterRocketLeftTop = 25;
 let counterRocketLeftMinusTop = 0;
@@ -30,3 +28,58 @@ function moveRocketLeft(EO) {
         counterRocketLeftTop = 25;
     }
 }
+let ballH={
+        posX : 230,
+        posY : 110,
+        speedX : 2,
+        speedY : 1,
+        width : 50,
+        height: 50,
+
+        update : function() {
+            const ballElem=document.getElementById('ball');
+            ballElem.style.left=this.posX+"px";
+            ballElem.style.top=this.posY+"px";
+        }
+    }
+
+    let areaH={
+        width : 500,
+        height : 250,
+    }
+    start.addEventListener('click', startMoveBall);
+    function startMoveBall() {
+        // плавное движение - от 25 кадр/сек
+        setInterval(tick,40);
+    }
+
+    function tick() {
+
+        ballH.posX+=ballH.speedX;
+        // вылетел ли мяч правее стены?
+        if ( ballH.posX+ballH.width>areaH.width ) {
+            ballH.speedX=-ballH.speedX;
+            ballH.posX=areaH.width-ballH.width;
+        }
+        // вылетел ли мяч левее стены?
+        if ( ballH.posX<0 ) {
+            ballH.speedX=-ballH.speedX;
+            ballH.posX=0;
+        }
+
+        ballH.posY+=ballH.speedY;
+        // вылетел ли мяч ниже пола?
+        if ( ballH.posY+ballH.height>areaH.height ) {
+            ballH.speedY=-ballH.speedY;
+            ballH.posY=areaH.height-ballH.height;
+        }
+        // вылетел ли мяч выше потолка?
+        if ( ballH.posY<0 ) {
+            ballH.speedY=-ballH.speedY;
+            ballH.posY=0;
+        }
+
+        ballH.update();
+    }
+
+    ballH.update();
