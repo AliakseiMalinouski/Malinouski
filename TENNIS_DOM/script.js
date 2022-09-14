@@ -17,7 +17,7 @@ function moveRocketLeft(EO) {
         rocketLeft.style.top = counterRocketLeftTop + 'px';
     }
     if (rocketLeftMaxTop > 170) {
-        rocketLeft.style.top = '165px';
+        rocketLeft.style.top = '170px';
         counterRocketLeftTop = 25;
     }
     if (EO.code == 'ShiftLeft') {
