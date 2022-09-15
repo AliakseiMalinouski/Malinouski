@@ -195,4 +195,10 @@ function changePositionTableWinner(EO) {
     } 
     setTimeout(changePositionTableWinner, 80);
 }
-
+// получаем ширину окна 
+let widthWindow = window.innerWidth;
+let heigthWindow = window.innerHeight;
+console.log(widthWindow, heigthWindow)
+if (widthWindow < 1202) {
+    changePositionTableWinner = null;
+}

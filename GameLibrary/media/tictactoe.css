@@ -1,0 +1,23 @@
+@media all and (max-width: 1202px) {
+  .container {
+    width: 800px; }
+
+  .name-player {
+    left: 300px; }
+
+  .wrap {
+    margin-left: 240px; }
+
+  #text {
+    transform: rotate(-50deg);
+    top: 358px;
+    left: -275px;
+    transform: rotate(-90deg); }
+
+  #t1 {
+    left: 100px; }
+
+  .table-winner {
+    left: 100px; } }
+
+/*# sourceMappingURL=tictactoe.css.map */

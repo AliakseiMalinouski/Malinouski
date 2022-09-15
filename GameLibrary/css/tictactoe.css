@@ -119,4 +119,9 @@
   cursor: pointer;
   opacity: 0; }
 
+.pos-table-winner-1200 {
+  top: 0px !important;
+  bottom: 2px !important;
+  right: 150px !important; }
+
 /*# sourceMappingURL=tictactoe.css.map */
