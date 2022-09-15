@@ -19,5 +19,54 @@
 
   .table-winner {
     left: 100px; } }
+@media all and (max-width: 820px) {
+  .container {
+    width: 560px; }
+
+  .wrap {
+    margin-left: 120px; }
+
+  .name-player {
+    left: 190px;
+    color: red; }
+
+  #dynamic-on {
+    left: -230px; }
+
+  .red-line {
+    display: none; }
+
+  #off-music {
+    display: none; }
+
+  #table-winner {
+    left: 178px; }
+
+  .wrap-dynamic {
+    display: none; } }
+@media all and (max-width: 560px) {
+  .container {
+    width: 320px; }
+
+  #table-winner {
+    left: 35px; }
+
+  #text {
+    display: none; }
+
+  .wrap {
+    margin-left: 9px;
+    width: 107px; }
+
+  .cube {
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+    padding-left: 2px; }
+
+  .name-player {
+    left: 51px;
+    width: 250px;
+    color: red; } }
 
 /*# sourceMappingURL=tictactoe.css.map */
