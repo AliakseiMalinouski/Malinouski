@@ -3,14 +3,12 @@ function buildWrapper(tag) {
   function wrapFunc(text, getObj) {
     let kov = '';
     let objMnemonic = {
-      '\'': '&apos;',
-      '\"': '&quot;',
-      '\&': '&amp;',
+      '"': '&quot;',
       '<': '&lt;',
       '>': '&gt;'
-    }
+    };
     for (let k in getObj) {
-      let attribute = ` ${k}="${getObj[k]}"`;
+      let attribute = ` ${k}="${getObj[k].replace(/&/g, '&amp;').replace(/'/g, '&apos;')}"`;
       kov += attribute;
     }
     for (let i = 0; i < text.length; i++) {
@@ -20,7 +18,7 @@ function buildWrapper(tag) {
     }
     let start = kov ? `<${tag}${kov}>` : `<${tag}>`;
     let end = `</${tag}>`;
-    return `${start}${text}${end}`
+    return `${start}${text}${end}`;
   }
   return wrapFunc;
 }
