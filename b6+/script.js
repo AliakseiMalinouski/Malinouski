@@ -5,10 +5,12 @@ function buildWrapper(tag) {
     let objMnemonic = {
       '"': '&quot;',
       '<': '&lt;',
-      '>': '&gt;'
+      '>': '&gt;',
+      '&': '&amp;',
+      "'": '&apos;',
     };
     for (let k in getObj) {
-      let attribute = ` ${k}="${getObj[k].replace(/&/g, '&amp;').replace(/'/g, '&apos;')}"`;
+      let attribute = ` ${k}="${getObj[k].replace(/&/g, '&amp;').replace(/'/g, '&apos;').replace(/"/g, '&&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}"`;
       kov += attribute;
     }
     for (let i = 0; i < text.length; i++) {
