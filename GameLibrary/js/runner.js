@@ -204,7 +204,7 @@ setInterval(function () {
         areaGame.style.backgroundSize = '123% 123%';
     }
     if (startScore > 90) {
-        areaGame.style.backgroundImage = `url(${arrayFone[3]})`
+        areaGame.style.backgroundImage = `url(${arrayFone[2]})`
         areaGame.style.backgroundSize = '123% 123%';
     }
 }, 200);
