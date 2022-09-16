@@ -94,11 +94,27 @@
 }
 @media all and (max-width: 883px) {
     #reg_block {
-        left: 170px;
+        left: 150px;
     }
 }
 @media all and (max-width: 780px) {
     #reg_block {
-        left: 120px;
+        left: 200px;
+        #space {
+            display: none;
+        }
+        #touch {
+            display: inline;
+        }
+    }
+}
+@media all and (max-width: 560px) {
+    #reg_block {
+        width: 500px;
+        height: 300px;
+        p {
+            font-size: 13px;
+            line-height: 20px;
+        }
     }
 }

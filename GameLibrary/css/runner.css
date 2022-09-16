@@ -222,5 +222,7 @@ body {
     top: 15px;
     right: 15px;
     cursor: pointer; }
+  #reg_block #touch {
+    display: none; }
 
 /*# sourceMappingURL=runner.css.map */

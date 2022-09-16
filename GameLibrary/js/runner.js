@@ -187,28 +187,25 @@ animatedSky1();
 // создаём игровой счёт
 let sumScore = document.getElementById('sum-score');
 let startScore = 0;
+let arrayFone = [
+    '"./imgs/secondFone.png"',
+    '"./imgs/thirdFone.jpg"',
+    '"./imgs/fFone.jpg"',
+];
 setInterval(function () {
     startScore++;
     sumScore.innerHTML = startScore;
     if (startScore > 30) {
-        areaGame.style.backgroundImage = 'url("./imgs/secondFone.png")';
+        areaGame.style.backgroundImage = `url(${arrayFone[0]})`
         areaGame.style.backgroundSize = '123% 123%';
     }
     if (startScore > 60) {
-        areaGame.style.backgroundImage = 'url("./imgs/thirdFone.jpg")';
+        areaGame.style.backgroundImage = `url(${arrayFone[1]})`;
         areaGame.style.backgroundSize = '123% 123%';
     }
     if (startScore > 90) {
-        areaGame.style.backgroundImage = 'url("./imgs/fFone.jpg")';
+        areaGame.style.backgroundImage = `url(${arrayFone[3]})`
         areaGame.style.backgroundSize = '123% 123%';
-    }
-    if (startScore > 120) {
-        areaGame.style.backgroundImage = 'url("./imgs/forestFone.png")';
-        areaGame.style.backgroundSize = '113% 113%';
-    }
-    if (startScore > 160) {
-        areaGame.style.backgroundImage = 'url("./imgs/foneGif.gif")';
-        areaGame.style.backgroundSize = '100% 100%';
     }
 }, 200);
 let backgroundAreaGame = getComputedStyle(areaGame).getPropertyValue('background-image');
