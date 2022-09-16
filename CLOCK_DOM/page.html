@@ -120,6 +120,22 @@
     top: 234px;
     left: 270px;
 }
+#hand {
+    width: 10px;
+    height: 200px;
+    background-color: black;
+    transform-origin: 5px 190px;
+    position: absolute;
+}
+#mini {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 3px;
+    top: 188px;
+}
     </style>
 </head>
 <body>
@@ -127,10 +143,9 @@
     <button type="button" id="buildClock">Построить часы</button>
     <div id="wrapper">
         <div id='clock'>
-            <div id="circle"></div>
-            <div id="hoursCircle"></div>
-            <div id="minutesCircle"></div>
-            <div id="secondCircle"></div>
+            <div id="hand">
+                <div id="mini"></div>
+            </div>
         </div>
     </div>
     <script src="./script.js"></script>

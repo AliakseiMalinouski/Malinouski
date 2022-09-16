@@ -6,67 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .wrapper-game {
-            width: 500px;
-            height: 250px;
-            background-color: lightyellow;
-            border: 1px solid black;
-            margin: 300px auto;
-            position: relative;
-        }
-        #rocket-left {
-            background-color: green;
-            width: 10px;
-            height: 75px;
-            position: absolute;
-            top: 25px;
-        }
-        #rocket-right {
-            background-color: blue;
-            width: 10px;
-            height: 75px;
-            position: absolute;
-            bottom: 25px;
-            right: 1px;
-        }
-        #ball {
-            width: 30px;
-            height: 30px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            top: 110px;
-            left: 230px;
-        }
-        #start {
-            position: absolute;
-            top: 270px;
-            left: 710px;
-            cursor: pointer;
-        }
-        #player1 {
-            font-size: 30px;
-            position: absolute;
-            top: 250px;
-            left: 920px;
-        }
-        #player2 {
-            font-size: 30px;
-            position: absolute;
-            top: 250px;
-            left: 950px;
-        }
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.score {
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.board {
+  position: relative;
+  width: 550px;
+  height: 380px;
+  background-color: lightgoldenrodyellow;
+  border: 1px solid lightcoral;
+}
+
+.left-racket {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 60px;
+  background-color: lightseagreen;
+}
+
+.right-racket {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 10px;
+  height: 60px;
+  background-color: lightsalmon;
+}
+
+.ball {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+}
     </style>
 </head>
 <body>
-    <button id="start" type="button">start</button>
-    <span id="player1"></span>
-    <span id="player2"></span>
-    <div class="wrapper-game" id="wrapper-game">
-        <div id="rocket-left"></div>
-        <div id="rocket-right"></div>
-        <div id="ball"></div>
+    <div class="game-header">
+        <button class="button" type="button">Старт!</button>
+        <div class="score">
+            <span class="first-player">0</span> :
+            <span class="second-player">0</span>
+        </div>
     </div>
+    <div class="board">
     <script src="./script.js"></script>
 </body>
 </html>

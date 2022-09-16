@@ -1,89 +1,228 @@
 "use strict"
-let gameZone = document.getElementById('wrapper-game');
-const gameZoneWidth = 500;
-const gameZoneHeigth = 250;
-let start = document.getElementById('start');
-let rocketRight = document.getElementById('rocket-right');
-let rocketLeft = document.getElementById('rocket-left');
-document.addEventListener('keydown', moveRocketLeft);
-let counterRocketLeftTop = 25;
-let counterRocketLeftMinusTop = 0;
-let scorePlayerOne = document.getElementById('player1');
-let scorePlayerTwo = document.getElementById('player2');
-scorePlayerOne.innerHTML = 0;
-scorePlayerTwo.innerHTML = 0;
-function moveRocketLeft(EO) {
-    EO = EO || window.event;
-    let rocketLeftMaxTop = parseInt(getComputedStyle(rocketLeft).getPropertyValue('top'));
-    if (EO.code == 'ControlLeft') {
-        counterRocketLeftTop = rocketLeftMaxTop;
-        counterRocketLeftTop += 5;
-        rocketLeft.style.top = counterRocketLeftTop + 'px';
+window.addEventListener('load', function () {
+  let board = new Board();
+  board.createRackets();
+  board.createBall();
+  let moving = new Moving();
+  document.querySelector('.button').addEventListener('click', () => { moving.go() });
+});
+class Board {
+  constructor() {
+    this.board = document.querySelector('.board');
+    this.leftRacket = document.createElement('div');
+    this.rightRacket = document.createElement('div');
+    this.ball = document.createElement('div');
+  }
+  createRackets() {
+    this.leftRacket.classList.add('left-racket');
+    this.rightRacket.classList.add('right-racket');
+
+    this.board.appendChild(this.leftRacket);
+    this.board.appendChild(this.rightRacket);
+  }
+  createBall() {
+    this.ball.classList.add('ball');
+    this.board.appendChild(this.ball);
+  }
+}
+class Moving {
+  constructor() {
+    let that = this;
+    this.timerStatus = 0;
+    this.keydown = null;
+    this.leftRacket = document.querySelector('.left-racket');
+    this.rightRacket = document.querySelector('.right-racket');
+    this.ball = document.querySelector('.ball');
+    this.area = {
+      height: document.querySelector('.board').offsetHeight,
+      width: document.querySelector('.board').offsetWidth
+    };
+    this.keyValues = {
+      CTRL: 17,
+      SHIFT: 16,
+      DOWN: 40,
+      UP: 38
+    };
+    this.score = {
+      first: 0,
+      second: 0
+    };
+    this.ballSpeeds = {
+      x: 1.5,
+      y: 1,
+      step: 0
+    };
+    this.leftRacketSettings = {
+      racketX: this.leftRacket.offsetLeft,
+      racketY: this.leftRacket.offsetTop,
+      speed: 0,
+      width: this.leftRacket.offsetWidth,
+      height: this.leftRacket.offsetHeight,
+      update: () => {
+        this.leftRacket.style.left=this.leftRacketSettings.racketX+"px";
+        this.leftRacket.style.top=this.leftRacketSettings.racketY+"px";
+      }
+    };
+    this.rightRacketSettings = {
+      racketX: this.rightRacket.offsetLeft,
+      racketY: this.rightRacket.offsetTop,
+      speed: 0,
+      width: this.rightRacket.offsetWidth,
+      height: this.rightRacket.offsetHeight,
+      update: () => {
+        this.rightRacket.style.left=this.rightRacketSettings.racketX+"px";
+        this.rightRacket.style.top=this.rightRacketSettings.racketY+"px";
+      }
+    };
+    this.ballH={
+      posX : this.ball.offsetLeft,
+      posY : this.ball.offsetTop,
+      speedX : 1.5,
+      speedY : 1,
+      accelX : 0,
+      accelY : 0,
+      width : 20,
+      height: 20,
+      update : function() {
+        that.ball.style.left=Math.round(that.ballH.posX)+"px";
+        that.ball.style.top=Math.round(that.ballH.posY)+"px";
+      }
+    };
+    window.addEventListener('keydown', (e)=> {
+      this.keydown = e.keyCode;
+    });
+    window.addEventListener('keyup', (e)=> {
+      this.keydown = null;
+      if(e.keyCode === this.keyValues.SHIFT || e.keyCode === this.keyValues.CTRL) {
+        this.leftRacketSettings.speed = 0;
+      }
+    if(e.keyCode === this.keyValues.UP || e.keyCode === this.keyValues.DOWN) {
+      this.rightRacketSettings.speed = 0;
     }
-    if (rocketLeftMaxTop > 170) {
-        rocketLeft.style.top = '170px';
-        counterRocketLeftTop = 25;
+    });
+  }
+  reverseSpeed() {
+    switch (this.ballSpeeds.step) {
+      case 0:
+        this.ballH.speedX = this.ballSpeeds.x;
+        this.ballH.speedY = this.ballSpeeds.y;
+        this.ballSpeeds.step += 1;
+        break;
+      case 1:
+        this.ballH.speedX = -this.ballSpeeds.x;
+        this.ballH.speedY = this.ballSpeeds.y;
+        this.ballSpeeds.step += 1;
+        break;
+      case 2:
+        this.ballH.speedX = this.ballSpeeds.x;
+        this.ballH.speedY = -this.ballSpeeds.y;
+        this.ballSpeeds.step += 1;
+        break;
+      case 3:
+        this.ballH.speedX = -this.ballSpeeds.x;
+        this.ballH.speedY = -this.ballSpeeds.y;
+        this.ballSpeeds.step = 0;
+        break;
     }
-    if (EO.code == 'ShiftLeft') {
-        counterRocketLeftMinusTop = rocketLeftMaxTop;
-        counterRocketLeftMinusTop -= 5;
-        rocketLeft.style.top = counterRocketLeftMinusTop + 'px';
+  }
+  goal(side) {
+    let first = document.querySelector('.first-player');
+    let second = document.querySelector('.second-player');
+    if(side === 'left') {
+      this.score.first += 1;
+      first.innerHTML = this.score.first.toString();
+    } else if (side === 'right') {
+      this.score.second += 1;
+      second.innerHTML = this.score.second.toString();
     }
-    if (rocketLeftMaxTop == 0) {
-        rocketLeft.style.top = '5px';
-        counterRocketLeftTop = 25;
+    cancelAnimationFrame(this.timerStatus);
+    this.timerStatus = 0;
+  }
+  resetScore() {
+    let scoreFields = document.querySelectorAll('.score span');
+    this.score.first = 0;
+    this.score.second = 0;
+    scoreFields.forEach(function (item) {
+      item.innerHTML = '0';
+    })
+  }
+  tick() {
+    switch (this.keydown) {
+      case this.keyValues.SHIFT:
+        this.leftRacketSettings.speed = -5;
+        break;
+      case this.keyValues.CTRL:
+        this.leftRacketSettings.speed = 5;
+        break;
+      case this.keyValues.UP:
+        this.rightRacketSettings.speed = -5;
+
+        break;
+      case this.keyValues.DOWN:
+        this.rightRacketSettings.speed = 5;
+        break;
+    }
+    if ( this.leftRacketSettings.racketY < 0 ) {
+      this.leftRacketSettings.racketY = 0;
+    }
+    if ( this.leftRacketSettings.racketY + this.leftRacketSettings.height > this.area.height ) {
+      this.leftRacketSettings.racketY = this.area.height - this.leftRacketSettings.height - 2;
+    }
+    if ( this.rightRacketSettings.racketY < 0 ) {
+      this.rightRacketSettings.racketY = 0;
+    }
+    if ( this.rightRacketSettings.racketY + this.rightRacketSettings.height > this.area.height ) {
+      this.rightRacketSettings.racketY = this.area.height - this.rightRacketSettings.height - 2;
+    }
+    this.leftRacketSettings.racketY += this.leftRacketSettings.speed;
+    this.rightRacketSettings.racketY += this.rightRacketSettings.speed;
+    this.ballH.speedX+=this.ballH.accelX;
+    this.ballH.posX+=this.ballH.speedX;
+    this.ballH.posY+=this.ballH.speedY;
+    if ( this.ballH.posX + this.ballH.width >= this.rightRacketSettings.racketX && this.ballH.posY >= this.rightRacketSettings.racketY && this.ballH.posY <= this.rightRacketSettings.racketY + this.rightRacketSettings.height) {
+      console.log('opa');
+      this.ballH.speedX=-this.ballH.speedX;
+    }
+    if ( this.ballH.posX+this.ballH.width>this.area.width ) {
+      this.goal('right');
+      this.ballH.posX=this.area.width-this.ballH.width;
+      this.ballH.speedX = 0;
+      this.ballH.speedY = 0;
+
+    }
+    if ( this.ballH.posX <= this.leftRacketSettings.racketX + this.leftRacketSettings.width && this.ballH.posY >= this.leftRacketSettings.racketY && this.ballH.posY <= this.leftRacketSettings.racketY + this.leftRacketSettings.height) {
+      console.log('opa');
+      this.ballH.speedX=-this.ballH.speedX;
+    }
+    if ( this.ballH.posX<0 ) {
+      this.goal('left');
+      this.ballH.posX=0;
+      this.ballH.speedX = 0;
+      this.ballH.speedY = 0;
+    }
+    this.ballH.posY+=this.ballH.speedY;
+    if ( this.ballH.posY+this.ballH.height>this.area.height ) {
+      this.ballH.speedY=-this.ballH.speedY;
+      this.ballH.posY=this.area.height-this.ballH.height;
+    }
+    if ( this.ballH.posY<0 ) {
+      this.ballH.speedY=-this.ballH.speedY;
+      this.ballH.posY=0;
+    }
+    this.ballH.update();
+    this.leftRacketSettings.update();
+    this.rightRacketSettings.update();
+    this.timerStatus = requestAnimationFrame(this.tick.bind(this));
+  }
+  go() {
+    this.ballH.posX=this.area.width / 2 - this.ballH.width / 2;
+    this.ballH.posY=this.area.height / 2 - this.ballH.height / 2;
+    this.reverseSpeed();
+    if(this.timerStatus) {
+      cancelAnimationFrame(this.timerStatus);
+      this.timerStatus = 0;
+    }
+    this.timerStatus = requestAnimationFrame(this.tick.bind(this));
     }
 }
-let ballH={
-        posX : 230,
-        posY : 110,
-        speedX : 2,
-        speedY : 1,
-        width : 30,
-        height: 30,
 
-        update : function() {
-            const ballElem=document.getElementById('ball');
-            ballElem.style.left=this.posX+"px";
-            ballElem.style.top=this.posY+"px";
-        }
-    }
-
-    let areaH={
-        width : 500,
-        height : 250,
-    }
-    start.addEventListener('click', startMoveBall);
-    function startMoveBall() {
-        // плавное движение - от 25 кадр/сек
-        setInterval(tick,40);
-    }
-
-    function tick() {
-
-        ballH.posX+=ballH.speedX;
-        // вылетел ли мяч правее стены?
-        if ( ballH.posX+ballH.width>areaH.width ) {
-            ballH.speedX=-ballH.speedX;
-            ballH.posX = areaH.width - ballH.width;
-        }
-        // вылетел ли мяч левее стены?
-        if ( ballH.posX<0 ) {
-            ballH.speedX=-ballH.speedX;
-            ballH.posX = 0;
-        }
-
-        ballH.posY+=ballH.speedY;
-        // вылетел ли мяч ниже пола?
-        if ( ballH.posY+ballH.height>areaH.height ) {
-            ballH.speedY=-ballH.speedY;
-            ballH.posY=areaH.height-ballH.height;
-        }
-        // вылетел ли мяч выше потолка?
-        if ( ballH.posY<0 ) {
-            ballH.speedY=-ballH.speedY;
-            ballH.posY=0;
-        }
-        ballH.update();
-    }
-    ballH.update();
