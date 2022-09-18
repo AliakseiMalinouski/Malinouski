@@ -6,15 +6,25 @@
 body {
     font-family: 'Press Start 2P', cursive;
 }
+.wrapper {
+    margin: 0 auto;
+}
 .game__zone {
     border: 1px solid black;
     width: 500px;
     height: 600px;
     margin: 0 auto;
-    background-image: url(../imgs/foneR.png);
+    // background-image: url(../imgs/foneR.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
+    overflow-y: hidden;
+}
+.background__size {
+    width: 500px;
+    height: 1700px;
+    position: relative;
+    top: -600px;
 }
 .auto {
     width: 100px;
