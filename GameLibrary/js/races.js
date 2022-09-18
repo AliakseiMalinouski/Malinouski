@@ -54,11 +54,11 @@ function returnNormalTransformAuto(EO) {
 }
 function drawRoad() {
     let offsetTopBackgroundImage = backgroundGame.offsetTop;
-    offsetTopBackgroundImage = offsetTopBackgroundImage + 2;
+    offsetTopBackgroundImage = offsetTopBackgroundImage + 0.5;
     backgroundGame.style.top = offsetTopBackgroundImage + 'px';
     setTimeout(drawRoad, 0);
-    if (offsetTopBackgroundImage > 0) {
-        backgroundGame.style.top = '-600px';
+    if (offsetTopBackgroundImage >= 0) {
+        backgroundGame.style.top = '-1000px';
     }
 }
 drawRoad();
