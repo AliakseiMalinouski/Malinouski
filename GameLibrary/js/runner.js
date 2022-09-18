@@ -219,3 +219,17 @@ closeButtonRegBlock.addEventListener('click', function (EO) {
     EO = EO || window.event;
     regBlock.style.display = 'none';
 });
+// предотврощаем повторение keydown
+function restrict(func, minDuration) {
+    let lastPress = 0;
+    return function () {
+        let now = Date.now();
+        if (now - lastPress < minDuration) return;
+        lastPress = now;
+        return func.apply(this, arguments);
+    };
+}
+foo = function () {console.log('foo');};
+bar = restrict(foo, 200); 
+bar(); 
+bar();
