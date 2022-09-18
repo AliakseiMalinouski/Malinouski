@@ -4,7 +4,7 @@ let wrapperGame = document.createElement('div');
 wrapperGame.classList.add('wrapper');
 document.body.appendChild(wrapperGame);
 let backgroundGame = document.createElement('img');
-backgroundGame.setAttribute('src', './imgs/foneR.png');
+backgroundGame.setAttribute('src', './imgs/newRoad.jpg');
 backgroundGame.setAttribute('alt', 'Road');
 backgroundGame.classList.add('background__size');
 console.log(backgroundGame)
