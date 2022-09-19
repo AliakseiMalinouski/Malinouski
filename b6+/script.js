@@ -1,9 +1,12 @@
 "use strict";
+function buildHTML (param) {
+  return param.replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+}
 let buildWrapper = function (tag) {
   return (text, getObj) => {
     let attribute = '';
-    if (typeof getObj === 'object') for (let i in getObj) attribute += ` ${i}="${getObj[i].replace(/&/g, '&amp;').replace(/'/g, "&apos;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;")}"`;
-    return `<${tag}${attribute}>${text.replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;")}</${tag}>`;
+    if (typeof getObj === 'object') for (let i in getObj) attribute += ` ${i}="${buildHTML(getObj[i])}"`;
+    return `<${tag}${attribute}>${buildHTML(text)}</${tag}>`;
   }
 }
 let wrapP = buildWrapper("P");
