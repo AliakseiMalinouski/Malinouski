@@ -91,4 +91,24 @@ function changeTopRandomCar() {
     }
 }
 changeTopRandomCar();
-
+// проверка столкновений
+window.addEventListener('load', function (EO) {
+    EO = EO || window.event;
+    let box1 = auto;
+    let box2 = randomCar0;
+    function rect2Rect(obj1, obj2) {
+       return ( obj1.offsetLeft - 40 <= obj2.offsetLeft - 50 + obj2.offsetWidth - 50 && obj1.offsetLeft - 50 + obj1.offsetWidth - 50  >=  obj2.offsetLeft - 40 && obj1.offsetTop + obj1.offsetHeight - 50 >=  obj2.offsetTop && obj1.offsetTop <= obj2.offsetTop +  obj2.offsetHeight - 30 );
+    }
+     function move() {
+       if(!rect2Rect(box1, box2)) {
+         setTimeout(function() {
+           move();
+         }, 50);
+       }
+       else{
+           alert("Столкновение");
+           location.reload()
+       }
+    }
+    move();
+})
