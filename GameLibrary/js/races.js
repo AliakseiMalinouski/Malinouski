@@ -14,7 +14,7 @@ gameZone.appendChild(backgroundGame)
 let auto = document.createElement('div');
 auto.classList.add('auto');
 gameZone.appendChild(auto);
-// подписываемся на keydown
+// подписываемся на keydown для управления машинкой
 document.addEventListener('keydown', moveAutoToLeft);
 let distance = 200;
 function moveAutoToLeft(EO) {
@@ -39,18 +39,19 @@ function moveAutoToRight(EO) {
         distance = distance + 5;
         auto.style.left = distance + 'px';
         auto.style.transform = 'rotate(15deg)';
-        console.log(autoOffsetLeft)
         if (autoOffsetLeft == '355') {
             alert('GAME OVER');
             location.reload();
         }
     }
 }
+// подписываем на keuup
 document.addEventListener('keyup', returnNormalTransformAuto);
 function returnNormalTransformAuto(EO) {
     EO = EO || window.event;
     auto.style.transform = '';
 }
+// рисуем дорогу
 function drawRoad() {
     let offsetTopBackgroundImage = backgroundGame.offsetTop;
     offsetTopBackgroundImage = offsetTopBackgroundImage + 0.5;
@@ -61,30 +62,33 @@ function drawRoad() {
     }
 }
 drawRoad();
+// создём случайную встречную машинку
 let randomCar0 = document.createElement('div');
 randomCar0.classList.add('random__car_1');
 gameZone.appendChild(randomCar0);
 // 80-320
 let result;
+// получаем случайно число от 80 до 320 (предел появления машинка по left)
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     result = Math.floor(Math.random() * (max - min + 1)) + min;
-    return console.log(result);
+    return result;
 }
-// function changeTopRandomCar() {
-//     let randomCarTop = randomCar0.offsetTop;
-//     randomCarTop = randomCarTop + 1;
-//     randomCar0.style.top = randomCarTop + 'px';
-//     setTimeout(changeTopRandomCar, 0);
-//     if (randomCarTop >= 580) {
-//         randomCar0.style.top = '0px';
-//         function changePositionRandomCars(carNumber) {
-//         getRandomInt(80, 320);
-//         carNumber.style.left = result + 'px';
-//     }
-//     changePositionRandomCars(randomCar0);
-//     }
-// }
-// changeTopRandomCar();
+// ставим машинку в случайные места
+function changeTopRandomCar() {
+    let randomCarTop = randomCar0.offsetTop;
+    randomCarTop = randomCarTop + 1;
+    randomCar0.style.top = randomCarTop + 'px';
+    setTimeout(changeTopRandomCar, 0);
+    if (randomCarTop >= 580) {
+        randomCar0.style.top = '-90px';
+        function changePositionRandomCars(carNumber) {
+        getRandomInt(90, 320);
+        carNumber.style.left = result + 'px';
+    }
+    changePositionRandomCars(randomCar0);
+    }
+}
+changeTopRandomCar();
 
