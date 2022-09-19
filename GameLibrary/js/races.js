@@ -7,7 +7,6 @@ let backgroundGame = document.createElement('img');
 backgroundGame.setAttribute('src', './imgs/newRoad.jpg');
 backgroundGame.setAttribute('alt', 'Road');
 backgroundGame.classList.add('background__size');
-console.log(backgroundGame)
 let gameZone = document.createElement('div');
 gameZone.classList.add('game__zone');
 wrapperGame.appendChild(gameZone);
@@ -62,5 +61,30 @@ function drawRoad() {
     }
 }
 drawRoad();
-
+let randomCar0 = document.createElement('div');
+randomCar0.classList.add('random__car_1');
+gameZone.appendChild(randomCar0);
+// 80-320
+let result;
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    result = Math.floor(Math.random() * (max - min + 1)) + min;
+    return console.log(result);
+}
+// function changeTopRandomCar() {
+//     let randomCarTop = randomCar0.offsetTop;
+//     randomCarTop = randomCarTop + 1;
+//     randomCar0.style.top = randomCarTop + 'px';
+//     setTimeout(changeTopRandomCar, 0);
+//     if (randomCarTop >= 580) {
+//         randomCar0.style.top = '0px';
+//         function changePositionRandomCars(carNumber) {
+//         getRandomInt(80, 320);
+//         carNumber.style.left = result + 'px';
+//     }
+//     changePositionRandomCars(randomCar0);
+//     }
+// }
+// changeTopRandomCar();
 
