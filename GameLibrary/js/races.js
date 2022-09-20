@@ -16,14 +16,13 @@ auto.classList.add('auto');
 gameZone.appendChild(auto);
 // подписываемся на keydown для управления машинкой
 let keyObject = {};
-
 document.addEventListener('keydown',function(e){
     keyObject[e.keyCode || e.which] = true;
-},true);
+});
 
 document.addEventListener('keyup',function(e){
     keyObject[e.keyCode || e.which] = false;
-},true);
+});
 let x = 100;
 function gameLoop() {
     if (keyObject[37] || keyObject[65]){
