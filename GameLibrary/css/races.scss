@@ -78,3 +78,10 @@ body {
     left: 320px;
     transform: rotate(90deg);
 }
+.score {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    left: 10px;
+    top: 10px;
+}

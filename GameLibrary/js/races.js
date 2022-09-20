@@ -110,7 +110,7 @@ function changeTopRandomCar() {
     if (randomCarTop >= 580) {
         randomCar0.style.top = '-90px';
         function changePositionRandomCars(carNumber) {
-        getRandomInt(70, 130);
+        getRandomInt(50, 120);
         carNumber.style.left = result + 'px';
     }
     changePositionRandomCars(randomCar0);
@@ -205,18 +205,18 @@ window.addEventListener('load', function (EO) {
     }
     move();
 });
-// соаздём третью вражескую машинку
+// // соаздём третью вражескую машинку
 let randomCar2 = document.createElement('div');
 randomCar2.classList.add('random__car_3');
 gameZone.appendChild(randomCar2);
 
-let result3;
+let result2;
 // получаем случайно число от 80 до 320 (предел появления машинка по left)
-function getRandomInt(min, max) {
+function getRandomInt3(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    result3 = Math.floor(Math.random() * (max - min + 1)) + min;
-    return result3;
+    result2 = Math.floor(Math.random() * (max - min + 1)) + min;
+    return result2;
 }
 
 function changeTopRandomCar2() {
@@ -225,10 +225,10 @@ function changeTopRandomCar2() {
     randomCar2.style.top = randomCarTop + 'px';
     setTimeout(changeTopRandomCar2, 0);
     if (randomCarTop >= 580) {
-        randomCar2.style.top = '-170px';
+        randomCar2.style.top = '-190px';
         function changePositionRandomCars(carNumber) {
-        getRandomInt(280, 330);
-        carNumber.style.left = result3 + 'px';
+        getRandomInt3(280, 330);
+        carNumber.style.left = result2 + 'px';
     }
     changePositionRandomCars(randomCar2);
     }
@@ -266,3 +266,17 @@ window.addEventListener('load', function (EO) {
     }
     move();
 });
+// cоздаём score
+let score = document.createElement('div');
+score.classList.add('score');
+gameZone.appendChild(score);
+let scoreTextContent = 0;
+  let scoreSum =  setInterval(function (){
+    scoreTextContent++;
+    score.innerHTML = scoreTextContent;
+    if (auto.offsetLeft < 50) {
+        clearInterval(scoreSum);
+        console.log('gg')
+    }
+    console.log(scoreTextContent)
+}, 200);
