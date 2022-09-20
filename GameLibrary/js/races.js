@@ -27,15 +27,22 @@ document.addEventListener('keydown', function (EO) {
         drawRoad = null;
         changeTopRandomCar = null;
         gameCycle = null;
+        changeTopRandomCar1 = null;
         setTimeout(function () {
             location.reload(); 
         }, 3000);
-        // alert('GAME OVER');
-        // location.reload();
     }
     else if (auto.offsetLeft > 350) {
-        // alert('GAME OVER');
-        // location.reload();
+        let alertGameOver = document.createElement('div');
+        alertGameOver.classList.add('alert__game__over');
+        alertGameOver.textContent = 'GAME OVER';
+        gameZone.appendChild(alertGameOver);
+        drawRoad = null;
+        changeTopRandomCar = null;
+        gameCycle = null;
+        setTimeout(function () {
+            location.reload(); 
+        }, 3000);
     }
 });
 document.addEventListener('keyup', function (EO) {
@@ -100,7 +107,7 @@ function changeTopRandomCar() {
     if (randomCarTop >= 580) {
         randomCar0.style.top = '-90px';
         function changePositionRandomCars(carNumber) {
-        getRandomInt(90, 320);
+        getRandomInt(70, 130);
         carNumber.style.left = result + 'px';
     }
     changePositionRandomCars(randomCar0);
@@ -113,18 +120,82 @@ window.addEventListener('load', function (EO) {
     let box1 = auto;
     let box2 = randomCar0;
     function rect2Rect(obj1, obj2) {
-       return ( obj1.offsetLeft - 40 <= obj2.offsetLeft - 50 + obj2.offsetWidth - 50 && obj1.offsetLeft - 50 + obj1.offsetWidth - 50  >=  obj2.offsetLeft - 40 && obj1.offsetTop + obj1.offsetHeight - 50 >=  obj2.offsetTop && obj1.offsetTop <= obj2.offsetTop +  obj2.offsetHeight - 30 );
+        return (obj1.offsetLeft - 40 <= obj2.offsetLeft - 50 + obj2.offsetWidth - 50 && obj1.offsetLeft - 50 + obj1.offsetWidth - 50 >= obj2.offsetLeft - 40 && obj1.offsetTop + obj1.offsetHeight - 50 >= obj2.offsetTop && obj1.offsetTop <= obj2.offsetTop + obj2.offsetHeight - 30);
     }
-     function move() {
-       if(!rect2Rect(box1, box2)) {
-         setTimeout(function() {
-           move();
-         }, 50);
-       }
-       else{
-           alert("Столкновение");
-           location.reload()
-       }
+    function move() {
+        if (!rect2Rect(box1, box2)) {
+            setTimeout(function () {
+                move();
+            }, 50);
+        }
+        else {
+            let alertGameOver = document.createElement('div');
+            alertGameOver.classList.add('alert__game__over');
+            alertGameOver.textContent = 'GAME OVER';
+            gameZone.appendChild(alertGameOver);
+            drawRoad = null;
+            changeTopRandomCar = null;
+            gameCycle = null;
+            setTimeout(function () {
+                location.reload();
+            }, 3000);
+        }
     }
     move();
-})
+});
+// cоздаём вторую вражескую машинку
+let randomCar1 = document.createElement('div');
+randomCar1.classList.add('random__car_2');
+gameZone.appendChild(randomCar1);
+let result1;
+function getRandomInt2(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    result = Math.floor(Math.random() * (max - min + 1)) + min;
+    return result1;
+}
+// ставим машинку в случайные места
+function changeTopRandomCar1() {
+    let randomCarTop = randomCar1.offsetTop;
+    randomCarTop = randomCarTop + 1;
+    randomCar1.style.top = randomCarTop + 'px';
+    setTimeout(changeTopRandomCar1, 0);
+    if (randomCarTop >= 580) {
+        randomCar1.style.top = '-130px';
+        function changePositionRandomCars(carNumber) {
+        getRandomInt(170, 250);
+        carNumber.style.left = result + 'px';
+    }
+    changePositionRandomCars(randomCar1);
+    }
+}
+changeTopRandomCar1();
+window.addEventListener('load', function (EO) {
+    EO = EO || window.event;
+    let box1 = auto;
+    let box2 = randomCar1;
+    function rect2Rect(obj1, obj2) {
+        return (obj1.offsetLeft - 30 <= obj2.offsetLeft - 40 + obj2.offsetWidth - 40 && obj1.offsetLeft - 40 + obj1.offsetWidth - 40 >= obj2.offsetLeft - 30 && obj1.offsetTop + obj1.offsetHeight - 40 >= obj2.offsetTop && obj1.offsetTop <= obj2.offsetTop + obj2.offsetHeight - 30);
+    }
+    function move() {
+        if (!rect2Rect(box1, box2)) {
+            setTimeout(function () {
+                move();
+            }, 50);
+        }
+        else {
+            let alertGameOver = document.createElement('div');
+            alertGameOver.classList.add('alert__game__over');
+            alertGameOver.textContent = 'GAME OVER';
+            gameZone.appendChild(alertGameOver);
+            drawRoad = null;
+            changeTopRandomCar = null;
+            changeTopRandomCar1 = null;
+            gameCycle = null;
+            setTimeout(function () {
+                location.reload();
+            }, 3000);
+        }
+    }
+    move();
+});

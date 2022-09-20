@@ -56,3 +56,14 @@ body {
     left: 110px;
     top: 150px;
 }
+.random__car_2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-image: url(../imgs/randomCar2-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: -90px;
+    left: 250px;
+    transform: rotate(90deg);
+}
