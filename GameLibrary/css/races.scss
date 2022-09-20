@@ -47,3 +47,12 @@ body {
     left: 90px;
     transform: rotate(90deg);
 }
+.alert__game__over {
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 110px;
+    top: 150px;
+}

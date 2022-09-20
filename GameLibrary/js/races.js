@@ -14,19 +14,36 @@ gameZone.appendChild(backgroundGame)
 let auto = document.createElement('div');
 auto.classList.add('auto');
 gameZone.appendChild(auto);
-// подписываемся на keydown для управления машинкой
+// подписываемся на keydown для управления машинкой и отслеживаем нажатие клавиш, убирая задержку ОС при keydown, также сразу учитываем столкновение об границы дороги
 let keyObject = {};
 document.addEventListener('keydown', function (EO) {
     EO = EO || window.event;
     keyObject[EO.keyCode || EO.which] = true;
+    if (auto.offsetLeft < 50) {
+        let alertGameOver = document.createElement('div');
+        alertGameOver.classList.add('alert__game__over');
+        alertGameOver.textContent = 'GAME OVER';
+        gameZone.appendChild(alertGameOver);
+        drawRoad = null;
+        changeTopRandomCar = null;
+        gameCycle = null;
+        setTimeout(function () {
+            location.reload(); 
+        }, 3000);
+        // alert('GAME OVER');
+        // location.reload();
+    }
+    else if (auto.offsetLeft > 350) {
+        // alert('GAME OVER');
+        // location.reload();
+    }
 });
-
 document.addEventListener('keyup', function (EO) {
     EO = EO || window.event;
     keyObject[EO.keyCode || EO.which] = false;
 });
 let x = 100;
-function gameLoop() {
+function gameCycle() {
     if (keyObject[37] || keyObject[65]){
     x -=1;
     auto.style.transform = 'rotate(-15deg)';
@@ -36,10 +53,14 @@ function gameLoop() {
     x += 1;
     auto.style.transform = 'rotate(15deg)';
     }
-    auto.style.left = x + "px";
-    setTimeout(gameLoop, 10);
+    auto.style.left = x + 'px';
+    // if (auto.offsetLeft > 350) {
+    //     alert('GAME OVER');
+    //     location.reload();
+    // }
+    setTimeout(gameCycle, 10);
 }
-gameLoop();
+gameCycle();
 // // подписываем на keuup
 document.addEventListener('keyup', returnNormalTransformAuto);
 function returnNormalTransformAuto(EO) {
