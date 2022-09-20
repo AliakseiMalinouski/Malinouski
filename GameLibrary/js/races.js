@@ -29,6 +29,7 @@ document.addEventListener('keydown', function (EO) {
         gameCycle = null;
         changeTopRandomCar1 = null;
         changeTopRandomCar2 = null;
+        clearInterval(scoreSum);
         setTimeout(function () {
             location.reload(); 
         }, 3000);
@@ -43,6 +44,7 @@ document.addEventListener('keydown', function (EO) {
         changeTopRandomCar1 = null;
         changeTopRandomCar2 = null;
         gameCycle = null;
+        clearInterval(scoreSum);
         setTimeout(function () {
             location.reload(); 
         }, 3000);
@@ -141,6 +143,7 @@ window.addEventListener('load', function (EO) {
             changeTopRandomCar1 = null;
             changeTopRandomCar2 = null;
             gameCycle = null;
+            clearInterval(scoreSum);
             setTimeout(function () {
                 location.reload();
             }, 3000);
@@ -198,6 +201,7 @@ window.addEventListener('load', function (EO) {
             changeTopRandomCar1 = null;
             changeTopRandomCar2 = null;
             gameCycle = null;
+            clearInterval(scoreSum);
             setTimeout(function () {
                 location.reload();
             }, 3000);
@@ -259,6 +263,7 @@ window.addEventListener('load', function (EO) {
             changeTopRandomCar1 = null;
             changeTopRandomCar2 = null;
             gameCycle = null;
+            clearInterval(scoreSum);
             setTimeout(function () {
                 location.reload();
             }, 3000);
@@ -274,9 +279,4 @@ let scoreTextContent = 0;
   let scoreSum =  setInterval(function (){
     scoreTextContent++;
     score.innerHTML = scoreTextContent;
-    if (auto.offsetLeft < 50) {
-        clearInterval(scoreSum);
-        console.log('gg')
-    }
-    console.log(scoreTextContent)
 }, 200);
