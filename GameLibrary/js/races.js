@@ -28,6 +28,7 @@ document.addEventListener('keydown', function (EO) {
         changeTopRandomCar = null;
         gameCycle = null;
         changeTopRandomCar1 = null;
+        changeTopRandomCar2 = null;
         setTimeout(function () {
             location.reload(); 
         }, 3000);
@@ -39,6 +40,8 @@ document.addEventListener('keydown', function (EO) {
         gameZone.appendChild(alertGameOver);
         drawRoad = null;
         changeTopRandomCar = null;
+        changeTopRandomCar1 = null;
+        changeTopRandomCar2 = null;
         gameCycle = null;
         setTimeout(function () {
             location.reload(); 
@@ -135,6 +138,8 @@ window.addEventListener('load', function (EO) {
             gameZone.appendChild(alertGameOver);
             drawRoad = null;
             changeTopRandomCar = null;
+            changeTopRandomCar1 = null;
+            changeTopRandomCar2 = null;
             gameCycle = null;
             setTimeout(function () {
                 location.reload();
@@ -191,6 +196,7 @@ window.addEventListener('load', function (EO) {
             drawRoad = null;
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
+            changeTopRandomCar2 = null;
             gameCycle = null;
             setTimeout(function () {
                 location.reload();
@@ -213,11 +219,11 @@ function getRandomInt(min, max) {
     return result3;
 }
 
-function changeTopRandomCar3() {
+function changeTopRandomCar2() {
     let randomCarTop = randomCar2.offsetTop;
     randomCarTop = randomCarTop + 1;
     randomCar2.style.top = randomCarTop + 'px';
-    setTimeout(changeTopRandomCar3, 0);
+    setTimeout(changeTopRandomCar2, 0);
     if (randomCarTop >= 580) {
         randomCar2.style.top = '-170px';
         function changePositionRandomCars(carNumber) {
@@ -227,7 +233,7 @@ function changeTopRandomCar3() {
     changePositionRandomCars(randomCar2);
     }
 }
-changeTopRandomCar3();
+changeTopRandomCar2();
 
 
 window.addEventListener('load', function (EO) {
@@ -251,7 +257,7 @@ window.addEventListener('load', function (EO) {
             drawRoad = null;
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
-            changeTopRandomCar3 = null;
+            changeTopRandomCar2 = null;
             gameCycle = null;
             setTimeout(function () {
                 location.reload();
