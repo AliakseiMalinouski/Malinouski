@@ -15,37 +15,31 @@ let auto = document.createElement('div');
 auto.classList.add('auto');
 gameZone.appendChild(auto);
 // подписываемся на keydown для управления машинкой
-document.addEventListener('keydown', moveAutoToLeft);
-let distance = 200;
-function moveAutoToLeft(EO) {
-    EO = EO || window.event;
-    if (EO.code == 'ArrowLeft') {
-        let autoOffsetLeft = auto.offsetLeft;
-        distance = distance - 5;
-        auto.style.left = distance + 'px';
-        auto.style.transform = 'rotate(-15deg)';
-        console.log(autoOffsetLeft)
-        if (autoOffsetLeft == '55') {
-            alert('GAME OVER');
-            location.reload();
-        }
+let keyObject = {};
+
+document.addEventListener('keydown',function(e){
+    keyObject[e.keyCode || e.which] = true;
+},true);
+
+document.addEventListener('keyup',function(e){
+    keyObject[e.keyCode || e.which] = false;
+},true);
+let x = 100;
+function gameLoop() {
+    if (keyObject[37] || keyObject[65]){
+    x -=1;
+    auto.style.transform = 'rotate(-15deg)';
     }
-}
-document.addEventListener('keydown', moveAutoToRight);
-function moveAutoToRight(EO) {
-    EO = EO || window.event;
-    if (EO.code == 'ArrowRight') {
-        let autoOffsetLeft = auto.offsetLeft;
-        distance = distance + 5;
-        auto.style.left = distance + 'px';
-        auto.style.transform = 'rotate(15deg)';
-        if (autoOffsetLeft == '355') {
-            alert('GAME OVER');
-            location.reload();
-        }
+
+    if (keyObject[39] || keyObject[68]){
+    x += 1;
+    auto.style.transform = 'rotate(15deg)';
     }
+    auto.style.left = x + "px";
+    setTimeout(gameLoop, 10);
 }
-// подписываем на keuup
+gameLoop();
+// // подписываем на keuup
 document.addEventListener('keyup', returnNormalTransformAuto);
 function returnNormalTransformAuto(EO) {
     EO = EO || window.event;
