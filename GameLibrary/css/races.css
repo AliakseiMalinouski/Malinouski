@@ -67,4 +67,15 @@ body {
   left: 250px;
   transform: rotate(90deg); }
 
+.random__car_3 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-image: url(../imgs/png-transparent-racing-car-ferrari-red-top-view-car-vehicle-automobile-driving-sports-car-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: -90px;
+  left: 320px;
+  transform: rotate(90deg); }
+
 /*# sourceMappingURL=races.css.map */

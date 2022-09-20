@@ -151,7 +151,7 @@ let result1;
 function getRandomInt2(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    result = Math.floor(Math.random() * (max - min + 1)) + min;
+    result1 = Math.floor(Math.random() * (max - min + 1)) + min;
     return result1;
 }
 // ставим машинку в случайные места
@@ -163,8 +163,8 @@ function changeTopRandomCar1() {
     if (randomCarTop >= 580) {
         randomCar1.style.top = '-130px';
         function changePositionRandomCars(carNumber) {
-        getRandomInt(170, 250);
-        carNumber.style.left = result + 'px';
+        getRandomInt2(170, 250);
+        carNumber.style.left = result1 + 'px';
     }
     changePositionRandomCars(randomCar1);
     }
@@ -191,6 +191,67 @@ window.addEventListener('load', function (EO) {
             drawRoad = null;
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
+            gameCycle = null;
+            setTimeout(function () {
+                location.reload();
+            }, 3000);
+        }
+    }
+    move();
+});
+// соаздём третью вражескую машинку
+let randomCar2 = document.createElement('div');
+randomCar2.classList.add('random__car_3');
+gameZone.appendChild(randomCar2);
+
+let result3;
+// получаем случайно число от 80 до 320 (предел появления машинка по left)
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    result3 = Math.floor(Math.random() * (max - min + 1)) + min;
+    return result3;
+}
+
+function changeTopRandomCar3() {
+    let randomCarTop = randomCar2.offsetTop;
+    randomCarTop = randomCarTop + 1;
+    randomCar2.style.top = randomCarTop + 'px';
+    setTimeout(changeTopRandomCar3, 0);
+    if (randomCarTop >= 580) {
+        randomCar2.style.top = '-170px';
+        function changePositionRandomCars(carNumber) {
+        getRandomInt(280, 330);
+        carNumber.style.left = result3 + 'px';
+    }
+    changePositionRandomCars(randomCar2);
+    }
+}
+changeTopRandomCar3();
+
+
+window.addEventListener('load', function (EO) {
+    EO = EO || window.event;
+    let box1 = auto;
+    let box2 = randomCar2;
+    function rect2Rect(obj1, obj2) {
+        return (obj1.offsetLeft - 20 <= obj2.offsetLeft - 30 + obj2.offsetWidth - 30 && obj1.offsetLeft - 30 + obj1.offsetWidth - 30 >= obj2.offsetLeft - 20 && obj1.offsetTop + obj1.offsetHeight - 30 >= obj2.offsetTop && obj1.offsetTop <= obj2.offsetTop + obj2.offsetHeight - 20);
+    }
+    function move() {
+        if (!rect2Rect(box1, box2)) {
+            setTimeout(function () {
+                move();
+            }, 50);
+        }
+        else {
+            let alertGameOver = document.createElement('div');
+            alertGameOver.classList.add('alert__game__over');
+            alertGameOver.textContent = 'GAME OVER';
+            gameZone.appendChild(alertGameOver);
+            drawRoad = null;
+            changeTopRandomCar = null;
+            changeTopRandomCar1 = null;
+            changeTopRandomCar3 = null;
             gameCycle = null;
             setTimeout(function () {
                 location.reload();
