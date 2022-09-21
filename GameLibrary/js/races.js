@@ -14,6 +14,8 @@ gameZone.appendChild(backgroundGame)
 let auto = document.createElement('div');
 auto.classList.add('auto');
 gameZone.appendChild(auto);
+// добавляем звуки игры
+let audioGameOverAfterCrash = new Audio('./audio/gameOverAuto.mp3');
 // подписываемся на keydown для управления машинкой и отслеживаем нажатие клавиш, убирая задержку ОС при keydown, также сразу учитываем столкновение об границы дороги
 let keyObject = {};
 document.addEventListener('keydown', function (EO) {
@@ -24,6 +26,7 @@ document.addEventListener('keydown', function (EO) {
         alertGameOver.classList.add('alert__game__over');
         alertGameOver.textContent = 'GAME OVER';
         gameZone.appendChild(alertGameOver);
+        audioGameOverAfterCrash.play();
         drawRoad = null;
         changeTopRandomCar = null;
         gameCycle = null;
@@ -138,6 +141,7 @@ window.addEventListener('load', function (EO) {
             alertGameOver.classList.add('alert__game__over');
             alertGameOver.textContent = 'GAME OVER';
             gameZone.appendChild(alertGameOver);
+            audioGameOverAfterCrash.play();
             drawRoad = null;
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
@@ -196,6 +200,7 @@ window.addEventListener('load', function (EO) {
             alertGameOver.classList.add('alert__game__over');
             alertGameOver.textContent = 'GAME OVER';
             gameZone.appendChild(alertGameOver);
+            audioGameOverAfterCrash.play();
             drawRoad = null;
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
@@ -258,6 +263,7 @@ window.addEventListener('load', function (EO) {
             alertGameOver.classList.add('alert__game__over');
             alertGameOver.textContent = 'GAME OVER';
             gameZone.appendChild(alertGameOver);
+            audioGameOverAfterCrash.play();
             drawRoad = null;
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
