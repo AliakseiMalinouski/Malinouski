@@ -14,6 +14,10 @@ gameZone.appendChild(backgroundGame)
 let auto = document.createElement('div');
 auto.classList.add('auto');
 gameZone.appendChild(auto);
+// предупрждение о выходе и несохранении
+window.onbeforeunload = function() {
+    return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
+};
 // добавляем звуки игры
 let audioGameOverAfterCrash = new Audio('./audio/gameOverAuto.mp3');
 // подписываемся на keydown для управления машинкой и отслеживаем нажатие клавиш, убирая задержку ОС при keydown, также сразу учитываем столкновение об границы дороги
@@ -32,6 +36,7 @@ document.addEventListener('keydown', function (EO) {
         gameCycle = null;
         changeTopRandomCar1 = null;
         changeTopRandomCar2 = null;
+        window.onbeforeunload = null;
         clearInterval(scoreSum);
         setTimeout(function () {
             location.reload(); 
@@ -46,6 +51,7 @@ document.addEventListener('keydown', function (EO) {
         changeTopRandomCar = null;
         changeTopRandomCar1 = null;
         changeTopRandomCar2 = null;
+        window.onbeforeunload = null;
         gameCycle = null;
         clearInterval(scoreSum);
         setTimeout(function () {
@@ -147,6 +153,7 @@ window.addEventListener('load', function (EO) {
             changeTopRandomCar1 = null;
             changeTopRandomCar2 = null;
             gameCycle = null;
+            window.onbeforeunload = null;
             clearInterval(scoreSum);
             setTimeout(function () {
                 location.reload();
@@ -205,6 +212,7 @@ window.addEventListener('load', function (EO) {
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
             changeTopRandomCar2 = null;
+            window.onbeforeunload = null;
             gameCycle = null;
             clearInterval(scoreSum);
             setTimeout(function () {
@@ -268,6 +276,7 @@ window.addEventListener('load', function (EO) {
             changeTopRandomCar = null;
             changeTopRandomCar1 = null;
             changeTopRandomCar2 = null;
+            window.onbeforeunload = null;
             gameCycle = null;
             clearInterval(scoreSum);
             setTimeout(function () {
@@ -284,5 +293,5 @@ gameZone.appendChild(score);
 let scoreTextContent = 0;
   let scoreSum =  setInterval(function (){
     scoreTextContent++;
-    score.innerHTML = scoreTextContent;
+    score.innerHTML = `Score: ${scoreTextContent}`;
 }, 200);

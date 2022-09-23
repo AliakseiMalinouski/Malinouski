@@ -41,8 +41,8 @@ playButton.addEventListener('click', function (EO) {
             mainMusic.play();
         }
     });
-    window.onbeforeunload = function() {
-  return "Есть несохранённые изменения. Всё равно уходим?";
+window.onbeforeunload = function() {
+    return "Есть несохранённые изменения. Всё равно уходим?";
 };
 // меняем масштаб документа
 if (window.innerWidth > 770) {
