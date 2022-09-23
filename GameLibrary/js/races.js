@@ -129,8 +129,6 @@ function changeTopRandomCar() {
 }
 changeTopRandomCar();
 // проверка столкновений
-window.addEventListener('load', function (EO) {
-    EO = EO || window.event;
     let box1 = auto;
     let box2 = randomCar0;
     function rect2Rect(obj1, obj2) {
@@ -161,7 +159,6 @@ window.addEventListener('load', function (EO) {
         }
     }
     move();
-});
 // cоздаём вторую вражескую машинку
 let randomCar1 = document.createElement('div');
 randomCar1.classList.add('random__car_2');
