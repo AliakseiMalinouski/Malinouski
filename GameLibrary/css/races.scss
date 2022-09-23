@@ -5,6 +5,9 @@
 }
 body {
     font-family: 'Press Start 2P', cursive;
+    background-image: url(../imgs/backgroundAuto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .wrapper {
     margin: 0 auto;
@@ -88,6 +91,9 @@ body {
 .disable {
     display: none !important;
 }
+.active {
+    display: block;
+}
 #menu {
     width: 700px;
     height: 318px;
@@ -99,7 +105,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
     border: 1px solid black;
-    animation: menu 1.2 linear;
+    border-top: 1px solid #41e6e8;
     div {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -117,4 +123,31 @@ body {
         transition: 1s;
         background-color: #003145;
     }
+}
+#reguls__window {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    left: 150px;
+    top: 150px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    h3 {
+        color: red;
+        margin-left: 135px;
+    }
+    p {
+        color: #318f8f;
+    }
+}
+#game__name {
+    position: absolute;
+    top: 80px;
+    right: 200px;
+    color: white;
+    font-size: 38px;
+    transform: rotate(-8deg);
 }

@@ -7,6 +7,9 @@ menu.addEventListener('click', function (EO) {
     if (EO.target.getAttribute('id') == 'play') {
         // выключаем меню
         menu.classList.add('disable');
+        // меняем фон body
+        document.body.style.backgroundImage = 'none';
+        document.body.style.backgroundColor = 'black';
        // создаём элементы
         let wrapperGame = document.createElement('div');
         wrapperGame.classList.add('wrapper');
@@ -297,5 +300,36 @@ menu.addEventListener('click', function (EO) {
             score.innerHTML = `Score: ${scoreTextContent}`;
         }, 200);
 
-        } 
+    }
+    if (EO.target.getAttribute('id') == 'reguls__window') {
+        
+    }
 });
+// эффект набора текста
+const arrayLettersGameName = [
+    'RacesMania'
+];
+function wrapperTypeWritterFunction () {
+    let line = 0;
+    let counter = 0;
+    let results = '';
+    let gameName = document.getElementById('game__name');
+    function typeWriter() {
+        let timeout = setTimeout(function () {
+            results += arrayLettersGameName[line][counter];
+            gameName.innerHTML = results;
+            counter++;
+            if (counter >= arrayLettersGameName[line].length) {
+                counter = 0;
+                line++;
+                if (line == arrayLettersGameName.length) {
+                    clearTimeout(timeout);
+                    return true;
+                }
+            }
+            typeWriter();
+        }, 200);
+    }
+    typeWriter();
+}
+let intervalTypeWriter = setInterval(wrapperTypeWritterFunction, 2500);
