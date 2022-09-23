@@ -85,7 +85,35 @@ body {
   left: 10px;
   bottom: 0px; }
 
+.disable {
+  display: none !important; }
+
 #menu {
-  position: absolute; }
+  width: 700px;
+  height: 318px;
+  position: absolute;
+  right: 0px;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 1px solid black;
+  animation: menu 1.2 linear; }
+  #menu div {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    font-size: 25px;
+    color: #318f8f;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-bottom: 1px solid #41e6e8;
+    cursor: pointer; }
+  #menu div:hover {
+    color: white;
+    transition: 1s;
+    background-color: #003145; }
 
 /*# sourceMappingURL=races.css.map */
