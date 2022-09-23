@@ -1,12 +1,14 @@
 "use strict";
 // получаем меню перед игрой
 let menu = document.getElementById('menu');
+let gameName = document.getElementById('game__name');
 // используя делегирование проверяем на какой div был клик
 menu.addEventListener('click', function (EO) {
    EO = EO || window.event;
     if (EO.target.getAttribute('id') == 'play') {
-        // выключаем меню
+        // выключаем меню, название
         menu.classList.add('disable');
+        gameName.classList.add('disable');
         // меняем фон body
         document.body.style.backgroundImage = 'none';
         document.body.style.backgroundColor = 'black';
@@ -39,7 +41,7 @@ menu.addEventListener('click', function (EO) {
             if (auto.offsetLeft < 50) {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.textContent = 'GAME OVER';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 audioGameOverAfterCrash.play();
                 drawRoad = null;
@@ -56,7 +58,7 @@ menu.addEventListener('click', function (EO) {
             else if (auto.offsetLeft > 350) {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.textContent = 'GAME OVER';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 drawRoad = null;
                 changeTopRandomCar = null;
@@ -154,7 +156,7 @@ menu.addEventListener('click', function (EO) {
                 else {
                     let alertGameOver = document.createElement('div');
                     alertGameOver.classList.add('alert__game__over');
-                    alertGameOver.textContent = 'GAME OVER';
+                    alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                     gameZone.appendChild(alertGameOver);
                     audioGameOverAfterCrash.play();
                     drawRoad = null;
@@ -211,7 +213,7 @@ menu.addEventListener('click', function (EO) {
             else {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.textContent = 'GAME OVER';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 audioGameOverAfterCrash.play();
                 drawRoad = null;
@@ -273,7 +275,7 @@ menu.addEventListener('click', function (EO) {
             else {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.textContent = 'GAME OVER';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 audioGameOverAfterCrash.play();
                 drawRoad = null;
@@ -294,9 +296,11 @@ menu.addEventListener('click', function (EO) {
         let score = document.createElement('div');
         score.classList.add('score');
         gameZone.appendChild(score);
+        let resultsScore = 0;
         let scoreTextContent = 0;
         let scoreSum =  setInterval(function (){
             scoreTextContent++;
+            resultsScore = scoreTextContent;
             score.innerHTML = `Score: ${scoreTextContent}`;
         }, 200);
 
