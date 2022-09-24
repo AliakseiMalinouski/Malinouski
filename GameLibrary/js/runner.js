@@ -97,7 +97,7 @@ function animatedStone() {
     if (leftStone == '0') {
         stone.style.left = '780px';
     }
-    if (leftStone == '99' && human.classList != 'up') {
+    if (leftStone == '139' && human.classList != 'up') {
         stoneAudio.play();
         alert('GAME OVER!');
         window.onbeforeunload = false;
@@ -120,7 +120,7 @@ function animatedTree() {
     if (parseInt(window.getComputedStyle(tree).getPropertyValue('left')) < 800) {
         tree.style.opacity = '1';
     }
-    if (leftTree == '99' && human.classList != 'up') {
+    if (leftTree == '139' && human.classList != 'up') {
         stoneAudio.play();
         alert('GAME OVER!');
         window.onbeforeunload = false;
@@ -143,7 +143,7 @@ function animatedCroco() {
     if (parseInt(window.getComputedStyle(croco).getPropertyValue('left')) < 800) {
         croco.style.opacity = '1';
     }
-    if (leftCroco == '99' && human.classList != 'up') {
+    if (leftCroco == '139' && human.classList != 'up') {
         crocoEatHuman.play();
         alert('GAME OVER!');
         window.onbeforeunload = false;

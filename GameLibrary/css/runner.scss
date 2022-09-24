@@ -30,7 +30,7 @@ body {
         background-size: 80px 80px;
         position: absolute;
         top: 250px;
-        left: 50px;
+        left: 100px;
         z-index: 3;
     }
     .up {
@@ -74,12 +74,13 @@ body {
         z-index: 1;
     }
     #bad-dino {
-        width: 80px;
-        height: 80px;
+        width: 200px;
+        height: 40px;
         position: absolute;
         background-image: url(../imgs/badDino.gif);
-        background-size: 70px 70px;
-        top: 230px;
+        background-size: 248.95px 37.5px;
+        top: 260px;
+        left: -80px;
         z-index: 3;
     }
     #croco {
