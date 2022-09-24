@@ -133,7 +133,7 @@ function dataLoaded1(data) {
   createForm(data, document.forms.form1);
 }
 function dataLoaded2(data) {
-  createForm(data, document.forms.form1);
+  createForm(data, document.forms.form2);
 }
 function errorHandler(jqXHR,statusStr,errorStr) {
   alert(statusStr+' '+errorStr);
