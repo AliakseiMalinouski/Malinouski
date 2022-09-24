@@ -1,27 +1,27 @@
 "use strict";
-var formDef1=
-[
-  {label:'Название сайта:',kind:'longtext',name:'sitename'},
-  {label:'URL сайта:',kind:'longtext',name:'siteurl'},
-  {label:'Посетителей в сутки:',kind:'number',name:'visitors'},
-  {label:'E-mail для связи:',kind:'shorttext',name:'email'},
-  {label:'Рубрика каталога:',kind:'combo',name:'division',
-    variants:[{text:'здоровье',value:1},{text:'домашний уют',value:2},{text:'бытовая техника',value:3}]},
-  {label:'Размещение:',kind:'radio',name:'payment',
-    variants:[{text:'бесплатное',value:1},{text:'платное',value:2},{text:'VIP',value:3}]},
-  {label:'Разрешить отзывы:',kind:'check',name:'votes'},
-  {label:'Описание сайта:',kind:'memo',name:'description'},
-  {caption:'Опубликовать',kind:'submit'},
-    ];
+// var formDef1=
+// [
+//   {label:'Название сайта:',kind:'longtext',name:'sitename'},
+//   {label:'URL сайта:',kind:'longtext',name:'siteurl'},
+//   {label:'Посетителей в сутки:',kind:'number',name:'visitors'},
+//   {label:'E-mail для связи:',kind:'shorttext',name:'email'},
+//   {label:'Рубрика каталога:',kind:'combo',name:'division',
+//     variants:[{text:'здоровье',value:1},{text:'домашний уют',value:2},{text:'бытовая техника',value:3}]},
+//   {label:'Размещение:',kind:'radio',name:'payment',
+//     variants:[{text:'бесплатное',value:1},{text:'платное',value:2},{text:'VIP',value:3}]},
+//   {label:'Разрешить отзывы:',kind:'check',name:'votes'},
+//   {label:'Описание сайта:',kind:'memo',name:'description'},
+//   {caption:'Опубликовать',kind:'submit'},
+//     ];
 
-var formDef2=
-[
-  {label:'Фамилия:',kind:'longtext',name:'lastname'},
-  {label:'Имя:',kind:'longtext',name:'firstname'},
-  {label:'Отчество:',kind:'longtext',name:'secondname'},
-  {label:'Возраст:',kind:'number',name:'age'},
-  {caption:'Зарегистрироваться',kind:'submit'},
-    ];
+// var formDef2=
+// [
+//   {label:'Фамилия:',kind:'longtext',name:'lastname'},
+//   {label:'Имя:',kind:'longtext',name:'firstname'},
+//   {label:'Отчество:',kind:'longtext',name:'secondname'},
+//   {label:'Возраст:',kind:'number',name:'age'},
+//   {caption:'Зарегистрироваться',kind:'submit'},
+//     ];
 function createForm(F1, F2) {
 let tag;
 F1.forEach(elem => {
@@ -116,8 +116,25 @@ F1.forEach(elem => {
     tag.setAttribute('type', 'submit');
     tag.innerHTML = elem.caption;
     F2.appendChild(tag);
+    let br = document.createElement('br');
+    F2.appendChild(br);
   }
 });
 } 
-createForm(formDef1, document.forms.form1);
-createForm(formDef2, document.forms.form2);
+// createForm(formDef1, document.forms.form1);
+// createForm(formDef2, document.forms.form2);
+$.ajax("https://fe.it-academy.by/Examples/dyn_form_ajax/formDef1.json",
+{type:"GET", dataType:"json", success:dataLoaded1, error:errorHandler}
+);
+$.ajax("https://fe.it-academy.by/Examples/dyn_form_ajax/formDef2.json",
+{type:"GET", dataType:"json", success:dataLoaded2, error:errorHandler}
+);
+function dataLoaded1(data) {
+  createForm(data, document.forms.form1);
+}
+function dataLoaded2(data) {
+  createForm(data, document.forms.form1);
+}
+function errorHandler(jqXHR,statusStr,errorStr) {
+  alert(statusStr+' '+errorStr);
+}
