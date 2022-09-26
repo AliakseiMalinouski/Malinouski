@@ -1,11 +1,13 @@
 "use strict";
 // получаем меню перед игрой
 let menu = document.getElementById('menu');
+let regWindow = document.getElementById('reguls__window');
 let gameName = document.getElementById('game__name');
+let crossClose = document.getElementById('close');
 // используя делегирование проверяем на какой div был клик
 menu.addEventListener('click', function (EO) {
    EO = EO || window.event;
-    if (EO.target.getAttribute('id') == 'play') {
+    if (EO.target.getAttribute('data-name') == 'startGame') {
         // выключаем меню, название
         menu.classList.add('disable');
         gameName.classList.add('disable');
@@ -305,9 +307,13 @@ menu.addEventListener('click', function (EO) {
         }, 200);
 
     }
-    if (EO.target.getAttribute('id') == 'reguls__window') {
-        
+    else if (EO.target.getAttribute('data-name') == 'RegulsWindow') {
+        regWindow.classList.add('active');
     }
+    crossClose.addEventListener('click', function (EO) {
+        EO = EO || window.event;
+        regWindow.classList.remove('active');
+    });
 });
 // эффект набора текста
 const arrayLettersGameName = [

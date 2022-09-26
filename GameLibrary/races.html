@@ -12,13 +12,14 @@
 </head>
 <body>
     <div id="menu">
-        <div id="play">Играть</div>
+        <div id="play" data-name="startGame">Играть</div>
         <div id="table__records">Таблица рекордов</div>
-        <div id="reg">Правила</div>
+        <div id="reg" data-name="RegulsWindow">Правила</div>
     </div>
     <div id="reguls__window">
+        <img src="./imgs/close.png" alt="Закрыть" id="close" data-name="crossClose">
         <h3>Правила игры</h3>
-        <p></p>
+        <p>RacesMania - это игра гонки в стиле 2D. Главная задача - не столкнуться с встречной машиной или с дорожным огрождением. Управление осуществляется нажатием <span id="hands"><q>стрелочек</q></span> или кнопками <span>A</span> и <span>D</span>. Удачи!</p>
     </div>
     <span id="game__name">RacesMania</span>
     <script src="./js/races.js"></script>
