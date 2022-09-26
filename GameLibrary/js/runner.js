@@ -99,9 +99,22 @@ function animatedStone() {
     }
     if (leftStone == '139' && human.classList != 'up') {
         stoneAudio.play();
-        alert('GAME OVER!');
+        let alertGameOver = document.createElement('span');
+        alertGameOver.classList.add('alert__game__over');
+        alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + startScore + '</span>';
+        areaGame.appendChild(alertGameOver);
+        clearInterval(scoreInterval);
         window.onbeforeunload = false;
-        location.reload();
+        animatedCroco = null;
+        animatedSky = null;
+        animatedSky1 = null;
+        animatedTree = null;
+        animatedStone = null;
+        sky.classList.add('disable');
+        sky1.classList.add('disable');
+        setTimeout(function () {
+            location.reload(); 
+        }, 3000);
     }
 }
 animatedStone();
@@ -122,9 +135,22 @@ function animatedTree() {
     }
     if (leftTree == '139' && human.classList != 'up') {
         stoneAudio.play();
-        alert('GAME OVER!');
+        let alertGameOver = document.createElement('span');
+        alertGameOver.classList.add('alert__game__over');
+        alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + startScore + '</span>';
+        areaGame.appendChild(alertGameOver);
+        clearInterval(scoreInterval);
         window.onbeforeunload = false;
-        location.reload();
+        animatedCroco = null;
+        animatedSky = null;
+        animatedSky1 = null;
+        animatedTree = null;
+        animatedStone = null;
+        sky.classList.add('disable');
+        sky1.classList.add('disable');
+        setTimeout(function () {
+            location.reload(); 
+        }, 3000);
     }
 }
 animatedTree();
@@ -145,9 +171,22 @@ function animatedCroco() {
     }
     if (leftCroco == '139' && human.classList != 'up') {
         crocoEatHuman.play();
-        alert('GAME OVER!');
+        let alertGameOver = document.createElement('span');
+        alertGameOver.classList.add('alert__game__over');
+        alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: blue; font-size: 25px; text-decoration: underline;">' + startScore + '</span>';
+        areaGame.appendChild(alertGameOver);
+        clearInterval(scoreInterval);
         window.onbeforeunload = false;
-        location.reload();
+        animatedCroco = null;
+        animatedSky = null;
+        animatedSky1 = null;
+        animatedTree = null;
+        animatedStone = null;
+        sky.classList.add('disable');
+        sky1.classList.add('disable');
+        setTimeout(function () {
+            location.reload(); 
+        }, 3000);
     }
 }
 animatedCroco();
@@ -192,7 +231,7 @@ let arrayFone = [
     '"./imgs/thirdFone.jpg"',
     '"./imgs/fFone.jpg"',
 ];
-setInterval(function () {
+let scoreInterval = setInterval(function () {
     startScore++;
     sumScore.innerHTML = startScore;
     if (startScore > 30) {
@@ -220,7 +259,7 @@ closeButtonRegBlock.addEventListener('click', function (EO) {
     regBlock.style.display = 'none';
 });
 // предотврощаем повторение keydown
-function restrict(func, minDuration) {
+function offRepeatKeyDown(func, minDuration) {
     let lastPress = 0;
     return function () {
         let now = Date.now();
@@ -229,7 +268,7 @@ function restrict(func, minDuration) {
         return func.apply(this, arguments);
     };
 }
-foo = function () {console.log('foo');};
-bar = restrict(foo, 200); 
-bar(); 
-bar();
+setFunction = function () {console.log('success');};
+wp = offRepeatKeyDown(setFunction, 200); 
+wp(); 
+wp();

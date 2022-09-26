@@ -262,3 +262,15 @@ body {
         display: none;
     }
 }
+.alert__game__over {
+    position: absolute;
+    color: red;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 220px;
+    top: 100px;
+}
+.disable {
+    display: none;
+}
