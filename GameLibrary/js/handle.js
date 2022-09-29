@@ -9,6 +9,8 @@ let firstEnemyAnimal = document.createElement('img');
 firstEnemyAnimal.setAttribute('src', './imgs/animal1.png');
 firstEnemyAnimal.classList.add('first__enemy__animal');
 areaGame.appendChild(firstEnemyAnimal);
+// добавляем звуки 
+let mouseDownOnAnimal = new Audio('./audio/handleClick.mp3');
 // анимируем бобров
 let startTopPositionFirstEnemyAnimal = 380;
 function animateFirstEnemyAnimal() {
@@ -30,6 +32,6 @@ function animateFirstEnemyAnimal() {
 animateFirstEnemyAnimal();
 
 firstEnemyAnimal.addEventListener('click', function () {
-    console.log('work')
+    mouseDownOnAnimal.play();
 });
 
