@@ -13,7 +13,7 @@ let logo = document.getElementById('logo');
 let reg = document.getElementById('reg');
 let regBlock = document.getElementById('reg_block');
 let closeButtonRegBlock = document.getElementById('close');
-// фотографии Джо
+// получаем фотографии Джо
 let jo1 = document.getElementById('jo_1');
 let jo2 = document.getElementById('jo_2');
 let jo3 = document.getElementById('jo_3');
