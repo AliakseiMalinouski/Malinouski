@@ -14,8 +14,7 @@
     background: url(../imgs/menuFone.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 100%;
-    border: 2px solid red; }
+    height: 100%; }
 
   body:before {
     content: "";

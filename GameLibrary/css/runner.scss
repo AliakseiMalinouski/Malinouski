@@ -343,3 +343,10 @@ body {
 .disable {
     display: none;
 }
+.no-pseudo:before,
+.no-pseudo:after,
+.no-pseudo *:before,
+.no-pseudo *:after {
+    content: none !important;
+    display: none !important;
+}

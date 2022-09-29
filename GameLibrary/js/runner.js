@@ -47,11 +47,11 @@ window.onbeforeunload = function() {
 // меняем масштаб документа
 if (window.innerWidth > 770) {
     document.body.style.zoom = 2.5;
-    // document.body.style.overflowX = 'hidden';
-    // document.body.style.overflowY = 'hidden';
+    document.body.classList.remove('no-pseudo')
 }
 if (window.innerWidth < 770) {
     document.body.style.zoom = 0;
+    document.body.classList.add('no-pseudo');
     document.body.style.overflowY = 'hidden';
     document.body.style.overflowX = 'hidden';
 }
