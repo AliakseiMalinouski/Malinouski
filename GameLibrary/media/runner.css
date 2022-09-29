@@ -52,7 +52,10 @@
       height: 70px; }
       .menu #play span {
         left: 90px;
-        top: 20px; } }
+        top: 20px; }
+
+  #audioReg {
+    display: none; } }
 @media all and (max-width: 1334px) {
   #jo_1 {
     display: none; }
