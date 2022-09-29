@@ -83,12 +83,24 @@ menu.addEventListener('click', function (EO) {
         let x = 100;
         function gameCycle() {
             if (keyObject[37] || keyObject[65]){
-            x -=1;
+            x -= 1;
+            if (resultsScore > 36) {
+                x -= 1.001;
+            }
+            if(resultsScore > 72) {
+                x -= 1.003;
+            }
             auto.style.transform = 'rotate(-15deg)';
             }
 
             if (keyObject[39] || keyObject[68]){
             x += 1;
+            if (resultsScore > 36) {
+                x += 1.001;
+            }
+            if(resultsScore > 72) {
+                x += 1.003;
+            }
             auto.style.transform = 'rotate(15deg)';
             }
             auto.style.left = x + 'px';
@@ -107,8 +119,20 @@ menu.addEventListener('click', function (EO) {
             offsetTopBackgroundImage = offsetTopBackgroundImage + 0.5;
             backgroundGame.style.top = offsetTopBackgroundImage + 'px';
             setTimeout(drawRoad, 0);
-            if (resultsScore > 35) {
+            if (resultsScore > 15) {
+                offsetTopBackgroundImage = offsetTopBackgroundImage + 0.7;
+                backgroundGame.style.top = offsetTopBackgroundImage + 'px';
+            }
+            if (resultsScore > 25) {
+                offsetTopBackgroundImage = offsetTopBackgroundImage + 0.9;
+                backgroundGame.style.top = offsetTopBackgroundImage + 'px';
+            }
+            if (resultsScore > 34) {
                 offsetTopBackgroundImage = offsetTopBackgroundImage + 1;
+                backgroundGame.style.top = offsetTopBackgroundImage + 'px';
+            }
+            if (resultsScore > 72) {
+                offsetTopBackgroundImage = offsetTopBackgroundImage + 1.5;
                 backgroundGame.style.top = offsetTopBackgroundImage + 'px';
             }
             if (offsetTopBackgroundImage >= 0) {
@@ -134,6 +158,14 @@ menu.addEventListener('click', function (EO) {
             let randomCarTop = randomCar0.offsetTop;
             randomCarTop = randomCarTop + 1;
             randomCar0.style.top = randomCarTop + 'px';
+            if (resultsScore > 34) {
+                randomCarTop = randomCarTop + 1.1;
+                randomCar0.style.top = randomCarTop + 'px';
+            }
+             if (resultsScore > 68) {
+                randomCarTop = randomCarTop + 1.3;
+                randomCar0.style.top = randomCarTop + 'px';
+            }
             setTimeout(changeTopRandomCar, 0);
             if (randomCarTop >= 580) {
                 randomCar0.style.top = '-90px';
@@ -192,6 +224,14 @@ menu.addEventListener('click', function (EO) {
             let randomCarTop = randomCar1.offsetTop;
             randomCarTop = randomCarTop + 1;
             randomCar1.style.top = randomCarTop + 'px';
+            if (resultsScore > 34) {
+                randomCarTop = randomCarTop + 1.1;
+                randomCar1.style.top = randomCarTop + 'px';
+            }
+            if (resultsScore > 68) {
+                randomCarTop = randomCarTop + 1.3;
+                randomCar1.style.top = randomCarTop + 'px';
+            }
             setTimeout(changeTopRandomCar1, 0);
             if (randomCarTop >= 580) {
                 randomCar1.style.top = '-130px';
@@ -252,6 +292,14 @@ menu.addEventListener('click', function (EO) {
             let randomCarTop = randomCar2.offsetTop;
             randomCarTop = randomCarTop + 1;
             randomCar2.style.top = randomCarTop + 'px';
+            if (resultsScore > 34) {
+                randomCarTop = randomCarTop + 1.1;
+                randomCar2.style.top = randomCarTop + 'px';
+            }
+             if (resultsScore > 68) {
+                randomCarTop = randomCarTop + 1.3;
+                randomCar2.style.top = randomCarTop + 'px';
+            }
             setTimeout(changeTopRandomCar2, 0);
             if (randomCarTop >= 580) {
                 randomCar2.style.top = '-190px';
