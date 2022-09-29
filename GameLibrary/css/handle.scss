@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow: hidden;
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    .area__game {
+        width: 900px;
+        height: 600px;
+        border: 1px solid black;
+        margin: 0 auto;
+        background-image: url(../imgs/handleArea-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        z-index: 2;
+    }
+    .first__enemy__animal {
+        display: none;
+        width: 125px;
+        height: 125px;
+        position: absolute;
+        right: 240px;
+        top: 380px;
+    }
+    .after__change__top1 {
+        position: static;
+        margin-left: 530px;
+        margin-top: 270px;
+    }
+    .opacity__block {
+        // background-color: red;
+        position: absolute;
+        z-index: 10;
+        width: 900px;
+        height: 200px;
+        bottom: 15px;
+    }
+}
+.disable {
+    display: none;
+}
