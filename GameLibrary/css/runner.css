@@ -18,17 +18,6 @@ body {
   position: relative;
   min-height: 100%; }
 
-body:before {
-  content: "";
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-  z-index: -1;
-  background: url(../imgs/menuFone.jpg) 0 0 repeat;
-  transform: rotate(30deg); }
-
 .area-game {
   display: none;
   width: 800px;
