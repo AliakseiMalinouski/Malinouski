@@ -272,3 +272,34 @@ setFunction = function () {console.log('success');};
 wp = offRepeatKeyDown(setFunction, 200); 
 wp(); 
 wp();
+// анимируем название игры
+const arrayNameGame = [
+    'JoRun',
+];
+function wrapperFunction() {
+    let line = 0;
+    let counter = 0;
+    let results = '';
+    function typeWriter() {
+        let timeout = setTimeout(function () {
+            results += arrayNameGame[line][counter];
+            logo.innerHTML = results;
+            counter++;
+            if (counter >= arrayNameGame[line].length) {
+                counter = 0;
+                line++;
+                if (line == arrayNameGame.length) {
+                    clearTimeout(timeout);
+                    return true;
+                }
+            }
+            typeWriter();
+        }, 200);
+    }
+    typeWriter();
+}
+function timerToTypeWriter() {
+    setTimeout(timerToTypeWriter, 1500);
+    setTimeout(wrapperFunction, 0);
+}
+timerToTypeWriter();

@@ -342,4 +342,8 @@ function wrapperTypeWritterFunction () {
     }
     typeWriter();
 }
-let intervalTypeWriter = setInterval(wrapperTypeWritterFunction, 2500);
+function timerToTypeWriter() {
+    setTimeout(timerToTypeWriter, 2500);
+    setTimeout(wrapperTypeWritterFunction, 0);
+}
+timerToTypeWriter();

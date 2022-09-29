@@ -110,6 +110,13 @@ body {
     width: 800px;
     height: 100px;
     top: 300px; }
+  .area-game #audioReg {
+    position: absolute;
+    top: 40px;
+    left: 20px; }
+    .area-game #audioReg span {
+      font-size: 7px;
+      color: red; }
 
 .menu {
   width: 400px;

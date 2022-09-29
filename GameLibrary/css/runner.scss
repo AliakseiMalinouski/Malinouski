@@ -126,6 +126,15 @@ body {
         height: 100px;
         top: 300px;
     }
+    #audioReg {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        span {
+            font-size: 7px;
+            color: red;
+        }
+    }
 }
 .menu {
     width: 400px;
