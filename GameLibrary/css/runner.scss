@@ -237,6 +237,26 @@ body {
         transform: rotate(9deg);
     }
 }
+.animation__for__jo2 {
+    animation: gallery2 3s linear;
+}
+@keyframes gallery2 {
+    0% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(8deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-8deg);
+    }
+}
 .animation__for__jo3 {
     animation: gallery 3s linear;
 }

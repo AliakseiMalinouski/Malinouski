@@ -306,12 +306,16 @@ timerToTypeWriter();
 // анимируем галерею
 setInterval(function () {
     jo1.classList.add('animation__for__jo1');
+    jo2.classList.add('animation__for__jo2')
     jo3.classList.add('animation__for__jo3');
     checkClassName();
 }, 1000);
 setInterval(function checkClassName() {
     if (jo1.classList == 'animation__for__jo1') {
         jo1.classList.remove('animation__for__jo1');
+    }
+    if (jo2.classList == 'animation__for__jo2') {
+        jo2.classList.remove('animation__for__jo2');
     }
     if (jo3.classList == 'animation__for__jo3') {
         jo3.classList.remove('animation__for__jo3')
