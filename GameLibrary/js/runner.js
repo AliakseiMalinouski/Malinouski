@@ -318,6 +318,6 @@ setInterval(function checkClassName() {
         jo2.classList.remove('animation__for__jo2');
     }
     if (jo3.classList == 'animation__for__jo3') {
-        jo3.classList.remove('animation__for__jo3')
+        jo3.classList.remove('animation__for__jo3');
     }
 }, 4000);
