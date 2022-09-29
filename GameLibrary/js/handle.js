@@ -9,7 +9,12 @@ let firstEnemyAnimal = document.createElement('img');
 firstEnemyAnimal.setAttribute('src', './imgs/animal1.png');
 firstEnemyAnimal.classList.add('first__enemy__animal');
 areaGame.appendChild(firstEnemyAnimal);
-// добавляем звуки 
+// добавляем звуки
+// добавляем score
+let scoreSpan = document.createElement('div');
+let score = 0;
+scoreSpan.innerHTML = score;
+areaGame.appendChild(scoreSpan);
 let mouseDownOnAnimal = new Audio('./audio/handleClick.mp3');
 // анимируем бобров
 let startTopPositionFirstEnemyAnimal = 380;
@@ -25,13 +30,20 @@ function animateFirstEnemyAnimal() {
         setTimeout(function () {
         startTopPositionFirstEnemyAnimal = 380;
         firstEnemyAnimal.style.display = 'none';
-        }, 1100);
+        }, 1000);
     }
     setTimeout(animateFirstEnemyAnimal, 0);
 }
 animateFirstEnemyAnimal();
-
-firstEnemyAnimal.addEventListener('click', function () {
+let flag = false;
+firstEnemyAnimal.addEventListener('click', function (EO) {
+    EO = EO || window.event;
     mouseDownOnAnimal.play();
+    score++;
+    scoreSpan.innerHTML = score;
+    flag = true;
+    if (flag) {
+        score = score;
+    }
 });
 
