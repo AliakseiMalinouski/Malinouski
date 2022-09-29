@@ -9,7 +9,12 @@ html {
 
 body {
   font-family: 'Press Start 2P', cursive;
-  background: url(../imgs/menuFone.jpg) center center cover no-repeat fixed;
+  background-image: url(../imgs/menuFone.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #464646;
+  background-size: cover;
   position: relative;
   min-height: 100%; }
 
