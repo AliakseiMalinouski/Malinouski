@@ -45,7 +45,7 @@ menu.addEventListener('click', function (EO) {
             if (auto.offsetLeft < 50) {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<br>' + '<br>' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 audioGameOverAfterCrash.play();
                 drawRoad = null;
@@ -62,7 +62,7 @@ menu.addEventListener('click', function (EO) {
             else if (auto.offsetLeft > 350) {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<br>' + '<br>' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 drawRoad = null;
                 changeTopRandomCar = null;
@@ -192,7 +192,7 @@ menu.addEventListener('click', function (EO) {
                 else {
                     let alertGameOver = document.createElement('div');
                     alertGameOver.classList.add('alert__game__over');
-                    alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
+                    alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<br>' + '<br>' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                     gameZone.appendChild(alertGameOver);
                     audioGameOverAfterCrash.play();
                     drawRoad = null;
@@ -257,7 +257,7 @@ menu.addEventListener('click', function (EO) {
             else {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<br>' + '<br>' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 audioGameOverAfterCrash.play();
                 drawRoad = null;
@@ -327,7 +327,7 @@ menu.addEventListener('click', function (EO) {
             else {
                 let alertGameOver = document.createElement('div');
                 alertGameOver.classList.add('alert__game__over');
-                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
+                alertGameOver.innerHTML = 'GAME OVER.' + '<br>' + '<br>' + 'Your record: ' + '<br>' + '<br>' + '<span style="color: lime; font-size: 25px; text-decoration: underline;">' + resultsScore + '</span>';
                 gameZone.appendChild(alertGameOver);
                 audioGameOverAfterCrash.play();
                 drawRoad = null;
