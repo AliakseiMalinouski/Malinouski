@@ -56,7 +56,7 @@ body {
 }
 .alert__game__over {
     position: absolute;
-    color: red;
+    color: #41e6e8;
     font-size: 23px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -169,18 +169,7 @@ body {
         color: red;
     }
 }
-.close__reguls__window__animation {
-    animation: closeRegWin 2s linear;
-}
-@keyframes closeRegWin {
-    from {
-        transform: scale(1.05);
-    }
 
-    to {
-        transform: scale(0);
-    }
-}
 #game__name {
     position: absolute;
     top: 80px;
