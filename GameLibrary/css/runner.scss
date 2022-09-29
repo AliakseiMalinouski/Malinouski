@@ -184,14 +184,11 @@ body {
 }
 #logo {
     position: fixed;
-    color: white;
     font-size: 60px;
     transform: rotate(12deg);
     top: 80px;
     right: 50px;
-    span {
-        color: red;
-    }
+    color: red;
 }
 #jo_1 {
     position: absolute;
