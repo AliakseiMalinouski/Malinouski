@@ -150,6 +150,8 @@ arrayAllImgsOfDocument.forEach(element => {
     element.addEventListener('click', function (EO) {
         EO = EO || window.event;
         mouseDownOnAnimal.play();
+        score++;
+        scoreSpan.innerHTML = score;
     });
 });
 // firstEnemyAnimal.addEventListener('click', function t (EO) {
