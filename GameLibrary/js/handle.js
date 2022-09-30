@@ -25,6 +25,10 @@ let fifthEnemyAnimal = document.createElement('img');
 fifthEnemyAnimal.setAttribute('src', './imgs/animal5.png');
 fifthEnemyAnimal.classList.add('fifth__enemy__animal');
 areaGame.appendChild(fifthEnemyAnimal);
+let sixthEnemyAnimal = document.createElement('img');
+sixthEnemyAnimal.setAttribute('src', './imgs/animal6.png');
+sixthEnemyAnimal.classList.add('sixth__enemy__animal');
+areaGame.appendChild(sixthEnemyAnimal);
 // добавляем score
 let flag = false;
 let scoreSpan = document.createElement('div');
@@ -40,6 +44,7 @@ let startTopPositionFirstEnemyAnimal2 = 370;
 let startTopPositionFirstEnemyAnimal3 = 440;
 let startBottomPositionFourthEnemyAnimal = 10;
 let startBottomPositionFifthEnemyAnimal = -40;
+let startBottomPositionSixthEnemyAnimal = 0;
 function animateFirstEnemyAnimal() {
     startTopPositionFirstEnemyAnimal1 = startTopPositionFirstEnemyAnimal1 - 0.2;
     firstEnemyAnimal.style.top = startTopPositionFirstEnemyAnimal1 + 'px';
@@ -121,6 +126,22 @@ function animateFifthEnemyAnimal() {
     setTimeout(animateFifthEnemyAnimal, 0);
 }
 animateFifthEnemyAnimal();
+function animateSixthEnemyAnimal() {
+    startBottomPositionSixthEnemyAnimal = startBottomPositionSixthEnemyAnimal + 0.4;
+    sixthEnemyAnimal.style.bottom = startBottomPositionSixthEnemyAnimal + 'px';
+    if (startBottomPositionSixthEnemyAnimal > 120) {
+        sixthEnemyAnimal.style.display = 'block';
+    }
+    if (startBottomPositionSixthEnemyAnimal >= 140) {
+        sixthEnemyAnimal.style.bottom = '140px';
+        setTimeout(function () {
+            startBottomPositionSixthEnemyAnimal = 0;
+            sixthEnemyAnimal.style.display = 'none';
+        }, 1000);
+    }
+    setTimeout(animateSixthEnemyAnimal, 0);
+}
+animateSixthEnemyAnimal();
 // firstEnemyAnimal.addEventListener('click', function t (EO) {
 //     EO = EO || window.event;
 //     mouseDownOnAnimal.play();
