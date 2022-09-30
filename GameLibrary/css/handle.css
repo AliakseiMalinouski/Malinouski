@@ -56,6 +56,13 @@ body {
     position: absolute;
     bottom: 10px;
     left: 260px; }
+  .container .fifth__enemy__animal {
+    display: none;
+    width: 101px;
+    height: 98.8px;
+    position: absolute;
+    bottom: -40px;
+    left: 390px; }
 
 .disable {
   display: none; }
