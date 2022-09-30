@@ -38,13 +38,21 @@ body {
         margin-left: 530px;
         margin-top: 270px;
     }
-    .opacity__block {
-        // background-color: red;
+    .second__enemy__animal {
+        display: none;
+        width: 153px;
+        height: 102px;
         position: absolute;
-        z-index: 10;
-        width: 900px;
-        height: 200px;
-        bottom: 15px;
+        top: 350px;
+        left: 370px;
+    }
+    .third__enemy__animal {
+        display: none;
+        width: 132.4px;
+        height: 75.4px;
+        position: absolute;
+        left: 230px;
+        top: 440px;
     }
 }
 .disable {
