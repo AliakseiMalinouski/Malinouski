@@ -1,4 +1,5 @@
 // создаём необходимые для игры
+document.body.classList.add('change__cursor');
 let containerGame = document.createElement('div');
 containerGame.classList.add('container');
 document.body.appendChild(containerGame);
