@@ -180,11 +180,4 @@ arrayAllImgsOfDocument.forEach(element => {
     }
     });
 });
-// firstEnemyAnimal.addEventListener('click', function t (EO) {
-//     EO = EO || window.event;
-//     mouseDownOnAnimal.play();
-//     score++;
-//     scoreSpan.innerHTML = score;
-//     flag = true;
-// });
 
