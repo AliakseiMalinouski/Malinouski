@@ -37,7 +37,6 @@ scoreSpan.innerHTML = score;
 areaGame.appendChild(scoreSpan);
 // добавляем звуки
 let mouseDownOnAnimal = new Audio('./audio/handleClick.mp3');
-// анимируем всех вражеских животных
 // объект с начальными позициями по оси y
 const startPositionYforEnemyAnimals = {
     startTopPositionFirstEnemyAnimal: 380,
@@ -47,6 +46,7 @@ const startPositionYforEnemyAnimals = {
     startBottomPositionFifthEnemyAnimal: -40,
     startBottomPositionSixthEnemyAnimal: 0,
 };
+// анимируем всех вражеских животных
 function animateFirstEnemyAnimal() {
     startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal = startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal - 0.2;
     firstEnemyAnimal.style.top = startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal + 'px';
@@ -144,6 +144,14 @@ function animateSixthEnemyAnimal() {
     setTimeout(animateSixthEnemyAnimal, 0);
 }
 animateSixthEnemyAnimal();
+// подписываемся и обрабатываем клик по животным используя делегирование
+let arrayAllImgsOfDocument = document.querySelectorAll('img');
+arrayAllImgsOfDocument.forEach(element => {
+    element.addEventListener('click', function (EO) {
+        EO = EO || window.event;
+        mouseDownOnAnimal.play();
+    });
+});
 // firstEnemyAnimal.addEventListener('click', function t (EO) {
 //     EO = EO || window.event;
 //     mouseDownOnAnimal.play();
