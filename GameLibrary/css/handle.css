@@ -8,7 +8,9 @@ html {
   height: 100%; }
 
 body {
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: 'Press Start 2P', cursive;
+  background-color: black; }
 
 .container {
   width: 1000px;
@@ -16,7 +18,7 @@ body {
   .container .area__game {
     width: 900px;
     height: 600px;
-    border: 1px solid black;
+    border: 1px solid white;
     margin: 0 auto;
     background-image: url(../imgs/handleArea-removebg-preview.png);
     background-repeat: no-repeat;
@@ -70,6 +72,32 @@ body {
     position: absolute;
     right: 250px;
     bottom: 0px; }
+  .container .score {
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    z-index: 100;
+    top: 47px;
+    left: 440px; }
+  .container .shadow__score__span {
+    color: red;
+    font-size: 24px;
+    z-index: 50;
+    position: absolute;
+    top: 50px;
+    left: 444px; }
+  .container .blue__background {
+    position: absolute;
+    left: 218px;
+    width: 110px; }
+  .container .yellow__circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffd729;
+    position: absolute;
+    left: 245px;
+    top: 14px; }
 
 .disable {
   display: none; }

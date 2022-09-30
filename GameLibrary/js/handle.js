@@ -32,9 +32,22 @@ areaGame.appendChild(sixthEnemyAnimal);
 // добавляем score
 let flag = false;
 let scoreSpan = document.createElement('div');
+scoreSpan.classList.add('score');
 let score = 0;
-scoreSpan.innerHTML = score;
+scoreSpan.innerHTML = `Score: ${score}`;
 areaGame.appendChild(scoreSpan);
+let shadowScoreSpan = document.createElement('span');
+shadowScoreSpan.classList.add('shadow__score__span');
+shadowScoreSpan.innerHTML = `Score: ${score}`;
+areaGame.appendChild(shadowScoreSpan);
+// gggg
+const blueBackground = document.createElement('img');
+blueBackground.setAttribute('src', './imgs/blueBackground.png');
+blueBackground.classList.add('blue__background');
+areaGame.appendChild(blueBackground);
+const yellowCircle = document.createElement('div');
+yellowCircle.classList.add('yellow__circle');
+areaGame.appendChild(yellowCircle);
 // добавляем звуки
 let mouseDownOnAnimal = new Audio('./audio/handleClick.mp3');
 // объект с начальными позициями по оси y
@@ -151,7 +164,8 @@ arrayAllImgsOfDocument.forEach(element => {
         EO = EO || window.event;
         mouseDownOnAnimal.play();
         score++;
-        scoreSpan.innerHTML = score;
+        shadowScoreSpan.innerHTML = `Score: ${score}`;
+        scoreSpan.innerHTML = `Score: ${score}`;
     });
 });
 // firstEnemyAnimal.addEventListener('click', function t (EO) {
