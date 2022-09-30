@@ -31,7 +31,7 @@ sixthEnemyAnimal.setAttribute('src', './imgs/animal6.png');
 sixthEnemyAnimal.classList.add('sixth__enemy__animal');
 areaGame.appendChild(sixthEnemyAnimal);
 // добавляем score
-let flag = false;
+let flag = false; // для отслеживания и неповторения клик по животному
 let scoreSpan = document.createElement('div');
 scoreSpan.classList.add('score');
 let score = 0;
