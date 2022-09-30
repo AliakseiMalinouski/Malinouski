@@ -38,23 +38,25 @@ areaGame.appendChild(scoreSpan);
 // добавляем звуки
 let mouseDownOnAnimal = new Audio('./audio/handleClick.mp3');
 // анимируем всех вражеских животных
-// начальные позиции по оси y
-let startTopPositionFirstEnemyAnimal = 380;
-let startTopPositionSecondEnemyAnimal = 370;
-let startTopPositionThirdEnemyAnimal = 440;
-let startBottomPositionFourthEnemyAnimal = 10;
-let startBottomPositionFifthEnemyAnimal = -40;
-let startBottomPositionSixthEnemyAnimal = 0;
+// объект с начальными позициями по оси y
+const startPositionYforEnemyAnimals = {
+    startTopPositionFirstEnemyAnimal: 380,
+    startTopPositionSecondEnemyAnimal: 370,
+    startTopPositionThirdEnemyAnimal: 440,
+    startBottomPositionFourthEnemyAnimal: 10,
+    startBottomPositionFifthEnemyAnimal: -40,
+    startBottomPositionSixthEnemyAnimal: 0,
+};
 function animateFirstEnemyAnimal() {
-    startTopPositionFirstEnemyAnimal = startTopPositionFirstEnemyAnimal - 0.2;
-    firstEnemyAnimal.style.top = startTopPositionFirstEnemyAnimal + 'px';
-    if (startTopPositionFirstEnemyAnimal < 285) {
+    startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal = startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal - 0.2;
+    firstEnemyAnimal.style.top = startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal + 'px';
+    if (startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal < 285) {
         firstEnemyAnimal.style.display = 'block';
     }
-    if (startTopPositionFirstEnemyAnimal <= 280) {
+    if (startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal<= 280) {
         firstEnemyAnimal.style.top = '280px';
         setTimeout(function () {
-        startTopPositionFirstEnemyAnimal = 380;
+        startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal = 380;
         firstEnemyAnimal.style.display = 'none';
         }, 1000);
     }
@@ -63,15 +65,15 @@ function animateFirstEnemyAnimal() {
 animateFirstEnemyAnimal();
 // анимируем медведя
 function animateSecondEnemyAnimal() {
-    startTopPositionSecondEnemyAnimal  = startTopPositionSecondEnemyAnimal  - 0.5;
-    secondEnemyAnimal.style.top = startTopPositionSecondEnemyAnimal + 'px';
-    if (startTopPositionSecondEnemyAnimal  < 265) {
+    startPositionYforEnemyAnimals.startTopPositionSecondEnemyAnimal = startPositionYforEnemyAnimals.startTopPositionSecondEnemyAnimal - 0.5;
+    secondEnemyAnimal.style.top = startPositionYforEnemyAnimals.startTopPositionSecondEnemyAnimal  + 'px';
+    if (startPositionYforEnemyAnimals.startTopPositionSecondEnemyAnimal < 265) {
         secondEnemyAnimal.style.display = 'block';
     }
-    if (startTopPositionSecondEnemyAnimal  <= 250) {
+    if (startPositionYforEnemyAnimals.startTopPositionSecondEnemyAnimal <= 250) {
         secondEnemyAnimal.style.top = '250px';
         setTimeout(function () {
-            startTopPositionSecondEnemyAnimal = 370;
+            startPositionYforEnemyAnimals.startTopPositionSecondEnemyAnimal  = 370;
             secondEnemyAnimal.style.display = 'none';
         }, 1000);
     }
@@ -79,15 +81,15 @@ function animateSecondEnemyAnimal() {
 }
 animateSecondEnemyAnimal();
 function animateThirdEnemyAnimal() {
-    startTopPositionThirdEnemyAnimal  = startTopPositionThirdEnemyAnimal  - 0.3;
-    thirdEnemyAnimal.style.top = startTopPositionThirdEnemyAnimal  + 'px';
-    if (startTopPositionThirdEnemyAnimal  < 320) {
+    startPositionYforEnemyAnimals.startTopPositionThirdEnemyAnimal = startPositionYforEnemyAnimals.startTopPositionThirdEnemyAnimal - 0.3;
+    thirdEnemyAnimal.style.top = startPositionYforEnemyAnimals.startTopPositionThirdEnemyAnimal  + 'px';
+    if (startPositionYforEnemyAnimals.startTopPositionThirdEnemyAnimal  < 320) {
         thirdEnemyAnimal.style.display = 'block';
     }
-    if (startTopPositionThirdEnemyAnimal  <= 300) {
+    if (startPositionYforEnemyAnimals.startTopPositionThirdEnemyAnimal  <= 300) {
         thirdEnemyAnimal.style.top = '300px';
         setTimeout(function () {
-            startTopPositionThirdEnemyAnimal = 440;
+            startPositionYforEnemyAnimals.startTopPositionThirdEnemyAnimal = 440;
             thirdEnemyAnimal.style.display = 'none'; 
         }, 1000);
     }
@@ -95,15 +97,15 @@ function animateThirdEnemyAnimal() {
 }
 animateThirdEnemyAnimal();
 function animateFourthEnenmyAnimal() {
-    startBottomPositionFourthEnemyAnimal = startBottomPositionFourthEnemyAnimal + 0.4;
-    fourthEnemyAnimal.style.bottom = startBottomPositionFourthEnemyAnimal + 'px';
-    if (startBottomPositionFourthEnemyAnimal > 100) {
+    startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal = startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal + 0.4;
+    fourthEnemyAnimal.style.bottom = startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal + 'px';
+    if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal > 100) {
         fourthEnemyAnimal.style.display = 'block';
     }
-    if (startBottomPositionFourthEnemyAnimal >= 140) {
+    if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal >= 140) {
         fourthEnemyAnimal.style.bottom = '140px';
         setTimeout(function () {
-            startBottomPositionFourthEnemyAnimal = 10;
+            startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal = 10;
             fourthEnemyAnimal.style.display = 'none';
         }, 1000);
     }
@@ -111,15 +113,15 @@ function animateFourthEnenmyAnimal() {
 }
 animateFourthEnenmyAnimal();
 function animateFifthEnemyAnimal() {
-    startBottomPositionFifthEnemyAnimal = startBottomPositionFifthEnemyAnimal + 0.3;
-    fifthEnemyAnimal.style.bottom = startBottomPositionFifthEnemyAnimal + 'px';
-    if (startBottomPositionFifthEnemyAnimal > 80) {
+    startPositionYforEnemyAnimals.startBottomPositionFifthEnemyAnimal = startPositionYforEnemyAnimals.startBottomPositionFifthEnemyAnimal + 0.3;
+    fifthEnemyAnimal.style.bottom = startPositionYforEnemyAnimals.startBottomPositionFifthEnemyAnimal + 'px';
+    if (startPositionYforEnemyAnimals.startBottomPositionFifthEnemyAnimal > 80) {
         fifthEnemyAnimal.style.display = 'block';
     }
-    if (startBottomPositionFifthEnemyAnimal >= 100) {
+    if (startPositionYforEnemyAnimals.startBottomPositionFifthEnemyAnimal >= 100) {
         fifthEnemyAnimal.style.bottom = '100px';
         setTimeout(function () {
-            startBottomPositionFifthEnemyAnimal = -40;
+            startPositionYforEnemyAnimals.startBottomPositionFifthEnemyAnimal = -40;
             fifthEnemyAnimal.style.display = 'none'; 
         }, 1000);
     }
@@ -127,15 +129,15 @@ function animateFifthEnemyAnimal() {
 }
 animateFifthEnemyAnimal();
 function animateSixthEnemyAnimal() {
-    startBottomPositionSixthEnemyAnimal = startBottomPositionSixthEnemyAnimal + 0.4;
-    sixthEnemyAnimal.style.bottom = startBottomPositionSixthEnemyAnimal + 'px';
-    if (startBottomPositionSixthEnemyAnimal > 120) {
+    startPositionYforEnemyAnimals.startBottomPositionSixthEnemyAnimal = startPositionYforEnemyAnimals.startBottomPositionSixthEnemyAnimal + 0.4;
+    sixthEnemyAnimal.style.bottom = startPositionYforEnemyAnimals.startBottomPositionSixthEnemyAnimal + 'px';
+    if (startPositionYforEnemyAnimals.startBottomPositionSixthEnemyAnimal > 120) {
         sixthEnemyAnimal.style.display = 'block';
     }
-    if (startBottomPositionSixthEnemyAnimal >= 140) {
+    if (startPositionYforEnemyAnimals.startBottomPositionSixthEnemyAnimal >= 140) {
         sixthEnemyAnimal.style.bottom = '140px';
         setTimeout(function () {
-            startBottomPositionSixthEnemyAnimal = 0;
+            startPositionYforEnemyAnimals.startBottomPositionSixthEnemyAnimal = 0;
             sixthEnemyAnimal.style.display = 'none';
         }, 1000);
     }
