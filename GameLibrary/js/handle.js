@@ -43,8 +43,12 @@ let shadowScoreSpan = document.createElement('span');
 shadowScoreSpan.classList.add('shadow__score__span');
 shadowScoreSpan.innerHTML = `Score: ${score}`;
 areaGame.appendChild(shadowScoreSpan);
+// добавляем звуки
+let mouseDownOnAnimal = new Audio('./audio/handleClick.mp3');
+let victory = new Audio('./audio/victory.mp3');
+let lose = new Audio ('./audio/lose.mp3');
 // делаем таймер
-let startTime = 11;
+let startTime = 121;
 let stringTime = 'Time left: ';
 let endTime = 0;
 startTimeGame();
@@ -52,11 +56,28 @@ function startTimeGame(EO) {
     EO = EO || window.event;
     startTime = startTime - 1; 
     timerSpan.innerHTML = stringTime + ' ' + startTime;
-    console.log(startTime)
-    if (startTime == 0) {
+    if (score == 50) {
+        victory.play();
+        let alertGameWin = document.createElement('span');
+        alertGameWin.classList.add('alert__game__win');
+        alertGameWin.innerHTML = 'YOU WIN! ' + 'Your record: ' + score;
+        areaGame.appendChild(alertGameWin);
+        animateFirstEnemyAnimal = null;
+        animateSecondEnemyAnimal = null;
+        animateThirdEnemyAnimal = null;
+        animateFourthEnenmyAnimal = null;
+        animateFifthEnemyAnimal = null;
+        animateSixthEnemyAnimal = null;
+        clearInterval(intveralOfTimeGame);
+        setTimeout(() => {
+            location.reload();
+        }, 4000);
+    }
+    if (startTime == 0 && score < 50) {
+        lose.play();
         let alertGameOver = document.createElement('span');
         alertGameOver.classList.add('alert__game__over');
-        alertGameOver.innerHTML = 'GAME OVER! ' + 'Your record: ' + score;
+        alertGameOver.innerHTML = 'YOU LOSE! ' + 'Your record: ' + score;
         areaGame.appendChild(alertGameOver);
         animateFirstEnemyAnimal = null;
         animateSecondEnemyAnimal = null;
@@ -67,7 +88,7 @@ function startTimeGame(EO) {
         clearInterval(intveralOfTimeGame);
         setTimeout(() => {
             location.reload();
-        }, 3000);
+        }, 4000);
     }
 }
 let intveralOfTimeGame = setInterval(startTimeGame, 1000);
@@ -79,8 +100,6 @@ areaGame.appendChild(blueBackground);
 const yellowCircle = document.createElement('div');
 yellowCircle.classList.add('yellow__circle');
 areaGame.appendChild(yellowCircle);
-// добавляем звуки
-let mouseDownOnAnimal = new Audio('./audio/handleClick.mp3');
 // объект с начальными позициями по оси y
 const startPositionYforEnemyAnimals = {
     startTopPositionFirstEnemyAnimal: 380,
@@ -143,7 +162,7 @@ animateThirdEnemyAnimal();
 function animateFourthEnenmyAnimal() {
     startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal = startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal + 0.4;
     fourthEnemyAnimal.style.bottom = startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal + 'px';
-    if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal > 100) {
+    if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal > 120) {
         fourthEnemyAnimal.style.display = 'block';
     }
     if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal >= 140) {

@@ -114,6 +114,9 @@ body {
     .timer__span {
         font-size: 13px;
         color: white;
+        position: absolute;
+        right: 15px;
+        top: 15px;
     }
     .alert__game__over {
         position: absolute;
@@ -123,6 +126,15 @@ body {
         letter-spacing: 2px;
         top: 250px;
         left: 150px;
+    }
+    .alert__game__win {
+        position: absolute;
+        color: #FF00FF;
+        top: 250px;
+        left: 150px;
+        letter-spacing: 2px;
+        font-size: 23px;
+        text-transform: uppercase;
     }
 }
 .disable {
