@@ -68,6 +68,7 @@ function startTimeGame(EO) {
         animateFourthEnenmyAnimal = null;
         animateFifthEnemyAnimal = null;
         animateSixthEnemyAnimal = null;
+        window.onbeforeunload = null;
         clearInterval(intveralOfTimeGame);
         setTimeout(() => {
             location.reload();
@@ -85,6 +86,7 @@ function startTimeGame(EO) {
         animateFourthEnenmyAnimal = null;
         animateFifthEnemyAnimal = null;
         animateSixthEnemyAnimal = null;
+        window.onbeforeunload = null;
         clearInterval(intveralOfTimeGame);
         setTimeout(() => {
             location.reload();
@@ -162,7 +164,7 @@ animateThirdEnemyAnimal();
 function animateFourthEnenmyAnimal() {
     startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal = startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal + 0.4;
     fourthEnemyAnimal.style.bottom = startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal + 'px';
-    if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal > 120) {
+    if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal > 130) {
         fourthEnemyAnimal.style.display = 'block';
     }
     if (startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal >= 140) {
@@ -229,4 +231,7 @@ arrayAllImgsOfDocument.forEach(element => {
     }
     });
 });
-
+// предупрждение о выходе и несохраннёных данных
+window.onbeforeunload = function() {
+    return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
+};
