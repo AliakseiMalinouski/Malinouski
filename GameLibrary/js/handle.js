@@ -1,5 +1,4 @@
-// создаём необходимые для игры
-document.body.classList.add('change__cursor');
+// создаём необходимые  элементы для игры: игровую площаь, животных, score, таймер
 let containerGame = document.createElement('div');
 containerGame.classList.add('container');
 document.body.appendChild(containerGame);
@@ -30,6 +29,9 @@ let sixthEnemyAnimal = document.createElement('img');
 sixthEnemyAnimal.setAttribute('src', './imgs/animal6.png');
 sixthEnemyAnimal.classList.add('sixth__enemy__animal');
 areaGame.appendChild(sixthEnemyAnimal);
+let timerSpan = document.createElement('span');
+timerSpan.classList.add('timer__span');
+areaGame.appendChild(timerSpan);
 // добавляем score
 let flag = false; // для отслеживания и неповторения клик по животному
 let scoreSpan = document.createElement('div');
@@ -41,7 +43,35 @@ let shadowScoreSpan = document.createElement('span');
 shadowScoreSpan.classList.add('shadow__score__span');
 shadowScoreSpan.innerHTML = `Score: ${score}`;
 areaGame.appendChild(shadowScoreSpan);
-// gggg
+// делаем таймер
+let startTime = 11;
+let stringTime = 'Time left: ';
+let endTime = 0;
+startTimeGame();
+function startTimeGame(EO) {
+    EO = EO || window.event;
+    startTime = startTime - 1; 
+    timerSpan.innerHTML = stringTime + ' ' + startTime;
+    console.log(startTime)
+    if (startTime == 0) {
+        let alertGameOver = document.createElement('span');
+        alertGameOver.classList.add('alert__game__over');
+        alertGameOver.innerHTML = 'GAME OVER! ' + 'Your record: ' + score;
+        areaGame.appendChild(alertGameOver);
+        animateFirstEnemyAnimal = null;
+        animateSecondEnemyAnimal = null;
+        animateThirdEnemyAnimal = null;
+        animateFourthEnenmyAnimal = null;
+        animateFifthEnemyAnimal = null;
+        animateSixthEnemyAnimal = null;
+        clearInterval(intveralOfTimeGame);
+        setTimeout(() => {
+            location.reload();
+        }, 3000);
+    }
+}
+let intveralOfTimeGame = setInterval(startTimeGame, 1000);
+// заменяем дефолтное солнце на своё
 const blueBackground = document.createElement('img');
 blueBackground.setAttribute('src', './imgs/blueBackground.png');
 blueBackground.classList.add('blue__background');

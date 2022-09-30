@@ -99,6 +99,17 @@ body {
     position: absolute;
     left: 245px;
     top: 14px; }
+  .container .timer__span {
+    font-size: 13px;
+    color: white; }
+  .container .alert__game__over {
+    position: absolute;
+    color: red;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 250px;
+    left: 150px; }
 
 .disable {
   display: none; }
