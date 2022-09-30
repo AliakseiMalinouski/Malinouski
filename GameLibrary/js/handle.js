@@ -162,19 +162,22 @@ animateSixthEnemyAnimal();
 let arrayAllImgsOfDocument = document.querySelectorAll('img');
 arrayAllImgsOfDocument.forEach(element => {
     element.ondragstart = function () { return false } // отменяем перетаскивание картинок
-    element.onselectionchange = function () {return false} // отменяем выделение картинок 
-    element.addEventListener('click', function (EO) {
-        EO = EO || window.event;
-        mouseDownOnAnimal.play();
-        score++;
-        shadowScoreSpan.innerHTML = `Score: ${score}`;
-        scoreSpan.innerHTML = `Score: ${score}`;
-        areaGame.style.cursor = 'url(./imgs/180degHam.png), auto';
-    });
-    element.addEventListener('mouseleave', function (EO) {
-        EO = EO || window.event;
-        areaGame.style.cursor = 'url(./imgs/ham.png), auto';
-        console.log('work')
+    element.onselectionchange = function () { return false } // отменяем выделение картинок
+    element.addEventListener('click', function clickOnAnimal (EO) {
+    EO = EO || window.event;
+    mouseDownOnAnimal.play();
+    score++;
+    shadowScoreSpan.innerHTML = `Score: ${score}`;
+    scoreSpan.innerHTML = `Score: ${score}`;
+    flag = true;
+    if(flag) {
+        element.removeEventListener('click', clickOnAnimal);
+        setTimeout(function () {
+            flag = false;
+            element.addEventListener('click', clickOnAnimal);
+            console.log('WORK!!!')
+        }, 900);
+    }
     });
 });
 // firstEnemyAnimal.addEventListener('click', function t (EO) {
