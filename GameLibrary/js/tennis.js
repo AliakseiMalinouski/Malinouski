@@ -1,11 +1,4 @@
 "use strict";
-window.addEventListener('load', function () {
-  let board = new Area();
-  board.drawRackets();
-  board.drawBall();
-  let moving = new Moving();
-  document.querySelector('.button').addEventListener('click', () => { moving.go() });
-});
 // создаём класс Area, где соаздём элементы необходимые для игры
 class Area {
   constructor() {
@@ -25,6 +18,7 @@ class Area {
     this.area.appendChild(this.ball);
   }
 }
+// создаём класс Moving для хранения и отслеживания положении мяча и ракеток
 class Moving {
   constructor() {
     let self = this;
@@ -233,3 +227,10 @@ class Moving {
     this.timerStatus = requestAnimationFrame(this.tick.bind(this));
     }
 }
+window.addEventListener('load', function () {
+  let board = new Area();
+  board.drawRackets();
+  board.drawBall();
+  let moving = new Moving();
+  document.querySelector('.button').addEventListener('click', () => { moving.go() });
+});
