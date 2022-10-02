@@ -9,6 +9,7 @@ class Area {
     this.leftRacket = document.createElement('div');
     this.rightRacket = document.createElement('div');
     this.ball = document.createElement('div');
+    this.onVolume = document.createElement('div');
   }
   drawRackets() {
     this.leftRacket.classList.add('left-racket');
@@ -19,6 +20,11 @@ class Area {
   drawBall() {
     this.ball.classList.add('ball');   // рисуем мяч
     this.area.appendChild(this.ball);
+  }
+  drawItemMusic() {
+    this.onVolume.classList.add('volume__block');
+    this.onVolume.innerHTML = 'On - 1, Off - 2';
+    this.area.appendChild(this.onVolume);
   }
 }
 // создаём класс Moving для хранения и отслеживания положении мяча и ракеток
@@ -38,7 +44,7 @@ class Moving {
       CTRL: 17,
       SHIFT: 16,
       DOWN: 40,
-      UP: 38
+      UP: 38,
     };
     this.score = {
       first: 0,
@@ -236,6 +242,7 @@ window.addEventListener('load', function () {
   let board = new Area();
   board.drawRackets();
   board.drawBall();
+  board.drawItemMusic();
   let moving = new Moving();
   document.querySelector('.button').addEventListener('click', () => {
     moving.startGame();
@@ -243,6 +250,16 @@ window.addEventListener('load', function () {
     backgroundMusic.loop = true;
   });
 });
+// предупрждение о выходе 
 window.onbeforeunload = function() {
   return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
 };
+// вкл/выкл аудио
+document.addEventListener('keydown', function (EO) {
+  if (EO.code == 'Digit1') {
+    backgroundMusic.play();
+  }
+  else if (EO.code == 'Digit2') {
+    backgroundMusic.pause();
+  }
+});

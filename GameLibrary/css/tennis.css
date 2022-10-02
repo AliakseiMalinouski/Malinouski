@@ -66,4 +66,9 @@ body {
   font-size: 24px;
   color: white; }
 
+.volume__block {
+  position: absolute;
+  color: white;
+  top: 400px; }
+
 /*# sourceMappingURL=tennis.css.map */
