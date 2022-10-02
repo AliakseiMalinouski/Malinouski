@@ -1,4 +1,7 @@
 "use strict";
+// добавляем звуки игры
+let goalAudio = new Audio('./audio/goal.mp3');
+let backgroundMusic = new Audio('./audio/fonemusic.mp3');
 // создаём класс Area, где соаздём элементы необходимые для игры
 class Area {
   constructor() {
@@ -126,10 +129,12 @@ class Moving {
   goal(side) {
     let firstPlayer = document.querySelector('.first__player');
     let secondPlayer = document.querySelector('.second__player');
-    if(side === 'left') {
+    if (side === 'left') {
+      goalAudio.play();
       this.score.first += 1;
       firstPlayer.textContent = this.score.first.toString();
     } else if (side === 'right') {
+      goalAudio.play();
       this.score.second += 1;
       secondPlayer.textContent = this.score.second.toString();
     }
@@ -216,7 +221,7 @@ class Moving {
     this.rightRacketSettings.update();
     this.timerStatus = requestAnimationFrame(this.tick.bind(this));
   }
-  go() {
+  startGame() {
     this.ballH.posX=this.area.width / 2 - this.ballH.width / 2;
     this.ballH.posY=this.area.height / 2 - this.ballH.height / 2;
     this.reverseSpeed();
@@ -232,5 +237,12 @@ window.addEventListener('load', function () {
   board.drawRackets();
   board.drawBall();
   let moving = new Moving();
-  document.querySelector('.button').addEventListener('click', () => { moving.go() });
+  document.querySelector('.button').addEventListener('click', () => {
+    moving.startGame();
+    backgroundMusic.play();
+    backgroundMusic.loop = true;
+  });
 });
+window.onbeforeunload = function() {
+  return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
+};

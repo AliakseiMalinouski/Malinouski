@@ -7,52 +7,63 @@ html {
   width: 100%; }
 
 body {
-  min-height: 100%; }
-
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-.score {
-  display: inline-block;
-  margin-left: 200px; }
+  min-height: 100%;
+  font-family: 'Press Start 2P', cursive;
+  background-color: black; }
 
 .board {
+  margin: 0 auto;
   position: relative;
   width: 550px;
   height: 380px;
-  background-color: lightgoldenrodyellow;
-  border: 1px solid lightcoral; }
+  background-image: url(../imgs/tennisBackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 150% 150%; }
+
+.header {
+  margin-left: 685px; }
+  .header button {
+    width: 150px;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive; }
 
 .left-racket {
   position: absolute;
   left: 0;
   top: 50%;
   width: 10px;
-  height: 60px;
-  background-color: lightseagreen;
-  /*transition: all 0.10s ease-in-out;*/
-  /*transform: translateZ(0);*/ }
+  height: 70px;
+  background-color: red; }
 
 .right-racket {
   position: absolute;
   right: 0;
   top: 50%;
   width: 10px;
-  height: 60px;
-  background-color: lightsalmon; }
+  height: 70px;
+  background-color: #C71585; }
 
 .ball {
   position: absolute;
   right: 50%;
   top: 50%;
-  border-radius: 50%;
   width: 20px;
   height: 20px;
-  background-color: #000; }
+  background-image: url(../imgs/ballTennis.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 170% 170%; }
+
+.score {
+  display: inline-block;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-size: 24px;
+  color: white; }
 
 /*# sourceMappingURL=tennis.css.map */
