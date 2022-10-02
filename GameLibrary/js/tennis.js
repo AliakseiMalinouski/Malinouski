@@ -124,14 +124,14 @@ class Moving {
     }
   }
   goal(side) {
-    let first = document.querySelector('.first__player');
-    let second = document.querySelector('.second__player');
+    let firstPlayer = document.querySelector('.first__player');
+    let secondPlayer = document.querySelector('.second__player');
     if(side === 'left') {
       this.score.first += 1;
-      first.textContent = this.score.first.toString();
+      firstPlayer.textContent = this.score.first.toString();
     } else if (side === 'right') {
       this.score.second += 1;
-      second.textContent = this.score.second.toString();
+      secondPlayer.textContent = this.score.second.toString();
     }
     cancelAnimationFrame(this.timerStatus);
     this.timerStatus = 0;
