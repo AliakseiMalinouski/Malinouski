@@ -263,3 +263,4 @@ document.addEventListener('keydown', function (EO) {
     backgroundMusic.pause();
   }
 });
+
