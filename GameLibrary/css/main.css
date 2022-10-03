@@ -48,6 +48,14 @@ mark {
       .header .container .name__of__library span:nth-child(2) {
         text-transform: uppercase;
         color: red; }
+    .header .container .neon__view {
+      color: #fff;
+      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 121px #f09; }
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09, 0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 120px #f09; }
+  0% {
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f09, 0 0 73px #f09, 0 0 80px #f09, 0 0 94px #f09, 0 0 120px #f09; } }
     .header .container .wrapper__text__header {
       display: flex;
       align-items: center;
@@ -87,20 +95,52 @@ mark {
           cursor: pointer; }
 
 .search__block {
-  padding-top: 50px; }
-  .search__block .container .search {
-    width: 600px;
-    height: 50px; }
-  .search__block .container .search__variants {
-    padding-top: 30px;
-    color: white; }
-    .search__block .container .search__variants li {
-      margin-bottom: 15px; }
-
-.test {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  border: 1px solid green; }
+  padding-top: 50px;
+  border: 1px solid white; }
+  .search__block .container {
+    border: 1px solid white;
+    position: relative;
+    height: 500px; }
+    .search__block .container .search {
+      width: 600px;
+      height: 50px;
+      padding-left: 20px; }
+    .search__block .container .help__text {
+      color: orange;
+      margin-left: 20px;
+      margin-top: 20px; }
+    .search__block .container .search::placeholder {
+      font-family: 'Press Start 2P', cursive; }
+    .search__block .container .search__variants {
+      padding-top: 30px;
+      color: white;
+      padding-left: 20px; }
+      .search__block .container .search__variants li {
+        margin-bottom: 15px; }
+    .search__block .container .animation__games__search__blocks {
+      animation: searchBL 0.6s linear; }
+@keyframes searchBL {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1.05); } }
+    .search__block .container .races__active__block {
+      width: 530px;
+      height: auto;
+      background-color: #1f1f1f;
+      position: absolute;
+      right: 80px;
+      top: 110px;
+      display: flex;
+      justify-content: space-between; }
+      .search__block .container .races__active__block .img__of__races__block {
+        width: 247px;
+        height: 199px;
+        margin-right: 15px; }
+      .search__block .container .races__active__block .text__content_of__races__card {
+        font-size: 10px;
+        color: #41e6e8;
+        line-height: 25px;
+        width: 60%; }
 
 /*# sourceMappingURL=main.css.map */
