@@ -43,8 +43,14 @@ search.oninput = function (EO) {
     if (value == 'jorun') {
         card.createJoRunCard();
     }
-    if (value == '' && search.value !== ' jorun') {
+    if (value == '' && search.value !== 'jorun') {
         card.destroyJoRunCard();
+    }
+    if (value == 'tictactoe') {
+        card.createTicTacToeCard();
+    }
+    if (value == '' && search.value !== 'tictactoe') {
+        card.destroyTicTacToeCard();
     }
 }
 function addColorToSeacrhVariant(string, position, lengtH) {
@@ -79,13 +85,17 @@ class Card {
         this.JoRun = document.createElement('div');
         this.JoRunImg = document.createElement('img');
         this.JoRunTextContent = document.createElement('p');
+        // tictactoe
+        this.TicTacToe = document.createElement('div');
+        this.TicTacToeImg = document.createElement('img');
+        this.TicTacToeTextContent = document.createElement('p');
     }
     createRacesCard() {
         this.racesCard.classList.add('cards__active__block');
         this.racesCard.classList.add('animation__games__search__blocks');
         this.racesCardImg.setAttribute('src', './imgs/racesBlockImgMainPage.png');
         this.racesCardImg.classList.remove('disable');
-        this.racesCardImg.classList.add('img__of__races__and__molesmash__block');
+        this.racesCardImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.racesCardTextContent.textContent = 'Races - игра в стиле 2D гонок. Вам предстоит как можно дольше продержаться на дороге, либо же, потерпеть неудачу, столкнувшись со встречной машиной. С правилами можно ознакомиться в самой игре. Удачи!';
         this.racesCardTextContent.classList.add('text__content__of__card');
         this.racesCard.appendChild(this.racesCardImg);
@@ -101,7 +111,7 @@ class Card {
         this.meloSmash.classList.add('animation__games__search__blocks');
         this.meloSmashImg.setAttribute('src', './imgs/meloSmashImg.png');
         this.meloSmashImg.classList.remove('disable');
-        this.meloSmashImg.classList.add('img__of__races__and__molesmash__block');
+        this.meloSmashImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.meloSmashTextContent.innerHTML = 'MoleSmash - популярная 2D игра, где главная задача игрока - это прибить недружелюбых животных. Главное в игре - скорость и внимательность! Удачи!';
         this.meloSmashTextContent.classList.add('text__content__of__card');
         this.meloSmash.appendChild(this.meloSmashImg);
@@ -118,7 +128,7 @@ class Card {
         this.JoRun.classList.add('animation__games__search__blocks');
         this.JoRunImg.setAttribute('src', './imgs/JoRunImg.png');
         this.JoRunImg.classList.remove('disable');
-        this.JoRunImg.classList.add('img__of__races__and__molesmash__block');
+        this.JoRunImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.JoRunTextContent.classList.add('text__content__of__jorun');
         this.JoRunTextContent.innerHTML = 'Вам предстоит сыграть за археолога по имени Джо, который наткнулся на логово динозавра и теперь вынужден спасаться бегдством. Помогите Джо сбежать, а иначе...Удачи!';
         this.JoRun.appendChild(this.JoRunImg);
@@ -128,6 +138,22 @@ class Card {
     destroyJoRunCard() {
         this.JoRun.classList.remove('cards__active__block');
         this.JoRunImg.classList.add('disable');
+    }
+    createTicTacToeCard() {
+        this.TicTacToe.classList.add('cards__active__block');
+        this.TicTacToe.classList.add('animation__games__search__blocks');
+        this.TicTacToeImg.setAttribute('src', './imgs/TicTacToeImg.png');
+        this.TicTacToeImg.classList.remove('disable');
+        this.TicTacToeImg.classList.add('img__of__races__and__molesmash__jorun__block');
+        this.TicTacToeTextContent.classList.add('text__content__of__card');
+        this.TicTacToeTextContent.innerHTML = 'TicTacToe - это известная всеми игра, в которую играл абсолютно каждый. Но сегодня это стало проще и удобнее!';
+        this.TicTacToe.appendChild(this.TicTacToeImg);
+        this.TicTacToe.appendChild(this.JoRunTextContent);
+        this.searchBlock.appendChild(this.TicTacToe);
+    }
+    destroyTicTacToeCard() {
+        this.TicTacToe.classList.remove('cards__active__block');
+        this.TicTacToeImg.classList.add('disable');
     }
 }
 let card = new Card();
