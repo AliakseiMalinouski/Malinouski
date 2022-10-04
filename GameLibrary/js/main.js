@@ -40,6 +40,12 @@ search.oninput = function (EO) {
     if (value == '' && search.value !== 'molesmash') {
         card.destroyMoleSmashCard();
     }
+    if (value == 'jorun') {
+        card.createJoRunCard();
+    }
+    if (value == '' && search.value !== ' jorun') {
+        card.destroyJoRunCard();
+    }
 }
 function addColorToSeacrhVariant(string, position, lengtH) {
     return string.slice(0, position) + '<mark>' + string.slice(position, position + lengtH) + '</mark>' + string.slice(position + lengtH);
@@ -68,6 +74,11 @@ class Card {
         this.meloSmash = document.createElement('div');
         this.meloSmashImg = document.createElement('img');
         this.meloSmashTextContent = document.createElement('p');
+        this.moleSmashSpan = document.getElementById('moleSmashSpan');
+        // joRUN
+        this.JoRun = document.createElement('div');
+        this.JoRunImg = document.createElement('img');
+        this.JoRunTextContent = document.createElement('p');
     }
     createRacesCard() {
         this.racesCard.classList.add('cards__active__block');
@@ -91,7 +102,7 @@ class Card {
         this.meloSmashImg.setAttribute('src', './imgs/meloSmashImg.png');
         this.meloSmashImg.classList.remove('disable');
         this.meloSmashImg.classList.add('img__of__races__and__molesmash__block');
-        this.meloSmashTextContent.textContent = 'MoleSmash - популярная 2D игра, где главная задача игрока - это "прибить" недружелюбых животных. Главное в игре - скорость и внимательность! Удачи!';
+        this.meloSmashTextContent.innerHTML = 'MoleSmash - популярная 2D игра, где главная задача игрока - это прибить недружелюбых животных. Главное в игре - скорость и внимательность! Удачи!';
         this.meloSmashTextContent.classList.add('text__content__of__card');
         this.meloSmash.appendChild(this.meloSmashImg);
         this.meloSmash.appendChild(this.meloSmashTextContent);
@@ -101,6 +112,22 @@ class Card {
     destroyMoleSmashCard() {
         this.meloSmash.classList.remove('cards__active__block');
         this.meloSmashImg.classList.add('disable');
+    }
+    createJoRunCard() {
+        this.JoRun.classList.add('cards__active__block');
+        this.JoRun.classList.add('animation__games__search__blocks');
+        this.JoRunImg.setAttribute('src', './imgs/JoRunImg.png');
+        this.JoRunImg.classList.remove('disable');
+        this.JoRunImg.classList.add('img__of__races__and__molesmash__block');
+        this.JoRunTextContent.classList.add('text__content__of__jorun');
+        this.JoRunTextContent.innerHTML = 'Вам предстоит сыграть за археолога по имени Джо, который наткнулся на логово динозавра и теперь вынужден спасаться бегдством. Помогите Джо сбежать, а иначе...Удачи!';
+        this.JoRun.appendChild(this.JoRunImg);
+        this.JoRun.appendChild(this.JoRunTextContent);
+        this.searchBlock.appendChild(this.JoRun);
+    }
+    destroyJoRunCard() {
+        this.JoRun.classList.remove('cards__active__block');
+        this.JoRunImg.classList.add('disable');
     }
 }
 let card = new Card();
