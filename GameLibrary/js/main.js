@@ -108,6 +108,7 @@ class Card {
         this.racesCardImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.racesCardTextContent.textContent = 'Races - игра в стиле 2D гонок. Вам предстоит как можно дольше продержаться на дороге, либо же, потерпеть неудачу, столкнувшись со встречной машиной. С правилами можно ознакомиться в самой игре. Удачи!';
         this.racesCardTextContent.classList.add('text__content__of__card');
+        this.racesCardTextContent.classList.remove('disable');
         this.racesCard.appendChild(this.racesCardImg);
         this.racesCard.appendChild(this.racesCardTextContent);
         this.searchBlock.appendChild(this.racesCard);
@@ -115,6 +116,7 @@ class Card {
     destroyRacesCard() {
         this.racesCard.classList.remove('cards__active__block');
         this.racesCardImg.classList.add('disable');
+        this.racesCardTextContent.classList.add('disable');
     }
     createMoleSmashCard() {
         this.meloSmash.classList.add('cards__active__block');
