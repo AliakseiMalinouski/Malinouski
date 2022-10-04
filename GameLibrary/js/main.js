@@ -52,6 +52,12 @@ search.oninput = function (EO) {
     if (value == '' && search.value !== 'tictactoe') {
         card.destroyTicTacToeCard();
     }
+    if (value == 'tennis') {
+        card.createTennisCard();
+    }
+    if (value == '' && search.value !== 'tennis') {
+        card.destroyTennisCard();
+    }
 }
 function addColorToSeacrhVariant(string, position, lengtH) {
     return string.slice(0, position) + '<mark>' + string.slice(position, position + lengtH) + '</mark>' + string.slice(position + lengtH);
@@ -60,7 +66,7 @@ function addColorToSeacrhVariant(string, position, lengtH) {
 search.addEventListener('paste', controlKeyDownAndPasteValuesToInput);
 search.addEventListener('keydown', controlKeyDownAndPasteValuesToInput);
 function controlKeyDownAndPasteValuesToInput(EO) {
-    if (['-', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '"', "'", '_', '+'].includes(EO.key)) {
+    if (['-', '{', '}', '*', '&', '[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '"', "'", '_', '+', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'].includes(EO.key)) {
         EO.preventDefault();
     }
 }
@@ -89,6 +95,10 @@ class Card {
         this.TicTacToe = document.createElement('div');
         this.TicTacToeImg = document.createElement('img');
         this.TicTacToeTextContent = document.createElement('p');
+        // tennis
+        this.tennis = document.createElement('div');
+        this.tennisImg = document.createElement('img');
+        this.tennisTextContent = document.createElement('p');
     }
     createRacesCard() {
         this.racesCard.classList.add('cards__active__block');
@@ -154,6 +164,22 @@ class Card {
     destroyTicTacToeCard() {
         this.TicTacToe.classList.remove('cards__active__block');
         this.TicTacToeImg.classList.add('disable');
+    }
+    createTennisCard() {
+        this.tennis.classList.add('cards__active__block');
+        this.tennis.classList.add('animation__games__search__blocks');
+        this.tennisImg.setAttribute('src', './imgs/tennisImg.png');
+        this.tennisImg.classList.remove('disable');
+        this.tennisImg.classList.add('img__of__races__and__molesmash__jorun__block');
+        this.tennisTextContent.classList.add('text__content__of__card');
+        this.tennisTextContent.innerHTML = 'Tennis - игра-теннис для двух игроков. Главная задача - забить как можно больше мячей сопернику.';
+        this.tennis.appendChild(this.tennisImg);
+        this.tennis.appendChild(this.tennisTextContent);
+        this.searchBlock.appendChild(this.tennis);
+    }
+    destroyTennisCard() {
+        this.tennis.classList.remove('cards__active__block');
+        this.tennisImg.classList.add('disable');
     }
 }
 let card = new Card();
