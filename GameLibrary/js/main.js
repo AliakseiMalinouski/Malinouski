@@ -34,6 +34,12 @@ search.oninput = function (EO) {
     if (value == '' && search.value !== 'races') {
         card.destroyRacesCard();
     }
+    if (value == 'molesmash') {
+        card.createMoleSmashCard();
+    }
+    if (value == '' && search.value !== 'molesmash') {
+        card.destroyMoleSmashCard();
+    }
 }
 function addColorToSeacrhVariant(string, position, lengtH) {
     return string.slice(0, position) + '<mark>' + string.slice(position, position + lengtH) + '</mark>' + string.slice(position + lengtH);
@@ -48,31 +54,53 @@ function controlKeyDownAndPasteValuesToInput(EO) {
 }
 // добавить сообщение о отсуствии вариантов
 search.addEventListener('blur', function (EO) {
-   console.log(searchVariants.length) 
+    EO = EO || window.event;
 });
 // при получении полного значения в input, формируем "карточку игры"
 class Card {
     constructor() {
+        // races
         this.racesCard = document.createElement('div');
         this.racesCardImg = document.createElement('img');
         this.racesCardTextContent = document.createElement('p');
         this.searchBlock = document.querySelector('.container__search__block');
+        // melosmash
+        this.meloSmash = document.createElement('div');
+        this.meloSmashImg = document.createElement('img');
+        this.meloSmashTextContent = document.createElement('p');
     }
     createRacesCard() {
-        this.racesCard.classList.add('races__active__block');
+        this.racesCard.classList.add('cards__active__block');
         this.racesCard.classList.add('animation__games__search__blocks');
         this.racesCardImg.setAttribute('src', './imgs/racesBlockImgMainPage.png');
         this.racesCardImg.classList.remove('disable');
-        this.racesCardImg.classList.add('img__of__races__block');
+        this.racesCardImg.classList.add('img__of__races__and__molesmash__block');
         this.racesCardTextContent.textContent = 'Races - игра в стиле 2D гонок. Вам предстоит как можно дольше продержаться на дороге, либо же, потерпеть неудачу, столкнувшись со встречной машиной. С правилами можно ознакомиться в самой игре. Удачи!';
-        this.racesCardTextContent.classList.add('text__content_of__races__card');
+        this.racesCardTextContent.classList.add('text__content__of__card');
         this.racesCard.appendChild(this.racesCardImg);
         this.racesCard.appendChild(this.racesCardTextContent);
         this.searchBlock.appendChild(this.racesCard);
     }
     destroyRacesCard() {
-        this.racesCard.classList.remove('races__active__block');
+        this.racesCard.classList.remove('cards__active__block');
         this.racesCardImg.classList.add('disable');
+    }
+    createMoleSmashCard() {
+        this.meloSmash.classList.add('cards__active__block');
+        this.meloSmash.classList.add('animation__games__search__blocks');
+        this.meloSmashImg.setAttribute('src', './imgs/meloSmashImg.png');
+        this.meloSmashImg.classList.remove('disable');
+        this.meloSmashImg.classList.add('img__of__races__and__molesmash__block');
+        this.meloSmashTextContent.textContent = 'MoleSmash - популярная 2D игра, где главная задача игрока - это "прибить" недружелюбых животных. Главное в игре - скорость и внимательность! Удачи!';
+        this.meloSmashTextContent.classList.add('text__content__of__card');
+        this.meloSmash.appendChild(this.meloSmashImg);
+        this.meloSmash.appendChild(this.meloSmashTextContent);
+        this.searchBlock.appendChild(this.meloSmash);
+
+    }
+    destroyMoleSmashCard() {
+        this.meloSmash.classList.remove('cards__active__block');
+        this.meloSmashImg.classList.add('disable');
     }
 }
 let card = new Card();

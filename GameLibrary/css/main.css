@@ -124,7 +124,7 @@ mark {
     transform: scale(0); }
   to {
     transform: scale(1.05); } }
-    .search__block .container .races__active__block {
+    .search__block .container .cards__active__block {
       width: 530px;
       height: auto;
       background-color: #1f1f1f;
@@ -133,13 +133,13 @@ mark {
       top: 110px;
       display: flex;
       justify-content: space-between; }
-      .search__block .container .races__active__block .img__of__races__block {
+      .search__block .container .cards__active__block .img__of__races__and__molesmash__block {
         width: 247px;
         height: 199px;
         margin-right: 15px; }
-      .search__block .container .races__active__block .text__content_of__races__card {
+      .search__block .container .cards__active__block .text__content__of__card {
         font-size: 10px;
-        color: #41e6e8;
+        color: #8A2BE2;
         line-height: 25px;
         width: 60%; }
 
