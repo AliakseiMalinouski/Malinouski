@@ -201,9 +201,14 @@ mark {
         display: flex;
         transition: all ease 1s; }
         .hero .container #slider #slider__way div:nth-child(1) {
+          padding-top: 15px;
+          padding-left: 40px;
+          line-height: 25px;
           width: 320px;
           height: 320px;
           background-color: red; }
+          .hero .container #slider #slider__way div:nth-child(1) span {
+            color: red; }
         .hero .container #slider #slider__way div:nth-child(2) {
           width: 320px;
           height: 320px;

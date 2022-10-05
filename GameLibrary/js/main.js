@@ -250,18 +250,22 @@ let intervalForCollectionSpansOfSentencesAboutGames = setInterval(function () {
 function changeColorSpan() {
     if (counterForCollectionSpansOfSentencesAboutGames == 2) {
         spanH.firstColorSpan.style.color = colorsH.red;
+        spanH.firstColorSpan.style.transition = '1s';
         setTimeout(() => spanH.firstColorSpan.style.color = colorsH.white, 800);
     }
     if (counterForCollectionSpansOfSentencesAboutGames == 4) {
         spanH.secondColorSpan.style.color = colorsH.yellow;
+        spanH.secondColorSpan.style.transition = '1s';
         setTimeout(() => spanH.secondColorSpan.style.color = colorsH.white, 800);
     }
     if (counterForCollectionSpansOfSentencesAboutGames == 6) {
         spanH.thirdColorSpan.style.color = colorsH.lime;
+        spanH.thirdColorSpan.style.color = '1s';
         setTimeout(() => spanH.thirdColorSpan.style.color = colorsH.white, 800);
     }
     if (counterForCollectionSpansOfSentencesAboutGames == 8) {
         spanH.fourthColorSpan.style.color = colorsH.pink;
+        spanH.fourthColorSpan.style.transition = '1s';
         setTimeout(() => spanH.fourthColorSpan.style.color = colorsH.white);
     }
     if (counterForCollectionSpansOfSentencesAboutGames > 8) {
