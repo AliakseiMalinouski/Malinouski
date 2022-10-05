@@ -63,7 +63,7 @@ search.oninput = function (EO) {
     else if (value == '' && search.value !== 'tennis') {
         card.destroyTennisCard();
     }
-    if ((search.value !== 'races' && search.value !== 'molesmash' && search.value !== 'jorun' && search.value !== 'tictactoe' && search.value !== 'tennis') && (search.value.length > 9)) {
+    if ((search.value !== 'races' && search.value !== 'molesmash' && search.value !== 'jorun' && search.value !== 'tictactoe' && search.value !== 'tennis') && (search.value.length >= 9)) {
         card.isNotDefinedCard();
     }
     else if ((search.value !== 'races' && search.value !== 'molesmash' && search.value !== 'jorun' && search.value !== 'tictactoe' && search.value !== 'tennis') && (search.value == '')) {
@@ -81,9 +81,11 @@ function controlKeyDownAndPasteValuesToInput(EO) {
         EO.preventDefault();
     }
 }
-// добавить сообщение о отсуствии вариантов
-search.addEventListener('blur', function (EO) {
+// убираем дефолтный border при фокусе
+search.addEventListener('focus', function (EO) {
     EO = EO || window.event;
+    search.style.outline = 'none';
+    search.style.outlineOffset = 'none';
 });
 // при получении полного значения в input, формируем "карточку игры"
 class Card {
