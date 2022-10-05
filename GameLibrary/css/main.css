@@ -142,8 +142,7 @@ mark {
       display: flex;
       justify-content: space-between;
       border-top-right-radius: 16px;
-      border-bottom-right-radius: 16px;
-      border: 2px solid #C71585; }
+      border-bottom-right-radius: 16px; }
       .search__block .container .cards__active__block .img__of__races__and__molesmash__jorun__block {
         width: 247px;
         height: 199px;
