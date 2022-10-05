@@ -260,11 +260,13 @@ mark {
     padding-top: 100px;
     border: 1px solid $white;
     .container {
+        padding: 0.1px;
         #slider {
             border: 1px solid $white;
             width: 320px;
             height: 320px;
             overflow: hidden;
+            margin-bottom: 50px;
             #slider__way {
                 position: relative;
                 left: 0;

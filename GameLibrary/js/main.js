@@ -269,9 +269,9 @@ const slider = document.getElementById('slider');
 const sliderWay = document.getElementById('slider__way');
 // создаём переменную, куда будем складывать прокрученые пиксели
 let xPosSliderWay = 0;
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
-next.addEventListener('click', function (EO) {
+let previousButtonSlider = document.getElementById('prev');
+let nextButtonSlider = document.getElementById('next');
+nextButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
     xPosSliderWay += 320;
     console.log(xPosSliderWay)
@@ -281,10 +281,9 @@ next.addEventListener('click', function (EO) {
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
 });
-prev.addEventListener('click', function (EO) {
+previousButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
     xPosSliderWay -= 320;
-    console.log(xPosSliderWay)
     if (xPosSliderWay < 0) {
         xPosSliderWay = 640;
     }
