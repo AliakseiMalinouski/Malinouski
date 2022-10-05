@@ -212,3 +212,39 @@ class Card {
     }
 }
 let card = new Card();
+// получаем и анимируем фразу про игры после поиска
+let spanH = {
+    firstColorSpan: document.getElementById('first__color__span'),
+    secondColorSpan: document.getElementById('second__color__span'),
+    thirdColorSpan: document.getElementById('third__color__span'),
+}
+let colorsH = {
+    red: 'red',
+    yellow: 'yellow',
+    white: 'white',
+    lime: 'lime',
+}
+let counterForCollectionSpansOfSentencesAboutGames = 0;
+let intervalForCollectionSpansOfSentencesAboutGames = setInterval(function () {
+counterForCollectionSpansOfSentencesAboutGames = counterForCollectionSpansOfSentencesAboutGames + 1;
+console.log(counterForCollectionSpansOfSentencesAboutGames)
+    }, 1000);
+function changeColorSpan() {
+    if (counterForCollectionSpansOfSentencesAboutGames == 2) {
+        spanH.firstColorSpan.style.color = colorsH.red;
+        setTimeout(() => spanH.firstColorSpan.style.color = colorsH.white, 1000);
+    }
+    if (counterForCollectionSpansOfSentencesAboutGames == 4) {
+        spanH.secondColorSpan.style.color = colorsH.yellow;
+        setTimeout(() => spanH.secondColorSpan.style.color = colorsH.white, 1000);
+    }
+    if (counterForCollectionSpansOfSentencesAboutGames == 6) {
+        spanH.thirdColorSpan.style.color = colorsH.lime;
+        setTimeout(() => spanH.thirdColorSpan.style.color = colorsH.white, 1000);
+    }
+    if (counterForCollectionSpansOfSentencesAboutGames > 6) {
+        counterForCollectionSpansOfSentencesAboutGames = 0;
+    }
+    setTimeout(changeColorSpan, 0);
+}
+changeColorSpan();

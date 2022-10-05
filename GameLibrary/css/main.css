@@ -100,7 +100,8 @@ mark {
   .search__block .container {
     border: 1px solid white;
     position: relative;
-    height: 500px; }
+    height: 500px;
+    padding: 0.1px; }
     .search__block .container .search {
       width: 600px;
       height: 50px;
@@ -163,5 +164,11 @@ mark {
       top: 180px;
       left: 320px;
       font-size: 26px; }
+    .search__block .container .sentences__about__games {
+      color: white;
+      margin-top: 90px;
+      margin-left: 40px;
+      line-height: 25px;
+      animation: merc 1.5s infinite alternate; }
 
 /*# sourceMappingURL=main.css.map */

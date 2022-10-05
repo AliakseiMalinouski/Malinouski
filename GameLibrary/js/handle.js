@@ -226,7 +226,6 @@ arrayAllImgsOfDocument.forEach(element => {
         setTimeout(function () {
             flag = false;
             element.addEventListener('click', clickOnAnimal);
-            console.log('WORK!!!')
         }, 900);
     }
     });
