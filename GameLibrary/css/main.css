@@ -170,5 +170,7 @@ mark {
       margin-left: 40px;
       line-height: 25px;
       animation: merc 1.5s infinite alternate; }
+    .search__block .container .add__new__margin__top {
+      margin-top: 200px; }
 
 /*# sourceMappingURL=main.css.map */
