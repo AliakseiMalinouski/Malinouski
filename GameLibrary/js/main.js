@@ -33,7 +33,7 @@ search.oninput = function (EO) {
         card.destroyAlertNotDefinedCard();
         search.setAttribute('maxlength', '5');
     }
-    else if (value == '' && search.value !== 'races') {
+    else if (value == '' || search.value !== 'races') {
         card.destroyRacesCard();
     }
     if (value == 'molesmash') {
@@ -41,7 +41,7 @@ search.oninput = function (EO) {
         card.destroyAlertNotDefinedCard();
         search.setAttribute('maxlength', '9');
     }
-    else if (value == '' && search.value !== 'molesmash') {
+    else if (value == '' || search.value !== 'molesmash') {
         card.destroyMoleSmashCard();
     }
     if (value == 'jorun') {
@@ -49,7 +49,7 @@ search.oninput = function (EO) {
         card.destroyAlertNotDefinedCard();
         search.setAttribute('maxlength', '5');
     }
-    else if (value == '' && search.value !== 'jorun') {
+    else if (value == '' || search.value !== 'jorun') {
         card.destroyJoRunCard();
     }
     if (value == 'tictactoe') {
@@ -57,7 +57,7 @@ search.oninput = function (EO) {
         card.destroyAlertNotDefinedCard();
         search.setAttribute('maxlength', '9');
     }
-    else if (value == '' && search.value !== 'tictactoe') {
+    else if (value == '' || search.value !== 'tictactoe') {
         card.destroyTicTacToeCard();
     }
     if (value == 'tennis') {
@@ -65,7 +65,7 @@ search.oninput = function (EO) {
         card.destroyAlertNotDefinedCard();
         search.setAttribute('maxlength', '6');
     }
-    else if (value == '' && search.value !== 'tennis') {
+    else if (value == '' || search.value !== 'tennis') {
         card.destroyTennisCard();
     }
     if ((search.value !== 'races' && search.value !== 'molesmash' && search.value !== 'jorun' && search.value !== 'tictactoe' && search.value !== 'tennis') && (search.value.length >= 9)) {
@@ -126,7 +126,7 @@ class Card {
         this.racesCardTextContent.textContent = 'Races - игра в стиле 2D гонок. Вам предстоит как можно дольше продержаться на дороге, либо же, потерпеть неудачу, столкнувшись со встречной машиной. С правилами можно ознакомиться в самой игре. Удачи!';
         this.racesCardTextContent.classList.add('text__content__of__card');
         this.racesCardTextContent.classList.remove('disable');
-        this.sentencesAboutGames.classList.add('add__new__margin__top');
+        this.sentencesAboutGames.classList.add('add__new__margin__top3');
         this.racesCard.appendChild(this.racesCardImg);
         this.racesCard.appendChild(this.racesCardTextContent);
         this.searchBlock.appendChild(this.racesCard);
@@ -135,7 +135,7 @@ class Card {
         this.racesCard.classList.remove('cards__active__block');
         this.racesCardImg.classList.add('disable');
         this.racesCardTextContent.classList.add('disable');
-        this.sentencesAboutGames.classList.remove('add__new__margin__top');
+        this.sentencesAboutGames.classList.remove('add__new__margin__top3');
     }
     createMoleSmashCard() {
         this.meloSmash.classList.add('cards__active__block');
@@ -146,7 +146,7 @@ class Card {
         this.meloSmashTextContent.innerHTML = 'MoleSmash - популярная 2D игра, где главная задача игрока - это прибить недружелюбых животных. Главное в игре - скорость и внимательность! Удачи!';
         this.meloSmashTextContent.classList.remove('disable');
         this.meloSmashTextContent.classList.add('text__content__of__card');
-        this.sentencesAboutGames.classList.add('add__new__margin__top');
+        this.sentencesAboutGames.classList.add('add__new__margin__top2');
         this.meloSmash.appendChild(this.meloSmashImg);
         this.meloSmash.appendChild(this.meloSmashTextContent);
         this.searchBlock.appendChild(this.meloSmash);
@@ -156,7 +156,7 @@ class Card {
         this.meloSmash.classList.remove('cards__active__block');
         this.meloSmashImg.classList.add('disable');
         this.meloSmashTextContent.classList.add('disable');
-        this.sentencesAboutGames.classList.remove('add__new__margin__top');
+        this.sentencesAboutGames.classList.remove('add__new__margin__top2');
     }
     createJoRunCard() {
         this.JoRun.classList.add('cards__active__block');
@@ -167,7 +167,7 @@ class Card {
         this.JoRunTextContent.classList.add('text__content__of__jorun');
         this.JoRunTextContent.innerHTML = 'Вам предстоит сыграть за археолога по имени Джо, который наткнулся на логово динозавра и теперь вынужден спасаться бегдством. Помогите Джо сбежать, а иначе...Удачи!';
         this.JoRunTextContent.classList.remove('disable');
-        this.sentencesAboutGames.classList.add('add__new__margin__top');
+        this.sentencesAboutGames.classList.add('add__new__margin__top1');
         this.JoRun.appendChild(this.JoRunImg);
         this.JoRun.appendChild(this.JoRunTextContent);
         this.searchBlock.appendChild(this.JoRun);
@@ -176,7 +176,7 @@ class Card {
         this.JoRun.classList.remove('cards__active__block');
         this.JoRunImg.classList.add('disable');
         this.JoRunTextContent.classList.add('disable');
-        this.sentencesAboutGames.classList.remove('add__new__margin__top');
+        this.sentencesAboutGames.classList.remove('add__new__margin__top1');
     }
     createTicTacToeCard() {
         this.TicTacToe.classList.add('cards__active__block');
@@ -187,7 +187,7 @@ class Card {
         this.TicTacToeTextContent.classList.add('text__content__of__card');
         this.TicTacToeTextContent.innerHTML = 'TicTacToe - это известная всеми игра, в которую играл абсолютно каждый. Но сегодня это стало проще и удобнее!';
         this.TicTacToeTextContent.classList.remove('disable');
-        this.sentencesAboutGames.classList.add('add__new__margin__top');
+        this.sentencesAboutGames.classList.add('add__new__margin__top1');
         this.TicTacToe.appendChild(this.TicTacToeImg);
         this.TicTacToe.appendChild(this.TicTacToeTextContent);
         this.searchBlock.appendChild(this.TicTacToe);

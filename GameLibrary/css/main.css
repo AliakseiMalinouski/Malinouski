@@ -170,7 +170,17 @@ mark {
       line-height: 25px;
       animation: merc 1.5s infinite alternate; }
     .search__block .container .add__new__margin__top {
-      margin-top: 200px; }
+      margin-top: 200px;
+      transition: 1.2s; }
+    .search__block .container .add__new__margin__top1 {
+      margin-top: 200px;
+      transition: 1.2s; }
+    .search__block .container .add__new__margin__top2 {
+      margin-top: 200px;
+      transition: 1.2s; }
+    .search__block .container .add__new__margin__top3 {
+      margin-top: 200px;
+      transition: 1.2s; }
 
 .hero {
   padding-top: 100px;
