@@ -256,3 +256,38 @@ mark {
         }
     }
 }
+.hero {
+    padding-top: 100px;
+    border: 1px solid $white;
+    .container {
+        #slider {
+            border: 1px solid $white;
+            width: 320px;
+            height: 320px;
+            overflow: hidden;
+            #slider__way {
+                position: relative;
+                left: 0;
+                width: 960px;
+                height: 320px;
+                display: flex;
+                transition: all ease 1s;
+                div:nth-child(1) {
+                    width: 320px;
+                    height: 320px;
+                    background-color: red;
+                }
+                div:nth-child(2) {
+                    width: 320px;
+                    height: 320px;
+                    background-color: green;
+                }
+                div:nth-child(3) {
+                    width: 320px;
+                    height: 320px;
+                    background-color: orange;
+                }
+            }
+        }
+    }
+}

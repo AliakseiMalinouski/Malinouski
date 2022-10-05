@@ -172,4 +172,32 @@ mark {
     .search__block .container .add__new__margin__top {
       margin-top: 200px; }
 
+.hero {
+  padding-top: 100px;
+  border: 1px solid white; }
+  .hero .container #slider {
+    border: 1px solid white;
+    width: 320px;
+    height: 320px;
+    overflow: hidden; }
+    .hero .container #slider #slider__way {
+      position: relative;
+      left: 0;
+      width: 960px;
+      height: 320px;
+      display: flex;
+      transition: all ease 1s; }
+      .hero .container #slider #slider__way div:nth-child(1) {
+        width: 320px;
+        height: 320px;
+        background-color: red; }
+      .hero .container #slider #slider__way div:nth-child(2) {
+        width: 320px;
+        height: 320px;
+        background-color: green; }
+      .hero .container #slider #slider__way div:nth-child(3) {
+        width: 320px;
+        height: 320px;
+        background-color: orange; }
+
 /*# sourceMappingURL=main.css.map */

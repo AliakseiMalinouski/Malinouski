@@ -264,3 +264,31 @@ function changeColorSpan() {
     setTimeout(changeColorSpan, 0);
 }
 changeColorSpan();
+// делаем слайдер
+const slider = document.getElementById('slider');
+const sliderWay = document.getElementById('slider__way');
+// создаём переменную, куда будем складывать прокрученые пиксели
+let xPosSliderWay = 0;
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
+next.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    xPosSliderWay += 320;
+    console.log(xPosSliderWay)
+    if (xPosSliderWay >= 960) {
+        xPosSliderWay = 0;
+        console.log('ye')
+    }
+    sliderWay.style.left = -xPosSliderWay + 'px';
+});
+prev.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    xPosSliderWay -= 320;
+    console.log(xPosSliderWay)
+    if (xPosSliderWay < 0) {
+        xPosSliderWay = 640;
+    }
+    sliderWay.style.left = -xPosSliderWay + 'px';
+});
+
+
