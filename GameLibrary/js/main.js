@@ -31,6 +31,7 @@ search.oninput = function (EO) {
     if (value == 'races') {
         card.createRacesCard();
         card.destroyAlertNotDefinedCard();
+        search.setAttribute('maxlength', '5');
     }
     else if (value == '' && search.value !== 'races') {
         card.destroyRacesCard();
@@ -38,6 +39,7 @@ search.oninput = function (EO) {
     if (value == 'molesmash') {
         card.createMoleSmashCard();
         card.destroyAlertNotDefinedCard();
+        search.setAttribute('maxlength', '9');
     }
     else if (value == '' && search.value !== 'molesmash') {
         card.destroyMoleSmashCard();
@@ -45,6 +47,7 @@ search.oninput = function (EO) {
     if (value == 'jorun') {
         card.createJoRunCard();
         card.destroyAlertNotDefinedCard();
+        search.setAttribute('maxlength', '5');
     }
     else if (value == '' && search.value !== 'jorun') {
         card.destroyJoRunCard();
@@ -52,6 +55,7 @@ search.oninput = function (EO) {
     if (value == 'tictactoe') {
         card.createTicTacToeCard();
         card.destroyAlertNotDefinedCard();
+        search.setAttribute('maxlength', '9');
     }
     else if (value == '' && search.value !== 'tictactoe') {
         card.destroyTicTacToeCard();
@@ -59,6 +63,7 @@ search.oninput = function (EO) {
     if (value == 'tennis') {
         card.createTennisCard();
         card.destroyAlertNotDefinedCard();
+        search.setAttribute('maxlength', '6');
     }
     else if (value == '' && search.value !== 'tennis') {
         card.destroyTennisCard();
@@ -68,6 +73,7 @@ search.oninput = function (EO) {
     }
     else if ((search.value !== 'races' && search.value !== 'molesmash' && search.value !== 'jorun' && search.value !== 'tictactoe' && search.value !== 'tennis') && (search.value == '')) {
         card.destroyAlertNotDefinedCard();
+        search.removeAttribute('maxlength');
     }
 }
 function addColorToSeacrhVariant(string, position, lengtH) {
@@ -269,8 +275,8 @@ const slider = document.getElementById('slider');
 const sliderWay = document.getElementById('slider__way');
 // создаём переменную, куда будем складывать прокрученые пиксели
 let xPosSliderWay = 0;
-let previousButtonSlider = document.getElementById('prev');
-let nextButtonSlider = document.getElementById('next');
+let previousButtonSlider = document.getElementById('previous__button__slider');
+let nextButtonSlider = document.getElementById('next__button__slider');
 nextButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
     xPosSliderWay += 320;
