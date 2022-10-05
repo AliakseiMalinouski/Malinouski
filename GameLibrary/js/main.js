@@ -217,32 +217,37 @@ let spanH = {
     firstColorSpan: document.getElementById('first__color__span'),
     secondColorSpan: document.getElementById('second__color__span'),
     thirdColorSpan: document.getElementById('third__color__span'),
+    fourthColorSpan: document.getElementById('fourth__color__span'),
 }
 let colorsH = {
     red: 'red',
     yellow: 'yellow',
     white: 'white',
     lime: 'lime',
+    pink: '#FF00FF',
 }
 let counterForCollectionSpansOfSentencesAboutGames = 0;
 let intervalForCollectionSpansOfSentencesAboutGames = setInterval(function () {
-counterForCollectionSpansOfSentencesAboutGames = counterForCollectionSpansOfSentencesAboutGames + 1;
-console.log(counterForCollectionSpansOfSentencesAboutGames)
-    }, 1000);
+    counterForCollectionSpansOfSentencesAboutGames = counterForCollectionSpansOfSentencesAboutGames + 1;
+}, 800);
 function changeColorSpan() {
     if (counterForCollectionSpansOfSentencesAboutGames == 2) {
         spanH.firstColorSpan.style.color = colorsH.red;
-        setTimeout(() => spanH.firstColorSpan.style.color = colorsH.white, 1000);
+        setTimeout(() => spanH.firstColorSpan.style.color = colorsH.white, 800);
     }
     if (counterForCollectionSpansOfSentencesAboutGames == 4) {
         spanH.secondColorSpan.style.color = colorsH.yellow;
-        setTimeout(() => spanH.secondColorSpan.style.color = colorsH.white, 1000);
+        setTimeout(() => spanH.secondColorSpan.style.color = colorsH.white, 800);
     }
     if (counterForCollectionSpansOfSentencesAboutGames == 6) {
         spanH.thirdColorSpan.style.color = colorsH.lime;
-        setTimeout(() => spanH.thirdColorSpan.style.color = colorsH.white, 1000);
+        setTimeout(() => spanH.thirdColorSpan.style.color = colorsH.white, 800);
     }
-    if (counterForCollectionSpansOfSentencesAboutGames > 6) {
+    if (counterForCollectionSpansOfSentencesAboutGames == 8) {
+        spanH.fourthColorSpan.style.color = colorsH.pink;
+        setTimeout(() => spanH.fourthColorSpan.style.color = colorsH.white);
+    }
+    if (counterForCollectionSpansOfSentencesAboutGames > 8) {
         counterForCollectionSpansOfSentencesAboutGames = 0;
     }
     setTimeout(changeColorSpan, 0);
