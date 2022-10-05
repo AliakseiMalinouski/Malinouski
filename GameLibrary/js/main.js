@@ -30,33 +30,44 @@ search.oninput = function (EO) {
     }
     if (value == 'races') {
         card.createRacesCard();
+        card.destroyAlertNotDefinedCard();
     }
-    if (value == '' && search.value !== 'races') {
+    else if (value == '' && search.value !== 'races') {
         card.destroyRacesCard();
     }
     if (value == 'molesmash') {
         card.createMoleSmashCard();
+        card.destroyAlertNotDefinedCard();
     }
-    if (value == '' && search.value !== 'molesmash') {
+    else if (value == '' && search.value !== 'molesmash') {
         card.destroyMoleSmashCard();
     }
     if (value == 'jorun') {
         card.createJoRunCard();
+        card.destroyAlertNotDefinedCard();
     }
-    if (value == '' && search.value !== 'jorun') {
+    else if (value == '' && search.value !== 'jorun') {
         card.destroyJoRunCard();
     }
     if (value == 'tictactoe') {
         card.createTicTacToeCard();
+        card.destroyAlertNotDefinedCard();
     }
-    if (value == '' && search.value !== 'tictactoe') {
+    else if (value == '' && search.value !== 'tictactoe') {
         card.destroyTicTacToeCard();
     }
     if (value == 'tennis') {
         card.createTennisCard();
+        card.destroyAlertNotDefinedCard();
     }
-    if (value == '' && search.value !== 'tennis') {
+    else if (value == '' && search.value !== 'tennis') {
         card.destroyTennisCard();
+    }
+    if ((search.value !== 'races' && search.value !== 'molesmash' && search.value !== 'jorun' && search.value !== 'tictactoe' && search.value !== 'tennis') && (search.value.length > 9)) {
+        card.isNotDefinedCard();
+    }
+    else if ((search.value !== 'races' && search.value !== 'molesmash' && search.value !== 'jorun' && search.value !== 'tictactoe' && search.value !== 'tennis') && (search.value == '')) {
+        card.destroyAlertNotDefinedCard();
     }
 }
 function addColorToSeacrhVariant(string, position, lengtH) {
@@ -82,23 +93,20 @@ class Card {
         this.racesCardImg = document.createElement('img');
         this.racesCardTextContent = document.createElement('p');
         this.searchBlock = document.querySelector('.container__search__block');
-        // melosmash
         this.meloSmash = document.createElement('div');
         this.meloSmashImg = document.createElement('img');
         this.meloSmashTextContent = document.createElement('p');
         this.moleSmashSpan = document.getElementById('moleSmashSpan');
-        // joRUN
         this.JoRun = document.createElement('div');
         this.JoRunImg = document.createElement('img');
         this.JoRunTextContent = document.createElement('p');
-        // tictactoe
         this.TicTacToe = document.createElement('div');
         this.TicTacToeImg = document.createElement('img');
         this.TicTacToeTextContent = document.createElement('p');
-        // tennis
         this.tennis = document.createElement('div');
         this.tennisImg = document.createElement('img');
         this.tennisTextContent = document.createElement('p');
+        this.alertNotDefinedCard = document.createElement('span');
     }
     createRacesCard() {
         this.racesCard.classList.add('cards__active__block');
@@ -125,6 +133,7 @@ class Card {
         this.meloSmashImg.classList.remove('disable');
         this.meloSmashImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.meloSmashTextContent.innerHTML = 'MoleSmash - популярная 2D игра, где главная задача игрока - это прибить недружелюбых животных. Главное в игре - скорость и внимательность! Удачи!';
+        this.meloSmashTextContent.classList.remove('disable');
         this.meloSmashTextContent.classList.add('text__content__of__card');
         this.meloSmash.appendChild(this.meloSmashImg);
         this.meloSmash.appendChild(this.meloSmashTextContent);
@@ -134,6 +143,7 @@ class Card {
     destroyMoleSmashCard() {
         this.meloSmash.classList.remove('cards__active__block');
         this.meloSmashImg.classList.add('disable');
+        this.meloSmashTextContent.classList.add('disable');
     }
     createJoRunCard() {
         this.JoRun.classList.add('cards__active__block');
@@ -143,6 +153,7 @@ class Card {
         this.JoRunImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.JoRunTextContent.classList.add('text__content__of__jorun');
         this.JoRunTextContent.innerHTML = 'Вам предстоит сыграть за археолога по имени Джо, который наткнулся на логово динозавра и теперь вынужден спасаться бегдством. Помогите Джо сбежать, а иначе...Удачи!';
+        this.JoRunTextContent.classList.remove('disable');
         this.JoRun.appendChild(this.JoRunImg);
         this.JoRun.appendChild(this.JoRunTextContent);
         this.searchBlock.appendChild(this.JoRun);
@@ -150,6 +161,7 @@ class Card {
     destroyJoRunCard() {
         this.JoRun.classList.remove('cards__active__block');
         this.JoRunImg.classList.add('disable');
+        this.JoRunTextContent.classList.add('disable');
     }
     createTicTacToeCard() {
         this.TicTacToe.classList.add('cards__active__block');
@@ -159,6 +171,7 @@ class Card {
         this.TicTacToeImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.TicTacToeTextContent.classList.add('text__content__of__card');
         this.TicTacToeTextContent.innerHTML = 'TicTacToe - это известная всеми игра, в которую играл абсолютно каждый. Но сегодня это стало проще и удобнее!';
+        this.TicTacToeTextContent.classList.remove('disable');
         this.TicTacToe.appendChild(this.TicTacToeImg);
         this.TicTacToe.appendChild(this.JoRunTextContent);
         this.searchBlock.appendChild(this.TicTacToe);
@@ -166,6 +179,7 @@ class Card {
     destroyTicTacToeCard() {
         this.TicTacToe.classList.remove('cards__active__block');
         this.TicTacToeImg.classList.add('disable');
+        this.TicTacToeTextContent.classList.add('disable');
     }
     createTennisCard() {
         this.tennis.classList.add('cards__active__block');
@@ -175,6 +189,7 @@ class Card {
         this.tennisImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.tennisTextContent.classList.add('text__content__of__card');
         this.tennisTextContent.innerHTML = 'Tennis - игра-теннис для двух игроков. Главная задача - забить как можно больше мячей сопернику.';
+        this.tennisTextContent.classList.remove('disable');
         this.tennis.appendChild(this.tennisImg);
         this.tennis.appendChild(this.tennisTextContent);
         this.searchBlock.appendChild(this.tennis);
@@ -182,6 +197,16 @@ class Card {
     destroyTennisCard() {
         this.tennis.classList.remove('cards__active__block');
         this.tennisImg.classList.add('disable');
+        this.tennisTextContent.classList.add('disable');
+    }
+    isNotDefinedCard() {
+        this.alertNotDefinedCard.innerHTML = 'Совпадении не найдено';
+        this.alertNotDefinedCard.classList.add('alert__not__defined__card');
+        this.alertNotDefinedCard.classList.remove('disable');
+        this.searchBlock.appendChild(this.alertNotDefinedCard);
+    }
+    destroyAlertNotDefinedCard() {
+        this.alertNotDefinedCard.classList.add('disable');
     }
 }
 let card = new Card();

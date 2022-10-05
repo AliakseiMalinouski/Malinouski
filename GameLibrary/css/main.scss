@@ -14,9 +14,10 @@ $orange: orange;
 $purple: purple;
 $dark-purple: #8A2BE2;
 $very-dark-blue: #1f1f1f;
+$pink: #C71585;
 $red: red;
 $fz: 16px;
-$fz26: $fz + 26;
+$fz26: $fz + 10;
 body {
     min-height: 100%;
     min-width: 100%;
@@ -206,6 +207,9 @@ mark {
             top: 110px;
             display: flex;
             justify-content: space-between;
+            border-top-right-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border: 2px solid #C71585;
             .img__of__races__and__molesmash__jorun__block {
                 width: 247px;
                 height: 199px;
@@ -223,6 +227,13 @@ mark {
                 line-height: 25px;
                 width: 60%;
             }
+        }
+        .alert__not__defined__card {
+            color: $red;
+            position: absolute;
+            top: 180px;
+            left: 320px;
+            font-size: $fz26;
         }
     }
 }
