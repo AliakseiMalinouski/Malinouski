@@ -17,6 +17,7 @@ $very-dark-blue: #1f1f1f;
 $pink: #C71585;
 $blue: #1E90FF;
 $lime: 	#00FF00;
+$races-name: #8FBC8F;
 $red: red;
 $huq: #F0FFF0;
 $fz: 16px;
@@ -27,6 +28,7 @@ body {
     background-color: $black;
     font-family: 'Press Start 2P', cursive;
     font-size: $fz;
+    height: 10000px;
 }
 a {
     text-decoration: none;
@@ -397,6 +399,52 @@ mark {
             }
             span:nth-child(4) {
                 color: $dark-purple;
+            }
+        }
+    }
+}
+.blocks__games {
+    padding-top: 100px;
+    .container {
+        padding: 0.1px;
+        .games__without__end {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: auto;
+            div {
+                width: 400px;
+                height: 250px;
+                padding-top: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 15px;
+                background-color: $very-dark-blue;
+                border-radius: 13px;
+                position: relative;
+                a {
+                    color: $red;
+                    display: block;
+                    margin-top: 70px;
+                    text-align: center;
+                    font-size: $fz + 20;
+                }
+            }
+            .races__block {
+                .name__races__block {
+                    text-align: center;
+                    color: $races-name;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+            }
+            .jorun__block {
+                .name__jorun__block {
+                    text-align: center;
+                    color: #ADFF2F;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
             }
         }
     }

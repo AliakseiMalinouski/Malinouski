@@ -12,7 +12,8 @@ body {
   min-width: 100%;
   background-color: black;
   font-family: 'Press Start 2P', cursive;
-  font-size: 16px; }
+  font-size: 16px;
+  height: 10000px; }
 
 a {
   text-decoration: none; }
@@ -291,5 +292,41 @@ mark {
         color: #C71585; }
       .hero .container .text__about__pixelPack span:nth-child(4) {
         color: #8A2BE2; }
+
+.blocks__games {
+  padding-top: 100px; }
+  .blocks__games .container {
+    padding: 0.1px; }
+    .blocks__games .container .games__without__end {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: auto; }
+      .blocks__games .container .games__without__end div {
+        width: 400px;
+        height: 250px;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        background-color: #1f1f1f;
+        border-radius: 13px;
+        position: relative; }
+        .blocks__games .container .games__without__end div a {
+          color: red;
+          display: block;
+          margin-top: 70px;
+          text-align: center;
+          font-size: 36px; }
+      .blocks__games .container .games__without__end .races__block .name__races__block {
+        text-align: center;
+        color: #8FBC8F;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .blocks__games .container .games__without__end .jorun__block .name__jorun__block {
+        text-align: center;
+        color: #ADFF2F;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
