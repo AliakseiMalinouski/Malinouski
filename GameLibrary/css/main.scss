@@ -18,6 +18,7 @@ $pink: #C71585;
 $blue: #1E90FF;
 $lime: 	#00FF00;
 $races-name: #8FBC8F;
+$tennis-name: #00FFFF;
 $red: red;
 $huq: #F0FFF0;
 $fz: 16px;
@@ -412,6 +413,8 @@ mark {
             justify-content: space-around;
             width: 100%;
             height: auto;
+            position: relative;
+            padding-top: 120px;
             div {
                 width: 400px;
                 height: 250px;
@@ -430,6 +433,34 @@ mark {
                     font-size: $fz + 20;
                 }
             }
+            div:hover {
+                animation: playDV 1s linear;
+            }
+            @keyframes playDV {
+                0% {
+                    top: 0px;
+                }
+                30% {
+                    top: -20px;
+                }
+                60% {
+                    top: -40px;
+                }
+                80% {
+                    top: -20px;
+                }
+                100% {
+                    top: 0px;
+                }
+            }
+            h2 {
+                text-align: center;
+                position: absolute;
+                color: $white;
+                top: 0px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
             .races__block {
                 .name__races__block {
                     text-align: center;
@@ -444,6 +475,85 @@ mark {
                     color: #ADFF2F;
                     letter-spacing: 2px;
                     text-transform: uppercase;
+                }
+            }
+        }
+        .games__with__end {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-top: 250px;
+            div {
+                width: 320px;
+                height: 200px;
+                padding-top: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 15px;
+                background-color: $very-dark-blue;
+                border-radius: 13px;
+                position: relative;
+                a {
+                    color: $lime;
+                    display: block;
+                    margin-top: 70px;
+                    text-align: center;
+                    font-size: $fz + 10;
+                }
+            }
+            div:hover {
+                animation: playDV 1s linear;
+            }
+            @keyframes playDV {
+                0% {
+                    top: 0px;
+                }
+                30% {
+                    top: -20px;
+                }
+                60% {
+                    top: -40px;
+                }
+                80% {
+                    top: -20px;
+                }
+                100% {
+                    top: 0px;
+                }
+            }
+            h2 {
+                text-align: center;
+                position: absolute;
+                color: $white;
+                top: 0px;
+                font-weight: 400;
+                text-transform: uppercase;
+                top: 120px;
+            }
+            .tennis__block {
+                .name__tennis__block {
+                    color: $tennis-name;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
+            }
+            .molesmash__block {
+                .name__molesmash__block {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    color: $dark-purple;
+                }
+            }
+            .tictactoe__block {
+                .name__tictactoe__block {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    color: $orange;
                 }
             }
         }
