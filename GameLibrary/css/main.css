@@ -186,7 +186,9 @@ mark {
   padding-top: 100px;
   border: 1px solid white; }
   .hero .container {
-    padding: 0.1px; }
+    padding: 0.1px;
+    position: relative;
+    border: 1px solid white; }
     .hero .container #slider {
       border: 1px solid white;
       width: 320px;
@@ -202,20 +204,77 @@ mark {
         transition: all ease 1s; }
         .hero .container #slider #slider__way div:nth-child(1) {
           padding-top: 15px;
-          padding-left: 40px;
-          line-height: 25px;
+          padding-left: 30px;
+          line-height: 30px;
+          letter-spacing: 3px;
           width: 320px;
           height: 320px;
-          background-color: red; }
+          background-color: #1f1f1f;
+          color: white;
+          background-image: url(../imgs/gamepad.png);
+          background-position: 80% 90%;
+          background-repeat: no-repeat;
+          background-size: 20% 20%; }
           .hero .container #slider #slider__way div:nth-child(1) span {
             color: red; }
         .hero .container #slider #slider__way div:nth-child(2) {
           width: 320px;
           height: 320px;
-          background-color: green; }
+          padding-top: 15px;
+          padding-left: 30px;
+          line-height: 30px;
+          letter-spacing: 3px;
+          background-color: #1f1f1f;
+          background-image: url(../imgs/computerImg.png);
+          background-position: 80% 90%;
+          background-repeat: no-repeat;
+          background-size: 40% 40%;
+          color: #00FF00; }
+          .hero .container #slider #slider__way div:nth-child(2) span {
+            color: red; }
         .hero .container #slider #slider__way div:nth-child(3) {
           width: 320px;
           height: 320px;
-          background-color: orange; }
+          background-color: orange;
+          padding-top: 15px;
+          padding-left: 30px;
+          line-height: 30px;
+          letter-spacing: 3px;
+          background-color: #1f1f1f;
+          color: orange;
+          background-image: url(../imgs/clocks.png);
+          background-position: 80% 60%;
+          background-repeat: no-repeat;
+          background-size: 40% 40%; }
+          .hero .container #slider #slider__way div:nth-child(3) span {
+            color: red; }
+    .hero .container #buttons__block {
+      position: absolute;
+      top: 330px;
+      left: 68px; }
+      .hero .container #buttons__block #next__button__slider {
+        font-family: 'Press Start 2P', cursive;
+        background-color: white;
+        cursor: pointer;
+        background-color: black;
+        border: none;
+        color: white; }
+      .hero .container #buttons__block #previous__button__slider {
+        font-family: 'Press Start 2P', cursive;
+        background-color: white;
+        cursor: pointer;
+        background-color: black;
+        border: none;
+        color: white; }
+      .hero .container #buttons__block #next__button__slider:hover {
+        color: #C71585;
+        transition: 1s; }
+      .hero .container #buttons__block #previous__button__slider:hover {
+        color: orange;
+        transition: 1s; }
+      .hero .container #buttons__block #previous__button__slider:focus {
+        color: red; }
+      .hero .container #buttons__block #next__button__slider:focus {
+        color: red; }
 
 /*# sourceMappingURL=main.css.map */

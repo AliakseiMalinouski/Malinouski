@@ -284,10 +284,8 @@ let nextButtonSlider = document.getElementById('next__button__slider');
 nextButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
     xPosSliderWay += 320;
-    console.log(xPosSliderWay)
     if (xPosSliderWay >= 960) {
         xPosSliderWay = 0;
-        console.log('ye')
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
 });
@@ -299,5 +297,6 @@ previousButtonSlider.addEventListener('click', function (EO) {
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
 });
+
 
 
