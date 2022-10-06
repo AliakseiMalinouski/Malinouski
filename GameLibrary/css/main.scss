@@ -15,6 +15,7 @@ $purple: purple;
 $dark-purple: #8A2BE2;
 $very-dark-blue: #1f1f1f;
 $pink: #C71585;
+$blue: #1E90FF;
 $lime: 	#00FF00;
 $red: red;
 $huq: #F0FFF0;
@@ -276,6 +277,8 @@ mark {
         padding: 0.1px;
         position: relative;
         border: 1px solid white;
+        display: flex;
+        justify-content: space-between;
         #slider {
             border: 1px solid $white;
             width: 320px;
@@ -376,6 +379,24 @@ mark {
             }
             #next__button__slider:focus {
                 color: $red;
+            }
+        }
+        .text__about__pixelPack {
+            color: white;
+            width: 70%;
+            line-height: 35px;
+            color: $blue;
+            span:nth-child(1) {
+                color: $red;
+            }
+            span:nth-child(2) {
+                color: $lime;
+            }
+            span:nth-child(3) {
+                color: $pink;
+            }
+            span:nth-child(4) {
+                color: $dark-purple;
             }
         }
     }

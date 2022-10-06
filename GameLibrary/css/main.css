@@ -188,7 +188,9 @@ mark {
   .hero .container {
     padding: 0.1px;
     position: relative;
-    border: 1px solid white; }
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between; }
     .hero .container #slider {
       border: 1px solid white;
       width: 320px;
@@ -276,5 +278,18 @@ mark {
         color: red; }
       .hero .container #buttons__block #next__button__slider:focus {
         color: red; }
+    .hero .container .text__about__pixelPack {
+      color: white;
+      width: 70%;
+      line-height: 35px;
+      color: #1E90FF; }
+      .hero .container .text__about__pixelPack span:nth-child(1) {
+        color: red; }
+      .hero .container .text__about__pixelPack span:nth-child(2) {
+        color: #00FF00; }
+      .hero .container .text__about__pixelPack span:nth-child(3) {
+        color: #C71585; }
+      .hero .container .text__about__pixelPack span:nth-child(4) {
+        color: #8A2BE2; }
 
 /*# sourceMappingURL=main.css.map */
