@@ -648,6 +648,7 @@ mark {
             background-position: left;
             height: 500px;
             padding-top: 150px;
+            animation: form 1s linear;
             form {
                 display: flex;
                 flex-direction: column;
@@ -683,6 +684,14 @@ mark {
                 top: 150px;
             }
         }
+        }
+        @keyframes form {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
         }
     }
 }

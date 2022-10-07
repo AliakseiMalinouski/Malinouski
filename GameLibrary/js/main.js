@@ -299,11 +299,9 @@ previousButtonSlider.addEventListener('click', function (EO) {
 });
 
 
-// валидация формы
-
-
-
+// загрузка формы через ajax
 let buildFormButton = document.getElementById('build__form');
+let titleFormBuild = document.getElementById('title__build__form');
 buildFormButton.addEventListener('click', buildForm);
 function buildForm() {
         $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/32f331e71faec9549d55e8e9ff6c85044bd95cee/loadForm",
@@ -314,14 +312,16 @@ function buildForm() {
     function dataLoaded(data) {
         document.getElementById('wrapper__form').innerHTML = data;
         if (data) {
-            wrapperValFunc()
+            wrapperValFunc();
         }
     }
     function errorHandler(jqXHR,statusStr,errorStr) {
         alert(statusStr+' '+errorStr);
 }
-
+// валидация формы
 function wrapperValFunc() {
+    buildFormButton.style.display = 'none';
+    titleFormBuild.style.display = 'none';
     let mainForm = document.getElementById('form__regestration');
     let inputFirtsName = document.getElementById('firstname');
     let inputSurName = document.getElementById('surname');
@@ -380,7 +380,7 @@ inputFirtsName.addEventListener('blur', function (EO) {
     EO = EO || window.event;
     if (inputFirtsName.value.length > 30) {
         inputFirtsName.value = null;
-        inputSurName.style.border = '1px solid red';
+        inputFirtsName.style.border = '1px solid red';
     }
     else {
         inputFirtsName.style.border = 'none';
