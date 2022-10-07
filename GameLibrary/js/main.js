@@ -301,12 +301,33 @@ previousButtonSlider.addEventListener('click', function (EO) {
 
 // валидация формы
 
-let mainForm = document.getElementById('form__regestration');
-let inputFirtsName = document.getElementById('firstname');
-let inputSurName = document.getElementById('surname');
-let buttonSubmitOfMainForm = document.getElementById('submit__button');
-let containerForm = document.getElementById('container__form');
-mainForm.addEventListener('submit', function (EO) {
+
+
+let buildFormButton = document.getElementById('build__form');
+buildFormButton.addEventListener('click', buildForm);
+function buildForm() {
+        $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/32f331e71faec9549d55e8e9ff6c85044bd95cee/loadForm",
+            { type:'GET', dataType:'text',
+                  success:dataLoaded, error:errorHandler }
+        );
+    }
+    function dataLoaded(data) {
+        document.getElementById('wrapper__form').innerHTML = data;
+        if (data) {
+            wrapperValFunc()
+        }
+    }
+    function errorHandler(jqXHR,statusStr,errorStr) {
+        alert(statusStr+' '+errorStr);
+}
+
+function wrapperValFunc() {
+    let mainForm = document.getElementById('form__regestration');
+    let inputFirtsName = document.getElementById('firstname');
+    let inputSurName = document.getElementById('surname');
+    let buttonSubmitOfMainForm = document.getElementById('submit__button');
+    let containerForm = document.getElementById('container__form');
+    mainForm.addEventListener('submit', function (EO) {
     EO = EO || window.event;
     if (inputFirtsName.value == '') {
         let alertError = document.createElement('span');
@@ -335,25 +356,25 @@ inputFirtsName.addEventListener('keydown', function (EO) {
     if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
         EO = EO || window.event;
         EO.preventDefault();
-    } 
+    }
 });
 inputSurName.addEventListener('keydown', function (EO) {
     if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
         EO = EO || window.event;
         EO.preventDefault();
-    } 
+    }
 });
 inputFirtsName.addEventListener('paste', function (EO) {
     if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
         EO = EO || window.event;
         EO.preventDefault();
-    } 
+    }
 });
 inputSurName.addEventListener('paste', function (EO) {
     if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
         EO = EO || window.event;
         EO.preventDefault();
-    } 
+    }
 });
 inputFirtsName.addEventListener('blur', function (EO) {
     EO = EO || window.event;
@@ -375,20 +396,4 @@ inputSurName.addEventListener('blur', function (EO) {
         inputSurName.style.border = 'none';
     }
 });
-function testLoadData() {
-        $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/69012d5724d03bd40898dfbc1a00e3c3/raw/904d035dbe77845aaac5ec23f92bc3bc4c20f656/Races",
-            { type:'GET', dataType:'text',
-                  success:dataLoaded, error:errorHandler }
-        );
-    }
-
-    function dataLoaded(data) {
-        console.log('загруженные через AJAX данные:');
-        console.log(data);
-        // document.getElementById('wrapper').style.display = 'none';
-        document.getElementById('IPlace').innerHTML=data;
-    }
-
-    function errorHandler(jqXHR,statusStr,errorStr) {
-        alert(statusStr+' '+errorStr);
 }

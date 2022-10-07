@@ -621,7 +621,27 @@ mark {
     .container {
         border: 1px solid white;
         position: relative;
-        #form_1 {
+        padding: 0.1px;
+        h3 {
+            color: $white;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        #build__form {
+            width: 300px;
+            height: 35px;
+            background-color: $very-dark-blue;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            cursor: pointer;
+            font-family: 'Press Start 2P', cursive;
+            color: $lime;
+        }
+        #wrapper__form {
+            #form_1 {
             width: 100%;
             background-image: url(../imgs/background_form.png);
             background-repeat: no-repeat;
@@ -662,6 +682,7 @@ mark {
                 right: 200px;
                 top: 150px;
             }
+        }
         }
     }
 }
