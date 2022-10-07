@@ -299,8 +299,82 @@ previousButtonSlider.addEventListener('click', function (EO) {
 });
 
 
+// валидация формы
 
-
+let mainForm = document.getElementById('form__regestration');
+let inputFirtsName = document.getElementById('firstname');
+let inputSurName = document.getElementById('surname');
+let buttonSubmitOfMainForm = document.getElementById('submit__button');
+let containerForm = document.getElementById('container__form');
+mainForm.addEventListener('submit', function (EO) {
+    EO = EO || window.event;
+    if (inputFirtsName.value == '') {
+        let alertError = document.createElement('span');
+        alertError.textContent = 'Ошибка';
+        alertError.style.color = 'red';
+        alertError.style.position = 'absolute';
+        alertError.style.right = '450px';
+        alertError.style.top = '170px';
+        alertError.style.transition = '1s';
+        containerForm.appendChild(alertError);
+        EO.preventDefault();
+    }
+    if (inputSurName.value == '') {
+        let alertError = document.createElement('span');
+        alertError.textContent = 'Ошибка';
+        alertError.style.color = 'red';
+        alertError.style.position = 'absolute';
+        alertError.style.right = '450px';
+        alertError.style.top = '250px';
+        alertError.style.transition = '1s';
+        containerForm.appendChild(alertError);
+        EO.preventDefault();
+    }
+});
+inputFirtsName.addEventListener('keydown', function (EO) {
+    if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
+        EO = EO || window.event;
+        EO.preventDefault();
+    } 
+});
+inputSurName.addEventListener('keydown', function (EO) {
+    if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
+        EO = EO || window.event;
+        EO.preventDefault();
+    } 
+});
+inputFirtsName.addEventListener('paste', function (EO) {
+    if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
+        EO = EO || window.event;
+        EO.preventDefault();
+    } 
+});
+inputSurName.addEventListener('paste', function (EO) {
+    if (['{', '}', '*', '&', '+','[', ']', '#', '$', '%', '^', '(', ')', '=', '<', '>', '|', '?', '!', '`', '~', '@', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'].includes(EO.key)) {
+        EO = EO || window.event;
+        EO.preventDefault();
+    } 
+});
+inputFirtsName.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (inputFirtsName.value.length > 30) {
+        inputFirtsName.value = null;
+        inputSurName.style.border = '1px solid red';
+    }
+    else {
+        inputFirtsName.style.border = 'none';
+    }
+});
+inputSurName.addEventListener('blur', function (EO) {
+    EO = EO || window.event;
+    if (inputSurName.value.length > 30) {
+        inputSurName.value = null;
+        inputSurName.style.border = '1px solid red';
+    }
+    else {
+        inputSurName.style.border = 'none';
+    }
+});
 function testLoadData() {
         $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/69012d5724d03bd40898dfbc1a00e3c3/raw/904d035dbe77845aaac5ec23f92bc3bc4c20f656/Races",
             { type:'GET', dataType:'text',

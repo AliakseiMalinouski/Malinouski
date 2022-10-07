@@ -458,7 +458,8 @@ mark {
   padding-top: 200px;
   border: 1px solid white; }
   .form .container {
-    border: 1px solid white; }
+    border: 1px solid white;
+    position: relative; }
     .form .container #form_1 {
       width: 100%;
       background-image: url(../imgs/background_form.png);
@@ -490,5 +491,10 @@ mark {
           background-color: red;
           cursor: pointer;
           color: white; }
+      .form .container #form_1 .span__error__firstname {
+        color: red;
+        position: absolute;
+        right: 200px;
+        top: 150px; }
 
 /*# sourceMappingURL=main.css.map */

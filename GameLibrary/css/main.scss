@@ -620,6 +620,7 @@ mark {
     border: 1px solid white;
     .container {
         border: 1px solid white;
+        position: relative;
         #form_1 {
             width: 100%;
             background-image: url(../imgs/background_form.png);
@@ -654,6 +655,12 @@ mark {
                     cursor: pointer;
                     color: $white;
                 }
+            }
+            .span__error__firstname {
+                color: $red;
+                position: absolute;
+                right: 200px;
+                top: 150px;
             }
         }
     }
