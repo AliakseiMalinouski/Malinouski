@@ -300,3 +300,21 @@ previousButtonSlider.addEventListener('click', function (EO) {
 
 
 
+
+function testLoadData() {
+        $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/69012d5724d03bd40898dfbc1a00e3c3/raw/904d035dbe77845aaac5ec23f92bc3bc4c20f656/Races",
+            { type:'GET', dataType:'text',
+                  success:dataLoaded, error:errorHandler }
+        );
+    }
+
+    function dataLoaded(data) {
+        console.log('загруженные через AJAX данные:');
+        console.log(data);
+        // document.getElementById('wrapper').style.display = 'none';
+        document.getElementById('IPlace').innerHTML=data;
+    }
+
+    function errorHandler(jqXHR,statusStr,errorStr) {
+        alert(statusStr+' '+errorStr);
+    }

@@ -10,80 +10,97 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <a href="./main.html"><img src="./imgs/title-icon.png" alt="Лого" id="logo" class="logo"></a>
-            <h3 class="name__of__library neon__view" id="name__of__library">Pix<span>el</span><span>Pack</span></h3>
-            <div class="wrapper__text__header">
-                <ul class="header__list__of__catigories" id="header__list__of__catigories">
-                    <li><a href="#">Игры</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Контакт</a></li>
+        <div class="header">
+            <div class="container">
+                <a href="./main.html"><img src="./imgs/title-icon.png" alt="Лого" id="logo" class="logo"></a>
+                <h3 class="name__of__library neon__view" id="name__of__library">Pix<span>el</span><span>Pack</span></h3>
+                <div class="wrapper__text__header">
+                    <ul class="header__list__of__catigories" id="header__list__of__catigories">
+                        <li><a href="#">Игры</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакт</a></li>
+                    </ul>
+                    <span class="login" id="login">Войти: <img src="./imgs/login-icon.png" alt="Войти"></span>
+                </div>
+            </div>
+        </div>
+        <div class="search__block">
+            <div class="container container__search__block">
+                <input type="text" class="search" id="search" placeholder="Введите полное название игры">
+                <p class="help__text">Подсказки:</p>
+                <ul class="search__variants">
+                    <li>races</li>
+                    <li>molesmash</li>
+                    <li>jorun</li>
+                    <li>tictactoe</li>
+                    <li>tennis</li>
                 </ul>
-                <span class="login" id="login">Войти: <img src="./imgs/login-icon.png" alt="Войти"></span>
+                <p class="sentences__about__games" id="collection__colors__spans"><span id="first__color__span">Мы не потому
+                        перестаем играть, </span><span id="second__color__span">что постарели, </span><span
+                        id="third__color__span">— мы стареем</span>, <span id="fourth__color__span">потому что перестаем
+                        играть</span></p>
             </div>
         </div>
-    </div>
-    <div class="search__block">
-        <div class="container container__search__block">
-            <input type="text" class="search" id="search" placeholder="Введите полное название игры">
-            <p class="help__text">Подсказки:</p>
-            <ul class="search__variants">
-                <li>races</li>
-                <li>molesmash</li>
-                <li>jorun</li>
-                <li>tictactoe</li>
-                <li>tennis</li>
-            </ul>
-            <p class="sentences__about__games" id="collection__colors__spans"><span id="first__color__span">Мы не потому перестаем играть, </span><span id="second__color__span">что постарели, </span><span id="third__color__span">— мы стареем</span>, <span id="fourth__color__span">потому что перестаем играть</span></p>
+        <div class="hero">
+            <div class="container">
+                <div id="slider">
+                    <div id="slider__way">
+                        <div>Абсолютно разные <span>игры!</span> С разной идеей и действиями! Декстопные и мобильные версии!
+                        </div>
+                        <div>Возможность <span>поиграть</span> на различных устройствах уже сейчас! </div>
+                        <div>Способ <span>убить</span> и скоротать время!</div>
+                    </div>
+                </div>
+                <div id="buttons__block">
+                    <button id="previous__button__slider">previous</button>
+                    <button id="next__button__slider">next</button>
+                </div>
+                <div class="text__about__pixelPack">Pixel<span>PACK</span> — это мини-библиотечка 2D-игр. Каждая игра имеет
+                    абсолютно разную идею, концепцию, смысл. Но каждая из них — <span>это игра,</span> похожая на уже всем
+                    известные игры, созданные уже очень давно. Например, игра-раннер, молесмэш, теннис, гонки и банальные
+                    крестики нолики. <span>Эта мини-библиотечка</span> - не что-то уникальное или новосозданное, а просто
+                    <span>воплощение</span> хороших воспоминаний, ностальгии по старым 2D-шным играм. </div>
+            </div>
         </div>
-    </div>
-    <div class="hero">
-        <div class="container">
-            <div id="slider">
-                <div id="slider__way">
-                    <div>Абсолютно разные <span>игры!</span> С разной идеей и действиями! Декстопные и мобильные версии!</div>
-                    <div>Возможность <span>поиграть</span> на различных устройствах уже сейчас! </div>
-                    <div>Способ <span>убить</span> и скоротать время!</div>
+        <div class="blocks__games">
+            <div class="container">
+                <div class="games__without__end">
+                    <h2 class="title__of__games__without__end">Бесконечные игры</h2>
+                    <div class="races__block">
+                        <h3 class="name__races__block">RACES</h3>
+                        <a href="./races.html" id="play__races">Играть</a>
+                    </div>
+                    <div class="jorun__block">
+                        <h3 class="name__jorun__block">JORUN</h3>
+                        <a href="./runner.html" id="play__jorun">Играть</a>
+                    </div>
                 </div>
-            </div>
-            <div id="buttons__block">
-                <button id="previous__button__slider">previous</button>
-                <button id="next__button__slider">next</button>
-            </div>
-            <div class="text__about__pixelPack">Pixel<span>PACK</span> — это мини-библиотечка 2D-игр. Каждая игра имеет абсолютно разную идею, концепцию, смысл. Но каждая из них — <span>это игра,</span> похожая на уже всем известные игры, созданные уже очень давно. Например, игра-раннер, молесмэш, теннис, гонки и банальные крестики нолики. <span>Эта мини-библиотечка</span> - не что-то уникальное или новосозданное, а просто <span>воплощение</span> хороших воспоминаний, ностальгии по старым 2D-шным играм. </div>
-        </div>
-    </div>
-    <div class="blocks__games">
-        <div class="container">
-            <div class="games__without__end">
-                <h2 class="title__of__games__without__end">Бесконечные игры</h2>
-                <div class="races__block">
-                    <h3 class="name__races__block">RACES</h3>
-                    <a href="./races.html" id="play__races">Играть</a>
-                </div>
-                <div class="jorun__block">
-                    <h3 class="name__jorun__block">JORUN</h3>
-                    <a href="./runner.html" id="play__jorun">Играть</a>
-                </div>
-            </div>
-            <div class="games__with__end">
-                <h2>Игры с завершением</h2>
-                <div class="tennis__block">
-                    <h3 class="name__tennis__block">TENNIS</h3>
-                    <a href="./tennis.html">Играть</a>
-                </div>
-                <div class="molesmash__block">
-                    <h3 class="name__molesmash__block">MOLESMASH</h3>
-                    <a href="./handle.html">Играть</a>
-                </div>
-                <div class="tictactoe__block">
-                    <h3 class="name__tictactoe__block">TICTACTOE</h3>
-                    <a href="./tictactoe.html">Играть</a>
+                <div class="games__with__end">
+                    <h2>Игры с завершением</h2>
+                    <div class="tennis__block">
+                        <h3 class="name__tennis__block">TENNIS</h3>
+                        <a href="./tennis.html">Играть</a>
+                    </div>
+                    <div class="molesmash__block">
+                        <h3 class="name__molesmash__block">MOLESMASH</h3>
+                        <a href="./handle.html">Играть</a>
+                    </div>
+                    <div class="tictactoe__block">
+                        <h3 class="name__tictactoe__block">TICTACTOE</h3>
+                        <a href="./tictactoe.html">Играть</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="more__about__games">
+            <div class="container" id="container__more__about__games">
+                <h2 class="title__cards">Пример карточки Игры</h2>
+                <button type="button" id="view__cards" onclick="testLoadData()">Посмотреть карточку</button>
+                <canvas width="320" height="320" id="canvas" style="display: none; margin: 0 auto; border-radius: 13px;"></canvas>
+            </div>
+        </div>
+    <script src='https://fe.it-academy.by/JQ/jquery.js'></script>
+    <script src="./js/cardsCanvas.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
