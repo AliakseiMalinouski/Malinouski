@@ -412,7 +412,6 @@ inputSurName.addEventListener('blur', function (EO) {
 });
 }
 // запомнить имя и фамилию пользователя
-
 const ajaxHandlerScript="https://fe.it-academy.by/AjaxStringStorage2.php";
 let updatePassword;
 const stringName='MALINOWSKI_INFO_ABOUT_USER_PIXELPACK';
@@ -427,13 +426,10 @@ function storeInfo() {
     );
     console.log("test")
 }
-
 function lockGetReady(callresult) {
     if ( callresult.error!=undefined )
         alert(callresult.error);
     else {
-        // нам всё равно, что было прочитано -
-        // всё равно перезаписываем
         const info={
             firstname : document.getElementById('firstname').value,
             surname : document.getElementById('surname').value
@@ -447,12 +443,10 @@ function lockGetReady(callresult) {
         );
     }
 }
-
 function updateReady(callresult) {
     if ( callresult.error!=undefined )
         alert(callresult.error);
 }
-
 function restoreInfo() {
     $.ajax(
         {
@@ -462,7 +456,6 @@ function restoreInfo() {
         }
     );
 }
-
 function readReady(callresult) {
     if ( callresult.error!=undefined )
         alert(callresult.error);
@@ -472,9 +465,7 @@ function readReady(callresult) {
         document.getElementById('surname').value=info.surname;
     }
 }
-
 function errorHandler(jqXHR,statusStr,errorStr) {
     alert(statusStr+' '+errorStr);
 }
-
 restoreInfo();
