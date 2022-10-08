@@ -98,7 +98,6 @@ function animatedStone() {
         stone.style.left = '780px';
     }
     if (leftStone == '139' && human.classList != 'up') {
-        window.navigator.vibrate(1000);
         stoneAudio.play();
         let alertGameOver = document.createElement('span');
         alertGameOver.classList.add('alert__game__over');
@@ -114,8 +113,7 @@ function animatedStone() {
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
-            navigator.vibrate(0);
-            location.reload(); 
+            location.reload();
         }, 3000);
     }
 }
@@ -136,7 +134,6 @@ function animatedTree() {
         tree.style.opacity = '1';
     }
     if (leftTree == '139' && human.classList != 'up') {
-        window.navigator.vibrate(1000);
         stoneAudio.play();
         let alertGameOver = document.createElement('span');
         alertGameOver.classList.add('alert__game__over');
@@ -152,8 +149,7 @@ function animatedTree() {
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
-            navigator.vibrate(0);
-            location.reload(); 
+            location.reload();
         }, 3000);
     }
 }
@@ -174,7 +170,6 @@ function animatedCroco() {
         croco.style.opacity = '1';
     }
     if (leftCroco == '139' && human.classList != 'up') {
-        window.navigator.vibrate(1000);
         crocoEatHuman.play();
         let alertGameOver = document.createElement('span');
         alertGameOver.classList.add('alert__game__over');
@@ -190,7 +185,6 @@ function animatedCroco() {
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
-            navigator.vibrate(0);
             location.reload();
         }, 3000);
     }
