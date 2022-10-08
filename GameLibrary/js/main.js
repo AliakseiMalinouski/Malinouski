@@ -297,11 +297,21 @@ previousButtonSlider.addEventListener('click', function (EO) {
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
 });
-
-
 // загрузка формы через ajax
 let buildFormButton = document.getElementById('build__form');
 let titleFormBuild = document.getElementById('title__build__form');
+let wrapperForm = document.getElementById('wrapper__form');
+let divStorage = undefined;
+function checkedLocalStorage() {
+    let HTMLcodeForm = localStorage.getItem('HTMLform');
+    if (HTMLcodeForm) {
+        wrapperForm.classList.add('checked');
+        buildFormButton.style.display = 'none';
+        titleFormBuild.style.display = 'none';
+    }
+    document.getElementById('wrapper__form').innerHTML = HTMLcodeForm;
+}
+checkedLocalStorage();
 buildFormButton.addEventListener('click', buildForm);
 function buildForm() {
         $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/32f331e71faec9549d55e8e9ff6c85044bd95cee/loadForm",
@@ -310,8 +320,11 @@ function buildForm() {
         );
     }
     function dataLoaded(data) {
-        document.getElementById('wrapper__form').innerHTML = data;
         if (data) {
+            divStorage = data;
+            localStorage.setItem('HTMLform', data);
+            console.log(data)
+            checkedLocalStorage();
             wrapperValFunc();
         }
     }
@@ -322,6 +335,7 @@ function buildForm() {
 function wrapperValFunc() {
     buildFormButton.style.display = 'none';
     titleFormBuild.style.display = 'none';
+    let wrapForm = document.getElementById('form_1');
     let mainForm = document.getElementById('form__regestration');
     let inputFirtsName = document.getElementById('firstname');
     let inputSurName = document.getElementById('surname');
@@ -397,3 +411,4 @@ inputSurName.addEventListener('blur', function (EO) {
     }
 });
 }
+
