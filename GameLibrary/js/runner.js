@@ -113,8 +113,7 @@ function animatedStone() {
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
-            // location.reload(); 
-            document.location.reload(true);
+            location.reload(); 
         }, 3000);
     }
 }
@@ -150,8 +149,7 @@ function animatedTree() {
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
-            // location.reload(); 
-            document.location.reload(true);
+            location.reload(); 
         }, 3000);
     }
 }
@@ -187,8 +185,7 @@ function animatedCroco() {
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
-            // location.reload();
-            document.location.reload(true);
+            location.reload();
         }, 3000);
     }
 }
