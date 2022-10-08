@@ -99,7 +99,8 @@
 @media all and (max-width: 560px) {
   #reg_block {
     width: 500px;
-    height: 300px; }
+    height: 300px;
+    left: 100px; }
     #reg_block p {
       font-size: 13px;
       line-height: 20px; } }
