@@ -314,7 +314,7 @@ function checkedLocalStorage() {
 checkedLocalStorage();
 buildFormButton.addEventListener('click', buildForm);
 function buildForm() {
-        $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/32f331e71faec9549d55e8e9ff6c85044bd95cee/loadForm",
+        $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/7a0ef6a5501717129075d1bdba5c55210ca5135d/loadForm",
             { type:'GET', dataType:'text',
                   success:dataLoaded, error:errorHandler }
         );
@@ -411,4 +411,70 @@ inputSurName.addEventListener('blur', function (EO) {
     }
 });
 }
+// запомнить имя и фамилию пользователя
 
+const ajaxHandlerScript="https://fe.it-academy.by/AjaxStringStorage2.php";
+let updatePassword;
+const stringName='MALINOWSKI_INFO_ABOUT_USER_PIXELPACK';
+
+function storeInfo() {
+    updatePassword=Math.random();
+    $.ajax( {
+            url : ajaxHandlerScript, type : 'POST', cache : false, dataType:'json',
+            data : { f : 'LOCKGET', n : stringName, p : updatePassword },
+            success : lockGetReady, error : errorHandler
+        }
+    );
+    console.log("test")
+}
+
+function lockGetReady(callresult) {
+    if ( callresult.error!=undefined )
+        alert(callresult.error);
+    else {
+        // нам всё равно, что было прочитано -
+        // всё равно перезаписываем
+        const info={
+            firstname : document.getElementById('firstname').value,
+            surname : document.getElementById('surname').value
+        };
+        $.ajax( {
+                url : ajaxHandlerScript, type : 'POST', cache : false, dataType:'json',
+                data : { f : 'UPDATE', n : stringName,
+                    v : JSON.stringify(info), p : updatePassword },
+                success : updateReady, error : errorHandler
+            }
+        );
+    }
+}
+
+function updateReady(callresult) {
+    if ( callresult.error!=undefined )
+        alert(callresult.error);
+}
+
+function restoreInfo() {
+    $.ajax(
+        {
+            url : ajaxHandlerScript, type : 'POST', cache : false, dataType:'json',
+            data : { f : 'READ', n : stringName },
+            success : readReady, error : errorHandler
+        }
+    );
+}
+
+function readReady(callresult) {
+    if ( callresult.error!=undefined )
+        alert(callresult.error);
+    else if ( callresult.result!="" ) {
+        const info=JSON.parse(callresult.result);
+        document.getElementById('firstname').value=info.firstname;
+        document.getElementById('surname').value=info.surname;
+    }
+}
+
+function errorHandler(jqXHR,statusStr,errorStr) {
+    alert(statusStr+' '+errorStr);
+}
+
+restoreInfo();
