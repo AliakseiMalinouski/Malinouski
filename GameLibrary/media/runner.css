@@ -27,6 +27,9 @@
     background: url(../imgs/menuFone.jpg) 0 0 repeat;
     transform: rotate(-360deg); }
 
+  #reg {
+    display: none; }
+
   #reg_block {
     display: none; }
 
@@ -94,6 +97,9 @@
     display: none; } }
 @media all and (max-width: 780px) {
   #reg_block {
+    display: none; }
+
+  #reg {
     display: none; } }
 
 /*# sourceMappingURL=runner.css.map */
