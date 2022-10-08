@@ -315,7 +315,7 @@ checkedLocalStorage();
 buildFormButton.addEventListener('click', buildForm);
 function buildForm() {
         $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/7a0ef6a5501717129075d1bdba5c55210ca5135d/loadForm",
-            { type:'GET', dataType:'text',
+            { type:'GET', dataType:'html',
                   success:dataLoaded, error:errorHandler }
         );
     }
@@ -424,7 +424,6 @@ function storeInfo() {
             success : lockGetReady, error : errorHandler
         }
     );
-    console.log("test")
 }
 function lockGetReady(callresult) {
     if ( callresult.error!=undefined )
