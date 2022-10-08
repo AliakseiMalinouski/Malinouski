@@ -148,6 +148,7 @@ function animatedTree() {
         animatedStone = null;
         sky.classList.add('disable');
         sky1.classList.add('disable');
+        window.navigator.vibrate(1000);
         setTimeout(function () {
             location.reload(); 
         }, 3000);
