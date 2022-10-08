@@ -27,6 +27,9 @@
     background: url(../imgs/menuFone.jpg) 0 0 repeat;
     transform: rotate(-360deg); }
 
+  #reg_block {
+    display: none; }
+
   .alert__game__over {
     left: 150px; }
 
@@ -96,13 +99,5 @@
       display: none; }
     #reg_block #touch {
       display: inline; } }
-@media all and (max-width: 560px) {
-  #reg_block {
-    width: 500px;
-    height: 300px;
-    left: 100px; }
-    #reg_block p {
-      font-size: 13px;
-      line-height: 20px; } }
 
 /*# sourceMappingURL=runner.css.map */
