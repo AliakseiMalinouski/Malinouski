@@ -110,7 +110,6 @@ function animatedStone() {
         animatedSky1 = null;
         animatedTree = null;
         animatedStone = null;
-        window.navigator.vibrate(1000);
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
@@ -147,7 +146,6 @@ function animatedTree() {
         animatedSky1 = null;
         animatedTree = null;
         animatedStone = null;
-        window.navigator.vibrate(1000);
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
@@ -184,7 +182,6 @@ function animatedCroco() {
         animatedSky1 = null;
         animatedTree = null;
         animatedStone = null;
-        window.navigator.vibrate(1000);
         sky.classList.add('disable');
         sky1.classList.add('disable');
         setTimeout(function () {
