@@ -73,7 +73,8 @@
     display: none; } }
 @media all and (max-width: 1844px) {
   #reg_block {
-    display: none; } }
+    display: none;
+    left: 550px; } }
 @media all and (max-width: 1545px) {
   #reg_block {
     display: none; } }
@@ -82,10 +83,12 @@
     display: none; } }
 @media all and (max-width: 1311px) {
   #reg_block {
-    display: none; } }
+    display: none;
+    left: 360px; } }
 @media all and (max-width: 1203px) {
   #reg_block {
-    display: none; } }
+    display: none;
+    left: 200px; } }
 @media all and (max-width: 1092px) {
   #reg_block {
     display: none; } }
@@ -94,7 +97,8 @@
     display: none; } }
 @media all and (max-width: 883px) {
   #reg_block {
-    display: none; } }
+    display: none;
+    left: 150px; } }
 @media all and (max-width: 780px) {
   #reg_block {
     display: none; }
