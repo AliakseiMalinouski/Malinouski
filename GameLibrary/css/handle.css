@@ -26,7 +26,8 @@ body {
     background-position: center center;
     position: relative;
     z-index: 2;
-    cursor: url("../imgs/ham.png"), auto; }
+    cursor: url("../imgs/ham.png"), auto;
+    border: none; }
   .container .first__enemy__animal {
     display: none;
     width: 125px;
