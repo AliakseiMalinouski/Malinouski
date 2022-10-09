@@ -9,11 +9,12 @@ html {
 }
 body {
     min-height: 100%;
+    min-width: 900px;
     font-family: 'Press Start 2P', cursive;
     background-color: black;
 }
 .container {
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
     .area__game {
         width: 900px;
