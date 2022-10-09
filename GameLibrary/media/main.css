@@ -1,3 +1,51 @@
+@media all and (max-width: 1220px) {
+  .container {
+    width: 900px; }
 
+  .header .container {
+    justify-content: space-around; }
+    .header .container .name__of__library {
+      font-size: 20px; }
+  .header .wrapper__text__header {
+    margin-left: 0px !important; }
+    .header .wrapper__text__header .header__list__of__catigories {
+      width: 300px; }
+      .header .wrapper__text__header .header__list__of__catigories li {
+        font-size: 14px;
+        font-weight: 400; }
+    .header .wrapper__text__header .login {
+      font-size: 14px; }
+
+  .search__block .container .search {
+    margin-left: 170px; }
+  .search__block .container .alert__not__defined__card {
+    left: 170px; }
+  .search__block .container .sentences__about__games {
+    width: 887px;
+    margin-left: 0px;
+    font-weight: 400;
+    padding-left: 40px; }
+
+  .hero .container {
+    flex-direction: column;
+    align-items: center; }
+    .hero .container #slider {
+      margin-bottom: 80px; }
+    .hero .container #buttons__block {
+      top: 350px;
+      left: 365px; }
+    .hero .container .text__about__pixelPack {
+      width: 100%;
+      padding-left: 50px; }
+
+  .blocks__games .container .games__without__end {
+    flex-direction: column;
+    align-items: center; }
+    .blocks__games .container .games__without__end div {
+      margin-bottom: 35px; }
+  .blocks__games .container .games__with__end {
+    flex-flow: wrap; }
+    .blocks__games .container .games__with__end div {
+      margin-bottom: 35px; } }
 
 /*# sourceMappingURL=main.css.map */

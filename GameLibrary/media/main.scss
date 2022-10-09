@@ -1,0 +1,92 @@
+$white: white;
+$black: black;
+$cosmo-blue: #41e6e8;
+$orange: orange;
+$purple: purple;
+$dark-purple: #8A2BE2;
+$very-dark-blue: #1f1f1f;
+$pink: #C71585;
+$blue: #1E90FF;
+$lime: #00FF00;
+$races-name: #8FBC8F;
+$tennis-name: #00FFFF;
+$red: red;
+$huq: #F0FFF0;
+$fz: 16px;
+$fz26: $fz + 10;
+@media all and (max-width: 1220px) {
+    .container {
+        width: 900px;
+    }
+    .header {
+        .container {
+            justify-content: space-around;
+            .name__of__library {
+                font-size: $fz26 - 6;
+            }
+        }
+        .wrapper__text__header {
+            margin-left: 0px !important;
+            .header__list__of__catigories {
+                width: 300px;
+                li {
+                    font-size: $fz26 - 12;
+                    font-weight: 400;
+                }
+            }
+            .login {
+                font-size: $fz26 - 12;
+            }
+        }
+}
+.search__block {
+    .container {
+        .search {
+            margin-left: 170px;
+        }
+        .alert__not__defined__card {
+            left: 170px;
+        }
+        .sentences__about__games {
+            width: 887px;
+            margin-left: 0px;
+            font-weight: 400;
+            padding-left: 40px;
+        }
+    }
+}
+.hero {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        #slider {
+            margin-bottom: 80px;
+        }
+        #buttons__block {
+            top: 350px;
+            left: 365px;
+        }
+        .text__about__pixelPack {
+            width: 100%;
+            padding-left: 50px;
+        }
+    }
+}
+.blocks__games {
+    .container {
+        .games__without__end {
+            flex-direction: column;
+            align-items: center;
+            div {
+                margin-bottom: 35px;
+            }
+        }
+        .games__with__end {
+            flex-flow: wrap;
+            div {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+}
