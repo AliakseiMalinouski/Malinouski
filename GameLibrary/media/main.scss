@@ -126,11 +126,16 @@ $fz26: $fz + 10;
                         font-size: $fz26 - 16;
                     }
                 }
-                #login {
+                a {
+                    .login {
                     font-size: $fz26 - 16;
                     display: flex;
                     color: $red;
                     text-decoration: underline;
+                    #img__login {
+                        display: none !important;
+                    }
+                }
                 }
             }
         }
@@ -202,6 +207,59 @@ $fz26: $fz + 10;
             }
             .neon__view {
                 height: 150px;
+            }
+        }
+    }
+}
+@media all and (max-width: 560px) {
+    .container {
+        width: 320px;
+    }
+    .header {
+        .container {
+            .wrapper__text__header {
+                .header__list__of__catigories {
+                    display: none;
+                }
+                a {
+                    display: none;
+                }
+            }
+            .name__of__library {
+                margin-left: 10px;
+            }
+        }
+    }
+    .search__block {
+        .container {
+            .search {
+                width: 310px;
+                padding-left: 20px;
+                padding-bottom: 15px;
+                font-size: $fz26 - 16;
+            }
+            .cards__active__block {
+                right: 0px;
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                border-top-right-radius: 0px;
+                .img__of__races__and__molesmash__jorun__block {
+                    width: 100%;
+                    height: 260px;
+                }
+                .text__content__of__card {
+                    width: 100%;
+                }
+                .text__content__of__jorun {
+                    width: 100%;
+                }
+            }
+            .sentences__about__games {
+                display: none;
+            }
+            .help__text {
+                margin-top: 470px;
             }
         }
     }
