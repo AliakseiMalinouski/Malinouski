@@ -511,3 +511,9 @@ function wrapperScrollFunc() {
 }
 }
 wrapperScrollFunc();
+// работа с адаптивностью
+let mainContainer = document.querySelector('.container');
+if (mainContainer.clientWidth < 900) {
+    let login = document.querySelector('.login');
+    login.innerHTML = 'Войти';
+}

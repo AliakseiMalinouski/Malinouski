@@ -47,5 +47,65 @@
     flex-flow: wrap; }
     .blocks__games .container .games__with__end div {
       margin-bottom: 35px; } }
+@media all and (max-width: 900px) {
+  .container {
+    width: 560px;
+    border: 1px solid red; }
+
+  .header .container {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .header .container .name__of__library {
+      font-size: 16px;
+      margin-left: 3px; }
+    .header .container .logo {
+      width: 46px;
+      height: 46px; }
+    .header .container .wrapper__text__header .header__list__of__catigories {
+      width: 250px; }
+      .header .container .wrapper__text__header .header__list__of__catigories li {
+        font-size: 10px; }
+    .header .container .wrapper__text__header #login {
+      font-size: 10px;
+      display: flex;
+      color: red;
+      text-decoration: underline; }
+
+  .search__block .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px; }
+    .search__block .container .search {
+      margin-left: 0px;
+      width: 550px; }
+    .search__block .container .help__text {
+      margin-top: 300px; }
+    .search__block .container .cards__active__block {
+      right: 14px; }
+    .search__block .container .sentences__about__games {
+      width: 100%;
+      line-height: 30px; }
+    .search__block .container .alert__not__defined__card {
+      left: 5px; }
+
+  .hero .container #buttons__block {
+    left: 191px; }
+
+  .about__platform .container {
+    flex-direction: column;
+    align-items: center; }
+    .about__platform .container .desktop__games {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px; }
+
+  .footer .container {
+    flex-flow: wrap; }
+    .footer .container ul {
+      margin-bottom: 30px; }
+    .footer .container .neon__view {
+      height: 150px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -90,3 +90,92 @@ $fz26: $fz + 10;
     }
 }
 }
+@media all and (max-width: 900px) {
+    .container {
+        width: 560px;
+        border: 1px solid red;
+    }
+    .header {
+        .container {
+            padding-left: 0px;
+            padding-right: 0px;
+            .name__of__library {
+                font-size: $fz26 - 10;
+                margin-left: 3px;
+            }
+            .logo {
+                width: 46px;
+                height: 46px;
+            }
+            .wrapper__text__header {
+                .header__list__of__catigories {
+                    width: 250px;
+                    li {
+                        font-size: $fz26 - 16;
+                    }
+                }
+                #login {
+                    font-size: $fz26 - 16;
+                    display: flex;
+                    color: $red;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .search__block {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 800px;
+            .search {
+                margin-left: 0px;
+                width: 550px;
+            }
+            .help__text {
+                margin-top: 300px;
+            }
+            .cards__active__block {
+                right: 14px;
+            }
+            .sentences__about__games {
+                width: 100%;
+                line-height: 30px;
+            }
+            .alert__not__defined__card {
+                left: 5px;
+            }
+        }
+    }
+    .hero {
+        .container {
+            #buttons__block {
+                left: 191px;
+            }
+        }
+    }
+    .about__platform {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            .desktop__games {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .footer {
+        .container {
+            flex-flow: wrap;
+            ul {
+                margin-bottom: 30px;
+            }
+            .neon__view {
+                height: 150px;
+            }
+        }
+    }
+}
