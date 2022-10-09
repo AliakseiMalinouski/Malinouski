@@ -89,6 +89,18 @@ $fz26: $fz + 10;
         }
     }
 }
+.form {
+    .container {
+        #wrapper__form {
+            #form_1 {
+                #form__regestration {
+                    width: 300px !important;
+                    margin-left: 520px;
+                }
+            }
+        }
+    }
+}
 }
 @media all and (max-width: 900px) {
     .container {
@@ -155,6 +167,21 @@ $fz26: $fz + 10;
             }
         }
     }
+    .form {
+    .container {
+        #wrapper__form {
+            #form_1 {
+                padding-top: 40px;
+                background-position: bottom;
+                background-size: 60% 50%;
+                #form__regestration {
+                    width: 300px;
+                    margin-left: 133px;
+                }
+            }
+        }
+    }
+}
     .about__platform {
         .container {
             flex-direction: column;

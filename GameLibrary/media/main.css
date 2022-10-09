@@ -46,7 +46,11 @@
   .blocks__games .container .games__with__end {
     flex-flow: wrap; }
     .blocks__games .container .games__with__end div {
-      margin-bottom: 35px; } }
+      margin-bottom: 35px; }
+
+  .form .container #wrapper__form #form_1 #form__regestration {
+    width: 300px !important;
+    margin-left: 520px; } }
 @media all and (max-width: 900px) {
   .container {
     width: 560px;
@@ -91,6 +95,14 @@
 
   .hero .container #buttons__block {
     left: 191px; }
+
+  .form .container #wrapper__form #form_1 {
+    padding-top: 40px;
+    background-position: bottom;
+    background-size: 60% 50%; }
+    .form .container #wrapper__form #form_1 #form__regestration {
+      width: 300px;
+      margin-left: 133px; }
 
   .about__platform .container {
     flex-direction: column;
