@@ -151,13 +151,15 @@ mark {
                     }
                 }
             
-                .login {
+                a {
+                    .login {
                     color: $white;
                     img {
                         width: 20px;
                         height: 20px;
                         cursor: pointer;
                     }
+                }
                 }
         }
     }

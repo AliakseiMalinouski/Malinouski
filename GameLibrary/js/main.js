@@ -470,7 +470,6 @@ function errorHandler(jqXHR,statusStr,errorStr) {
 }
 restoreInfo();
 // загружаем руководство по библиоетке с помощью AJAX
-
 const urlGuide = 'https://gist.githubusercontent.com/AliakseiMalinouski/ef96e192fa90204a9b2f96fd54b383ad/raw/beeec8f2851a34612211dd896ebd91eeaebc20a0/GuidePixelPACK';
 let buttonCreateGuide = document.getElementById('create__guide');
 let wrapperGuide = document.getElementById('wrapper__guide');
@@ -490,3 +489,25 @@ function createGuide() {
     function errorHandlerGuide(jqXHR,statusStr,errorStr) {
         alert(statusStr+' '+errorStr);
 }
+// добавляем скролл после нажатия на конкретные элементы
+// получаем всe наши якоря
+let collectionOfAnchors = document.querySelectorAll('.scrollElement');
+collectionOfAnchors.forEach(function (element) {
+    element.addEventListener('click', wrapperScrollFunc);
+});
+// оборачиваем всё в одноу функцию, чтобы не засорять глобальную область видимости и отслеживаем нажатый якорь
+function wrapperScrollFunc() {
+    const anchors = document.querySelectorAll('a[href*="#"]')
+    for (let anchor of anchors) {
+    anchor.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    EO.preventDefault()
+    const blockID = anchor.getAttribute('href').substr(1);
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+}
+}
+wrapperScrollFunc();

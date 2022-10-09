@@ -17,11 +17,11 @@
                 <h3 class="name__of__library neon__view" id="name__of__library">Pix<span>el</span><span>Pack</span></h3>
                 <div class="wrapper__text__header">
                     <ul class="header__list__of__catigories" id="header__list__of__catigories">
-                        <li><a href="#">Игры</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакт</a></li>
+                        <li><a href="#scrollToGames" class="scrollElement">Игры</a></li>
+                        <li><a href="#scrollToAboutUs">О нас</a></li>
+                        <li><a href="#scrollToContact">Контакт</a></li>
                     </ul>
-                    <span class="login" id="login">Войти: <img src="./imgs/login-icon.png" alt="Войти"></span>
+                    <a href="#scrollToForm" class="scrollElement"><span class="login" id="login">Войти: <img src="./imgs/login-icon.png" alt="Войти"></span></a>
                 </div>
             </div>
         </div>
@@ -56,14 +56,14 @@
                     <button id="previous__button__slider">previous</button>
                     <button id="next__button__slider">next</button>
                 </div>
-                <div class="text__about__pixelPack">Pixel<span>PACK</span> — это мини-библиотечка 2D-игр. Каждая игра имеет
+                <div class="text__about__pixelPack" id="scrollToAboutUs">Pixel<span>PACK</span> — это мини-библиотечка 2D-игр. Каждая игра имеет
                     абсолютно разную идею, концепцию, смысл. Но каждая из них — <span>это игра,</span> похожая на уже всем
                     известные игры, созданные уже очень давно. Например, игра-раннер, молесмэш, теннис, гонки и банальные
                     крестики нолики. <span>Эта мини-библиотечка</span> - не что-то уникальное или новосозданное, а просто
                     <span>воплощение</span> хороших воспоминаний, ностальгии по старым 2D-шным играм. </div>
             </div>
         </div>
-        <div class="blocks__games">
+        <div class="blocks__games" id="scrollToGames">
             <div class="container">
                 <div class="games__without__end">
                     <h2 class="title__of__games__without__end">Бесконечные игры</h2>
@@ -100,7 +100,7 @@
                 <canvas width="320" height="320" id="canvas" style="display: none; margin: 0 auto; border-radius: 13px;"></canvas>
             </div>
         </div>
-        <div class="form">
+        <div class="form" id="scrollToForm">
             <div class="container" id="container__form">
                 <h3 id="title__build__form">Хотите загрузить и заполнить форму?</h3>
                 <button type="button" id="build__form">Загрузить форму</button>
@@ -150,7 +150,7 @@
                     <li style="font-size: 13px; font-weight: 400;">Tictactoe</li>
                     <li style="font-size: 13px; font-weight: 400;">MoleSmash</li>
                 </ul>
-                <ul>
+                <ul id="scrollToContact">
                     <li style="font-size: 13px; font-weight: 400;"><img src="./imgs/pixelPackFooterInstIcon.png" alt="InstagramIcon"> @officialpixelpack</li>
                     <li style="font-size: 13px;"><img src="./imgs/pixelPackFooterIconTwitter.png" alt="TwitterIcon"> @PixelPACKofficial</li>
                     <li style="font-size: 13px;"><img src="./imgs/pixelPackFooterIconWhatsApp.png" alt="WhatsAppIcon"> @officialpixelpackmessage</li>

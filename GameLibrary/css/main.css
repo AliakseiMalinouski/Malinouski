@@ -85,9 +85,9 @@ mark {
     transform: rotate(5deg); }
   100% {
     transform: rotate(0deg); } }
-      .header .container .wrapper__text__header .login {
+      .header .container .wrapper__text__header a .login {
         color: white; }
-        .header .container .wrapper__text__header .login img {
+        .header .container .wrapper__text__header a .login img {
           width: 20px;
           height: 20px;
           cursor: pointer; }
