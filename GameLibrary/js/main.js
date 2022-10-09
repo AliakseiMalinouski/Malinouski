@@ -297,7 +297,7 @@ previousButtonSlider.addEventListener('click', function (EO) {
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
 });
-// загрузка формы через ajax
+// AJAX: загрузка формы, регистрация, загрузка руководство
 let buildFormButton = document.getElementById('build__form');
 let titleFormBuild = document.getElementById('title__build__form');
 let wrapperForm = document.getElementById('wrapper__form');
@@ -313,8 +313,9 @@ function checkedLocalStorage() {
 }
 checkedLocalStorage();
 buildFormButton.addEventListener('click', buildForm);
+const urlForm = "https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/7a0ef6a5501717129075d1bdba5c55210ca5135d/loadForm";
 function buildForm() {
-        $.ajax("https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/7a0ef6a5501717129075d1bdba5c55210ca5135d/loadForm",
+        $.ajax(urlForm,
             { type:'GET', dataType:'html',
                   success:dataLoaded, error:errorHandler }
         );
@@ -468,3 +469,24 @@ function errorHandler(jqXHR,statusStr,errorStr) {
     alert(statusStr+' '+errorStr);
 }
 restoreInfo();
+// загружаем руководство по библиоетке с помощью AJAX
+
+const urlGuide = 'https://gist.githubusercontent.com/AliakseiMalinouski/ef96e192fa90204a9b2f96fd54b383ad/raw/beeec8f2851a34612211dd896ebd91eeaebc20a0/GuidePixelPACK';
+let buttonCreateGuide = document.getElementById('create__guide');
+let wrapperGuide = document.getElementById('wrapper__guide');
+buttonCreateGuide.addEventListener('click', createGuide);
+function createGuide() {
+        $.ajax(urlGuide,
+            { type:'GET', dataType:'html',
+                  success:dataLoadedGuide, error:errorHandlerGuide }
+        );
+    }
+    function dataLoadedGuide(data) {
+        wrapperGuide.innerHTML = data;
+        buttonCreateGuide.innerHTML = 'Руководство загружено';
+        buttonCreateGuide.style.color = 'lime';
+        buttonCreateGuide.disabled = true;
+    }
+    function errorHandlerGuide(jqXHR,statusStr,errorStr) {
+        alert(statusStr+' '+errorStr);
+}

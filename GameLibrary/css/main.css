@@ -435,7 +435,8 @@ mark {
       margin: 0 auto;
       margin-top: 50px;
       font-family: 'Press Start 2P', cursive;
-      margin-bottom: 70px; }
+      margin-bottom: 70px;
+      border-radius: 6px; }
   .more__about__games .canvasAnimation {
     animation: canvas 1.1s linear; }
 @keyframes canvas {
@@ -477,7 +478,8 @@ mark {
       border: none;
       cursor: pointer;
       font-family: 'Press Start 2P', cursive;
-      color: #00FF00; }
+      color: #00FF00;
+      border-radius: 6px; }
     .form .container #wrapper__form #form_1 {
       width: 100%;
       background-image: url(../imgs/background_form.png);
@@ -605,5 +607,50 @@ mark {
   100% {
     transform: rotate(0deg);
     transition: 1s; } }
+.guide {
+  padding-top: 100px;
+  border: 1px solid white; }
+  .guide .container {
+    border: 1px solid white;
+    padding: 0.1px; }
+    .guide .container h3 {
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center;
+      color: white;
+      margin-bottom: 30px; }
+    .guide .container button {
+      width: 300px;
+      height: 35px;
+      background-color: #1f1f1f;
+      display: block;
+      margin: 0 auto;
+      border: none;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+      color: red;
+      border-radius: 6px;
+      margin-bottom: 60px; }
+    .guide .container #wrapper__guide .guide__block {
+      animation: guide 1s linear; }
+      .guide .container #wrapper__guide .guide__block h4 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 400; }
+      .guide .container #wrapper__guide .guide__block p {
+        color: #1E90FF;
+        line-height: 35px; }
+        .guide .container #wrapper__guide .guide__block p span {
+          color: red;
+          cursor: pointer; }
+        .guide .container #wrapper__guide .guide__block p #logo__guide {
+          color: #00FF00; }
+@keyframes guide {
+  from {
+    opacity: 0.1; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */

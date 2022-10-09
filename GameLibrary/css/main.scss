@@ -586,6 +586,7 @@ mark {
             margin-top: 50px;
             font-family: 'Press Start 2P', cursive;
             margin-bottom: 70px;
+            border-radius: 6px;
         }
     }
     .canvasAnimation {
@@ -640,6 +641,7 @@ mark {
             cursor: pointer;
             font-family: 'Press Start 2P', cursive;
             color: $lime;
+            border-radius: 6px;
         }
         #wrapper__form {
             #form_1 {
@@ -804,6 +806,65 @@ mark {
                     transition: 1s;
                 }
             }
+        }
+    }
+}
+.guide {
+    padding-top: 100px;
+    border: 1px solid white;
+    .container {
+        border: 1px solid white;
+        padding: 0.1px;
+        h3 {
+            text-transform: uppercase;
+            font-size: $fz26 - 4;
+            font-weight: 400;
+            text-align: center;
+            color: $white;
+            margin-bottom: 30px;
+        }
+        button {
+            width: 300px;
+            height: 35px;
+            background-color: $very-dark-blue;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            cursor: pointer;
+            font-family: 'Press Start 2P', cursive;
+            color: $red;
+            border-radius: 6px;
+            margin-bottom: 60px;
+        }
+        #wrapper__guide {
+            .guide__block {
+                animation: guide 1s linear;
+            h4 {
+                color: $white;
+                text-align: center;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+            p {
+                color: $blue;
+                line-height: 35px;
+                span {
+                    color: $red;
+                    cursor: pointer;
+                }
+                #logo__guide {
+                    color: $lime;
+                }
+            }
+        }
+        @keyframes guide {
+            from {
+                opacity: 0.1;
+            }
+            to {
+                opacity: 1;
+            }
+        }
         }
     }
 }
