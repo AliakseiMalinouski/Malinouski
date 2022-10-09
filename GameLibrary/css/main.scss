@@ -29,7 +29,6 @@ body {
     background-color: $black;
     font-family: 'Press Start 2P', cursive;
     font-size: $fz;
-    height: 10000px;
 }
 a {
     text-decoration: none;
@@ -865,6 +864,79 @@ mark {
                 opacity: 1;
             }
         }
+        }
+    }
+}
+.footer {
+    padding-top: 100px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        p {
+            color: $white;
+            span {
+                color: $red;
+            }
+        }
+        #logo__footer__image {
+            width: 64xp;
+            height: 64px;
+            position: absolute;
+            top: -20px;
+            left: 160px;
+            }
+         .neon__view {
+            color: #fff;
+            text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #f09,
+                0 0 82px #f09,
+                0 0 92px #f09,
+                0 0 102px #f09,
+                0 0 121px #f09;
+        }
+        @keyframes pulsate {
+
+            100% {
+
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px #f09,
+                    0 0 80px #f09,
+                    0 0 90px #f09,
+                    0 0 100px #f09,
+                    0 0 120px #f09;
+
+            }
+
+            0% {
+
+                text-shadow:
+                    0 0 4px #fff,
+                    0 0 10px #fff,
+                    0 0 18px #fff,
+                    0 0 38px #f09,
+                    0 0 73px #f09,
+                    0 0 80px #f09,
+                    0 0 94px #f09,
+                    0 0 120px #f09;
+
+            }
+        }
+        ul {
+            li {
+                color: $white;
+                margin-bottom: 25px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
         }
     }
 }
