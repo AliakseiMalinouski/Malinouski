@@ -320,3 +320,10 @@ setInterval(function checkClassName() {
         jo3.classList.remove('animation__for__jo3');
     }
 }, 4000);
+
+
+if (window.navigator && window.navigator.vibrate) {
+    alert('yes')
+} else {
+   alert('no')
+}
