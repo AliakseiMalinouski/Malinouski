@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid white; }
 
 html {
   width: 100%;
@@ -111,7 +112,8 @@ mark {
     .search__block .container .help__text {
       color: orange;
       margin-left: 20px;
-      margin-top: 50px; }
+      margin-top: 50px;
+      width: 170px; }
     .search__block .container .search::placeholder {
       font-family: 'Press Start 2P', cursive;
       color: #F0FFF0; }
@@ -120,7 +122,8 @@ mark {
       color: white;
       padding-left: 20px; }
       .search__block .container .search__variants li {
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        width: 170px; }
     .search__block .container .animation__games__search__blocks {
       animation: searchBL 0.6s linear; }
 @keyframes searchBL {
@@ -163,7 +166,7 @@ mark {
       color: white;
       margin-top: 90px;
       margin-left: 40px;
-      line-height: 25px;
+      line-height: 19px;
       animation: merc 1.5s infinite alternate; }
     .search__block .container .add__new__margin__top {
       margin-top: 200px;
@@ -652,8 +655,8 @@ mark {
       width: 64xp;
       height: 64px;
       position: absolute;
-      top: -20px;
-      left: 160px; }
+      top: 31px;
+      left: 40px; }
     .footer .container .neon__view {
       color: #fff;
       text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 121px #f09; }

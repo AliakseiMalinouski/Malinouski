@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid white;
 }
 html {
     width: 100%;
@@ -185,6 +186,7 @@ mark {
             color: $orange;
             margin-left: 20px;
             margin-top: 50px;
+            width: 170px;
         }
         .search::placeholder {
             font-family: 'Press Start 2P', cursive;
@@ -196,6 +198,7 @@ mark {
             padding-left: 20px;
             li {
                 margin-bottom: 25px;
+                width: 170px;
             }
         }
         .animation__games__search__blocks {
@@ -249,7 +252,7 @@ mark {
             color: $white;
             margin-top: 90px;
             margin-left: 40px;
-            line-height: 25px;
+            line-height: 19px;
             animation: merc 1.5s infinite alternate;
         }
         .add__new__margin__top {
@@ -872,8 +875,8 @@ mark {
             width: 64xp;
             height: 64px;
             position: absolute;
-            top: -20px;
-            left: 160px;
+            top: 31px;
+            left: 40px;
             }
          .neon__view {
             color: #fff;
