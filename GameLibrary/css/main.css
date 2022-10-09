@@ -32,13 +32,11 @@ mark {
   width: 1220px; }
 
 .header {
-  height: 80px;
-  border: 1px solid white; }
+  height: 80px; }
   .header .container {
     height: 100%;
     display: flex;
     align-items: center;
-    border: 1px solid white;
     padding-left: 15px;
     padding-right: 15px; }
     .header .container .name__of__library {
@@ -95,10 +93,8 @@ mark {
           cursor: pointer; }
 
 .search__block {
-  padding-top: 50px;
-  border: 1px solid white; }
+  padding-top: 50px; }
   .search__block .container {
-    border: 1px solid white;
     position: relative;
     height: 500px;
     padding: 0.1px; }
@@ -183,16 +179,13 @@ mark {
       transition: 1.2s; }
 
 .hero {
-  padding-top: 100px;
-  border: 1px solid white; }
+  padding-top: 100px; }
   .hero .container {
     padding: 0.1px;
     position: relative;
-    border: 1px solid white;
     display: flex;
     justify-content: space-between; }
     .hero .container #slider {
-      border: 1px solid white;
       width: 320px;
       height: 320px;
       overflow: hidden;
@@ -410,10 +403,8 @@ mark {
         color: orange; }
 
 .more__about__games {
-  border: 1px solid white;
   padding-top: 100px; }
   .more__about__games .container {
-    border: 1px solid white;
     padding: 0.1px;
     position: relative; }
     .more__about__games .container .title__cards {
@@ -455,10 +446,8 @@ mark {
     opacity: 1;
     right: 300px; } }
 .form {
-  padding-top: 200px;
-  border: 1px solid white; }
+  padding-top: 200px; }
   .form .container {
-    border: 1px solid white;
     position: relative;
     padding: 0.1px; }
     .form .container h3 {
@@ -607,10 +596,8 @@ mark {
     transform: rotate(0deg);
     transition: 1s; } }
 .guide {
-  padding-top: 100px;
-  border: 1px solid white; }
+  padding-top: 100px; }
   .guide .container {
-    border: 1px solid white;
     padding: 0.1px; }
     .guide .container h3 {
       text-transform: uppercase;

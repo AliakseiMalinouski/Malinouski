@@ -49,12 +49,10 @@ mark {
 }
 .header {
     height: 80px;
-    border: 1px solid white;
     .container {
         height: 100%;
         display: flex;
         align-items: center;
-        border: 1px solid white;
         padding-left: 15px;
         padding-right: 15px;
         .name__of__library {
@@ -166,9 +164,7 @@ mark {
 }
 .search__block {
     padding-top: 50px;
-    border: 1px solid white;
     .container {
-        border: 1px solid white;
         position: relative;
         height: 500px;
         padding: 0.1px;
@@ -274,15 +270,12 @@ mark {
 }
 .hero {
     padding-top: 100px;
-    border: 1px solid $white;
     .container {
         padding: 0.1px;
         position: relative;
-        border: 1px solid white;
         display: flex;
         justify-content: space-between;
         #slider {
-            border: 1px solid $white;
             width: 320px;
             height: 320px;
             overflow: hidden;
@@ -559,10 +552,8 @@ mark {
     }
 }
 .more__about__games {
-    border: 1px solid white;
     padding-top: 100px;
     .container {
-        border: 1px solid white;
         padding: 0.1px;
         position: relative;
         .title__cards {
@@ -617,9 +608,7 @@ mark {
 }
 .form {
     padding-top: 200px;
-    border: 1px solid white;
     .container {
-        border: 1px solid white;
         position: relative;
         padding: 0.1px;
         h3 {
@@ -810,9 +799,7 @@ mark {
 }
 .guide {
     padding-top: 100px;
-    border: 1px solid white;
     .container {
-        border: 1px solid white;
         padding: 0.1px;
         h3 {
             text-transform: uppercase;
