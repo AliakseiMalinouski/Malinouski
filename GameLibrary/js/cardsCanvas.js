@@ -1,4 +1,5 @@
 "use strict";
+// получаем и создаём элементы
 let btn = document.getElementById('view__cards');
 let canvas = document.getElementById('canvas');
 let contextOfCanvas = canvas.getContext('2d');
@@ -17,12 +18,20 @@ btn.onclick = function () {
     btnClose.style.cursor = 'pointer';
     container.appendChild(btnClose);
     btn.disabled = true;
+    btn.innerHTML = 'Карточка открыта';
+    if (window.matchMedia('(max-width: 560px)')) {
+        btnClose.classList.remove('anim__close');
+        btnClose.classList.add('animated__btn__close__canvas');
+        btnClose.style.right = '100px';
+        btnClose.style.top = '180px';
+    }
 }
 btnClose.addEventListener('click', (EO) => {
     EO = EO || window.event;
     canvas.style.display = 'none'
     btnClose.style.display = 'none';
     btn.disabled = false;
+    btn.innerHTML = 'Посмотреть карточку';
 });
 // создаём хэш с данными о canvas
 let hCanvas = {
@@ -30,6 +39,7 @@ let hCanvas = {
     height: canvas.height,
     backgroundColor: '#1f1f1f',
 };
+// создаём фон канвас
 contextOfCanvas.fillStyle = hCanvas.backgroundColor;
 contextOfCanvas.fillRect(0, 0, hCanvas.width, hCanvas.height);
 // создаём человечка, сохраняем все данные о нём
