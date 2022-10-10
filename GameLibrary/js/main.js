@@ -297,6 +297,23 @@ previousButtonSlider.addEventListener('click', function (EO) {
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
 });
+// тоже самое для тач 
+nextButtonSlider.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    xPosSliderWay += 320;
+    if (xPosSliderWay >= 960) {
+        xPosSliderWay = 0;
+    }
+    sliderWay.style.left = -xPosSliderWay + 'px';
+});
+previousButtonSlider.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    xPosSliderWay -= 320;
+    if (xPosSliderWay < 0) {
+        xPosSliderWay = 640;
+    }
+    sliderWay.style.left = -xPosSliderWay + 'px';
+});
 // AJAX: загрузка формы, регистрация, загрузка руководство
 let buildFormButton = document.getElementById('build__form');
 let titleFormBuild = document.getElementById('title__build__form');
@@ -313,6 +330,7 @@ function checkedLocalStorage() {
 }
 checkedLocalStorage();
 buildFormButton.addEventListener('click', buildForm);
+buildFormButton.addEventListener('touchstart', buildForm);
 const urlForm = "https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/7a0ef6a5501717129075d1bdba5c55210ca5135d/loadForm";
 function buildForm() {
         $.ajax(urlForm,
@@ -474,6 +492,7 @@ const urlGuide = 'https://gist.githubusercontent.com/AliakseiMalinouski/ef96e192
 let buttonCreateGuide = document.getElementById('create__guide');
 let wrapperGuide = document.getElementById('wrapper__guide');
 buttonCreateGuide.addEventListener('click', createGuide);
+buttonCreateGuide.addEventListener('touchstart', createGuide);
 function createGuide() {
         $.ajax(urlGuide,
             { type:'GET', dataType:'html',
