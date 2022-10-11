@@ -541,7 +541,6 @@ function wrapperScrollFunc() {
 }
 wrapperScrollFunc();
 // прогресс загрузки руководства
-
 let progressCircle = document.querySelector('circle');
 let radiusOfCircle = progressCircle.r.baseVal.value;
 let cf = radiusOfCircle * 2 * Math.PI;
@@ -561,3 +560,19 @@ requestAnimationFrame(function animate() {
         requestAnimationFrame(animate)
     }
 });
+// добавляем в header button-humburger
+class Menu {
+    constructor() {
+        this.button = document.createElement('img');
+        this.headerContainer = document.getElementById('container__header');
+    }
+    createHamburgerButton() {
+        this.button.setAttribute('src', './imgs/humburgerButtonHearder.png');
+        this.button.classList.add('hamburger__button__header')
+        this.headerContainer.appendChild(this.button);
+    }
+}
+let menuHeader = new Menu();
+if (window.matchMedia('(max-width: 560px)')) {
+    menuHeader.createHamburgerButton();
+}
