@@ -697,6 +697,9 @@ mark {
         display: flex;
         justify-content: space-around;
         .desktop__games {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             h3 {
                 color: $white;
                 font-size: $fz26 - 6;

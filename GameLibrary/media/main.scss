@@ -101,6 +101,13 @@ $fz26: $fz + 10;
         }
     }
 }
+.guide {
+    .container {
+        #svg__progress__circle__guide {
+            margin-left: 380px;
+        }
+    }
+}
 }
 @media all and (max-width: 900px) {
     .container {
@@ -199,6 +206,13 @@ $fz26: $fz + 10;
             }
         }
     }
+    .guide {
+    .container {
+        #svg__progress__circle__guide {
+            margin-left: 230px;
+        }
+    }
+}
     .footer {
         .container {
             flex-flow: wrap;
@@ -322,6 +336,13 @@ $fz26: $fz + 10;
             }
         }
     }
+    .guide {
+    .container {
+        #svg__progress__circle__guide {
+            margin-left: 100px;
+        }
+    }
+}
     .guide {
         .container {
             h3 {

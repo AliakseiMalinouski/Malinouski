@@ -50,7 +50,10 @@
 
   .form .container #wrapper__form #form_1 #form__regestration {
     width: 300px !important;
-    margin-left: 520px; } }
+    margin-left: 520px; }
+
+  .guide .container #svg__progress__circle__guide {
+    margin-left: 380px; } }
 @media all and (max-width: 900px) {
   .container {
     width: 560px;
@@ -114,6 +117,9 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 25px; }
+
+  .guide .container #svg__progress__circle__guide {
+    margin-left: 230px; }
 
   .footer .container {
     flex-flow: wrap; }
@@ -181,6 +187,9 @@
   .about__platform .container .desktop__and__mobile__games h3 {
     font-size: 16px;
     text-align: center; }
+
+  .guide .container #svg__progress__circle__guide {
+    margin-left: 100px; }
 
   .guide .container h3 {
     font-size: 20px;
