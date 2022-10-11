@@ -137,6 +137,8 @@
     display: none; }
   .header .container .name__of__library {
     margin-left: 10px; }
+  .header .container #hamburger__button__header {
+    display: block; }
 
   .search__block .container .search {
     width: 310px;

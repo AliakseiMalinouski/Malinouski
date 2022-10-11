@@ -560,4 +560,24 @@ requestAnimationFrame(function animate() {
         requestAnimationFrame(animate)
     }
 });
-// добавляем в header button-humburger
+// обрабатываем кнопку header на мобилках
+let buttonHamburgerHeader = document.getElementById('hamburger__button__header');
+let wrapMenu = document.querySelector('.wrap__menu');
+let menuHeader = document.querySelector('.menu__header');
+let crossCloseMenuHeader = document.getElementById('close__menu__header');
+buttonHamburgerHeader.addEventListener('click', openMenuHeader);
+buttonHamburgerHeader.addEventListener('touchstart', openMenuHeader);
+crossCloseMenuHeader.addEventListener('click', closeMenuHeader);
+crossCloseMenuHeader.addEventListener('touchstart', closeMenuHeader);
+function openMenuHeader(EO) {
+    EO = EO || window.event;
+    wrapMenu.style.display = 'block';
+    menuHeader.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+function closeMenuHeader(EO) {
+    EO = EO || window.event;
+    wrapMenu.style.display = 'none';
+    menuHeader.style.display = 'none';
+    document.body.style.overflow = '';
+}
