@@ -282,6 +282,9 @@ $fz26: $fz + 10;
             #buttons__block {
                 left: 70px;
             }
+            .text__about__pixelPack {
+                padding-left: 10px;
+            }
         }
     }
     .blocks__games {
@@ -341,14 +344,10 @@ $fz26: $fz + 10;
         #svg__progress__circle__guide {
             margin-left: 100px;
         }
-    }
-}
-    .guide {
-        .container {
-            h3 {
+         h3 {
                 font-size: $fz26 - 6;
                 line-height: 25px;
             }
-        }
     }
+}
 }

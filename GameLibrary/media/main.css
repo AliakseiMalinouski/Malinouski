@@ -163,6 +163,8 @@
 
   .hero .container #buttons__block {
     left: 70px; }
+  .hero .container .text__about__pixelPack {
+    padding-left: 10px; }
 
   .blocks__games .container .games__without__end div {
     width: 315px; }
@@ -190,7 +192,6 @@
 
   .guide .container #svg__progress__circle__guide {
     margin-left: 100px; }
-
   .guide .container h3 {
     font-size: 20px;
     line-height: 25px; } }
