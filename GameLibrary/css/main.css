@@ -641,6 +641,15 @@ mark {
     opacity: 0.1; }
   to {
     opacity: 1; } }
+    .guide .container svg {
+      background-color: black;
+      margin-left: 550px;
+      display: none; }
+    .guide .container .progress-ring__circle {
+      transition: 0.35s stroke-dashoffset;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%; }
+
 .footer {
   padding-top: 100px; }
   .footer .container {

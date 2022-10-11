@@ -487,17 +487,25 @@ function errorHandler(jqXHR,statusStr,errorStr) {
     alert(statusStr+' '+errorStr);
 }
 restoreInfo();
-// загружаем руководство по библиоетке с помощью AJAX
-const urlGuide = 'https://gist.githubusercontent.com/AliakseiMalinouski/ef96e192fa90204a9b2f96fd54b383ad/raw/beeec8f2851a34612211dd896ebd91eeaebc20a0/GuidePixelPACK';
+// загружаем руководство по библиоетке с помощью AJAX и сразу получаем наш прогресс загрузки
+const urlGuide = 'https://gist.githubusercontent.com/AliakseiMalinouski/ef96e192fa90204a9b2f96fd54b383ad/raw/884b87173087f8bb28cfc096aea04de6abfd05aa/GuidePixelPACK';
 let buttonCreateGuide = document.getElementById('create__guide');
 let wrapperGuide = document.getElementById('wrapper__guide');
-buttonCreateGuide.addEventListener('click', createGuide);
-buttonCreateGuide.addEventListener('touchstart', createGuide);
+let svgProgressCircleGuide = document.getElementById('svg__progress__circle__guide');
+buttonCreateGuide.addEventListener('click', delayCreateGuide);
+buttonCreateGuide.addEventListener('touchstart', delayCreateGuide);
+function delayCreateGuide() {
+    setTimeout(createGuide, 8000);
+    svgProgressCircleGuide.style.display = 'block';
+    buttonCreateGuide.innerHTML = 'Идёт загрузка';
+    buttonCreateGuide.style.color = 'orange';
+}
 function createGuide() {
         $.ajax(urlGuide,
             { type:'GET', dataType:'html',
                   success:dataLoadedGuide, error:errorHandlerGuide }
-        );
+    );
+    svgProgressCircleGuide.style.display = 'none';
     }
     function dataLoadedGuide(data) {
         wrapperGuide.innerHTML = data;
@@ -530,3 +538,24 @@ function wrapperScrollFunc() {
 }
 }
 wrapperScrollFunc();
+// прогресс загрузки руководства
+
+let progressCircle = document.querySelector('circle');
+let radiusOfCircle = progressCircle.r.baseVal.value;
+let cf = radiusOfCircle * 2 * Math.PI;
+progressCircle.style.strokeDasharray = `${cf} ${cf}`;
+progressCircle.style.strokeDashoffset = `${cf}`;
+function setProgress(percent) {
+    const distance = cf - percent / 100 * cf;
+    progressCircle.style.strokeDashoffset = distance;
+}
+let valueProgressCircle = 0
+requestAnimationFrame(function animate() {
+    valueProgressCircle += 0.2;
+    if (valueProgressCircle < 101 && valueProgressCircle > -1) {
+        setProgress(valueProgressCircle);
+    }
+    if (valueProgressCircle < 101) {
+        requestAnimationFrame(animate)
+    }
+});

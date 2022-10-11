@@ -857,6 +857,16 @@ mark {
             }
         }
         }
+        svg {
+            background-color: $black;
+            margin-left: 550px;
+            display: none;
+        }
+        .progress-ring__circle {
+            transition: 0.35s stroke-dashoffset;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
     }
 }
 .footer {
