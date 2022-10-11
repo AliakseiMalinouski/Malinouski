@@ -39,7 +39,8 @@ mark {
     display: flex;
     align-items: center;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    position: relative; }
     .header .container .name__of__library {
       margin-left: 15px;
       color: white;
@@ -95,7 +96,22 @@ mark {
     .header .container .hamburger__button__header {
       width: 40px;
       height: 30px; }
-
+    .header .container .menu__header {
+      position: absolute;
+      width: 180px;
+      height: 500px;
+      background-color: purple;
+      z-index: 3;
+      right: 0px;
+      animation: menuHeader 1s linear;
+      color: white; }
+@keyframes menuHeader {
+  from {
+    right: -150px;
+    opacity: 0.1; }
+  to {
+    right: 0px;
+    opacity: 1; } }
 .search__block {
   padding-top: 50px; }
   .search__block .container {

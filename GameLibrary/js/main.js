@@ -565,14 +565,31 @@ class Menu {
     constructor() {
         this.button = document.createElement('img');
         this.headerContainer = document.getElementById('container__header');
+        this.menu = document.createElement('div');
+        this.body = document.body;
+        this.crossClose = document.createElement('div');
     }
     createHamburgerButton() {
         this.button.setAttribute('src', './imgs/humburgerButtonHearder.png');
         this.button.classList.add('hamburger__button__header')
         this.headerContainer.appendChild(this.button);
     }
+    openMenu() {
+        this.menu.classList.add('menu__header');
+        this.menu.textContent = 'gg'
+        this.headerContainer.appendChild(this.menu);
+        this.body.style.overflow = 'hidden';
+    }
 }
 let menuHeader = new Menu();
 if (window.matchMedia('(max-width: 560px)')) {
     menuHeader.createHamburgerButton();
 }
+// получаем header и используя делегированеи отслеживаем target
+let containerHeader = document.getElementById('container__header');
+containerHeader.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    if (EO.target.classList == 'hamburger__button__header') {
+        menuHeader.openMenu();
+    }
+});
