@@ -499,6 +499,8 @@ function delayCreateGuide() {
     svgProgressCircleGuide.style.display = 'block';
     buttonCreateGuide.innerHTML = 'Идёт загрузка';
     buttonCreateGuide.style.color = 'orange';
+    buttonCreateGuide.removeEventListener('click', delayCreateGuide);
+    buttonCreateGuide.removeEventListener('touchstart', delayCreateGuide);
 }
 function createGuide() {
         $.ajax(urlGuide,
