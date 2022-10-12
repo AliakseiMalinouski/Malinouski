@@ -281,22 +281,24 @@ const sliderWay = document.getElementById('slider__way');
 let xPosSliderWay = 0;
 let previousButtonSlider = document.getElementById('previous__button__slider');
 let nextButtonSlider = document.getElementById('next__button__slider');
-nextButtonSlider.addEventListener('click', function (EO) {
+nextButtonSlider.addEventListener('click', openNextSlide);
+function openNextSlide (EO) {
     EO = EO || window.event;
     xPosSliderWay += 320;
     if (xPosSliderWay >= 960) {
         xPosSliderWay = 0;
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
-});
-previousButtonSlider.addEventListener('click', function (EO) {
+}
+previousButtonSlider.addEventListener('click', openPreviuosSlide);
+function openPreviuosSlide(EO) {
     EO = EO || window.event;
     xPosSliderWay -= 320;
     if (xPosSliderWay < 0) {
         xPosSliderWay = 640;
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
-});
+}
 // AJAX: загрузка формы, регистрация, загрузка руководство
 let buildFormButton = document.getElementById('build__form');
 let titleFormBuild = document.getElementById('title__build__form');
@@ -564,12 +566,13 @@ function closeMenuHeader(EO) {
     document.body.style.overflow = '';
 }
 // обрабатываем нажатие на якоря в меню используя делегирование
-let listMenuHeader = document.querySelectorAll('#list__menu__header li');
-listMenuHeader.forEach(function (element) {
-    element.addEventListener('touchstart', function (EO) {
-        EO = EO || window.event;
+let listMenuHeader = document.getElementById('list__menu__header');
+listMenuHeader.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    if (EO.target.getAttribute('href') == '#scrollToAboutUs' || EO.target.getAttribute('href') == '#scrollToContact' || EO.target.getAttribute('href') == '#scrollToGames' || EO.target.getAttribute('href') == '#scrollToForm') {
         closeMenuHeader();
-    });
+        console.log("true")
+    }
 });
 // проверяем ширину экрана и отключаем все события click и переводим на touch
 const mediaQuery = window.matchMedia('(max-width: 960px)')
@@ -582,22 +585,8 @@ if (mediaQuery.matches) {
     buttonCreateGuide.addEventListener('touchstart', delayCreateGuide);
     buildFormButton.removeEventListener('click', buildForm);
     buildFormButton.addEventListener('touchstart', buildForm);
-    nextButtonSlider.removeEventListener('click');
-    previousButtonSlider.removeEventListener('click');
-    nextButtonSlider.addEventListener('touchstart', function (EO) {
-    EO = EO || window.event;
-    xPosSliderWay += 320;
-    if (xPosSliderWay >= 960) {
-        xPosSliderWay = 0;
-    }
-    sliderWay.style.left = -xPosSliderWay + 'px';
-    });
-    previousButtonSlider.addEventListener('touchstart', function (EO) {
-        EO = EO || window.event;
-        xPosSliderWay -= 320;
-        if (xPosSliderWay < 0) {
-            xPosSliderWay = 640;
-        }
-        sliderWay.style.left = -xPosSliderWay + 'px';
-    });
+    nextButtonSlider.removeEventListener('click', openNextSlide);
+    previousButtonSlider.removeEventListener('click', openPreviuosSlide);
+    nextButtonSlider.addEventListener('touchstart', openNextSlide);
+    previousButtonSlider.addEventListener('touchstart', openPreviuosSlide);
 }
