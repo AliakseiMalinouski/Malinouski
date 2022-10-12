@@ -173,9 +173,10 @@ mark {
             display: none;
             position: absolute;
             width: 180px;
-            height: 500px;
+            height: 300px;
             animation: menuHeader 1s linear;
             right: 0px;
+            top: 0px;
             z-index: 3;
             .menu__header {
             display: none;
@@ -184,12 +185,23 @@ mark {
             position: relative;
             background-color: $very-dark-blue;
             color: $white;
+            padding-left: 10px;
+            padding-top: 90px;
             #close__menu__header {
                 position: absolute;
                 width: 30px;
                 height: 30px;
-                top: 210px;
+                top: 5px;
                 right: 5px;
+            }
+            ul {
+                li {
+                    margin-bottom: 15px;
+                    a {
+                        font-size: $fz - 2;
+                        color: $lime;
+                    }
+                }
             }
         }
         @keyframes menuHeader {

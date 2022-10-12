@@ -101,9 +101,10 @@ mark {
       display: none;
       position: absolute;
       width: 180px;
-      height: 500px;
+      height: 300px;
       animation: menuHeader 1s linear;
       right: 0px;
+      top: 0px;
       z-index: 3; }
       .header .container .wrap__menu .menu__header {
         display: none;
@@ -111,13 +112,20 @@ mark {
         height: 100%;
         position: relative;
         background-color: #1f1f1f;
-        color: white; }
+        color: white;
+        padding-left: 10px;
+        padding-top: 90px; }
         .header .container .wrap__menu .menu__header #close__menu__header {
           position: absolute;
           width: 30px;
           height: 30px;
-          top: 210px;
+          top: 5px;
           right: 5px; }
+        .header .container .wrap__menu .menu__header ul li {
+          margin-bottom: 15px; }
+          .header .container .wrap__menu .menu__header ul li a {
+            font-size: 14px;
+            color: #00FF00; }
 @keyframes menuHeader {
   from {
     right: -150px;

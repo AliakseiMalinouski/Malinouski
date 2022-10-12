@@ -297,23 +297,6 @@ previousButtonSlider.addEventListener('click', function (EO) {
     }
     sliderWay.style.left = -xPosSliderWay + 'px';
 });
-// тоже самое для тач 
-nextButtonSlider.addEventListener('touchstart', function (EO) {
-    EO = EO || window.event;
-    xPosSliderWay += 320;
-    if (xPosSliderWay >= 960) {
-        xPosSliderWay = 0;
-    }
-    sliderWay.style.left = -xPosSliderWay + 'px';
-});
-previousButtonSlider.addEventListener('touchstart', function (EO) {
-    EO = EO || window.event;
-    xPosSliderWay -= 320;
-    if (xPosSliderWay < 0) {
-        xPosSliderWay = 640;
-    }
-    sliderWay.style.left = -xPosSliderWay + 'px';
-});
 // AJAX: загрузка формы, регистрация, загрузка руководство
 let buildFormButton = document.getElementById('build__form');
 let titleFormBuild = document.getElementById('title__build__form');
@@ -330,7 +313,6 @@ function checkedLocalStorage() {
 }
 checkedLocalStorage();
 buildFormButton.addEventListener('click', buildForm);
-buildFormButton.addEventListener('touchstart', buildForm);
 const urlForm = "https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/7a0ef6a5501717129075d1bdba5c55210ca5135d/loadForm";
 function buildForm() {
         $.ajax(urlForm,
@@ -493,7 +475,6 @@ let buttonCreateGuide = document.getElementById('create__guide');
 let wrapperGuide = document.getElementById('wrapper__guide');
 let svgProgressCircleGuide = document.getElementById('svg__progress__circle__guide');
 buttonCreateGuide.addEventListener('click', delayCreateGuide);
-buttonCreateGuide.addEventListener('touchstart', delayCreateGuide);
 function delayCreateGuide() {
     setTimeout(createGuide, 8000);
     svgProgressCircleGuide.style.display = 'block';
@@ -566,9 +547,10 @@ let wrapMenu = document.querySelector('.wrap__menu');
 let menuHeader = document.querySelector('.menu__header');
 let crossCloseMenuHeader = document.getElementById('close__menu__header');
 buttonHamburgerHeader.addEventListener('click', openMenuHeader);
-buttonHamburgerHeader.addEventListener('touchstart', openMenuHeader);
+// buttonHamburgerHeader.addEventListener('touchstart', openMenuHeader);
 crossCloseMenuHeader.addEventListener('click', closeMenuHeader);
-crossCloseMenuHeader.addEventListener('touchstart', closeMenuHeader);
+// crossCloseMenuHeader.addEventListener('touchstart', closeMenuHeader);
+// открываем и закрываем меню header
 function openMenuHeader(EO) {
     EO = EO || window.event;
     wrapMenu.style.display = 'block';
@@ -580,4 +562,42 @@ function closeMenuHeader(EO) {
     wrapMenu.style.display = 'none';
     menuHeader.style.display = 'none';
     document.body.style.overflow = '';
+}
+// обрабатываем нажатие на якоря в меню используя делегирование
+let listMenuHeader = document.querySelectorAll('#list__menu__header li');
+listMenuHeader.forEach(function (element) {
+    element.addEventListener('touchstart', function (EO) {
+        EO = EO || window.event;
+        closeMenuHeader();
+    });
+});
+// проверяем ширину экрана и отключаем все события click и переводим на touch
+const mediaQuery = window.matchMedia('(max-width: 960px)')
+if (mediaQuery.matches) {
+    buttonHamburgerHeader.removeEventListener('click', openMenuHeader);
+    buttonHamburgerHeader.addEventListener('touchstart', openMenuHeader);
+    crossCloseMenuHeader.removeEventListener('click', closeMenuHeader);
+    crossCloseMenuHeader.addEventListener('touchstart', closeMenuHeader);
+    buttonCreateGuide.removeEventListener('click', delayCreateGuide);
+    buttonCreateGuide.addEventListener('touchstart', delayCreateGuide);
+    buildFormButton.removeEventListener('click', buildForm);
+    buildFormButton.addEventListener('touchstart', buildForm);
+    nextButtonSlider.removeEventListener('click');
+    previousButtonSlider.removeEventListener('click');
+    nextButtonSlider.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    xPosSliderWay += 320;
+    if (xPosSliderWay >= 960) {
+        xPosSliderWay = 0;
+    }
+    sliderWay.style.left = -xPosSliderWay + 'px';
+    });
+    previousButtonSlider.addEventListener('touchstart', function (EO) {
+        EO = EO || window.event;
+        xPosSliderWay -= 320;
+        if (xPosSliderWay < 0) {
+            xPosSliderWay = 640;
+        }
+        sliderWay.style.left = -xPosSliderWay + 'px';
+    });
 }
