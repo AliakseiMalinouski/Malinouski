@@ -567,11 +567,10 @@ function closeMenuHeader(EO) {
 }
 // обрабатываем нажатие на якоря в меню используя делегирование
 let listMenuHeader = document.getElementById('list__menu__header');
-listMenuHeader.addEventListener('touchstart', function (EO) {
+listMenuHeader.addEventListener('click', function (EO) {
     EO = EO || window.event;
     if (EO.target.getAttribute('href') == '#scrollToAboutUs' || EO.target.getAttribute('href') == '#scrollToContact' || EO.target.getAttribute('href') == '#scrollToGames' || EO.target.getAttribute('href') == '#scrollToForm') {
         closeMenuHeader();
-        console.log("true")
     }
 });
 // проверяем ширину экрана и отключаем все события click и переводим на touch

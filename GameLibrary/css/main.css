@@ -122,7 +122,8 @@ mark {
           top: 5px;
           right: 5px; }
         .header .container .wrap__menu .menu__header ul li {
-          margin-bottom: 15px; }
+          margin-bottom: 15px;
+          line-height: 25px; }
           .header .container .wrap__menu .menu__header ul li a {
             font-size: 14px;
             color: #00FF00; }
