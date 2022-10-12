@@ -325,6 +325,14 @@ $fz26: $fz + 10;
                 font-size: $fz26  - 6;
                 line-height: 25px;
             }
+            #wrapper__form {
+                #form_1 {
+                    background-size: 140% 50%;
+                    #form__regestration {
+                        margin-left: 7px;
+                    }
+                }
+            }
         }
     }
     .about__platform {
@@ -352,5 +360,14 @@ $fz26: $fz + 10;
                 line-height: 25px;
             }
     }
-}
+    }
+    .footer {
+        .container {
+            flex-direction: column;
+            padding-top: 50px;
+            #logo__footer__image {
+                left: 200px;
+            }
+        }
+    }
 }

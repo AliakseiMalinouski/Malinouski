@@ -185,6 +185,10 @@
   .form .container h3 {
     font-size: 20px;
     line-height: 25px; }
+  .form .container #wrapper__form #form_1 {
+    background-size: 140% 50%; }
+    .form .container #wrapper__form #form_1 #form__regestration {
+      margin-left: 7px; }
 
   .about__platform .container .desktop__games h3 {
     font-size: 16px; }
@@ -196,6 +200,12 @@
     margin-left: 100px; }
   .guide .container h3 {
     font-size: 20px;
-    line-height: 25px; } }
+    line-height: 25px; }
+
+  .footer .container {
+    flex-direction: column;
+    padding-top: 50px; }
+    .footer .container #logo__footer__image {
+      left: 200px; } }
 
 /*# sourceMappingURL=main.css.map */
