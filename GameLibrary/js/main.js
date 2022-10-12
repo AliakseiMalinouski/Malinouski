@@ -589,3 +589,7 @@ if (mediaQuery.matches) {
     nextButtonSlider.addEventListener('touchstart', openNextSlide);
     previousButtonSlider.addEventListener('touchstart', openPreviuosSlide);
 }
+// предупрждение о несохраннёных данных
+window.onbeforeunload = function() {
+    return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
+};

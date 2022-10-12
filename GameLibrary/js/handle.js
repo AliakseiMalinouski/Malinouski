@@ -211,10 +211,7 @@ function animateSixthEnemyAnimal() {
 animateSixthEnemyAnimal();
 // подписываемся и обрабатываем клик по животным используя делегирование
 let arrayAllImgsOfDocument = document.querySelectorAll('img');
-arrayAllImgsOfDocument.forEach(element => {
-    element.ondragstart = function () { return false } // отменяем перетаскивание картинок
-    element.onselectionchange = function () { return false } // отменяем выделение картинок
-    element.addEventListener('click', function clickOnAnimal (EO) {
+function clickOnAnimal (EO) {
     EO = EO || window.event;
     mouseDownOnAnimal.play();
     score++;
@@ -228,10 +225,24 @@ arrayAllImgsOfDocument.forEach(element => {
             element.addEventListener('click', clickOnAnimal);
         }, 900);
     }
-    });
+    }
+arrayAllImgsOfDocument.forEach(element => {
+    element.ondragstart = function () { return false } // отменяем перетаскивание картинок
+    element.onselectionchange = function () { return false } // отменяем выделение картинок
+    element.addEventListener('click', clickOnAnimal);
 });
 // тоже самое для touch
-arrayAllImgsOfDocument.forEach(element => {
+
+// предупрждение о выходе и несохраннёных данных
+window.onbeforeunload = function() {
+    return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
+};
+const mediaQuery = window.matchMedia('(max-width: 960px)')
+if (mediaQuery.matches) {
+    arrayAllImgsOfDocument.forEach(function (element) {
+        element.removeEventListener('click', clickOnAnimal); 
+    });
+    arrayAllImgsOfDocument.forEach(element => {
     element.ondragstart = function () { return false } // отменяем перетаскивание картинок
     element.onselectionchange = function () { return false } // отменяем выделение картинок
     element.addEventListener('touchstart', function clickOnAnimal (EO) {
@@ -250,7 +261,4 @@ arrayAllImgsOfDocument.forEach(element => {
     }
     });
 });
-// предупрждение о выходе и несохраннёных данных
-window.onbeforeunload = function() {
-    return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
-};
+}
