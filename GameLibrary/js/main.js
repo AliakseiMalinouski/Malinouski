@@ -620,3 +620,40 @@ blockGamesWithEnd.addEventListener('click', function (EO) {
         window.onbeforeunload = null;
     }
 });
+// делаем модальное окно
+window.addEventListener('load', function (EO) {
+    EO = EO || window.event;
+    modalWindow.createModal();
+});
+class Modal {
+    constructor() {
+        this.wrapperModal = document.createElement('div');
+        this.modal = document.createElement('div');
+        this.body = document.body;
+        this.header = document.getElementById('header');
+        this.searchBlock = document.getElementById('search__block');
+        this.hero = document.getElementById('hero');
+        this.blockGames = document.getElementById('scrollToGames');
+        this.moreAboutGames = document.getElementById('more__about__games');
+        this.form = document.getElementById('scrollToForm');
+        this.aboutPlatform = document.getElementById('about__platform');
+        this.guide = document.getElementById('guide');
+        this.footer = document.getElementById('footer');
+    }
+    createModal() {
+        this.header.classList.add('hide');
+        this.searchBlock.classList.add('hide');
+        this.hero.classList.add('hide');
+        this.blockGames.classList.add('hide');
+        this.moreAboutGames.classList.add('hide');
+        this.form.classList.add('hide');
+        this.aboutPlatform.classList.add('hide');
+        this.guide.classList.add('hide');
+        this.footer.classList.add('hide');
+        this.wrapperModal.classList.add('wrapper__modal__window');
+        this.body.classList.add('overflow');
+        this.wrapperModal.appendChild(this.modal);
+        this.body.append(this.wrapperModal);
+    }
+}
+let modalWindow = new Modal();

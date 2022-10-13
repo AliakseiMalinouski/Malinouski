@@ -7,12 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./imgs/title-icon.png">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="media/main.css">
     <title>PixelPACK</title>
 </head>
 <body>
-        <div class="header">
+        <div class="header" id="header">
             <div class="container" id="container__header">
                 <a href="./main.html"><img src="./imgs/title-icon.png" alt="Лого" id="logo" class="logo"></a>
                 <h3 class="name__of__library neon__view" id="name__of__library">Pix<span>el</span><span>Pack</span></h3>
@@ -38,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="search__block">
+        <div class="search__block" id="search__block">
             <div class="container container__search__block">
                 <input type="text" class="search" id="search" placeholder="Введите полное название игры">
                 <p class="help__text">Подсказки:</p>
@@ -55,7 +56,7 @@
                         играть</span></p>
             </div>
         </div>
-        <div class="hero">
+        <div class="hero" id="hero">
             <div class="container">
                 <div id="slider">
                     <div id="slider__way">
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="more__about__games">
+        <div class="more__about__games" id="more__about__games">
             <div class="container" id="container__more__about__games">
                 <h2 class="title__cards">Пример карточки Игры</h2>
                 <button type="button" id="view__cards" onclick="testLoadData()">Посмотреть карточку</button>
@@ -122,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="about__platform">
+        <div class="about__platform" id="about__platform">
             <div class="container">
                 <div class="desktop__games">
                     <h3>Платформенные игры</h3>
@@ -137,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="guide">
+        <div class="guide" id="guide">
             <div class="container">
                 <h3>Хотите загрузить и ознакомиться с руководством?</h3>
                 <button type="button" id="create__guide">Загрузить руководство</button>
@@ -151,7 +152,7 @@
                 </svg>
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="container">
                 <p class="neon__view">Pixel<span>PACK</span></p>
                 <img src="./imgs/title-icon.png" alt="logo" id="logo__footer__image">
