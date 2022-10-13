@@ -641,8 +641,8 @@ class Modal {
         this.footer = document.getElementById('footer');
     }
     createModal() {
-        if (this.body.classList == 'disable') {
-            this.body.classList.remove('disable');
+        if (this.wrapperModal.classList == 'disable') {
+            this.wrapperModal.classList.remove('disable');
         }
         this.header.classList.add('hide');
         this.searchBlock.classList.add('hide');
@@ -659,6 +659,7 @@ class Modal {
         this.body.append(this.wrapperModal);
     }
     destroyModal() {
+        this.body.classList.remove('overflow');
         this.wrapperModal.classList.add('disable');
         this.header.classList.remove('hide');
         this.searchBlock.classList.remove('hide');
