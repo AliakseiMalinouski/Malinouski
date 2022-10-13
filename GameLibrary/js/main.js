@@ -641,6 +641,9 @@ class Modal {
         this.footer = document.getElementById('footer');
     }
     createModal() {
+        if (this.body.classList == 'disable') {
+            this.body.classList.remove('disable');
+        }
         this.header.classList.add('hide');
         this.searchBlock.classList.add('hide');
         this.hero.classList.add('hide');
@@ -655,5 +658,22 @@ class Modal {
         this.wrapperModal.appendChild(this.modal);
         this.body.append(this.wrapperModal);
     }
+    destroyModal() {
+        this.wrapperModal.classList.add('disable');
+        this.header.classList.remove('hide');
+        this.searchBlock.classList.remove('hide');
+        this.hero.classList.remove('hide');
+        this.blockGames.classList.remove('hide');
+        this.moreAboutGames.classList.remove('hide');
+        this.form.classList.remove('hide');
+        this.aboutPlatform.classList.remove('hide');
+        this.guide.classList.remove('hide');
+        this.footer.classList.remove('hide');
+    }
 }
 let modalWindow = new Modal();
+document.addEventListener('click', function (EO) {
+    if (document.body.classList == 'overflow') {
+        modalWindow.destroyModal();
+    }
+});
