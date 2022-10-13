@@ -22,7 +22,7 @@ btn.onclick = function () {
     if (window.matchMedia('(max-width: 560px)')) {
         btnClose.classList.remove('anim__close');
         btnClose.classList.add('animated__btn__close__canvas');
-        btnClose.style.right = '100px';
+        btnClose.style.right = '300px';
         btnClose.style.top = '180px';
     }
 }
