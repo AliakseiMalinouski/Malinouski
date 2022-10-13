@@ -25,6 +25,12 @@ btn.onclick = function () {
         btnClose.style.right = '300px';
         btnClose.style.top = '180px';
     }
+    if (window.matchMedia('(max-width: 960px)')) {
+        btnClose.classList.add('animated__btn__close__canvas');
+    }
+    if (window.matchMedia('(max-width: 1220px)')) {
+        btnClose.classList.add('animated__btn__close__canvas');
+    }
 }
 btnClose.addEventListener('click', (EO) => {
     EO = EO || window.event;

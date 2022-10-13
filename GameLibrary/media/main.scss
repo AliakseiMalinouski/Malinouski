@@ -72,6 +72,16 @@ $fz26: $fz + 10;
         }
     }
 }
+.more__about__games {
+    .container {
+        .animated__btn__close__canvas {
+                animation: btnClose 1.1s linear;
+                right: 386px !important;
+                top: 150px !important;
+        
+            }
+    }
+}
 .blocks__games {
     .container {
         .games__without__end {
@@ -176,6 +186,16 @@ $fz26: $fz + 10;
         .container {
             #buttons__block {
                 left: 191px;
+            }
+        }
+    }
+    .more__about__games {
+        .container {
+            .animated__btn__close__canvas {
+                animation: btnClose 1.1s linear;
+                right: 216px !important;
+                top: 150px !important;
+
             }
         }
     }
@@ -310,6 +330,7 @@ $fz26: $fz + 10;
             }
             .animated__btn__close__canvas {
                 animation: btnClose 1.1s linear;
+                right: 100px !important;
             }
             @keyframes btnClose {
                 from {

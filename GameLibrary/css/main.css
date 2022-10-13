@@ -253,7 +253,7 @@ mark {
           background-image: url(../imgs/gamepad.png);
           background-position: 80% 90%;
           background-repeat: no-repeat;
-          background-size: 20% 20%; }
+          background-size: 30% 20%; }
           .hero .container #slider #slider__way div:nth-child(1) span {
             color: red; }
         .hero .container #slider #slider__way div:nth-child(2) {
