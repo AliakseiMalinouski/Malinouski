@@ -576,7 +576,8 @@ listMenuHeader.addEventListener('click', function (EO) {
     }
 });
 // проверяем ширину экрана и отключаем все события click и переводим на touch
-const mediaQuery = window.matchMedia('(max-width: 960px)')
+const mediaQuery = window.matchMedia('(max-width: 960px)');
+let logoOfLibrary = document.getElementById('name__of__library');
 if (mediaQuery.matches) {
     buttonHamburgerHeader.removeEventListener('click', openMenuHeader);
     buttonHamburgerHeader.addEventListener('touchstart', openMenuHeader);
@@ -590,6 +591,7 @@ if (mediaQuery.matches) {
     previousButtonSlider.removeEventListener('click', openPreviuosSlide);
     nextButtonSlider.addEventListener('touchstart', openNextSlide);
     previousButtonSlider.addEventListener('touchstart', openPreviuosSlide);
+    logoOfLibrary.classList.remove('neon__view');
 }
 // предупрждение о несохраннёных данных
 window.onbeforeunload = function() {
