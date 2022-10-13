@@ -588,6 +588,11 @@ mark {
                     text-transform: uppercase;
                     letter-spacing: 2px;
                     text-align: center;
+                    span {
+                        color: $red;
+                        font-size: $fz - 6;
+                        font-weight: 400;
+                    }
                 }
             }
             .molesmash__block {

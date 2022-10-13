@@ -435,6 +435,10 @@ mark {
         text-transform: uppercase;
         letter-spacing: 2px;
         text-align: center; }
+        .blocks__games .container .games__with__end .tennis__block .name__tennis__block span {
+          color: red;
+          font-size: 10px;
+          font-weight: 400; }
       .blocks__games .container .games__with__end .molesmash__block .name__molesmash__block {
         text-transform: uppercase;
         letter-spacing: 2px;

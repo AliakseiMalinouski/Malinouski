@@ -597,3 +597,26 @@ if (mediaQuery.matches) {
 window.onbeforeunload = function() {
     return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
 };
+let blockGamesWithoutEnd = document.querySelector('.games__without__end');
+blockGamesWithoutEnd.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    if (EO.target.getAttribute('id') == 'play__races') {
+        window.onbeforeunload = null;
+    }
+    else if (EO.target.getAttribute('id') == 'play__jorun') {
+        window.onbeforeunload = null;
+    }
+});
+let blockGamesWithEnd = document.querySelector('.games__with__end');
+blockGamesWithEnd.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    if (EO.target.getAttribute('id') == 'play__tennis') {
+        window.onbeforeunload = null;
+    }
+    else if (EO.target.getAttribute('id') == 'play__molesmash') {
+        window.onbeforeunload = null;
+    }
+    else if (EO.target.getAttribute('id') == 'play__tictactoe') {
+        window.onbeforeunload = null;
+    }
+});
