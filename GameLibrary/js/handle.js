@@ -231,8 +231,6 @@ arrayAllImgsOfDocument.forEach(element => {
     element.onselectionchange = function () { return false } // отменяем выделение картинок
     element.addEventListener('click', clickOnAnimal);
 });
-// тоже самое для touch
-
 // предупрждение о выходе и несохраннёных данных
 window.onbeforeunload = function() {
     return "При выходе со страницы, несохранённые данные могут быть потеряны. Выйти?";
@@ -245,20 +243,21 @@ if (mediaQuery.matches) {
     arrayAllImgsOfDocument.forEach(element => {
     element.ondragstart = function () { return false } // отменяем перетаскивание картинок
     element.onselectionchange = function () { return false } // отменяем выделение картинок
-    element.addEventListener('touchstart', function clickOnAnimal (EO) {
-    EO = EO || window.event;
-    mouseDownOnAnimal.play();
-    score++;
-    shadowScoreSpan.innerHTML = `Score: ${score}`;
-    scoreSpan.innerHTML = `Score: ${score}`;
-    flag = true;
-    if(flag) {
-        element.removeEventListener('click', clickOnAnimal);
-        setTimeout(function () {
-            flag = false;
-            element.addEventListener('click', clickOnAnimal);
-        }, 900);
-    }
-    });
+    // element.addEventListener('touchstart', function clickOnAnimal (EO) {
+    // EO = EO || window.event;
+    // mouseDownOnAnimal.play();
+    // score++;
+    // shadowScoreSpan.innerHTML = `Score: ${score}`;
+    // scoreSpan.innerHTML = `Score: ${score}`;
+    // flag = true;
+    // if(flag) {
+    //     element.removeEventListener('click', clickOnAnimal);
+    //     setTimeout(function () {
+    //         flag = false;
+    //         element.addEventListener('click', clickOnAnimal);
+    //     }, 900);
+    // }
+    // });
+    element.addEventListener('touchstart', clickOnAnimal);
 });
 }
