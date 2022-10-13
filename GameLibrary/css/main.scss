@@ -769,11 +769,20 @@ mark {
                 color: $cosmo-blue;
                 font-weight: 400;
                 text-align: center;
-                padding-top: 30px;
                 background-color: $very-dark-blue;
                 border-radius: 13px;
                 border: none;
                 cursor: pointer;
+                a {
+                    text-transform: uppercase;
+                    color: $cosmo-blue;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    padding-top: 30px;
+                }
             }
             div:hover {
                 animation: plat 1.1s linear;
@@ -821,11 +830,20 @@ mark {
                 color: $orange;
                 font-weight: 400;
                 text-align:  center;
-                padding-top: 30px;
                 background-color: $very-dark-blue;
                 border-radius: 13px;
                 border: none;
                 cursor: pointer;
+                a {
+                    text-transform: uppercase;
+                    color: $orange;
+                    font-weight: 400;
+                    text-align:  center;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 30px;
+                }
             }
             div:hover {
                 animation: plat 1.1s linear;

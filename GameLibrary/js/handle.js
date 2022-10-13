@@ -219,11 +219,11 @@ function clickOnAnimal (EO) {
     scoreSpan.innerHTML = `Score: ${score}`;
     flag = true;
     if(flag) {
-        element.removeEventListener('click', clickOnAnimal);
+        EO.target.removeEventListener('click', clickOnAnimal);
         setTimeout(function () {
             flag = false;
-            element.addEventListener('click', clickOnAnimal);
-        }, 900);
+            EO.target.addEventListener('click', clickOnAnimal);
+        }, 1100);
     }
     }
 arrayAllImgsOfDocument.forEach(element => {
