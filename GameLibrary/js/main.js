@@ -464,7 +464,9 @@ function readReady(callresult) {
     else if ( callresult.result!="" ) {
         const info=JSON.parse(callresult.result);
         document.getElementById('firstname').value=info.firstname;
-        document.getElementById('surname').value=info.surname;
+        document.getElementById('surname').value = info.surname;
+        document.getElementById('login').style.display = 'none';
+        document.querySelector('.after__regestration').style.display = 'none';
     }
 }
 function errorHandler(jqXHR,statusStr,errorStr) {
