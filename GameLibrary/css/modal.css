@@ -10,7 +10,26 @@
   left: 50%;
   top: 12%;
   transform: translate(-50%, -50%);
-  animation: modalWindow 0.7s linear; }
+  animation: modalWindow 0.7s linear;
+  background-color: #1f1f1f; }
+  .wrapper__modal__window .textcontent__in__modal__window {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-weight: 400;
+    padding-left: 30px;
+    line-height: 25px;
+    font-size: 10px; }
+    .wrapper__modal__window .textcontent__in__modal__window span {
+      font-weight: 400;
+      color: red; }
+      .wrapper__modal__window .textcontent__in__modal__window span a {
+        color: #00FF00; }
+  .wrapper__modal__window .alert__message {
+    color: #00FF00;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight: 400; }
 
 @keyframes modalWindow {
   from {

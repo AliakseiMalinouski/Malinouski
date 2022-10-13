@@ -639,6 +639,8 @@ class Modal {
         this.aboutPlatform = document.getElementById('about__platform');
         this.guide = document.getElementById('guide');
         this.footer = document.getElementById('footer');
+        this.contentOfModal = document.createElement('p');
+        this.alertMessage = document.createElement('h5');
     }
     createModal() {
         if (this.wrapperModal.classList == 'disable') {
@@ -655,6 +657,13 @@ class Modal {
         this.footer.classList.add('hide');
         this.wrapperModal.classList.add('wrapper__modal__window');
         this.body.classList.add('overflow');
+        this.alertMessage.textContent = 'Сообщение от библиотеки: ';
+        this.alertMessage.classList.add('alert__message');
+        this.contentOfModal.classList.add('textcontent__in__modal__window');
+        this.contentOfModal.textContent = 'Сообщение от библиотеки: ';
+        this.contentOfModal.innerHTML = 'Добро пожаловать в Pixel<span>PACK</span>! Перед началом работы с библиотечкой советуем ознакомиться с <span>руководством</span> и интерфейсом. Удачи!';
+        this.modal.appendChild(this.alertMessage);
+        this.modal.appendChild(this.contentOfModal);
         this.wrapperModal.appendChild(this.modal);
         this.body.append(this.wrapperModal);
     }
@@ -674,6 +683,7 @@ class Modal {
 }
 let modalWindow = new Modal();
 document.addEventListener('click', function (EO) {
+    EO = EO || window.event;
     if (document.body.classList == 'overflow') {
         modalWindow.destroyModal();
     }
