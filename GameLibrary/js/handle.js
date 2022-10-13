@@ -123,7 +123,7 @@ function animateFirstEnemyAnimal() {
         setTimeout(function () {
         startPositionYforEnemyAnimals.startTopPositionFirstEnemyAnimal = 380;
         firstEnemyAnimal.style.display = 'none';
-        }, 1000);
+        }, 800);
     }
     setTimeout(animateFirstEnemyAnimal, 0);
 }
@@ -140,7 +140,7 @@ function animateSecondEnemyAnimal() {
         setTimeout(function () {
             startPositionYforEnemyAnimals.startTopPositionSecondEnemyAnimal  = 370;
             secondEnemyAnimal.style.display = 'none';
-        }, 1000);
+        }, 800);
     }
     setTimeout(animateSecondEnemyAnimal, 0);
 }
@@ -156,7 +156,7 @@ function animateThirdEnemyAnimal() {
         setTimeout(function () {
             startPositionYforEnemyAnimals.startTopPositionThirdEnemyAnimal = 440;
             thirdEnemyAnimal.style.display = 'none'; 
-        }, 1000);
+        }, 800);
     }
     setTimeout(animateThirdEnemyAnimal, 0);
 }
@@ -172,7 +172,7 @@ function animateFourthEnenmyAnimal() {
         setTimeout(function () {
             startPositionYforEnemyAnimals.startBottomPositionFourthEnemyAnimal = 10;
             fourthEnemyAnimal.style.display = 'none';
-        }, 1000);
+        }, 800);
     }
     setTimeout(animateFourthEnenmyAnimal, 0);
 }
@@ -188,7 +188,7 @@ function animateFifthEnemyAnimal() {
         setTimeout(function () {
             startPositionYforEnemyAnimals.startBottomPositionFifthEnemyAnimal = -40;
             fifthEnemyAnimal.style.display = 'none'; 
-        }, 1000);
+        }, 800);
     }
     setTimeout(animateFifthEnemyAnimal, 0);
 }
@@ -204,7 +204,7 @@ function animateSixthEnemyAnimal() {
         setTimeout(function () {
             startPositionYforEnemyAnimals.startBottomPositionSixthEnemyAnimal = 0;
             sixthEnemyAnimal.style.display = 'none';
-        }, 1000);
+        }, 800);
     }
     setTimeout(animateSixthEnemyAnimal, 0);
 }
@@ -220,6 +220,7 @@ function clickOnAnimal (EO) {
     flag = true;
     if(flag) {
         EO.target.removeEventListener('click', clickOnAnimal);
+        EO.target.removeEventListener('touchstart', clickOnAnimal);
         setTimeout(function () {
             flag = false;
             EO.target.addEventListener('click', clickOnAnimal);
