@@ -162,6 +162,9 @@
     display: none; }
   .search__block .container .help__text {
     margin-top: 470px; }
+  .search__block .container .alert__not__defined__card {
+    font-size: 14px;
+    left: 10px; }
 
   .hero .container #buttons__block {
     left: 70px; }

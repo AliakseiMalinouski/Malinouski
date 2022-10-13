@@ -278,6 +278,10 @@ $fz26: $fz + 10;
             .help__text {
                 margin-top: 470px;
             }
+            .alert__not__defined__card {
+                font-size: $fz26 - 12;
+                left: 10px;
+            }
         }
     }
     .hero {
