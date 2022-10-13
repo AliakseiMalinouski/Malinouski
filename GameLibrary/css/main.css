@@ -741,5 +741,7 @@ mark {
       .footer .container ul li img {
         width: 20px;
         height: 20px; }
+      .footer .container ul li a {
+        color: white; }
 
 /*# sourceMappingURL=main.css.map */
