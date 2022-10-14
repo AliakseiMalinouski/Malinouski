@@ -480,8 +480,9 @@ let wrapperGuide = document.getElementById('wrapper__guide');
 let svgProgressCircleGuide = document.getElementById('svg__progress__circle__guide');
 buttonCreateGuide.addEventListener('click', delayCreateGuide);
 function delayCreateGuide() {
-    setTimeout(createGuide, 8000);
+    setTimeout(createGuide, 8500);
     svgProgressCircleGuide.style.display = 'block';
+    wrapperSetProgress();
     buttonCreateGuide.innerHTML = 'Идёт загрузка';
     buttonCreateGuide.style.color = 'orange';
     buttonCreateGuide.removeEventListener('click', delayCreateGuide);
@@ -531,7 +532,8 @@ let radiusOfCircle = progressCircle.r.baseVal.value;
 let cf = radiusOfCircle * 2 * Math.PI;
 progressCircle.style.strokeDasharray = `${cf} ${cf}`;
 progressCircle.style.strokeDashoffset = `${cf}`;
-function setProgress(percent) {
+function wrapperSetProgress() {
+    function setProgress(percent) {
     const distance = cf - percent / 100 * cf;
     progressCircle.style.strokeDashoffset = distance;
 }
@@ -545,6 +547,7 @@ requestAnimationFrame(function animate() {
         requestAnimationFrame(animate)
     }
 });
+}
 // обрабатываем кнопку header на мобилках
 let buttonHamburgerHeader = document.getElementById('hamburger__button__header');
 let wrapMenu = document.querySelector('.wrap__menu');
