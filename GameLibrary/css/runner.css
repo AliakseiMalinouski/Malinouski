@@ -31,7 +31,7 @@ body {
   background-size: 127% 127%; }
   .area-game #human {
     width: 50px;
-    height: 50px;
+    height: 48px;
     background-image: url(../imgs/human.gif);
     background-size: 80px 80px;
     position: absolute;
