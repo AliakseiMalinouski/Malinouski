@@ -310,6 +310,14 @@ $fz26: $fz + 10;
             .text__about__pixelPack {
                 padding-left: 10px;
             }
+            #buttons__block {
+                #next__button__slider {
+                    height: 50px;
+                }
+                #previous__button__slider {
+                    height: 50px;
+                }
+            }
         }
     }
     .blocks__games {

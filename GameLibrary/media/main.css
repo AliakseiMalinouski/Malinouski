@@ -179,6 +179,10 @@
     left: 70px; }
   .hero .container .text__about__pixelPack {
     padding-left: 10px; }
+  .hero .container #buttons__block #next__button__slider {
+    height: 50px; }
+  .hero .container #buttons__block #previous__button__slider {
+    height: 50px; }
 
   .blocks__games .container .games__without__end div {
     width: 315px; }
