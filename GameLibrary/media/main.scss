@@ -78,7 +78,6 @@ $fz26: $fz + 10;
                 animation: btnClose 1.1s linear;
                 right: 386px !important;
                 top: 150px !important;
-        
             }
     }
 }
@@ -394,5 +393,14 @@ $fz26: $fz + 10;
                 left: 200px;
             }
         }
+    }
+    .wrapper__modal__window {
+        width: 320px;
+        h5 {
+            line-height: 19px;
+        }
+            .textcontent__in__modal__window {
+                margin-top: 40px;
+            }
     }
 }

@@ -220,6 +220,13 @@
     flex-direction: column;
     padding-top: 50px; }
     .footer .container #logo__footer__image {
-      left: 200px; } }
+      left: 200px; }
+
+  .wrapper__modal__window {
+    width: 320px; }
+    .wrapper__modal__window h5 {
+      line-height: 19px; }
+    .wrapper__modal__window .textcontent__in__modal__window {
+      margin-top: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
