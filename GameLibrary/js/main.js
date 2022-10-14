@@ -670,6 +670,9 @@ class Modal {
         this.wrapperModal.appendChild(this.modal);
         this.body.append(this.wrapperModal);
     }
+    addAnimationForClose() {
+        this.wrapperModal.classList.add('close__modal__window__animation');
+    }
     destroyModal() {
         this.body.classList.remove('overflow');
         this.wrapperModal.classList.add('disable');
@@ -689,12 +692,18 @@ let modalWindow = new Modal();
 document.addEventListener('click', function (EO) {
     EO = EO || window.event;
     if (document.body.classList == 'overflow') {
-        modalWindow.destroyModal();
+        modalWindow.addAnimationForClose();
+        setTimeout(function () {
+            modalWindow.destroyModal();
+        }, 1000);
     }
 });
 document.addEventListener('touchstart', function (EO) {
     EO = EO || window.event;
     if (document.body.classList == 'overflow') {
-        modalWindow.destroyModal();
+        modalWindow.addAnimationForClose();
+        setTimeout(function () {
+            modalWindow.destroyModal();
+        }, 1000);
     }
 });

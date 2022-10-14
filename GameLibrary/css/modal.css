@@ -11,7 +11,8 @@
   top: 12%;
   transform: translate(-50%, -50%);
   animation: modalWindow 0.7s linear;
-  background-color: #1f1f1f; }
+  background-color: #1f1f1f;
+  border-radius: 13px; }
   .wrapper__modal__window .textcontent__in__modal__window {
     font-family: 'Press Start 2P', cursive;
     color: white;
@@ -31,11 +32,21 @@
     left: 5px;
     font-weight: 400; }
 
+.close__modal__window__animation {
+  animation: closeModal 1s linear; }
+
 @keyframes modalWindow {
   from {
     top: -10%; }
   to {
     top: 12%; } }
+@keyframes closeModal {
+  from {
+    top: 12%;
+    opacity: 1; }
+  to {
+    opacity: 0;
+    top: -10%; } }
 .hide {
   background-color: #000001;
   filter: blur(5px); }

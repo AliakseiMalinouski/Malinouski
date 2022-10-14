@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid white;
 }
 html {
     width: 100%;
@@ -338,6 +337,7 @@ mark {
             height: 320px;
             overflow: hidden;
             margin-bottom: 50px;
+            border-radius: 13px;
             #slider__way {
                 position: relative;
                 left: 0;

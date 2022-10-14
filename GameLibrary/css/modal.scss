@@ -28,6 +28,7 @@ $fz26: $fz + 10;
     transform: translate(-50%, -50%);
     animation: modalWindow 0.7s linear;
     background-color: $very-dark-blue;
+    border-radius: 13px;
     .textcontent__in__modal__window {
     font-family: 'Press Start 2P', cursive;
     color: $white;
@@ -51,7 +52,9 @@ $fz26: $fz + 10;
         font-weight: 400;
     }
 }
-
+.close__modal__window__animation {
+    animation: closeModal 1s linear;
+}
 @keyframes modalWindow {
     from {
         top: -10%;
@@ -59,6 +62,16 @@ $fz26: $fz + 10;
 
     to {
         top: 12%;
+    }
+}
+@keyframes closeModal {
+    from {
+        top: 12%;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        top: -10%;
     }
 }
 .hide {
