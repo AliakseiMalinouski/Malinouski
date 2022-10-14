@@ -682,7 +682,14 @@ class Modal {
     }
 }
 let modalWindow = new Modal();
+// закрытие моадльного окна по клику/тачу в любое место
 document.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    if (document.body.classList == 'overflow') {
+        modalWindow.destroyModal();
+    }
+});
+document.addEventListener('touchstart', function (EO) {
     EO = EO || window.event;
     if (document.body.classList == 'overflow') {
         modalWindow.destroyModal();
