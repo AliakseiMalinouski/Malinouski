@@ -61,8 +61,7 @@
     margin-left: 380px; } }
 @media all and (max-width: 900px) {
   .container {
-    width: 560px;
-    border: 1px solid red; }
+    width: 560px; }
 
   .header .container {
     padding-left: 0px;
