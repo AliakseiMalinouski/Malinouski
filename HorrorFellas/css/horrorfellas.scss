@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$black: black;
+$header-list: #636363;
+$white: white;
+$con-roadmap: #CD3939;
+$fz: 16px;
+html {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: $black;
+}
+.container {
+    width: 1110px;
+    margin:  0 auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding-top: 41px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .WrapperListHeader {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            ul {
+            display: flex;
+            li {
+                margin-right: 30px;
+                font-size: $fz - 2;
+                color: $header-list;
+            }
+        }
+        div {
+            color: $white;
+            font-size: $fz - 2;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        }
+    }
+}
+.see__roadmap {
+    padding-top: 48px;
+    .container {
+        height: 109px;
+        background-color: $con-roadmap;
+        border-radius: 14px;
+        padding-top: 17px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        justify-content: space-between;
+        div:nth-child(1) {
+            color: $white;
+            font-size: $fz + 14;
+            line-height: 35.5px;
+            width: 449px;
+            height: 74px;
+            font-weight: bold;
+        }
+        div:nth-child(2) {
+            margin-top: 9px;
+            border-radius: 11px;
+            background-color: $white;
+            padding-left: 27px;
+            padding-right: 18px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            width: 167px;
+            height: 57px;
+            font-size: $fz;
+            font-weight: bold;
+            color: $con-roadmap;
+            cursor: pointer;
+        }
+    }
+}
+.hero {
+    padding-top: 35px;
+    .container {
+        h1 {
+            color: $white;
+            font-size: $fz + 58;
+            line-height: 75.11px;
+            width: 710px;
+            height: 143px;
+            margin-bottom: 32px;
+        }
+    }
+}

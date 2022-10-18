@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: black; }
+
+.container {
+  width: 1110px;
+  margin: 0 auto; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  padding-top: 41px; }
+  .header .container {
+    display: flex;
+    justify-content: space-between; }
+    .header .container .WrapperListHeader {
+      display: flex;
+      width: 100%;
+      justify-content: space-between; }
+      .header .container .WrapperListHeader ul {
+        display: flex; }
+        .header .container .WrapperListHeader ul li {
+          margin-right: 30px;
+          font-size: 14px;
+          color: #636363; }
+      .header .container .WrapperListHeader div {
+        color: white;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between; }
+
+.see__roadmap {
+  padding-top: 48px; }
+  .see__roadmap .container {
+    height: 109px;
+    background-color: #CD3939;
+    border-radius: 14px;
+    padding-top: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between; }
+    .see__roadmap .container div:nth-child(1) {
+      color: white;
+      font-size: 30px;
+      line-height: 35.5px;
+      width: 449px;
+      height: 74px;
+      font-weight: bold; }
+    .see__roadmap .container div:nth-child(2) {
+      margin-top: 9px;
+      border-radius: 11px;
+      background-color: white;
+      padding-left: 27px;
+      padding-right: 18px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      width: 167px;
+      height: 57px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #CD3939;
+      cursor: pointer; }
+
+.hero {
+  padding-top: 35px; }
+  .hero .container h1 {
+    color: white;
+    font-size: 74px;
+    line-height: 75.11px;
+    width: 710px;
+    height: 143px;
+    margin-bottom: 32px; }
+
+/*# sourceMappingURL=horrorfellas.css.map */
