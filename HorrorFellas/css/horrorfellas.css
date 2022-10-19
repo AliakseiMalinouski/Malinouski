@@ -4,7 +4,6 @@
   box-sizing: border-box; }
 
 html {
-  overflow: hidden;
   height: 100%;
   width: 100%; }
 
@@ -12,7 +11,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   min-height: 100%;
   min-width: 100%;
-  background-color: black; }
+  background-color: black;
+  height: 5000px; }
 
 .container {
   width: 1110px;
@@ -140,5 +140,84 @@ a {
       right: 0px;
       width: 578px;
       height: 345px; }
+
+.card {
+  padding-top: 142px; }
+  .card .container .WrapperCardContent {
+    width: 1073px;
+    height: 477px;
+    display: flex;
+    justify-content: space-between; }
+    .card .container .WrapperCardContent .SecondPart {
+      padding: 0.1px; }
+      .card .container .WrapperCardContent .SecondPart .Title {
+        width: 400px;
+        height: 122px;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 22px;
+        font-size: 56px;
+        line-height: 63.84px; }
+      .card .container .WrapperCardContent .SecondPart .Paragraph {
+        width: 552px;
+        height: 32px;
+        font-size: 18px;
+        line-height: 32px;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 83px; }
+      .card .container .WrapperCardContent .SecondPart .FlexBlock {
+        display: flex;
+        justify-content: space-around; }
+        .card .container .WrapperCardContent .SecondPart .FlexBlock .FirstBlock .Single {
+          width: 87px;
+          height: 34px;
+          color: white;
+          font-size: 29px;
+          line-height: 23.5px;
+          font-weight: 700;
+          margin-bottom: 32px; }
+        .card .container .WrapperCardContent .SecondPart .FlexBlock .FirstBlock .YouWillReceive {
+          color: white;
+          font-weight: 700;
+          line-height: 23.5px;
+          font-size: 18px;
+          margin-bottom: 22px; }
+        .card .container .WrapperCardContent .SecondPart .FlexBlock .FirstBlock .FirstChoose {
+          color: white;
+          font-weight: 400;
+          line-height: 23.5px;
+          font-size: 16px;
+          margin-bottom: 15px; }
+          .card .container .WrapperCardContent .SecondPart .FlexBlock .FirstBlock .FirstChoose img {
+            margin-right: 10px; }
+        .card .container .WrapperCardContent .SecondPart .FlexBlock .FirstBlock .SecondChoose {
+          color: white;
+          font-weight: 400;
+          line-height: 23.5px;
+          font-size: 16px;
+          margin-bottom: 15px; }
+          .card .container .WrapperCardContent .SecondPart .FlexBlock .FirstBlock .SecondChoose img {
+            margin-right: 10px; }
+        .card .container .WrapperCardContent .SecondPart .FlexBlock .SecondBlock div {
+          width: 118px;
+          height: 47px;
+          color: #FD5252;
+          background-color: #201212;
+          margin-bottom: 23px;
+          border-radius: 42px;
+          padding-left: 23px;
+          padding-top: 14px; }
+        .card .container .WrapperCardContent .SecondPart .FlexBlock .SecondBlock button {
+          width: 195px;
+          height: 61px;
+          background-color: #CE0101;
+          color: white;
+          font-size: 22px;
+          line-height: 30.05px;
+          font-weight: 700;
+          border: none;
+          cursor: pointer;
+          border-radius: 12px; }
 
 /*# sourceMappingURL=horrorfellas.css.map */
