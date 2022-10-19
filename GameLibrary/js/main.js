@@ -228,7 +228,6 @@ class Card {
     }
 }
 let card = new Card();
-// получаем и анимируем фразу про игры после поиска
 let spanH = {
     firstColorSpan: document.getElementById('first__color__span'),
     secondColorSpan: document.getElementById('second__color__span'),
