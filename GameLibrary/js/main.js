@@ -508,7 +508,6 @@ let collectionOfAnchors = document.querySelectorAll('.scrollElement');
 collectionOfAnchors.forEach(function (element) {
     element.addEventListener('click', wrapperScrollFunc);
 });
-// оборачиваем всё в одноу функцию, чтобы не засорять глобальную область видимости и отслеживаем нажатый якорь
 function wrapperScrollFunc() {
     const anchors = document.querySelectorAll('a[href*="#"]')
     for (let anchor of anchors) {
