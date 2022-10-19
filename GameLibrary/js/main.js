@@ -79,7 +79,6 @@ search.oninput = function (EO) {
 function addColorToSeacrhVariant(string, position, lengtH) {
     return string.slice(0, position) + '<mark>' + string.slice(position, position + lengtH) + '</mark>' + string.slice(position + lengtH);
 }
-// на всякий случай полностью запрещаем ввод и вставку спец. символов
 search.addEventListener('paste', controlKeyDownAndPasteValuesToInput);
 search.addEventListener('keydown', controlKeyDownAndPasteValuesToInput);
 function controlKeyDownAndPasteValuesToInput(EO) {
