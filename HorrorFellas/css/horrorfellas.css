@@ -38,7 +38,8 @@ a {
         .header .container .WrapperListHeader ul li {
           margin-right: 30px;
           font-size: 14px;
-          color: #636363; }
+          color: #636363;
+          cursor: pointer; }
       .header .container .WrapperListHeader div {
         color: white;
         font-size: 14px;
@@ -57,39 +58,87 @@ a {
     border-radius: 14px;
     padding-top: 17px;
     padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: space-between; }
-    .see__roadmap .container div:nth-child(1) {
-      color: white;
-      font-size: 30px;
-      line-height: 35.5px;
-      width: 449px;
-      height: 74px;
-      font-weight: bold; }
-    .see__roadmap .container div:nth-child(2) {
-      margin-top: 9px;
-      border-radius: 11px;
-      background-color: white;
-      padding-left: 27px;
-      padding-right: 18px;
-      padding-top: 20px;
-      padding-bottom: 30px;
-      width: 167px;
-      height: 57px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #CD3939;
-      cursor: pointer; }
+    padding-right: 30px; }
+    .see__roadmap .container .WrapperSeeRoadMap {
+      display: flex;
+      justify-content: space-between; }
+      .see__roadmap .container .WrapperSeeRoadMap .TextAtRedBlock {
+        color: white;
+        font-size: 30px;
+        line-height: 35.5px;
+        width: 449px;
+        height: 74px;
+        font-weight: bold; }
+      .see__roadmap .container .WrapperSeeRoadMap .Button {
+        margin-top: 9px;
+        border-radius: 11px;
+        background-color: white;
+        padding-left: 27px;
+        padding-right: 18px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        width: 167px;
+        height: 57px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #CD3939;
+        cursor: pointer; }
 
 .hero {
   padding-top: 35px; }
-  .hero .container h1 {
-    color: white;
-    font-size: 74px;
-    line-height: 75.11px;
-    width: 710px;
-    height: 143px;
-    margin-bottom: 32px; }
+  .hero .container .WrapperHeroContent {
+    position: relative;
+    padding: 0.1px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/heroBackground.png) no-repeat 200% 70%; }
+    .hero .container .WrapperHeroContent .Logo {
+      color: white;
+      font-size: 74px;
+      line-height: 75.11px;
+      width: 710px;
+      height: 143px;
+      margin-bottom: 32px; }
+    .hero .container .WrapperHeroContent .Paragraph {
+      width: 475px;
+      height: 108px;
+      font-size: 20px;
+      line-height: 36px;
+      color: white;
+      margin-bottom: 39px;
+      font-weight: 400; }
+    .hero .container .WrapperHeroContent .Button {
+      position: relative;
+      width: 295px;
+      height: 57px;
+      background-color: #CD3939;
+      padding-left: 38px;
+      padding-bottom: 19px;
+      padding-top: 19px;
+      border-radius: 11px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 32px;
+      font-size: 14px;
+      line-height: 19.12px;
+      color: white;
+      font-weight: bold; }
+      .hero .container .WrapperHeroContent .Button .Image {
+        position: absolute;
+        left: 22px;
+        top: 20px; }
+    .hero .container .WrapperHeroContent .SecondParagraph {
+      width: 469px;
+      height: 71px;
+      font-size: 14px;
+      line-height: 23.5px;
+      color: white;
+      font-weight: 400; }
+    .hero .container .WrapperHeroContent .Background {
+      position: absolute;
+      top: 50px;
+      right: 0px;
+      width: 578px;
+      height: 345px; }
 
 /*# sourceMappingURL=horrorfellas.css.map */

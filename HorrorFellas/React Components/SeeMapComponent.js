@@ -1,18 +1,25 @@
 var title = 'First NFT collection with integrated Additional Reality';
 var button = 'See Roadmap';
-var containerSeeRoadMap = document.getElementById('see__roadmap');
-var SeeMapComponent = React.createClass({
+var containerSeeRoadMap = document.getElementById('container__see__roadmap');
+var MapComponent = React.createClass({
     
-    displayName: 'SeeMapComponent',
+    displayName: 'MapComponent',
+
+    propTypes: {
+        title: React.PropTypes.string.isRequired,
+        button: React.PropTypes.string.isRequired,
+    },
 
     render: function () {
         return React.DOM.div({ className: 'WrapperSeeRoadMap' },
+            React.DOM.div({ className: 'TextAtRedBlock' }, this.props.title),
+            React.DOM.div({ className: 'Button' }, this.props.button),
         )
     }
 
 });
 
 ReactDOM.render(
-    React.createElement(SeeMapComponent, { title: title, button: button }),
+    React.createElement(MapComponent, { title: title, button: button }),
     containerSeeRoadMap,
 )
