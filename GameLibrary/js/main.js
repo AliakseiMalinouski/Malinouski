@@ -309,6 +309,7 @@ function checkedLocalStorage() {
         buildFormButton.style.display = 'none';
         titleFormBuild.style.display = 'none';
     }
+    localStorage.clear()
     document.getElementById('wrapper__form').innerHTML = HTMLcodeForm;
 }
 checkedLocalStorage();
