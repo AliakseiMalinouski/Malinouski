@@ -402,10 +402,23 @@ a {
       border-bottom: 1px solid gray;
       padding-bottom: 20px;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
       .questions .container .Wrapper div p {
         margin-right: 15px; }
       .questions .container .Wrapper div img {
         cursor: pointer; }
+    .questions .container .Wrapper .FP {
+      width: 310px;
+      line-height: 25px;
+      animation: FP 1s linear;
+      padding-left: 40px; }
+@keyframes FP {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
 
 /*# sourceMappingURL=horrorfellas.css.map */

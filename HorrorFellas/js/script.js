@@ -66,3 +66,11 @@ class Blood  {
     }
 }
 let blood = new Blood();
+let firstParagraphOfQuestionsBlock = document.querySelector('.FirstParagraph');
+let firstPlus = document.querySelector('.FirstPlus');
+firstPlus.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    firstParagraphOfQuestionsBlock.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci provident, possimus sunt dolorum rerum mollitia iste velit culpa quae nostrum aspernatur qui harum placeat odio vero aliquid illo quidem!';
+    firstParagraphOfQuestionsBlock.classList.add('FP');
+    firstPlus.classList.add('disable');
+});
