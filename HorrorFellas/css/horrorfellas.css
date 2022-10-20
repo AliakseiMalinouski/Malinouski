@@ -351,7 +351,9 @@ a {
         width: 52px;
         height: 52px;
         margin-right: 21px;
-        cursor: pointer; }
+        cursor: pointer;
+        position: relative;
+        z-index: 2; }
       .slider .container .WrapperSliderContent .WrapperButtons .Next {
         border: none;
         background-color: #FD5252;
@@ -371,6 +373,10 @@ a {
     .slider .container .WrapperSliderContent .blood {
       position: absolute;
       left: 72px;
+      animation: blood 1s linear; }
+    .slider .container .WrapperSliderContent .blood1 {
+      position: absolute;
+      left: 0px;
       animation: blood 1s linear; }
 @keyframes blood {
   from {

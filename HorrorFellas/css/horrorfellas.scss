@@ -424,6 +424,8 @@ a {
                     height: 52px;
                     margin-right: 21px;
                     cursor: pointer;
+                    position: relative;
+                    z-index: 2;
                 }
                 .Next {
                     border: none;
@@ -450,6 +452,11 @@ a {
             .blood {
                 position: absolute;
                 left: 72px;
+                animation: blood 1s linear;
+            }
+            .blood1 {
+                position: absolute;
+                left: 0px;
                 animation: blood 1s linear;
             }
             @keyframes blood {

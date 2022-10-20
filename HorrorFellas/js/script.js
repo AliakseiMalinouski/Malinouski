@@ -2,6 +2,7 @@
 let nextButtonSlider = document.querySelector('.Next');
 let previousButtonSlider = document.querySelector('.Previous');
 let WrapperSlides = document.querySelector('.WrapperSlides');
+let WrapperButtons = document.querySelector('.WrapperButtons');
 let distance = 0;
 nextButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
@@ -15,6 +16,9 @@ nextButtonSlider.addEventListener('click', function (EO) {
     setTimeout(function () {
         nextButtonSlider.classList.remove('focus');
     }, 500);
+    if (previousButtonSlider.classList !== 'focus') {
+        blood.destroyBlood1();
+    }
 });
 previousButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
@@ -24,6 +28,7 @@ previousButtonSlider.addEventListener('click', function (EO) {
     }
     WrapperSlides.style.left = -distance + 'px';
     previousButtonSlider.classList.add('focus');
+    blood.createBlood1();
     setTimeout(function () {
         previousButtonSlider.classList.remove('focus');
     }, 500);
@@ -34,6 +39,7 @@ previousButtonSlider.addEventListener('click', function (EO) {
 class Blood  {
     constructor() {
         this.blood = document.createElement('img');
+        this.blood1 = document.createElement('img');
         this.wrapperButtons = document.querySelector('.WrapperButtons');
     }
     createBlood() {
@@ -42,8 +48,17 @@ class Blood  {
         this.blood.classList.remove('disable');
         this.wrapperButtons.appendChild(this.blood);
     }
+    createBlood1() {
+        this.blood1.setAttribute('src', './img/blood1.png');
+        this.blood1.classList.add('blood1');
+        this.blood1.classList.remove('disable');
+        this.wrapperButtons.appendChild(this.blood1);
+    }
     destroyBlood() {
         this.blood.classList.add('disable');
+    }
+    destroyBlood1() {
+        this.blood1.classList.add('disable');
     }
 }
 let blood = new Blood();
