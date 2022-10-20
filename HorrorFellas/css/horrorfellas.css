@@ -383,5 +383,29 @@ a {
     opacity: 0; }
   to {
     opacity: 1; } }
+.questions {
+  padding-top: 91px; }
+  .questions .container .Wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .questions .container .Wrapper h3 {
+      font-weight: 700;
+      font-size: 56px;
+      color: white;
+      line-height: 120.68px;
+      margin-bottom: 37px; }
+    .questions .container .Wrapper div {
+      color: white;
+      margin-bottom: 20px;
+      border-bottom: 1px solid gray;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between; }
+      .questions .container .Wrapper div p {
+        margin-right: 15px; }
+      .questions .container .Wrapper div img {
+        cursor: pointer; }
 
 /*# sourceMappingURL=horrorfellas.css.map */
