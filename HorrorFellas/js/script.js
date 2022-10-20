@@ -10,6 +10,11 @@ nextButtonSlider.addEventListener('click', function (EO) {
         distance = 0;
     }
     WrapperSlides.style.left = -distance + 'px';
+    nextButtonSlider.classList.add('focus');
+    blood.createBlood();
+    setTimeout(function () {
+        nextButtonSlider.classList.remove('focus');
+    }, 500);
 });
 previousButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
@@ -18,4 +23,27 @@ previousButtonSlider.addEventListener('click', function (EO) {
         distance = 1140;
     }
     WrapperSlides.style.left = -distance + 'px';
+    previousButtonSlider.classList.add('focus');
+    setTimeout(function () {
+        previousButtonSlider.classList.remove('focus');
+    }, 500);
+    if (nextButtonSlider.classList !== 'focus') {
+        blood.destroyBlood();
+    }
 });
+class Blood  {
+    constructor() {
+        this.blood = document.createElement('img');
+        this.wrapperButtons = document.querySelector('.WrapperButtons');
+    }
+    createBlood() {
+        this.blood.setAttribute('src', './img/blood.png');
+        this.blood.classList.add('blood');
+        this.blood.classList.remove('disable');
+        this.wrapperButtons.appendChild(this.blood);
+    }
+    destroyBlood() {
+        this.blood.classList.add('disable');
+    }
+}
+let blood = new Blood();

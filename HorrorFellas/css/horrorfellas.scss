@@ -10,6 +10,7 @@ $con-roadmap: #CD3939;
 $blood-red: #FD5252;
 $dark-red: #201212;
 $light-red: #CE0101;
+$slides: #151515;
 $fz: 16px;
 html {
     height: 100%;
@@ -31,6 +32,9 @@ li {
 }
 a {
     text-decoration: none;
+}
+.disable {
+    display: none;
 }
 .header {
     padding-top: 41px;
@@ -379,8 +383,11 @@ a {
                 left: 0;
                 div {
                     margin-right: 30px;
+                    background-color: $slides;
+                    border-radius: 12px;
                     .Image {
                         margin-bottom: 17px;
+                        border-radius: 12px;
                     }
                     .UnderTitle {
                         margin-bottom: 14px;
@@ -388,6 +395,7 @@ a {
                         font-weight: 700;
                         line-height: 23.5px;
                         color: $white;
+                        padding-left: 24px;
                     }
                     .Paragraph {
                         font-size: $fz - 2;
@@ -395,6 +403,7 @@ a {
                         color: $white;
                         line-height: 23.5px;
                         display: inline;
+                        padding-left: 24px;
                         img {
                             margin-right: 10px;
                         }
@@ -406,6 +415,7 @@ a {
                 padding: 0.1px;
                 margin-left: 480px;
                 margin-top: 69px;
+                position: relative;
                 .Previous {
                     border: none;
                     background-color: $blood-red;
@@ -422,6 +432,32 @@ a {
                     width: 52px;
                     height: 52px;
                     cursor: pointer;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+            .focus {
+                animation: focus 1s linear;
+            }
+            @keyframes focus {
+                from {
+                    background-color: $blood-red;
+                }
+                to {
+                    background-color: $light-red;
+                }
+            }
+            .blood {
+                position: absolute;
+                left: 72px;
+                animation: blood 1s linear;
+            }
+            @keyframes blood {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
                 }
             }
         }
