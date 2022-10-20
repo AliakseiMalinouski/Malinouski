@@ -266,3 +266,90 @@ a {
         }
     }
 }
+.description {
+    padding-top: 91px;
+    .container {
+        .WrapperDescriptionContent {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .FirstBlock {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+                img {
+                    margin-bottom: 20px;
+                }
+                .Title {
+                    font-size: $fz + 8;
+                    font-weight: 700;
+                    line-height: 23.5px;
+                    color: $white;
+                    margin-bottom: 20px;
+                }
+                .Paragraph {
+                    line-height: 31.5px;
+                    font-weight: 400;
+                    font-size: $fz - 1;
+                    color: $white;
+                    width: 62%;
+                }
+            }
+            .SecondBlock {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+                img {
+                    margin-bottom: 20px;
+                }
+                .Title {
+                    font-size: $fz + 8;
+                    font-weight: 700;
+                    line-height: 23.5px;
+                    color: $white;
+                    margin-bottom: 20px;
+                }
+                .Paragraph {
+                    line-height: 31.5px;
+                    font-weight: 400;
+                    font-size: $fz - 1;
+                    color: $white;
+                    width: 62%;
+                }
+            }
+            .ThirdBlock {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+                img {
+                    margin-bottom: 20px;
+                }
+                .Title {
+                    font-size: $fz + 8;
+                    font-weight: 700;
+                    line-height: 23.5px;
+                    color: $white;
+                    margin-bottom: 20px;
+                }
+                .Paragraph {
+                    line-height: 31.5px;
+                    font-weight: 400;
+                    font-size: $fz - 1;
+                    color: $white;
+                    margin-bottom: 20px;
+                }
+                .WrapperImageSocialNetworks {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

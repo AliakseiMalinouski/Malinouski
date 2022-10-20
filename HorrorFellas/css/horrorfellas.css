@@ -220,4 +220,75 @@ a {
           cursor: pointer;
           border-radius: 12px; }
 
+.description {
+  padding-top: 91px; }
+  .description .container .WrapperDescriptionContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    .description .container .WrapperDescriptionContent .FirstBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px; }
+      .description .container .WrapperDescriptionContent .FirstBlock img {
+        margin-bottom: 20px; }
+      .description .container .WrapperDescriptionContent .FirstBlock .Title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 23.5px;
+        color: white;
+        margin-bottom: 20px; }
+      .description .container .WrapperDescriptionContent .FirstBlock .Paragraph {
+        line-height: 31.5px;
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+        width: 62%; }
+    .description .container .WrapperDescriptionContent .SecondBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px; }
+      .description .container .WrapperDescriptionContent .SecondBlock img {
+        margin-bottom: 20px; }
+      .description .container .WrapperDescriptionContent .SecondBlock .Title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 23.5px;
+        color: white;
+        margin-bottom: 20px; }
+      .description .container .WrapperDescriptionContent .SecondBlock .Paragraph {
+        line-height: 31.5px;
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+        width: 62%; }
+    .description .container .WrapperDescriptionContent .ThirdBlock {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px; }
+      .description .container .WrapperDescriptionContent .ThirdBlock img {
+        margin-bottom: 20px; }
+      .description .container .WrapperDescriptionContent .ThirdBlock .Title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 23.5px;
+        color: white;
+        margin-bottom: 20px; }
+      .description .container .WrapperDescriptionContent .ThirdBlock .Paragraph {
+        line-height: 31.5px;
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+        margin-bottom: 20px; }
+      .description .container .WrapperDescriptionContent .ThirdBlock .WrapperImageSocialNetworks {
+        display: flex;
+        justify-content: space-between;
+        width: 100px; }
+
 /*# sourceMappingURL=horrorfellas.css.map */
