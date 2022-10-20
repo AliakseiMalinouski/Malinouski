@@ -291,4 +291,64 @@ a {
         justify-content: space-between;
         width: 100px; }
 
+.slider {
+  padding-top: 48px; }
+  .slider .container .WrapperSliderContent {
+    padding: 0.1px; }
+    .slider .container .WrapperSliderContent .Title {
+      font-size: 56px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 120.68px;
+      margin-bottom: 26px;
+      color: white; }
+    .slider .container .WrapperSliderContent .WrapperSliderSlide {
+      overflow: hidden;
+      width: 100%; }
+      .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides {
+        width: 2280px;
+        height: 430px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        transition: all ease 1s;
+        left: 0; }
+        .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides div {
+          margin-right: 30px; }
+          .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides div .Image {
+            margin-bottom: 17px; }
+          .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides div .UnderTitle {
+            margin-bottom: 14px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 23.5px;
+            color: white; }
+          .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides div .Paragraph {
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+            line-height: 23.5px;
+            display: inline; }
+            .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides div .Paragraph img {
+              margin-right: 10px; }
+    .slider .container .WrapperSliderContent .WrapperButtons {
+      padding: 0.1px;
+      margin-left: 480px;
+      margin-top: 69px; }
+      .slider .container .WrapperSliderContent .WrapperButtons .Previous {
+        border: none;
+        background-color: #FD5252;
+        border-radius: 53.41px;
+        width: 52px;
+        height: 52px;
+        margin-right: 21px;
+        cursor: pointer; }
+      .slider .container .WrapperSliderContent .WrapperButtons .Next {
+        border: none;
+        background-color: #FD5252;
+        border-radius: 53.41px;
+        width: 52px;
+        height: 52px;
+        cursor: pointer; }
+
 /*# sourceMappingURL=horrorfellas.css.map */

@@ -353,3 +353,77 @@ a {
         }
     }
 }
+.slider {
+    padding-top: 48px;
+    .container {
+        .WrapperSliderContent {
+            padding: 0.1px;
+            .Title {
+                font-size: $fz+ 40;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 120.68px;
+                margin-bottom: 26px;
+                color: $white;
+            }
+            .WrapperSliderSlide {
+                overflow: hidden;
+                width: 100%;
+                .WrapperSlides {
+                width: 2280px;
+                height: 430px;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                transition: all ease 1s;
+                left: 0;
+                div {
+                    margin-right: 30px;
+                    .Image {
+                        margin-bottom: 17px;
+                    }
+                    .UnderTitle {
+                        margin-bottom: 14px;
+                        font-size: $fz + 2;
+                        font-weight: 700;
+                        line-height: 23.5px;
+                        color: $white;
+                    }
+                    .Paragraph {
+                        font-size: $fz - 2;
+                        font-weight: 400;
+                        color: $white;
+                        line-height: 23.5px;
+                        display: inline;
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            }
+            .WrapperButtons {
+                padding: 0.1px;
+                margin-left: 480px;
+                margin-top: 69px;
+                .Previous {
+                    border: none;
+                    background-color: $blood-red;
+                    border-radius: 53.41px;
+                    width: 52px;
+                    height: 52px;
+                    margin-right: 21px;
+                    cursor: pointer;
+                }
+                .Next {
+                    border: none;
+                    background-color: $blood-red;
+                    border-radius: 53.41px;
+                    width: 52px;
+                    height: 52px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
