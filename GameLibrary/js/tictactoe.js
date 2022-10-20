@@ -71,14 +71,14 @@ function addPlayer(EO) {
         EO.target.innerHTML = player;
         let namePlayer = document.getElementById('name-player');
         if (EO.target.innerHTML == 'x') {
-            namePlayer.innerHTML = `Сейчас ходит: Игрок-2`;
+            namePlayer.innerHTML = `Now walking: Player 2`;
         }
         else {
-            namePlayer.innerHTML = `Сейчас ходит: Игрок-1`;
+            namePlayer.innerHTML = `Now walking: Player 1`;
         }
     }
     else {
-        alert('Клетка занята другим игроком');
+        alert('The cage is occupied by another player');
         return;
     }
 // создаём массив, куда будем складировать позиции каждого игрока
@@ -92,7 +92,7 @@ function addPlayer(EO) {
     if (getWinner(arrayPlayerPosition)) {
         objResults[player] += 1;
         audioWin.play();
-        alert(`Победил ${player}`);
+        alert(`Won ${player}`);
         for (let i = 0; i < cube.length; i++) {
             cube[i].innerHTML = '';
             updateResults()
@@ -108,7 +108,7 @@ function addPlayer(EO) {
         }
         if (drawn) {
             drawnAudio.play();
-            alert('Победила дружба!');
+            alert('Friendship won!');
             for (let i = 0; i < cube.length; i++) {
                 cube[i].innerHTML = '';
                 updateResults()

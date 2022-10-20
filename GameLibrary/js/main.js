@@ -122,7 +122,7 @@ class Card {
         this.racesCardImg.setAttribute('src', './imgs/racesBlockImgMainPage.png');
         this.racesCardImg.classList.remove('disable');
         this.racesCardImg.classList.add('img__of__races__and__molesmash__jorun__block');
-        this.racesCardTextContent.textContent = 'Races - игра в стиле 2D гонок. Вам предстоит как можно дольше продержаться на дороге, либо же, потерпеть неудачу, столкнувшись со встречной машиной. С правилами можно ознакомиться в самой игре. Удачи!';
+        this.racesCardTextContent.textContent = "Races - 2D racing game. You'll have to stay on the road as long as possible, or fail by bumping into an oncoming car. The rules can be found in the game itself. Good luck!";
         this.racesCardTextContent.classList.add('text__content__of__card');
         this.racesCardTextContent.classList.remove('disable');
         this.sentencesAboutGames.classList.add('add__new__margin__top3');
@@ -142,7 +142,7 @@ class Card {
         this.meloSmashImg.setAttribute('src', './imgs/meloSmashImg.png');
         this.meloSmashImg.classList.remove('disable');
         this.meloSmashImg.classList.add('img__of__races__and__molesmash__jorun__block');
-        this.meloSmashTextContent.innerHTML = 'MoleSmash - популярная 2D игра, где главная задача игрока - это прибить недружелюбых животных. Главное в игре - скорость и внимательность! Удачи!';
+        this.meloSmashTextContent.innerHTML = "MoleSmash - a popular 2D game where the player's main task is to nail down unfriendly animals. The main thing in the game is speed and attention! Good luck!";
         this.meloSmashTextContent.classList.remove('disable');
         this.meloSmashTextContent.classList.add('text__content__of__card');
         this.sentencesAboutGames.classList.add('add__new__margin__top2');
@@ -164,7 +164,7 @@ class Card {
         this.JoRunImg.classList.remove('disable');
         this.JoRunImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.JoRunTextContent.classList.add('text__content__of__jorun');
-        this.JoRunTextContent.innerHTML = 'Вам предстоит сыграть за археолога по имени Джо, который наткнулся на логово динозавра и теперь вынужден спасаться бегдством. Помогите Джо сбежать, а иначе...Удачи!';
+        this.JoRunTextContent.innerHTML = "You'll play as an archaeologist named Joe, who has stumbled upon a dinosaur's lair and now has to flee. Help Joe escape, or else...Good luck!";
         this.JoRunTextContent.classList.remove('disable');
         this.sentencesAboutGames.classList.add('add__new__margin__top1');
         this.JoRun.appendChild(this.JoRunImg);
@@ -184,7 +184,7 @@ class Card {
         this.TicTacToeImg.classList.remove('disable');
         this.TicTacToeImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.TicTacToeTextContent.classList.add('text__content__of__card');
-        this.TicTacToeTextContent.innerHTML = 'TicTacToe - это известная всеми игра, в которую играл абсолютно каждый. Но сегодня это стало проще и удобнее!';
+        this.TicTacToeTextContent.innerHTML = "TicTacToe - is a well-known game that absolutely everyone has played. But today it's easier and more convenient!";
         this.TicTacToeTextContent.classList.remove('disable');
         this.sentencesAboutGames.classList.add('add__new__margin__top1');
         this.TicTacToe.appendChild(this.TicTacToeImg);
@@ -204,7 +204,7 @@ class Card {
         this.tennisImg.classList.remove('disable');
         this.tennisImg.classList.add('img__of__races__and__molesmash__jorun__block');
         this.tennisTextContent.classList.add('text__content__of__card');
-        this.tennisTextContent.innerHTML = 'Tennis - игра-теннис для двух игроков. Главная задача - забить как можно больше мячей сопернику.';
+        this.tennisTextContent.innerHTML = 'Tennis - is a two-player tennis game. The main aim is to score as many goals as possible for your opponent.';
         this.tennisTextContent.classList.remove('disable');
         this.sentencesAboutGames.classList.add('add__new__margin__top');
         this.tennis.appendChild(this.tennisImg);
@@ -218,7 +218,7 @@ class Card {
         this.sentencesAboutGames.classList.remove('add__new__margin__top');
     }
     isNotDefinedCard() {
-        this.alertNotDefinedCard.innerHTML = 'Совпадении не найдено';
+        this.alertNotDefinedCard.innerHTML = 'No match found';
         this.alertNotDefinedCard.classList.add('alert__not__defined__card');
         this.alertNotDefinedCard.classList.remove('disable');
         this.searchBlock.appendChild(this.alertNotDefinedCard);
@@ -313,7 +313,7 @@ function checkedLocalStorage() {
 }
 checkedLocalStorage();
 buildFormButton.addEventListener('click', buildForm);
-const urlForm = "https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/7a0ef6a5501717129075d1bdba5c55210ca5135d/loadForm";
+const urlForm = "https://gist.githubusercontent.com/AliakseiMalinouski/23f7443609ddb9478ffc9782269b7ddd/raw/377af3b06125ef7152f2e09b50ada913abd46f81/loadForm";
 function buildForm() {
         $.ajax(urlForm,
             { type:'GET', dataType:'html',
@@ -472,7 +472,7 @@ function errorHandler(jqXHR,statusStr,errorStr) {
 }
 restoreInfo();
 // загружаем руководство по библиоетке с помощью AJAX и сразу получаем наш прогресс загрузки
-const urlGuide = 'https://gist.githubusercontent.com/AliakseiMalinouski/ef96e192fa90204a9b2f96fd54b383ad/raw/884b87173087f8bb28cfc096aea04de6abfd05aa/GuidePixelPACK';
+const urlGuide = 'https://gist.githubusercontent.com/AliakseiMalinouski/ef96e192fa90204a9b2f96fd54b383ad/raw/329390cdef8c2dd8acce28ca6f95a0caee24958b/GuidePixelPACK';
 let buttonCreateGuide = document.getElementById('create__guide');
 let wrapperGuide = document.getElementById('wrapper__guide');
 let svgProgressCircleGuide = document.getElementById('svg__progress__circle__guide');
@@ -481,7 +481,7 @@ function delayCreateGuide() {
     setTimeout(createGuide, 8500);
     svgProgressCircleGuide.style.display = 'block';
     wrapperSetProgress();
-    buttonCreateGuide.innerHTML = 'Идёт загрузка';
+    buttonCreateGuide.innerHTML = 'Loading in progress';
     buttonCreateGuide.style.color = 'orange';
     buttonCreateGuide.removeEventListener('click', delayCreateGuide);
     buttonCreateGuide.removeEventListener('touchstart', delayCreateGuide);
@@ -655,11 +655,10 @@ class Modal {
         this.footer.classList.add('hide');
         this.wrapperModal.classList.add('wrapper__modal__window');
         this.body.classList.add('overflow');
-        this.alertMessage.textContent = 'Сообщение от библиотеки: ';
+        this.alertMessage.textContent = 'Message from the library: ';
         this.alertMessage.classList.add('alert__message');
         this.contentOfModal.classList.add('textcontent__in__modal__window');
-        this.contentOfModal.textContent = 'Сообщение от библиотеки: ';
-        this.contentOfModal.innerHTML = 'Добро пожаловать в Pixel<span>PACK</span>! Перед началом работы с библиотечкой советуем ознакомиться с <span>руководством</span> и интерфейсом. Удачи!';
+        this.contentOfModal.innerHTML = 'Welcome to Pixel<span>PACK</span>! Before you start working with the library, you are advised to read <span>guide</span> and the interface. Good luck!';
         this.modal.appendChild(this.alertMessage);
         this.modal.appendChild(this.contentOfModal);
         this.wrapperModal.appendChild(this.modal);

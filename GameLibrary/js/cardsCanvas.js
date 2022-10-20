@@ -18,7 +18,7 @@ btn.onclick = function () {
     btnClose.style.cursor = 'pointer';
     container.appendChild(btnClose);
     btn.disabled = true;
-    btn.innerHTML = 'Карточка открыта';
+    btn.innerHTML = 'The card is open';
     if (window.matchMedia('(max-width: 560px)')) {
         btnClose.classList.remove('anim__close');
         btnClose.classList.add('animated__btn__close__canvas');
@@ -37,7 +37,7 @@ btnClose.addEventListener('click', (EO) => {
     canvas.style.display = 'none'
     btnClose.style.display = 'none';
     btn.disabled = false;
-    btn.innerHTML = 'Посмотреть карточку';
+    btn.innerHTML = 'View card';
 });
 // создаём хэш с данными о canvas
 let hCanvas = {
@@ -61,7 +61,7 @@ let hHuman = {
     profession: 'archaeologist',
     transform: 90,
     universe: 'JoeRun Game',
-    close: 'Закрыть',
+    close: 'Close',
 };
 contextOfCanvas.fillStyle = 'white';
 contextOfCanvas.font = '24px bold serif';
