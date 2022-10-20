@@ -16,8 +16,10 @@ nextButtonSlider.addEventListener('click', function (EO) {
     setTimeout(function () {
         nextButtonSlider.classList.remove('focus');
     }, 500);
+    nextButtonSlider.style.backgroundColor = '#CE0101';
     if (previousButtonSlider.classList !== 'focus') {
         blood.destroyBlood1();
+        previousButtonSlider.style.backgroundColor = '#FD5252';
     }
 });
 previousButtonSlider.addEventListener('click', function (EO) {
@@ -32,8 +34,10 @@ previousButtonSlider.addEventListener('click', function (EO) {
     setTimeout(function () {
         previousButtonSlider.classList.remove('focus');
     }, 500);
+    previousButtonSlider.style.backgroundColor = '#CE0101';
     if (nextButtonSlider.classList !== 'focus') {
         blood.destroyBlood();
+        nextButtonSlider.style.backgroundColor = '#FD5252';
     }
 });
 class Blood  {
