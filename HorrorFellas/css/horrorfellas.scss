@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: 1px solid red;
 }
 $black: black;
 $header-list: #636363;
@@ -201,6 +202,10 @@ a {
             height: 477px;
             display: flex;
             justify-content: space-between;
+            .CardImage {
+                width: 490px;
+                height: 477px;
+            }
             .SecondPart {
                 padding: 0.1px;
                 .Title {

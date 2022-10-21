@@ -29,7 +29,7 @@ var CardComponent = React.createClass({
 
     render: function () {
         return React.DOM.div({ className: 'WrapperCardContent' },
-            React.DOM.img({ src: this.props.image }),
+            React.DOM.img({ src: this.props.image, alt: 'Card', className: 'CardImage' }),
             React.DOM.div({ className: 'SecondPart' },
             React.DOM.h3({className: 'Title'}, this.props.title),
             React.DOM.p({className: 'Paragraph'}, this.props.paragraph),

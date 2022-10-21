@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: 1px solid red; }
 
 html {
   height: 100%;
@@ -165,6 +166,9 @@ a {
     height: 477px;
     display: flex;
     justify-content: space-between; }
+    .card .container .WrapperCardContent .CardImage {
+      width: 490px;
+      height: 477px; }
     .card .container .WrapperCardContent .SecondPart {
       padding: 0.1px; }
       .card .container .WrapperCardContent .SecondPart .Title {
