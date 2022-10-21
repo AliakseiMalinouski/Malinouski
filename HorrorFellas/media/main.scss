@@ -31,4 +31,18 @@
             }
         }
     }
+    .hero {
+        .container {
+            .WrapperHeroContent {
+                .Background {
+                    display: block;
+                    margin-top: 50px;
+                    position: static;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 900px) {
+
 }
