@@ -26,6 +26,36 @@
     position: static; } }
 @media all and (max-width: 900px) {
   .container {
-    width: 560px; } }
+    width: 560px; }
+
+  .card .container .WrapperCardContent {
+    width: 560px; }
+
+  .hero .container .WrapperHeroContent .Logo {
+    width: 560px; }
+  .hero .container .WrapperHeroContent .Background {
+    width: 560px; }
+
+  .see__roadmap .container .WrapperSeeRoadMap .TextAtRedBlock {
+    font-size: 20px; }
+  .see__roadmap .container .WrapperSeeRoadMap .Button {
+    font-size: 13px; }
+
+  .header .container .WrapperListHeader ul {
+    width: 560px; }
+  .header .container .WrapperListHeader div {
+    display: none; }
+
+  .slider .container .WrapperSliderContent .WrapperButtons {
+    margin-left: 229px; }
+
+  .roadmap .container {
+    background-size: 94% 53%; }
+
+  .footer .container .WrapperFooter {
+    flex-flow: column;
+    align-items: center; }
+    .footer .container .WrapperFooter div {
+      margin-bottom: 30px; } }
 
 /*# sourceMappingURL=main.css.map */

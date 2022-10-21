@@ -1,3 +1,13 @@
+$black: black;
+$header-list: #636363;
+$white: white;
+$con-roadmap: #CD3939;
+$blood-red: #FD5252;
+$dark-red: #201212;
+$light-red: #CE0101;
+$slides: #151515;
+$fz: 16px;
+
 @media all and (max-width: 1110px) {
     .container {
         width: 900px;
@@ -46,5 +56,73 @@
 @media all and (max-width: 900px) {
     .container {
         width: 560px;
+    }
+    .card {
+        .container {
+            .WrapperCardContent {
+                width: 560px;
+            }
+        }
+    }
+    .hero {
+        .container {
+            .WrapperHeroContent {
+                .Logo {
+                width: 560px;
+            }
+            .Background {
+                width: 560px;
+            }
+            }
+        }
+    }
+    .see__roadmap {
+        .container {
+            .WrapperSeeRoadMap {
+                .TextAtRedBlock {
+                    font-size: $fz + 4;
+                }
+                .Button {
+                    font-size: $fz - 3;
+                }
+            }
+        }
+    }
+    .header {
+        .container {
+            .WrapperListHeader {
+                ul {
+                    width: 560px;
+                }
+                div {
+                    display: none;
+                }
+            }
+        }
+    }
+    .slider {
+        .container {
+            .WrapperSliderContent {
+                .WrapperButtons {
+                    margin-left: 229px;
+                }
+            }
+        }
+    }
+    .roadmap {
+        .container {
+            background-size: 94% 53%;
+        }
+    }
+    .footer {
+        .container {
+            .WrapperFooter {
+                flex-flow: column;
+                align-items: center;
+                div {
+                    margin-bottom: 30px;
+                }
+            }
+        }
     }
 }
