@@ -20,7 +20,7 @@ var HeaderListComponent = React.createClass({
 
     render: function () {
         var storageHTML = this.props.array.map(element =>
-            React.DOM.li({ key: element.code }, element.text),
+            React.DOM.li({ key: element.code, className: 'scrollElement' }, element.text),
             )
         return React.DOM.div({ className: 'WrapperListHeader' },
             React.DOM.ul(null, storageHTML),

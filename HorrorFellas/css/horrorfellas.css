@@ -43,6 +43,19 @@ a {
           font-size: 14px;
           color: #636363;
           cursor: pointer; }
+        .header .container .WrapperListHeader ul li:hover {
+          transition: 1s;
+          color: #CE0101;
+          animation: liH 1s linear; }
+@keyframes liH {
+  0% {
+    transform: rotate(0deg); }
+  30% {
+    transform: rotate(6deg); }
+  70% {
+    transform: rotate(-6deg); }
+  100% {
+    transform: rotate(0deg); } }
       .header .container .WrapperListHeader div {
         color: white;
         font-size: 14px;
@@ -86,6 +99,8 @@ a {
         font-weight: bold;
         color: #CD3939;
         cursor: pointer; }
+        .see__roadmap .container .WrapperSeeRoadMap .Button a {
+          color: #FD5252; }
 
 .hero {
   padding-top: 35px; }
@@ -420,5 +435,39 @@ a {
   to {
     opacity: 1;
     transform: scale(1); } }
+.screen {
+  padding-top: 56px; }
+  .screen .container {
+    position: relative; }
+    .screen .container .ImageTwitch {
+      cursor: pointer; }
+    .screen .container .hintImageTwtich {
+      animation: hint 1s linear;
+      position: absolute;
+      font-size: 46px;
+      color: #CE0101;
+      top: 300px;
+      left: 295px;
+      font-weight: 700;
+      text-transform: uppercase; }
+@keyframes hint {
+  from {
+    opacity: 0;
+    color: #FD5252; }
+  to {
+    opacity: 1;
+    color: #CE0101; } }
+    .screen .container .scale {
+      position: absolute;
+      transition: 1s;
+      transform: scale(1.2); }
+
+.roadmap {
+  padding-top: 49px; }
+  .roadmap .container {
+    background-image: url(../img/roadmapImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 655px; }
 
 /*# sourceMappingURL=horrorfellas.css.map */
