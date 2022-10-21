@@ -4,7 +4,9 @@ let previousButtonSlider = document.querySelector('.Previous');
 let WrapperSlides = document.querySelector('.WrapperSlides');
 let WrapperButtons = document.querySelector('.WrapperButtons');
 let distance = 0;
-nextButtonSlider.addEventListener('click', function (EO) {
+const mediaQuery1 = window.matchMedia('(min-width: 960px)');
+if (mediaQuery1.matches) {
+    nextButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
     distance = distance + 1140;
     if (distance >= 2280) {
@@ -40,6 +42,46 @@ previousButtonSlider.addEventListener('click', function (EO) {
         nextButtonSlider.style.backgroundColor = '#FD5252';
     }
 });
+}
+const mediaQuery = window.matchMedia('(max-width: 900px)');
+if (mediaQuery.matches) {
+    nextButtonSlider.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    distance = distance + 500;
+    if (distance >= 1980) {
+        distance = 0;
+    }
+    WrapperSlides.style.left = -distance + 'px';
+    nextButtonSlider.classList.add('focus');
+    blood.createBlood();
+    setTimeout(function () {
+        nextButtonSlider.classList.remove('focus');
+    }, 500);
+    nextButtonSlider.style.backgroundColor = '#CE0101';
+    if (previousButtonSlider.classList !== 'focus') {
+        blood.destroyBlood1();
+        previousButtonSlider.style.backgroundColor = '#FD5252';
+    }
+});
+previousButtonSlider.addEventListener('click', function (EO) {
+    EO = EO || window.event;
+    distance = distance - 500;
+    if (distance < 0) {
+        distance = 1140;
+    }
+    WrapperSlides.style.left = -distance + 'px';
+    previousButtonSlider.classList.add('focus');
+    blood.createBlood1();
+    setTimeout(function () {
+        previousButtonSlider.classList.remove('focus');
+    }, 500);
+    previousButtonSlider.style.backgroundColor = '#CE0101';
+    if (nextButtonSlider.classList !== 'focus') {
+        blood.destroyBlood();
+        nextButtonSlider.style.backgroundColor = '#FD5252';
+    }
+});
+}
 class Blood  {
     constructor() {
         this.blood = document.createElement('img');
