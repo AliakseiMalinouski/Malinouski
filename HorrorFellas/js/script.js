@@ -159,3 +159,23 @@ function wrapperScrollFunc() {
 }
 }
 wrapperScrollFunc();
+const urlText = 'https://gist.githubusercontent.com/AliakseiMalinouski/632811e13c8da08bc41a77eb5050f76e/raw/605a375f29929813ccb21ca6fbe91100eb30d4cb/HorrorFellasGist';
+let textWrapper = document.querySelector('.Text');
+let buttonUpload = document.querySelector('.ButtonUpload');
+buttonUpload.addEventListener('click', createText);
+function createText() {
+    $.ajax(urlText,
+        {
+            type: 'GET', dataType: 'text',
+            success: dataLoadedGuide, error: errorHandlerGuide
+        }
+    );
+    function dataLoadedGuide(data) {
+        textWrapper.textContent = data;
+        buttonUpload.innerHTML = 'Success';
+        buttonUpload.style.color = 'lime';
+    }
+    function errorHandlerGuide(jqXHR, statusStr, errorStr) {
+        alert(statusStr + ' ' + errorStr);
+    }
+}

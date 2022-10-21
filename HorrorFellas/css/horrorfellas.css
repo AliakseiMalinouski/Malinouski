@@ -12,7 +12,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   background-color: black;
-  height: 5000px; }
+  height: 7000px; }
 
 .container {
   width: 1110px;
@@ -469,5 +469,34 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     height: 655px; }
+
+.help__text {
+  padding-top: 68px; }
+  .help__text .container .W {
+    padding: 0.1px; }
+    .help__text .container .W .ButtonUpload {
+      display: block;
+      margin: 0 auto;
+      border: none;
+      border-radius: 13px;
+      background-color: white;
+      cursor: pointer;
+      color: #FD5252;
+      width: 300px;
+      height: 50px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 20px; }
+  .help__text .container .Text {
+    color: white;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 30px;
+    animation: text 1.5s linear; }
+@keyframes text {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=horrorfellas.css.map */

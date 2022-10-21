@@ -21,7 +21,7 @@ body {
     min-height: 100%;
     min-width: 100%;
     background-color: $black;
-    height: 5000px;
+    height: 7000px;
 }
 .container {
     width: 1110px;
@@ -582,5 +582,42 @@ a {
         background-repeat: no-repeat;
         background-position: center;
         height: 655px;
+    }
+}
+.help__text {
+    padding-top: 68px;
+    .container {
+        .W {
+            padding: 0.1px;
+            .ButtonUpload {
+                display: block;
+                margin:  0 auto;
+                border: none;
+                border-radius: 13px;
+                background-color: $white;
+                cursor: pointer;
+                color: $blood-red;
+                width: 300px;
+                height: 50px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: $fz + 4;
+            }
+        }
+        .Text {
+            color: $white;
+            width: 100%;
+            line-height: 30px;
+            margin-top: 30px;
+            animation: text 1.5s linear;
+        }
+        @keyframes text {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     }
 }
