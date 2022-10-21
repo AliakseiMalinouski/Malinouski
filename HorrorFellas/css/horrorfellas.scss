@@ -21,7 +21,6 @@ body {
     min-height: 100%;
     min-width: 100%;
     background-color: $black;
-    height: 7000px;
 }
 .container {
     width: 1110px;
@@ -617,6 +616,82 @@ a {
             }
             to {
                 opacity: 1;
+            }
+        }
+    }
+}
+.footer{
+    padding-top: 102px;
+    .container {
+        padding-bottom: 33px;
+        .WrapperFooter {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .FirstBlock {
+                padding: 0.1px;
+                .FirstTitle {
+                    line-height: 23.5px;
+                    font-weight: 700;
+                    font-size: $fz + 2;
+                    margin-bottom: 19px;
+                    color: $white;
+                }
+                .FirstParagraph {
+                    color: $white;
+                    font-weight: 400;
+                    font-size: $fz - 4;
+                    line-height: 23.5px;
+                    margin-bottom: 18px;
+                    width: 251px;
+                }
+                .Email {
+                    color: $light-red;
+                    font-size: $fz + 2;
+                    font-weight: 700;
+                    line-height: 23.5px;
+                }
+            }
+            .FooterList {
+                li:nth-child(1) {
+                    font-size: $fz + 2;
+                    color: $white;
+                    line-height: 23.5px;
+                    font-weight: 700;
+                    margin-bottom: 19px;
+                }
+                li {
+                    color: $white;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+                }
+            }
+            .SecondBlock {
+                .SecondTitle {
+                    color: $white;
+                    line-height: 23.5px;
+                    font-weight: 700;
+                    font-size: $fz + 2;
+                    margin-bottom: 19px;
+                }
+                .SecondParagraph {
+                    font-weight: bold;
+                    line-height: 23.5px;
+                    color: $white;
+                    font-size: $fz - 4;
+                }
+            }
+            .ThirdBlock {
+                .ThirdTitle {
+                    color: $white;
+                    line-height: 23.5px;
+                    font-weight: 700;
+                    font-size: $fz + 2;
+                    margin-bottom: 19px;
+                }
+                img {
+                    margin-right: 18px;
+                }
             }
         }
     }

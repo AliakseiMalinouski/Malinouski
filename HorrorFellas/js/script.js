@@ -139,6 +139,9 @@ imageTwitch.addEventListener('click', function (EO) {
     EO = EO || window.event;
     imageTwitch.classList.add('scale');
     hint.classList.add('disable');
+    let containerImage = document.getElementById('scrollToMap');
+    containerImage.style.transition = '1s';
+    containerImage.style.paddingTop = '650px';
 });
 let collectionOfAnchors = document.querySelectorAll('.scrollElement');
 collectionOfAnchors.forEach(function (element) {
@@ -173,6 +176,7 @@ function createText() {
     function dataLoadedGuide(data) {
         textWrapper.textContent = data;
         buttonUpload.innerHTML = 'Success';
+        buttonUpload.disabled = true;
         buttonUpload.style.color = 'lime';
     }
     function errorHandlerGuide(jqXHR, statusStr, errorStr) {
