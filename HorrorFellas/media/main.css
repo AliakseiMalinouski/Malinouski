@@ -19,6 +19,13 @@
   .slider .container .WrapperSliderContent .WrapperButtons {
     width: 130px;
     margin-left: 398px; }
+  .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides {
+    justify-content: flex-start; }
+    .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides div {
+      width: 300px !important;
+      margin-right: 50px; }
+      .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides div .Image {
+        width: 300px; }
 
   .hero .container .WrapperHeroContent .Background {
     display: block;

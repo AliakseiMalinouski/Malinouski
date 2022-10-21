@@ -47,8 +47,8 @@ const mediaQuery = window.matchMedia('(max-width: 900px)');
 if (mediaQuery.matches) {
     nextButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
-    distance = distance + 500;
-    if (distance >= 1980) {
+    distance = distance + 470;
+    if (distance > 1790) {
         distance = 0;
     }
     WrapperSlides.style.left = -distance + 'px';
@@ -65,9 +65,9 @@ if (mediaQuery.matches) {
 });
 previousButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
-    distance = distance - 500;
+    distance = distance - 350;
     if (distance < 0) {
-        distance = 1140;
+        distance = 1510;
     }
     WrapperSlides.style.left = -distance + 'px';
     previousButtonSlider.classList.add('focus');

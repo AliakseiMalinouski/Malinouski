@@ -38,6 +38,18 @@ $fz: 16px;
                     width: 130px;
                     margin-left: 398px;
                 }
+                .WrapperSliderSlide {
+                    .WrapperSlides {
+                        justify-content: flex-start;
+                    div {
+                        width: 300px !important;
+                        margin-right: 50px;
+                        .Image {
+                            width: 300px;
+                        }
+                    }
+                }
+                }
             }
         }
     }
