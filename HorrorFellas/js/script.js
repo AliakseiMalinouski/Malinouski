@@ -164,7 +164,6 @@ secondPlus.addEventListener('click', function (EO) {
     secondParagraphOfQuestionBlock.classList.add('FP');
     secondPlus.classList.add('disable');
 });
-// g
 let thirdPlus = document.querySelector('.ThirdPlus');
 let thirdParagraphOfQuestionBlock = document.querySelector('.ThirdQuestion');
 thirdPlus.addEventListener('click', function (EO) {
