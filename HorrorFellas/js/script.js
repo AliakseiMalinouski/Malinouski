@@ -316,7 +316,7 @@ class Menu {
         this.modal.classList.add('menu');
         this.modal.appendChild(closeMenu);
         this.seeMap.style.transition = '1.3s';
-        this.seeMap.style.paddingTop = '415px';
+        this.seeMap.style.paddingTop = '455px';
         this.container.appendChild(this.modal);
         this.body.style.overflow = 'hidden';
     }
