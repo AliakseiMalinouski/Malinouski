@@ -295,8 +295,10 @@ class Menu {
         this.container = document.getElementById('container__header');
         this.seeMap = document.querySelector('.see__roadmap');
         this.body = document.body;
+        this.mapbutton = document.querySelector('.ButtonMap');;
     }
     createModal() {
+        console.log(this.mapbutton)
         this.modal.classList.remove('disable');
         this.li1.textContent = liText[0];
         this.li2.textContent = liText[1];
@@ -319,12 +321,14 @@ class Menu {
         this.seeMap.style.paddingTop = '455px';
         this.container.appendChild(this.modal);
         this.body.style.overflow = 'hidden';
+        this.mapbutton.style.pointerEvents = 'none';
     }
     destroyModal() {
         this.modal.classList.add('disable');
         this.seeMap.style.transition = '1.3s';
         this.seeMap.style.paddingTop = '48px';
         this.body.style.overflow = '';
+        this.mapbutton.style.pointerEvents = '';
     }
 }
 let headerMenu = new Menu();

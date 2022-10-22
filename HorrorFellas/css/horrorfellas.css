@@ -89,7 +89,7 @@ a {
         width: 449px;
         height: 74px;
         font-weight: bold; }
-      .see__roadmap .container .WrapperSeeRoadMap .Button {
+      .see__roadmap .container .WrapperSeeRoadMap .ButtonMap {
         margin-top: 9px;
         border-radius: 11px;
         background-color: white;
@@ -103,7 +103,7 @@ a {
         font-weight: bold;
         color: #CD3939;
         cursor: pointer; }
-        .see__roadmap .container .WrapperSeeRoadMap .Button a {
+        .see__roadmap .container .WrapperSeeRoadMap .ButtonMap a {
           color: #FD5252; }
 
 .hero {
