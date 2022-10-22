@@ -82,7 +82,7 @@
     height: 400px;
     background-color: #CD3939;
     top: 0px;
-    right: -80px;
+    right: 0px;
     z-index: 10;
     border-radius: 13px; }
     .header .container .menu ul {
