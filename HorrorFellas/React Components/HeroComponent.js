@@ -10,6 +10,7 @@ var contentHeroComponent = React.createClass({
 
     displayName: 'contentHeroComponent',
 
+
     propTypes: {
         logo: React.PropTypes.string.isRequired,
         paragraph: React.PropTypes.string.isRequired,
@@ -18,6 +19,7 @@ var contentHeroComponent = React.createClass({
         image: React.PropTypes.string.isRequired,
         background: React.PropTypes.string.isRequired,
     },
+
 
     render: function () {
         return React.DOM.div({ className: 'WrapperHeroContent' },

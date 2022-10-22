@@ -150,6 +150,41 @@ $fz: 16px;
                     display: none;
                 }
             }
+            .open__hamburger__menu {
+                display: block;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+            .menu {
+                padding-top: 0.1px;
+                position: absolute;
+                width: 200px;
+                height: 400px;
+                background-color: $con-roadmap;
+                top: 0px;
+                right: -80px;
+                z-index: 10;
+                border-radius: 13px;
+                ul {
+                    padding-top: 35px;
+                    li {
+                        color: $white;
+                        margin-bottom: 20px;
+                    }
+                }
+                .close {
+                    border: none;
+                    background-color: $white;
+                    color: $light-red;
+                    width: 200px;
+                    height: 30px;
+                    margin-top: 62px;
+                    font-weight: bold;
+                    font-size: $fz + 2;
+                    border-bottom-left-radius: 13px;
+                }
+            }
         }
     }
     .hero {

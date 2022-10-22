@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  outline: 1px solid red; }
+  box-sizing: border-box; }
 
 html {
   height: 100%;
@@ -31,7 +30,8 @@ a {
   padding-top: 41px; }
   .header .container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
     .header .container .WrapperListHeader {
       display: flex;
       width: 100%;
@@ -65,6 +65,10 @@ a {
         border-radius: 5px;
         display: flex;
         justify-content: space-between; }
+    .header .container .Modal {
+      display: none; }
+    .header .container .open__hamburger__menu {
+      display: none; }
 
 .see__roadmap {
   padding-top: 48px; }

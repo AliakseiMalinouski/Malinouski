@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 $black: black;
 $header-list: #636363;
@@ -41,6 +40,7 @@ a {
     .container {
         display: flex;
         justify-content: space-between;
+        position: relative;
         .WrapperListHeader {
             display: flex;
             width: 100%;
@@ -84,6 +84,12 @@ a {
             justify-content: space-between;
         }
         }
+        .Modal {
+            display: none;
+        }
+        .open__hamburger__menu {
+                display: none;
+            }
     }
 }
 .see__roadmap {

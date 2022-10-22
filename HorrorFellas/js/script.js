@@ -265,3 +265,68 @@ function createText() {
         alert(statusStr + ' ' + errorStr);
     }
 }
+let buttonHeaderMenuOpen = document.createElement('img');
+let closeMenu = document.createElement('button');
+closeMenu.textContent = 'Close';
+closeMenu.classList.add('close');
+if (mediaQuery3.matches) {
+    buttonHeaderMenuOpen.setAttribute('src', './img/ci_menu-alt-01.png');
+    buttonHeaderMenuOpen.setAttribute('alt', 'Button');
+    buttonHeaderMenuOpen.style.position = 'absolute';
+    buttonHeaderMenuOpen.classList.add('open__hamburger__menu');
+    document.getElementById('container__header').appendChild(buttonHeaderMenuOpen);
+}
+buttonHeaderMenuOpen.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    alert('g')
+    headerMenu.createModal();
+});
+closeMenu.addEventListener('touchstart', (EO) => headerMenu.destroyModal());
+let liText = ['Home', 'Fusion Preview', 'Roadmap', 'Rarity Ranking', 'Attributes', 'Mint Stats', 'FAQ'];
+class Menu {
+    constructor() {
+        this.modal = document.createElement('div');
+        this.ul = document.createElement('ul');
+        this.li1 = document.createElement('li');
+        this.li2 = document.createElement('li');
+        this.li3 = document.createElement('li');
+        this.li4 = document.createElement('li');
+        this.li5 = document.createElement('li');
+        this.li6 = document.createElement('li');
+        this.li7 = document.createElement('li');
+        this.container = document.getElementById('container__header');
+        this.seeMap = document.querySelector('.see__roadmap');
+        this.body = document.body;
+    }
+    createModal() {
+        this.modal.classList.remove('disable');
+        this.li1.textContent = liText[0];
+        this.li2.textContent = liText[1];
+        this.li3.textContent = liText[2];
+        this.li4.textContent = liText[3];
+        this.li5.textContent = liText[4];
+        this.li6.textContent = liText[5];
+        this.li7.textContent = liText[6];
+        this.ul.appendChild(this.li1);
+        this.ul.appendChild(this.li2);
+        this.ul.appendChild(this.li3);
+        this.ul.appendChild(this.li4);
+        this.ul.appendChild(this.li5);
+        this.ul.appendChild(this.li6);
+        this.ul.appendChild(this.li7);
+        this.modal.appendChild(this.ul);
+        this.modal.classList.add('menu');
+        this.modal.appendChild(closeMenu);
+        this.seeMap.style.transition = '1.3s';
+        this.seeMap.style.paddingTop = '415px';
+        this.container.appendChild(this.modal);
+        this.body.style.overflow = 'hidden';
+    }
+    destroyModal() {
+        this.modal.classList.add('disable');
+        this.seeMap.style.transition = '1.3s';
+        this.seeMap.style.paddingTop = '48px';
+        this.body.style.overflow = '';
+    }
+}
+let headerMenu = new Menu();
