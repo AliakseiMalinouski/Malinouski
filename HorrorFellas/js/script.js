@@ -278,7 +278,6 @@ if (mediaQuery3.matches) {
 }
 buttonHeaderMenuOpen.addEventListener('touchstart', function (EO) {
     EO = EO || window.event;
-    alert('g')
     headerMenu.createModal();
 });
 closeMenu.addEventListener('touchstart', (EO) => headerMenu.destroyModal());
