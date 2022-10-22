@@ -298,7 +298,6 @@ class Menu {
         this.mapbutton = document.querySelector('.ButtonMap');;
     }
     createModal() {
-        console.log(this.mapbutton)
         this.modal.classList.remove('disable');
         this.li1.textContent = liText[0];
         this.li2.textContent = liText[1];
