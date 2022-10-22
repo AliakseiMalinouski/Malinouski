@@ -44,7 +44,8 @@ previousButtonSlider.addEventListener('click', function (EO) {
 });
 }
 const mediaQuery = window.matchMedia('(max-width: 900px)');
-if (mediaQuery.matches) {
+const mediaQuery4 = window.matchMedia('(min-width: 560px)');
+if (mediaQuery.matches && mediaQuery4.matches) {
     nextButtonSlider.addEventListener('click', function (EO) {
     EO = EO || window.event;
     distance = distance + 470;
@@ -68,6 +69,45 @@ previousButtonSlider.addEventListener('click', function (EO) {
     distance = distance - 350;
     if (distance < 0) {
         distance = 1510;
+    }
+    WrapperSlides.style.left = -distance + 'px';
+    previousButtonSlider.classList.add('focus');
+    blood.createBlood1();
+    setTimeout(function () {
+        previousButtonSlider.classList.remove('focus');
+    }, 500);
+    previousButtonSlider.style.backgroundColor = '#CE0101';
+    if (nextButtonSlider.classList !== 'focus') {
+        blood.destroyBlood();
+        nextButtonSlider.style.backgroundColor = '#FD5252';
+    }
+});
+}
+const mediaQuery3 = window.matchMedia('(max-width: 560px)') 
+if (mediaQuery3.matches) {
+    nextButtonSlider.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    distance = distance + 350;
+    if (distance > 1790) {
+        distance = 0;
+    }
+    WrapperSlides.style.left = -distance + 'px';
+    nextButtonSlider.classList.add('focus');
+    blood.createBlood();
+    setTimeout(function () {
+        nextButtonSlider.classList.remove('focus');
+    }, 500);
+    nextButtonSlider.style.backgroundColor = '#CE0101';
+    if (previousButtonSlider.classList !== 'focus') {
+        blood.destroyBlood1();
+        previousButtonSlider.style.backgroundColor = '#FD5252';
+    }
+});
+previousButtonSlider.addEventListener('touchstart', function (EO) {
+    EO = EO || window.event;
+    distance = distance - 350;
+    if (distance < 0) {
+        distance = 1750;
     }
     WrapperSlides.style.left = -distance + 'px';
     previousButtonSlider.classList.add('focus');

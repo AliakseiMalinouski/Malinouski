@@ -64,5 +64,67 @@
     align-items: center; }
     .footer .container .WrapperFooter div {
       margin-bottom: 30px; } }
+@media all and (max-width: 560px) {
+  .container {
+    width: 320px !important; }
+
+  .header .container .WrapperListHeader .ListHeader {
+    display: none; }
+
+  .hero .container .WrapperHeroContent .Logo {
+    width: 320px;
+    font-size: 44px; }
+  .hero .container .WrapperHeroContent .Paragraph {
+    width: 320px;
+    height: auto; }
+  .hero .container .WrapperHeroContent .SecondParagraph {
+    width: 320px;
+    height: auto; }
+  .hero .container .WrapperHeroContent .Background {
+    display: none; }
+
+  .see__roadmap .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px; }
+    .see__roadmap .container .WrapperSeeRoadMap {
+      width: 100%;
+      height: 100%; }
+      .see__roadmap .container .WrapperSeeRoadMap .TextAtRedBlock {
+        font-size: 14px; }
+      .see__roadmap .container .WrapperSeeRoadMap .Button a {
+        width: 100%;
+        height: 100%;
+        font-size: 8px; }
+
+  .card .container .WrapperCardContent {
+    width: 320px; }
+    .card .container .WrapperCardContent .CardImage {
+      width: 320px; }
+    .card .container .WrapperCardContent .SecondPart {
+      width: 320px; }
+      .card .container .WrapperCardContent .SecondPart .Title {
+        width: 320px;
+        font-size: 36px; }
+      .card .container .WrapperCardContent .SecondPart .Paragraph {
+        width: 320px;
+        height: auto;
+        margin-bottom: 23px; }
+
+  .roadmap .container {
+    background-image: url(../img/mapMobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 1622px; }
+
+  .questions .container div {
+    width: 320px;
+    padding-top: 15px; }
+
+  .slider .container .WrapperSliderContent .WrapperSliderSlide .WrapperSlides {
+    margin-left: 10px; }
+  .slider .container .WrapperSliderContent .WrapperButtons {
+    margin-left: 95px; } }
 
 /*# sourceMappingURL=main.css.map */

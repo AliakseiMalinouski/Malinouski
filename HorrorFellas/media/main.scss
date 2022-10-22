@@ -138,3 +138,113 @@ $fz: 16px;
         }
     }
 }
+
+@media all and (max-width: 560px) {
+    .container {
+        width: 320px !important;
+    }
+    .header {
+        .container {
+            .WrapperListHeader {
+                .ListHeader {
+                    display: none;
+                }
+            }
+        }
+    }
+    .hero {
+        .container {
+            .WrapperHeroContent {
+                .Logo {
+                    width: 320px;
+                    font-size: $fz + 28;
+                }
+                .Paragraph {
+                    width: 320px;
+                    height: auto;
+                }
+                .SecondParagraph {
+                    width: 320px;
+                    height: auto;
+                }
+                .Background {
+                    display: none;
+                }
+            }
+        }
+    }
+    .see__roadmap {
+        .container {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            .WrapperSeeRoadMap {
+                width: 100%;
+                height: 100%;
+                .TextAtRedBlock {
+                    font-size: $fz - 2;
+                }
+                .Button {
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        font-size: $fz - 8;
+                    }
+                }
+            }
+        }
+    }
+    .card {
+        .container {
+            .WrapperCardContent {
+                width: 320px;
+                .CardImage {
+                    width: 320px;
+                }
+                .SecondPart {
+                    width: 320px;
+                    .Title {
+                            width: 320px;
+                            font-size: $fz + 20;
+                        }
+                        .Paragraph {
+                            width: 320px;
+                            height: auto;
+                            margin-bottom: 23px;
+                        }
+                }
+            }
+        }
+    }
+    .roadmap {
+        .container {
+            background-image: url(../img/mapMobile.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            height: 1622px;
+        }
+    }
+    .questions {
+        .container {
+            div {
+                width: 320px;
+                padding-top: 15px;
+            }
+        }
+    }
+    .slider {
+        .container {
+            .WrapperSliderContent{
+                .WrapperSliderSlide {
+                    .WrapperSlides {
+                        margin-left: 10px;
+                    }
+                }
+                .WrapperButtons {
+                    margin-left: 95px;
+                }
+            }
+        }
+    }
+}
