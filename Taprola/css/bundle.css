@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  padding-top: 300px;
+  background-color: #6950dd;
+  font-family: 'Montserrat', sans-serif; }
+
+.WrapperItems {
+  position: relative;
+  width: 360px;
+  margin: 0 auto;
+  min-height: 500px;
+  border-radius: 30px;
+  background-color: white;
+  padding-left: 50px;
+  padding-top: 30px; }
+  .WrapperItems .Item {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 18px; }
+  .WrapperItems .Title {
+    margin-left: 60px;
+    margin-bottom: 60px; }
+  .WrapperItems .Icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35px;
+    right: 85px; }
+  .WrapperItems .Quanlity {
+    position: absolute;
+    top: 90px;
+    right: 90px; }
+  .WrapperItems .Name {
+    position: absolute;
+    top: 90px;
+    left: 60px; }
+
+/*# sourceMappingURL=bundle.css.map */
