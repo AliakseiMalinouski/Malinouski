@@ -20,6 +20,14 @@ class Taprola extends React.Component {
         this.setState({ targetCode: code });
     }
 
+    Delete = (code) => {
+        let answer = confirm('You have selected a product ' + code + 'are you sure you want to remove it?');
+        let newArrayItems = this.state.array.filter(item => {
+            return item.code !== code;
+        });
+        answer ? this.setState({ array: newArrayItems }) : this.setState({ targetCode: null });
+    }
+
     render() {
         let items = this.state.array.map(e =>
             <Items
@@ -27,7 +35,9 @@ class Taprola extends React.Component {
                 name={e.name}
                 remains={e.remains}
                 code={e.code}
+                iconWasteUrl={e.iconWasteUrl}
                 cbSelected={this.Selected}
+                cbDelete={this.Delete}
                 targetCode={this.state.targetCode}
             />    
         )

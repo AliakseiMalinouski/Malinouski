@@ -1,5 +1,5 @@
 [
-    { "code": 1, "name": "New item ", "remains": 1},
-    { "code": 2, "name": "New item " , "remains": 2},
-    { "code": 3, "name": "New item ", "remains": 3}
+    { "code": 1, "name": "New item ", "remains": 1, "iconWasteUrl": "./img/waste.png"},
+    { "code": 2, "name": "New item " , "remains": 2, "iconWasteUrl": "./img/waste.png"},
+    { "code": 3, "name": "New item ", "remains": 3, "iconWasteUrl": "./img/waste.png"}
 ]

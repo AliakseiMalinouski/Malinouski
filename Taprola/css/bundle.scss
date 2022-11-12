@@ -16,6 +16,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+$medium: 500;
+$regular: 400;
+$bold: 600;
+
 
 .WrapperItems {
     position: relative;
@@ -30,10 +34,45 @@ body {
         margin-top: 20px;
         margin-left: 10px;
         font-size: 18px;
+        height: 50px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        .ItemChoice {
+            width: auto;
+            border-radius: 13px;
+            padding-top: 6px;
+            padding-left: 5px;
+            padding-right: 5px;
+            cursor: pointer;
+        }
+        .AnimationItemChoice {
+            animation: item 1s linear;
+        }
+        @keyframes item {
+            from {
+                background-color: white;
+                opacity: 0.5;
+            }
+            to {
+                background-color: red;
+                opacity: 1;
+            }
+        }
+        .Remains {
+            width: auto;
+            height: auto;
+            padding-top: 7px;
+        }
+        .WrapIconWaste {
+            position: relative;
+            padding-top: 5px;
+            width: 30%;
+        }
     }
     .Title {
         margin-left: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 90px;
     }
     .Icon {
         width: 30px;
@@ -44,12 +83,14 @@ body {
     }
     .Quanlity {
         position: absolute;
-        top: 90px;
+        top: 100px;
         right: 90px;
+        font-weight: $bold;
     }
     .Name {
         position: absolute;
-            top: 90px;
-            left: 60px;
+        top: 100px;
+        left: 60px;
+        font-weight: $bold;
     }
 }
