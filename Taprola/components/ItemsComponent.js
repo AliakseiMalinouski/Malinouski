@@ -34,7 +34,7 @@ class Items extends React.Component {
                 (this.props.code == this.props.targetCode) 
                     ?
                 <div className='Item'>
-                    <div onClick={this.СheckedItem} style={{backgroundColor: 'red'}} className='ItemChoice AnimationItemChoice'>{this.props.name}</div>
+                    <div onClick={this.СheckedItem} style={{backgroundColor: '#00CED1',}} className='ItemChoice AnimationItemChoice'>{this.props.name}</div>
                     <div style={{ marginLeft: '45px' }} className='Remains'>{this.props.remains}</div>
                     <div className='WrapIconWaste'><img onClick={this.DeleteItem} style={{width: '25px', heigth: '25px', position: 'absolute', right: '15px', cursor: 'pointer'}} src={this.props.iconWasteUrl} alt='Icon waste'/></div>
                 </div>

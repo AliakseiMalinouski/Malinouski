@@ -46,12 +46,13 @@ body {
     background-color: white;
     opacity: 0.5; }
   to {
-    background-color: red;
+    background-color: #00CED1;
     opacity: 1; } }
     .WrapperItems .Item .Remains {
       width: auto;
       height: auto;
-      padding-top: 7px; }
+      padding-top: 7px;
+      font-weight: 500; }
     .WrapperItems .Item .WrapIconWaste {
       position: relative;
       padding-top: 5px;
