@@ -48,7 +48,7 @@ class Taprola extends React.Component {
     }
 
     Delete = (code) => {
-        let answer = confirm('You have selected a product ' + code + 'are you sure you want to remove it?');
+        let answer = confirm('You have selected a product ' + code + ' are you sure you want to remove it?');
         let newArrayItems = this.state.array.filter(item => {
             return item.code !== code;
         });
@@ -79,6 +79,11 @@ class Taprola extends React.Component {
                 this.setState({ disabledAddNewItemButton: false })
             }
         }
+        this.state.ItemH.iconWasteUrl = './img/waste.png';
+    }
+
+    addNewItem = (EO) => {
+        this.setState({ array: this.state.array.concat(this.state.ItemH) });
     }
 
     render() {
@@ -113,7 +118,7 @@ class Taprola extends React.Component {
                             {
                                 (this.state.disabledAddNewItemButton) 
                                     ?
-                                    <button className='ButtonAddNewItem' type='button'>Add</button>
+                                    <button className='ButtonAddNewItem' type='button' onClick={this.addNewItem}>Add</button>
                                     :
                                     <button className='ButtonAddNewItem' type='button' disabled>Add</button>
                             }
