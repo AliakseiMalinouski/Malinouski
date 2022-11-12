@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-
+import { taprolaEvents } from '../events';
 
 
 class Items extends React.Component {
@@ -14,16 +14,18 @@ class Items extends React.Component {
         cbDelete: PropTypes.func.isRequired,
     }
 
-    checkedItem = (EO) => {
+    СheckedItem = (EO) => {
         if (this.props.cbSelected) {
-            this.props.cbSelected(this.props.code);
+            taprolaEvents.emit('ECheckedItem', this.props.code);
         }
     }
 
-    deleteItem = (EO) => {
+    DeleteItem = (EO) => {
         if (this.props.cbDelete) {
-            this.props.cbDelete(this.props.code);
+            taprolaEvents.emit('EDeleteItem', this.props.code);
+            EO.stopPropagation();
         }
+
     }
 
     render() {
@@ -32,15 +34,15 @@ class Items extends React.Component {
                 (this.props.code == this.props.targetCode) 
                     ?
                 <div className='Item'>
-                    <div onClick={this.checkedItem} style={{backgroundColor: 'red'}} className='ItemChoice AnimationItemChoice'>{this.props.name}</div>
+                    <div onClick={this.СheckedItem} style={{backgroundColor: 'red'}} className='ItemChoice AnimationItemChoice'>{this.props.name}</div>
                     <div style={{ marginLeft: '45px' }} className='Remains'>{this.props.remains}</div>
-                    <div className='WrapIconWaste'><img style={{width: '25px', heigth: '25px', position: 'absolute', right: '15px', cursor: 'pointer'}} src={this.props.iconWasteUrl} alt='Icon waste'/></div>
+                    <div className='WrapIconWaste'><img onClick={this.DeleteItem} style={{width: '25px', heigth: '25px', position: 'absolute', right: '15px', cursor: 'pointer'}} src={this.props.iconWasteUrl} alt='Icon waste'/></div>
                 </div>
                     :
                 <div className='Item'>
-                    <div onClick={this.checkedItem} className='ItemChoice'>{this.props.name}</div>
+                    <div onClick={this.СheckedItem} className='ItemChoice'>{this.props.name}</div>
                     <div style={{ marginLeft: '45px' }} className='Remains'>{this.props.remains}</div>
-                    <div className='WrapIconWaste'><img onClick={this.deleteItem} style={{width: '25px', heigth: '25px', position: 'absolute', right: '15px', cursor: 'pointer'}} src={this.props.iconWasteUrl} alt='Icon waste'/></div>
+                    <div className='WrapIconWaste'><img onClick={this.DeleteItem} style={{width: '25px', heigth: '25px', position: 'absolute', right: '15px', cursor: 'pointer'}} src={this.props.iconWasteUrl} alt='Icon waste'/></div>
                 </div>
             }
         </div>

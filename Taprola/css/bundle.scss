@@ -28,8 +28,10 @@ $bold: 600;
     min-height: 500px;
     border-radius: 30px;
     background-color: white;
-    padding-left: 50px;
+    padding-left: 25px;
     padding-top: 30px;
+    padding-right: 25px;
+    
     .Item {
         margin-top: 20px;
         margin-left: 10px;
@@ -71,7 +73,7 @@ $bold: 600;
         }
     }
     .Title {
-        margin-left: 60px;
+        margin-left: 90px;
         margin-bottom: 90px;
     }
     .Icon {
@@ -84,13 +86,13 @@ $bold: 600;
     .Quanlity {
         position: absolute;
         top: 100px;
-        right: 90px;
+        right: 145px;
         font-weight: $bold;
     }
     .Name {
         position: absolute;
         top: 100px;
-        left: 60px;
+        left: 40px;
         font-weight: $bold;
     }
 }

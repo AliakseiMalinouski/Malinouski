@@ -5,6 +5,7 @@ import Title from '../components/TitleComponent';
 import JsonTitle from '../json/title.json';
 import JsonIcon from '../json/icon.json';
 import Icon from './IconComponent';
+import { taprolaEvents } from '../events';
 
 class Taprola extends React.Component {
     static propTypes = {
@@ -14,6 +15,17 @@ class Taprola extends React.Component {
     state = {
         array: this.props.array,
         targetCode: null,
+    }
+
+    componentDidMount = () => {
+        taprolaEvents.addListener('ECheckedItem', this.Selected);
+        taprolaEvents.addListener('EDeleteItem', this.Delete);
+    }
+
+
+    componentWillUnmount = () => {
+        taprolaEvents.removeListener('ECheckedItem', this.Selected);
+        taprolaEvents.removeListener('EDeleteItem', this.Delete);
     }
 
     Selected = (code) => {
