@@ -10,13 +10,19 @@ import { taprolaEvents } from '../events';
 class Taprola extends React.Component {
     static propTypes = {
         array: PropTypes.array.isRequired,
+        newItemH: PropTypes.object.isRequired,
     }
 
     state = {
         array: this.props.array,
+        ItemH: this.props.newItemH,
         targetCode: null,
         boolANI: false,
+        disabledAddNewItemButton: false,
     }
+
+    newNameValue = null;
+    newRemainsValue = null;
 
     componentDidMount = () => {
         taprolaEvents.addListener('ECheckedItem', this.Selected);
@@ -27,6 +33,14 @@ class Taprola extends React.Component {
     componentWillUnmount = () => {
         taprolaEvents.removeListener('ECheckedItem', this.Selected);
         taprolaEvents.removeListener('EDeleteItem', this.Delete);
+    }
+
+    LinkNewName = (ref) => {
+        this.newNameValue = ref;
+    }
+
+    LinkNewRemains = (ref) => {
+        this.newRemainsValue = ref;
     }
 
     Selected = (code) => {
@@ -43,6 +57,28 @@ class Taprola extends React.Component {
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
+        this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
+    }
+
+    addNameNewItem = (EO) => {
+        let valueOfNewName = EO.target.value;
+        this.state.ItemH.name = valueOfNewName;
+    }
+
+    addNewRemainsItem = (EO) => {
+        let valueOfNewRemains = EO.target.value;
+        this.state.ItemH.remains = valueOfNewRemains;
+    }
+
+    validAll = () => {
+        if (this.newNameValue && this.newRemainsValue) {
+            if (this.newNameValue.value && this.newRemainsValue.value) {
+                this.setState({ disabledAddNewItemButton: true });
+            }
+            else {
+                this.setState({ disabledAddNewItemButton: false })
+            }
+        }
     }
 
     render() {
@@ -70,10 +106,17 @@ class Taprola extends React.Component {
                         <div className='WrapFormNewItem'>
                             <h3 className='TitleNewItem'>Fill in the fields</h3>
                             <span>Name item's</span>
-                            <input type='text' className='InputNewItem'/>
+                            <input type='text' className='InputNewItem' onChange={this.addNameNewItem} ref={this.LinkNewName} />
                             <span>Remains item's</span>
-                            <input type='text' className='InputNewItem' />
-                            <button className='ButtonAddNewItem' type='button'>Add</button>
+                            <input type='number' className='InputNewItem' onChange={this.addNewRemainsItem} ref={this.LinkNewRemains} />
+                            <input type='checkbox' onClick={this.validAll} style={{marginRight: '15px'}} /><span>The data entered is correct </span>
+                            {
+                                (this.state.disabledAddNewItemButton) 
+                                    ?
+                                    <button className='ButtonAddNewItem' type='button'>Add</button>
+                                    :
+                                    <button className='ButtonAddNewItem' type='button' disabled>Add</button>
+                            }
                         </div>
                     </div>
                     :
