@@ -15,6 +15,7 @@ class Taprola extends React.Component {
     state = {
         array: this.props.array,
         targetCode: null,
+        boolANI: false,
     }
 
     componentDidMount = () => {
@@ -40,6 +41,10 @@ class Taprola extends React.Component {
         answer ? this.setState({ array: newArrayItems }) : this.setState({ targetCode: null });
     }
 
+    createFormAddNewItem = (EO) => {
+        this.setState({ boolANI: true });
+    }
+
     render() {
         let items = this.state.array.map(e =>
             <Items
@@ -54,15 +59,35 @@ class Taprola extends React.Component {
             />    
         )
         return <div className='WrapperItems'>
-            <Icon
-                iconUrl={JsonIcon}
-            />
-            <Title
-                title={JsonTitle}
-            />
-            <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
-            <div>{items}</div>
+            {
+                (this.state.boolANI)                
+                    ?
+                    <div>
+                        <Icon iconUrl={JsonIcon} />
+                        <Title title={JsonTitle} />
+                        <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
+                        <div>{items}</div>
+                        <div className='WrapFormNewItem'>
+                            <h3 className='TitleNewItem'>Fill in the fields</h3>
+                            <span>Name item's</span>
+                            <input type='text' className='InputNewItem'/>
+                            <span>Remains item's</span>
+                            <input type='text' className='InputNewItem' />
+                            <button className='ButtonAddNewItem' type='button'>Add</button>
+                        </div>
+                    </div>
+                    :
+                    <div>
+                        <Icon iconUrl={JsonIcon} />
+                        <Title title={JsonTitle} />
+                        <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
+                        <div>{items}</div>
+                        <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>Add new item</button>
+                    </div>
+            }
         </div>
     }
 }
 export default Taprola;
+
+                

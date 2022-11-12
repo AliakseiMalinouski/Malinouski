@@ -14,6 +14,7 @@ body {
     padding-top: 300px;
     background-color: #6950dd;
     font-family: 'Montserrat', sans-serif;
+    height: 1500px;
 }
 
 $medium: 500;
@@ -31,8 +32,9 @@ $bold: 600;
     padding-left: 25px;
     padding-top: 30px;
     padding-right: 25px;
-    
-    .Item {
+    padding-bottom: 30px;
+    div {
+        .Item {
         margin-top: 20px;
         margin-left: 10px;
         font-size: 18px;
@@ -95,5 +97,75 @@ $bold: 600;
         top: 100px;
         left: 40px;
         font-weight: $bold;
+    }
+    .ButtonCreateFormNewItem {
+        display: block;
+        margin-top: 15px;
+        border: none;
+        margin-left: 15px;
+        width: 100px;
+        height: 30px;
+        background-color: #E6E6FA;
+        font-size: 15px;
+        border-radius: 6px;
+        font-weight: $medium;
+        cursor: pointer;
+    }
+    .ButtonCreateFormNewItem:hover {
+        transition: 1s;
+        color: black;
+        background-color: #87CEEB;
+    }
+    .WrapFormNewItem {
+        margin-top: 25px;
+        margin-left: 50px;
+        animation: newItem 1s linear;
+        .TitleNewItem {
+            margin-bottom: 25px;
+        }
+        .InputNewItem {
+            border: none;
+            display: block;
+            background-color: #E6E6FA;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 30px;
+            padding-left: 15px;
+            color: #191970;
+
+        }
+        .InputNewItem:focus {
+            outline: none;
+            outline-offset: none;
+        }
+        .ButtonAddNewItem {
+            display: block;
+            margin-top: 15px;
+            border: none;
+            margin-left: 45px;
+            width: 100px;
+            height: 30px;
+            background-color: lime;
+            font-size: 15px;
+            border-radius: 6px;
+            font-weight: $medium;
+            cursor: pointer;
+        }
+        .ButtonAddNewItem:hover {
+            transition: 1.5s;
+            opacity: 0.6;
+        }
+    }
+    @keyframes newItem {
+        from {
+            opacity: 0;
+            filter: blur(5px);
+        }
+        to {
+            opacity: 1;
+            filter: none;
+        }
+    }
     }
 }

@@ -12,7 +12,8 @@ body {
   min-width: 100%;
   padding-top: 300px;
   background-color: #6950dd;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  height: 1500px; }
 
 .WrapperItems {
   position: relative;
@@ -23,8 +24,9 @@ body {
   background-color: white;
   padding-left: 25px;
   padding-top: 30px;
-  padding-right: 25px; }
-  .WrapperItems .Item {
+  padding-right: 25px;
+  padding-bottom: 30px; }
+  .WrapperItems div .Item {
     margin-top: 20px;
     margin-left: 10px;
     font-size: 18px;
@@ -32,14 +34,14 @@ body {
     padding-bottom: 10px;
     display: flex;
     justify-content: space-between; }
-    .WrapperItems .Item .ItemChoice {
+    .WrapperItems div .Item .ItemChoice {
       width: auto;
       border-radius: 13px;
       padding-top: 6px;
       padding-left: 5px;
       padding-right: 5px;
       cursor: pointer; }
-    .WrapperItems .Item .AnimationItemChoice {
+    .WrapperItems div .Item .AnimationItemChoice {
       animation: item 1s linear; }
 @keyframes item {
   from {
@@ -48,33 +50,90 @@ body {
   to {
     background-color: #00CED1;
     opacity: 1; } }
-    .WrapperItems .Item .Remains {
+    .WrapperItems div .Item .Remains {
       width: auto;
       height: auto;
       padding-top: 7px;
       font-weight: 500; }
-    .WrapperItems .Item .WrapIconWaste {
+    .WrapperItems div .Item .WrapIconWaste {
       position: relative;
       padding-top: 5px;
       width: 30%; }
-  .WrapperItems .Title {
+  .WrapperItems div .Title {
     margin-left: 90px;
     margin-bottom: 90px; }
-  .WrapperItems .Icon {
+  .WrapperItems div .Icon {
     width: 30px;
     height: 30px;
     position: absolute;
     top: 35px;
     right: 85px; }
-  .WrapperItems .Quanlity {
+  .WrapperItems div .Quanlity {
     position: absolute;
     top: 100px;
     right: 145px;
     font-weight: 600; }
-  .WrapperItems .Name {
+  .WrapperItems div .Name {
     position: absolute;
     top: 100px;
     left: 40px;
     font-weight: 600; }
+  .WrapperItems div .ButtonCreateFormNewItem {
+    display: block;
+    margin-top: 15px;
+    border: none;
+    margin-left: 15px;
+    width: 100px;
+    height: 30px;
+    background-color: #E6E6FA;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer; }
+  .WrapperItems div .ButtonCreateFormNewItem:hover {
+    transition: 1s;
+    color: black;
+    background-color: #87CEEB; }
+  .WrapperItems div .WrapFormNewItem {
+    margin-top: 25px;
+    margin-left: 50px;
+    animation: newItem 1s linear; }
+    .WrapperItems div .WrapFormNewItem .TitleNewItem {
+      margin-bottom: 25px; }
+    .WrapperItems div .WrapFormNewItem .InputNewItem {
+      border: none;
+      display: block;
+      background-color: #E6E6FA;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+      height: 30px;
+      padding-left: 15px;
+      color: #191970; }
+    .WrapperItems div .WrapFormNewItem .InputNewItem:focus {
+      outline: none;
+      outline-offset: none; }
+    .WrapperItems div .WrapFormNewItem .ButtonAddNewItem {
+      display: block;
+      margin-top: 15px;
+      border: none;
+      margin-left: 45px;
+      width: 100px;
+      height: 30px;
+      background-color: lime;
+      font-size: 15px;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer; }
+    .WrapperItems div .WrapFormNewItem .ButtonAddNewItem:hover {
+      transition: 1.5s;
+      opacity: 0.6; }
+@keyframes newItem {
+  from {
+    opacity: 0;
+    filter: blur(5px); }
+  to {
+    opacity: 1;
+    filter: none; } }
 
 /*# sourceMappingURL=bundle.css.map */
