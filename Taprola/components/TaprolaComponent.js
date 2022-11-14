@@ -132,7 +132,7 @@ class Taprola extends React.Component {
                     :
                     <div>
                         <Icon iconUrl={JsonIcon} />
-                        <Title title={JsonTitle} />
+                        <TitleWithBG title={JsonTitle} />
                         <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
                         <div>{items}</div>
                         <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>Add new item</button>
