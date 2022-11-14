@@ -14,6 +14,7 @@ class Taprola extends React.Component {
     static propTypes = {
         array: PropTypes.array.isRequired,
         newItemH: PropTypes.object.isRequired,
+        arrayColors: PropTypes.array.isRequired,
     }
 
     state = {
@@ -23,6 +24,8 @@ class Taprola extends React.Component {
         boolANI: false,
         disabledAddNewItemButton: false,
         colorClicked: false,
+        valueColorInput: null,
+        valueColorInputPrev: null,
     }
 
     newNameValue = null;
@@ -31,13 +34,13 @@ class Taprola extends React.Component {
     componentDidMount = () => {
         taprolaEvents.addListener('ECheckedItem', this.Selected);
         taprolaEvents.addListener('EDeleteItem', this.Delete);
-        taprolaEvents.addListener('changeBackgroundColorTitle', this.changeBackgroundColorTitle)
+        taprolaEvents.addListener('changeBackgroundColorTitle', this.changeBackgroundColorTitle);
     }
-
 
     componentWillUnmount = () => {
         taprolaEvents.removeListener('ECheckedItem', this.Selected);
         taprolaEvents.removeListener('EDeleteItem', this.Delete);
+        taprolaEvents.removeListener('changeBackgroundColorTitle', this.changeBackgroundColorTitle);
     }
 
     LinkNewName = (ref) => {
@@ -91,8 +94,26 @@ class Taprola extends React.Component {
         this.setState({ array: this.state.array.concat(this.state.ItemH) });
     }
 
-    changeBackgroundColorTitle = (target) => {
-        this.setState({colorClicked: true})
+    changeBackgroundColorTitle = () => {
+        this.setState({ colorClicked: true });
+    }
+
+    readColor = (EO) => {
+        let value = EO.target.value;
+        this.setState({ valueColorInputPrev: value });
+    }
+
+    changeColorTitle = (EO) => {
+        let newColor = this.props.arrayColors.filter(element => {
+            return element == this.state.valueColorInputPrev
+        });
+        if (newColor !== null) {
+            this.setState({ valueColorInput: newColor });
+            this.setState({ colorClicked: false });
+        }
+        else {
+            null
+        }
     }
 
     render() {
@@ -109,7 +130,7 @@ class Taprola extends React.Component {
             />    
         )
 
-        let TitleWithBG = withBGHoc("cyan")(Title);
+        let TitleWithBG = withBGHoc(this.state.valueColorInput)(Title);
         
         return <div className='WrapperItems'>
             {
@@ -121,8 +142,8 @@ class Taprola extends React.Component {
                         {
                             (this.state.colorClicked) ?
                                 <div className='ColorInputDiv'>
-                                    <input type='text' placeholder='Color name'/>
-                                    <button type='button'>Change</button>
+                                    <input type='text' placeholder='Color name' onChange={this.readColor}/>
+                                    <button type='button' onClick={this.changeColorTitle}>Change</button>
                                 </div>
                                 : null
                         }
@@ -152,8 +173,8 @@ class Taprola extends React.Component {
                         {
                             (this.state.colorClicked) ?
                                 <div className='ColorInputDiv'>
-                                    <input type='text' placeholder='Color name'/>
-                                    <button type='button'>Change</button>
+                                    <input type='text' placeholder='Color name' onChange={this.readColor}/>
+                                    <button type='button' onClick={this.changeColorTitle}>Change</button>
                                 </div>
                                 : null
                         }
