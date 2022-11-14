@@ -30,7 +30,7 @@ $bold: 600;
     border-radius: 30px;
     background-color: white;
     padding-left: 25px;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-right: 25px;
     padding-bottom: 30px;
     div {
@@ -79,22 +79,66 @@ $bold: 600;
         margin-left: 90px;
         margin-bottom: 90px;
     }
+    .IconChangeColor {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .ColorInputDiv {
+        position: absolute;
+        top: 15px;
+        right: 45px;
+        animation: color 1s linear;
+        input {
+            margin-right: 10px;
+            border: none;
+            background-color: #E6E6FA;
+            height: 25px;
+            border-radius: 3px;
+            padding-left: 20px;
+        }
+        button {
+            border: none;
+            cursor: pointer;
+            background-color: lime;
+            color: black;
+            padding-left: 6px;
+            padding-top: 3px;
+            padding-right: 6px;
+            padding-bottom: 3px;
+            border-radius: 5px;
+        }
+    }
+    @keyframes color {
+        from {
+            opacity: 0;
+            transform: scale(0);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
     .Icon {
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 35px;
+        top: 65px;
         right: 85px;
+        cursor: pointer;
     }
     .Quanlity {
         position: absolute;
-        top: 100px;
+        top: 130px;
         right: 145px;
         font-weight: $bold;
     }
     .Name {
         position: absolute;
-        top: 100px;
+        top: 130px;
         left: 40px;
         font-weight: $bold;
     }

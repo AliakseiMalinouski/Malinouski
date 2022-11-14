@@ -7,7 +7,8 @@ import JsonIcon from '../json/icon.json';
 import Icon from './IconComponent';
 import { taprolaEvents } from '../events';
 import { withBGHoc } from './withColorBackground';
-
+import ChangeColorIcon from '../json/icon-change-color.json';
+import Color from './ChangeColorIcon';
 
 class Taprola extends React.Component {
     static propTypes = {
@@ -21,6 +22,7 @@ class Taprola extends React.Component {
         targetCode: null,
         boolANI: false,
         disabledAddNewItemButton: false,
+        colorClicked: false,
     }
 
     newNameValue = null;
@@ -29,6 +31,7 @@ class Taprola extends React.Component {
     componentDidMount = () => {
         taprolaEvents.addListener('ECheckedItem', this.Selected);
         taprolaEvents.addListener('EDeleteItem', this.Delete);
+        taprolaEvents.addListener('changeBackgroundColorTitle', this.changeBackgroundColorTitle)
     }
 
 
@@ -88,6 +91,10 @@ class Taprola extends React.Component {
         this.setState({ array: this.state.array.concat(this.state.ItemH) });
     }
 
+    changeBackgroundColorTitle = (target) => {
+        this.setState({colorClicked: true})
+    }
+
     render() {
         let items = this.state.array.map(e =>
             <Items
@@ -109,7 +116,16 @@ class Taprola extends React.Component {
                 (this.state.boolANI)                
                     ?
                     <div>
+                        <Color iconUrl={ChangeColorIcon} />
                         <Icon iconUrl={JsonIcon} />
+                        {
+                            (this.state.colorClicked) ?
+                                <div className='ColorInputDiv'>
+                                    <input type='text' placeholder='Color name'/>
+                                    <button type='button'>Change</button>
+                                </div>
+                                : null
+                        }
                         <TitleWithBG title={JsonTitle} />
                         <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
                         <div>{items}</div>
@@ -131,7 +147,16 @@ class Taprola extends React.Component {
                     </div>
                     :
                     <div>
+                        <Color iconUrl={ChangeColorIcon} />
                         <Icon iconUrl={JsonIcon} />
+                        {
+                            (this.state.colorClicked) ?
+                                <div className='ColorInputDiv'>
+                                    <input type='text' placeholder='Color name'/>
+                                    <button type='button'>Change</button>
+                                </div>
+                                : null
+                        }
                         <TitleWithBG title={JsonTitle} />
                         <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
                         <div>{items}</div>
