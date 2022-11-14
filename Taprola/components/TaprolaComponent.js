@@ -6,6 +6,8 @@ import JsonTitle from '../json/title.json';
 import JsonIcon from '../json/icon.json';
 import Icon from './IconComponent';
 import { taprolaEvents } from '../events';
+import { withBGHoc } from './withColorBackground';
+
 
 class Taprola extends React.Component {
     static propTypes = {
@@ -99,13 +101,16 @@ class Taprola extends React.Component {
                 targetCode={this.state.targetCode}
             />    
         )
+
+        let TitleWithBG = withBGHoc("cyan")(Title);
+        
         return <div className='WrapperItems'>
             {
                 (this.state.boolANI)                
                     ?
                     <div>
                         <Icon iconUrl={JsonIcon} />
-                        <Title title={JsonTitle} />
+                        <TitleWithBG title={JsonTitle} />
                         <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
                         <div>{items}</div>
                         <div className='WrapFormNewItem'>
