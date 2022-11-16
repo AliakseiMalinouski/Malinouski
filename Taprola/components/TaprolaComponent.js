@@ -134,7 +134,8 @@ class Taprola extends React.PureComponent {
                 cloneItemsArray[index] = selectedItem;
             }
         });
-        this.setState({array:cloneItemsArray});
+        this.setState({ array: cloneItemsArray });
+        // перенести newName в state, перенести newRemains в state, проделать ту же операцию, заменив в selectedItem.name = newName из state!!! (по клику по кнопке)
     }
 
     EditRemainsItem = (EO) => {
