@@ -26,6 +26,7 @@ class Taprola extends React.PureComponent {
         colorClicked: false,
         valueColorInput: null,
         valueColorInputPrev: null,
+        boolEI: false,
     }
 
     newNameValue = null;
@@ -65,12 +66,13 @@ class Taprola extends React.PureComponent {
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
-        this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
+        this.setState({ ItemH: {} });
     }
 
     addNameNewItem = (EO) => {
         let valueOfNewName = EO.target.value;
         this.state.ItemH.name = valueOfNewName;
+        this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
     }
 
     addNewRemainsItem = (EO) => {
@@ -92,6 +94,7 @@ class Taprola extends React.PureComponent {
 
     addNewItem = (EO) => {
         this.setState({ array: this.state.array.concat(this.state.ItemH) });
+        this.setState({ boolANI: false });
     }
 
     changeBackgroundColorTitle = () => {
@@ -116,6 +119,10 @@ class Taprola extends React.PureComponent {
         }
     }
 
+    startEditItem = (EO) => {
+        this.setState({ boolEI: true });
+    }
+
     render() {
         let items = this.state.array.map(e =>
             <Items
@@ -131,12 +138,10 @@ class Taprola extends React.PureComponent {
         )
 
         let TitleWithBG = withBGHoc(this.state.valueColorInput)(Title);
-        
-        return <div className='WrapperItems'>
-            {
-                (this.state.boolANI)                
-                    ?
-                    <div>
+    
+        if (this.state.boolANI) {
+            return <div className='WrapperItems'>
+                <div>
                         <Color iconUrl={ChangeColorIcon} />
                         <Icon iconUrl={JsonIcon} />
                         {
@@ -166,8 +171,11 @@ class Taprola extends React.PureComponent {
                             }
                         </div>
                     </div>
-                    :
-                    <div>
+            </div>
+        }
+        if (this.state.boolEI) {
+            return <div className='WrapperItems'>
+                <div>
                         <Color iconUrl={ChangeColorIcon} />
                         <Icon iconUrl={JsonIcon} />
                         {
@@ -181,10 +189,37 @@ class Taprola extends React.PureComponent {
                         <TitleWithBG title={JsonTitle} />
                         <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
                         <div>{items}</div>
-                        <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>Add new item</button>
+                        
                     </div>
-            }
-        </div>
+            </div>
+        }
+        else if (this.state.boolANI == false) {
+            return <div className='WrapperItems'>
+                <div>
+                        <Color iconUrl={ChangeColorIcon} />
+                        <Icon iconUrl={JsonIcon} />
+                        {
+                            (this.state.colorClicked) ?
+                                <div className='ColorInputDiv'>
+                                    <input type='text' placeholder='Color name' onChange={this.readColor}/>
+                                    <button type='button' onClick={this.changeColorTitle}>Change</button>
+                                </div>
+                                : null
+                        }
+                        <TitleWithBG title={JsonTitle} />
+                        <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
+                        <div>{items}</div>
+                    <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>Add new item</button>
+                    {
+                        (this.state.targetCode !== null)
+                            ?
+                            <button type='button' className='EditItemButton' onClick={this.startEditItem}>Edit Item</button>
+                            :
+                            <button type='button' className='EditItemButton' disabled>Edit Item</button>
+                    }   
+                    </div>
+            </div>
+        }
     }
 }
 export default Taprola;

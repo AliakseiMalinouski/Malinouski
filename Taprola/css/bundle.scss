@@ -146,7 +146,7 @@ $bold: 600;
         font-weight: $bold;
     }
     .ButtonCreateFormNewItem {
-        display: block;
+        display: inline-block;
         margin-top: 15px;
         border: none;
         margin-left: 15px;
@@ -162,6 +162,19 @@ $bold: 600;
         transition: 1s;
         color: black;
         background-color: #87CEEB;
+    }
+    .EditItemButton {
+        display: inline-block;
+        margin-top: 15px;
+        border: none;
+        margin-left: 15px;
+        width: 100px;
+        height: 30px;
+        background-color: #E6E6FA;
+        font-size: 15px;
+        border-radius: 6px;
+        font-weight: $medium;
+        cursor: pointer;
     }
     .WrapFormNewItem {
         margin-top: 25px;
