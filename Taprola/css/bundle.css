@@ -27,6 +27,7 @@ body {
   padding-right: 25px;
   padding-bottom: 30px; }
   .WrapperItems div .Item {
+    position: relative;
     margin-top: 20px;
     margin-left: 10px;
     font-size: 18px;
@@ -53,6 +54,8 @@ body {
     .WrapperItems div .Item .Remains {
       width: auto;
       height: auto;
+      position: absolute;
+      right: 120px;
       padding-top: 7px;
       font-weight: 500; }
     .WrapperItems div .Item .WrapIconWaste {
