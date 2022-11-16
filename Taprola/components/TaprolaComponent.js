@@ -22,7 +22,7 @@ class Taprola extends React.PureComponent {
         ItemH: this.props.newItemH,
         targetCode: null,
         boolANI: false,
-        disabledAddNewItemButton: false,
+        disabledAddNewItemButton: true,
         colorClicked: false,
         valueColorInput: null,
         valueColorInputPrev: null,
@@ -83,10 +83,10 @@ class Taprola extends React.PureComponent {
     validAll = () => {
         if (this.newNameValue && this.newRemainsValue) {
             if (this.newNameValue.value && this.newRemainsValue.value) {
-                this.setState({ disabledAddNewItemButton: true });
+                this.setState({ disabledAddNewItemButton: false });
             }
             else {
-                this.setState({ disabledAddNewItemButton: false })
+                this.setState({ disabledAddNewItemButton: true })
             }
         }
         this.state.ItemH.iconWasteUrl = './img/waste.png';
@@ -95,7 +95,7 @@ class Taprola extends React.PureComponent {
     addNewItem = (EO) => {
         this.setState({ array: this.state.array.concat(this.state.ItemH) });
         this.setState({ boolANI: false });
-        this.setState({ disabledAddNewItemButton: false });
+        this.setState({ disabledAddNewItemButton: true });
     }
 
     changeBackgroundColorTitle = () => {
@@ -166,9 +166,9 @@ class Taprola extends React.PureComponent {
                             {
                                 (this.state.disabledAddNewItemButton) 
                                     ?
-                                    <button className='ButtonAddNewItem' type='button' onClick={this.addNewItem}>Add</button>
-                                    :
                                     <button className='ButtonAddNewItem' type='button' disabled>Add</button>
+                                :
+                                    <button className='ButtonAddNewItem' type='button' onClick={this.addNewItem}>Add</button>
                             }
                         </div>
                     </div>
