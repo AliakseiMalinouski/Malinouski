@@ -121,7 +121,7 @@ class Taprola extends React.PureComponent {
             <Items
                 key={e.code}
                 name={e.name}
-                remains={e.remains}
+                remains={JSON.parse(e.remains)}
                 code={e.code}
                 iconWasteUrl={e.iconWasteUrl}
                 cbSelected={this.Selected}
