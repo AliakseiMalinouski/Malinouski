@@ -95,6 +95,7 @@ class Taprola extends React.PureComponent {
     addNewItem = (EO) => {
         this.setState({ array: this.state.array.concat(this.state.ItemH) });
         this.setState({ boolANI: false });
+        this.setState({ disabledAddNewItemButton: false });
     }
 
     changeBackgroundColorTitle = () => {
