@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { taprolaEvents } from '../events';
 
 
-class Items extends React.Component {
+class Items extends React.PureComponent {
     static propTypes = {
         code: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,

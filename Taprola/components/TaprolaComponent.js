@@ -10,7 +10,7 @@ import { withBGHoc } from './withColorBackground';
 import ChangeColorIcon from '../json/icon-change-color.json';
 import Color from './ChangeColorIcon';
 
-class Taprola extends React.Component {
+class Taprola extends React.PureComponent {
     static propTypes = {
         array: PropTypes.array.isRequired,
         newItemH: PropTypes.object.isRequired,

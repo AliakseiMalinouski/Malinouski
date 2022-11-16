@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-class Title extends React.Component {
+class Title extends React.PureComponent{
     static propTypes = {
         title: PropTypes.string.isRequired,
     }

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { taprolaEvents } from '../events';
 
-class ChangeColorIcon extends React.Component {
+class ChangeColorIcon extends React.PureComponent {
     static propTypes = {
         iconUrl: PropTypes.string.isRequired,
     }
