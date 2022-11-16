@@ -227,5 +227,34 @@ $bold: 600;
             filter: none;
         }
     }
+    .WrapEditing {
+        margin-top: 25px;
+        margin-left: 50px;
+        .TitleEditingItem {
+            margin-bottom: 25px;
+        }
+        .EditingNameItem {
+            border: none;
+            display: block;
+            background-color: #E6E6FA;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 30px;
+            padding-left: 15px;
+            color: #191970;
+        }
+        .EditingRemainsItem {
+            border: none;
+            display: block;
+            background-color: #E6E6FA;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 30px;
+            padding-left: 15px;
+            color: #191970;
+        }
+    }
     }
 }

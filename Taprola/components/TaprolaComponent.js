@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { element } from 'prop-types';
 import Items from '../components/ItemsComponent';
 import Title from '../components/TitleComponent';
 import JsonTitle from '../json/title.json';
@@ -124,6 +124,23 @@ class Taprola extends React.PureComponent {
         this.setState({ boolEI: true });
     }
 
+    EditNameItem = (EO) => {
+        let newName = EO.target.value;
+        let cloneItemsArray = [...this.state.array];
+        cloneItemsArray.forEach((element, index) => {
+            if (element.code == this.state.targetCode) {
+                let selectedItem={...element}; 
+                selectedItem.name = newName;
+                cloneItemsArray[index] = selectedItem;
+            }
+        });
+        this.setState({array:cloneItemsArray});
+    }
+
+    EditRemainsItem = (EO) => {
+        let newRemains = EO.target.value;
+    }
+
     render() {
         let items = this.state.array.map(e =>
             <Items
@@ -177,24 +194,28 @@ class Taprola extends React.PureComponent {
         if (this.state.boolEI) {
             return <div className='WrapperItems'>
                 <div>
-                        <Color iconUrl={ChangeColorIcon} />
-                        <Icon iconUrl={JsonIcon} />
-                        {
-                            (this.state.colorClicked) ?
-                                <div className='ColorInputDiv'>
-                                    <input type='text' placeholder='Color name' onChange={this.readColor}/>
-                                    <button type='button' onClick={this.changeColorTitle}>Change</button>
-                                </div>
-                                : null
-                        }
-                        <TitleWithBG title={JsonTitle} />
-                        <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
-                        <div>{items}</div>
-                        
+                    <Color iconUrl={ChangeColorIcon} />
+                    <Icon iconUrl={JsonIcon} />
+                    {
+                        (this.state.colorClicked) ?
+                            <div className='ColorInputDiv'>
+                                <input type='text' placeholder='Color name' onChange={this.readColor}/>
+                                <button type='button' onClick={this.changeColorTitle}>Change</button>
+                            </div>
+                            : null
+                    }
+                    <TitleWithBG title={JsonTitle} />
+                    <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
+                    <div>{items}</div>
+                    <div className='WrapEditing'>
+                        <h3 className='TitleEditingItem'>Editing item</h3>
+                        <input type='text' className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
+                        <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem}/>
+                    </div>
                     </div>
             </div>
         }
-        else if (this.state.boolANI == false) {
+        else if (this.state.boolANI == false || this.state.boolEI) {
             return <div className='WrapperItems'>
                 <div>
                         <Color iconUrl={ChangeColorIcon} />

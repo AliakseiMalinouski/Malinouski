@@ -187,5 +187,30 @@ body {
   to {
     opacity: 1;
     filter: none; } }
+  .WrapperItems div .WrapEditing {
+    margin-top: 25px;
+    margin-left: 50px; }
+    .WrapperItems div .WrapEditing .TitleEditingItem {
+      margin-bottom: 25px; }
+    .WrapperItems div .WrapEditing .EditingNameItem {
+      border: none;
+      display: block;
+      background-color: #E6E6FA;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+      height: 30px;
+      padding-left: 15px;
+      color: #191970; }
+    .WrapperItems div .WrapEditing .EditingRemainsItem {
+      border: none;
+      display: block;
+      background-color: #E6E6FA;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+      height: 30px;
+      padding-left: 15px;
+      color: #191970; }
 
 /*# sourceMappingURL=bundle.css.map */
