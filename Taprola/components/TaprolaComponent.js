@@ -29,6 +29,7 @@ class Taprola extends React.PureComponent {
         boolEI: false,
         editedName: null,
         editedRemains: null,
+        activeCheckboxEditingItem: true,
     }
 
     newNameValue = null;
@@ -128,12 +129,33 @@ class Taprola extends React.PureComponent {
 
     EditNameItem = (EO) => {
         let newName = EO.target.value;
+        if (newName == null || newName == '') {
+            this.setState({ activeCheckboxEditingItem: true });
+        }
+        else if (newName && this.state.editedRemains) {
+            this.setState({ activeCheckboxEditingItem: false });
+        }
         this.setState({ editedName: newName });
     }
 
     EditRemainsItem = (EO) => {
         let newRemains = EO.target.value;
+        if (newRemains == null || newRemains == '') {
+            this.setState({ activeCheckboxEditingItem: true });
+        }
+        else if (newRemains && this.state.editedName) {
+            this.setState({ activeCheckboxEditingItem: false });
+        }
         this.setState({ editedRemains: newRemains });
+    }
+
+    validEditInfo = (EO) => {
+        if ((this.state.editedName == null || this.state.editedName == '') && (this.state.editedRemains == null || this.state.editedRemains == '')) {
+            this.setState({ activeCheckboxEditingItem: true });
+        }
+        else {
+            this.setState({ activeCheckboxEditingItem: false });
+        }
     }
 
     EditSelectedItem = (EO) => {
@@ -220,8 +242,15 @@ class Taprola extends React.PureComponent {
                     <div className='WrapEditing'>
                         <h3 className='TitleEditingItem'>Editing item</h3>
                         <input type='text' className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
-                        <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem}/>
-                        <button type='button' onClick={this.EditSelectedItem} className='PushEditButton'>Edit</button>
+                        <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem} />
+                        <input type='checkbox' onClick={this.validEditInfo}/><span style={{marginLeft: '15px'}}>The data entered is correct </span>
+                        {
+                            (this.state.activeCheckboxEditingItem)
+                                ?
+                                <button type='button' onClick={this.EditSelectedItem} className='PushEditButton' disabled>Edit</button>
+                                :
+                                <button type='button' onClick={this.EditSelectedItem} className='PushEditButton'>Edit</button>
+                        }
                     </div>
                     </div>
             </div>
