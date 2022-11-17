@@ -27,6 +27,8 @@ class Taprola extends React.PureComponent {
         valueColorInput: null,
         valueColorInputPrev: null,
         boolEI: false,
+        editedName: null,
+        editedRemains: null,
     }
 
     newNameValue = null;
@@ -126,20 +128,25 @@ class Taprola extends React.PureComponent {
 
     EditNameItem = (EO) => {
         let newName = EO.target.value;
-        let cloneItemsArray = [...this.state.array];
-        cloneItemsArray.forEach((element, index) => {
-            if (element.code == this.state.targetCode) {
-                let selectedItem={...element}; 
-                selectedItem.name = newName;
-                cloneItemsArray[index] = selectedItem;
-            }
-        });
-        this.setState({ array: cloneItemsArray });
-        // перенести newName в state, перенести newRemains в state, проделать ту же операцию, заменив в selectedItem.name = newName из state!!! (по клику по кнопке)
+        this.setState({ editedName: newName });
     }
 
     EditRemainsItem = (EO) => {
         let newRemains = EO.target.value;
+    }
+
+    EditSelectedItem = (EO) => {
+        let cloneItemsArray = [...this.state.array];
+        cloneItemsArray.forEach((element, index) => {
+            if (element.code == this.state.targetCode) {
+                let selectedItem={...element}; 
+                selectedItem.name = this.state.editedName;
+                cloneItemsArray[index] = selectedItem;
+            }
+        });
+        this.setState({ array: cloneItemsArray });
+        this.setState({ boolEI: false });
+        this.setState({ targetCode: null });
     }
 
     render() {
@@ -211,7 +218,8 @@ class Taprola extends React.PureComponent {
                     <div className='WrapEditing'>
                         <h3 className='TitleEditingItem'>Editing item</h3>
                         <input type='text' className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
-                        <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem}/>
+                        {/* <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem}/> */}
+                        <button type='button' onClick={this.EditSelectedItem} className='PushEditButton'>Edit</button>
                     </div>
                     </div>
             </div>

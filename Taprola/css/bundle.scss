@@ -244,6 +244,10 @@ $bold: 600;
             padding-left: 15px;
             color: #191970;
         }
+        .EditingNameItem:focus {
+            outline: none;
+            outline-offset: none;
+        }
         .EditingRemainsItem {
             border: none;
             display: block;
@@ -254,6 +258,19 @@ $bold: 600;
             height: 30px;
             padding-left: 15px;
             color: #191970;
+        }
+        .PushEditButton {
+            display: block;
+            margin-top: 15px;
+            border: none;
+            margin-left: 45px;
+            width: 100px;
+            height: 30px;
+            background-color: lime;
+            font-size: 15px;
+            border-radius: 6px;
+            font-weight: $medium;
+            cursor: pointer;
         }
     }
     }

@@ -202,6 +202,9 @@ body {
       height: 30px;
       padding-left: 15px;
       color: #191970; }
+    .WrapperItems div .WrapEditing .EditingNameItem:focus {
+      outline: none;
+      outline-offset: none; }
     .WrapperItems div .WrapEditing .EditingRemainsItem {
       border: none;
       display: block;
@@ -212,5 +215,17 @@ body {
       height: 30px;
       padding-left: 15px;
       color: #191970; }
+    .WrapperItems div .WrapEditing .PushEditButton {
+      display: block;
+      margin-top: 15px;
+      border: none;
+      margin-left: 45px;
+      width: 100px;
+      height: 30px;
+      background-color: lime;
+      font-size: 15px;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer; }
 
 /*# sourceMappingURL=bundle.css.map */
