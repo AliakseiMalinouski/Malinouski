@@ -230,6 +230,7 @@ $bold: 600;
     .WrapEditing {
         margin-top: 25px;
         margin-left: 50px;
+        animation: editing 1s linear;
         .TitleEditingItem {
             margin-bottom: 25px;
         }
@@ -271,6 +272,16 @@ $bold: 600;
             border-radius: 6px;
             font-weight: $medium;
             cursor: pointer;
+        }
+    }
+    @keyframes editing {
+        from {
+            opacity: 0;
+            filter: blur(5px);
+        }
+        to {
+            opacity: 1;
+            filter: none;
         }
     }
     }

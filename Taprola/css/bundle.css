@@ -189,7 +189,8 @@ body {
     filter: none; } }
   .WrapperItems div .WrapEditing {
     margin-top: 25px;
-    margin-left: 50px; }
+    margin-left: 50px;
+    animation: editing 1s linear; }
     .WrapperItems div .WrapEditing .TitleEditingItem {
       margin-bottom: 25px; }
     .WrapperItems div .WrapEditing .EditingNameItem {
@@ -227,5 +228,12 @@ body {
       border-radius: 6px;
       font-weight: 500;
       cursor: pointer; }
+@keyframes editing {
+  from {
+    opacity: 0;
+    filter: blur(5px); }
+  to {
+    opacity: 1;
+    filter: none; } }
 
 /*# sourceMappingURL=bundle.css.map */
