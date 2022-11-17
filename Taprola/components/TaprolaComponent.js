@@ -133,6 +133,7 @@ class Taprola extends React.PureComponent {
 
     EditRemainsItem = (EO) => {
         let newRemains = EO.target.value;
+        this.setState({ editedRemains: newRemains });
     }
 
     EditSelectedItem = (EO) => {
@@ -141,6 +142,7 @@ class Taprola extends React.PureComponent {
             if (element.code == this.state.targetCode) {
                 let selectedItem={...element}; 
                 selectedItem.name = this.state.editedName;
+                selectedItem.remains = this.state.editedRemains;
                 cloneItemsArray[index] = selectedItem;
             }
         });
@@ -218,7 +220,7 @@ class Taprola extends React.PureComponent {
                     <div className='WrapEditing'>
                         <h3 className='TitleEditingItem'>Editing item</h3>
                         <input type='text' className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
-                        {/* <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem}/> */}
+                        <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem}/>
                         <button type='button' onClick={this.EditSelectedItem} className='PushEditButton'>Edit</button>
                     </div>
                     </div>
