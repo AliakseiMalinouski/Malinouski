@@ -9,6 +9,9 @@ import { taprolaEvents } from '../events';
 import { withBGHoc } from './withColorBackground';
 import ChangeColorIcon from '../json/icon-change-color.json';
 import Color from './ChangeColorIcon';
+import CreateIcon from '../json/icon-create.json';
+import IconEdit from '../json/icon-edit.json';
+import IconPallete from '../json/icon-pallete.json';
 
 class Taprola extends React.PureComponent {
     static propTypes = {
@@ -30,6 +33,11 @@ class Taprola extends React.PureComponent {
         editedName: null,
         editedRemains: null,
         activeCheckboxEditingItem: true,
+        workMode: false,
+    }
+
+    startWork = (EO) => {
+        this.setState({ workMode: true });
     }
 
     newNameValue = null;
@@ -201,7 +209,8 @@ class Taprola extends React.PureComponent {
 
         let TitleWithBG = withBGHoc(this.state.valueColorInput)(Title);
     
-        if (this.state.boolANI) {
+        if (this.state.workMode) {
+            if (this.state.boolANI) {
             return <div className='WrapperItems'>
                 <div>
                         <Color iconUrl={ChangeColorIcon} />
@@ -292,6 +301,19 @@ class Taprola extends React.PureComponent {
                             <button type='button' className='EditItemButton' disabled>Edit Item</button>
                     }   
                     </div>
+            </div>
+        }
+        }
+        else {
+            return <div className='WrapperWelcomeAlert'>
+                <h2 className='TitleWelcome'>Meet the Taprola!</h2>
+                <h4 className='UnderTitleMakeItEasy'><img src={CreateIcon} alt='Pencil' /> Make it easy</h4>
+                <p className='ParagraphAboutCreate'>To create a product,<br /> simply click on the "Add new item" button</p>
+                <h4 className='UnderTitleEdit'><img src={IconEdit} alt='Arrows' /> Change it</h4>
+                <p className='ParagraphAboutEdit'>To change item information,<br /> click on the "Edit item" button</p>
+                <h4 className='UnderTitlePalette'><img src={IconPallete} /> A varied palette!</h4>
+                <p className='ParagraphAboutPallete'>To change the colour of the header,click on the "colour palette" button</p>
+                <div className='ButtonStartWork' type='button' onClick={this.startWork}>Get to work</div>
             </div>
         }
     }

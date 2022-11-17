@@ -33,6 +33,7 @@ $bold: 600;
     padding-top: 60px;
     padding-right: 25px;
     padding-bottom: 30px;
+    animation: taprola 1s linear;
     div {
         .Item {
         position: relative;
@@ -283,5 +284,120 @@ $bold: 600;
             filter: none;
         }
     }
+    }
+}
+@keyframes taprola {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.WrapperWelcomeAlert {
+    position: relative;
+    background-color: white;
+    min-height: 600px;
+    width: 360px;
+    margin:  0 auto;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    background-color: #333;
+    animation: welcomealert 1s linear;
+    .TitleWelcome {
+        width: 100%;
+        text-align: center;
+        font-size: 42px;
+        color: white;
+        margin-bottom: 25px;
+    }
+    .UnderTitleMakeItEasy {
+        font-size: 18px;
+        color: white;
+        font-weight: $medium;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .ParagraphAboutCreate {
+        line-height: 25px;
+        padding-left: 40px;
+        color: #999;
+        margin-bottom: 20px;
+    }
+    .UnderTitleEdit {
+        font-size: 18px;
+        color: white;
+        font-weight: $medium;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .ParagraphAboutEdit {
+        line-height: 25px;
+        padding-left: 40px;
+        color: #999;
+        margin-bottom: 20px;
+    }
+    .UnderTitlePalette {
+        font-size: 18px;
+        color: white;
+        font-weight: $medium;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .ParagraphAboutPallete {
+        line-height: 25px;
+        padding-left: 40px;
+        color: #999;
+        margin-bottom: 20px;
+    }
+    .ButtonStartWork {
+        border: none;
+        cursor: pointer;
+        background-color: #0983ff;
+        color: white;
+        width: 200px;
+        border-radius: 40px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: $medium;
+        padding-left: 55px;
+        padding-top: 10px;
+        margin-left: 54px;
+        margin-top: 35px;
+    }
+    .ButtonStartWork:hover {
+        transition: 1s;
+        opacity: 0.5;
+        background-color: white;
+        color: black;
+    }
+}
+@keyframes welcomealert {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
     }
 }

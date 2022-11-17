@@ -25,7 +25,8 @@ body {
   padding-left: 25px;
   padding-top: 60px;
   padding-right: 25px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  animation: taprola 1s linear; }
   .WrapperItems div .Item {
     position: relative;
     margin-top: 20px;
@@ -234,5 +235,102 @@ body {
   to {
     opacity: 1;
     filter: none; } }
+@keyframes taprola {
+  from {
+    opacity: 0.2; }
+  to {
+    opacity: 1; } }
+.WrapperWelcomeAlert {
+  position: relative;
+  background-color: white;
+  min-height: 600px;
+  width: 360px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  background-color: #333;
+  animation: welcomealert 1s linear; }
+  .WrapperWelcomeAlert .TitleWelcome {
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    margin-bottom: 25px; }
+  .WrapperWelcomeAlert .UnderTitleMakeItEasy {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; }
+    .WrapperWelcomeAlert .UnderTitleMakeItEasy img {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px; }
+  .WrapperWelcomeAlert .ParagraphAboutCreate {
+    line-height: 25px;
+    padding-left: 40px;
+    color: #999;
+    margin-bottom: 20px; }
+  .WrapperWelcomeAlert .UnderTitleEdit {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; }
+    .WrapperWelcomeAlert .UnderTitleEdit img {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px; }
+  .WrapperWelcomeAlert .ParagraphAboutEdit {
+    line-height: 25px;
+    padding-left: 40px;
+    color: #999;
+    margin-bottom: 20px; }
+  .WrapperWelcomeAlert .UnderTitlePalette {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; }
+    .WrapperWelcomeAlert .UnderTitlePalette img {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px; }
+  .WrapperWelcomeAlert .ParagraphAboutPallete {
+    line-height: 25px;
+    padding-left: 40px;
+    color: #999;
+    margin-bottom: 20px; }
+  .WrapperWelcomeAlert .ButtonStartWork {
+    border: none;
+    cursor: pointer;
+    background-color: #0983ff;
+    color: white;
+    width: 200px;
+    border-radius: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 55px;
+    padding-top: 10px;
+    margin-left: 54px;
+    margin-top: 35px; }
+  .WrapperWelcomeAlert .ButtonStartWork:hover {
+    transition: 1s;
+    opacity: 0.5;
+    background-color: white;
+    color: black; }
+
+@keyframes welcomealert {
+  from {
+    opacity: 0.2; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=bundle.css.map */
