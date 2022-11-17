@@ -74,12 +74,24 @@ class Taprola extends React.PureComponent {
 
     addNameNewItem = (EO) => {
         let valueOfNewName = EO.target.value;
+        if (valueOfNewName == null || valueOfNewName == '') {
+            this.setState({ disabledAddNewItemButton: true });
+        }
+        else if (valueOfNewName && this.newRemainsValue.value) {
+            this.setState({ disabledAddNewItemButton: false });
+        }
         this.state.ItemH.name = valueOfNewName;
         this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
     }
 
     addNewRemainsItem = (EO) => {
         let valueOfNewRemains = EO.target.value;
+        if (valueOfNewRemains == null || valueOfNewRemains == '') {
+            this.setState({ disabledAddNewItemButton: true });
+        }
+        else if (valueOfNewRemains && this.newNameValue.value) {
+            this.setState({ disabledAddNewItemButton: false });
+        }
         this.state.ItemH.remains = valueOfNewRemains;
     }
 
@@ -89,7 +101,7 @@ class Taprola extends React.PureComponent {
                 this.setState({ disabledAddNewItemButton: false });
             }
             else {
-                this.setState({ disabledAddNewItemButton: true })
+                this.setState({ disabledAddNewItemButton: true });
             }
         }
         this.state.ItemH.iconWasteUrl = './img/waste.png';
