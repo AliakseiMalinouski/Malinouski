@@ -34,6 +34,7 @@ class Taprola extends React.PureComponent {
         editedRemains: null,
         activeCheckboxEditingItem: true,
         workMode: false,
+        activeAddNewItemButton: false,
     }
 
     startWork = (EO) => {
@@ -65,6 +66,7 @@ class Taprola extends React.PureComponent {
 
     Selected = (code) => {
         this.setState({ targetCode: code });
+        this.setState({ activeAddNewItemButton: true });
     }
 
     Delete = (code) => {
@@ -191,6 +193,7 @@ class Taprola extends React.PureComponent {
         this.setState({ array: cloneItemsArray });
         this.setState({ boolEI: false });
         this.setState({ targetCode: null });
+        this.setState({ activeAddNewItemButton: false });
     }
 
     render() {
@@ -292,7 +295,13 @@ class Taprola extends React.PureComponent {
                         <TitleWithBG title={JsonTitle} />
                         <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
                         <div>{items}</div>
-                    <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>Add new item</button>
+                        {
+                            (this.state.activeAddNewItemButton) 
+                            ?
+                            <button type='button' onClick={this.createFormAddNewItem} disabled className='ButtonCreateFormNewItem'>Add new item</button>
+                            :
+                            <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>Add new item</button>
+                        }
                     {
                         (this.state.targetCode !== null)
                             ?
