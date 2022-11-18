@@ -36,6 +36,7 @@ class Taprola extends React.PureComponent {
         activeCheckboxEditingItem: true,
         workMode: false,
         activeAddNewItemButton: false,
+        heigthOfApp: 500,
     }
 
     startWork = (EO) => {
@@ -80,6 +81,7 @@ class Taprola extends React.PureComponent {
             return item.code !== code;
         });
         answer ? this.setState({ array: newArrayItems }) : this.setState({ targetCode: null });
+        this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
     }
 
     createFormAddNewItem = (EO) => {
@@ -126,6 +128,7 @@ class Taprola extends React.PureComponent {
         this.setState({ array: this.state.array.concat(this.state.ItemH) });
         this.setState({ boolANI: false });
         this.setState({ disabledAddNewItemButton: true });
+        this.setState({ heigthOfApp: this.state.heigthOfApp + 70 });
     }
 
     changeBackgroundColorTitle = () => {
@@ -285,7 +288,7 @@ class Taprola extends React.PureComponent {
             </div>
         }
         else if (this.state.boolANI == false || this.state.boolEI) {
-            return <div className='WrapperItems'>
+            return <div className='WrapperItems' style={{height: this.state.heigthOfApp}}>
                 <div>
                         <Color iconUrl={ChangeColorIcon} />
                         <Icon iconUrl={JsonIcon} />
