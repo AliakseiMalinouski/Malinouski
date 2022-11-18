@@ -12,6 +12,7 @@ import Color from './ChangeColorIcon';
 import CreateIcon from '../json/icon-create.json';
 import IconEdit from '../json/icon-edit.json';
 import IconPallete from '../json/icon-pallete.json';
+import IconBack from '../json/icon-back.json';
 
 class Taprola extends React.PureComponent {
     static propTypes = {
@@ -39,6 +40,10 @@ class Taprola extends React.PureComponent {
 
     startWork = (EO) => {
         this.setState({ workMode: true });
+    }
+
+    returnToIntrudaction = (EO) => {
+        this.setState({ workMode: false });
     }
 
     newNameValue = null;
@@ -308,7 +313,8 @@ class Taprola extends React.PureComponent {
                             <button type='button' className='EditItemButton' onClick={this.startEditItem}>Edit Item</button>
                             :
                             <button type='button' className='EditItemButton' disabled>Edit Item</button>
-                    }   
+                    }
+                    <img src={IconBack} onClick={this.returnToIntrudaction} className='ButtonrReturnToIntrudaction'/>
                     </div>
             </div>
         }
