@@ -79,7 +79,7 @@ class Taprola extends React.PureComponent {
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
-        this.setState({ ItemH: {} });
+        this.setState({ ItemH: {code: 0} });
     }
 
     addNameNewItem = (EO) => {
@@ -91,7 +91,7 @@ class Taprola extends React.PureComponent {
             this.setState({ disabledAddNewItemButton: false });
         }
         this.state.ItemH.name = valueOfNewName;
-        this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
+        (!this.state.array.length) ? null : this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
     }
 
     addNewRemainsItem = (EO) => {
