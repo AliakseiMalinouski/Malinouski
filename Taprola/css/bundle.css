@@ -330,7 +330,10 @@ body {
     padding-left: 55px;
     padding-top: 10px;
     margin-left: 54px;
-    margin-top: 35px; }
+    margin-top: 35px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    text-decoration: none; }
   .WrapperWelcomeAlert .ButtonStartWork:hover {
     transition: 1s;
     opacity: 0.5;

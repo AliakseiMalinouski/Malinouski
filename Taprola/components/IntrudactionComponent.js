@@ -17,7 +17,6 @@ class Intrudaction extends PureComponent {
                 <p className='ParagraphAboutEdit'>To change item information,<br /> click on the "Edit item" button</p>
                 <h4 className='UnderTitlePalette'><img src={IconPallete} /> A varied palette!</h4>
                 <p className='ParagraphAboutPallete'>To change the colour of the header,click on the "colour palette" button</p>
-                {/* <div className='ButtonStartWork' type='button'>Get to work</div> */}
                 <NavLink className='ButtonStartWork' to="/taprola" >Get to work</NavLink>
             </div>
     }
