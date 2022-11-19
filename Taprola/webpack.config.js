@@ -10,7 +10,8 @@ module.exports = {
     entry: "./App.js", // основной файл приложения
     output:{ 
         path: __dirname, // путь к каталогу выходных файлов
-        filename: "bundle.js"  // название создаваемого файла 
+        filename: "bundle.js", // название создаваемого файла
+        publicPath: '/'  
     }, 
     devtool:'source-map',
     module:{ 
@@ -27,6 +28,9 @@ module.exports = {
                 })
             }            
         ] 
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [
         extractCSS
