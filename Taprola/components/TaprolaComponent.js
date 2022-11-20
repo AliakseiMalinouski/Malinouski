@@ -9,10 +9,8 @@ import { taprolaEvents } from '../events';
 import { withBGHoc } from './withColorBackground';
 import ChangeColorIcon from '../json/icon-change-color.json';
 import Color from './ChangeColorIcon';
-// import CreateIcon from '../json/icon-create.json';
-// import IconEdit from '../json/icon-edit.json';
-// import IconPallete from '../json/icon-pallete.json';
 import IconBack from '../json/icon-back.json';
+import { NavLink } from 'react-router-dom';
 
 class Taprola extends React.PureComponent {
     static propTypes = {
@@ -34,17 +32,8 @@ class Taprola extends React.PureComponent {
         editedName: null,
         editedRemains: null,
         activeCheckboxEditingItem: true,
-        workMode: false,
         activeAddNewItemButton: false,
         heigthOfApp: 500,
-    }
-
-    startWork = (EO) => {
-        this.setState({ workMode: true });
-    }
-
-    returnToIntrudaction = (EO) => {
-        this.setState({ workMode: false });
     }
 
     newNameValue = null;
@@ -317,7 +306,7 @@ class Taprola extends React.PureComponent {
                             :
                             <button type='button' className='EditItemButton' disabled>Edit Item</button>
                     }
-                    <img src={IconBack} onClick={this.returnToIntrudaction} className='ButtonrReturnToIntrudaction'/>
+                    <NavLink to="/"><img src={IconBack} className='ButtonrReturnToIntrudaction'/></NavLink>
                     </div>
             </div>
         }
