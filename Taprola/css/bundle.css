@@ -28,7 +28,7 @@ body {
   animation: taprola 1s linear; }
   .WrapperItems div .ButtonrReturnToIntrudaction {
     position: absolute;
-    left: 130px;
+    left: 100px;
     text-align: center;
     width: 40px;
     height: 40px;
@@ -37,9 +37,40 @@ body {
   .WrapperItems div .ButtonGoToOptions {
     position: absolute;
     bottom: 10px;
-    right: 130px;
+    right: 158px;
     width: 40px;
     height: 40px; }
+  .WrapperItems div .LanguageButtons {
+    margin-top: 40px;
+    margin-left: 15px; }
+    .WrapperItems div .LanguageButtons .EN {
+      margin-right: 15px;
+      display: inline-block;
+      border: none;
+      width: 100px;
+      height: 30px;
+      background-color: #E6E6FA;
+      font-size: 15px;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer; }
+    .WrapperItems div .LanguageButtons .RU {
+      margin-right: 15px;
+      display: inline-block;
+      border: none;
+      width: 100px;
+      height: 30px;
+      background-color: #E6E6FA;
+      font-size: 15px;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer; }
+  .WrapperItems div .LanguageButton {
+    position: absolute;
+    bottom: 13px;
+    right: 100px;
+    width: 35px;
+    height: 35px; }
   .WrapperItems div .Item {
     position: relative;
     margin-top: 20px;

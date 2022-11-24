@@ -12,6 +12,8 @@ import Color from './ChangeColorIcon';
 import IconBack from '../json/icon-back.json';
 import { NavLink } from 'react-router-dom';
 import OptionsIcon from '../json/icon-options.json';
+import LanguageIcon from '../json/icon-language.json';
+import { withTranslation } from 'react-i18next';
 
 class Taprola extends React.PureComponent {
     static propTypes = {
@@ -35,10 +37,27 @@ class Taprola extends React.PureComponent {
         activeCheckboxEditingItem: true,
         activeAddNewItemButton: false,
         heigthOfApp: 500,
+        isLanguage: false,
     }
 
     newNameValue = null;
     newRemainsValue = null;
+
+    setEN = () => {
+        this.props.i18n.changeLanguage("en");
+        // this.setState({ isLanguage: false });
+    }
+
+    setRU = () => {
+        this.props.i18n.changeLanguage("ru");
+        // this.setState({ isLanguage: false });
+    }
+
+    setLanguage = (EO) => {
+        this.setState({ isLanguage: true });
+        this.setState({ heigthOfApp: this.state.heigthOfApp + 70 });
+        this.setState({ activeAddNewItemButton: true });
+    }
 
     componentDidMount = () => {
         taprolaEvents.addListener('ECheckedItem', this.Selected);
@@ -296,9 +315,9 @@ class Taprola extends React.PureComponent {
                         {
                             (this.state.activeAddNewItemButton) 
                             ?
-                            <button type='button' onClick={this.createFormAddNewItem} disabled className='ButtonCreateFormNewItem'>Add new item</button>
+                            <button type='button' onClick={this.createFormAddNewItem} disabled className='ButtonCreateFormNewItem'>{this.props.t("add-new-item")}</button>
                             :
-                            <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>Add new item</button>
+                            <button type='button' onClick={this.createFormAddNewItem} className='ButtonCreateFormNewItem'>{this.props.t("add-new-item")}</button>
                         }
                     {
                         (this.state.targetCode !== null)
@@ -308,12 +327,23 @@ class Taprola extends React.PureComponent {
                             <button type='button' className='EditItemButton' disabled>Edit Item</button>
                     }
                     <NavLink to="/"><img src={IconBack} className='ButtonrReturnToIntrudaction'/></NavLink>
-                    <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions'/></NavLink>
+                    <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions' /></NavLink>
+                    <img onClick={this.setLanguage} className="LanguageButton" src={LanguageIcon} alt='Language' />
+                    {
+                        (this.state.isLanguage) 
+                            ?
+                        <div className='LanguageButtons'>
+                            <button className='EN' type='button' onClick={this.setEN}>EN</button>
+                            <button className='RU' type='button' onClick={this.setRU}>RU</button>
+                        </div>
+                            :
+                        null
+                    }
                     </div>
             </div>
         }
     }
 }
-export default Taprola;
+export default withTranslation() (Taprola);
 
                 
