@@ -11,6 +11,7 @@ import ChangeColorIcon from '../json/icon-change-color.json';
 import Color from './ChangeColorIcon';
 import IconBack from '../json/icon-back.json';
 import { NavLink } from 'react-router-dom';
+import OptionsIcon from '../json/icon-options.json';
 
 class Taprola extends React.PureComponent {
     static propTypes = {
@@ -307,6 +308,7 @@ class Taprola extends React.PureComponent {
                             <button type='button' className='EditItemButton' disabled>Edit Item</button>
                     }
                     <NavLink to="/"><img src={IconBack} className='ButtonrReturnToIntrudaction'/></NavLink>
+                    <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions'/></NavLink>
                     </div>
             </div>
         }

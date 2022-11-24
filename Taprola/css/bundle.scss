@@ -26,7 +26,6 @@ $bold: 600;
     position: relative;
     width: 360px;
     margin: 0 auto;
-    // min-height: 500px;
     border-radius: 30px;
     background-color: white;
     padding-left: 25px;
@@ -37,15 +36,19 @@ $bold: 600;
     div {
         .ButtonrReturnToIntrudaction {
             position: absolute;
-            margin-left: auto;
-            margin-right: auto;
-            left: 0;
-            right: 0;
+            left: 130px;
             text-align: center;
             width: 40px;
             height: 40px;
             cursor: pointer;
             bottom: 10px;
+        }
+        .ButtonGoToOptions {
+            position: absolute;
+            bottom: 10px;
+            right: 130px;
+            width: 40px;
+            height: 40px;
         }
         .Item {
         position: relative;
@@ -412,6 +415,75 @@ $bold: 600;
     from {
         opacity: 0.2;
     }
+    to {
+        opacity: 1;
+    }
+}
+.WrapperOptions {
+    position: relative;
+    background-color: white;
+    min-height: 500px;
+    width: 360px;
+    margin:  0 auto;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    animation: options 1s linear;
+    .Illustration {
+        position: relative;
+        padding-left: 20px;
+        width: 100%;
+        height: 70px;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 10px;
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(212, 90, 90, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        h3 {
+            font-size: 21px;
+            color: black;
+            font-weight: 400;
+            span {
+                font-size: 35px;
+                margin-left: 20px;
+                font-weight: bold;
+            }
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 40px;
+        }
+    }
+    .WrapperCatigories {
+        margin-top: 40px;
+        .LanguageButtons {
+            padding-left: 30px;
+            padding-top: 30px;
+            button {
+                margin-right: 15px;
+                display: inline-block;
+                border: none;
+                width: 100px;
+                height: 30px;
+                background-color: #E6E6FA;
+                font-size: 15px;
+                border-radius: 6px;
+                font-weight: $medium;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@keyframes options {
+    from {
+        opacity: 0.2;
+    }
+
     to {
         opacity: 1;
     }
