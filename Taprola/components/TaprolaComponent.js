@@ -45,12 +45,16 @@ class Taprola extends React.PureComponent {
 
     setEN = () => {
         this.props.i18n.changeLanguage("en");
-        // this.setState({ isLanguage: false });
+        this.setState({ isLanguage: false });
+        this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
+        this.setState({ activeAddNewItemButton: false });
     }
 
     setRU = () => {
         this.props.i18n.changeLanguage("ru");
-        // this.setState({ isLanguage: false });
+        this.setState({ isLanguage: false });
+        this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
+        this.setState({ activeAddNewItemButton: false });
     }
 
     setLanguage = (EO) => {
@@ -310,7 +314,7 @@ class Taprola extends React.PureComponent {
                                 : null
                         }
                         <TitleWithBG title={JsonTitle} />
-                        <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
+                    <span className='Name'>{this.props.t("name-item")} </span><span className='Quanlity'>{this.props.t("quanlity")}</span>
                         <div>{items}</div>
                         {
                             (this.state.activeAddNewItemButton) 

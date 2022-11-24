@@ -1,3 +1,5 @@
 {
-    "add-new-item": "Добавить"
+    "add-new-item": "Добавить",
+    "name-item": "Имя:",
+    "quanlity": "Количевство:"
 }
