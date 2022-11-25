@@ -1,5 +1,8 @@
 {
     "add-new-item": "Добавить",
     "name-item": "Имя:",
-    "quanlity": "Количевство:"
+    "quanlity": "Количевство:",
+    "edit-item": "Изменить",
+    "change-color": "Изменить",
+    "color-name": "название цвета, пример: red"
 }

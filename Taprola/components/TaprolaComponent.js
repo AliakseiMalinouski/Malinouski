@@ -308,8 +308,8 @@ class Taprola extends React.PureComponent {
                         {
                             (this.state.colorClicked) ?
                                 <div className='ColorInputDiv'>
-                                    <input type='text' placeholder='Color name' onChange={this.readColor}/>
-                                    <button type='button' onClick={this.changeColorTitle}>Change</button>
+                                    <input type='text' placeholder={this.props.t("color-name")} onChange={this.readColor}/>
+                                    <button type='button' onClick={this.changeColorTitle}>{this.props.t("change-color")}</button>
                                 </div>
                                 : null
                         }
@@ -326,9 +326,9 @@ class Taprola extends React.PureComponent {
                     {
                         (this.state.targetCode !== null)
                             ?
-                            <button type='button' className='EditItemButton' onClick={this.startEditItem}>Edit Item</button>
+                            <button type='button' className='EditItemButton' onClick={this.startEditItem}>{this.props.t("edit-item")}</button>
                             :
-                            <button type='button' className='EditItemButton' disabled>Edit Item</button>
+                            <button type='button' className='EditItemButton' disabled>{this.props.t("edit-item")}</button>
                     }
                     <NavLink to="/"><img src={IconBack} className='ButtonrReturnToIntrudaction'/></NavLink>
                     <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions' /></NavLink>
