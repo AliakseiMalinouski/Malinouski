@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import MobileIcon from '../json/icon-modileopt.json';
-import QuestionIcon from '../json/icon-language.json';
+import QuestionIcon from '../json/icon-question.json';
 
 
 
@@ -24,7 +24,6 @@ class Options extends React.PureComponent {
         this.setState({
             dataSuccess: true,
             dataLoaded: data,
-
         });
     }
 
@@ -48,9 +47,6 @@ class Options extends React.PureComponent {
             alert(error)
         })
     }
-
-
-
 
 
     render() {
