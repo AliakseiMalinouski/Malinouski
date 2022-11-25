@@ -242,27 +242,27 @@ class Taprola extends React.PureComponent {
                         {
                             (this.state.colorClicked) ?
                                 <div className='ColorInputDiv'>
-                                    <input type='text' placeholder='Color name' onChange={this.readColor}/>
-                                    <button type='button' onClick={this.changeColorTitle}>Change</button>
+                                <input type='text' placeholder={this.props.t("color-name")} onChange={this.readColor}/>
+                                <button type='button' onClick={this.changeColorTitle}>{this.props.t("change-color")}</button>
                                 </div>
                                 : null
                         }
                         <TitleWithBG title={JsonTitle} />
-                        <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
+                        <span className='Name'>{this.props.t("name-item")}</span><span className='Quanlity'>{this.props.t("quanlity")}</span>
                         <div>{items}</div>
                         <div className='WrapFormNewItem'>
-                            <h3 className='TitleNewItem'>Fill in the fields</h3>
-                            <span>Name item's</span>
+                            <h3 className='TitleNewItem'>{this.props.t("fill-all")}</h3>
+                            <span>{this.props.t("name-of-item")}</span>
                             <input type='text' className='InputNewItem' onChange={this.addNameNewItem} ref={this.LinkNewName} />
-                            <span>Remains item's</span>
+                            <span>{this.props.t("quanlity-of-item")}</span>
                             <input type='number' className='InputNewItem' onChange={this.addNewRemainsItem} ref={this.LinkNewRemains} />
-                            <input type='checkbox' onClick={this.validAll} style={{marginRight: '15px'}} /><span>The data entered is correct </span>
+                            <input type='checkbox' onClick={this.validAll} style={{ marginRight: '15px' }} /><span>{this.props.t("data-correct")}</span>
                             {
                                 (this.state.disabledAddNewItemButton) 
                                     ?
-                                    <button className='ButtonAddNewItem' type='button' disabled>Add</button>
+                                    <button className='ButtonAddNewItem' type='button' disabled>{this.props.t("add")}</button>
                                 :
-                                    <button className='ButtonAddNewItem' type='button' onClick={this.addNewItem}>Add</button>
+                                    <button className='ButtonAddNewItem' type='button' onClick={this.addNewItem}>{this.props.t("add")}</button>
                             }
                         </div>
                     </div>
@@ -277,24 +277,24 @@ class Taprola extends React.PureComponent {
                         (this.state.colorClicked) ?
                             <div className='ColorInputDiv'>
                                 <input type='text' placeholder='Color name' onChange={this.readColor}/>
-                                <button type='button' onClick={this.changeColorTitle}>Change</button>
+                                <button type='button' onClick={this.changeColorTitle}>{this.props.t("change-color")}</button>
                             </div>
                             : null
                     }
                     <TitleWithBG title={JsonTitle} />
-                    <span className='Name'>Name: </span><span className='Quanlity'>Quanlity: </span>
+                    <span className='Name'>{this.props.t("name-item")}</span><span className='Quanlity'>{this.props.t("quanlity")}</span>
                     <div>{items}</div>
                     <div className='WrapEditing'>
-                        <h3 className='TitleEditingItem'>Editing item</h3>
+                        <h3 className='TitleEditingItem'>{this.props.t("editing-item")}</h3>
                         <input type='text' className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
                         <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem} />
-                        <input type='checkbox' onClick={this.validEditInfo}/><span style={{marginLeft: '15px'}}>The data entered is correct </span>
+                        <input type='checkbox' onClick={this.validEditInfo}/><span style={{marginLeft: '15px'}}>{this.props.t("data-correct")}</span>
                         {
                             (this.state.activeCheckboxEditingItem)
                                 ?
-                                <button type='button' onClick={this.EditSelectedItem} className='PushEditButton' disabled>Edit</button>
+                                <button type='button' onClick={this.EditSelectedItem} className='PushEditButton' disabled>{this.props.t("edit")}</button>
                                 :
-                                <button type='button' onClick={this.EditSelectedItem} className='PushEditButton'>Edit</button>
+                                <button type='button' onClick={this.EditSelectedItem} className='PushEditButton'>{this.props.t("edit")}</button>
                         }
                     </div>
                     </div>
