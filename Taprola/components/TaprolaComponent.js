@@ -59,8 +59,8 @@ class Taprola extends React.PureComponent {
 
     setLanguage = (EO) => {
         this.setState({ isLanguage: true });
-        this.setState({ heigthOfApp: this.state.heigthOfApp + 70 });
         this.setState({ activeAddNewItemButton: true });
+        (this.state.isLanguage) ? null : this.setState({ heigthOfApp: this.state.heigthOfApp + 70 });
     }
 
     componentDidMount = () => {
