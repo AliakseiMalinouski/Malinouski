@@ -46,21 +46,28 @@ class Taprola extends React.PureComponent {
     setEN = () => {
         this.props.i18n.changeLanguage("en");
         this.setState({ isLanguage: false });
-        this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
+        this.setState({ heigthOfApp: this.state.heigthOfApp - 120 });
         this.setState({ activeAddNewItemButton: false });
     }
 
     setRU = () => {
         this.props.i18n.changeLanguage("ru");
         this.setState({ isLanguage: false });
-        this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
+        this.setState({ heigthOfApp: this.state.heigthOfApp - 120 });
+        this.setState({ activeAddNewItemButton: false });
+    }
+
+    setPL = () => {
+        this.props.i18n.changeLanguage("pl");
+        this.setState({ isLanguage: false });
+        this.setState({ heigthOfApp: this.state.heigthOfApp - 120 });
         this.setState({ activeAddNewItemButton: false });
     }
 
     setLanguage = (EO) => {
         this.setState({ isLanguage: true });
         this.setState({ activeAddNewItemButton: true });
-        (this.state.isLanguage) ? null : this.setState({ heigthOfApp: this.state.heigthOfApp + 70 });
+        (this.state.isLanguage) ? null : this.setState({ heigthOfApp: this.state.heigthOfApp + 120 });
     }
 
     componentDidMount = () => {
@@ -339,6 +346,7 @@ class Taprola extends React.PureComponent {
                         <div className='LanguageButtons'>
                             <button className='EN' type='button' onClick={this.setEN}>EN</button>
                             <button className='RU' type='button' onClick={this.setRU}>RU</button>
+                            <button className='RU' type='button' onClick={this.setPL}>PL</button>
                         </div>
                             :
                         null

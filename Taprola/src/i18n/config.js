@@ -4,11 +4,14 @@ i18n.use(initReactI18next).init({
  fallbackLng: 'ru',
  lng: 'en',
  resources:  {
- en: {
- translations: require ('./locales/en/translations.json')
-     },
+en: {
+    translations: require ('./locales/en/translations.json')
+},
 ru: {
     translations: require ('./locales/ru/translations.json')
+},
+pl: {
+    translations: require ('./locales/pl/translations.json')
 }
     },
  ns:  ['translations'],
