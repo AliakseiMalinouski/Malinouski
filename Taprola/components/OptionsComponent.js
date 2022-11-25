@@ -17,23 +17,27 @@ class Options extends React.PureComponent {
 
     getData = () => {
         if (this.state.dataLoaded == null) {
-            this.loadData();
+            this.loadTextAboutTaprola();
         }
         else {
-            this.fetchSuccess(this.state.dataLoaded);
+            this.fetchSuccessOfTextAboutTaprola(this.state.dataLoaded);
         }
     }
 
 
-    fetchSuccess = (data) => {
+    fetchSuccessOfTextAboutTaprola = (data) => {
         this.setState({
             dataSuccess: true,
             dataLoaded: data,
         });
     }
 
+    fetchErrorOfTextAboutTaprola = (error) => {
+        console.log('ERORRRR')
+    }
+
     
-    loadData = () => {
+    loadTextAboutTaprola = () => {
         fetch("https://gist.githubusercontent.com/AliakseiMalinouski/016f07f7089b473b85b5f52e5f1c1359/raw/1bd236d0577a5892653b9da6757fdea7acbdd330/AboutTaprola",
             { method: 'get' })
             .then(response => {
@@ -45,10 +49,10 @@ class Options extends React.PureComponent {
             }
             })
             .then(data => {
-                this.fetchSuccess(data);
+                this.fetchSuccessOfTextAboutTaprola(data);
             })
             .catch(error => {
-            alert(error)
+                this.fetchErrorOfTextAboutTaprola(error);
         })
     }
 
@@ -65,7 +69,7 @@ class Options extends React.PureComponent {
                 <img src={MobileIcon} alt="Smartphone" />
             </div>
             <div className='WrapperCatigories'>
-                <div onClick={this.getData} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
+                <div onClick={this.loadTextAboutTaprola} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
             </div>
         </div>
         }
