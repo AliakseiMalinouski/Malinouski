@@ -25,7 +25,7 @@ class Options extends React.PureComponent {
             { method: 'get' })
             .then(response => {
                 if (!response.ok) {
-                alert("error")
+                    alert("error");
             }
                 else {
                     return response.text();
@@ -38,6 +38,9 @@ class Options extends React.PureComponent {
             alert(error)
         })
     }
+
+
+
 
 
     render() {
