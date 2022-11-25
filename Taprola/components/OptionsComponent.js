@@ -11,8 +11,8 @@ class Options extends React.PureComponent {
     }
 
     state = {
-        dataSuccess: false,
-        dataLoaded: null,
+        dataSuccessTaprolaText: false,
+        dataLoadedTaprolaText: null,
     }
 
     getData = () => {
@@ -27,8 +27,8 @@ class Options extends React.PureComponent {
 
     fetchSuccessOfTextAboutTaprola = (data) => {
         this.setState({
-            dataSuccess: true,
-            dataLoaded: data,
+            dataSuccessTaprolaText: true,
+            dataLoadedTaprolaText: data,
         });
     }
 
@@ -56,13 +56,13 @@ class Options extends React.PureComponent {
         })
     }
 
-    closeDescription = (EO) => {
-        this.setState({ dataSuccess: false });
+    closeDescriptionOfTaprola = (EO) => {
+        this.setState({ dataSuccessTaprolaText: false });
     }
 
 
     render() {
-        if (!this.state.dataSuccess) {
+        if (!this.state.dataSuccessTaprolaText) {
             return <div className='WrapperOptions'>
             <div className='Illustration'>
             <h3>Remember<br/> <span>more</span></h3>
@@ -73,19 +73,19 @@ class Options extends React.PureComponent {
             </div>
         </div>
         }
-        else if (this.state.dataSuccess) {
+        else if (this.state.dataSuccessTaprolaText) {
             return <div className='WrapperOptions'>
                 <div className='Illustration'>
                     <h3>Remember<br/> <span>more</span></h3>
                     <img src={MobileIcon} alt="Smartphone" />
                     {
-                        (this.state.dataLoaded == null)
+                        (this.state.dataLoadedTaprolaText == null)
                             ?
                             <div>Loading...</div>
                             :
                             <div>
-                                <p className='AboutTaprolaParagraph'>{this.state.dataLoaded}</p>
-                                <div className='OkayButton' onClick={this.closeDescription}>Okay</div>
+                                <p className='AboutTaprolaParagraph'>{this.state.dataLoadedTaprolaText}</p>
+                                <div className='OkayButton' onClick={this.closeDescriptionOfTaprola}>Okay</div>
                             </div>
                     }
                 </div>
