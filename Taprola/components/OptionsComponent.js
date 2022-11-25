@@ -12,16 +12,25 @@ class Options extends React.PureComponent {
 
     state = {
         dataSuccess: false,
-        dataLoaded: '',
+        dataLoaded: null,
     }
 
     getData = () => {
         this.loadData();
     }
 
+
+    fetchSuccess = (data) => {
+        this.setState({
+            dataSuccess: true,
+            dataLoaded: data,
+
+        });
+    }
+
     
     loadData = () => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/016f07f7089b473b85b5f52e5f1c1359/raw/1adf79dda4698742b784146795f1fbb218958c61/TaprolaTestingGist",
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/016f07f7089b473b85b5f52e5f1c1359/raw/1bd236d0577a5892653b9da6757fdea7acbdd330/AboutTaprola",
             { method: 'get' })
             .then(response => {
                 if (!response.ok) {
@@ -33,6 +42,7 @@ class Options extends React.PureComponent {
             })
             .then(data => {
                 console.log(data)
+                this.fetchSuccess(data);
             })
             .catch(error => {
             alert(error)
@@ -44,16 +54,32 @@ class Options extends React.PureComponent {
 
 
     render() {
-        return <div className='WrapperOptions'>
+        if (!this.state.dataSuccess) {
+            return <div className='WrapperOptions'>
             <div className='Illustration'>
             <h3>Remember<br/> <span>more</span></h3>
                 <img src={MobileIcon} alt="Smartphone" />
             </div>
             <div className='WrapperCatigories'>
                 <div onClick={this.getData} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
-
             </div>
         </div>
+        }
+        else if (this.state.dataSuccess) {
+            return <div className='WrapperOptions'>
+                <div className='Illustration'>
+                    <h3>Remember<br/> <span>more</span></h3>
+                    <img src={MobileIcon} alt="Smartphone" />
+                    {
+                        (this.state.dataLoaded == null)
+                            ?
+                            <div>Loading...</div>
+                            :
+                            <p>{this.state.dataLoaded}</p>
+                    }
+                </div>
+            </div>
+        }
     }
 }
 export default Options;
