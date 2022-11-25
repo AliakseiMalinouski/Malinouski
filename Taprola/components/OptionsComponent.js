@@ -27,6 +27,15 @@ class Options extends React.PureComponent {
         }
     }
 
+    getDataHowToUse = () => {
+        if (this.state.dataLoadedHowToUseText == null) {
+            this.loadTextHowToUse();
+        }
+        else {
+            this.fetchSuccessHowToUse(this.state.dataLoadedHowToUseText);
+        }
+    }
+
 
 
     fetchSuccessOfTextAboutTaprola = (data) => {
@@ -65,21 +74,42 @@ class Options extends React.PureComponent {
         this.setState({ dataSuccessTaprolaText: false });
     }
 
+    fetchSuccessHowToUse = (data) => {
+        this.setState({
+            dataSuccessHowToUseText: true,
+            dataLoadedHowToUseText: data,
+        });
+        console.log('функция получила данные и прошли изменения')
+    }
+
+    fetchErrorHowToUse = () => {
+
+    }
+
+
+    loadTextHowToUse = () => {
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/db6d95bfc04a9213c61ea97bd9d263dc/raw/d266b7318607eb5ce4828e1602da2a886f41f836/HowToUseTaprola",
+            { method: 'get' })
+            .then(response => {
+                if (!response.ok) {
+                alert('err')
+                }
+                else {
+                    return response.text();
+                }
+            })
+            .then(data => {
+                this.fetchSuccessHowToUse(data);
+                console.log('дата принята')
+            })
+            .catch(error => {
+                this.fetchErrorHowToUse(error);
+        })
+    }
+
 
     render() {
-        if (!this.state.dataSuccessTaprolaText) {
-            return <div className='WrapperOptions'>
-            <div className='Illustration'>
-            <h3>Remember<br/> <span>more</span></h3>
-                <img src={MobileIcon} alt="Smartphone" />
-            </div>
-            <div className='WrapperCatigories'>
-                <div onClick={this.getDataAboutTaprola} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
-                <div onClick={this.getDataHowToUse} className='HowToUse'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={HowDoThisIcon} />How to use</div>
-            </div>
-        </div>
-        }
-        else if (this.state.dataSuccessTaprolaText) {
+        if (this.state.dataSuccessTaprolaText) {
             return <div className='WrapperOptions'>
                 <div className='Illustration'>
                     <h3>Remember<br/> <span>more</span></h3>
@@ -97,7 +127,35 @@ class Options extends React.PureComponent {
                     }
             </div>
         }
-        
+        if (this.state.dataSuccessHowToUseText) {
+            return <div className='WrapperOptions'>
+                <div className='Illustration'>
+                    <h3>Remember<br/> <span>more</span></h3>
+                    <img src={MobileIcon} alt="Smartphone" />
+                </div>
+                {
+                    (this.state.dataLoadedHowToUseText == null) 
+                        ?
+                        <div>...Loading</div>
+                        :
+                        <div>  
+                            <p className='AboutHowToUse'>{this.state.dataLoadedHowToUseText}</p>
+                        </div>
+                }
+            </div>
+        }
+        else if (!this.state.dataSuccessTaprolaText) {
+            return <div className='WrapperOptions'>
+            <div className='Illustration'>
+            <h3>Remember<br/> <span>more</span></h3>
+                <img src={MobileIcon} alt="Smartphone" />
+            </div>
+            <div className='WrapperCatigories'>
+                <div onClick={this.getDataAboutTaprola} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
+                <div onClick={this.getDataHowToUse} className='HowToUse'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={HowDoThisIcon} />How to use</div>
+            </div>
+        </div>
+        }
     }
 }
 export default Options;
