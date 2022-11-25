@@ -16,7 +16,12 @@ class Options extends React.PureComponent {
     }
 
     getData = () => {
-        this.loadData();
+        if (this.state.dataLoaded == null) {
+            this.loadData();
+        }
+        else {
+            this.fetchSuccess(this.state.dataLoaded);
+        }
     }
 
 
@@ -40,12 +45,15 @@ class Options extends React.PureComponent {
             }
             })
             .then(data => {
-                console.log(data)
                 this.fetchSuccess(data);
             })
             .catch(error => {
             alert(error)
         })
+    }
+
+    closeDescription = (EO) => {
+        this.setState({ dataSuccess: false });
     }
 
 
@@ -67,11 +75,14 @@ class Options extends React.PureComponent {
                     <h3>Remember<br/> <span>more</span></h3>
                     <img src={MobileIcon} alt="Smartphone" />
                     {
-                        (this.state.dataLoaded == null)
+                        (!this.state.dataSuccess)
                             ?
                             <div>Loading...</div>
                             :
-                            <p>{this.state.dataLoaded}</p>
+                            <div>
+                                <p className='AboutTaprolaParagraph'>{this.state.dataLoaded}</p>
+                                <div className='OkayButton' onClick={this.closeDescription}>Okay</div>
+                            </div>
                     }
                 </div>
             </div>

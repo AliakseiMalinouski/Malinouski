@@ -443,6 +443,28 @@ body {
       font-size: 18px; }
     .WrapperOptions .WrapperCatigories .AboutTaprola:hover {
       color: #0000CD; }
+  .WrapperOptions .AboutTaprolaParagraph {
+    margin-top: 20px;
+    line-height: 35px;
+    animation: p 1s linear; }
+@keyframes p {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .WrapperOptions .OkayButton {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 170px;
+    height: 40px;
+    padding-left: 60px;
+    padding-top: 8px;
+    background: #b43aa7;
+    background: linear-gradient(90deg, #b43aa7 0%, #4a48cb 33%, #fc8545 100%);
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    animation: p 1s linear; }
 
 @keyframes options {
   from {

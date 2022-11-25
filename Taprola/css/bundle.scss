@@ -531,6 +531,33 @@ $bold: 600;
             color: #0000CD;
         }
     }
+    .AboutTaprolaParagraph {
+        margin-top: 20px;
+        line-height: 35px;
+        animation: p 1s linear;
+    }
+    @keyframes p {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .OkayButton {
+        margin-top: 40px;
+        margin-left: 50px;
+        width: 170px;
+        height: 40px;
+        padding-left: 60px;
+        padding-top: 8px;
+        background: rgb(180, 58, 167);
+        background: linear-gradient(90deg, rgba(180, 58, 167, 1) 0%, rgba(74, 72, 203, 1) 33%, rgba(252, 133, 69, 1) 100%);
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        animation: p 1s linear;
+    }
 }
 @keyframes options {
     from {
