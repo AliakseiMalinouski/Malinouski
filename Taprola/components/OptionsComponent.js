@@ -107,6 +107,10 @@ class Options extends React.PureComponent {
         })
     }
 
+    closeDescriptionHowToUse = () => {
+        this.setState({ dataSuccessHowToUseText: false });
+    }
+
 
     render() {
         if (this.state.dataSuccessTaprolaText) {
@@ -140,6 +144,7 @@ class Options extends React.PureComponent {
                         :
                         <div>  
                             <p className='AboutHowToUse'>{this.state.dataLoadedHowToUseText}</p>
+                            <div className='OkayButton' onClick={this.closeDescriptionHowToUse}>Okay</div>
                         </div>
                 }
             </div>
