@@ -2,7 +2,8 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import MobileIcon from '../json/icon-modileopt.json';
 import QuestionIcon from '../json/icon-question.json';
-
+import HowDoThisIcon from '../json/icon-how-do-this.json';
+import SmileIcon from '../json/icon-smile.json';
 
 
 class Options extends React.PureComponent {
@@ -13,16 +14,19 @@ class Options extends React.PureComponent {
     state = {
         dataSuccessTaprolaText: false,
         dataLoadedTaprolaText: null,
+        dataSuccessHowToUseText: false,
+        dataLoadedHowToUseText: null,
     }
 
-    getData = () => {
-        if (this.state.dataLoaded == null) {
+    getDataAboutTaprola = () => {
+        if (this.state.dataLoadedTaprolaText == null) {
             this.loadTextAboutTaprola();
         }
         else {
-            this.fetchSuccessOfTextAboutTaprola(this.state.dataLoaded);
+            this.fetchSuccessOfTextAboutTaprola(this.state.dataLoadedTaprolaText);
         }
     }
+
 
 
     fetchSuccessOfTextAboutTaprola = (data) => {
@@ -33,7 +37,7 @@ class Options extends React.PureComponent {
     }
 
     fetchErrorOfTextAboutTaprola = (error) => {
-        console.log('ERORRRR')
+        alert(error)
     }
 
     
@@ -56,6 +60,7 @@ class Options extends React.PureComponent {
         })
     }
 
+
     closeDescriptionOfTaprola = (EO) => {
         this.setState({ dataSuccessTaprolaText: false });
     }
@@ -69,7 +74,8 @@ class Options extends React.PureComponent {
                 <img src={MobileIcon} alt="Smartphone" />
             </div>
             <div className='WrapperCatigories'>
-                <div onClick={this.loadTextAboutTaprola} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
+                <div onClick={this.getDataAboutTaprola} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
+                <div onClick={this.getDataHowToUse} className='HowToUse'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={HowDoThisIcon} />How to use</div>
             </div>
         </div>
         }
@@ -91,6 +97,7 @@ class Options extends React.PureComponent {
                     }
             </div>
         }
+        
     }
 }
 export default Options;

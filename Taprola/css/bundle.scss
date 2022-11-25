@@ -528,10 +528,30 @@ $bold: 600;
             font-size: 18px;
         }
         .AboutTaprola:hover {
+            transition: 0.5s;
+            color: #0000CD;
+        }
+        .HowToUse {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .HowToUse:hover {
+            transition: 0.5s;
             color: #0000CD;
         }
     }
     .AboutTaprolaParagraph {
+        margin-top: 20px;
+        line-height: 40px;
+        animation: p 1s linear;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .AboutHowToUse {
         margin-top: 20px;
         line-height: 40px;
         animation: p 1s linear;
