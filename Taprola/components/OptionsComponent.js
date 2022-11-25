@@ -75,7 +75,7 @@ class Options extends React.PureComponent {
                     <h3>Remember<br/> <span>more</span></h3>
                     <img src={MobileIcon} alt="Smartphone" />
                     {
-                        (!this.state.dataSuccess)
+                        (this.state.dataLoaded == null)
                             ?
                             <div>Loading...</div>
                             :
