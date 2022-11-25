@@ -78,17 +78,17 @@ class Options extends React.PureComponent {
                 <div className='Illustration'>
                     <h3>Remember<br/> <span>more</span></h3>
                     <img src={MobileIcon} alt="Smartphone" />
-                    {
-                        (this.state.dataLoadedTaprolaText == null)
-                            ?
-                            <div>Loading...</div>
-                            :
-                            <div>
-                                <p className='AboutTaprolaParagraph'>{this.state.dataLoadedTaprolaText}</p>
-                                <div className='OkayButton' onClick={this.closeDescriptionOfTaprola}>Okay</div>
-                            </div>
-                    }
                 </div>
+                {
+                (this.state.dataLoadedTaprolaText == null)
+                    ?
+                    <div>Loading...</div>
+                    :
+                    <div>
+                        <p className='AboutTaprolaParagraph'>{this.state.dataLoadedTaprolaText}</p>
+                        <div className='OkayButton' onClick={this.closeDescriptionOfTaprola}>Okay</div>
+                    </div>
+                    }
             </div>
         }
     }
