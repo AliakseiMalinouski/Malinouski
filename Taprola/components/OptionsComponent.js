@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import MobileIcon from '../json/icon-modileopt.json';
 import QuestionIcon from '../json/icon-language.json';
-import "babel-polyfill";
+
 
 
 class Options extends React.PureComponent {
@@ -15,24 +15,28 @@ class Options extends React.PureComponent {
         dataLoaded: '',
     }
 
-
-    getData = (EO) => {
+    getData = () => {
         this.loadData();
     }
 
-    loadData = async () => {
-        const response = fetch("https://gist.githubusercontent.com/AliakseiMalinouski/016f07f7089b473b85b5f52e5f1c1359/raw/1adf79dda4698742b784146795f1fbb218958c61/TaprolaTestingGist",
-        {
-            method: 'get'    
-        }
-        )
-        if (!response.ok) {
-            alert('Error')
-        }
-        else {
-            const data = await response.json();
-            console.log(data)
-        }
+    
+    loadData = () => {
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/016f07f7089b473b85b5f52e5f1c1359/raw/1adf79dda4698742b784146795f1fbb218958c61/TaprolaTestingGist",
+            { method: 'get' })
+            .then(response => {
+                if (!response.ok) {
+                alert("error")
+            }
+                else {
+                    return response.text();
+            }
+            })
+            .then(data => {
+                console.log(data)
+            })
+            .catch(error => {
+            alert(error)
+        })
     }
 
 
