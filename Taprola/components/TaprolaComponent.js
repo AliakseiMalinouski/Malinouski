@@ -36,7 +36,7 @@ class Taprola extends React.PureComponent {
         editedRemains: null,
         activeCheckboxEditingItem: true,
         activeAddNewItemButton: false,
-        heigthOfApp: 500,
+        heigthOfApp: 600,
         isLanguage: false,
     }
 

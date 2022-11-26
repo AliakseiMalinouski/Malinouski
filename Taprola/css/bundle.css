@@ -17,7 +17,7 @@ body {
 
 .WrapperItems {
   position: relative;
-  width: 360px;
+  width: 800px;
   margin: 0 auto;
   border-radius: 30px;
   background-color: white;
@@ -28,7 +28,7 @@ body {
   animation: taprola 1s linear; }
   .WrapperItems div .ButtonrReturnToIntrudaction {
     position: absolute;
-    left: 100px;
+    left: 315px;
     text-align: center;
     width: 40px;
     height: 40px;
@@ -37,11 +37,9 @@ body {
   .WrapperItems div .ButtonGoToOptions {
     position: absolute;
     bottom: 10px;
-    right: 158px;
+    right: 377px;
     width: 40px;
     height: 40px;
-    cursor: pointer; }
-  .WrapperItems div .LanguageButton {
     cursor: pointer; }
   .WrapperItems div .LanguageButtons {
     margin-top: 40px;
@@ -84,9 +82,10 @@ body {
   .WrapperItems div .LanguageButton {
     position: absolute;
     bottom: 13px;
-    right: 100px;
+    right: 317px;
     width: 35px;
-    height: 35px; }
+    height: 35px;
+    cursor: pointer; }
   .WrapperItems div .Item {
     position: relative;
     margin-top: 20px;
@@ -95,14 +94,21 @@ body {
     height: 50px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 30px; }
     .WrapperItems div .Item .ItemChoice {
-      width: auto;
+      display: flex;
+      justify-content: center;
+      width: 250px;
+      height: 50px;
       border-radius: 13px;
-      padding-top: 9px;
+      padding-top: 14px;
       padding-left: 5px;
       padding-right: 5px;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+      -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+      box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38); }
     .WrapperItems div .Item .AnimationItemChoice {
       animation: item 1s linear; }
 @keyframes item {
@@ -118,14 +124,17 @@ body {
       position: absolute;
       right: 120px;
       padding-top: 7px;
-      font-weight: 500; }
+      font-weight: 500;
+      font-size: 20px; }
     .WrapperItems div .Item .WrapIconWaste {
       position: relative;
       padding-top: 5px;
       width: 30%; }
   .WrapperItems div .Title {
-    margin-left: 90px;
-    margin-bottom: 90px; }
+    width: 100%;
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: 40px; }
   .WrapperItems div .IconChangeColor {
     width: 30px;
     height: 30px;
@@ -136,7 +145,7 @@ body {
   .WrapperItems div .ColorInputDiv {
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 240px;
     animation: color 1s linear; }
     .WrapperItems div .ColorInputDiv input {
       width: 200px;
@@ -167,18 +176,20 @@ body {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 65px;
-    right: 85px; }
+    top: 70px;
+    right: 280px; }
   .WrapperItems div .Quanlity {
     position: absolute;
     top: 130px;
     right: 145px;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 20px; }
   .WrapperItems div .Name {
     position: absolute;
     top: 130px;
     left: 40px;
-    font-weight: 600; }
+    font-weight: 600;
+    font-size: 20px; }
   .WrapperItems div .ButtonCreateFormNewItem {
     display: inline-block;
     margin-top: 15px;
