@@ -79,7 +79,6 @@ class Options extends React.PureComponent {
             dataSuccessHowToUseText: true,
             dataLoadedHowToUseText: data,
         });
-        console.log('функция получила данные и прошли изменения')
     }
 
     fetchErrorHowToUse = () => {
@@ -100,7 +99,6 @@ class Options extends React.PureComponent {
             })
             .then(data => {
                 this.fetchSuccessHowToUse(data);
-                console.log('дата принята')
             })
             .catch(error => {
                 this.fetchErrorHowToUse(error);
