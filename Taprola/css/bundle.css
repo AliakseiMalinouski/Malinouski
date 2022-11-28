@@ -15,6 +15,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   height: 1500px; }
 
+#container {
+  width: 1220px;
+  height: auto;
+  margin: 0 auto; }
+
 .WrapperItems {
   position: relative;
   width: 800px;
