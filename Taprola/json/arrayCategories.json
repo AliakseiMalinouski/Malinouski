@@ -43,6 +43,16 @@
         "code": 5,
         "name": "Presents",
         "photos": [
+            "../img/MainImagePresents.jpg",
+            "https://img.freepik.com/free-photo/3d-balloons-and-present-box_23-2148993002.jpg?w=826&t=st=1669656073~exp=1669656673~hmac=9647c9edda718ca3b2aef1e587c062709fc9c5f7c464f013984e61da307dfed3",
+            "https://img.freepik.com/free-photo/pink-minimal-gift-box-with-gold-ribbon-valentine-love-concept-on-pastel-pink-background-3d-rendering_56104-1139.jpg?w=1380&t=st=1669656095~exp=1669656695~hmac=2e40a6a15b028e72eb30cc6e1cc8e4338f870cec0f4616e8ce788219b95376a8",
+            "https://img.freepik.com/free-photo/top-view-party-still-life_23-2148736218.jpg?w=1380&t=st=1669656107~exp=1669656707~hmac=b609e1b940119d25a2d1c056332a4806d484a53a24911acfb8ccf23cbcf9d47e"
+        ]
+    },
+    {
+        "code": 6,
+        "name": "Cribs",
+        "photos": [
             "https://img.freepik.com/free-photo/positive-schoolgirl-crosses-fingers-believes-in-good-luck-on-exam-wears-round-spectacles-stuck-with-papers-and-sticky-notes-written-information-to-remember-makes-crib-student-uses-cheat-sheets_273609-46345.jpg?w=1380&t=st=1669655426~exp=1669656026~hmac=0ced5e02cf8af70e87f3292779e0bba4210f37201ed488397693e004bac8782e",
             "https://img.freepik.com/free-photo/close-up-portrait-of-perfect-young-woman-using-smart-phone-to-make-cheat-sheets-for-her-future-exam-drinking-lemonade-from-lemons-her-life-gave_197531-30841.jpg?w=1380&t=st=1669655502~exp=1669656102~hmac=c630dae9d513e94002c7bba2c604e9ab4247a9b9a1bd2741f048ea426b645fc4",
             "https://img.freepik.com/free-vector/realistic-paper-sticker-collection_52683-65820.jpg?w=1380&t=st=1669655520~exp=1669656120~hmac=8c3490d499a71c1d5fd90b58c66580a84db8d0f8dbcbc2c41376bab76742b033",
