@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { PagesRouter } from './router/PagesRouter';
 import './src/i18n/config';
 
-let newItemH = {};
 
 ReactDOM.render(
     <BrowserRouter>
