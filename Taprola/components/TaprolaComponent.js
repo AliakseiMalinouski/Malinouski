@@ -13,6 +13,7 @@ import IconBack from '../json/icon-back.json';
 import { NavLink } from 'react-router-dom';
 import OptionsIcon from '../json/icon-options.json';
 import LanguageIcon from '../json/icon-language.json';
+import MenuIcon from '../json/menu-icon.json';
 import { withTranslation } from 'react-i18next';
 
 class Taprola extends React.PureComponent {
@@ -340,6 +341,7 @@ class Taprola extends React.PureComponent {
                     <NavLink to="/"><img src={IconBack} className='ButtonrReturnToIntrudaction'/></NavLink>
                     <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions' /></NavLink>
                     <img onClick={this.setLanguage} className="LanguageButton" src={LanguageIcon} alt='Language' />
+                    <NavLink to="/menu"><img src={MenuIcon} alt='Menu' className='ButtonGoToMenu'/></NavLink>
                     {
                         (this.state.isLanguage) 
                             ?
