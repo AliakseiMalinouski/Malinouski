@@ -620,3 +620,24 @@ $bold: 600;
         opacity: 1;
     }
 }
+.WrapperMenu {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #333;
+    padding-left: 25px;
+    padding-top: 60px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    animation: menu 1s linear;
+}
+@keyframes menu {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "code": 1,
+        "name": "Food",
+        "photos": [
+            "../img/mainImageFood.jpg",
+            "../img/firstImageFood.jpg",
+            "../img/secondImageFood.jpg",
+            "../img/thirdImageFood.jpg"
+        ]
+    },
+    {
+        "code": 2,
+        "name": "Tasks",
+        "photos": [
+            "../img/MainImageTasks.jpg",
+            "../img/firstImageTasks.jpg",
+            "../img/secondImageTasks.jpg",
+            "../img/thirdImageTasks.jpg"
+        ]
+    },
+    {
+        "code": 3,
+        "name": "Travel",
+        "photos": [
+            "../img/MainImageTravel.png",
+            "../img/firstImageTravel.jpg",
+            "../img/secondImageTravel.jpg",
+            "../img/thirdImageTravel.jpg"
+        ]
+    },
+    {
+        "code": 4,
+        "name": "Shopping",
+        "photos": [
+            "../img/MainImageShopping.png",
+            "../img/firstImageShopping.jpg",
+            "../img/secondImageShopping.jpg",
+            "../img/thirdImageShopping.jpg"
+        ]
+    }
+]
