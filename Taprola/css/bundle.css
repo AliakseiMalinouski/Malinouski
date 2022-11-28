@@ -518,15 +518,140 @@ body {
     opacity: 1; } }
 .WrapperMenu {
   position: relative;
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
   border-radius: 30px;
-  background-color: #333;
+  background-color: #eef1f0;
   padding-left: 25px;
   padding-top: 60px;
   padding-right: 25px;
   padding-bottom: 30px;
   animation: menu 1s linear; }
+  .WrapperMenu .Title {
+    width: 100%;
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 50px; }
+  .WrapperMenu .WrapperCategories {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; }
+    .WrapperMenu .WrapperCategories .Categories {
+      margin-bottom: 40px; }
+      .WrapperMenu .WrapperCategories .Categories .Food {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        padding-right: 15px; }
+        .WrapperMenu .WrapperCategories .Categories .Food .FirstImage {
+          width: 450px;
+          height: 270px;
+          border-radius: 10px;
+          margin-left: 0px !important; }
+        .WrapperMenu .WrapperCategories .Categories .Food img {
+          width: 200px;
+          height: 150px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          margin-left: 16px; }
+        .WrapperMenu .WrapperCategories .Categories .Food h3 {
+          font-size: 36px;
+          padding-left: 20px; }
+      .WrapperMenu .WrapperCategories .Categories .Tasks {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        padding-right: 15px; }
+        .WrapperMenu .WrapperCategories .Categories .Tasks .FirstImage {
+          width: 450px;
+          height: 270px;
+          border-radius: 10px;
+          margin-left: 0px !important; }
+        .WrapperMenu .WrapperCategories .Categories .Tasks img {
+          width: 200px;
+          height: 150px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          margin-left: 16px; }
+        .WrapperMenu .WrapperCategories .Categories .Tasks h3 {
+          font-size: 36px;
+          padding-left: 20px; }
+      .WrapperMenu .WrapperCategories .Categories .Travel {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        padding-right: 15px; }
+        .WrapperMenu .WrapperCategories .Categories .Travel .FirstImage {
+          width: 450px;
+          height: 270px;
+          border-radius: 10px;
+          margin-left: 0px !important; }
+        .WrapperMenu .WrapperCategories .Categories .Travel img {
+          width: 200px;
+          height: 150px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          margin-left: 16px; }
+        .WrapperMenu .WrapperCategories .Categories .Travel h3 {
+          font-size: 36px;
+          padding-left: 20px; }
+      .WrapperMenu .WrapperCategories .Categories .Shopping {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        padding-right: 15px; }
+        .WrapperMenu .WrapperCategories .Categories .Shopping .FirstImage {
+          width: 450px;
+          height: 270px;
+          border-radius: 10px;
+          margin-left: 0px !important; }
+        .WrapperMenu .WrapperCategories .Categories .Shopping img {
+          width: 200px;
+          height: 150px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          margin-left: 16px; }
+        .WrapperMenu .WrapperCategories .Categories .Shopping h3 {
+          font-size: 36px;
+          padding-left: 20px; }
+      .WrapperMenu .WrapperCategories .Categories .Presents {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        padding-right: 15px; }
+        .WrapperMenu .WrapperCategories .Categories .Presents .FirstImage {
+          width: 450px;
+          height: 270px;
+          border-radius: 10px;
+          margin-left: 0px !important; }
+        .WrapperMenu .WrapperCategories .Categories .Presents img {
+          width: 200px;
+          height: 150px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          margin-left: 16px; }
+        .WrapperMenu .WrapperCategories .Categories .Presents h3 {
+          font-size: 36px;
+          padding-left: 20px; }
+      .WrapperMenu .WrapperCategories .Categories .Cribs {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        padding-right: 15px; }
+        .WrapperMenu .WrapperCategories .Categories .Cribs .FirstImage {
+          width: 450px;
+          height: 270px;
+          border-radius: 10px;
+          margin-left: 0px !important; }
+        .WrapperMenu .WrapperCategories .Categories .Cribs img {
+          width: 200px;
+          height: 150px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          margin-left: 16px; }
+        .WrapperMenu .WrapperCategories .Categories .Cribs h3 {
+          font-size: 36px;
+          padding-left: 20px; }
 
 @keyframes menu {
   from {
