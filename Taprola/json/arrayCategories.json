@@ -3,8 +3,8 @@
         "code": 1,
         "name": "Food",
         "photos": [
-            "../img/mainImageFood.jpg",
-            "../img/firstImageFood.jpg",
+            "https://kartinkin.net/uploads/posts/2021-04/1617236778_6-p-fud-semka-krasivo-6.jpg",
+            "https://www.wallpaperflare.com/static/820/721/284/food-pepper-tomatoes-eggplant-wallpaper.jpg",
             "../img/secondImageFood.jpg",
             "../img/thirdImageFood.jpg"
         ]
@@ -33,7 +33,7 @@
         "code": 4,
         "name": "Shopping",
         "photos": [
-            "../img/MainImageShopping.png",
+            "https://img.freepik.com/free-photo/lovable-young-woman-in-white-sneakers-posing-with-present-box-fascinating-girl-making-kissing-face-expressing-while-holding-big-gift_197531-5157.jpg?w=1380&t=st=1669655684~exp=1669656284~hmac=5c4eb981fc5f9b96025ded256756bfc814ad58fe7059b5a8999bf00b70c98fa7",
             "../img/firstImageShopping.jpg",
             "../img/secondImageShopping.jpg",
             "../img/thirdImageShopping.jpg"
@@ -43,10 +43,10 @@
         "code": 5,
         "name": "Presents",
         "photos": [
-            "../img/MainImagePresents.jpg",
-            "../img/firstImageShopping.jpg",
-            "../img/secondImageShopping.jpg",
-            "../img/thirdImageShopping.jpg"
+            "https://img.freepik.com/free-photo/positive-schoolgirl-crosses-fingers-believes-in-good-luck-on-exam-wears-round-spectacles-stuck-with-papers-and-sticky-notes-written-information-to-remember-makes-crib-student-uses-cheat-sheets_273609-46345.jpg?w=1380&t=st=1669655426~exp=1669656026~hmac=0ced5e02cf8af70e87f3292779e0bba4210f37201ed488397693e004bac8782e",
+            "https://img.freepik.com/free-photo/close-up-portrait-of-perfect-young-woman-using-smart-phone-to-make-cheat-sheets-for-her-future-exam-drinking-lemonade-from-lemons-her-life-gave_197531-30841.jpg?w=1380&t=st=1669655502~exp=1669656102~hmac=c630dae9d513e94002c7bba2c604e9ab4247a9b9a1bd2741f048ea426b645fc4",
+            "https://img.freepik.com/free-vector/realistic-paper-sticker-collection_52683-65820.jpg?w=1380&t=st=1669655520~exp=1669656120~hmac=8c3490d499a71c1d5fd90b58c66580a84db8d0f8dbcbc2c41376bab76742b033",
+            "https://img.freepik.com/free-photo/intense-cheerful-schoolgirl-with-broad-smile-crosses-fingers-for-good-luck-has-satisfied-expression-keeps-eyes-closed-carries-rucksack_273609-18527.jpg?w=1380&t=st=1669655567~exp=1669656167~hmac=6ac48dbe6f9b3a3383d5f9e512627a00a0e9ea8d24a622315eb55d7dcc5284ad"
         ]
     }
 ]
