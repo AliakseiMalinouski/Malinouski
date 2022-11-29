@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Categories from './CategoriesComponent';
 import { NavLink } from 'react-router-dom';
-import { taprolaEvents } from '../events';
 
 class Menu extends React.PureComponent {
 
@@ -18,7 +17,6 @@ class Menu extends React.PureComponent {
     setSearchValue = (EO) => {
         let value = EO.target.value;
         this.setState({ searchValue: value });
-        taprolaEvents.emit('saveValue', value);
     }
 
     render() {

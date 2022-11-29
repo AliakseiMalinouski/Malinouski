@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import MenuComponent from '../components/MenuComponent';
-import { useNavigate } from "react-router-dom";
-import { taprolaEvents } from '../events';
-import { Category } from '../components/CategoryComponent';
 
 export const PageMenu = () => {
     
@@ -27,31 +24,9 @@ export const PageMenu = () => {
         []
     );
 
-
-    let navigate = useNavigate();
-
-    
-
-    function getSearchValue(value) {
-        setCurrentSearch(value);
-        const uri = "/menudetails/"+value;
-        navigate(uri);
-    }
-
-    useEffect(() => {
-        taprolaEvents.addListener('saveValue', getSearchValue);
-        return () => {
-            taprolaEvents.removeListener('saveValue', getSearchValue);
-        }
-    }, [])
-    if (currentSearch == "") {
         return (
             <MenuComponent array={array} />
         )
-    }
-    else if (currentSearch !== "") {
-        return (
-            <Category currentCategory={currentSearch} array={array} />
-        )
-    }
+
+
 }
