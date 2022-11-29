@@ -14,7 +14,6 @@ export const PagesRouter = () => {
         <Route path="/taprola" element={<PageTaprola />} />
         <Route path='/options' element={<PageOptions />} />
         <Route path='/menu' element={<PageMenu />} />
-        <Route path='/menudetails/:category' element={<Category/>}/>
       </Routes>
     );
     
