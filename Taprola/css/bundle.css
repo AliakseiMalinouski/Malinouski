@@ -537,7 +537,8 @@ body {
     flex-flow: wrap;
     justify-content: space-between; }
     .WrapperMenu .WrapperCategories .Categories {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      cursor: pointer; }
       .WrapperMenu .WrapperCategories .Categories .Food {
         padding-top: 30px;
         padding-bottom: 40px;
