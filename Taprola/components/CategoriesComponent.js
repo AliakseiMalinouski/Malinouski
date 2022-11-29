@@ -1,16 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { taprolaEvents } from '../events';
 
 class Categories extends React.PureComponent {
     static propTypes = {
         name: PropTypes.string.isRequired,
         images: PropTypes.array.isRequired,
         code: PropTypes.number.isRequired,
-        className: PropTypes.string.isRequired
+        className: PropTypes.string.isRequired,
+        targetCode: PropTypes.number.isRequired,
     }
 
+    Selected = () => {
+        taprolaEvents.emit('cbSelected', this.props.code);
+    }
+
+
+
     render() {
-        return <div className='Categories'>
+        if (this.props.targetCode == this.props.code) {
+            return <div className='Categories' onClick={this.Selected}>
+            <div style={{backgroundColor: 'lightgreen', borderRadius: '10px', width: '500px', transition: '1s'}} className={this.props.className}>
+                <h3>{this.props.name}</h3>
+            </div>
+        </div>
+        }
+        else {
+            return <div className='Categories' onClick={this.Selected}>
             <div style={{backgroundColor: 'white', borderRadius: '10px', width: '500px'}} className={this.props.className}>
                 <img className='FirstImage' src={this.props.images[0]} alt='Image' />
                 <div>
@@ -20,6 +36,7 @@ class Categories extends React.PureComponent {
                 </div>
             </div>
         </div>
+        }
     }
 }
 export default Categories;
