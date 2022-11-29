@@ -25,7 +25,7 @@ class Menu extends React.PureComponent {
         }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} />)
         return <div className='WrapperMenu'>
             <h2 className='Title'>Your categories</h2>
-            <input type='text' value={this.state.searchValue} onChange={this.setSearchValue} />
+            <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />
             <div className='WrapperCategories' >
                 {categories}
             </div>

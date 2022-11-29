@@ -637,6 +637,16 @@ $bold: 600;
         font-size: 46px;
         margin-bottom: 50px;
     }
+    .search {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 350px;
+        height: 40px;
+        font-size: 24px;
+        padding-left: 20px;
+        border: none;
+    }
     .WrapperCategories {
         display: flex;
         flex-flow: wrap;
