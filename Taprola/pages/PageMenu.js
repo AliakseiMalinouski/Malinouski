@@ -25,12 +25,10 @@ export const PageMenu = () => {
         []
     );
 
-    let navigate = useNavigate();
+    
 
     function getSearchValue(value) {
-        let currentValue = value;
-        const uri = "/menu/" + currentValue;
-        navigate(uri);
+        
     }
 
     useEffect(() => {
