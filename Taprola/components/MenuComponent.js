@@ -20,15 +20,14 @@ class Menu extends React.PureComponent {
     }
 
     render() {
+        let categories = this.props.array.filter(element => {
+            return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
+        }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} />)
         return <div className='WrapperMenu'>
             <h2 className='Title'>Your categories</h2>
             <input type='text' value={this.state.searchValue} onChange={this.setSearchValue} />
             <div className='WrapperCategories' >
-                {
-                    this.props.array.filter(element => {
-                        return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
-                    }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} />)
-                }
+                {categories}
             </div>
             <NavLink to="/taprola">Back</NavLink>
         </div>
