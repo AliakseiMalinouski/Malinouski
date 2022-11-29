@@ -34,7 +34,7 @@ export const PageMenu = () => {
 
     function getSearchValue(value) {
         setCurrentSearch(value);
-        const uri = "/menu-details-"+value;
+        const uri = "/menudetails/"+value;
         navigate(uri);
     }
 
