@@ -32,6 +32,11 @@ class Menu extends React.PureComponent {
     setSearchValue = (EO) => {
         let value = EO.target.value;
         this.setState({ searchValue: value });
+        this.props.array.forEach(element => {
+            if (value !== element.name) {
+                this.setState({ targetCode: null });
+            }
+        });
     }
 
 
@@ -39,7 +44,7 @@ class Menu extends React.PureComponent {
     render() {
         let categories = this.props.array.filter(element => {
                 return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
-            }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} targetCode={this.state.targetCode == null ? 0 : this.state.targetCode} />)
+        }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} targetCode={this.state.targetCode == null ? 0 : this.state.targetCode} description={e.description} />)
         return <div className='WrapperMenu'>
             <h2 className='Title'>Your categories</h2>
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />

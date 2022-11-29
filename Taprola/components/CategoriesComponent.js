@@ -9,6 +9,7 @@ class Categories extends React.PureComponent {
         code: PropTypes.number.isRequired,
         className: PropTypes.string.isRequired,
         targetCode: PropTypes.number.isRequired,
+        description: PropTypes.string.isRequired
     }
 
     Selected = () => {
@@ -20,14 +21,15 @@ class Categories extends React.PureComponent {
     render() {
         if (this.props.targetCode == this.props.code) {
             return <div className='Categories' onClick={this.Selected}>
-            <div style={{backgroundColor: 'lightgreen', borderRadius: '10px', width: '500px', transition: '1s'}} className={this.props.className}>
-                <h3>{this.props.name}</h3>
+            <div style={{backgroundColor: 'lightgreen', borderRadius: '10px', width: '500px', transition: '1s', height: '582px'}} className={this.props.className}>
+                    <h3>{this.props.name}</h3>
+                    <p>{this.props.description}</p>
             </div>
         </div>
         }
         else {
             return <div className='Categories' onClick={this.Selected}>
-            <div style={{backgroundColor: 'white', borderRadius: '10px', width: '500px'}} className={this.props.className}>
+            <div style={{backgroundColor: 'white', borderRadius: '10px', width: '500px'}} className={this.props.className} >
                 <img className='FirstImage' src={this.props.images[0]} alt='Image' />
                 <div>
                     <img src={this.props.images[1]} alt='Image' />
