@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Categories from './CategoriesComponent';
 import { NavLink } from 'react-router-dom';
@@ -17,6 +17,11 @@ class Menu extends React.PureComponent {
     setSearchValue = (EO) => {
         let value = EO.target.value;
         this.setState({ searchValue: value });
+        
+    }
+
+    setURL = () => {
+
     }
 
     render() {
@@ -31,6 +36,7 @@ class Menu extends React.PureComponent {
             </div>
             <NavLink to="/taprola">Back</NavLink>
         </div>
+        
     }
 }
 export default Menu;
