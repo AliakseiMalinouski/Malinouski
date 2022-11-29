@@ -21,10 +21,6 @@ class Menu extends React.PureComponent {
         taprolaEvents.emit('saveValue', value);
     }
 
-    setURL = () => {
-
-    }
-
     render() {
         let categories = this.props.array.filter(element => {
             return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
