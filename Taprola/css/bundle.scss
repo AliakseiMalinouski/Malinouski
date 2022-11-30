@@ -692,7 +692,7 @@ $bold: 600;
                         padding-left: 20px;
                         margin-bottom: 20px;
                     }
-                    .FoodParagraph {
+                    .InfoParagraph {
                         line-height: 35px;
                         font-size: 18px;
                     }
@@ -715,6 +715,7 @@ $bold: 600;
                     }
                 }
                 .Tasks {
+                    position: relative;
                     padding-top: 30px;
                     padding-bottom: 40px;
                     padding-left: 25px;
@@ -738,8 +739,30 @@ $bold: 600;
                         font-size: 36px;
                         padding-left: 20px;
                     }
+                    .InfoParagraph {
+                        line-height: 35px;
+                        font-size: 18px;
+                    }
+                    button {
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        width: 100px;
+                        height: 30px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border-radius: 13px;
+                        font-weight: $medium;
+                        font-size: 14px;
+                    }
+                    button:hover {
+                        transition: 0.5s;
+                        opacity: 0.7;
+                    }
                 }
                 .Travel {
+                    position: relative;
                     padding-top: 30px;
                     padding-bottom: 40px;
                     padding-left: 25px;
@@ -762,9 +785,31 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                    }
+                    .InfoParagraph {
+                        line-height: 35px;
+                        font-size: 18px;
+                    }
+                    button {
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        width: 100px;
+                        height: 30px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border-radius: 13px;
+                        font-weight: $medium;
+                        font-size: 14px;
+                    }
+                    button:hover {
+                        transition: 0.5s;
+                        opacity: 0.7;
                     }
                 }
                 .Shopping {
+                    position: relative;
                     padding-top: 30px;
                     padding-bottom: 40px;
                     padding-left: 25px;
@@ -787,9 +832,31 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                    }
+                    .InfoParagraph {
+                        line-height: 35px;
+                        font-size: 18px;
+                    }
+                    button {
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        width: 100px;
+                        height: 30px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border-radius: 13px;
+                        font-weight: $medium;
+                        font-size: 14px;
+                    }
+                    button:hover {
+                        transition: 0.5s;
+                        opacity: 0.7;
                     }
                 }
                 .Presents {
+                    position: relative;
                     padding-top: 30px;
                     padding-bottom: 40px;
                     padding-left: 25px;
@@ -812,9 +879,31 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                    }
+                    .InfoParagraph {
+                        line-height: 35px;
+                        font-size: 18px;
+                    }
+                    button {
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        width: 100px;
+                        height: 30px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border-radius: 13px;
+                        font-weight: $medium;
+                        font-size: 14px;
+                    }
+                    button:hover {
+                        transition: 0.5s;
+                        opacity: 0.7;
                     }
                 }
                 .Cribs {
+                    position: relative;
                     padding-top: 30px;
                     padding-bottom: 40px;
                     padding-left: 25px;
@@ -837,6 +926,27 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                    }
+                    .InfoParagraph {
+                        line-height: 35px;
+                        font-size: 18px;
+                    }
+                    button {
+                        position: absolute;
+                        right: 15px;
+                        bottom: 15px;
+                        width: 100px;
+                        height: 30px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border-radius: 13px;
+                        font-weight: $medium;
+                        font-size: 14px;
+                    }
+                    button:hover {
+                        transition: 0.5s;
+                        opacity: 0.7;
                     }
                 }
             }

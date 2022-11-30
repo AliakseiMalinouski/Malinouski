@@ -576,7 +576,7 @@ body {
           font-size: 36px;
           padding-left: 20px;
           margin-bottom: 20px; }
-        .WrapperMenu .WrapperCategories .Categories .Food .FoodParagraph {
+        .WrapperMenu .WrapperCategories .Categories .Food .InfoParagraph {
           line-height: 35px;
           font-size: 18px; }
         .WrapperMenu .WrapperCategories .Categories .Food button {
@@ -595,6 +595,7 @@ body {
           transition: 0.5s;
           opacity: 0.7; }
       .WrapperMenu .WrapperCategories .Categories .Tasks {
+        position: relative;
         padding-top: 30px;
         padding-bottom: 40px;
         padding-left: 25px;
@@ -613,7 +614,26 @@ body {
         .WrapperMenu .WrapperCategories .Categories .Tasks h3 {
           font-size: 36px;
           padding-left: 20px; }
+        .WrapperMenu .WrapperCategories .Categories .Tasks .InfoParagraph {
+          line-height: 35px;
+          font-size: 18px; }
+        .WrapperMenu .WrapperCategories .Categories .Tasks button {
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          width: 100px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 13px;
+          font-weight: 500;
+          font-size: 14px; }
+        .WrapperMenu .WrapperCategories .Categories .Tasks button:hover {
+          transition: 0.5s;
+          opacity: 0.7; }
       .WrapperMenu .WrapperCategories .Categories .Travel {
+        position: relative;
         padding-top: 30px;
         padding-bottom: 40px;
         padding-left: 25px;
@@ -632,7 +652,26 @@ body {
         .WrapperMenu .WrapperCategories .Categories .Travel h3 {
           font-size: 36px;
           padding-left: 20px; }
+        .WrapperMenu .WrapperCategories .Categories .Travel .InfoParagraph {
+          line-height: 35px;
+          font-size: 18px; }
+        .WrapperMenu .WrapperCategories .Categories .Travel button {
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          width: 100px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 13px;
+          font-weight: 500;
+          font-size: 14px; }
+        .WrapperMenu .WrapperCategories .Categories .Travel button:hover {
+          transition: 0.5s;
+          opacity: 0.7; }
       .WrapperMenu .WrapperCategories .Categories .Shopping {
+        position: relative;
         padding-top: 30px;
         padding-bottom: 40px;
         padding-left: 25px;
@@ -651,7 +690,26 @@ body {
         .WrapperMenu .WrapperCategories .Categories .Shopping h3 {
           font-size: 36px;
           padding-left: 20px; }
+        .WrapperMenu .WrapperCategories .Categories .Shopping .InfoParagraph {
+          line-height: 35px;
+          font-size: 18px; }
+        .WrapperMenu .WrapperCategories .Categories .Shopping button {
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          width: 100px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 13px;
+          font-weight: 500;
+          font-size: 14px; }
+        .WrapperMenu .WrapperCategories .Categories .Shopping button:hover {
+          transition: 0.5s;
+          opacity: 0.7; }
       .WrapperMenu .WrapperCategories .Categories .Presents {
+        position: relative;
         padding-top: 30px;
         padding-bottom: 40px;
         padding-left: 25px;
@@ -670,7 +728,26 @@ body {
         .WrapperMenu .WrapperCategories .Categories .Presents h3 {
           font-size: 36px;
           padding-left: 20px; }
+        .WrapperMenu .WrapperCategories .Categories .Presents .InfoParagraph {
+          line-height: 35px;
+          font-size: 18px; }
+        .WrapperMenu .WrapperCategories .Categories .Presents button {
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          width: 100px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 13px;
+          font-weight: 500;
+          font-size: 14px; }
+        .WrapperMenu .WrapperCategories .Categories .Presents button:hover {
+          transition: 0.5s;
+          opacity: 0.7; }
       .WrapperMenu .WrapperCategories .Categories .Cribs {
+        position: relative;
         padding-top: 30px;
         padding-bottom: 40px;
         padding-left: 25px;
@@ -689,6 +766,24 @@ body {
         .WrapperMenu .WrapperCategories .Categories .Cribs h3 {
           font-size: 36px;
           padding-left: 20px; }
+        .WrapperMenu .WrapperCategories .Categories .Cribs .InfoParagraph {
+          line-height: 35px;
+          font-size: 18px; }
+        .WrapperMenu .WrapperCategories .Categories .Cribs button {
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          width: 100px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 13px;
+          font-weight: 500;
+          font-size: 14px; }
+        .WrapperMenu .WrapperCategories .Categories .Cribs button:hover {
+          transition: 0.5s;
+          opacity: 0.7; }
 
 @keyframes menu {
   from {

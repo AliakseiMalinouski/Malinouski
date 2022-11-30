@@ -28,7 +28,7 @@ class Categories extends React.PureComponent {
             return <div className='Categories ClosedAnimationCategory' onClick={this.Selected}>
             <div style={{backgroundColor: '#87CEEB', borderRadius: '10px', width: '500px', transition: '1s', height: '582px'}} className={this.props.className}>
                     <h3>{this.props.name}</h3>
-                    <p className='FoodParagraph'>{this.props.description}</p>
+                    <p className='InfoParagraph'>{this.props.description}</p>
                     <button type='button' onClick={this.CloseCategory}>close</button>
             </div>
         </div>
