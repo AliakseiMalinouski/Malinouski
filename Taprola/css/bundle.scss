@@ -647,10 +647,19 @@ $bold: 600;
         padding-left: 20px;
         border: none;
     }
+    .BackToTaprolaImageButton {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 13px;
+            left: 580px;
+        }
     .WrapperCategories {
         display: flex;
         flex-flow: wrap;
         justify-content: space-between;
+        position: relative;
         .ClosedAnimationCategory {
                 animation: closedCategory 0.5s linear;
             }
@@ -738,6 +747,7 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                        margin-bottom: 20px;
                     }
                     .InfoParagraph {
                         line-height: 35px;
@@ -785,6 +795,7 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                        margin-bottom: 20px;
                     }
                     .InfoParagraph {
                         line-height: 35px;
@@ -832,6 +843,7 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                        margin-bottom: 20px;
                     }
                     .InfoParagraph {
                         line-height: 35px;
@@ -879,6 +891,7 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                        margin-bottom: 20px;
                     }
                     .InfoParagraph {
                         line-height: 35px;
@@ -926,6 +939,7 @@ $bold: 600;
                     h3 {
                         font-size: 36px;
                         padding-left: 20px;
+                        margin-bottom: 20px;
                     }
                     .InfoParagraph {
                         line-height: 35px;

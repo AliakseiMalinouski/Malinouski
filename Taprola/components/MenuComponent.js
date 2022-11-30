@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import Categories from './CategoriesComponent';
 import { NavLink } from 'react-router-dom';
 import { taprolaEvents } from '../events';
+import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+
+
 
 class Menu extends React.PureComponent {
 
@@ -14,7 +17,7 @@ class Menu extends React.PureComponent {
     state = {
         searchValue: "",
         targetCode: null,
-        closeAnim: ""
+        closeAnim: "",
     }
 
     componentDidMount = () => {
@@ -58,7 +61,7 @@ class Menu extends React.PureComponent {
             <div className='WrapperCategories' >
                 {categories}
             </div>
-            <NavLink to="/taprola">Back</NavLink>
+            <NavLink to="/taprola"><img className='BackToTaprolaImageButton' src={BackToTaprolaIcon} alt='Return image'/></NavLink>
         </div>
     }
 }
