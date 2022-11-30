@@ -14,19 +14,26 @@ class Menu extends React.PureComponent {
     state = {
         searchValue: "",
         targetCode: null,
+        closeAnim: ""
     }
 
     componentDidMount = () => {
         taprolaEvents.addListener('cbSelected', this.Selected);
+        taprolaEvents.addListener('cbCloseCategory', this.CompleteCloseCategory);
     }
 
     componentWillUnmount = () => {
         taprolaEvents.removeListener('cbSelected', this.Selected);
+        taprolaEvents.removeListener('cbCloseCategory', this.CompleteCloseCategory);
     }
 
     Selected = (code) => {
-        console.log(code)
         this.setState({ targetCode: code });
+    }
+
+    CompleteCloseCategory = (code) => {
+        this.setState({ targetCode: null });
+        this.setState({ closeAnim: "ClosedAnimationCategory" });
     }
 
     setSearchValue = (EO) => {
@@ -44,7 +51,7 @@ class Menu extends React.PureComponent {
     render() {
         let categories = this.props.array.filter(element => {
                 return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
-        }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} targetCode={this.state.targetCode == null ? 0 : this.state.targetCode} description={e.description} />)
+        }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} targetCode={this.state.targetCode == null ? 0 : this.state.targetCode} description={e.description} anim={this.state.closeAnim} />)
         return <div className='WrapperMenu'>
             <h2 className='Title'>Your categories</h2>
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />

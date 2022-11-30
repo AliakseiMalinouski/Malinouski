@@ -9,21 +9,27 @@ class Categories extends React.PureComponent {
         code: PropTypes.number.isRequired,
         className: PropTypes.string.isRequired,
         targetCode: PropTypes.number.isRequired,
-        description: PropTypes.string.isRequired
+        description: PropTypes.string.isRequired,
+        anim: PropTypes.string.isRequired,
     }
 
-    Selected = () => {
+    Selected = (EO) => {
         taprolaEvents.emit('cbSelected', this.props.code);
     }
 
+    CloseCategory = (EO) => {
+        taprolaEvents.emit('cbCloseCategory', this.props.code);
+        EO.stopPropagation();
+    }
 
 
     render() {
         if (this.props.targetCode == this.props.code) {
-            return <div className='Categories' onClick={this.Selected}>
-            <div style={{backgroundColor: 'lightgreen', borderRadius: '10px', width: '500px', transition: '1s', height: '582px'}} className={this.props.className}>
+            return <div className='Categories ClosedAnimationCategory' onClick={this.Selected}>
+            <div style={{backgroundColor: '#87CEEB', borderRadius: '10px', width: '500px', transition: '1s', height: '582px'}} className={this.props.className}>
                     <h3>{this.props.name}</h3>
-                    <p>{this.props.description}</p>
+                    <p className='FoodParagraph'>{this.props.description}</p>
+                    <button type='button' onClick={this.CloseCategory}>close</button>
             </div>
         </div>
         }

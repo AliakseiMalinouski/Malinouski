@@ -7,7 +7,7 @@ export const PageMenu = () => {
     const [currentSearch, setCurrentSearch] = useState("");
 
     useEffect(() => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/57225c6273781cf6e6f858cbf5cb59fd/raw/b89febc1bde749de44562da5b6bbef1eb3e2bad4/ArrayCategoryTaprola",
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/57225c6273781cf6e6f858cbf5cb59fd/raw/294efc2b2af5f43baa4f26a41d3d3f736dbb4fd5/ArrayCategoryTaprola",
             { method: 'get' })
             .then(response => {
                 if (!response.ok) {

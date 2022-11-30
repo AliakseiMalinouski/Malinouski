@@ -545,10 +545,18 @@ body {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between; }
+    .WrapperMenu .WrapperCategories .ClosedAnimationCategory {
+      animation: closedCategory 0.5s linear; }
+@keyframes closedCategory {
+  from {
+    transform: rotate(180deg); }
+  to {
+    transform: rotate(0deg); } }
     .WrapperMenu .WrapperCategories .Categories {
       margin-bottom: 40px;
       cursor: pointer; }
       .WrapperMenu .WrapperCategories .Categories .Food {
+        position: relative;
         padding-top: 30px;
         padding-bottom: 40px;
         padding-left: 25px;
@@ -566,7 +574,26 @@ body {
           margin-left: 16px; }
         .WrapperMenu .WrapperCategories .Categories .Food h3 {
           font-size: 36px;
-          padding-left: 20px; }
+          padding-left: 20px;
+          margin-bottom: 20px; }
+        .WrapperMenu .WrapperCategories .Categories .Food .FoodParagraph {
+          line-height: 35px;
+          font-size: 18px; }
+        .WrapperMenu .WrapperCategories .Categories .Food button {
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          width: 100px;
+          height: 30px;
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 13px;
+          font-weight: 500;
+          font-size: 14px; }
+        .WrapperMenu .WrapperCategories .Categories .Food button:hover {
+          transition: 0.5s;
+          opacity: 0.7; }
       .WrapperMenu .WrapperCategories .Categories .Tasks {
         padding-top: 30px;
         padding-bottom: 40px;
