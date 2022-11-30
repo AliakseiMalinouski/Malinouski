@@ -56,8 +56,10 @@ class Taprola extends React.PureComponent {
                 }
             })
             .then(data => {
-                console.log(data)
                 this.setState({ arrayColors: data });
+            })
+            .catch(error => {
+                alert(error);
         })
     }
 
