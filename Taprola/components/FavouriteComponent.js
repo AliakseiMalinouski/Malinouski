@@ -8,7 +8,6 @@ class Favourite extends React.PureComponent {
         images: PropTypes.array.isRequired,
         code: PropTypes.number.isRequired,
         className: PropTypes.string.isRequired,
-        targetCode: PropTypes.number.isRequired,
         description: PropTypes.string.isRequired,
         anim: PropTypes.string.isRequired,
     }
