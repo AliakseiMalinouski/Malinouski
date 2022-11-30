@@ -20,7 +20,6 @@ class Taprola extends React.PureComponent {
     static propTypes = {
         array: PropTypes.array.isRequired,
         newItemH: PropTypes.object.isRequired,
-        arrayColors: PropTypes.array.isRequired,
     }
 
     state = {
@@ -39,10 +38,28 @@ class Taprola extends React.PureComponent {
         activeAddNewItemButton: false,
         heigthOfApp: 600,
         isLanguage: false,
+        arrayColors: null,
     }
 
     newNameValue = null;
     newRemainsValue = null;
+
+    loadColors = () => {
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/549591760d65166031248e34f13dedbe/raw/a32210944048380be1ae1246a210c9490fb7039c/ArrayColorsTitleTaprola",
+            { method: 'get' })
+            .then(response => {
+                if (!response.ok) {
+                    alert("Error");
+                }
+                else {
+                    return response.json();
+                }
+            })
+            .then(data => {
+                console.log(data)
+                this.setState({ arrayColors: data });
+        })
+    }
 
     setEN = () => {
         this.props.i18n.changeLanguage("en");
@@ -75,6 +92,7 @@ class Taprola extends React.PureComponent {
         taprolaEvents.addListener('ECheckedItem', this.Selected);
         taprolaEvents.addListener('EDeleteItem', this.Delete);
         taprolaEvents.addListener('changeBackgroundColorTitle', this.changeBackgroundColorTitle);
+        this.loadColors();
     }
 
     componentWillUnmount = () => {
@@ -162,7 +180,7 @@ class Taprola extends React.PureComponent {
     }
 
     changeColorTitle = (EO) => {
-        let newColor = this.props.arrayColors.filter(element => {
+        let newColor = this.state.arrayColors.filter(element => {
             return element == this.state.valueColorInputPrev
         });
         if (newColor !== null) {
