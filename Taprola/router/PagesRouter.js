@@ -4,7 +4,6 @@ import { PageTaprola } from '../pages/PageTaprola';
 import { PageIntrudaction } from '../pages/PageIntrudaction';
 import { PageOptions } from '../pages/PageOptions';
 import { PageMenu } from '../pages/PageMenu';
-import { Category } from '../components/CategoryComponent';
 
 export const PagesRouter = () => {
           
