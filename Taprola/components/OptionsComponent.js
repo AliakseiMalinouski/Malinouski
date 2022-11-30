@@ -87,7 +87,7 @@ class Options extends React.PureComponent {
 
 
     loadTextHowToUse = () => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/db6d95bfc04a9213c61ea97bd9d263dc/raw/d266b7318607eb5ce4828e1602da2a886f41f836/HowToUseTaprola",
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/db6d95bfc04a9213c61ea97bd9d263dc/raw/d29dc03b34edb7e9deca5dbc72c5634ff6b67a76/HowToUseTaprola",
             { method: 'get' })
             .then(response => {
                 if (!response.ok) {
