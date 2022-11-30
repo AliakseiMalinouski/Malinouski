@@ -4,6 +4,7 @@ import Categories from './CategoriesComponent';
 import { NavLink } from 'react-router-dom';
 import { taprolaEvents } from '../events';
 import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+import Favourite from './FavouriteComponent';
 
 
 
@@ -18,6 +19,8 @@ class Menu extends React.PureComponent {
         searchValue: "",
         targetCode: null,
         closeAnim: "",
+        favourite: [],
+        workMode: false,
     }
 
     componentDidMount = () => {
@@ -32,6 +35,10 @@ class Menu extends React.PureComponent {
 
     Selected = (code) => {
         this.setState({ targetCode: code });
+        let favouriteCards = this.props.array.filter(element => {
+            return element.code == code;
+        });
+        this.setState({ favourite: this.state.favourite.concat(favouriteCards) });
     }
 
     CompleteCloseCategory = (code) => {
@@ -49,13 +56,19 @@ class Menu extends React.PureComponent {
         });
     }
 
-
+    goToFavourite = () => {
+        this.setState({ workMode: true });
+    }
 
     render() {
+        console.log(this.state.favourite)
         let categories = this.props.array.filter(element => {
                 return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
         }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} targetCode={this.state.targetCode == null ? 0 : this.state.targetCode} description={e.description} anim={this.state.closeAnim} />)
-        return <div className='WrapperMenu'>
+        let favourite = this.state.favourite.map(e => <Favourite key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className}/>)
+        if (!this.state.workMode) {
+            return <div className='WrapperMenu'>
+            <button type='button' onClick={this.goToFavourite}>favourite</button>
             <h2 className='Title'>Your categories</h2>
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />
             <div className='WrapperCategories' >
@@ -63,6 +76,15 @@ class Menu extends React.PureComponent {
             </div>
             <NavLink to="/taprola"><img className='BackToTaprolaImageButton' src={BackToTaprolaIcon} alt='Return image'/></NavLink>
         </div>
+        }
+        else {
+            return <div className='WrapperMenu'>
+            <h2 className='Title'>Your categories</h2>
+            <div className='WrapperFavourite'>
+                {favourite}
+            </div>
+        </div>
+        }
     }
 }
 export default Menu;

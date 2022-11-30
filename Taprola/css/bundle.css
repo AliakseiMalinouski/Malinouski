@@ -548,6 +548,45 @@ body {
     position: absolute;
     bottom: 13px;
     left: 580px; }
+  .WrapperMenu .WrapperFavourite .Food {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 15px; }
+    .WrapperMenu .WrapperFavourite .Food .FirstImage {
+      width: 450px;
+      height: 270px;
+      border-radius: 10px;
+      margin-left: 0px !important; }
+    .WrapperMenu .WrapperFavourite .Food img {
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      margin-left: 16px; }
+    .WrapperMenu .WrapperFavourite .Food h3 {
+      font-size: 36px;
+      padding-left: 20px;
+      margin-bottom: 20px; }
+    .WrapperMenu .WrapperFavourite .Food .InfoParagraph {
+      line-height: 35px;
+      font-size: 18px; }
+    .WrapperMenu .WrapperFavourite .Food button {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      width: 100px;
+      height: 30px;
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      border-radius: 13px;
+      font-weight: 500;
+      font-size: 14px; }
+    .WrapperMenu .WrapperFavourite .Food button:hover {
+      transition: 0.5s;
+      opacity: 0.7; }
   .WrapperMenu .WrapperCategories {
     display: flex;
     flex-flow: wrap;
