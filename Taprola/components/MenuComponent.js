@@ -11,6 +11,7 @@ class Menu extends React.PureComponent {
 
     static propTypes = {
         array: PropTypes.array.isRequired,
+        isLoad: PropTypes.bool.isRequired,
     }
 
     
@@ -50,10 +51,9 @@ class Menu extends React.PureComponent {
     }
 
     render() {
-         let categories = this.props.array.filter(element => {
-                return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
+        let categories = this.props.array.filter(element => {
+            return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
         }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} targetCode={this.state.targetCode == null ? 0 : this.state.targetCode} description={e.description} anim={this.state.closeAnim} />)
-        if (!this.state.workMode) {
             return <div className='WrapperMenu'>
             <h2 className='Title'>Your categories</h2>
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />
@@ -62,7 +62,6 @@ class Menu extends React.PureComponent {
             </div>
             <NavLink to="/taprola"><img className='BackToTaprolaImageButton' src={BackToTaprolaIcon} alt='Return image'/></NavLink>
         </div>
-        }
     }
 }
 export default Menu;

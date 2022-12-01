@@ -3,8 +3,8 @@ import MenuComponent from '../components/MenuComponent';
 
 export const PageMenu = () => {
     
+    const [IsLoad, setIsLoad] = useState(false);
     const [array, setArray] = useState([]);
-    const [currentSearch, setCurrentSearch] = useState("");
 
     useEffect(() => {
         fetch("https://gist.githubusercontent.com/AliakseiMalinouski/57225c6273781cf6e6f858cbf5cb59fd/raw/80c2da501d262c4338bba95eff8b5ac88702e01c/ArrayCategoryTaprola",
@@ -19,14 +19,20 @@ export const PageMenu = () => {
             })
             .then(data => {
                 setArray(data);
+                setIsLoad(true);
             })
     },
         []
     );
 
-        return (
-            <MenuComponent array={array} />
-        )
+    if (!IsLoad) {
+            return (
+               <div>Loading...</div>
+           ) 
+    }
+    else {
+        return <MenuComponent array={array} isLoad={IsLoad} />
+    }
 
 
 }
