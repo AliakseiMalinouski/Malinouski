@@ -27,7 +27,7 @@ export const PageMenu = () => {
                 setTimeout(() => {
                     setArray(data);
                     setIsLoad(true);
-                }, 3000)
+                }, 3000);
             })
             .catch(error => {
                 alert(error);
