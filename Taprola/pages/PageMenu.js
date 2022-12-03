@@ -56,9 +56,9 @@ export const PageMenu = () => {
            ) 
     }
     else {
-        return <div>
+        return (
             <MenuComponent array={array} isLoad={IsLoad} />
-        </div>
+        )
     }
 
 
