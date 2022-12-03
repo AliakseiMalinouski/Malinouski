@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import MenuComponent from '../components/MenuComponent';
-import { useSelector, useDispatch } from 'react-redux';
-import { getText } from '../redux/testSlice';
 import { json } from 'react-router-dom';
 
 export const PageMenu = () => {
-
-    const dispatch = useDispatch();
-
-    const someText = useSelector(state => state.info);
+;
     
     const [IsLoad, setIsLoad] = useState(false);
     const [array, setArray] = useState([]);
@@ -42,10 +37,6 @@ export const PageMenu = () => {
     },
         []
     );
-
-    function setText() {
-        dispatch(getText({newInfo: 'О да, это я тот текст'}))
-    }
 
     if (!IsLoad) {
             return (

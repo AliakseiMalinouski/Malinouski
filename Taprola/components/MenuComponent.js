@@ -4,7 +4,7 @@ import Categories from './CategoriesComponent';
 import { NavLink } from 'react-router-dom';
 import { taprolaEvents } from '../events';
 import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
-
+import { Guide } from './GuideComponent';
 
 
 class Menu extends React.PureComponent {
@@ -55,6 +55,9 @@ class Menu extends React.PureComponent {
             return element.name.toLowerCase().includes(this.state.searchValue.toLowerCase());
         }).map(e => <Categories key={e.code} name={e.name} images={e.photos} code={e.code} className={e.className} targetCode={this.state.targetCode == null ? 0 : this.state.targetCode} description={e.description} anim={this.state.closeAnim} />)
             return <div className='WrapperMenu'>
+            <div>
+                <Guide/>
+            </div>
             <h2 className='Title'>Your categories</h2>
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />
             <div className='WrapperCategories' >

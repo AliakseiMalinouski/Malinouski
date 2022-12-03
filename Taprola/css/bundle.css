@@ -796,6 +796,23 @@ body {
         .WrapperMenu .WrapperCategories .Categories .Cribs button:hover {
           transition: 0.5s;
           opacity: 0.7; }
+  .WrapperMenu .WrapperGuide {
+    margin-bottom: 200px; }
+    .WrapperMenu .WrapperGuide .Title {
+      width: 100%;
+      text-align: center; }
+    .WrapperMenu .WrapperGuide .ButtonGetInfoCategory {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 35px;
+      border: none;
+      cursor: pointer;
+      background-color: #6950dd;
+      border-radius: 13px;
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase; }
 
 .WrapperLoad {
   margin: 0 auto;

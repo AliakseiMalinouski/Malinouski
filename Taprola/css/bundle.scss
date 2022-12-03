@@ -965,6 +965,29 @@ $bold: 600;
                 }
             }
     }
+    .WrapperGuide {
+        margin-bottom: 200px;
+        .Title {
+            width: 100%;
+            text-align: center;
+        }
+        .ButtonGetInfoCategory {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 35px;
+            border: none;
+            cursor: pointer;
+            background-color: #6950dd;
+            border-radius: 13px;
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .InformationCategory {
+            
+        }
+    }
 }
 .WrapperLoad {
     margin: 0 auto;
