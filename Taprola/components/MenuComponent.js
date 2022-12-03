@@ -19,16 +19,21 @@ class Menu extends React.PureComponent {
         searchValue: "",
         targetCode: null,
         closeAnim: "",
+        isClassNameTitle: false,
     }
 
     componentDidMount = () => {
         taprolaEvents.addListener('cbSelected', this.Selected);
         taprolaEvents.addListener('cbCloseCategory', this.CompleteCloseCategory);
+        taprolaEvents.addListener('HoverDiscover', this.setClassTitle);
+        taprolaEvents.addListener('UnHoverDiscover', this.unClassTitle);
     }
 
     componentWillUnmount = () => {
         taprolaEvents.removeListener('cbSelected', this.Selected);
         taprolaEvents.removeListener('cbCloseCategory', this.CompleteCloseCategory);
+        taprolaEvents.removeListener('HoverDiscover', this.setClassTitle);
+        taprolaEvents.removeListener('UnHoverDiscover', this.unClassTitle);
     }
 
     Selected = (code) => {
@@ -38,6 +43,14 @@ class Menu extends React.PureComponent {
     CompleteCloseCategory = (code) => {
         this.setState({ targetCode: null });
         this.setState({ closeAnim: "ClosedAnimationCategory" });
+    }
+
+    setClassTitle = (workMode) => {
+        if(workMode == 1) this.setState({ isClassNameTitle: true });
+    }
+
+    unClassTitle = (workMode) => {
+        if(workMode == 2) this.setState({ isClassNameTitle: false });
     }
 
     setSearchValue = (EO) => {
@@ -58,7 +71,7 @@ class Menu extends React.PureComponent {
             <div>
                 <Guide/>
             </div>
-            <h2 className='Title'>Your categories</h2>
+            <h2 className={(!this.state.isClassNameTitle ? 'Title' : 'AnimTitle')}>Your categories</h2>
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />
             <div className='WrapperCategories' >
                 {categories}

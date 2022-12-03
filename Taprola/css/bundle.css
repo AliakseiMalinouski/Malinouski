@@ -530,7 +530,25 @@ body {
     width: 100%;
     text-align: center;
     font-size: 46px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    animation: oldTitle 1s linear; }
+@keyframes oldTitle {
+  from {
+    padding-top: 50px; }
+  to {
+    padding-top: 0px; } }
+  .WrapperMenu .AnimTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 46px;
+    margin-bottom: 50px;
+    animation: NewTitle 1s linear;
+    padding-top: 50px; }
+@keyframes NewTitle {
+  from {
+    padding-top: 0px; }
+  to {
+    padding-top: 50px; } }
   .WrapperMenu .search {
     display: block;
     margin: 0 auto;
@@ -797,10 +815,17 @@ body {
           transition: 0.5s;
           opacity: 0.7; }
   .WrapperMenu .WrapperGuide {
-    margin-bottom: 200px; }
+    margin-bottom: 100px; }
     .WrapperMenu .WrapperGuide .Title {
       width: 100%;
       text-align: center; }
+    .WrapperMenu .WrapperGuide .GuideCategoryHint {
+      animation: hintGuide 1s linear; }
+@keyframes hintGuide {
+  from {
+    opacity: 0.1; }
+  to {
+    opacity: 1; } }
     .WrapperMenu .WrapperGuide .ButtonGetInfoCategory {
       display: block;
       margin: 0 auto;
@@ -813,7 +838,21 @@ body {
       color: white;
       font-size: 18px;
       text-transform: uppercase; }
-
+    .WrapperMenu .WrapperGuide .ButtonGetInfoCategory:hover {
+      transition: 1s;
+      opacity: 0.7; }
+    .WrapperMenu .WrapperGuide .InformationCategory {
+      width: 100%;
+      font-size: 24px;
+      line-height: 40px;
+      padding-left: 5px; }
+    .WrapperMenu .WrapperGuide .AnimationInfoCategory {
+      animation: info 1s linear; }
+@keyframes info {
+  from {
+    opacity: 0.2; }
+  to {
+    opacity: 1; } }
 .WrapperLoad {
   margin: 0 auto;
   background-color: #6950dd;
