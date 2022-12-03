@@ -71,7 +71,7 @@ class Menu extends React.PureComponent {
             <div>
                 <Guide/>
             </div>
-            <h2 className={(!this.state.isClassNameTitle ? 'Title' : 'AnimTitle')}>Your categories</h2>
+            <h2 className={(!this.state.isClassNameTitle ? 'TitleCategory' : 'AnimTitle')}>Your categories</h2>
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />
             <div className='WrapperCategories' >
                 {categories}

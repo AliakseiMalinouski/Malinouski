@@ -530,6 +530,11 @@ body {
     width: 100%;
     text-align: center;
     font-size: 46px;
+    margin-bottom: 50px; }
+  .WrapperMenu .TitleCategory {
+    width: 100%;
+    text-align: center;
+    font-size: 46px;
     margin-bottom: 50px;
     animation: oldTitle 1s linear; }
 @keyframes oldTitle {

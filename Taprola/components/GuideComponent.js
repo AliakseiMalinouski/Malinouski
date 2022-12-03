@@ -49,7 +49,7 @@ export const Guide = () => {
 
     return (
         <div className='WrapperGuide'>
-            <h3 className='Title'>How to read more?</h3>
+            <h3 className='TitleCategory'>How to read more?</h3>
             {
                 (!informationCategory.isView) 
                     ?
