@@ -9,7 +9,6 @@ export const PageMenu = () => {
     const dispatch = useDispatch();
 
     const someText = useSelector(state => state.info);
-    console.log(someText)
     
     const [IsLoad, setIsLoad] = useState(false);
     const [array, setArray] = useState([]);
@@ -58,8 +57,7 @@ export const PageMenu = () => {
     }
     else {
         return <div>
-            <button type='button' onClick={setText}>Получить текст</button>
-            <div>{"Тот самый текст " + someText.info}</div>
+            <GuideMenu />
             <MenuComponent array={array} isLoad={IsLoad} />
         </div>
     }
