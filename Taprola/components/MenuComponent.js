@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { taprolaEvents } from '../events';
 import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
 import { Guide } from './GuideComponent';
-
+import { send } from 'emailjs-com';
 
 class Menu extends React.PureComponent {
 
@@ -20,6 +20,30 @@ class Menu extends React.PureComponent {
         targetCode: null,
         closeAnim: "",
         isClassNameTitle: false,
+        toSend: {
+            question: '',
+            email: ''
+        }
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault();
+            send(
+            'service_4j7xlzd',
+            'template_m50k0zj',
+            this.state.toSend,
+            'TEEd-8_0HXteJTfo6'
+            )
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            })
+            .catch((err) => {
+                console.log('FAILED...', err);
+            });
+        }
+
+    handleChange = (e) => {
+        this.setState({toSend: {...this.state.toSend, [e.target.name]: e.target.value}})
     }
 
     componentDidMount = () => {
@@ -75,7 +99,14 @@ class Menu extends React.PureComponent {
             <input className='search' type='text' placeholder='category' value={this.state.searchValue} onChange={this.setSearchValue} />
             <div className='WrapperCategories' >
                 {categories}
-            </div>
+                </div>
+                <div className='FormEmail'>
+                    <form onSubmit={this.onSubmit}>
+                        <input type='text' name='question' placeholder='question' value={this.state.toSend.question} onChange={this.handleChange} />
+                        <input type='text' name='email' placeholder='email' value={this.state.toSend.email} onChange={this.handleChange} />
+                        <button type='submit'>Submit</button>
+                    </form>
+                </div>
             <NavLink to="/taprola"><img className='BackToTaprolaImageButton' src={BackToTaprolaIcon} alt='Return image'/></NavLink>
         </div>
     }
