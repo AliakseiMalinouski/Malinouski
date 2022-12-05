@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useRef } from 'react';
 import { send } from 'emailjs-com';
 import { addInfo } from '../redux/sendSlice';
 
@@ -21,6 +22,8 @@ export const Send = () => {
         question: '',
         from__email: ''
     }));
+
+    let inputName = useRef(null);
 
     const serviceId = 'service_4j7xlzd';
     const templeId = 'template_m50k0zj';
@@ -84,7 +87,7 @@ export const Send = () => {
         <div className='WrapperFormSend'>
             <div className='Title'>Complete the form below and get an answer!</div>
                 <form onSubmit={submitQuestion}>
-                    <input className={checkedInputName ? 'CheckedInputName' : null} type='text' name='from__name' placeholder='name' value={toSend.name} onChange={validationFormSend} onFocus={selectedInputName} onBlur={unSelectedInputName} />
+                    <input className={checkedInputName ? 'CheckedInputName' : null} type='text' name='from__name' placeholder='name' ref={inputName} value={toSend.name} onChange={validationFormSend} onFocus={selectedInputName} onBlur={unSelectedInputName} />
                     <input className={checkedInputEmail ? 'CheckedInputEmail' : null} type='text' name='from__email' placeholder='email' value={toSend.email} onChange={validationFormSend} onFocus={selectedInputEmail} onBlur={unSelectedInputEmail} />
                     <textarea className={checkedTextArea ? 'CheckedTextArea' : null} name='question' placeholder='question' maxLength='240' onChange={validationFormSend} onFocus={selectedTextArea} onBlur={unSelectedTextArea}></textarea>
                     <button type='submit'>Submit</button>
