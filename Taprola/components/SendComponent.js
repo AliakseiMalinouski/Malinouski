@@ -25,10 +25,11 @@ export const Send = () => {
 
     const serviceId = 'service_4j7xlzd';
     const templeId = 'template_m50k0zj';
-    const publicKey = 'TEEd-8_0HXteJTfo6'
+    const publicKey = 'TEEd-8_0HXteJTfo6';
 
     function submitQuestion(EO) {
         EO.preventDefault();
+        dispatch(addInfo({ workMode: 1 }));
             send(
             serviceId,
             templeId,
@@ -36,7 +37,7 @@ export const Send = () => {
             publicKey
             )
             .then((response) => {
-                dispatch(addInfo({ email: toSend.from__email, userName: toSend.from__name, question: toSend.question }));
+                dispatch(addInfo({ email: toSend.from__email, userName: toSend.from__name, question: toSend.question, workMode: 0 }));
                 setIsPost(true);
             })
             .catch((err) => {
@@ -72,6 +73,13 @@ export const Send = () => {
         setCheckedTextArea(false);
     }
 
+
+    if (messageComplete.workMode == 1) {
+        return (
+            <div>...loading</div>
+        )
+    }
+
     if (!isPost) {
         return (
         <div className='WrapperFormSend'>
@@ -85,7 +93,8 @@ export const Send = () => {
         </div>
     )
     }
-    else {
+
+    else if (isPost) {
         return (
             <div className='WrapperSend'>
                 <div className='Complete'>Your details have been successfully sent</div>

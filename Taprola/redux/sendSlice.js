@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     email: null,
     userName: null,
-    question: null
+    question: null,
+    workMode: 0
 }
 
 export const sendSlice = createSlice({
@@ -14,6 +15,7 @@ export const sendSlice = createSlice({
             state.email = action.payload.email;
             state.userName = action.payload.userName;
             state.question = action.payload.question;
+            state.workMode = action.payload.workMode;
         },
         removeInfo: (state, action) => {
             state.email = null;
