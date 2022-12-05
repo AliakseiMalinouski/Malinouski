@@ -17,6 +17,7 @@ export const Guide = () => {
 
     function setText() {
         dispatch(getText({ needInfo: guideInfo, changeIsView: true }));
+        setHint(false);
     }
 
     useEffect(() => {
@@ -62,7 +63,7 @@ export const Guide = () => {
                     ? 
                     null
                     :
-                    <div className='GuideCategoryHint'>Some hint</div>
+                    <div className='GuideCategoryHint'>Open a hint?</div>
             }
             <div className='InformationCategory AnimationInfoCategory'>
                 {informationCategory.info}

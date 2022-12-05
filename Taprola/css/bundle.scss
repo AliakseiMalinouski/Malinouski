@@ -1003,6 +1003,12 @@ $bold: 600;
             text-align: center;
         }
         .GuideCategoryHint {
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 50px;
+
+
             animation: hintGuide 1s linear;
         }
         @keyframes hintGuide {
