@@ -361,7 +361,8 @@ class Taprola extends React.PureComponent {
                     <NavLink to="/"><img src={IconBack} className='ButtonrReturnToIntrudaction'/></NavLink>
                     <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions' /></NavLink>
                     <img onClick={this.setLanguage} className="LanguageButton" src={LanguageIcon} alt='Language' />
-                    <NavLink to="/menu"><img src={MenuIcon} alt='Menu' className='ButtonGoToMenu'/></NavLink>
+                    <NavLink to="/menu"><img src={MenuIcon} alt='Menu' className='ButtonGoToMenu' /></NavLink>
+                    <NavLink to='/send'>Go to send</NavLink>
                     {
                         (this.state.isLanguage) 
                             ?

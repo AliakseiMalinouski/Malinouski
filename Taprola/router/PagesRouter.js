@@ -4,6 +4,7 @@ import { PageTaprola } from '../pages/PageTaprola';
 import { PageIntrudaction } from '../pages/PageIntrudaction';
 import { PageOptions } from '../pages/PageOptions';
 import { PageMenu } from '../pages/PageMenu';
+import { PageSend } from '../pages/PageSend';
 
 export const PagesRouter = () => {
           
@@ -12,6 +13,7 @@ export const PagesRouter = () => {
         <Route path='/' element={<PageIntrudaction/>} />
         <Route path="/taprola" element={<PageTaprola />} />
         <Route path='/options' element={<PageOptions />} />
+        <Route path='/send' element={<PageSend/>} />
         <Route path='/menu' element={<PageMenu />} />
       </Routes>
     );
