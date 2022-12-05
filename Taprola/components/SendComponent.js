@@ -8,16 +8,21 @@ export const Send = () => {
     
     const [toSend, setToSend] = useState(({
         from__name: '',
-        question: ''
-    }))
+        question: '',
+        from__email: ''
+    }));
+
+    const serviceId = 'service_4j7xlzd';
+    const templeId = 'template_m50k0zj';
+    const publicKey = 'TEEd-8_0HXteJTfo6'
 
     function submitQuestion(EO) {
         EO.preventDefault();
             send(
-            'service_4j7xlzd',
-            'template_m50k0zj',
+            serviceId,
+            templeId,
             toSend,
-            'TEEd-8_0HXteJTfo6'
+            publicKey
             )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
@@ -35,6 +40,7 @@ export const Send = () => {
         <div className='WrapperFormSend'>
                 <form onSubmit={submitQuestion}>
                     <input type='text' name='from__name' placeholder='name' value={toSend.name} onChange={validationFormSend} />
+                    <input type='text' name='from__email' placeholder='email' value={toSend.email} onChange={validationFormSend}/>
                     <input type='text' name='question' placeholder='question' value={toSend.question} onChange={validationFormSend} />
                     <button type='submit'>Submit</button>
                 </form>
