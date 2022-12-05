@@ -924,6 +924,81 @@ body {
       color: red;
       font-weight: bold; }
 
+.WrapperFormSend {
+  width: 600px;
+  min-height: 300px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 13px;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .WrapperFormSend .Title {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 35px; }
+  .WrapperFormSend form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%; }
+    .WrapperFormSend form input {
+      height: 40px;
+      margin-bottom: 30px;
+      background-color: #E6E6FA;
+      border: none;
+      border-radius: 6px;
+      padding-left: 20px;
+      font-size: 18px; }
+    .WrapperFormSend form input:focus {
+      outline: none;
+      outline-offset: none; }
+    .WrapperFormSend form textarea {
+      height: 100px;
+      width: 100%;
+      margin-bottom: 30px;
+      background-color: #E6E6FA;
+      border: none;
+      border-radius: 6px;
+      resize: none;
+      font-size: 16px;
+      padding-left: 8px;
+      padding-top: 8px; }
+    .WrapperFormSend form textarea:focus {
+      outline: none;
+      outline-offset: none; }
+    .WrapperFormSend form .CheckedInputName {
+      background-color: #FFC0CB;
+      transition: 1s; }
+    .WrapperFormSend form .CheckedInputEmail {
+      background-color: #FFC0CB;
+      transition: 1s; }
+    .WrapperFormSend form .CheckedTextArea {
+      background-color: #FFC0CB;
+      transition: 1s; }
+    .WrapperFormSend form button {
+      width: 300px;
+      height: 35px;
+      border: none;
+      cursor: pointer;
+      border-radius: 13px;
+      margin-left: 58px;
+      background-color: #0983ff;
+      color: white;
+      font-size: 18px;
+      font-weight: 400; }
+    .WrapperFormSend form button:hover {
+      transition: 0.4s;
+      opacity: 0.8; }
+
 @keyframes send {
   from {
     transform: scale(0.5);

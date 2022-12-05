@@ -8,6 +8,10 @@ import { addInfo } from '../redux/sendSlice';
 export const Send = () => {
 
     const [isPost, setIsPost] = useState(false);
+    const [checkedInputName, setCheckedInputName] = useState(false);
+    const [checkedInputEmail, setCheckedInputEmail] = useState(false);
+    const [checkedTextArea, setCheckedTextArea] = useState(false);
+    const [hover, setHover] = useState(false);
 
     const dispatch = useDispatch();
 
@@ -32,12 +36,11 @@ export const Send = () => {
             publicKey
             )
             .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
                 dispatch(addInfo({ email: toSend.from__email, userName: toSend.from__name, question: toSend.question }));
                 setIsPost(true);
             })
             .catch((err) => {
-                console.log('FAILED...', err);
+                alert('Error ' + err)
             });
     }
 
@@ -45,13 +48,38 @@ export const Send = () => {
         setToSend({ ...toSend, [EO.target.name]: EO.target.value });
     }
 
+    function selectedInputName(EO) {
+        setCheckedInputName(true);
+    }
+
+    function selectedInputEmail(EO) {
+        setCheckedInputEmail(true);
+    }
+
+    function selectedTextArea(EO) {
+        setCheckedTextArea(true);
+    }
+
+    function unSelectedInputName(EO) {
+        setCheckedInputName(false);
+    }
+
+    function unSelectedInputEmail(EO) {
+        setCheckedInputEmail(false);
+    }
+
+    function unSelectedTextArea(EO) {
+        setCheckedTextArea(false);
+    }
+
     if (!isPost) {
         return (
         <div className='WrapperFormSend'>
+            <div className='Title'>Complete the form below and get an answer!</div>
                 <form onSubmit={submitQuestion}>
-                    <input type='text' name='from__name' placeholder='name' value={toSend.name} onChange={validationFormSend} />
-                    <input type='text' name='from__email' placeholder='email' value={toSend.email} onChange={validationFormSend}/>
-                    <textarea name='question' placeholder='question' onChange={validationFormSend}></textarea>
+                    <input className={checkedInputName ? 'CheckedInputName' : null} type='text' name='from__name' placeholder='name' value={toSend.name} onChange={validationFormSend} onFocus={selectedInputName} onBlur={unSelectedInputName} />
+                    <input className={checkedInputEmail ? 'CheckedInputEmail' : null} type='text' name='from__email' placeholder='email' value={toSend.email} onChange={validationFormSend} onFocus={selectedInputEmail} onBlur={unSelectedInputEmail} />
+                    <textarea className={checkedTextArea ? 'CheckedTextArea' : null} name='question' placeholder='question' maxLength='240' onChange={validationFormSend} onFocus={selectedTextArea} onBlur={unSelectedTextArea}></textarea>
                     <button type='submit'>Submit</button>
                 </form>
         </div>
