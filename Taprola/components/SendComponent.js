@@ -11,7 +11,6 @@ export const Send = () => {
     const [checkedInputName, setCheckedInputName] = useState(false);
     const [checkedInputEmail, setCheckedInputEmail] = useState(false);
     const [checkedTextArea, setCheckedTextArea] = useState(false);
-    const [hover, setHover] = useState(false);
 
     const dispatch = useDispatch();
 
