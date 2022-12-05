@@ -51,7 +51,7 @@ export const Send = () => {
                 <form onSubmit={submitQuestion}>
                     <input type='text' name='from__name' placeholder='name' value={toSend.name} onChange={validationFormSend} />
                     <input type='text' name='from__email' placeholder='email' value={toSend.email} onChange={validationFormSend}/>
-                    <input type='text' name='question' placeholder='question' value={toSend.question} onChange={validationFormSend} />
+                    <textarea name='question' placeholder='question' onChange={validationFormSend}></textarea>
                     <button type='submit'>Submit</button>
                 </form>
         </div>
@@ -59,15 +59,14 @@ export const Send = () => {
     }
     else {
         return (
-            <div>
-                <div>Your message was completly post</div>
-                <div>
-                    {"Email: " + messageComplete.email}
-                    <br/>
-                    {"Name: " + messageComplete.userName}
-                    <br/>
-                    {"Question: " + messageComplete.question}
+            <div className='WrapperSend'>
+                <div className='Complete'>Your details have been successfully sent</div>
+                <div className='DataUserMessage'>
+                    <div className='Email'>Your e-mail: <span className='SpanReduxInfo'>{messageComplete.email}</span></div>
+                    <div className='UserName'>Your name: <span>{messageComplete.userName}</span></div>
+                    <div className='Question'>Your question: <span>{messageComplete.question}</span></div>
                 </div>
+                <div className='Paragraph'>Your details have been successfully sent to <span>us</span>! A reply will be sent to the email address you <span>provided</span>. Have a nice day!</div>
             </div>
         )
     }
