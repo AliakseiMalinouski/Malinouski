@@ -14,6 +14,7 @@ import { NavLink } from 'react-router-dom';
 import OptionsIcon from '../json/icon-options.json';
 import LanguageIcon from '../json/icon-language.json';
 import MenuIcon from '../json/menu-icon.json';
+import SendIcon from '../json/send-icon.json';
 import { withTranslation } from 'react-i18next';
 
 class Taprola extends React.PureComponent {
@@ -362,7 +363,7 @@ class Taprola extends React.PureComponent {
                     <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions' /></NavLink>
                     <img onClick={this.setLanguage} className="LanguageButton" src={LanguageIcon} alt='Language' />
                     <NavLink to="/menu"><img src={MenuIcon} alt='Menu' className='ButtonGoToMenu' /></NavLink>
-                    <NavLink to='/send'>Go to send</NavLink>
+                    <NavLink to='/send'><img className='SendIcon' src={SendIcon} alt='Send'/></NavLink>
                     {
                         (this.state.isLanguage) 
                             ?

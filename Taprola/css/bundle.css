@@ -38,6 +38,12 @@ body {
     height: 40px;
     cursor: pointer;
     bottom: 10px; }
+  .WrapperItems div .SendIcon {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    width: 45px;
+    height: 45px; }
   .WrapperItems div .ButtonGoToOptions {
     position: absolute;
     bottom: 10px;
