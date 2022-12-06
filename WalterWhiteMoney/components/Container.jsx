@@ -10,8 +10,8 @@ export const Container = ({ array }) => {
 
     
 
-    function Decrement(price) {
-        setCash(prev => prev - price);
+    function Increment(price) {
+        setCash(prev => (prev - price).toFixed(2));
     }
 
     return (
@@ -28,7 +28,7 @@ export const Container = ({ array }) => {
                     <div className='Cash'>Remaining: ${cash}</div>
                     <div className='WrapperItems'>
                         {
-                            array.map(e => <Items cbDecrement={Decrement} key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)
+                            array.map(e => <Items cbIncrement={Increment} key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)
                         }
                     </div>
                 </div>
