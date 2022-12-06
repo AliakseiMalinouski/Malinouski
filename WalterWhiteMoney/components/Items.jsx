@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-export const Items = ({ code, name, image, sell, buy, quanlity, price, reset, cbIncrement, cbDecrement }) => {
+export const Items = ({ code, name, image, sell, buy, quanlity, price, reset, cbIncrement, cbDecrement, isMoney, cash }) => {
     
     const [currentQuanlity, setCurrentQuanlity] = useState(quanlity); 
     
@@ -22,7 +22,13 @@ export const Items = ({ code, name, image, sell, buy, quanlity, price, reset, cb
                 <div className='Title'>{name}</div>
                 <div className='Price'>USD {price}</div>
                 <div className='BuySell'>
-                    <div className='Buy' onClick={Increment}>{buy}</div>
+                    {
+                        (cash > 0)
+                            ?
+                            <div className='Buy' onClick={Increment}>{buy}</div>
+                            :
+                            <button disabled className='Null' onClick={Increment}>{buy}</button>
+                    }
                     <div className='Quanlity'>{currentQuanlity}</div>
                     <div className='Sell' onClick={Decrement}>{sell}</div>
                 </div>

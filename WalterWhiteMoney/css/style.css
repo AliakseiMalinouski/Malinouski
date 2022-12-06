@@ -12,9 +12,6 @@ body {
   min-width: 100%;
   font-family: 'Montserrat', sans-serif; }
 
-#container {
-  height: 5000px; }
-
 .WrapperContent {
   padding-top: 10px;
   position: relative;
@@ -39,7 +36,8 @@ body {
     font-weight: 500;
     margin-top: 30px; }
   .WrapperContent .MainBlock {
-    position: relative; }
+    position: relative;
+    height: 9250px; }
     .WrapperContent .MainBlock .Cash {
       background-color: #5f676d;
       position: sticky;
@@ -106,6 +104,21 @@ body {
               border-radius: 13px;
               color: black;
               font-weight: 500; }
+            .WrapperContent .MainBlock .WrapperItems .Item .Operations .BuySell .Null {
+              opacity: 0.6;
+              cursor: pointer;
+              width: 60px;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #9edd99;
+              border-radius: 13px;
+              color: black;
+              font-weight: 500;
+              border: none;
+              font-size: 16px;
+              letter-spacing: 0.5px; }
             .WrapperContent .MainBlock .WrapperItems .Item .Operations .BuySell .Sell {
               cursor: pointer;
               width: 60px;

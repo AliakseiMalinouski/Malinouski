@@ -11,11 +11,11 @@ export const Container = ({ array }) => {
     
 
     function Increment(price) {
-        setCash(prev => parseFloat(prev - price).toFixed(2));
+        setCash(prev => parseFloat(prev - price));
     }
 
     function Decrement(price) {
-        setCash(prev => parseFloat(prev + price).toFixed(2));
+        setCash(prev => parseFloat(prev + price));
     }
 
     return (
@@ -32,7 +32,7 @@ export const Container = ({ array }) => {
                     <div className='Cash'>Remaining: ${cash}</div>
                     <div className='WrapperItems'>
                         {
-                            array.map(e => <Items cbDecrement={Decrement} cbIncrement={Increment} key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)
+                            array.map(e => <Items cash={cash} cbDecrement={Decrement} cbIncrement={Increment} key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)
                         }
                     </div>
                 </div>
