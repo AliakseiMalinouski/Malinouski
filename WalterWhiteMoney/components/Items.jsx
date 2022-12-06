@@ -7,7 +7,12 @@ export const Items = ({ code, name, image, sell, buy, quanlity, price, reset, cb
     
     function Increment() {
         cbIncrement(price);
-        setCurrentQuanlity(prev => prev + 1);
+        if (cash > price) {
+            setCurrentQuanlity(prev => prev + 1);
+        }
+        else {
+            null
+        }
     }
 
     function Decrement() {

@@ -11,6 +11,9 @@ export const Container = ({ array }) => {
     
 
     function Increment(price) {
+        if (cash < price) {
+            return false;
+        }
         setCash(prev => parseFloat(prev - price));
     }
 

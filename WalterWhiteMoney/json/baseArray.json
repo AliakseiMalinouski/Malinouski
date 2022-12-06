@@ -64,5 +64,5 @@
     {"code": 63, "image": "../img/restaurant.png", "name": "Los Pollos Hermanos restaurant", "USD": "USD", "price": 52100000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
     {"code": 64, "image": "../img/call.png", "name": "Call the Nazis", "USD": "USD", "price": 70000000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
     {"code": 65, "image": "../img/plain.png", "name": "Boeing 737", "USD": "USD", "price": 78300000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
-    {"code": 66, "image": "../img/huell.png", "name": "Huell", "USD": "USD", "price": 80000000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"}
+    {"code": 66, "image": "../img/huell.png", "name": "Huell", "USD": "USD", "price": 79000000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"}
 ]
