@@ -58,7 +58,7 @@
     {"code": 57, "image": "../img/barrel.png", "name": "A barrel of methylamine", "USD": "USD", "price": 396300, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
     {"code": 58, "image": "../img/wash.png", "name": "Car wash", "USD": "USD", "price": 800000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
     {"code": 59, "image": "../img/housejesse.jpg", "name": "Jesse's House", "USD": "USD", "price": 875000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
-    {"code": 60, "image": "../img/episode.png", "name": "One episode of Breaking Bad", "USD": "USD", "price": 3000000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
+    {"code": 60, "image": "https://www.calltheone.com/storage/blog/2/2019/07/06/breaking-bad-stars-bryan-cranston-aaron-paul-continue-teasing-1.jpg", "name": "One episode of Breaking Bad", "USD": "USD", "price": 3000000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
     {"code": 61, "image": "../img/bail.png", "name": "Bail for Lola Salamanca", "USD": "USD", "price":  7000000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
     {"code": 62, "image": "../img/laba.png", "name": "Superlaboratory", "USD": "USD", "price": 8000000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
     {"code": 63, "image": "../img/restaurant.png", "name": "Los Pollos Hermanos restaurant", "USD": "USD", "price": 52100000, "quanlity": 0, "buy": "buy", "sell": "sell", "reset": "sell all"},
