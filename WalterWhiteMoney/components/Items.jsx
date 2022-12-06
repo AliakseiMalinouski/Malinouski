@@ -10,9 +10,9 @@ export const Items = ({code, name, image, sell, buy, quanlity, price, reset}) =>
                 <div className='Title'>{name}</div>
                 <div className='Price'>USD {price}</div>
                 <div className='BuySell'>
-                    <div>{buy}</div>
-                    <div>{quanlity}</div>
-                    <div>{sell}</div>
+                    <div className='Buy'>{buy}</div>
+                    <div className='Quanlity'>{quanlity}</div>
+                    <div className='Sell'>{sell}</div>
                 </div>
             </div>
         </div>
