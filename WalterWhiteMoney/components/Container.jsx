@@ -1,12 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
-import { WalterWhiteMoneyEvents } from '../events';
 import { Items } from './Items.jsx';
+import { useEffect } from 'react';
 
 
 export const Container = ({ array }) => {
     
-    const [cash, setCash] = useState(80000000)
+    const [cash, setCash] = useState(80000000);
+
+    
+
+    function Decrement(price) {
+        setCash(prev => prev - price);
+    }
 
     return (
         <div style={{width: '100%', height: '100%'}}>
@@ -22,7 +28,7 @@ export const Container = ({ array }) => {
                     <div className='Cash'>Remaining: ${cash}</div>
                     <div className='WrapperItems'>
                         {
-                            array.map(e => <Items key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)
+                            array.map(e => <Items cbDecrement={Decrement} key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)
                         }
                     </div>
                 </div>
