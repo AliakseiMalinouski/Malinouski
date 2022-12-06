@@ -2,13 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import { Items } from './Items.jsx';
 import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 
 
 export const Container = ({ array }) => {
     
     const [cash, setCash] = useState(80000000);
 
-    
+    const arrayItems = useSelector(state => state.base);
 
     function Increment(price) {
         if (cash < price) {
@@ -34,9 +35,8 @@ export const Container = ({ array }) => {
                 <div className='MainBlock'>
                     <div className='Cash'>Remaining: ${cash}</div>
                     <div className='WrapperItems'>
-                        {
-                            array.map(e => <Items cash={cash} cbDecrement={Decrement} cbIncrement={Increment} key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)
-                        }
+                        {arrayItems.workMode == 0 && <div>...loading</div>}
+                        {arrayItems.workMode == 1 && arrayItems.arrayItems.map(e => <Items cash={cash} cbDecrement={Decrement} cbIncrement={Increment} key={e.code} code={e.code} image={e.image} quanlity={e.quanlity} reset={e.reset} name={e.name} price={e.price} buy={e.buy} sell={e.sell} />)}
                     </div>
                 </div>
         </div>

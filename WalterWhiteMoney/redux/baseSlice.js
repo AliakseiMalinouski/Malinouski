@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    data: null
+    arrayItems: null,
+    workMode: 0
 }
 
 export const baseSlice = createSlice({
@@ -9,7 +10,8 @@ export const baseSlice = createSlice({
     initialState,
     reducers: {
         getData: (state, action) => {
-
+            state.arrayItems = action.payload.array;
+            state.workMode = action.payload.workMode;
         }
     }
 });
