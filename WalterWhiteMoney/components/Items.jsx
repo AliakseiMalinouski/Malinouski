@@ -35,7 +35,13 @@ export const Items = ({ code, name, image, sell, buy, quanlity, price, reset, cb
                             <button disabled className='Null' onClick={Increment}>{buy}</button>
                     }
                     <div className='Quanlity'>{currentQuanlity}</div>
-                    <div className='Sell' onClick={Decrement}>{sell}</div>
+                    {
+                        (currentQuanlity <= 0)
+                            ?
+                            <div className='Sell' style={{pointerEvents: 'none'}} onClick={Decrement}>sell</div>
+                            :
+                            <div className='Sell' onClick={Decrement}>{sell}</div>
+                    }
                 </div>
             </div>
         </div>
