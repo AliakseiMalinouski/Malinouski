@@ -4,7 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useRef } from 'react';
 import { send } from 'emailjs-com';
 import { addInfo } from '../redux/sendSlice';
-
+import { NavLink } from 'react-router-dom';
+import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
 
 export const Send = () => {
 
@@ -110,6 +111,9 @@ export const Send = () => {
                     <div className='Question'>Your question: <span>{messageComplete.question}</span></div>
                 </div>
                 <div className='Paragraph'>Your details have been successfully sent to <span>us</span>! A reply will be sent to the email address you <span>provided</span>. Have a nice day!</div>
+                <div>
+                    <NavLink to='/taprola'><img className='BackToTaprolaAfterSend' src={BackToTaprolaIcon} alt='Return image'/></NavLink>
+                </div>
             </div>
         )
     }
