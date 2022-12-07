@@ -7,6 +7,8 @@ import { addInfo } from '../redux/sendSlice';
 import { NavLink } from 'react-router-dom';
 import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
 import { SendedForm } from './SendedForm';
+import { useNavigate } from 'react-router-dom';
+
 
 export const Send = () => {
 
@@ -16,6 +18,8 @@ export const Send = () => {
     const [checkedTextArea, setCheckedTextArea] = useState(false);
 
     const dispatch = useDispatch();
+
+    let navigate = useNavigate();
 
     const messageComplete = useSelector(state => state.informationAboutUserMessage);
     
@@ -42,6 +46,8 @@ export const Send = () => {
             )
             .then((response) => {
                 dispatch(addInfo({ email: toSend.from__email, userName: toSend.from__name, question: toSend.question, workMode: 0 }));
+                const uri = "/sendedform";
+                navigate(uri)
                 setIsPost(true);
             })
             .catch((err) => {
@@ -88,7 +94,7 @@ export const Send = () => {
         )
     }
 
-    if (!isPost) {
+    else {
         return (
         <div className='WrapperFormSend'>
             <div className='Title'>Complete the form below and get an answer!</div>
@@ -100,13 +106,5 @@ export const Send = () => {
                 </form>
         </div>
     )
-    }
-
-    else if (isPost) {
-        return (
-            <div className='WrapperSend'>
-                <SendedForm/>
-            </div>
-        )
     }
 }

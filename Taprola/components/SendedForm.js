@@ -8,7 +8,7 @@ export const SendedForm = () => {
     const messageComplete = useSelector(state => state.informationAboutUserMessage);
 
     return (
-        <div>
+        <div className='WrapperSend'>
             <div className='Complete'>Your details have been successfully sent</div>
                 <div className='DataUserMessage'>
                     <div className='Email'>Your e-mail: <span className='SpanReduxInfo'>{messageComplete.email}</span></div>

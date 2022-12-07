@@ -5,6 +5,7 @@ import { PageIntrudaction } from '../pages/PageIntrudaction';
 import { PageOptions } from '../pages/PageOptions';
 import { PageMenu } from '../pages/PageMenu';
 import { PageSend } from '../pages/PageSend';
+import { PageSendedForm } from '../pages/PageSendedForm';
 
 export const PagesRouter = () => {
           
@@ -15,6 +16,7 @@ export const PagesRouter = () => {
         <Route path='/options' element={<PageOptions />} />
         <Route path='/send' element={<PageSend/>} />
         <Route path='/menu' element={<PageMenu />} />
+        <Route path='/sendedform' element={<PageSendedForm/>} />
       </Routes>
     );
     
