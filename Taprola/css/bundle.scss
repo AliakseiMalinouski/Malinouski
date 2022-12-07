@@ -521,6 +521,13 @@ $bold: 600;
     padding-bottom: 30px;
     border-radius: 30px;
     animation: options 1s linear;
+    .BackToTaprolaOptions {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
     .Illustration {
         position: relative;
         padding-left: 20px;
@@ -575,6 +582,35 @@ $bold: 600;
             transition: 0.5s;
             color: #0000CD;
         }
+        .WrapperQuesOptions {
+            display: flex;
+            padding-left: 3px;
+            align-items: center;
+            .QuestionOptions {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .SendIconOptions {
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin-top: 20px;
+            margin-right: 13px;
+        }
+
+        .QuestionOptions:hover {
+            transition: 0.5s;
+            color: #0000CD;
+        }
+        }
+        
     }
     .AboutTaprolaParagraph {
         margin-top: 20px;

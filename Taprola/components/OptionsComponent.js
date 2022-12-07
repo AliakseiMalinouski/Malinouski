@@ -4,7 +4,9 @@ import MobileIcon from '../json/icon-modileopt.json';
 import QuestionIcon from '../json/icon-question.json';
 import HowDoThisIcon from '../json/icon-how-do-this.json';
 import SmileIcon from '../json/icon-smile.json';
-
+import { NavLink } from 'react-router-dom';
+import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+import SendIcon from '../json/send-icon.json';
 
 class Options extends React.PureComponent {
     static propTypes = {
@@ -156,7 +158,13 @@ class Options extends React.PureComponent {
             <div className='WrapperCatigories'>
                 <div onClick={this.getDataAboutTaprola} className='AboutTaprola'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={QuestionIcon} />About Taprola</div>
                 <div onClick={this.getDataHowToUse} className='HowToUse'><img style={{ width: '40px', height: '40px', marginRight: '15px' }} src={HowDoThisIcon} />How to use</div>
-            </div>
+                <div className='WrapperQuesOptions'>
+                    <img src={SendIcon} className='SendIconOptions' alt='Send'/><NavLink className='QuestionOptions' to='/send'>Question?</NavLink>
+                </div>
+                </div>
+                <div>
+                    <NavLink to='/taprola'><img className='BackToTaprolaOptions' src={BackToTaprolaIcon} alt='Return image'/></NavLink>
+                </div>
         </div>
         }
     }
