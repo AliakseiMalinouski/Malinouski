@@ -78,7 +78,11 @@ export const Send = () => {
 
     if (messageComplete.workMode == 1) {
         return (
-            <div>...loading</div>
+            <div className='WrapperLoadingSend'>
+                <div className='LoadingSendMessage'>
+                    <span className='LoadingSend'>Wait a moment, please...</span>
+                </div>
+            </div>
         )
     }
 

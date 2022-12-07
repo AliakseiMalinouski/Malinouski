@@ -1018,5 +1018,33 @@ body {
   to {
     transform: scale(1);
     opacity: 1; } }
+.WrapperLoadingSend {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 30px; }
+  .WrapperLoadingSend .LoadingSendMessage {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: loadsend 1s linear; }
+    .WrapperLoadingSend .LoadingSendMessage .LoadingSend {
+      font-size: 18px;
+      font-weight: bold;
+      animation: textload 2s infinite linear; }
+@keyframes textload {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes loadsend {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=bundle.css.map */
