@@ -162,6 +162,7 @@ class Options extends React.PureComponent {
                     <img src={SendIcon} className='SendIconOptions' alt='Send'/><NavLink className='QuestionOptions' to='/send'>Question?</NavLink>
                 </div>
                 </div>
+                <div className='Line'></div>
                 <div>
                     <NavLink to='/taprola'><img className='BackToTaprolaOptions' src={BackToTaprolaIcon} alt='Return image'/></NavLink>
                 </div>
