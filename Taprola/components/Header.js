@@ -14,21 +14,7 @@ export const Header = () => {
 
     const page = params.pathname;
 
-    if (page !== _END) {
-        return (
-        <div className='Header' style={{backgroundColor: '#333'}}>
-            <img src={Logo} alt='Logo' className='LogoTaprola'/>
-            <div className='NavLinks'>
-                <NavLink style={{color: 'white'}} to='/'>Intrudaction</NavLink>
-                <NavLink style={{color: 'white'}} to='/taprola'>Taprola</NavLink>
-                <NavLink style={{color: 'white'}} to='/menu'>Menu</NavLink>
-                <NavLink style={{color: 'white'}} to='/options'>Options</NavLink>
-            </div>
-        </div>
-    )
-    }
-    else {
-        return (
+    return (
             <div className='Header' style={{ backgroundColor: '#333' }}>
             <img src={Logo} alt='Logo' className='LogoTaprola'/>
             <div className='NavLinks'>
@@ -36,8 +22,8 @@ export const Header = () => {
                 <NavLink style={{color: 'white'}} to='/taprola'>Options</NavLink>
                 <NavLink style={{color: 'white'}} to='/menu'>Menu</NavLink>
                 <NavLink style={{color: 'white'}} to='/options'>Options</NavLink>
+                <NavLink style={{color: 'white'}} to='/send'>Contacts</NavLink>
             </div>
         </div>
     )
-    }
 } 
