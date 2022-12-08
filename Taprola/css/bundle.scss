@@ -477,8 +477,9 @@ $bold: 600;
                 color: white;
                 margin-bottom: 25px;
             }
+
     
-            .UnderTitleMakeItEasy {
+            .UnderTitle {
                 font-size: 18px;
                 color: white;
                 font-weight: $medium;
@@ -492,57 +493,15 @@ $bold: 600;
                     height: 30px;
                 }
             }
-    
-            .ParagraphAboutCreate {
+
+            .Paragraph {
                 line-height: 25px;
                 padding-left: 40px;
                 color: #999;
                 margin-bottom: 20px;
             }
     
-            .UnderTitleEdit {
-                font-size: 18px;
-                color: white;
-                font-weight: $medium;
-                display: flex;
-                align-items: center;
-                margin-bottom: 5px;
-    
-                img {
-                    margin-right: 10px;
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-    
-            .ParagraphAboutEdit {
-                line-height: 25px;
-                padding-left: 40px;
-                color: #999;
-                margin-bottom: 20px;
-            }
-    
-            .UnderTitlePalette {
-                font-size: 18px;
-                color: white;
-                font-weight: $medium;
-                display: flex;
-                align-items: center;
-                margin-bottom: 5px;
-    
-                img {
-                    margin-right: 10px;
-                    width: 30px;
-                    height: 30px;
-                }
-            }
-    
-            .ParagraphAboutPallete {
-                line-height: 25px;
-                padding-left: 40px;
-                color: #999;
-                margin-bottom: 20px;
-            }
+            
     
             .ButtonStartWork {
                 display: block;

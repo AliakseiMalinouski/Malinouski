@@ -1,38 +1,48 @@
 import React, { PureComponent } from 'react';
-import PropTypes, { element } from 'prop-types';
+import { useState , useEffect} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import CreateIcon from '../json/icon-create.json';
-import BucketIcon from '../json/icon-bucket.json';
-import IconEdit from '../json/icon-edit.json';
-import IconPallete from '../json/icon-pallete.json';
-import MenuIcon from '../json/menu-icon.json';
-import LanguageIcon from '../json/icon-language.json';
-import OptionsIcon from '../json/icon-options.json';
-import SendIcon from '../json/send-icon.json';
 
-class Intrudaction extends PureComponent {
-    
-    render() {
-        return <div className='WrapperWelcomeAlert'>
+import { IntrudactionList } from './IntrudactionListComponent';
+
+const baseArray = [
+    {"code": 1, "image": "./img/iconcreatetoeasy.png", "title": "Make it easy", "paragraph": "To create a element, simply click on the 'Add new item' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle"},
+    {"code": 2, "image": "./img/icon-edit.png", "title": "Change it", "paragraph": "To change element information, click on the 'Edit item' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle" },
+    {"code": 3, "image": "../img/bucket.png", "title": "Delete it easy", "paragraph": "To create a element, simply click on the 'Add new item' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle"},
+    {"code": 4, "image": "./img/color-ico.png", "title": "A varied palette", "paragraph": "To change the colour of the header, click on the 'colour palette' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle"},
+    {"code": 5, "image": "../img/menu.png", "title": "Different categories", "paragraph": "Before you start with Taprola, familiarise yourself with the categories, click on 'Categories' to do so", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle"},
+    {"code": 6, "image": "../img/language-icon.png", "title": "Change the language", "paragraph": "To change the language, press the 'Planets' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle"},
+    {"code": 7, "image": "../img/spam.png", "title": "Ask a question", "paragraph": "To ask us a question, click on the 'Letter' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle" },
+    {"code": 8, "image": "./img/options-icon.png", "title": "Options", "paragraph": "To access the settings, press the 'Gears' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle"}
+]
+
+export const Intrudaction = () => {
+
+    const [listArray, setListArray] = useState([]);
+
+    useEffect(() => {
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/5373be1277141069e4b420f55c1c68ea/raw/85daa398d6f7dc955b75261e2e867c66cbfa2832/IntrudactionListTaprola", { method: 'get' })
+            .then(response => {
+                if (!response.ok) {
+                alert("Error")
+                }
+                else {
+                    return response.json();
+                }
+            })
+            .then(data => {
+                console.log(data)
+                setListArray(data);
+        })
+    }, [])
+
+    return (
+        <div className='WrapperWelcomeAlert'>
             <h2 className='TitleWelcome'>Meet the Taprola!</h2>
-            <h4 className='UnderTitleMakeItEasy'><img src={CreateIcon} alt='Pencil' /> Make it easy</h4>
-            <p className='ParagraphAboutCreate'>To create a element, simply click on the "Add new item" button</p>
-            <h4 className='UnderTitleEdit'><img src={IconEdit} alt='Arrows' /> Change it</h4>
-            <p className='ParagraphAboutEdit'>To change element information, click on the "Edit item" button</p>
-            <h4 className='UnderTitleMakeItEasy'><img src={BucketIcon} alt='Pencil' /> Delete it easy</h4>
-            <p className='ParagraphAboutCreate'>To delete an item, press the "bucket" button</p>
-            <h4 className='UnderTitlePalette'><img src={IconPallete} /> A varied palette</h4>
-            <p className='ParagraphAboutPallete'>To change the colour of the header, click on the "colour palette" button</p>
-            <h4 className='UnderTitlePalette'><img src={MenuIcon} /> Different categories</h4>
-            <p className='ParagraphAboutPallete'>Before you start with Taprola, familiarise yourself with the categories, click on "Categories" to do so</p>
-            <h4 className='UnderTitlePalette'><img src={LanguageIcon} /> Change the language</h4>
-            <p className='ParagraphAboutPallete'>To change the language, press the "Planets" button</p>
-            <h4 className='UnderTitlePalette'><img src={SendIcon} /> Ask a question</h4>
-            <p className='ParagraphAboutPallete'>To ask us a question, click on the "Letter" button</p>
-            <h4 className='UnderTitlePalette'><img src={OptionsIcon} /> Options</h4>
-            <p className='ParagraphAboutPallete'>To access the settings, press the "Gears" button</p>
-            <NavLink className='ButtonStartWork' to="/taprola">Get to work</NavLink>
+        {
+            listArray.map(e => <IntrudactionList key={e.code} image={e.image} title={e.title} paragraph={e.paragraph} classNameParagraph={e.classNameParagraph} classNameTitle={e.classNameTitle} />)
+        }
+        <NavLink className='ButtonStartWork' to="/taprola">Get to work</NavLink>
         </div>
-    }
+    )
 }
-export default Intrudaction;

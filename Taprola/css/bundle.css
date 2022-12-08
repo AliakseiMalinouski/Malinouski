@@ -353,50 +353,18 @@ body {
       font-size: 42px;
       color: white;
       margin-bottom: 25px; }
-    .WrapperContent .WrapperWelcomeAlert .UnderTitleMakeItEasy {
+    .WrapperContent .WrapperWelcomeAlert .UnderTitle {
       font-size: 18px;
       color: white;
       font-weight: 500;
       display: flex;
       align-items: center;
       margin-bottom: 5px; }
-      .WrapperContent .WrapperWelcomeAlert .UnderTitleMakeItEasy img {
+      .WrapperContent .WrapperWelcomeAlert .UnderTitle img {
         margin-right: 10px;
         width: 30px;
         height: 30px; }
-    .WrapperContent .WrapperWelcomeAlert .ParagraphAboutCreate {
-      line-height: 25px;
-      padding-left: 40px;
-      color: #999;
-      margin-bottom: 20px; }
-    .WrapperContent .WrapperWelcomeAlert .UnderTitleEdit {
-      font-size: 18px;
-      color: white;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      margin-bottom: 5px; }
-      .WrapperContent .WrapperWelcomeAlert .UnderTitleEdit img {
-        margin-right: 10px;
-        width: 30px;
-        height: 30px; }
-    .WrapperContent .WrapperWelcomeAlert .ParagraphAboutEdit {
-      line-height: 25px;
-      padding-left: 40px;
-      color: #999;
-      margin-bottom: 20px; }
-    .WrapperContent .WrapperWelcomeAlert .UnderTitlePalette {
-      font-size: 18px;
-      color: white;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      margin-bottom: 5px; }
-      .WrapperContent .WrapperWelcomeAlert .UnderTitlePalette img {
-        margin-right: 10px;
-        width: 30px;
-        height: 30px; }
-    .WrapperContent .WrapperWelcomeAlert .ParagraphAboutPallete {
+    .WrapperContent .WrapperWelcomeAlert .Paragraph {
       line-height: 25px;
       padding-left: 40px;
       color: #999;
