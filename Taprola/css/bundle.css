@@ -1113,7 +1113,8 @@ body {
       .WrapperHeader .Header .NavLinks a {
         text-decoration: none;
         font-weight: bold;
-        font-size: 18px; }
+        font-size: 18px;
+        color: white; }
 @keyframes head {
   from {
     opacity: 0; }
