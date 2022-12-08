@@ -18,11 +18,11 @@ export const Header = () => {
             <div className='Header' style={{ backgroundColor: '#333' }}>
             <img src={Logo} alt='Logo' className='LogoTaprola'/>
             <div className='NavLinks'>
-                <NavLink className='NavLink' to='/'>Intrudaction</NavLink>
-                <NavLink className='NavLink' to='/taprola'>Taprola</NavLink>
-                <NavLink className='NavLink' to='/menu'>Menu</NavLink>
-                <NavLink className='NavLink' to='/options'>Options</NavLink>
-                <NavLink className='NavLink' to='/send'>Contacts</NavLink>
+                <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Intrudaction</NavLink>
+                <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)}>Taprola</NavLink>
+                <NavLink className='NavLink' to='/menu' style={(page == '/menu' ? {color: 'red'} : null)}>Menu</NavLink>
+                <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)}>Options</NavLink>
+                <NavLink className='NavLink' to='/send' style={(page == '/send' ? {color: 'red'} : null)}>Contacts</NavLink>
             </div>
         </div>
     )
