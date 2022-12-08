@@ -18,114 +18,116 @@ body {
   height: auto;
   margin: 0 auto; }
 
-.WrapperItems {
-  position: relative;
-  width: 800px;
-  margin: 0 auto;
-  border-radius: 30px;
-  background-color: white;
-  padding-left: 25px;
-  padding-top: 60px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  animation: taprola 1s linear; }
-  .WrapperItems div .ButtonrReturnToIntrudaction {
-    position: absolute;
-    left: 290px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    bottom: 10px; }
-  .WrapperItems div .SendIcon {
-    position: absolute;
-    right: 5px;
-    top: 1px;
-    width: 45px;
-    height: 45px; }
-  .WrapperItems div .ButtonGoToOptions {
-    position: absolute;
-    bottom: 10px;
-    right: 402px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer; }
-  .WrapperItems div .LanguageButtons {
-    margin-top: 40px;
-    margin-left: 15px;
-    cursor: pointer;
-    animation: setLn 1s linear; }
-    .WrapperItems div .LanguageButtons .EN {
-      margin-right: 15px;
-      display: inline-block;
-      border: none;
-      width: 100px;
-      height: 30px;
-      background-color: #E6E6FA;
-      font-size: 15px;
-      border-radius: 6px;
-      font-weight: 500;
+.WrapperContent {
+  padding-top: 100px; }
+  .WrapperContent .WrapperItems {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 60px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    animation: taprola 1s linear; }
+    .WrapperContent .WrapperItems div .ButtonrReturnToIntrudaction {
+      position: absolute;
+      left: 290px;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      bottom: 10px; }
+    .WrapperContent .WrapperItems div .SendIcon {
+      position: absolute;
+      right: 5px;
+      top: 1px;
+      width: 45px;
+      height: 45px; }
+    .WrapperContent .WrapperItems div .ButtonGoToOptions {
+      position: absolute;
+      bottom: 10px;
+      right: 402px;
+      width: 40px;
+      height: 40px;
       cursor: pointer; }
-    .WrapperItems div .LanguageButtons .RU {
-      margin-right: 15px;
-      display: inline-block;
-      border: none;
-      width: 100px;
-      height: 30px;
-      background-color: #E6E6FA;
-      font-size: 15px;
-      border-radius: 6px;
-      font-weight: 500;
-      cursor: pointer; }
-    .WrapperItems div .LanguageButtons button:hover {
-      transition: 0.7;
-      opacity: 0.7;
-      background-color: #00BFFF; }
-    .WrapperItems div .LanguageButtons button {
-      margin-bottom: 10px; }
+    .WrapperContent .WrapperItems div .LanguageButtons {
+      margin-top: 40px;
+      margin-left: 15px;
+      cursor: pointer;
+      animation: setLn 1s linear; }
+      .WrapperContent .WrapperItems div .LanguageButtons .EN {
+        margin-right: 15px;
+        display: inline-block;
+        border: none;
+        width: 100px;
+        height: 30px;
+        background-color: #E6E6FA;
+        font-size: 15px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer; }
+      .WrapperContent .WrapperItems div .LanguageButtons .RU {
+        margin-right: 15px;
+        display: inline-block;
+        border: none;
+        width: 100px;
+        height: 30px;
+        background-color: #E6E6FA;
+        font-size: 15px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer; }
+      .WrapperContent .WrapperItems div .LanguageButtons button:hover {
+        transition: 0.7;
+        opacity: 0.7;
+        background-color: #00BFFF; }
+      .WrapperContent .WrapperItems div .LanguageButtons button {
+        margin-bottom: 10px; }
 @keyframes setLn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-  .WrapperItems div .LanguageButton {
-    position: absolute;
-    bottom: 13px;
-    right: 342px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer; }
-  .WrapperItems div .ButtonGoToMenu {
-    position: absolute;
-    bottom: 11px;
-    width: 38px;
-    height: 38px;
-    right: 275px; }
-  .WrapperItems div .Item {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-size: 18px;
-    height: 50px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px; }
-    .WrapperItems div .Item .ItemChoice {
-      display: flex;
-      justify-content: center;
-      width: 250px;
+    .WrapperContent .WrapperItems div .LanguageButton {
+      position: absolute;
+      bottom: 13px;
+      right: 342px;
+      width: 35px;
+      height: 35px;
+      cursor: pointer; }
+    .WrapperContent .WrapperItems div .ButtonGoToMenu {
+      position: absolute;
+      bottom: 11px;
+      width: 38px;
+      height: 38px;
+      right: 275px; }
+    .WrapperContent .WrapperItems div .Item {
+      position: relative;
+      margin-top: 20px;
+      margin-left: 10px;
+      font-size: 18px;
       height: 50px;
-      border-radius: 13px;
-      padding-top: 14px;
-      padding-left: 5px;
-      padding-right: 5px;
-      cursor: pointer;
-      -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
-      -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
-      box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38); }
-    .WrapperItems div .Item .AnimationItemChoice {
-      animation: item 1s linear; }
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px; }
+      .WrapperContent .WrapperItems div .Item .ItemChoice {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 50px;
+        border-radius: 13px;
+        padding-top: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+        -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+        box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38); }
+      .WrapperContent .WrapperItems div .Item .AnimationItemChoice {
+        animation: item 1s linear; }
 @keyframes item {
   from {
     background-color: white;
@@ -133,53 +135,53 @@ body {
   to {
     background-color: #00CED1;
     opacity: 1; } }
-    .WrapperItems div .Item .Remains {
-      width: auto;
-      height: auto;
+      .WrapperContent .WrapperItems div .Item .Remains {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 120px;
+        padding-top: 7px;
+        font-weight: 500;
+        font-size: 20px; }
+      .WrapperContent .WrapperItems div .Item .WrapIconWaste {
+        position: relative;
+        padding-top: 5px;
+        width: 30%; }
+    .WrapperContent .WrapperItems div .Title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 90px;
+      font-size: 40px; }
+    .WrapperContent .WrapperItems div .IconChangeColor {
+      width: 30px;
+      height: 30px;
       position: absolute;
-      right: 120px;
-      padding-top: 7px;
-      font-weight: 500;
-      font-size: 20px; }
-    .WrapperItems div .Item .WrapIconWaste {
-      position: relative;
-      padding-top: 5px;
-      width: 30%; }
-  .WrapperItems div .Title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 90px;
-    font-size: 40px; }
-  .WrapperItems div .IconChangeColor {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    cursor: pointer; }
-  .WrapperItems div .ColorInputDiv {
-    position: absolute;
-    top: 15px;
-    right: 240px;
-    animation: color 1s linear; }
-    .WrapperItems div .ColorInputDiv input {
-      width: 200px;
-      margin-right: 10px;
-      border: none;
-      background-color: #E6E6FA;
-      height: 25px;
-      border-radius: 3px;
-      padding-left: 5px; }
-    .WrapperItems div .ColorInputDiv button {
-      border: none;
-      cursor: pointer;
-      background-color: lime;
-      color: black;
-      padding-left: 6px;
-      padding-top: 3px;
-      padding-right: 6px;
-      padding-bottom: 3px;
-      border-radius: 5px; }
+      top: 5px;
+      left: 10px;
+      cursor: pointer; }
+    .WrapperContent .WrapperItems div .ColorInputDiv {
+      position: absolute;
+      top: 15px;
+      right: 240px;
+      animation: color 1s linear; }
+      .WrapperContent .WrapperItems div .ColorInputDiv input {
+        width: 200px;
+        margin-right: 10px;
+        border: none;
+        background-color: #E6E6FA;
+        height: 25px;
+        border-radius: 3px;
+        padding-left: 5px; }
+      .WrapperContent .WrapperItems div .ColorInputDiv button {
+        border: none;
+        cursor: pointer;
+        background-color: lime;
+        color: black;
+        padding-left: 6px;
+        padding-top: 3px;
+        padding-right: 6px;
+        padding-bottom: 3px;
+        border-radius: 5px; }
 @keyframes color {
   from {
     opacity: 0;
@@ -187,86 +189,86 @@ body {
   to {
     opacity: 1;
     transform: scale(1); } }
-  .WrapperItems div .Icon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 70px;
-    right: 280px; }
-  .WrapperItems div .Quanlity {
-    position: absolute;
-    top: 130px;
-    right: 145px;
-    font-weight: 600;
-    font-size: 20px; }
-  .WrapperItems div .Name {
-    position: absolute;
-    top: 130px;
-    left: 40px;
-    font-weight: 600;
-    font-size: 20px; }
-  .WrapperItems div .ButtonCreateFormNewItem {
-    display: inline-block;
-    margin-top: 15px;
-    border: none;
-    margin-left: 15px;
-    width: 100px;
-    height: 30px;
-    background-color: #E6E6FA;
-    font-size: 15px;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer; }
-  .WrapperItems div .ButtonCreateFormNewItem:hover {
-    transition: 1s;
-    color: black;
-    background-color: #87CEEB; }
-  .WrapperItems div .EditItemButton {
-    display: inline-block;
-    margin-top: 15px;
-    border: none;
-    margin-left: 15px;
-    width: 100px;
-    height: 30px;
-    background-color: #E6E6FA;
-    font-size: 15px;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer; }
-  .WrapperItems div .WrapFormNewItem {
-    margin-top: 25px;
-    margin-left: 50px;
-    animation: newItem 1s linear; }
-    .WrapperItems div .WrapFormNewItem .TitleNewItem {
-      margin-bottom: 25px; }
-    .WrapperItems div .WrapFormNewItem .InputNewItem {
-      border: none;
-      display: block;
-      background-color: #E6E6FA;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 200px;
+    .WrapperContent .WrapperItems div .Icon {
+      width: 30px;
       height: 30px;
-      padding-left: 15px;
-      color: #191970; }
-    .WrapperItems div .WrapFormNewItem .InputNewItem:focus {
-      outline: none;
-      outline-offset: none; }
-    .WrapperItems div .WrapFormNewItem .ButtonAddNewItem {
-      display: block;
+      position: absolute;
+      top: 70px;
+      right: 280px; }
+    .WrapperContent .WrapperItems div .Quanlity {
+      position: absolute;
+      top: 130px;
+      right: 145px;
+      font-weight: 600;
+      font-size: 20px; }
+    .WrapperContent .WrapperItems div .Name {
+      position: absolute;
+      top: 130px;
+      left: 40px;
+      font-weight: 600;
+      font-size: 20px; }
+    .WrapperContent .WrapperItems div .ButtonCreateFormNewItem {
+      display: inline-block;
       margin-top: 15px;
       border: none;
-      margin-left: 45px;
+      margin-left: 15px;
       width: 100px;
       height: 30px;
-      background-color: lime;
+      background-color: #E6E6FA;
       font-size: 15px;
       border-radius: 6px;
       font-weight: 500;
       cursor: pointer; }
-    .WrapperItems div .WrapFormNewItem .ButtonAddNewItem:hover {
-      transition: 1.5s;
-      opacity: 0.6; }
+    .WrapperContent .WrapperItems div .ButtonCreateFormNewItem:hover {
+      transition: 1s;
+      color: black;
+      background-color: #87CEEB; }
+    .WrapperContent .WrapperItems div .EditItemButton {
+      display: inline-block;
+      margin-top: 15px;
+      border: none;
+      margin-left: 15px;
+      width: 100px;
+      height: 30px;
+      background-color: #E6E6FA;
+      font-size: 15px;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer; }
+    .WrapperContent .WrapperItems div .WrapFormNewItem {
+      margin-top: 25px;
+      margin-left: 50px;
+      animation: newItem 1s linear; }
+      .WrapperContent .WrapperItems div .WrapFormNewItem .TitleNewItem {
+        margin-bottom: 25px; }
+      .WrapperContent .WrapperItems div .WrapFormNewItem .InputNewItem {
+        border: none;
+        display: block;
+        background-color: #E6E6FA;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 30px;
+        padding-left: 15px;
+        color: #191970; }
+      .WrapperContent .WrapperItems div .WrapFormNewItem .InputNewItem:focus {
+        outline: none;
+        outline-offset: none; }
+      .WrapperContent .WrapperItems div .WrapFormNewItem .ButtonAddNewItem {
+        display: block;
+        margin-top: 15px;
+        border: none;
+        margin-left: 45px;
+        width: 100px;
+        height: 30px;
+        background-color: lime;
+        font-size: 15px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer; }
+      .WrapperContent .WrapperItems div .WrapFormNewItem .ButtonAddNewItem:hover {
+        transition: 1.5s;
+        opacity: 0.6; }
 @keyframes newItem {
   from {
     opacity: 0;
@@ -274,47 +276,47 @@ body {
   to {
     opacity: 1;
     filter: none; } }
-  .WrapperItems div .WrapEditing {
-    margin-top: 25px;
-    margin-left: 50px;
-    animation: editing 1s linear; }
-    .WrapperItems div .WrapEditing .TitleEditingItem {
-      margin-bottom: 25px; }
-    .WrapperItems div .WrapEditing .EditingNameItem {
-      border: none;
-      display: block;
-      background-color: #E6E6FA;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 200px;
-      height: 30px;
-      padding-left: 15px;
-      color: #191970; }
-    .WrapperItems div .WrapEditing .EditingNameItem:focus {
-      outline: none;
-      outline-offset: none; }
-    .WrapperItems div .WrapEditing .EditingRemainsItem {
-      border: none;
-      display: block;
-      background-color: #E6E6FA;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 200px;
-      height: 30px;
-      padding-left: 15px;
-      color: #191970; }
-    .WrapperItems div .WrapEditing .PushEditButton {
-      display: block;
-      margin-top: 15px;
-      border: none;
-      margin-left: 45px;
-      width: 100px;
-      height: 30px;
-      background-color: lime;
-      font-size: 15px;
-      border-radius: 6px;
-      font-weight: 500;
-      cursor: pointer; }
+    .WrapperContent .WrapperItems div .WrapEditing {
+      margin-top: 25px;
+      margin-left: 50px;
+      animation: editing 1s linear; }
+      .WrapperContent .WrapperItems div .WrapEditing .TitleEditingItem {
+        margin-bottom: 25px; }
+      .WrapperContent .WrapperItems div .WrapEditing .EditingNameItem {
+        border: none;
+        display: block;
+        background-color: #E6E6FA;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 30px;
+        padding-left: 15px;
+        color: #191970; }
+      .WrapperContent .WrapperItems div .WrapEditing .EditingNameItem:focus {
+        outline: none;
+        outline-offset: none; }
+      .WrapperContent .WrapperItems div .WrapEditing .EditingRemainsItem {
+        border: none;
+        display: block;
+        background-color: #E6E6FA;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 30px;
+        padding-left: 15px;
+        color: #191970; }
+      .WrapperContent .WrapperItems div .WrapEditing .PushEditButton {
+        display: block;
+        margin-top: 15px;
+        border: none;
+        margin-left: 45px;
+        width: 100px;
+        height: 30px;
+        background-color: lime;
+        font-size: 15px;
+        border-radius: 6px;
+        font-weight: 500;
+        cursor: pointer; }
 @keyframes editing {
   from {
     opacity: 0;
@@ -327,577 +329,575 @@ body {
     opacity: 0.2; }
   to {
     opacity: 1; } }
-.WrapperWelcomeAlert {
-  position: relative;
-  background-color: white;
-  min-height: 600px;
-  width: 360px;
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-top: 30px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  border-radius: 30px;
-  background-color: #333;
-  animation: welcomealert 1s linear; }
-  .WrapperWelcomeAlert .TitleWelcome {
-    width: 100%;
-    text-align: center;
-    font-size: 42px;
-    color: white;
-    margin-bottom: 25px; }
-  .WrapperWelcomeAlert .UnderTitleMakeItEasy {
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px; }
-    .WrapperWelcomeAlert .UnderTitleMakeItEasy img {
-      margin-right: 10px;
-      width: 30px;
-      height: 30px; }
-  .WrapperWelcomeAlert .ParagraphAboutCreate {
-    line-height: 25px;
-    padding-left: 40px;
-    color: #999;
-    margin-bottom: 20px; }
-  .WrapperWelcomeAlert .UnderTitleEdit {
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px; }
-    .WrapperWelcomeAlert .UnderTitleEdit img {
-      margin-right: 10px;
-      width: 30px;
-      height: 30px; }
-  .WrapperWelcomeAlert .ParagraphAboutEdit {
-    line-height: 25px;
-    padding-left: 40px;
-    color: #999;
-    margin-bottom: 20px; }
-  .WrapperWelcomeAlert .UnderTitlePalette {
-    font-size: 18px;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px; }
-    .WrapperWelcomeAlert .UnderTitlePalette img {
-      margin-right: 10px;
-      width: 30px;
-      height: 30px; }
-  .WrapperWelcomeAlert .ParagraphAboutPallete {
-    line-height: 25px;
-    padding-left: 40px;
-    color: #999;
-    margin-bottom: 20px; }
-  .WrapperWelcomeAlert .ButtonStartWork {
-    border: none;
-    cursor: pointer;
-    background-color: #0983ff;
-    color: white;
-    width: 200px;
-    border-radius: 40px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: 500;
-    padding-left: 55px;
-    padding-top: 10px;
-    margin-left: 54px;
-    margin-top: 35px;
-    padding-right: 55px;
-    padding-bottom: 10px;
-    text-decoration: none; }
-  .WrapperWelcomeAlert .ButtonStartWork:hover {
-    transition: 1s;
-    opacity: 0.5;
+  .WrapperContent .WrapperWelcomeAlert {
+    position: relative;
     background-color: white;
-    color: black; }
-
+    min-height: 600px;
+    width: 360px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    background-color: #333;
+    animation: welcomealert 1s linear; }
+    .WrapperContent .WrapperWelcomeAlert .TitleWelcome {
+      width: 100%;
+      text-align: center;
+      font-size: 42px;
+      color: white;
+      margin-bottom: 25px; }
+    .WrapperContent .WrapperWelcomeAlert .UnderTitleMakeItEasy {
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px; }
+      .WrapperContent .WrapperWelcomeAlert .UnderTitleMakeItEasy img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px; }
+    .WrapperContent .WrapperWelcomeAlert .ParagraphAboutCreate {
+      line-height: 25px;
+      padding-left: 40px;
+      color: #999;
+      margin-bottom: 20px; }
+    .WrapperContent .WrapperWelcomeAlert .UnderTitleEdit {
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px; }
+      .WrapperContent .WrapperWelcomeAlert .UnderTitleEdit img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px; }
+    .WrapperContent .WrapperWelcomeAlert .ParagraphAboutEdit {
+      line-height: 25px;
+      padding-left: 40px;
+      color: #999;
+      margin-bottom: 20px; }
+    .WrapperContent .WrapperWelcomeAlert .UnderTitlePalette {
+      font-size: 18px;
+      color: white;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px; }
+      .WrapperContent .WrapperWelcomeAlert .UnderTitlePalette img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px; }
+    .WrapperContent .WrapperWelcomeAlert .ParagraphAboutPallete {
+      line-height: 25px;
+      padding-left: 40px;
+      color: #999;
+      margin-bottom: 20px; }
+    .WrapperContent .WrapperWelcomeAlert .ButtonStartWork {
+      border: none;
+      cursor: pointer;
+      background-color: #0983ff;
+      color: white;
+      width: 200px;
+      border-radius: 40px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      padding-left: 55px;
+      padding-top: 10px;
+      margin-left: 54px;
+      margin-top: 35px;
+      padding-right: 55px;
+      padding-bottom: 10px;
+      text-decoration: none; }
+    .WrapperContent .WrapperWelcomeAlert .ButtonStartWork:hover {
+      transition: 1s;
+      opacity: 0.5;
+      background-color: white;
+      color: black; }
 @keyframes welcomealert {
   from {
     opacity: 0.2; }
   to {
     opacity: 1; } }
-.WrapperOptions {
-  position: relative;
-  background-color: white;
-  min-height: 500px;
-  width: 360px;
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-top: 30px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  border-radius: 30px;
-  animation: options 1s linear; }
-  .WrapperOptions .BackToTaprolaOptions {
-    width: 40px;
-    height: 40px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px; }
-  .WrapperOptions .Line {
-    width: 95%;
-    height: 5px;
-    border-radius: 15px;
-    margin: 0 auto;
-    background-color: #E6E6FA;
-    margin-top: 50px;
-    margin-bottom: 70px; }
-  .WrapperOptions .Illustration {
+  .WrapperContent .WrapperOptions {
     position: relative;
-    padding-left: 20px;
-    width: 100%;
-    height: 70px;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 10px;
-    background: #833ab4;
-    background: linear-gradient(90deg, #833ab4 0%, #d45a5a 50%, #fcb045 100%); }
-    .WrapperOptions .Illustration h3 {
-      font-size: 21px;
-      color: black;
-      font-weight: 400; }
-      .WrapperOptions .Illustration h3 span {
-        font-size: 35px;
-        margin-left: 20px;
-        font-weight: bold;
-        color: white; }
-    .WrapperOptions .Illustration img {
+    background-color: white;
+    min-height: 500px;
+    width: 360px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    animation: options 1s linear; }
+    .WrapperContent .WrapperOptions .BackToTaprolaOptions {
       width: 40px;
       height: 40px;
-      position: absolute;
-      top: 20px;
-      right: 40px; }
-  .WrapperOptions .WrapperCatigories {
-    margin-top: 40px; }
-    .WrapperOptions .WrapperCatigories .AboutTaprola {
-      display: flex;
-      align-items: center;
-      font-weight: 500;
-      cursor: pointer;
-      font-size: 18px; }
-    .WrapperOptions .WrapperCatigories .AboutTaprola:hover {
-      transition: 0.5s;
-      color: #0000CD; }
-    .WrapperOptions .WrapperCatigories .HowToUse {
-      margin-top: 30px;
-      display: flex;
-      align-items: center;
-      font-weight: 500;
-      cursor: pointer;
-      font-size: 18px; }
-    .WrapperOptions .WrapperCatigories .HowToUse:hover {
-      transition: 0.5s;
-      color: #0000CD; }
-    .WrapperOptions .WrapperCatigories .WrapperQuesOptions {
-      display: flex;
-      padding-left: 3px;
-      align-items: center; }
-      .WrapperOptions .WrapperCatigories .WrapperQuesOptions .QuestionOptions {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px; }
+    .WrapperContent .WrapperOptions .Line {
+      width: 95%;
+      height: 5px;
+      border-radius: 15px;
+      margin: 0 auto;
+      background-color: #E6E6FA;
+      margin-top: 50px;
+      margin-bottom: 70px; }
+    .WrapperContent .WrapperOptions .Illustration {
+      position: relative;
+      padding-left: 20px;
+      width: 100%;
+      height: 70px;
+      font-size: 20px;
+      font-weight: 400;
+      border-radius: 10px;
+      background: #833ab4;
+      background: linear-gradient(90deg, #833ab4 0%, #d45a5a 50%, #fcb045 100%); }
+      .WrapperContent .WrapperOptions .Illustration h3 {
+        font-size: 21px;
+        color: black;
+        font-weight: 400; }
+        .WrapperContent .WrapperOptions .Illustration h3 span {
+          font-size: 35px;
+          margin-left: 20px;
+          font-weight: bold;
+          color: white; }
+      .WrapperContent .WrapperOptions .Illustration img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 40px; }
+    .WrapperContent .WrapperOptions .WrapperCatigories {
+      margin-top: 40px; }
+      .WrapperContent .WrapperOptions .WrapperCatigories .AboutTaprola {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 18px; }
+      .WrapperContent .WrapperOptions .WrapperCatigories .AboutTaprola:hover {
+        transition: 0.5s;
+        color: #0000CD; }
+      .WrapperContent .WrapperOptions .WrapperCatigories .HowToUse {
         margin-top: 30px;
         display: flex;
         align-items: center;
         font-weight: 500;
         cursor: pointer;
-        font-size: 18px;
-        text-decoration: none;
-        color: black; }
-      .WrapperOptions .WrapperCatigories .WrapperQuesOptions .SendIconOptions {
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin-top: 20px;
-        margin-right: 13px; }
-      .WrapperOptions .WrapperCatigories .WrapperQuesOptions .QuestionOptions:hover {
+        font-size: 18px; }
+      .WrapperContent .WrapperOptions .WrapperCatigories .HowToUse:hover {
         transition: 0.5s;
         color: #0000CD; }
-  .WrapperOptions .AboutTaprolaParagraph {
-    margin-top: 20px;
-    line-height: 40px;
-    animation: p 1s linear;
-    font-size: 20px;
-    margin-left: 10px; }
-  .WrapperOptions .AboutHowToUse {
-    margin-top: 20px;
-    line-height: 40px;
-    animation: p 1s linear;
-    font-size: 16px;
-    margin-left: 10px; }
+      .WrapperContent .WrapperOptions .WrapperCatigories .WrapperQuesOptions {
+        display: flex;
+        padding-left: 3px;
+        align-items: center; }
+        .WrapperContent .WrapperOptions .WrapperCatigories .WrapperQuesOptions .QuestionOptions {
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          cursor: pointer;
+          font-size: 18px;
+          text-decoration: none;
+          color: black; }
+        .WrapperContent .WrapperOptions .WrapperCatigories .WrapperQuesOptions .SendIconOptions {
+          width: 40px;
+          height: 40px;
+          display: block;
+          margin-top: 20px;
+          margin-right: 13px; }
+        .WrapperContent .WrapperOptions .WrapperCatigories .WrapperQuesOptions .QuestionOptions:hover {
+          transition: 0.5s;
+          color: #0000CD; }
+    .WrapperContent .WrapperOptions .AboutTaprolaParagraph {
+      margin-top: 20px;
+      line-height: 40px;
+      animation: p 1s linear;
+      font-size: 20px;
+      margin-left: 10px; }
+    .WrapperContent .WrapperOptions .AboutHowToUse {
+      margin-top: 20px;
+      line-height: 40px;
+      animation: p 1s linear;
+      font-size: 16px;
+      margin-left: 10px; }
 @keyframes p {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-  .WrapperOptions .OkayButton {
-    margin: 0 auto;
-    margin-top: 40px;
-    width: 170px;
-    height: 40px;
-    padding-left: 64px;
-    padding-top: 10px;
-    background: #b43aa7;
-    background: linear-gradient(90deg, #b43aa7 0%, #4a48cb 33%, #fc8545 100%);
-    border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    animation: p 1s linear;
-    cursor: pointer; }
-  .WrapperOptions .OkayButton:hover {
-    transition: 0.5s;
-    opacity: 0.7; }
-
+    .WrapperContent .WrapperOptions .OkayButton {
+      margin: 0 auto;
+      margin-top: 40px;
+      width: 170px;
+      height: 40px;
+      padding-left: 64px;
+      padding-top: 10px;
+      background: #b43aa7;
+      background: linear-gradient(90deg, #b43aa7 0%, #4a48cb 33%, #fc8545 100%);
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      animation: p 1s linear;
+      cursor: pointer; }
+    .WrapperContent .WrapperOptions .OkayButton:hover {
+      transition: 0.5s;
+      opacity: 0.7; }
 @keyframes options {
   from {
     opacity: 0.2; }
   to {
     opacity: 1; } }
-.WrapperMenu {
-  position: relative;
-  width: 1200px;
-  margin: 0 auto;
-  border-radius: 30px;
-  background-color: #eef1f0;
-  padding-left: 25px;
-  padding-top: 60px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  animation: menu 1s linear; }
-  .WrapperMenu .Title {
-    width: 100%;
-    text-align: center;
-    font-size: 46px;
-    margin-bottom: 50px; }
-  .WrapperMenu .TitleCategory {
-    width: 100%;
-    text-align: center;
-    font-size: 46px;
-    margin-bottom: 50px;
-    animation: oldTitle 1s linear; }
+  .WrapperContent .WrapperMenu {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #eef1f0;
+    padding-left: 25px;
+    padding-top: 60px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    animation: menu 1s linear; }
+    .WrapperContent .WrapperMenu .Title {
+      width: 100%;
+      text-align: center;
+      font-size: 46px;
+      margin-bottom: 50px; }
+    .WrapperContent .WrapperMenu .TitleCategory {
+      width: 100%;
+      text-align: center;
+      font-size: 46px;
+      margin-bottom: 50px;
+      animation: oldTitle 1s linear; }
 @keyframes oldTitle {
   from {
     padding-top: 50px; }
   to {
     padding-top: 0px; } }
-  .WrapperMenu .AnimTitle {
-    width: 100%;
-    text-align: center;
-    font-size: 46px;
-    margin-bottom: 50px;
-    animation: NewTitle 1s linear;
-    padding-top: 50px; }
+    .WrapperContent .WrapperMenu .AnimTitle {
+      width: 100%;
+      text-align: center;
+      font-size: 46px;
+      margin-bottom: 50px;
+      animation: NewTitle 1s linear;
+      padding-top: 50px; }
 @keyframes NewTitle {
   from {
     padding-top: 0px; }
   to {
     padding-top: 50px; } }
-  .WrapperMenu .search {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 350px;
-    height: 40px;
-    font-size: 24px;
-    padding-left: 20px;
-    border: none; }
-  .WrapperMenu .BackToTaprolaImageButton {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 13px;
-    left: 580px; }
-  .WrapperMenu .WrapperCategories {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    position: relative; }
-    .WrapperMenu .WrapperCategories .ClosedAnimationCategory {
-      animation: closedCategory 0.5s linear; }
+    .WrapperContent .WrapperMenu .search {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      width: 350px;
+      height: 40px;
+      font-size: 24px;
+      padding-left: 20px;
+      border: none; }
+    .WrapperContent .WrapperMenu .BackToTaprolaImageButton {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 13px;
+      left: 580px; }
+    .WrapperContent .WrapperMenu .WrapperCategories {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      position: relative; }
+      .WrapperContent .WrapperMenu .WrapperCategories .ClosedAnimationCategory {
+        animation: closedCategory 0.5s linear; }
 @keyframes closedCategory {
   from {
     transform: rotate(180deg); }
   to {
     transform: rotate(0deg); } }
-    .WrapperMenu .WrapperCategories .Categories {
-      margin-bottom: 40px;
-      cursor: pointer; }
-      .WrapperMenu .WrapperCategories .Categories .Food {
-        position: relative;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        padding-left: 25px;
-        padding-right: 15px; }
-        .WrapperMenu .WrapperCategories .Categories .Food .FirstImage {
-          width: 450px;
-          height: 270px;
-          border-radius: 10px;
-          margin-left: 0px !important; }
-        .WrapperMenu .WrapperCategories .Categories .Food img {
-          width: 200px;
-          height: 150px;
-          border-radius: 10px;
-          margin-bottom: 20px;
-          margin-left: 16px; }
-        .WrapperMenu .WrapperCategories .Categories .Food h3 {
-          font-size: 36px;
-          padding-left: 20px;
-          margin-bottom: 20px; }
-        .WrapperMenu .WrapperCategories .Categories .Food .InfoParagraph {
-          line-height: 35px;
-          font-size: 18px; }
-        .WrapperMenu .WrapperCategories .Categories .Food button {
-          position: absolute;
-          right: 15px;
-          bottom: 15px;
-          width: 100px;
-          height: 30px;
-          border: none;
-          cursor: pointer;
-          background-color: white;
-          border-radius: 13px;
-          font-weight: 500;
-          font-size: 14px; }
-        .WrapperMenu .WrapperCategories .Categories .Food button:hover {
-          transition: 0.5s;
-          opacity: 0.7; }
-      .WrapperMenu .WrapperCategories .Categories .Tasks {
-        position: relative;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        padding-left: 25px;
-        padding-right: 15px; }
-        .WrapperMenu .WrapperCategories .Categories .Tasks .FirstImage {
-          width: 450px;
-          height: 270px;
-          border-radius: 10px;
-          margin-left: 0px !important; }
-        .WrapperMenu .WrapperCategories .Categories .Tasks img {
-          width: 200px;
-          height: 150px;
-          border-radius: 10px;
-          margin-bottom: 20px;
-          margin-left: 16px; }
-        .WrapperMenu .WrapperCategories .Categories .Tasks h3 {
-          font-size: 36px;
-          padding-left: 20px;
-          margin-bottom: 20px; }
-        .WrapperMenu .WrapperCategories .Categories .Tasks .InfoParagraph {
-          line-height: 35px;
-          font-size: 18px; }
-        .WrapperMenu .WrapperCategories .Categories .Tasks button {
-          position: absolute;
-          right: 15px;
-          bottom: 15px;
-          width: 100px;
-          height: 30px;
-          border: none;
-          cursor: pointer;
-          background-color: white;
-          border-radius: 13px;
-          font-weight: 500;
-          font-size: 14px; }
-        .WrapperMenu .WrapperCategories .Categories .Tasks button:hover {
-          transition: 0.5s;
-          opacity: 0.7; }
-      .WrapperMenu .WrapperCategories .Categories .Travel {
-        position: relative;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        padding-left: 25px;
-        padding-right: 15px; }
-        .WrapperMenu .WrapperCategories .Categories .Travel .FirstImage {
-          width: 450px;
-          height: 270px;
-          border-radius: 10px;
-          margin-left: 0px !important; }
-        .WrapperMenu .WrapperCategories .Categories .Travel img {
-          width: 200px;
-          height: 150px;
-          border-radius: 10px;
-          margin-bottom: 20px;
-          margin-left: 16px; }
-        .WrapperMenu .WrapperCategories .Categories .Travel h3 {
-          font-size: 36px;
-          padding-left: 20px;
-          margin-bottom: 20px; }
-        .WrapperMenu .WrapperCategories .Categories .Travel .InfoParagraph {
-          line-height: 35px;
-          font-size: 18px; }
-        .WrapperMenu .WrapperCategories .Categories .Travel button {
-          position: absolute;
-          right: 15px;
-          bottom: 15px;
-          width: 100px;
-          height: 30px;
-          border: none;
-          cursor: pointer;
-          background-color: white;
-          border-radius: 13px;
-          font-weight: 500;
-          font-size: 14px; }
-        .WrapperMenu .WrapperCategories .Categories .Travel button:hover {
-          transition: 0.5s;
-          opacity: 0.7; }
-      .WrapperMenu .WrapperCategories .Categories .Shopping {
-        position: relative;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        padding-left: 25px;
-        padding-right: 15px; }
-        .WrapperMenu .WrapperCategories .Categories .Shopping .FirstImage {
-          width: 450px;
-          height: 270px;
-          border-radius: 10px;
-          margin-left: 0px !important; }
-        .WrapperMenu .WrapperCategories .Categories .Shopping img {
-          width: 200px;
-          height: 150px;
-          border-radius: 10px;
-          margin-bottom: 20px;
-          margin-left: 16px; }
-        .WrapperMenu .WrapperCategories .Categories .Shopping h3 {
-          font-size: 36px;
-          padding-left: 20px;
-          margin-bottom: 20px; }
-        .WrapperMenu .WrapperCategories .Categories .Shopping .InfoParagraph {
-          line-height: 35px;
-          font-size: 18px; }
-        .WrapperMenu .WrapperCategories .Categories .Shopping button {
-          position: absolute;
-          right: 15px;
-          bottom: 15px;
-          width: 100px;
-          height: 30px;
-          border: none;
-          cursor: pointer;
-          background-color: white;
-          border-radius: 13px;
-          font-weight: 500;
-          font-size: 14px; }
-        .WrapperMenu .WrapperCategories .Categories .Shopping button:hover {
-          transition: 0.5s;
-          opacity: 0.7; }
-      .WrapperMenu .WrapperCategories .Categories .Presents {
-        position: relative;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        padding-left: 25px;
-        padding-right: 15px; }
-        .WrapperMenu .WrapperCategories .Categories .Presents .FirstImage {
-          width: 450px;
-          height: 270px;
-          border-radius: 10px;
-          margin-left: 0px !important; }
-        .WrapperMenu .WrapperCategories .Categories .Presents img {
-          width: 200px;
-          height: 150px;
-          border-radius: 10px;
-          margin-bottom: 20px;
-          margin-left: 16px; }
-        .WrapperMenu .WrapperCategories .Categories .Presents h3 {
-          font-size: 36px;
-          padding-left: 20px;
-          margin-bottom: 20px; }
-        .WrapperMenu .WrapperCategories .Categories .Presents .InfoParagraph {
-          line-height: 35px;
-          font-size: 18px; }
-        .WrapperMenu .WrapperCategories .Categories .Presents button {
-          position: absolute;
-          right: 15px;
-          bottom: 15px;
-          width: 100px;
-          height: 30px;
-          border: none;
-          cursor: pointer;
-          background-color: white;
-          border-radius: 13px;
-          font-weight: 500;
-          font-size: 14px; }
-        .WrapperMenu .WrapperCategories .Categories .Presents button:hover {
-          transition: 0.5s;
-          opacity: 0.7; }
-      .WrapperMenu .WrapperCategories .Categories .Cribs {
-        position: relative;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        padding-left: 25px;
-        padding-right: 15px; }
-        .WrapperMenu .WrapperCategories .Categories .Cribs .FirstImage {
-          width: 450px;
-          height: 270px;
-          border-radius: 10px;
-          margin-left: 0px !important; }
-        .WrapperMenu .WrapperCategories .Categories .Cribs img {
-          width: 200px;
-          height: 150px;
-          border-radius: 10px;
-          margin-bottom: 20px;
-          margin-left: 16px; }
-        .WrapperMenu .WrapperCategories .Categories .Cribs h3 {
-          font-size: 36px;
-          padding-left: 20px;
-          margin-bottom: 20px; }
-        .WrapperMenu .WrapperCategories .Categories .Cribs .InfoParagraph {
-          line-height: 35px;
-          font-size: 18px; }
-        .WrapperMenu .WrapperCategories .Categories .Cribs button {
-          position: absolute;
-          right: 15px;
-          bottom: 15px;
-          width: 100px;
-          height: 30px;
-          border: none;
-          cursor: pointer;
-          background-color: white;
-          border-radius: 13px;
-          font-weight: 500;
-          font-size: 14px; }
-        .WrapperMenu .WrapperCategories .Categories .Cribs button:hover {
-          transition: 0.5s;
-          opacity: 0.7; }
-  .WrapperMenu .WrapperGuide {
-    margin-bottom: 100px; }
-    .WrapperMenu .WrapperGuide .Title {
-      width: 100%;
-      text-align: center; }
-    .WrapperMenu .WrapperGuide .GuideCategoryHint {
-      width: 100%;
-      text-align: center;
-      font-size: 36px;
-      margin-top: 50px;
-      animation: hintGuide 1s linear; }
+      .WrapperContent .WrapperMenu .WrapperCategories .Categories {
+        margin-bottom: 40px;
+        cursor: pointer; }
+        .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food {
+          position: relative;
+          padding-top: 30px;
+          padding-bottom: 40px;
+          padding-left: 25px;
+          padding-right: 15px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .FirstImage {
+            width: 450px;
+            height: 270px;
+            border-radius: 10px;
+            margin-left: 0px !important; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 16px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food h3 {
+            font-size: 36px;
+            padding-left: 20px;
+            margin-bottom: 20px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .InfoParagraph {
+            line-height: 35px;
+            font-size: 18px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food button {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 13px;
+            font-weight: 500;
+            font-size: 14px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food button:hover {
+            transition: 0.5s;
+            opacity: 0.7; }
+        .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks {
+          position: relative;
+          padding-top: 30px;
+          padding-bottom: 40px;
+          padding-left: 25px;
+          padding-right: 15px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks .FirstImage {
+            width: 450px;
+            height: 270px;
+            border-radius: 10px;
+            margin-left: 0px !important; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 16px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks h3 {
+            font-size: 36px;
+            padding-left: 20px;
+            margin-bottom: 20px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks .InfoParagraph {
+            line-height: 35px;
+            font-size: 18px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks button {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 13px;
+            font-weight: 500;
+            font-size: 14px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks button:hover {
+            transition: 0.5s;
+            opacity: 0.7; }
+        .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel {
+          position: relative;
+          padding-top: 30px;
+          padding-bottom: 40px;
+          padding-left: 25px;
+          padding-right: 15px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel .FirstImage {
+            width: 450px;
+            height: 270px;
+            border-radius: 10px;
+            margin-left: 0px !important; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 16px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel h3 {
+            font-size: 36px;
+            padding-left: 20px;
+            margin-bottom: 20px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel .InfoParagraph {
+            line-height: 35px;
+            font-size: 18px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel button {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 13px;
+            font-weight: 500;
+            font-size: 14px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel button:hover {
+            transition: 0.5s;
+            opacity: 0.7; }
+        .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping {
+          position: relative;
+          padding-top: 30px;
+          padding-bottom: 40px;
+          padding-left: 25px;
+          padding-right: 15px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping .FirstImage {
+            width: 450px;
+            height: 270px;
+            border-radius: 10px;
+            margin-left: 0px !important; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 16px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping h3 {
+            font-size: 36px;
+            padding-left: 20px;
+            margin-bottom: 20px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping .InfoParagraph {
+            line-height: 35px;
+            font-size: 18px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping button {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 13px;
+            font-weight: 500;
+            font-size: 14px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping button:hover {
+            transition: 0.5s;
+            opacity: 0.7; }
+        .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents {
+          position: relative;
+          padding-top: 30px;
+          padding-bottom: 40px;
+          padding-left: 25px;
+          padding-right: 15px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents .FirstImage {
+            width: 450px;
+            height: 270px;
+            border-radius: 10px;
+            margin-left: 0px !important; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 16px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents h3 {
+            font-size: 36px;
+            padding-left: 20px;
+            margin-bottom: 20px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents .InfoParagraph {
+            line-height: 35px;
+            font-size: 18px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents button {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 13px;
+            font-weight: 500;
+            font-size: 14px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents button:hover {
+            transition: 0.5s;
+            opacity: 0.7; }
+        .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs {
+          position: relative;
+          padding-top: 30px;
+          padding-bottom: 40px;
+          padding-left: 25px;
+          padding-right: 15px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs .FirstImage {
+            width: 450px;
+            height: 270px;
+            border-radius: 10px;
+            margin-left: 0px !important; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 16px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs h3 {
+            font-size: 36px;
+            padding-left: 20px;
+            margin-bottom: 20px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs .InfoParagraph {
+            line-height: 35px;
+            font-size: 18px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs button {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+            border-radius: 13px;
+            font-weight: 500;
+            font-size: 14px; }
+          .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs button:hover {
+            transition: 0.5s;
+            opacity: 0.7; }
+    .WrapperContent .WrapperMenu .WrapperGuide {
+      margin-bottom: 100px; }
+      .WrapperContent .WrapperMenu .WrapperGuide .Title {
+        width: 100%;
+        text-align: center; }
+      .WrapperContent .WrapperMenu .WrapperGuide .GuideCategoryHint {
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+        animation: hintGuide 1s linear; }
 @keyframes hintGuide {
   from {
     opacity: 0.1; }
   to {
     opacity: 1; } }
-    .WrapperMenu .WrapperGuide .ButtonGetInfoCategory {
-      display: block;
-      margin: 0 auto;
-      width: 300px;
-      height: 35px;
-      border: none;
-      cursor: pointer;
-      background-color: #6950dd;
-      border-radius: 13px;
-      color: white;
-      font-size: 18px;
-      text-transform: uppercase; }
-    .WrapperMenu .WrapperGuide .ButtonGetInfoCategory:hover {
-      transition: 1s;
-      opacity: 0.7; }
-    .WrapperMenu .WrapperGuide .InformationCategory {
-      width: 100%;
-      font-size: 24px;
-      line-height: 40px;
-      padding-left: 5px; }
-    .WrapperMenu .WrapperGuide .AnimationInfoCategory {
-      animation: info 1s linear; }
+      .WrapperContent .WrapperMenu .WrapperGuide .ButtonGetInfoCategory {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 35px;
+        border: none;
+        cursor: pointer;
+        background-color: #6950dd;
+        border-radius: 13px;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase; }
+      .WrapperContent .WrapperMenu .WrapperGuide .ButtonGetInfoCategory:hover {
+        transition: 1s;
+        opacity: 0.7; }
+      .WrapperContent .WrapperMenu .WrapperGuide .InformationCategory {
+        width: 100%;
+        font-size: 24px;
+        line-height: 40px;
+        padding-left: 5px; }
+      .WrapperContent .WrapperMenu .WrapperGuide .AnimationInfoCategory {
+        animation: info 1s linear; }
 @keyframes info {
   from {
     opacity: 0.2; }
@@ -908,146 +908,143 @@ body {
     opacity: 0.2; }
   to {
     opacity: 1; } }
-.WrapperLoad {
-  margin: 0 auto;
-  background-color: #6950dd;
-  width: 500px; }
-  .WrapperLoad .LoadingProgress {
-    background-color: red;
-    color: red;
-    border-radius: 40px;
-    height: 20px; }
-  .WrapperLoad .TextLoading {
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    font-weight: 500;
-    margin-bottom: 20px; }
-
-.WrapperSend {
-  margin: 0 auto;
-  position: relative;
-  width: 600px;
-  min-height: 250px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border-radius: 13px;
-  padding-top: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  animation: send 0.5s linear; }
-  .WrapperSend .Complete {
-    width: 100%;
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 40px; }
-  .WrapperSend .DataUserMessage {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: auto;
-    margin-bottom: 30px; }
-    .WrapperSend .DataUserMessage div {
-      font-weight: 500;
-      font-size: 18px;
-      margin-bottom: 25px; }
-      .WrapperSend .DataUserMessage div .SpanReduxInfo {
-        color: red; }
-  .WrapperSend .Paragraph {
-    width: 100%;
-    line-height: 30px;
-    font-size: 16px; }
-    .WrapperSend .Paragraph span {
+  .WrapperContent .WrapperLoad {
+    margin: 0 auto;
+    background-color: #6950dd;
+    width: 500px; }
+    .WrapperContent .WrapperLoad .LoadingProgress {
+      background-color: red;
       color: red;
-      font-weight: bold; }
-  .WrapperSend .BackToTaprolaAfterSend {
-    width: 40px;
-    height: 40px;
-    display: block;
+      border-radius: 40px;
+      height: 20px; }
+    .WrapperContent .WrapperLoad .TextLoading {
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      font-weight: 500;
+      margin-bottom: 20px; }
+  .WrapperContent .WrapperSend {
     margin: 0 auto;
-    margin-top: 30px; }
-
-.WrapperFormSend {
-  width: 600px;
-  min-height: 300px;
-  background-color: white;
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-radius: 13px;
-  padding-left: 10px;
-  padding-right: 10px;
-  animation: formsend 1s; }
-  .WrapperFormSend .Title {
-    width: 100%;
-    text-align: center;
-    font-size: 21px;
-    margin-bottom: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 35px; }
-  .WrapperFormSend form {
-    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    min-height: 250px;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 70%; }
-    .WrapperFormSend form input {
-      height: 40px;
-      margin-bottom: 30px;
-      background-color: #E6E6FA;
-      border: none;
-      border-radius: 6px;
-      padding-left: 20px;
-      font-size: 18px; }
-    .WrapperFormSend form input:focus {
-      outline: none;
-      outline-offset: none; }
-    .WrapperFormSend form textarea {
-      height: 100px;
+    justify-content: space-evenly;
+    border-radius: 13px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    animation: send 0.5s linear; }
+    .WrapperContent .WrapperSend .Complete {
       width: 100%;
-      margin-bottom: 30px;
-      background-color: #E6E6FA;
-      border: none;
-      border-radius: 6px;
-      resize: none;
-      font-size: 16px;
-      padding-left: 8px;
-      padding-top: 8px; }
-    .WrapperFormSend form textarea:focus {
-      outline: none;
-      outline-offset: none; }
-    .WrapperFormSend form .CheckedInputName {
-      background-color: #FFC0CB;
-      transition: 1s; }
-    .WrapperFormSend form .CheckedInputEmail {
-      background-color: #FFC0CB;
-      transition: 1s; }
-    .WrapperFormSend form .CheckedTextArea {
-      background-color: #FFC0CB;
-      transition: 1s; }
-    .WrapperFormSend form button {
-      width: 300px;
-      height: 35px;
-      border: none;
-      cursor: pointer;
-      border-radius: 13px;
-      margin-left: 58px;
-      background-color: #0983ff;
-      color: white;
-      font-size: 18px;
-      font-weight: 400; }
-    .WrapperFormSend form button:hover {
-      transition: 0.4s;
-      opacity: 0.8; }
-
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 40px; }
+    .WrapperContent .WrapperSend .DataUserMessage {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: auto;
+      margin-bottom: 30px; }
+      .WrapperContent .WrapperSend .DataUserMessage div {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 25px; }
+        .WrapperContent .WrapperSend .DataUserMessage div .SpanReduxInfo {
+          color: red; }
+    .WrapperContent .WrapperSend .Paragraph {
+      width: 100%;
+      line-height: 30px;
+      font-size: 16px; }
+      .WrapperContent .WrapperSend .Paragraph span {
+        color: red;
+        font-weight: bold; }
+    .WrapperContent .WrapperSend .BackToTaprolaAfterSend {
+      width: 40px;
+      height: 40px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px; }
+  .WrapperContent .WrapperFormSend {
+    width: 600px;
+    min-height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation: formsend 1s; }
+    .WrapperContent .WrapperFormSend .Title {
+      width: 100%;
+      text-align: center;
+      font-size: 21px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-left: 5px;
+      padding-right: 5px;
+      line-height: 35px; }
+    .WrapperContent .WrapperFormSend form {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 70%; }
+      .WrapperContent .WrapperFormSend form input {
+        height: 40px;
+        margin-bottom: 30px;
+        background-color: #E6E6FA;
+        border: none;
+        border-radius: 6px;
+        padding-left: 20px;
+        font-size: 18px; }
+      .WrapperContent .WrapperFormSend form input:focus {
+        outline: none;
+        outline-offset: none; }
+      .WrapperContent .WrapperFormSend form textarea {
+        height: 100px;
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: #E6E6FA;
+        border: none;
+        border-radius: 6px;
+        resize: none;
+        font-size: 16px;
+        padding-left: 8px;
+        padding-top: 8px; }
+      .WrapperContent .WrapperFormSend form textarea:focus {
+        outline: none;
+        outline-offset: none; }
+      .WrapperContent .WrapperFormSend form .CheckedInputName {
+        background-color: #FFC0CB;
+        transition: 1s; }
+      .WrapperContent .WrapperFormSend form .CheckedInputEmail {
+        background-color: #FFC0CB;
+        transition: 1s; }
+      .WrapperContent .WrapperFormSend form .CheckedTextArea {
+        background-color: #FFC0CB;
+        transition: 1s; }
+      .WrapperContent .WrapperFormSend form button {
+        width: 300px;
+        height: 35px;
+        border: none;
+        cursor: pointer;
+        border-radius: 13px;
+        margin-left: 58px;
+        background-color: #0983ff;
+        color: white;
+        font-size: 18px;
+        font-weight: 400; }
+      .WrapperContent .WrapperFormSend form button:hover {
+        transition: 0.4s;
+        opacity: 0.8; }
 @keyframes formsend {
   from {
     opacity: 0; }
@@ -1060,24 +1057,24 @@ body {
   to {
     transform: scale(1);
     opacity: 1; } }
-.WrapperLoadingSend {
-  width: 320px;
-  height: auto;
-  margin: 0 auto;
-  background-color: white;
-  border-radius: 30px; }
-  .WrapperLoadingSend .LoadingSendMessage {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: loadsend 1s linear; }
-    .WrapperLoadingSend .LoadingSendMessage .LoadingSend {
-      font-size: 18px;
-      font-weight: bold;
-      animation: textload 2s infinite linear; }
+  .WrapperContent .WrapperLoadingSend {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px; }
+    .WrapperContent .WrapperLoadingSend .LoadingSendMessage {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: loadsend 1s linear; }
+      .WrapperContent .WrapperLoadingSend .LoadingSendMessage .LoadingSend {
+        font-size: 18px;
+        font-weight: bold;
+        animation: textload 2s infinite linear; }
 @keyframes textload {
   from {
     opacity: 0.4; }
@@ -1090,30 +1087,33 @@ body {
     opacity: 1; } }
 .WrapperHeader {
   background-color: #333;
-  width: 100%;
-  height: 60px;
-  border-radius: 16px;
-  margin-bottom: 150px;
-  animation: head 1s linear;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-  .WrapperHeader .LogoTaprola {
-    display: block;
-    width: 40px;
-    height: 40px; }
-  .WrapperHeader .NavLinks {
-    display: flex;
+  height: 80px;
+  display: flex; }
+  .WrapperHeader .Header {
+    width: 100%;
     height: 100%;
+    background-color: #333;
+    border-radius: 16px;
+    margin-bottom: 150px;
+    animation: head 1s linear;
+    display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: 70%;
-    border-radius: 16px; }
-    .WrapperHeader .NavLinks a {
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px; }
-
+    align-items: center; }
+    .WrapperHeader .Header .LogoTaprola {
+      display: block;
+      width: 50px;
+      height: 50px; }
+    .WrapperHeader .Header .NavLinks {
+      display: flex;
+      height: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 70%;
+      border-radius: 16px; }
+      .WrapperHeader .Header .NavLinks a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px; }
 @keyframes head {
   from {
     opacity: 0; }

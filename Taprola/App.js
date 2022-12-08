@@ -10,11 +10,19 @@ import { Header } from './components/Header';
 ReactDOM.render(
     <BrowserRouter>
         <Provider store={store}>
-            <Header/>
-            <PagesRouter/>
+            <div className='WrapperHeader'>
+                <div id='container'>
+                    <Header/>
+                </div>
+            </div>
+            <div className='WrapperContent'>
+                <div id='container'>
+                    <PagesRouter/>
+                </div>
+            </div>
         </Provider>
     </BrowserRouter>,
-    document.getElementById('container')
+    document.getElementById('root')
 )
 
 

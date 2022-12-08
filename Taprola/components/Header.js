@@ -16,7 +16,7 @@ export const Header = () => {
 
     if (page !== _END) {
         return (
-        <div className='WrapperHeader' style={{backgroundColor: '#333'}}>
+        <div className='Header' style={{backgroundColor: '#333'}}>
             <img src={Logo} alt='Logo' className='LogoTaprola'/>
             <div className='NavLinks'>
                 <NavLink style={{color: 'white'}} to='/'>Intrudaction</NavLink>
@@ -29,13 +29,13 @@ export const Header = () => {
     }
     else {
         return (
-            <div className='WrapperHeader' style={{ backgroundColor: 'white' }}>
+            <div className='Header' style={{ backgroundColor: '#333' }}>
             <img src={Logo} alt='Logo' className='LogoTaprola'/>
             <div className='NavLinks'>
-                <NavLink style={{color: '#333'}} to='/'>Intrudaction</NavLink>
-                <NavLink style={{color: '#333'}} to='/taprola'>Options</NavLink>
-                <NavLink style={{color: '#333'}} to='/menu'>Menu</NavLink>
-                <NavLink style={{color: '#333'}} to='/options'>Options</NavLink>
+                <NavLink style={{color: 'white'}} to='/'>Intrudaction</NavLink>
+                <NavLink style={{color: 'white'}} to='/taprola'>Options</NavLink>
+                <NavLink style={{color: 'white'}} to='/menu'>Menu</NavLink>
+                <NavLink style={{color: 'white'}} to='/options'>Options</NavLink>
             </div>
         </div>
     )

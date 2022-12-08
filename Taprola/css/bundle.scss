@@ -28,1314 +28,1501 @@ $bold: 600;
 }
 
 
-.WrapperItems {
-    position: relative;
-    width: 800px;
-    margin: 0 auto;
-    border-radius: 30px;
-    background-color: white;
-    padding-left: 25px;
-    padding-top: 60px;
-    padding-right: 25px;
-    padding-bottom: 30px;
-    animation: taprola 1s linear;
-    div {
-        .ButtonrReturnToIntrudaction {
-            position: absolute;
-            left: 290px;
-            text-align: center;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            bottom: 10px;
-        }
-        .SendIcon {
-            position: absolute;
-            right: 5px;
-            top: 1px;
-            width: 45px;
-            height: 45px;
-        }
-        .ButtonGoToOptions {
-            position: absolute;
-            bottom: 10px;
-            right: 402px;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-        }
-        .LanguageButtons {
-            margin-top: 40px;
-            margin-left: 15px;
-            cursor: pointer;
-            animation: setLn 1s linear;
-            .EN {
-                margin-right: 15px;
-                display: inline-block;
-                border: none;
-                width: 100px;
-                height: 30px;
-                background-color: #E6E6FA;
-                font-size: 15px;
-                border-radius: 6px;
-                font-weight: $medium;
-                cursor: pointer;
-            }
-            .RU {
-                margin-right: 15px;
-                display: inline-block;
-                border: none;
-                width: 100px;
-                height: 30px;
-                background-color: #E6E6FA;
-                font-size: 15px;
-                border-radius: 6px;
-                font-weight: $medium;
-                cursor: pointer;
-            }
-            button:hover {
-                transition: 0.7;
-                opacity: 0.7;
-                background-color: #00BFFF;
-            }
-            button {
-                margin-bottom: 10px;
-            }
-        }
-        @keyframes setLn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        .LanguageButton {
-            position: absolute;
-            bottom: 13px;
-            right: 342px;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
-        }
-        .ButtonGoToMenu {
-            position: absolute;
-            bottom: 11px;
-            width: 38px;
-            height: 38px;
-            right: 275px;
-        }
-        .Item {
-        position: relative;
-        margin-top: 20px;
-        margin-left: 10px;
-        font-size: 18px;
-        height: 50px;
-        padding-bottom: 10px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        // align-items: center;
-        .ItemChoice {
-            display: flex;
-            justify-content: center;
-            width: 250px;
-            height: 50px;
-            border-radius: 13px;
-            padding-top: 14px;
-            padding-left: 5px;
-            padding-right: 5px;
-            cursor: pointer;
-            -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
-            -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
-            box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
-        }
-        .AnimationItemChoice {
-            animation: item 1s linear;
-        }
-        @keyframes item {
-            from {
-                background-color: white;
-                opacity: 0.5;
-            }
-            to {
-                background-color: #00CED1;
-                opacity: 1;
-            }
-        }
-        .Remains {
-            width: auto;
-            height: auto;
-            position: absolute;
-            right: 120px;
-            padding-top: 7px;
-            font-weight: $medium;
-            font-size: 20px;
-        }
-        .WrapIconWaste {
+.WrapperContent {
+    padding-top: 100px;
+    .WrapperItems {
             position: relative;
-            padding-top: 5px;
-            width: 30%;
-        }
-    }
-    .Title {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 90px;
-        font-size: 40px;
-    }
-    .IconChangeColor {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 5px;
-        left: 10px;
-        cursor: pointer;
-    }
-    .ColorInputDiv {
-        position: absolute;
-        top: 15px;
-        right: 240px;
-        animation: color 1s linear;
-        input {
-            width: 200px;
-            margin-right: 10px;
-            border: none;
-            background-color: #E6E6FA;
-            height: 25px;
-            border-radius: 3px;
-            padding-left: 5px;
-        }
-        button {
-            border: none;
-            cursor: pointer;
-            background-color: lime;
-            color: black;
-            padding-left: 6px;
-            padding-top: 3px;
-            padding-right: 6px;
-            padding-bottom: 3px;
-            border-radius: 5px;
-        }
-    }
-    @keyframes color {
-        from {
-            opacity: 0;
-            transform: scale(0);
-        }
-        to {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-    .Icon {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 70px;
-        right: 280px;
-    }
-    .Quanlity {
-        position: absolute;
-        top: 130px;
-        right: 145px;
-        font-weight: $bold;
-        font-size: 20px;
-    }
-    .Name {
-        position: absolute;
-        top: 130px;
-        left: 40px;
-        font-weight: $bold;
-        font-size: 20px;
-    }
-    .ButtonCreateFormNewItem {
-        display: inline-block;
-        margin-top: 15px;
-        border: none;
-        margin-left: 15px;
-        width: 100px;
-        height: 30px;
-        background-color: #E6E6FA;
-        font-size: 15px;
-        border-radius: 6px;
-        font-weight: $medium;
-        cursor: pointer;
-    }
-    .ButtonCreateFormNewItem:hover {
-        transition: 1s;
-        color: black;
-        background-color: #87CEEB;
-    }
-    .EditItemButton {
-        display: inline-block;
-        margin-top: 15px;
-        border: none;
-        margin-left: 15px;
-        width: 100px;
-        height: 30px;
-        background-color: #E6E6FA;
-        font-size: 15px;
-        border-radius: 6px;
-        font-weight: $medium;
-        cursor: pointer;
-    }
-    .WrapFormNewItem {
-        margin-top: 25px;
-        margin-left: 50px;
-        animation: newItem 1s linear;
-        .TitleNewItem {
-            margin-bottom: 25px;
-        }
-        .InputNewItem {
-            border: none;
-            display: block;
-            background-color: #E6E6FA;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            width: 200px;
-            height: 30px;
-            padding-left: 15px;
-            color: #191970;
-
-        }
-        .InputNewItem:focus {
-            outline: none;
-            outline-offset: none;
-        }
-        .ButtonAddNewItem {
-            display: block;
-            margin-top: 15px;
-            border: none;
-            margin-left: 45px;
-            width: 100px;
-            height: 30px;
-            background-color: lime;
-            font-size: 15px;
-            border-radius: 6px;
-            font-weight: $medium;
-            cursor: pointer;
-        }
-        .ButtonAddNewItem:hover {
-            transition: 1.5s;
-            opacity: 0.6;
-        }
-    }
-    @keyframes newItem {
-        from {
-            opacity: 0;
-            filter: blur(5px);
-        }
-        to {
-            opacity: 1;
-            filter: none;
-        }
-    }
-    .WrapEditing {
-        margin-top: 25px;
-        margin-left: 50px;
-        animation: editing 1s linear;
-        .TitleEditingItem {
-            margin-bottom: 25px;
-        }
-        .EditingNameItem {
-            border: none;
-            display: block;
-            background-color: #E6E6FA;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            width: 200px;
-            height: 30px;
-            padding-left: 15px;
-            color: #191970;
-        }
-        .EditingNameItem:focus {
-            outline: none;
-            outline-offset: none;
-        }
-        .EditingRemainsItem {
-            border: none;
-            display: block;
-            background-color: #E6E6FA;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            width: 200px;
-            height: 30px;
-            padding-left: 15px;
-            color: #191970;
-        }
-        .PushEditButton {
-            display: block;
-            margin-top: 15px;
-            border: none;
-            margin-left: 45px;
-            width: 100px;
-            height: 30px;
-            background-color: lime;
-            font-size: 15px;
-            border-radius: 6px;
-            font-weight: $medium;
-            cursor: pointer;
-        }
-    }
-    @keyframes editing {
-        from {
-            opacity: 0;
-            filter: blur(5px);
-        }
-        to {
-            opacity: 1;
-            filter: none;
-        }
-    }
-    }
-}
-@keyframes taprola {
-    from {
-        opacity: 0.2;
-    }
-    to {
-        opacity: 1;
-    }
-}
-.WrapperWelcomeAlert {
-    position: relative;
-    background-color: white;
-    min-height: 600px;
-    width: 360px;
-    margin:  0 auto;
-    padding-left: 25px;
-    padding-top: 30px;
-    padding-right: 25px;
-    padding-bottom: 30px;
-    border-radius: 30px;
-    background-color: #333;
-    animation: welcomealert 1s linear;
-    .TitleWelcome {
-        width: 100%;
-        text-align: center;
-        font-size: 42px;
-        color: white;
-        margin-bottom: 25px;
-    }
-    .UnderTitleMakeItEasy {
-        font-size: 18px;
-        color: white;
-        font-weight: $medium;
-        display: flex;
-        align-items: center;
-        margin-bottom: 5px;
-        img {
-            margin-right: 10px;
-            width: 30px;
-            height: 30px;
-        }
-    }
-    .ParagraphAboutCreate {
-        line-height: 25px;
-        padding-left: 40px;
-        color: #999;
-        margin-bottom: 20px;
-    }
-    .UnderTitleEdit {
-        font-size: 18px;
-        color: white;
-        font-weight: $medium;
-        display: flex;
-        align-items: center;
-        margin-bottom: 5px;
-        img {
-            margin-right: 10px;
-            width: 30px;
-            height: 30px;
-        }
-    }
-    .ParagraphAboutEdit {
-        line-height: 25px;
-        padding-left: 40px;
-        color: #999;
-        margin-bottom: 20px;
-    }
-    .UnderTitlePalette {
-        font-size: 18px;
-        color: white;
-        font-weight: $medium;
-        display: flex;
-        align-items: center;
-        margin-bottom: 5px;
-        img {
-            margin-right: 10px;
-            width: 30px;
-            height: 30px;
-        }
-    }
-    .ParagraphAboutPallete {
-        line-height: 25px;
-        padding-left: 40px;
-        color: #999;
-        margin-bottom: 20px;
-    }
-    .ButtonStartWork {
-        border: none;
-        cursor: pointer;
-        background-color: #0983ff;
-        color: white;
-        width: 200px;
-        border-radius: 40px;
-        height: 40px;
-        font-size: 16px;
-        font-weight: $medium;
-        padding-left: 55px;
-        padding-top: 10px;
-        margin-left: 54px;
-        margin-top: 35px;
-        padding-right: 55px;
-        padding-bottom: 10px;
-        text-decoration: none;
-    }
-    .ButtonStartWork:hover {
-        transition: 1s;
-        opacity: 0.5;
-        background-color: white;
-        color: black;
-    }
-}
-@keyframes welcomealert {
-    from {
-        opacity: 0.2;
-    }
-    to {
-        opacity: 1;
-    }
-}
-.WrapperOptions {
-    position: relative;
-    background-color: white;
-    min-height: 500px;
-    width: 360px;
-    margin:  0 auto;
-    padding-left: 25px;
-    padding-top: 30px;
-    padding-right: 25px;
-    padding-bottom: 30px;
-    border-radius: 30px;
-    animation: options 1s linear;
-    .BackToTaprolaOptions {
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-    .Line {
-        width: 95%;
-        height: 5px;
-        border-radius: 15px;
-        margin: 0 auto;
-        background-color: #E6E6FA;
-        margin-top: 50px;
-        margin-bottom: 70px;
-    }
-    .Illustration {
-        position: relative;
-        padding-left: 20px;
-        width: 100%;
-        height: 70px;
-        font-size: 20px;
-        font-weight: 400;
-        border-radius: 10px;
-        background: rgb(131, 58, 180);
-        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(212, 90, 90, 1) 50%, rgba(252, 176, 69, 1) 100%);
-        h3 {
-            font-size: 21px;
-            color: black;
-            font-weight: 400;
-            span {
-                font-size: 35px;
-                margin-left: 20px;
-                font-weight: bold;
-                color: white;
-            }
-        }
-        img {
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            top: 20px;
-            right: 40px;
-        }
-    }
-    .WrapperCatigories {
-        margin-top: 40px;
-        .AboutTaprola {
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-            cursor: pointer;
-            font-size: 18px;
-        }
-        .AboutTaprola:hover {
-            transition: 0.5s;
-            color: #0000CD;
-        }
-        .HowToUse {
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-            cursor: pointer;
-            font-size: 18px;
-        }
-        .HowToUse:hover {
-            transition: 0.5s;
-            color: #0000CD;
-        }
-        .WrapperQuesOptions {
-            display: flex;
-            padding-left: 3px;
-            align-items: center;
-            .QuestionOptions {
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            font-weight: 500;
-            cursor: pointer;
-            font-size: 18px;
-            text-decoration: none;
-            color: black;
-        }
-
-        .SendIconOptions {
-            width: 40px;
-            height: 40px;
-            display: block;
-            margin-top: 20px;
-            margin-right: 13px;
-        }
-
-        .QuestionOptions:hover {
-            transition: 0.5s;
-            color: #0000CD;
-        }
-        }
-        
-    }
-    .AboutTaprolaParagraph {
-        margin-top: 20px;
-        line-height: 40px;
-        animation: p 1s linear;
-        font-size: 20px;
-        margin-left: 10px;
-    }
-    .AboutHowToUse {
-        margin-top: 20px;
-        line-height: 40px;
-        animation: p 1s linear;
-        font-size: 16px;
-        margin-left: 10px;
-    }
-    @keyframes p {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    .OkayButton {
-        margin: 0 auto;
-        margin-top: 40px;
-        width: 170px;
-        height: 40px;
-        padding-left: 64px;
-        padding-top: 10px;
-        background: rgb(180, 58, 167);
-        background: linear-gradient(90deg, rgba(180, 58, 167, 1) 0%, rgba(74, 72, 203, 1) 33%, rgba(252, 133, 69, 1) 100%);
-        border-radius: 30px;
-        color: white;
-        font-weight: bold;
-        animation: p 1s linear;
-        cursor: pointer;
-    }
-    .OkayButton:hover {
-        transition: 0.5s;
-        opacity: 0.7;
-    }
-}
-@keyframes options {
-    from {
-        opacity: 0.2;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-.WrapperMenu {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    border-radius: 30px;
-    background-color: #eef1f0;
-    padding-left: 25px;
-    padding-top: 60px;
-    padding-right: 25px;
-    padding-bottom: 30px;
-    animation: menu 1s linear;
-    .Title {
-        width: 100%;
-        text-align: center;
-        font-size: 46px;
-        margin-bottom: 50px;
-    }
-    .TitleCategory {
-        width: 100%;
-        text-align: center;
-        font-size: 46px;
-        margin-bottom: 50px;
-        animation: oldTitle 1s linear;
-    }
-    @keyframes oldTitle {
-        from {
-            padding-top: 50px;
-        }
-        to {
-            padding-top: 0px;
-        }
-    }
-    .AnimTitle {
-        width: 100%;
-        text-align: center;
-        font-size: 46px;
-        margin-bottom: 50px;
-        animation: NewTitle 1s linear;
-        padding-top: 50px;
-    }
-    @keyframes NewTitle {
-        from {
-            padding-top: 0px;
-        }
-        to {
-            padding-top: 50px;
-        }
-    }
-    .search {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        width: 350px;
-        height: 40px;
-        font-size: 24px;
-        padding-left: 20px;
-        border: none;
-    }
-    .BackToTaprolaImageButton {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            position: absolute;
-            bottom: 13px;
-            left: 580px;
-        }
-    .WrapperCategories {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        position: relative;
-        .ClosedAnimationCategory {
-                animation: closedCategory 0.5s linear;
-            }
-        
-            @keyframes closedCategory {
-                from {
-                    transform: rotate(180deg);
+            width: 800px;
+            margin: 0 auto;
+            border-radius: 30px;
+            background-color: white;
+            padding-left: 25px;
+            padding-top: 60px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            animation: taprola 1s linear;
+    
+            div {
+                .ButtonrReturnToIntrudaction {
+                    position: absolute;
+                    left: 290px;
+                    text-align: center;
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                    bottom: 10px;
                 }
-                to {
-                    transform: rotate(0deg);
+    
+                .SendIcon {
+                    position: absolute;
+                    right: 5px;
+                    top: 1px;
+                    width: 45px;
+                    height: 45px;
                 }
-            }
-        .Categories {
-                margin-bottom: 40px;
-                cursor: pointer;
-                .Food {
-                    position: relative;
-                    padding-top: 30px;
-                    padding-bottom: 40px;
-                    padding-left: 25px;
-                    padding-right: 15px;
-                    .FirstImage {
-                        width: 450px;
-                        height: 270px;
-                        border-radius: 10px;
-                        margin-left: 0px !important;
-                    }
-                    img {
-                        width: 200px;
-                        height: 150px;
-                        border-radius: 10px;
-                        margin-bottom: 20px;
-                        margin-left: 16px;
-        
-                    }
-        
-                    h3 {
-                        font-size: 36px;
-                        padding-left: 20px;
-                        margin-bottom: 20px;
-                    }
-                    .InfoParagraph {
-                        line-height: 35px;
-                        font-size: 18px;
-                    }
-                    button {
-                        position: absolute;
-                        right: 15px;
-                        bottom: 15px;
+    
+                .ButtonGoToOptions {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 402px;
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+    
+                .LanguageButtons {
+                    margin-top: 40px;
+                    margin-left: 15px;
+                    cursor: pointer;
+                    animation: setLn 1s linear;
+    
+                    .EN {
+                        margin-right: 15px;
+                        display: inline-block;
+                        border: none;
                         width: 100px;
                         height: 30px;
-                        border: none;
-                        cursor: pointer;
-                        background-color: white;
-                        border-radius: 13px;
+                        background-color: #E6E6FA;
+                        font-size: 15px;
+                        border-radius: 6px;
                         font-weight: $medium;
-                        font-size: 14px;
+                        cursor: pointer;
                     }
+    
+                    .RU {
+                        margin-right: 15px;
+                        display: inline-block;
+                        border: none;
+                        width: 100px;
+                        height: 30px;
+                        background-color: #E6E6FA;
+                        font-size: 15px;
+                        border-radius: 6px;
+                        font-weight: $medium;
+                        cursor: pointer;
+                    }
+    
                     button:hover {
-                        transition: 0.5s;
+                        transition: 0.7;
                         opacity: 0.7;
+                        background-color: #00BFFF;
+                    }
+    
+                    button {
+                        margin-bottom: 10px;
                     }
                 }
-                .Tasks {
+    
+                @keyframes setLn {
+                    from {
+                        opacity: 0;
+                    }
+    
+                    to {
+                        opacity: 1;
+                    }
+                }
+    
+                .LanguageButton {
+                    position: absolute;
+                    bottom: 13px;
+                    right: 342px;
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                }
+    
+                .ButtonGoToMenu {
+                    position: absolute;
+                    bottom: 11px;
+                    width: 38px;
+                    height: 38px;
+                    right: 275px;
+                }
+    
+                .Item {
                     position: relative;
-                    padding-top: 30px;
-                    padding-bottom: 40px;
-                    padding-left: 25px;
-                    padding-right: 15px;
-                    .FirstImage {
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    font-size: 18px;
+                    height: 50px;
+                    padding-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+    
+                    // align-items: center;
+                    .ItemChoice {
+                        display: flex;
+                        justify-content: center;
+                        width: 250px;
+                        height: 50px;
+                        border-radius: 13px;
+                        padding-top: 14px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        cursor: pointer;
+                        -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+                        -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+                        box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+                    }
+    
+                    .AnimationItemChoice {
+                        animation: item 1s linear;
+                    }
+    
+                    @keyframes item {
+                        from {
+                            background-color: white;
+                            opacity: 0.5;
+                        }
+    
+                        to {
+                            background-color: #00CED1;
+                            opacity: 1;
+                        }
+                    }
+    
+                    .Remains {
+                        width: auto;
+                        height: auto;
+                        position: absolute;
+                        right: 120px;
+                        padding-top: 7px;
+                        font-weight: $medium;
+                        font-size: 20px;
+                    }
+    
+                    .WrapIconWaste {
+                        position: relative;
+                        padding-top: 5px;
+                        width: 30%;
+                    }
+                }
+    
+                .Title {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 90px;
+                    font-size: 40px;
+                }
+    
+                .IconChangeColor {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 5px;
+                    left: 10px;
+                    cursor: pointer;
+                }
+    
+                .ColorInputDiv {
+                    position: absolute;
+                    top: 15px;
+                    right: 240px;
+                    animation: color 1s linear;
+    
+                    input {
+                        width: 200px;
+                        margin-right: 10px;
+                        border: none;
+                        background-color: #E6E6FA;
+                        height: 25px;
+                        border-radius: 3px;
+                        padding-left: 5px;
+                    }
+    
+                    button {
+                        border: none;
+                        cursor: pointer;
+                        background-color: lime;
+                        color: black;
+                        padding-left: 6px;
+                        padding-top: 3px;
+                        padding-right: 6px;
+                        padding-bottom: 3px;
+                        border-radius: 5px;
+                    }
+                }
+    
+                @keyframes color {
+                    from {
+                        opacity: 0;
+                        transform: scale(0);
+                    }
+    
+                    to {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
+                }
+    
+                .Icon {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 70px;
+                    right: 280px;
+                }
+    
+                .Quanlity {
+                    position: absolute;
+                    top: 130px;
+                    right: 145px;
+                    font-weight: $bold;
+                    font-size: 20px;
+                }
+    
+                .Name {
+                    position: absolute;
+                    top: 130px;
+                    left: 40px;
+                    font-weight: $bold;
+                    font-size: 20px;
+                }
+    
+                .ButtonCreateFormNewItem {
+                    display: inline-block;
+                    margin-top: 15px;
+                    border: none;
+                    margin-left: 15px;
+                    width: 100px;
+                    height: 30px;
+                    background-color: #E6E6FA;
+                    font-size: 15px;
+                    border-radius: 6px;
+                    font-weight: $medium;
+                    cursor: pointer;
+                }
+    
+                .ButtonCreateFormNewItem:hover {
+                    transition: 1s;
+                    color: black;
+                    background-color: #87CEEB;
+                }
+    
+                .EditItemButton {
+                    display: inline-block;
+                    margin-top: 15px;
+                    border: none;
+                    margin-left: 15px;
+                    width: 100px;
+                    height: 30px;
+                    background-color: #E6E6FA;
+                    font-size: 15px;
+                    border-radius: 6px;
+                    font-weight: $medium;
+                    cursor: pointer;
+                }
+    
+                .WrapFormNewItem {
+                    margin-top: 25px;
+                    margin-left: 50px;
+                    animation: newItem 1s linear;
+    
+                    .TitleNewItem {
+                        margin-bottom: 25px;
+                    }
+    
+                    .InputNewItem {
+                        border: none;
+                        display: block;
+                        background-color: #E6E6FA;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        width: 200px;
+                        height: 30px;
+                        padding-left: 15px;
+                        color: #191970;
+    
+                    }
+    
+                    .InputNewItem:focus {
+                        outline: none;
+                        outline-offset: none;
+                    }
+    
+                    .ButtonAddNewItem {
+                        display: block;
+                        margin-top: 15px;
+                        border: none;
+                        margin-left: 45px;
+                        width: 100px;
+                        height: 30px;
+                        background-color: lime;
+                        font-size: 15px;
+                        border-radius: 6px;
+                        font-weight: $medium;
+                        cursor: pointer;
+                    }
+    
+                    .ButtonAddNewItem:hover {
+                        transition: 1.5s;
+                        opacity: 0.6;
+                    }
+                }
+    
+                @keyframes newItem {
+                    from {
+                        opacity: 0;
+                        filter: blur(5px);
+                    }
+    
+                    to {
+                        opacity: 1;
+                        filter: none;
+                    }
+                }
+    
+                .WrapEditing {
+                    margin-top: 25px;
+                    margin-left: 50px;
+                    animation: editing 1s linear;
+    
+                    .TitleEditingItem {
+                        margin-bottom: 25px;
+                    }
+    
+                    .EditingNameItem {
+                        border: none;
+                        display: block;
+                        background-color: #E6E6FA;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        width: 200px;
+                        height: 30px;
+                        padding-left: 15px;
+                        color: #191970;
+                    }
+    
+                    .EditingNameItem:focus {
+                        outline: none;
+                        outline-offset: none;
+                    }
+    
+                    .EditingRemainsItem {
+                        border: none;
+                        display: block;
+                        background-color: #E6E6FA;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        width: 200px;
+                        height: 30px;
+                        padding-left: 15px;
+                        color: #191970;
+                    }
+    
+                    .PushEditButton {
+                        display: block;
+                        margin-top: 15px;
+                        border: none;
+                        margin-left: 45px;
+                        width: 100px;
+                        height: 30px;
+                        background-color: lime;
+                        font-size: 15px;
+                        border-radius: 6px;
+                        font-weight: $medium;
+                        cursor: pointer;
+                    }
+                }
+    
+                @keyframes editing {
+                    from {
+                        opacity: 0;
+                        filter: blur(5px);
+                    }
+    
+                    to {
+                        opacity: 1;
+                        filter: none;
+                    }
+                }
+            }
+        }
+    
+        @keyframes taprola {
+            from {
+                opacity: 0.2;
+            }
+    
+            to {
+                opacity: 1;
+            }
+        }
+    
+        .WrapperWelcomeAlert {
+            position: relative;
+            background-color: white;
+            min-height: 600px;
+            width: 360px;
+            margin: 0 auto;
+            padding-left: 25px;
+            padding-top: 30px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            border-radius: 30px;
+            background-color: #333;
+            animation: welcomealert 1s linear;
+    
+            .TitleWelcome {
+                width: 100%;
+                text-align: center;
+                font-size: 42px;
+                color: white;
+                margin-bottom: 25px;
+            }
+    
+            .UnderTitleMakeItEasy {
+                font-size: 18px;
+                color: white;
+                font-weight: $medium;
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+    
+                img {
+                    margin-right: 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+    
+            .ParagraphAboutCreate {
+                line-height: 25px;
+                padding-left: 40px;
+                color: #999;
+                margin-bottom: 20px;
+            }
+    
+            .UnderTitleEdit {
+                font-size: 18px;
+                color: white;
+                font-weight: $medium;
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+    
+                img {
+                    margin-right: 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+    
+            .ParagraphAboutEdit {
+                line-height: 25px;
+                padding-left: 40px;
+                color: #999;
+                margin-bottom: 20px;
+            }
+    
+            .UnderTitlePalette {
+                font-size: 18px;
+                color: white;
+                font-weight: $medium;
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+    
+                img {
+                    margin-right: 10px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+    
+            .ParagraphAboutPallete {
+                line-height: 25px;
+                padding-left: 40px;
+                color: #999;
+                margin-bottom: 20px;
+            }
+    
+            .ButtonStartWork {
+                border: none;
+                cursor: pointer;
+                background-color: #0983ff;
+                color: white;
+                width: 200px;
+                border-radius: 40px;
+                height: 40px;
+                font-size: 16px;
+                font-weight: $medium;
+                padding-left: 55px;
+                padding-top: 10px;
+                margin-left: 54px;
+                margin-top: 35px;
+                padding-right: 55px;
+                padding-bottom: 10px;
+                text-decoration: none;
+            }
+    
+            .ButtonStartWork:hover {
+                transition: 1s;
+                opacity: 0.5;
+                background-color: white;
+                color: black;
+            }
+        }
+    
+        @keyframes welcomealert {
+            from {
+                opacity: 0.2;
+            }
+    
+            to {
+                opacity: 1;
+            }
+        }
+    
+        .WrapperOptions {
+            position: relative;
+            background-color: white;
+            min-height: 500px;
+            width: 360px;
+            margin: 0 auto;
+            padding-left: 25px;
+            padding-top: 30px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            border-radius: 30px;
+            animation: options 1s linear;
+    
+            .BackToTaprolaOptions {
+                width: 40px;
+                height: 40px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+    
+            .Line {
+                width: 95%;
+                height: 5px;
+                border-radius: 15px;
+                margin: 0 auto;
+                background-color: #E6E6FA;
+                margin-top: 50px;
+                margin-bottom: 70px;
+            }
+    
+            .Illustration {
+                position: relative;
+                padding-left: 20px;
+                width: 100%;
+                height: 70px;
+                font-size: 20px;
+                font-weight: 400;
+                border-radius: 10px;
+                background: rgb(131, 58, 180);
+                background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(212, 90, 90, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    
+                h3 {
+                    font-size: 21px;
+                    color: black;
+                    font-weight: 400;
+    
+                    span {
+                        font-size: 35px;
+                        margin-left: 20px;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+    
+                img {
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 20px;
+                    right: 40px;
+                }
+            }
+    
+            .WrapperCatigories {
+                margin-top: 40px;
+    
+                .AboutTaprola {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+    
+                .AboutTaprola:hover {
+                    transition: 0.5s;
+                    color: #0000CD;
+                }
+    
+                .HowToUse {
+                    margin-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+    
+                .HowToUse:hover {
+                    transition: 0.5s;
+                    color: #0000CD;
+                }
+    
+                .WrapperQuesOptions {
+                    display: flex;
+                    padding-left: 3px;
+                    align-items: center;
+    
+                    .QuestionOptions {
+                        margin-top: 30px;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 500;
+                        cursor: pointer;
+                        font-size: 18px;
+                        text-decoration: none;
+                        color: black;
+                    }
+    
+                    .SendIconOptions {
+                        width: 40px;
+                        height: 40px;
+                        display: block;
+                        margin-top: 20px;
+                        margin-right: 13px;
+                    }
+    
+                    .QuestionOptions:hover {
+                        transition: 0.5s;
+                        color: #0000CD;
+                    }
+                }
+    
+            }
+    
+            .AboutTaprolaParagraph {
+                margin-top: 20px;
+                line-height: 40px;
+                animation: p 1s linear;
+                font-size: 20px;
+                margin-left: 10px;
+            }
+    
+            .AboutHowToUse {
+                margin-top: 20px;
+                line-height: 40px;
+                animation: p 1s linear;
+                font-size: 16px;
+                margin-left: 10px;
+            }
+    
+            @keyframes p {
+                from {
+                    opacity: 0;
+                }
+    
+                to {
+                    opacity: 1;
+                }
+            }
+    
+            .OkayButton {
+                margin: 0 auto;
+                margin-top: 40px;
+                width: 170px;
+                height: 40px;
+                padding-left: 64px;
+                padding-top: 10px;
+                background: rgb(180, 58, 167);
+                background: linear-gradient(90deg, rgba(180, 58, 167, 1) 0%, rgba(74, 72, 203, 1) 33%, rgba(252, 133, 69, 1) 100%);
+                border-radius: 30px;
+                color: white;
+                font-weight: bold;
+                animation: p 1s linear;
+                cursor: pointer;
+            }
+    
+            .OkayButton:hover {
+                transition: 0.5s;
+                opacity: 0.7;
+            }
+        }
+    
+        @keyframes options {
+            from {
+                opacity: 0.2;
+            }
+    
+            to {
+                opacity: 1;
+            }
+        }
+    
+        .WrapperMenu {
+            position: relative;
+            width: 1200px;
+            margin: 0 auto;
+            border-radius: 30px;
+            background-color: #eef1f0;
+            padding-left: 25px;
+            padding-top: 60px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            animation: menu 1s linear;
+    
+            .Title {
+                width: 100%;
+                text-align: center;
+                font-size: 46px;
+                margin-bottom: 50px;
+            }
+    
+            .TitleCategory {
+                width: 100%;
+                text-align: center;
+                font-size: 46px;
+                margin-bottom: 50px;
+                animation: oldTitle 1s linear;
+            }
+    
+            @keyframes oldTitle {
+                from {
+                    padding-top: 50px;
+                }
+    
+                to {
+                    padding-top: 0px;
+                }
+            }
+    
+            .AnimTitle {
+                width: 100%;
+                text-align: center;
+                font-size: 46px;
+                margin-bottom: 50px;
+                animation: NewTitle 1s linear;
+                padding-top: 50px;
+            }
+    
+            @keyframes NewTitle {
+                from {
+                    padding-top: 0px;
+                }
+    
+                to {
+                    padding-top: 50px;
+                }
+            }
+    
+            .search {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                width: 350px;
+                height: 40px;
+                font-size: 24px;
+                padding-left: 20px;
+                border: none;
+            }
+    
+            .BackToTaprolaImageButton {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                position: absolute;
+                bottom: 13px;
+                left: 580px;
+            }
+    
+            .WrapperCategories {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+                position: relative;
+    
+                .ClosedAnimationCategory {
+                    animation: closedCategory 0.5s linear;
+                }
+    
+                @keyframes closedCategory {
+                    from {
+                        transform: rotate(180deg);
+                    }
+    
+                    to {
+                        transform: rotate(0deg);
+                    }
+                }
+    
+                .Categories {
+                    margin-bottom: 40px;
+                    cursor: pointer;
+    
+                    .Food {
+                        position: relative;
+                        padding-top: 30px;
+                        padding-bottom: 40px;
+                        padding-left: 25px;
+                        padding-right: 15px;
+    
+                        .FirstImage {
                             width: 450px;
                             height: 270px;
                             border-radius: 10px;
                             margin-left: 0px !important;
                         }
-                    img {
-                        width: 200px;
-                        height: 150px;
-                        border-radius: 10px;
-                        margin-bottom: 20px;
-                        margin-left: 16px;
-        
+    
+                        img {
+                            width: 200px;
+                            height: 150px;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            margin-left: 16px;
+    
+                        }
+    
+                        h3 {
+                            font-size: 36px;
+                            padding-left: 20px;
+                            margin-bottom: 20px;
+                        }
+    
+                        .InfoParagraph {
+                            line-height: 35px;
+                            font-size: 18px;
+                        }
+    
+                        button {
+                            position: absolute;
+                            right: 15px;
+                            bottom: 15px;
+                            width: 100px;
+                            height: 30px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: white;
+                            border-radius: 13px;
+                            font-weight: $medium;
+                            font-size: 14px;
+                        }
+    
+                        button:hover {
+                            transition: 0.5s;
+                            opacity: 0.7;
+                        }
                     }
-        
-                    h3 {
-                        font-size: 36px;
-                        padding-left: 20px;
-                        margin-bottom: 20px;
+    
+                    .Tasks {
+                        position: relative;
+                        padding-top: 30px;
+                        padding-bottom: 40px;
+                        padding-left: 25px;
+                        padding-right: 15px;
+    
+                        .FirstImage {
+                            width: 450px;
+                            height: 270px;
+                            border-radius: 10px;
+                            margin-left: 0px !important;
+                        }
+    
+                        img {
+                            width: 200px;
+                            height: 150px;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            margin-left: 16px;
+    
+                        }
+    
+                        h3 {
+                            font-size: 36px;
+                            padding-left: 20px;
+                            margin-bottom: 20px;
+                        }
+    
+                        .InfoParagraph {
+                            line-height: 35px;
+                            font-size: 18px;
+                        }
+    
+                        button {
+                            position: absolute;
+                            right: 15px;
+                            bottom: 15px;
+                            width: 100px;
+                            height: 30px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: white;
+                            border-radius: 13px;
+                            font-weight: $medium;
+                            font-size: 14px;
+                        }
+    
+                        button:hover {
+                            transition: 0.5s;
+                            opacity: 0.7;
+                        }
                     }
-                    .InfoParagraph {
-                        line-height: 35px;
-                        font-size: 18px;
+    
+                    .Travel {
+                        position: relative;
+                        padding-top: 30px;
+                        padding-bottom: 40px;
+                        padding-left: 25px;
+                        padding-right: 15px;
+    
+                        .FirstImage {
+                            width: 450px;
+                            height: 270px;
+                            border-radius: 10px;
+                            margin-left: 0px !important;
+                        }
+    
+                        img {
+                            width: 200px;
+                            height: 150px;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            margin-left: 16px;
+    
+                        }
+    
+                        h3 {
+                            font-size: 36px;
+                            padding-left: 20px;
+                            margin-bottom: 20px;
+                        }
+    
+                        .InfoParagraph {
+                            line-height: 35px;
+                            font-size: 18px;
+                        }
+    
+                        button {
+                            position: absolute;
+                            right: 15px;
+                            bottom: 15px;
+                            width: 100px;
+                            height: 30px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: white;
+                            border-radius: 13px;
+                            font-weight: $medium;
+                            font-size: 14px;
+                        }
+    
+                        button:hover {
+                            transition: 0.5s;
+                            opacity: 0.7;
+                        }
                     }
-                    button {
-                        position: absolute;
-                        right: 15px;
-                        bottom: 15px;
-                        width: 100px;
-                        height: 30px;
-                        border: none;
-                        cursor: pointer;
-                        background-color: white;
-                        border-radius: 13px;
-                        font-weight: $medium;
-                        font-size: 14px;
+    
+                    .Shopping {
+                        position: relative;
+                        padding-top: 30px;
+                        padding-bottom: 40px;
+                        padding-left: 25px;
+                        padding-right: 15px;
+    
+                        .FirstImage {
+                            width: 450px;
+                            height: 270px;
+                            border-radius: 10px;
+                            margin-left: 0px !important;
+                        }
+    
+                        img {
+                            width: 200px;
+                            height: 150px;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            margin-left: 16px;
+    
+                        }
+    
+                        h3 {
+                            font-size: 36px;
+                            padding-left: 20px;
+                            margin-bottom: 20px;
+                        }
+    
+                        .InfoParagraph {
+                            line-height: 35px;
+                            font-size: 18px;
+                        }
+    
+                        button {
+                            position: absolute;
+                            right: 15px;
+                            bottom: 15px;
+                            width: 100px;
+                            height: 30px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: white;
+                            border-radius: 13px;
+                            font-weight: $medium;
+                            font-size: 14px;
+                        }
+    
+                        button:hover {
+                            transition: 0.5s;
+                            opacity: 0.7;
+                        }
                     }
-                    button:hover {
-                        transition: 0.5s;
-                        opacity: 0.7;
+    
+                    .Presents {
+                        position: relative;
+                        padding-top: 30px;
+                        padding-bottom: 40px;
+                        padding-left: 25px;
+                        padding-right: 15px;
+    
+                        .FirstImage {
+                            width: 450px;
+                            height: 270px;
+                            border-radius: 10px;
+                            margin-left: 0px !important;
+                        }
+    
+                        img {
+                            width: 200px;
+                            height: 150px;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            margin-left: 16px;
+    
+                        }
+    
+                        h3 {
+                            font-size: 36px;
+                            padding-left: 20px;
+                            margin-bottom: 20px;
+                        }
+    
+                        .InfoParagraph {
+                            line-height: 35px;
+                            font-size: 18px;
+                        }
+    
+                        button {
+                            position: absolute;
+                            right: 15px;
+                            bottom: 15px;
+                            width: 100px;
+                            height: 30px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: white;
+                            border-radius: 13px;
+                            font-weight: $medium;
+                            font-size: 14px;
+                        }
+    
+                        button:hover {
+                            transition: 0.5s;
+                            opacity: 0.7;
+                        }
                     }
-                }
-                .Travel {
-                    position: relative;
-                    padding-top: 30px;
-                    padding-bottom: 40px;
-                    padding-left: 25px;
-                    padding-right: 15px;
-                    .FirstImage {
-                        width: 450px;
-                        height: 270px;
-                        border-radius: 10px;
-                        margin-left: 0px !important;
-                    }
-                    img {
-                        width: 200px;
-                        height: 150px;
-                        border-radius: 10px;
-                        margin-bottom: 20px;
-                        margin-left: 16px;
-        
-                    }
-        
-                    h3 {
-                        font-size: 36px;
-                        padding-left: 20px;
-                        margin-bottom: 20px;
-                    }
-                    .InfoParagraph {
-                        line-height: 35px;
-                        font-size: 18px;
-                    }
-                    button {
-                        position: absolute;
-                        right: 15px;
-                        bottom: 15px;
-                        width: 100px;
-                        height: 30px;
-                        border: none;
-                        cursor: pointer;
-                        background-color: white;
-                        border-radius: 13px;
-                        font-weight: $medium;
-                        font-size: 14px;
-                    }
-                    button:hover {
-                        transition: 0.5s;
-                        opacity: 0.7;
-                    }
-                }
-                .Shopping {
-                    position: relative;
-                    padding-top: 30px;
-                    padding-bottom: 40px;
-                    padding-left: 25px;
-                    padding-right: 15px;
-                    .FirstImage {
-                        width: 450px;
-                        height: 270px;
-                        border-radius: 10px;
-                        margin-left: 0px !important;
-                    }
-                    img {
-                        width: 200px;
-                        height: 150px;
-                        border-radius: 10px;
-                        margin-bottom: 20px;
-                        margin-left: 16px;
-        
-                    }
-        
-                    h3 {
-                        font-size: 36px;
-                        padding-left: 20px;
-                        margin-bottom: 20px;
-                    }
-                    .InfoParagraph {
-                        line-height: 35px;
-                        font-size: 18px;
-                    }
-                    button {
-                        position: absolute;
-                        right: 15px;
-                        bottom: 15px;
-                        width: 100px;
-                        height: 30px;
-                        border: none;
-                        cursor: pointer;
-                        background-color: white;
-                        border-radius: 13px;
-                        font-weight: $medium;
-                        font-size: 14px;
-                    }
-                    button:hover {
-                        transition: 0.5s;
-                        opacity: 0.7;
-                    }
-                }
-                .Presents {
-                    position: relative;
-                    padding-top: 30px;
-                    padding-bottom: 40px;
-                    padding-left: 25px;
-                    padding-right: 15px;
-                    .FirstImage {
-                        width: 450px;
-                        height: 270px;
-                        border-radius: 10px;
-                        margin-left: 0px !important;
-                    }
-                    img {
-                        width: 200px;
-                        height: 150px;
-                        border-radius: 10px;
-                        margin-bottom: 20px;
-                        margin-left: 16px;
-        
-                    }
-        
-                    h3 {
-                        font-size: 36px;
-                        padding-left: 20px;
-                        margin-bottom: 20px;
-                    }
-                    .InfoParagraph {
-                        line-height: 35px;
-                        font-size: 18px;
-                    }
-                    button {
-                        position: absolute;
-                        right: 15px;
-                        bottom: 15px;
-                        width: 100px;
-                        height: 30px;
-                        border: none;
-                        cursor: pointer;
-                        background-color: white;
-                        border-radius: 13px;
-                        font-weight: $medium;
-                        font-size: 14px;
-                    }
-                    button:hover {
-                        transition: 0.5s;
-                        opacity: 0.7;
-                    }
-                }
-                .Cribs {
-                    position: relative;
-                    padding-top: 30px;
-                    padding-bottom: 40px;
-                    padding-left: 25px;
-                    padding-right: 15px;
-                    .FirstImage {
-                        width: 450px;
-                        height: 270px;
-                        border-radius: 10px;
-                        margin-left: 0px !important;
-                    }
-                    img {
-                        width: 200px;
-                        height: 150px;
-                        border-radius: 10px;
-                        margin-bottom: 20px;
-                        margin-left: 16px;
-        
-                    }
-        
-                    h3 {
-                        font-size: 36px;
-                        padding-left: 20px;
-                        margin-bottom: 20px;
-                    }
-                    .InfoParagraph {
-                        line-height: 35px;
-                        font-size: 18px;
-                    }
-                    button {
-                        position: absolute;
-                        right: 15px;
-                        bottom: 15px;
-                        width: 100px;
-                        height: 30px;
-                        border: none;
-                        cursor: pointer;
-                        background-color: white;
-                        border-radius: 13px;
-                        font-weight: $medium;
-                        font-size: 14px;
-                    }
-                    button:hover {
-                        transition: 0.5s;
-                        opacity: 0.7;
+    
+                    .Cribs {
+                        position: relative;
+                        padding-top: 30px;
+                        padding-bottom: 40px;
+                        padding-left: 25px;
+                        padding-right: 15px;
+    
+                        .FirstImage {
+                            width: 450px;
+                            height: 270px;
+                            border-radius: 10px;
+                            margin-left: 0px !important;
+                        }
+    
+                        img {
+                            width: 200px;
+                            height: 150px;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            margin-left: 16px;
+    
+                        }
+    
+                        h3 {
+                            font-size: 36px;
+                            padding-left: 20px;
+                            margin-bottom: 20px;
+                        }
+    
+                        .InfoParagraph {
+                            line-height: 35px;
+                            font-size: 18px;
+                        }
+    
+                        button {
+                            position: absolute;
+                            right: 15px;
+                            bottom: 15px;
+                            width: 100px;
+                            height: 30px;
+                            border: none;
+                            cursor: pointer;
+                            background-color: white;
+                            border-radius: 13px;
+                            font-weight: $medium;
+                            font-size: 14px;
+                        }
+    
+                        button:hover {
+                            transition: 0.5s;
+                            opacity: 0.7;
+                        }
                     }
                 }
             }
-    }
-    .WrapperGuide {
-        margin-bottom: 100px;
-        .Title {
-            width: 100%;
-            text-align: center;
-        }
-        .GuideCategoryHint {
-            width: 100%;
-            text-align: center;
-            font-size: 36px;
-            margin-top: 50px;
-
-
-            animation: hintGuide 1s linear;
-        }
-        @keyframes hintGuide {
-            from {
-                opacity: 0.1;
+    
+            .WrapperGuide {
+                margin-bottom: 100px;
+    
+                .Title {
+                    width: 100%;
+                    text-align: center;
+                }
+    
+                .GuideCategoryHint {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 36px;
+                    margin-top: 50px;
+    
+    
+                    animation: hintGuide 1s linear;
+                }
+    
+                @keyframes hintGuide {
+                    from {
+                        opacity: 0.1;
+                    }
+    
+                    to {
+                        opacity: 1;
+                    }
+                }
+    
+                .ButtonGetInfoCategory {
+                    display: block;
+                    margin: 0 auto;
+                    width: 300px;
+                    height: 35px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: #6950dd;
+                    border-radius: 13px;
+                    color: white;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+    
+                .ButtonGetInfoCategory:hover {
+                    transition: 1s;
+                    opacity: 0.7;
+                }
+    
+                .InformationCategory {
+                    width: 100%;
+                    font-size: 24px;
+                    line-height: 40px;
+                    padding-left: 5px;
+                }
+    
+                .AnimationInfoCategory {
+                    animation: info 1s linear;
+                }
+    
+                @keyframes info {
+                    from {
+                        opacity: 0.2;
+                    }
+    
+                    to {
+                        opacity: 1;
+                    }
+                }
             }
-            to {
-                opacity: 1;
-            }
         }
-        .ButtonGetInfoCategory {
-            display: block;
-            margin: 0 auto;
-            width: 300px;
-            height: 35px;
-            border: none;
-            cursor: pointer;
-            background-color: #6950dd;
-            border-radius: 13px;
-            color: white;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-        .ButtonGetInfoCategory:hover {
-            transition: 1s;
-            opacity: 0.7;
-        }
-        .InformationCategory {
-            width: 100%;
-            font-size: 24px;
-            line-height: 40px;
-            padding-left: 5px;
-        }
-        .AnimationInfoCategory {
-            animation: info 1s linear;
-        }
-        @keyframes info {
+    
+        @keyframes menu {
             from {
                 opacity: 0.2;
             }
-
+    
             to {
                 opacity: 1;
             }
         }
-    }
-}
-@keyframes menu {
-    from {
-        opacity: 0.2;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-.WrapperLoad {
-    margin: 0 auto;
-    background-color: #6950dd;
-    width: 500px;
-    .LoadingProgress {
-        background-color: red;
-        color: red;
-        border-radius: 40px;
-        height: 20px;
-    }
-    .TextLoading {
-        text-align: center;
-        font-size: 24px;
-        color: white;
-        font-weight: $medium;
-        margin-bottom: 20px;
-    }
-}
-.WrapperSend {
-    margin: 0 auto;
-    position: relative;
-    width: 600px;
-    min-height: 250px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 13px;
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    animation: send 0.5s linear;
-    .Complete {
-        width: 100%;
-        text-align: center;
-        font-size: 22px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-    }
-    .DataUserMessage {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: auto;
-        margin-bottom: 30px;
-        div {
-            font-weight: $medium;
-            font-size: 18px;
-            margin-bottom: 25px;
-            .SpanReduxInfo {
+    
+        .WrapperLoad {
+            margin: 0 auto;
+            background-color: #6950dd;
+            width: 500px;
+    
+            .LoadingProgress {
+                background-color: red;
                 color: red;
+                border-radius: 40px;
+                height: 20px;
+            }
+    
+            .TextLoading {
+                text-align: center;
+                font-size: 24px;
+                color: white;
+                font-weight: $medium;
+                margin-bottom: 20px;
             }
         }
-    }
-    .Paragraph {
-        width: 100%;
-        line-height: 30px;
-        font-size: 16px;
-        span {
-            color: red;
-            font-weight: bold;
-        }
-    }
-    .BackToTaprolaAfterSend {
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-}
-.WrapperFormSend {
-    width: 600px;
-    min-height: 300px;
-    background-color: white;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-radius: 13px;
-    padding-left: 10px;
-    padding-right: 10px;
-    animation: formsend 1s;
-    .Title {
-        width: 100%;
-        text-align: center;
-        font-size: 21px;
-        margin-bottom: 40px;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding-left: 5px;
-        padding-right: 5px;
-        line-height: 35px;
-    }
-    form {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 70%;
-        input {
-            height: 40px;
-            margin-bottom: 30px;
-            background-color: #E6E6FA;
-            border: none;
-            border-radius: 6px;
-            padding-left: 20px;
-            font-size: 18px;
-        }
-        input:focus {
-            outline: none;
-            outline-offset: none;
-        }
-        textarea {
-            height: 100px;
-            width: 100%;
-            margin-bottom: 30px;
-            background-color: #E6E6FA;
-            border: none;
-            border-radius: 6px;
-            resize: none;
-            font-size: 16px;
-            padding-left: 8px;
-            padding-top: 8px;
-        }
-        textarea:focus {
-            outline: none;
-            outline-offset: none;
-        }
-        .CheckedInputName {
-            background-color: #FFC0CB;
-            transition: 1s;
-        }
-        .CheckedInputEmail {
-            background-color: #FFC0CB;
-            transition: 1s;
-        }
-        .CheckedTextArea {
-            background-color: #FFC0CB;
-            transition: 1s;
-        }
-        button {
-            width: 300px;
-            height: 35px;
-            border: none;
-            cursor: pointer;
+    
+        .WrapperSend {
+            margin: 0 auto;
+            position: relative;
+            width: 600px;
+            min-height: 250px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
             border-radius: 13px;
-            margin-left: 58px;
-            background-color: #0983ff;
-            color: white;
-            font-size: 18px;
-            font-weight: 400;
-        }
-
-        button:hover {
-            transition: 0.4s;
-            opacity: 0.8;
-        }
-    }
-}
-@keyframes formsend {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes send {
-    from {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-.WrapperLoadingSend {
-    width: 320px;
-    height: auto;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 30px;
-    .LoadingSendMessage {
-        width: 100%;
-        height: 70px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        animation: loadsend 1s linear;
-        .LoadingSend {
-            font-size: 18px;
-            font-weight: bold;
-            animation: textload 2s infinite linear;
-        }
-        @keyframes textload {
-            from {
-                opacity: 0.4;
+            padding-top: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            animation: send 0.5s linear;
+    
+            .Complete {
+                width: 100%;
+                text-align: center;
+                font-size: 22px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 40px;
             }
+    
+            .DataUserMessage {
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+                height: auto;
+                margin-bottom: 30px;
+    
+                div {
+                    font-weight: $medium;
+                    font-size: 18px;
+                    margin-bottom: 25px;
+    
+                    .SpanReduxInfo {
+                        color: red;
+                    }
+                }
+            }
+    
+            .Paragraph {
+                width: 100%;
+                line-height: 30px;
+                font-size: 16px;
+    
+                span {
+                    color: red;
+                    font-weight: bold;
+                }
+            }
+    
+            .BackToTaprolaAfterSend {
+                width: 40px;
+                height: 40px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+        }
+    
+        .WrapperFormSend {
+            width: 600px;
+            min-height: 300px;
+            background-color: white;
+            margin: 0 auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+            animation: formsend 1s;
+    
+            .Title {
+                width: 100%;
+                text-align: center;
+                font-size: 21px;
+                margin-bottom: 40px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding-left: 5px;
+                padding-right: 5px;
+                line-height: 35px;
+            }
+    
+            form {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 70%;
+    
+                input {
+                    height: 40px;
+                    margin-bottom: 30px;
+                    background-color: #E6E6FA;
+                    border: none;
+                    border-radius: 6px;
+                    padding-left: 20px;
+                    font-size: 18px;
+                }
+    
+                input:focus {
+                    outline: none;
+                    outline-offset: none;
+                }
+    
+                textarea {
+                    height: 100px;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    background-color: #E6E6FA;
+                    border: none;
+                    border-radius: 6px;
+                    resize: none;
+                    font-size: 16px;
+                    padding-left: 8px;
+                    padding-top: 8px;
+                }
+    
+                textarea:focus {
+                    outline: none;
+                    outline-offset: none;
+                }
+    
+                .CheckedInputName {
+                    background-color: #FFC0CB;
+                    transition: 1s;
+                }
+    
+                .CheckedInputEmail {
+                    background-color: #FFC0CB;
+                    transition: 1s;
+                }
+    
+                .CheckedTextArea {
+                    background-color: #FFC0CB;
+                    transition: 1s;
+                }
+    
+                button {
+                    width: 300px;
+                    height: 35px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 13px;
+                    margin-left: 58px;
+                    background-color: #0983ff;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+    
+                button:hover {
+                    transition: 0.4s;
+                    opacity: 0.8;
+                }
+            }
+        }
+    
+        @keyframes formsend {
+            from {
+                opacity: 0;
+            }
+    
             to {
                 opacity: 1;
             }
         }
-    }
-    @keyframes loadsend {
-        from {
-            opacity: 0;
+    
+        @keyframes send {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+    
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
-        to {
-            opacity: 1;
+    
+        .WrapperLoadingSend {
+            width: 320px;
+            height: auto;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 30px;
+    
+            .LoadingSendMessage {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                animation: loadsend 1s linear;
+    
+                .LoadingSend {
+                    font-size: 18px;
+                    font-weight: bold;
+                    animation: textload 2s infinite linear;
+                }
+    
+                @keyframes textload {
+                    from {
+                        opacity: 0.4;
+                    }
+    
+                    to {
+                        opacity: 1;
+                    }
+                }
+            }
+    
+            @keyframes loadsend {
+                from {
+                    opacity: 0;
+                }
+    
+                to {
+                    opacity: 1;
+                }
+            }
         }
-    }
 }
 .WrapperHeader {
     background-color: #333;
+    height: 80px;
+    display: flex;
+    .Header {
     width: 100%;
-    height: 60px;
+    height: 100%;
+    background-color: #333;
     border-radius: 16px;
     margin-bottom: 150px;
     animation: head 1s linear;
@@ -1344,8 +1531,8 @@ $bold: 600;
     align-items: center;
     .LogoTaprola {
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     .NavLinks {
         display: flex;
@@ -1368,4 +1555,5 @@ $bold: 600;
     to {
         opacity: 1;
     }
+}
 }
