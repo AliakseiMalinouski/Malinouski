@@ -18,11 +18,11 @@ export const Header = () => {
             <div className='Header' style={{ backgroundColor: '#333' }}>
             <img src={Logo} alt='Logo' className='LogoTaprola'/>
             <div className='NavLinks'>
-                <NavLink to='/'>Intrudaction</NavLink>
-                <NavLink to='/taprola'>Options</NavLink>
-                <NavLink to='/menu'>Menu</NavLink>
-                <NavLink to='/options'>Options</NavLink>
-                <NavLink to='/send'>Contacts</NavLink>
+                <NavLink className='NavLink' to='/'>Intrudaction</NavLink>
+                <NavLink className='NavLink' to='/taprola'>Taprola</NavLink>
+                <NavLink className='NavLink' to='/menu'>Menu</NavLink>
+                <NavLink className='NavLink' to='/options'>Options</NavLink>
+                <NavLink className='NavLink' to='/send'>Contacts</NavLink>
             </div>
         </div>
     )

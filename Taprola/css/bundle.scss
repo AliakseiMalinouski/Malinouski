@@ -30,6 +30,7 @@ $bold: 600;
 
 .WrapperContent {
     padding-top: 100px;
+    padding-bottom: 30px;
     .WrapperItems {
             position: relative;
             width: 800px;
@@ -454,7 +455,7 @@ $bold: 600;
         .WrapperWelcomeAlert {
             position: relative;
             background-color: white;
-            min-height: 600px;
+            min-height: 900px;
             width: 800px;
             margin: 0 auto;
             padding-left: 25px;
@@ -466,7 +467,7 @@ $bold: 600;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: space-evenly;
+            justify-content: space-around;
             animation: welcomealert 1s linear;
     
             .TitleWelcome {
@@ -544,6 +545,8 @@ $bold: 600;
             }
     
             .ButtonStartWork {
+                display: block;
+                margin: 0 auto;
                 border: none;
                 cursor: pointer;
                 background-color: #0983ff;
@@ -555,8 +558,6 @@ $bold: 600;
                 font-weight: $medium;
                 padding-left: 55px;
                 padding-top: 10px;
-                margin-left: 54px;
-                margin-top: 35px;
                 padding-right: 40px;
                 padding-bottom: 10px;
                 text-decoration: none;
@@ -1550,6 +1551,10 @@ $bold: 600;
             font-weight: bold;
             font-size: 18px;
             color: white;
+        }
+        .NavLink:hover {
+            transition: 1s;
+            color: #0983ff;
         }
     }
 }
