@@ -122,13 +122,18 @@ class Taprola extends React.PureComponent {
         let newArrayItems = this.state.array.filter(item => {
             return item.code !== code;
         });
-        answer ? this.setState({ array: newArrayItems }) : this.setState({ targetCode: null });
-        this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
+        if (answer) {
+            this.setState({ array: newArrayItems });
+            this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
+        }
+        else {
+            this.setState({ targetCode: null });
+        }
     }
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
-        this.setState({ ItemH: {code: 0} });
+        this.setState({ ItemH: {code: 0, name: "", remains: null} });
     }
 
     addNameNewItem = (EO) => {
@@ -139,8 +144,8 @@ class Taprola extends React.PureComponent {
         else if (valueOfNewName && this.newRemainsValue.value) {
             this.setState({ disabledAddNewItemButton: false });
         }
-        this.state.ItemH.name = valueOfNewName;
         (!this.state.array.length) ? null : this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
+        this.setState({ ItemH: { ...this.state.ItemH, name: valueOfNewName } });
     }
 
     addNewRemainsItem = (EO) => {
@@ -151,7 +156,7 @@ class Taprola extends React.PureComponent {
         else if (valueOfNewRemains && this.newNameValue.value) {
             this.setState({ disabledAddNewItemButton: false });
         }
-        this.state.ItemH.remains = valueOfNewRemains;
+        this.setState({ ItemH: { ...this.state.ItemH, remains: valueOfNewRemains } });
     }
 
     validAll = () => {
