@@ -13,7 +13,7 @@ export const Reviews = () => {
     const [targetCode, setTargetCode] = useState(null);
 
     useEffect(() => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/b409541e50fad6eb063245728cdadfbd/raw/3b62a4b79d7fd225495db2f3c8905b925a74bfdc/ReviewsListTaprola", { method: 'get' })
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/b409541e50fad6eb063245728cdadfbd/raw/bce265e0d6d072a5efc55ce2547ef07453183b3e/ReviewsListTaprola", { method: 'get' })
             .then(response => {
                 if (!response.ok) {
                 alert("Error with connection")

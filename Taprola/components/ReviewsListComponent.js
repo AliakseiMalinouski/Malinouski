@@ -26,7 +26,6 @@ export const ReviewsList = ({ name, age, review, rating, cbView, code, targetCod
         return (
         <div className='WrapperReview'>
             <h3 onClick={changeView} className='UserName'>{name} <span className='Age'>{age}</span> <img className='Rating' src={rating} alt='Rating'/></h3>
-            {/* <p className='Review'>{review}</p> */}
         </div>
     )
     }
