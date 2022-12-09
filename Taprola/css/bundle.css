@@ -1058,6 +1058,73 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+  .WrapperContent .WrapperReviews {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 16px;
+    padding-left: 50px;
+    padding-top: 100px; }
+    .WrapperContent .WrapperReviews .Title {
+      margin-bottom: 80px;
+      width: 100%;
+      text-align: center;
+      font-size: 48px; }
+    .WrapperContent .WrapperReviews .WrapperReview {
+      position: relative; }
+      .WrapperContent .WrapperReviews .WrapperReview .UserName {
+        cursor: pointer;
+        width: 650px;
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        position: relative;
+        margin-bottom: 25px;
+        padding-left: 15px;
+        border-radius: 13px; }
+        .WrapperContent .WrapperReviews .WrapperReview .UserName .Rating {
+          width: 120px;
+          height: 90px;
+          position: absolute;
+          right: 10px; }
+        .WrapperContent .WrapperReviews .WrapperReview .UserName .Age {
+          font-size: 20px;
+          position: absolute;
+          left: 350px; }
+      .WrapperContent .WrapperReviews .WrapperReview .View {
+        background-color: #FFC0CB;
+        animation: view 1s linear; }
+@keyframes view {
+  0% {
+    width: 650px;
+    background-color: #FFC0CB; }
+  25% {
+    width: 650px;
+    background-color: #FFC0CB; }
+  50% {
+    width: 650px;
+    background-color: #FFC0CB; }
+  100% {
+    width: 730px;
+    background-color: #FFC0CB; } }
+      .WrapperContent .WrapperReviews .WrapperReview .Review {
+        font-weight: 500;
+        margin-bottom: 25px;
+        font-size: 18px;
+        padding-left: 15px;
+        animation: review 1s linear; }
+@keyframes review {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+      .WrapperContent .WrapperReviews .WrapperReview .CloseReview {
+        position: absolute;
+        left: 550px;
+        top: 68px;
+        font-size: 20px;
+        cursor: pointer; }
+
 .WrapperHeader {
   background-color: #333;
   height: 80px;
