@@ -1,20 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 
-class Title extends React.PureComponent{
-    static propTypes = {
-        title: PropTypes.string.isRequired,
-    }
 
-    state = {
-        title: this.props.title,
-    }
+// class Title extends React.PureComponent{
+//     static propTypes = {
+//         title: PropTypes.string.isRequired,
+//     }
 
-    render() {
-        return <h1 className='Title'>
-            {this.state.title}
-        </h1>
-    }
+//     state = {
+//         title: this.props.title,
+//     }
+
+//     render() {
+//         return <h1 className='Title'>
+//             {this.state.title}
+//         </h1>
+//     }
+// }
+// export default Title;
+
+export const Title = ({title}) => {
+    return (
+        <h1 className='Title'>
+            {title}
+       </h1>
+    )
 }
-export default Title;

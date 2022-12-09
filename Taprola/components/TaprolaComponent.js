@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes, { element } from 'prop-types';
 import Items from '../components/ItemsComponent';
-import Title from '../components/TitleComponent';
+import {Title} from '../components/TitleComponent';
 import JsonTitle from '../json/title.json';
 import JsonIcon from '../json/icon.json';
-import Icon from './IconComponent';
 import { taprolaEvents } from '../events';
 import { withBGHoc } from './withColorBackground';
 import ChangeColorIcon from '../json/icon-change-color.json';
@@ -272,7 +271,7 @@ class Taprola extends React.PureComponent {
             return <div className='WrapperItems'>
                 <div>
                         <Color iconUrl={ChangeColorIcon} />
-                        <Icon iconUrl={JsonIcon} />
+                        <img className='Icon' src={JsonIcon} alt='A pen' />
                         {
                             (this.state.colorClicked) ?
                                 <div className='ColorInputDiv'>
@@ -306,7 +305,7 @@ class Taprola extends React.PureComponent {
             return <div className='WrapperItems'>
                 <div>
                     <Color iconUrl={ChangeColorIcon} />
-                    <Icon iconUrl={JsonIcon} />
+                    <img className='Icon' src={JsonIcon} alt='A pen' />
                     {
                         (this.state.colorClicked) ?
                             <div className='ColorInputDiv'>
@@ -338,7 +337,7 @@ class Taprola extends React.PureComponent {
             return <div className='WrapperItems' style={{height: this.state.heigthOfApp}}>
                 <div>
                         <Color iconUrl={ChangeColorIcon} />
-                        <Icon iconUrl={JsonIcon} />
+                        <img className='Icon' src={JsonIcon} alt='A pen' />
                         {
                             (this.state.colorClicked) ?
                                 <div className='ColorInputDiv'>
