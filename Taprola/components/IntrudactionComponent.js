@@ -17,7 +17,7 @@ const baseArray = [
     {"code": 8, "image": "./img/options-icon.png", "title": "Options", "paragraph": "To access the settings, press the 'Gears' button", "classNameParagraph": "Paragraph", "classNameTitle": "UnderTitle"}
 ]
 
-export const Intrudaction = () => {
+export const Intrudaction = React.memo(() => {
 
     const [listArray, setListArray] = useState([]);
 
@@ -50,4 +50,4 @@ export const Intrudaction = () => {
         <NavLink className='ButtonStartWork' to="/taprola">Get to work</NavLink>
         </div>
     )
-}
+})

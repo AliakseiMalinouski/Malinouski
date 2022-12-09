@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getListReviews } from '../redux/reviewsSlice';
 import { ReviewsList } from './ReviewsListComponent';
 
-export const Reviews = () => {
+export const Reviews = React.memo( () => {
 
     let dispatch = useDispatch();
 
@@ -44,4 +44,4 @@ export const Reviews = () => {
         </div>
     )
 
-}
+})

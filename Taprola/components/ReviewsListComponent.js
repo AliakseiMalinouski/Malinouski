@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 
-export const ReviewsList = ({ name, age, review, rating, cbView, code, targetCode, cbClose }) => {
+export const ReviewsList = React.memo(({ name, age, review, rating, cbView, code, targetCode, cbClose }) => {
     
     const [isView, setIsView] = useState(false);
 
@@ -29,4 +29,4 @@ export const ReviewsList = ({ name, age, review, rating, cbView, code, targetCod
         </div>
     )
     }
-} 
+}) 

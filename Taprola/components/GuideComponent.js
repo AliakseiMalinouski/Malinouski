@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getText } from '../redux/infoCategorySlice';
 import { taprolaEvents } from '../events';
 
-export const Guide = () => {
+export const Guide = React.memo(() => {
 
     const [guideUrl, setGuideUrl] = useState("https://gist.githubusercontent.com/AliakseiMalinouski/0bae667633b7e90832592833d3e2ddac/raw/c043c1ba80580447696dd6071ef33d87cb3d1e45/TaprolaCategoryGuide");
     const [guideInfo, setGuideInfo] = useState("");
@@ -70,4 +70,4 @@ export const Guide = () => {
             </div>
         </div>
     )
-}
+})

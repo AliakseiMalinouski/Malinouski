@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { NavLink } from 'react-router-dom';
 import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
 
-export const SendedForm = () => {
+export const SendedForm = React.memo(() => {
 
     const messageComplete = useSelector(state => state.informationAboutUserMessage);
 
@@ -21,4 +21,4 @@ export const SendedForm = () => {
                 </div>
         </div>
     )
-}
+})

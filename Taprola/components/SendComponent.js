@@ -10,7 +10,7 @@ import { SendedForm } from './SendedForm';
 import { useNavigate } from 'react-router-dom';
 
 
-export const Send = () => {
+export const Send = React.memo(() => {
 
     const [isPost, setIsPost] = useState(false);
     const [checkedInputName, setCheckedInputName] = useState(false);
@@ -107,4 +107,4 @@ export const Send = () => {
         </div>
     )
     }
-}
+})

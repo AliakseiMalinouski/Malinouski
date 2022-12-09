@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Logo from '../json/icon-log.json';
 
-export const Header = () => {
+export const Header = React.memo(() => {
 
     const _END = '/';
 
@@ -27,4 +27,4 @@ export const Header = () => {
             </div>
         </div>
     )
-} 
+}) 
