@@ -18,12 +18,11 @@ import { withTranslation } from 'react-i18next';
 
 class Taprola extends React.PureComponent {
     static propTypes = {
-        array: PropTypes.array.isRequired,
         newItemH: PropTypes.object.isRequired,
     }
 
     state = {
-        array: this.props.array,
+        array: [],
         ItemH: this.props.newItemH,
         targetCode: null,
         boolANI: false,
@@ -63,6 +62,21 @@ class Taprola extends React.PureComponent {
         })
     }
 
+    loadItemsArray = () => {
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/81a8361e6db38ac4edc3513dfa745741/raw/6688872aa4883a3e31ffd0c67f7296e4fb91a3bb/ArrayItemsTaprola", { method: 'get' })
+            .then(response => {
+                if (!response.ok) {
+                alert("Error with connection")
+                }
+                else {
+                    return response.json();
+                }
+            })
+            .then(data => {
+                this.setState({ array: data });
+        })
+    }
+
     setEN = () => {
         this.props.i18n.changeLanguage("en");
         this.setState({ isLanguage: false });
@@ -91,6 +105,7 @@ class Taprola extends React.PureComponent {
     }
 
     componentDidMount = () => {
+        this.loadItemsArray();
         taprolaEvents.addListener('ECheckedItem', this.Selected);
         taprolaEvents.addListener('EDeleteItem', this.Delete);
         taprolaEvents.addListener('changeBackgroundColorTitle', this.changeBackgroundColorTitle);
