@@ -1182,35 +1182,43 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
-  .WrapperContent .WrapperSlider .Slider {
-    width: 760px;
-    height: 460px;
-    border: 1px solid black;
-    margin: 0 auto;
-    overflow: hidden; }
-    .WrapperContent .WrapperSlider .Slider .SliderTrack {
+  .WrapperContent .WrapperSlider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    .WrapperContent .WrapperSlider .Slider {
+      width: 760px;
+      height: 460px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 13px; }
+      .WrapperContent .WrapperSlider .Slider .SliderTrack {
+        display: flex;
+        position: relative;
+        left: 0;
+        transition: 1s;
+        width: 2280px;
+        height: 100%; }
+        .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide {
+          width: 760px;
+          height: 100%; }
+    .WrapperContent .WrapperSlider .ButtonsGallery {
       display: flex;
-      position: relative;
-      left: 0;
-      transition: 1s;
-      width: 2280px;
-      height: 100%; }
-      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide1 {
-        width: 760px;
-        height: 100%;
-        background-color: red; }
-      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide2 {
-        width: 760px;
-        height: 100%;
-        background-color: blue; }
-      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide3 {
-        width: 760px;
-        height: 100%;
-        background-color: yellow; }
-      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide4 {
-        width: 760px;
-        height: 100%;
-        background-color: green; }
+      justify-content: space-around;
+      margin-top: 30px;
+      width: 300px; }
+      .WrapperContent .WrapperSlider .ButtonsGallery button {
+        width: 120px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 13px;
+        font-size: 20px;
+        font-weight: 400; }
+      .WrapperContent .WrapperSlider .ButtonsGallery button:hover {
+        opacity: 0.7;
+        transition: 1s; }
 
 .WrapperHeader {
   background-color: #333;
