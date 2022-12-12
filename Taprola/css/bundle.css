@@ -833,6 +833,9 @@ body {
           .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs button:hover {
             transition: 0.5s;
             opacity: 0.7; }
+      .WrapperContent .WrapperMenu .WrapperCategories .Categories:hover {
+        transition: 0.5s;
+        opacity: 0.6; }
     .WrapperContent .WrapperMenu .WrapperGuide {
       margin-bottom: 100px; }
       .WrapperContent .WrapperMenu .WrapperGuide .Title {
@@ -1081,9 +1084,14 @@ body {
         align-items: center;
         font-size: 34px;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
         padding-left: 15px;
-        border-radius: 13px; }
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 13px;
+        -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+        -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+        box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38); }
         .WrapperContent .WrapperReviews .WrapperReview .UserName .Rating {
           width: 120px;
           height: 90px;
@@ -1114,8 +1122,8 @@ body {
     background-color: #FFC0CB; } }
       .WrapperContent .WrapperReviews .WrapperReview .Review {
         font-weight: 500;
-        margin-bottom: 25px;
-        font-size: 18px;
+        margin-bottom: 45px;
+        font-size: 24px;
         padding-left: 15px;
         animation: review 1s linear; }
 @keyframes review {
@@ -1126,7 +1134,7 @@ body {
       .WrapperContent .WrapperReviews .WrapperReview .CloseReview {
         position: absolute;
         left: 550px;
-        top: 56px;
+        top: 100px;
         font-size: 20px;
         cursor: pointer;
         background-color: palevioletred;

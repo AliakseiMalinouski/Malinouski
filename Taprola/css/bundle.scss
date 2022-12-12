@@ -819,10 +819,12 @@ $bold: 600;
                         transform: rotate(0deg);
                     }
                 }
+
     
                 .Categories {
                     margin-bottom: 40px;
                     cursor: pointer;
+
     
                     .Food {
                         position: relative;
@@ -877,6 +879,7 @@ $bold: 600;
                             opacity: 0.7;
                         }
                     }
+
     
                     .Tasks {
                         position: relative;
@@ -1147,6 +1150,10 @@ $bold: 600;
                             opacity: 0.7;
                         }
                     }
+                }
+                .Categories:hover {
+                    transition: 0.5s;
+                    opacity: 0.6;
                 }
             }
     
@@ -1502,9 +1509,14 @@ $bold: 600;
                     align-items: center;
                     font-size: 34px;
                     position: relative;
-                    margin-bottom: 25px;
+                    margin-bottom: 45px;
                     padding-left: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
                     border-radius: 13px;
+                    -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+                    -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+                    box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
                     .Rating {
                         width: 120px;
                         height: 90px;
@@ -1551,8 +1563,8 @@ $bold: 600;
                                 }
                 .Review {
                     font-weight: 500;
-                    margin-bottom: 25px;
-                    font-size: 18px;
+                    margin-bottom: 45px;
+                    font-size: 24px;
                     padding-left: 15px;
                     animation: review 1s linear;
                 }
@@ -1567,7 +1579,7 @@ $bold: 600;
                 .CloseReview {
                     position: absolute;
                     left: 550px;
-                    top: 56px;
+                    top: 100px;
                     font-size: 20px;
                     cursor: pointer;
                     background-color: palevioletred;
