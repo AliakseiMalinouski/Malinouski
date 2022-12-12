@@ -1075,6 +1075,12 @@ body {
       width: 100%;
       text-align: center;
       font-size: 48px; }
+    .WrapperContent .WrapperReviews .ReturnToApp {
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px; }
     .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar {
       padding-right: 30px;
       display: flex;

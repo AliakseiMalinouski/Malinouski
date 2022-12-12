@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListReviews } from '../redux/reviewsSlice';
 import { ReviewsList } from './ReviewsListComponent';
+import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+import { NavLink } from 'react-router-dom';
 
 export const Reviews = React.memo( () => {
 
@@ -51,6 +53,7 @@ export const Reviews = React.memo( () => {
                     <h3>more</h3>
                 </div>
             </div>
+            <NavLink><img className='ReturnToApp' src={BackToTaprolaIcon} alt='Return'/></NavLink>
         </div>
     )
 
