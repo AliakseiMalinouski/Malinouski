@@ -35,12 +35,22 @@ export const Reviews = React.memo( () => {
         setTargetCode(null)
     }
 
+    
+
     return (
         <div className='WrapperReviews'>
             <h2 className='Title'>Reviews</h2>
-            {
-                reviewsList.dataReviews.map(e => <ReviewsList key={e.code} code={e.code} name={e.name} rating={e.rating} age={e.age} review={e.review} cbView={view} cbClose={close} targetCode={targetCode} />)
-            }
+            <div className='WrapperReviewsAndSideBar'>
+                <div className='MainWrapperReviews'>
+                    {
+                    reviewsList.dataReviews.map(e => <ReviewsList key={e.code} code={e.code} name={e.name} rating={e.rating} age={e.age} review={e.review} cbView={view} cbClose={close} targetCode={targetCode} />)
+                    }
+                </div>
+                <div className='SideBar'>
+                    <span>Remember</span>
+                    <h3>more</h3>
+                </div>
+            </div>
         </div>
     )
 

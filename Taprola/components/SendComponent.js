@@ -99,9 +99,9 @@ export const Send = React.memo(() => {
         <div className='WrapperFormSend'>
             <div className='Title'>Complete the form below and get an answer!</div>
                 <form onSubmit={submitQuestion}>
-                    <input className={checkedInputName ? 'CheckedInputName' : null} type='text' name='from__name' placeholder='name' ref={inputName} value={toSend.from__name} onChange={validationFormSend} onFocus={selectedInputName} onBlur={unSelectedInputName} />
-                    <input className={checkedInputEmail ? 'CheckedInputEmail' : null} type='text' name='from__email' placeholder='email' value={toSend.from__email} onChange={validationFormSend} onFocus={selectedInputEmail} onBlur={unSelectedInputEmail} />
-                    <textarea className={checkedTextArea ? 'CheckedTextArea' : null} name='question' placeholder='question' maxLength='240' value={toSend.question} onChange={validationFormSend} onFocus={selectedTextArea} onBlur={unSelectedTextArea}></textarea>
+                    <input className={checkedInputName ? 'CheckedInputName' : null} type='text' required name='from__name' placeholder='name' ref={inputName} value={toSend.from__name} onChange={validationFormSend} onFocus={selectedInputName} onBlur={unSelectedInputName} />
+                    <input className={checkedInputEmail ? 'CheckedInputEmail' : null} type='text' required name='from__email' placeholder='email' value={toSend.from__email} onChange={validationFormSend} onFocus={selectedInputEmail} onBlur={unSelectedInputEmail} />
+                    <textarea className={checkedTextArea ? 'CheckedTextArea' : null} name='question' required placeholder='question' maxLength='240' value={toSend.question} onChange={validationFormSend} onFocus={selectedTextArea} onBlur={unSelectedTextArea}></textarea>
                     <button type='submit'>Submit</button>
                 </form>
         </div>

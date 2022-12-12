@@ -23,7 +23,7 @@ export const Intrudaction = React.memo(() => {
 
     const dispatch = useDispatch();
 
-    const list = useSelector(state => state.informationAboutListIntrudaction)
+    const list = useSelector(state => state.informationAboutListIntrudaction);
 
     useEffect(() => {
         fetch("https://gist.githubusercontent.com/AliakseiMalinouski/5373be1277141069e4b420f55c1c68ea/raw/85daa398d6f7dc955b75261e2e867c66cbfa2832/IntrudactionListTaprola", { method: 'get' })
@@ -36,7 +36,6 @@ export const Intrudaction = React.memo(() => {
                 }
             })
             .then(data => {
-                console.log(data)
                 dispatch(getDataList({ listInt: data }));
             })
     }, []);

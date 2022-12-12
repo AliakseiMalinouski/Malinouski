@@ -1075,38 +1075,42 @@ body {
       width: 100%;
       text-align: center;
       font-size: 48px; }
-    .WrapperContent .WrapperReviews .WrapperReview {
-      position: relative; }
-      .WrapperContent .WrapperReviews .WrapperReview .UserName {
-        cursor: pointer;
-        width: 650px;
-        display: flex;
-        align-items: center;
-        font-size: 34px;
-        position: relative;
-        margin-bottom: 45px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 13px;
-        -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
-        -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
-        box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38); }
-        .WrapperContent .WrapperReviews .WrapperReview .UserName .Rating {
-          width: 120px;
-          height: 90px;
-          position: absolute;
-          right: 10px; }
-        .WrapperContent .WrapperReviews .WrapperReview .UserName .Age {
-          font-size: 20px;
-          position: absolute;
-          left: 350px; }
-      .WrapperContent .WrapperReviews .WrapperReview .UserName:hover {
-        transition: 0.5s;
-        background-color: #FFC0CB; }
-      .WrapperContent .WrapperReviews .WrapperReview .View {
-        background-color: #FFC0CB;
-        animation: view 1s linear; }
+    .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar {
+      padding-right: 30px;
+      display: flex;
+      justify-content: space-between; }
+      .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview {
+        position: relative; }
+        .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName {
+          cursor: pointer;
+          width: 650px;
+          display: flex;
+          align-items: center;
+          font-size: 34px;
+          position: relative;
+          margin-bottom: 45px;
+          padding-left: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-radius: 13px;
+          -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+          -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+          box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38); }
+          .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName .Rating {
+            width: 120px;
+            height: 90px;
+            position: absolute;
+            right: 10px; }
+          .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName .Age {
+            font-size: 20px;
+            position: absolute;
+            left: 350px; }
+        .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName:hover {
+          transition: 0.5s;
+          background-color: #FFC0CB; }
+        .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .View {
+          background-color: #FFC0CB;
+          animation: view 1s linear; }
 @keyframes view {
   0% {
     width: 650px;
@@ -1120,31 +1124,53 @@ body {
   100% {
     width: 730px;
     background-color: #FFC0CB; } }
-      .WrapperContent .WrapperReviews .WrapperReview .Review {
-        font-weight: 500;
-        margin-bottom: 45px;
-        font-size: 24px;
-        padding-left: 15px;
-        animation: review 1s linear; }
+        .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .Review {
+          font-weight: 500;
+          margin-bottom: 45px;
+          font-size: 24px;
+          padding-left: 15px;
+          animation: review 1s linear; }
 @keyframes review {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-      .WrapperContent .WrapperReviews .WrapperReview .CloseReview {
-        position: absolute;
-        left: 550px;
-        top: 100px;
-        font-size: 20px;
-        cursor: pointer;
-        background-color: palevioletred;
+        .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .CloseReview {
+          position: absolute;
+          left: 550px;
+          top: 100px;
+          font-size: 20px;
+          cursor: pointer;
+          background-color: palevioletred;
+          border-radius: 13px;
+          padding-top: 10px;
+          padding-left: 7px;
+          padding-bottom: 10px;
+          padding-right: 7px;
+          color: white;
+          font-weight: 500; }
+      .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .SideBar {
         border-radius: 13px;
-        padding-top: 10px;
-        padding-left: 7px;
-        padding-bottom: 10px;
-        padding-right: 7px;
-        color: white;
-        font-weight: 500; }
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+        -moz-box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+        box-shadow: 0px 0px 18px 3px rgba(34, 60, 80, 0.38);
+        width: 400px;
+        height: 700px;
+        background: #833ab4;
+        background: linear-gradient(90deg, #833ab4 0%, #d45a5a 50%, #fcb045 100%); }
+        .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .SideBar span {
+          display: block;
+          font-size: 50px;
+          transform: rotate(40deg);
+          margin-top: 250px;
+          color: black; }
+        .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .SideBar h3 {
+          width: 340px;
+          margin-top: 150px;
+          transform: rotate(40deg);
+          color: white;
+          font-size: 120px; }
 @keyframes wrapprev {
   from {
     opacity: 0; }
