@@ -1202,7 +1202,17 @@ body {
         height: 100%; }
         .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide {
           width: 760px;
-          height: 100%; }
+          height: 100%;
+          padding-left: 20px;
+          padding-top: 5px; }
+        .WrapperContent .WrapperSlider .Slider .SliderTrack .Name {
+          color: #333;
+          font-size: 64px; }
+        .WrapperContent .WrapperSlider .Slider .SliderTrack .Description {
+          color: #333;
+          margin-top: 10px;
+          font-weight: 500;
+          font-size: 20px; }
     .WrapperContent .WrapperSlider .ButtonsGallery {
       display: flex;
       justify-content: space-around;
