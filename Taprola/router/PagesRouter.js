@@ -7,6 +7,7 @@ import { PageMenu } from '../pages/PageMenu';
 import { PageSend } from '../pages/PageSend';
 import { PageSendedForm } from '../pages/PageSendedForm';
 import { PageReviews } from '../pages/PageReviews';
+import { PageSlider } from '../pages/PageSlider';
 
 export const PagesRouter = () => {
           
@@ -18,7 +19,8 @@ export const PagesRouter = () => {
         <Route path='/send' element={<PageSend/>} />
         <Route path='/menu' element={<PageMenu />} />
         <Route path='/sendedform' element={<PageSendedForm />} />
-        <Route path='/reviews' element={<PageReviews/>} />
+        <Route path='/reviews' element={<PageReviews />} />
+        <Route path='/slider' element={<PageSlider/>} />
       </Routes>
     );
     

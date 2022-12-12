@@ -1653,6 +1653,45 @@ $bold: 600;
                 opacity: 1;
             }
         }
+        .WrapperSlider {
+            .Slider {
+                width: 760px;
+                height: 460px;
+                border: 1px solid black;
+                margin: 0 auto;
+                overflow: hidden;
+                .SliderTrack {
+                    display: flex;
+                    position: relative;
+                    left: 0;
+                    transition: 1s;
+                    width: 2280px;
+                    height: 100%;
+
+                    .Slide1 {
+                        width: 760px;
+                        height: 100%;
+                        background-color: red;
+                    }
+                    .Slide2 {
+                        width: 760px;
+                        height: 100%;
+                        background-color: blue;
+                    }
+                    .Slide3 {
+                        width: 760px;
+                        height: 100%;
+                        background-color: yellow;
+                    }
+                    .Slide4 {
+                        width: 760px;
+                        height: 100%;
+                        background-color: green;
+                    }
+                    
+                }
+            }
+        }
 }
 .WrapperHeader {
     background-color: #333;

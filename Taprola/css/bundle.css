@@ -1182,6 +1182,36 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+  .WrapperContent .WrapperSlider .Slider {
+    width: 760px;
+    height: 460px;
+    border: 1px solid black;
+    margin: 0 auto;
+    overflow: hidden; }
+    .WrapperContent .WrapperSlider .Slider .SliderTrack {
+      display: flex;
+      position: relative;
+      left: 0;
+      transition: 1s;
+      width: 2280px;
+      height: 100%; }
+      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide1 {
+        width: 760px;
+        height: 100%;
+        background-color: red; }
+      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide2 {
+        width: 760px;
+        height: 100%;
+        background-color: blue; }
+      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide3 {
+        width: 760px;
+        height: 100%;
+        background-color: yellow; }
+      .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide4 {
+        width: 760px;
+        height: 100%;
+        background-color: green; }
+
 .WrapperHeader {
   background-color: #333;
   height: 80px;

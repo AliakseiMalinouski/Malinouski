@@ -37,7 +37,6 @@ export const Reviews = React.memo( () => {
         setTargetCode(null)
     }
 
-    
 
     return (
         <div className='WrapperReviews'>
