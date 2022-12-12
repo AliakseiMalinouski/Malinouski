@@ -20,7 +20,7 @@ export const PagesRouter = () => {
         <Route path='/menu' element={<PageMenu />} />
         <Route path='/sendedform' element={<PageSendedForm />} />
         <Route path='/reviews' element={<PageReviews />} />
-        <Route path='/slider' element={<PageSlider/>} />
+        <Route path='/gallery' element={<PageSlider/>} />
       </Routes>
     );
     

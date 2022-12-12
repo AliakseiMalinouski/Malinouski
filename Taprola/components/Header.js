@@ -24,7 +24,7 @@ export const Header = React.memo(() => {
                 <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)}>Options</NavLink>
                 <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)}>Contacts</NavLink>
                 <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)}>Reviews</NavLink>
-                <NavLink className='NavLink' to='/slider' style={(page == '/slider' ? { color: 'red' } : null)}>Gallery</NavLink>
+                <NavLink className='NavLink' to='/gallery' style={(page == '/slider' ? { color: 'red' } : null)}>Gallery</NavLink>
             </div>
         </div>
     )
