@@ -132,7 +132,7 @@ class Taprola extends React.PureComponent {
     }
 
     Delete = (code) => {
-        let answer = confirm('You have selected a product ' + code + ' are you sure you want to remove it?');
+        let answer = confirm('You have selected a product are you sure you want to remove it?');
         let newArrayItems = this.state.array.filter(item => {
             return item.code !== code;
         });
