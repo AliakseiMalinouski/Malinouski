@@ -13,6 +13,7 @@ export const Slider = () => {
     const [leftSliderTrack, setWidthSliderTrack] = useState(0);
     const [isClickedPreviousButton, setIsClickedPreviousButton] = useState(false);
     const [isClickedNextButton, setIsClickedNextButton] = useState(false);
+    const [targetCode, setTargetCode] = useState(null);
 
     const staticLeft = 760;
 
@@ -42,7 +43,7 @@ export const Slider = () => {
     }, [isClickedNextButton, isClickedPreviousButton]);
 
     useEffect(() => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/d6798bcc83126b681ebe4721d0adfc68/raw/ebff38fec9d70900f5b4674733b27434dc20f54e/GalleryTaprolaArray", { method: 'get' })
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/d6798bcc83126b681ebe4721d0adfc68/raw/36f82b1ebfa9b1ab2247389f539e61d791b1e967/GalleryTaprolaArray", { method: 'get' })
             .then(response => {
                 if (!response.ok) {
                     alert("Error with connection")
@@ -56,12 +57,16 @@ export const Slider = () => {
             })
     }, []);
 
+    const cbView = (code) => {
+        setTargetCode(code);
+    }
+
     return (
         <div className='WrapperSlider'>
             <div className='Slider'>
                 <div className='SliderTrack' style={{left: leftSliderTrack + 'px'}}>
                     {
-                        galleryArray.data.map(e => <GallerySlides key={e.code} code={e.code} name={e.name} description={e.description} image={e.image} />)
+                        galleryArray.data.map(e => <GallerySlides key={e.code} viewText={e.view} targetCode={targetCode} cbView={cbView} code={e.code} name={e.name} description={e.description} image={e.image} />)
                     }
                 </div>
             </div>

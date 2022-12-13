@@ -1205,6 +1205,13 @@ body {
           height: 100%;
           padding-left: 20px;
           padding-top: 5px; }
+        .WrapperContent .WrapperSlider .Slider .SliderTrack .SliderAnimation {
+          animation: slide 1s linear; }
+@keyframes slide {
+  from {
+    transform: rotate(180deg); }
+  to {
+    transform: rotate(0deg); } }
         .WrapperContent .WrapperSlider .Slider .SliderTrack .Name {
           color: #333;
           font-size: 64px; }
