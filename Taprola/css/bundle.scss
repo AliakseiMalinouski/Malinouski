@@ -1677,6 +1677,7 @@ $bold: 600;
                         height: 100%;
                         padding-left: 20px;
                         padding-top: 5px;
+                        position: relative;
                     }
 
                     .SliderAnimation {
@@ -1704,6 +1705,41 @@ $bold: 600;
                         font-weight: 500;
                         font-size: 20px;
                         
+                    }
+
+                    .ViewDescription {
+                        line-height: 35px;
+                        font-size: 18px;
+                        margin-top: 40px;
+                        animation: view 2s linear;
+                    }
+
+
+
+                    .ViewImage {
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        left: 20px;
+                        bottom: 20px;
+                        animation: view 2s linear;
+                    }
+
+                    .CloseImage {
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+
+                    @keyframes view {
+                        from {
+                            opacity: 0;
+                        }
+                        to {
+                            opacity: 1;
+                        }
                     }
                     
                 }

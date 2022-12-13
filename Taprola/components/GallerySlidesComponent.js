@@ -1,6 +1,6 @@
 import React from "react";
 
-export const GallerySlides = ({ code, name, description, image, targetCode, cbView, viewText }) => {
+export const GallerySlides = ({ code, name, description, image, targetCode, cbView, viewText, viewImage, closeImage }) => {
 
     const view = (EO) => {
         cbView(code);
@@ -9,10 +9,12 @@ export const GallerySlides = ({ code, name, description, image, targetCode, cbVi
     if (code == targetCode) {
         return (
         <div>
-            <div className='Slide SliderAnimation' onClick={view} style={{backgroundColor: '#00BFFF', transition: '1s'}}>
+            <div className='Slide SliderAnimation' onClick={view} style={{backgroundColor: '#87CEEB', transition: '1s'}}>
                 <h3 className='Name'>{name}</h3>
                     <p className='Description'>{description}</p>
-                    <p>{viewText}</p>
+                    <p className='ViewDescription'>{viewText}</p>
+                    <img className='ViewImage' src={viewImage} alt='Image' />
+                    <img className='CloseImage' src={closeImage} alt='Image' />
             </div>
         </div>
     )
