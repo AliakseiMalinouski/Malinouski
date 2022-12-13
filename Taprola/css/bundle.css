@@ -1192,7 +1192,8 @@ body {
       height: 460px;
       margin: 0 auto;
       overflow: hidden;
-      border-radius: 13px; }
+      border-radius: 13px;
+      animation: wrapgallery 1s linear; }
       .WrapperContent .WrapperSlider .Slider .SliderTrack {
         display: flex;
         position: relative;
@@ -1256,11 +1257,17 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes wrapgallery {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
     .WrapperContent .WrapperSlider .ButtonsGallery {
       display: flex;
       justify-content: space-around;
       margin-top: 30px;
-      width: 300px; }
+      width: 300px;
+      animation: wrapgallery 1s linear; }
       .WrapperContent .WrapperSlider .ButtonsGallery button {
         width: 120px;
         height: 40px;

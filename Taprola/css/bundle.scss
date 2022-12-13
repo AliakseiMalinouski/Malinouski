@@ -1664,6 +1664,7 @@ $bold: 600;
                 margin: 0 auto;
                 overflow: hidden;
                 border-radius: 13px;
+                animation: wrapgallery 1s linear;
                 .SliderTrack {
                     display: flex;
                     position: relative;
@@ -1760,11 +1761,20 @@ $bold: 600;
                     
                 }
             }
+            @keyframes wrapgallery {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
             .ButtonsGallery {
                 display: flex;
                 justify-content: space-around;
                 margin-top: 30px;
                 width: 300px;
+                animation: wrapgallery 1s linear;
                 button {
                     width: 120px;
                     height: 40px;
