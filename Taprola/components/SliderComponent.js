@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getDataGallery } from '../redux/gallerySlice';
 import { GallerySlides } from './GallerySlidesComponent';
+import { Images } from './ImagesComponent';
 
 export const Slider = () => {
 
@@ -80,6 +81,11 @@ export const Slider = () => {
                 }
                 {
                     !isClickedNextButton ? <button type='button' onClick={next}>{`${'>'}`}</button> : <button type='button' onClick={next} style={{backgroundColor: 'red', opacity: '1'}}>{`${'>'}`}</button>
+                }
+            </div>
+            <div className='WrappperImages'>
+                {
+                    <Images/>
                 }
             </div>
         </div>
