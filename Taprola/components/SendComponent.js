@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
 import { SendedForm } from './SendedForm';
 import { useNavigate } from 'react-router-dom';
-
+import { useBeforeunload } from 'react-beforeunload';
 
 export const Send = React.memo(() => {
 
@@ -54,6 +54,12 @@ export const Send = React.memo(() => {
                 alert('Error ' + err)
             });
     }
+
+    useBeforeunload((EO) => {
+        if (toSend.from__email == '' || toSend.question == '' || toSend.from__name == '') {
+            EO.preventDefault();
+        }
+    });
 
     function validationFormSend(EO) {
         setToSend({ ...toSend, [EO.target.name]: EO.target.value });
