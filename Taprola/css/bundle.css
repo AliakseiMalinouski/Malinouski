@@ -1205,7 +1205,18 @@ body {
           height: 100%;
           padding-left: 20px;
           padding-top: 5px;
-          position: relative; }
+          position: relative;
+          cursor: pointer; }
+        .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide:hover {
+          transition: 1s;
+          opacity: 0.7; }
+        .WrapperContent .WrapperSlider .Slider .SliderTrack .OpenSlide {
+          width: 760px;
+          height: 100%;
+          padding-left: 20px;
+          padding-top: 5px;
+          position: relative;
+          cursor: pointer; }
         .WrapperContent .WrapperSlider .Slider .SliderTrack .SliderAnimation {
           animation: slide 1s linear; }
 @keyframes slide {
@@ -1238,7 +1249,8 @@ body {
           height: 40px;
           position: absolute;
           top: 15px;
-          right: 15px; }
+          right: 15px;
+          cursor: pointer; }
 @keyframes view {
   from {
     opacity: 0; }

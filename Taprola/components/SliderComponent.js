@@ -61,12 +61,16 @@ export const Slider = () => {
         setTargetCode(code);
     }
 
+    const cbClose = () => {
+        setTargetCode(null);
+    }
+
     return (
         <div className='WrapperSlider'>
             <div className='Slider'>
                 <div className='SliderTrack' style={{left: leftSliderTrack + 'px'}}>
                     {
-                        galleryArray.data.map(e => <GallerySlides key={e.code} viewText={e.view} targetCode={targetCode} cbView={cbView} viewImage={e.viewImage} closeImage={e.closeImage} code={e.code} name={e.name} description={e.description} image={e.image} />)
+                        galleryArray.data.map(e => <GallerySlides key={e.code} viewText={e.view} targetCode={targetCode} cbView={cbView} cbClose={cbClose} viewImage={e.viewImage} closeImage={e.closeImage} code={e.code} name={e.name} description={e.description} image={e.image} />)
                     }
                 </div>
             </div>
