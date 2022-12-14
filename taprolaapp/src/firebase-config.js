@@ -4,13 +4,13 @@ import { getAuth } from 'firebase/auth';
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBNMBf8lJKiX0GJic0O4W68ROI-lxsKwZ4",
-  authDomain: "taprola-56d9f.firebaseapp.com",
-  projectId: "taprola-56d9f",
-  storageBucket: "taprola-56d9f.appspot.com",
-  messagingSenderId: "1099304937656",
-  appId: "1:1099304937656:web:7d5d838f9fb36ad131ac4d",
-  measurementId: "G-TSYCLNM35F"
+  apiKey: process.env.REACT__APP__FIREBASE__API__KEY,
+  authDomain: process.env.REACT__APP__FIREBASE__AUTH__DOMAIN,
+  projectId: process.env.REACT__APP__FIREBASE__PROJECT__ID,
+  storageBucket: process.env.REACT__APP__FIREBASE__STORAGE__BUCKET,
+  messagingSenderId: process.env.REACT__APP__FIREBASE__MESSAGING__SENDER__ID,
+  appId: process.env.REACT__APP__FIREBASE__APP__ID,
+  measurementId: process.env.REACT__APP__FIREBASE__M__ID
 };
 
 const app = initializeApp(firebaseConfig);
