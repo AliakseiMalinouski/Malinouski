@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from 'react-router-dom';
-import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+import BackToTaprolaIcon from '../assets/totaprolafromcategory.png';
 
 export const SendedForm = React.memo(() => {
 

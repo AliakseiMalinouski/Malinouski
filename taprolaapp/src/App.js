@@ -5,7 +5,7 @@ import { PagesRouter } from './router/PagesRouter';
 import '../src/i18n/config';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
-import {Header} from './components/Header'
+import { Header } from './components/Header';
 
 export const App = () => {
   return (

@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { send } from 'emailjs-com';
 import { addInfo } from '../redux/sendSlice';
 import { NavLink } from 'react-router-dom';
-import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+import BackToTaprolaIcon from '../assets/totaprolafromcategory.png';
 import { SendedForm } from './SendedForm';
 import { useNavigate } from 'react-router-dom';
 import { useBeforeunload } from 'react-beforeunload';

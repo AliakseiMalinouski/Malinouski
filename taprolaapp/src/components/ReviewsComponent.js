@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListReviews } from '../redux/reviewsSlice';
 import { ReviewsList } from './ReviewsListComponent';
-import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+import BackToTaprolaIcon from '../assets/totaprolafromcategory.png';
 import { NavLink } from 'react-router-dom';
 
 export const Reviews = React.memo( () => {

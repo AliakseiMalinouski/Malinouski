@@ -27,14 +27,15 @@ export const Auth = () => {
     }
 
     const login = async () => {
-        try {
-            const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-            console.log(user)
-        }
-        catch (error) {
-            console.log(error.message);
-        }
+    try {
+        const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
     }
+    catch (error) {
+      console.log(error.message);
+    }
+  };
+
+    
 
     const logout = async () => {
         await signOut(auth);
