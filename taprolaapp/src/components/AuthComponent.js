@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase-config';
 
-export const Auth = () => {
+export const Auth = React.memo(() => {
 
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
@@ -59,4 +59,4 @@ export const Auth = () => {
             <button onClick={logout}>Sign out</button>
         </div>
     )
-}
+})
