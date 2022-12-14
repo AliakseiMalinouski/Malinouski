@@ -18,7 +18,8 @@ export const Header = React.memo(() => {
             <div className='Header' style={{ backgroundColor: '#333' }}>
             <img src={logo} alt='Logo' className='LogoTaprola'/>
             <div className='NavLinks'>
-                <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Intrudaction</NavLink>
+                <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Auth</NavLink>
+                <NavLink className='NavLink' style={(page == '/intrudaction' ? {color: 'red'} : null)} to='/intrudaction'>Intrudaction</NavLink>
                 <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)}>Taprola</NavLink>
                 <NavLink className='NavLink' to='/menu' style={(page == '/menu' ? {color: 'red'} : null)}>Menu</NavLink>
                 <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)}>Options</NavLink>

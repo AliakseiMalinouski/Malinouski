@@ -8,12 +8,14 @@ import { PageSend } from '../pages/PageSend';
 import { PageSendedForm } from '../pages/PageSendedForm';
 import { PageReviews } from '../pages/PageReviews';
 import { PageSlider } from '../pages/PageSlider';
+import { PageAuth } from '../pages/PageAuth';
 
 export const PagesRouter = () => {
           
     return (
       <Routes>
-        <Route path='/' element={<PageIntrudaction/>} />
+        <Route path='/' element={<PageAuth/>} />
+        <Route path='/intrudaction' element={<PageIntrudaction/>} />
         <Route path="/taprola" element={<PageTaprola />} />
         <Route path='/options' element={<PageOptions />} />
         <Route path='/send' element={<PageSend/>} />
