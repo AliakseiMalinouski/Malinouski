@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import Logo from '../json/icon-log.json';
+import logo from '../assets/LogoTaprola.png'
 
 export const Header = React.memo(() => {
 
@@ -16,7 +16,7 @@ export const Header = React.memo(() => {
 
     return (
             <div className='Header' style={{ backgroundColor: '#333' }}>
-            <img src={Logo} alt='Logo' className='LogoTaprola'/>
+            <img src={logo} alt='Logo' className='LogoTaprola'/>
             <div className='NavLinks'>
                 <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Intrudaction</NavLink>
                 <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)}>Taprola</NavLink>

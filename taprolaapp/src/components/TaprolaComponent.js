@@ -2,19 +2,22 @@ import React from 'react';
 import PropTypes, { element } from 'prop-types';
 import Items from './ItemsComponent';
 import { Title } from './TitleComponent';
-import JsonTitle from '../json/title.json';
-import JsonIcon from '../json/icon.json';
+// import JsonTitle from '../json/title.json';
+// import JsonIcon from '../json/icon.json';
+import JsonIcon from '../assets/edit.png';
 import {taprolaEvents} from '../events';
 import { withBGHoc } from './withColorBackground';
-import ChangeColorIcon from '../json/icon-change-color.json';
+import ChangeColorIcon from '../assets/color-ico.png';
 import Color from './ChangeColorIcon';
-import IconBack from '../json/icon-back.json';
+import IconBack from '../assets/icon-back.png';
 import { NavLink } from 'react-router-dom';
-import OptionsIcon from '../json/icon-options.json';
-import LanguageIcon from '../json/icon-language.json';
-import MenuIcon from '../json/menu-icon.json';
-import SendIcon from '../json/send-icon.json';
+import OptionsIcon from '../assets/options-icon.png';
+import LanguageIcon from '../assets/language-icon.png';
+import MenuIcon from '../assets/menu.png';
+import SendIcon from '../assets/spam.png';
 import { withTranslation } from 'react-i18next';
+
+const JsonTitle = "Taprola"
 
 class Taprola extends React.PureComponent {
     static propTypes = {

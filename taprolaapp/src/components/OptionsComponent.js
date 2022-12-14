@@ -1,12 +1,11 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import MobileIcon from '../json/icon-modileopt.json';
-import QuestionIcon from '../json/icon-question.json';
-import HowDoThisIcon from '../json/icon-how-do-this.json';
-import SmileIcon from '../json/icon-smile.json';
+import MobileIcon from '../assets/mobileicon.png';
+import QuestionIcon from '../assets/question-icon.png';
+import HowDoThisIcon from '../assets/icon-how-do-this.png';
 import { NavLink } from 'react-router-dom';
-import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
-import SendIcon from '../json/send-icon.json';
+import BackToTaprolaIcon from '../assets/totaprolafromcategory.png';
+import SendIcon from '../assets/spam.png';
 
 class Options extends React.PureComponent {
     static propTypes = {
