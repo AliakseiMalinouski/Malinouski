@@ -50,8 +50,8 @@ export const Auth = () => {
             </div>
             <div>
                 <h3>Login</h3>
-                <input placeholder='email' onChange={(EO) => { setLoginEmail(EO.target.value) }} value={loginEmail} />
-                <input placeholder='password' onChange={(EO) => { setLoginPassword(EO.target.value) }} value={loginPassword}/>
+                <input placeholder='email' onChange={(EO) => { setLoginEmail(EO.target.value) }}  />
+                <input placeholder='password' onChange={(EO) => { setLoginPassword(EO.target.value) }} />
                 <button onClick={login}>Login</button>
             </div>
             <h4>User Logged in: {user?.email}</h4>
