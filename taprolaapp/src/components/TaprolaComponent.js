@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes, { element } from 'prop-types';
 import Items from './ItemsComponent';
 import { Title } from './TitleComponent';
-// import JsonTitle from '../json/title.json';
-// import JsonIcon from '../json/icon.json';
+import bucket from '../assets/waste.png'
 import JsonIcon from '../assets/edit.png';
 import {taprolaEvents} from '../events';
 import { withBGHoc } from './withColorBackground';
@@ -66,7 +65,7 @@ class Taprola extends React.PureComponent {
     }
 
     loadItemsArray = () => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/81a8361e6db38ac4edc3513dfa745741/raw/6688872aa4883a3e31ffd0c67f7296e4fb91a3bb/ArrayItemsTaprola", { method: 'get' })
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/81a8361e6db38ac4edc3513dfa745741/raw/b4c4ea3f5a2f556bc1f482b809b57d8d6d093ba2/ArrayItemsTaprola", { method: 'get' })
             .then(response => {
                 if (!response.ok) {
                 alert("Error with connection")
@@ -197,7 +196,7 @@ class Taprola extends React.PureComponent {
                 this.setState({ disabledAddNewItemButton: true });
             }
         }
-        this.state.ItemH.iconWasteUrl = './img/waste.png';
+        this.state.ItemH.iconWasteUrl = "https://cdn-icons-png.flaticon.com/512/6559/6559406.png";
     }
 
     addNewItem = (EO) => {
