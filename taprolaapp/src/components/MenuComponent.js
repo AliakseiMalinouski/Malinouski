@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Categories from './CategoriesComponent';
 import { NavLink } from 'react-router-dom';
 import { taprolaEvents } from '../events';
-import BackToTaprolaIcon from '../json/icon-backtotaprolafromcategory.json';
+import BackToTaprolaIcon from '../assets/totaprolafromcategory.png';
 import { Guide } from './GuideComponent';
 
 
