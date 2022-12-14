@@ -11,6 +11,7 @@ export const Auth = React.memo(() => {
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
     const [user, setUser] = useState({});
+    const [isHave, setIsHave] = useState(false);
 
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
@@ -45,20 +46,43 @@ export const Auth = React.memo(() => {
 
     return (
         <div className='WrapperAuth'>
-            <div>
-                <h3>Register User</h3>
-                <input placeholder='email' onChange={(EO) => { setRegisterEmail(EO.target.value) }}  />
-                <input placeholder='password' onChange={(EO) => { setRegisterPassword(EO.target.value) }} />
-                <button onClick={register}>Create User</button>
+            <h2>Registration</h2>
+            <div className='FormAuth'>
+                {
+                    (!isHave)
+                        ?
+                        <div className='RegisterPart'>
+                            <h3>Register User</h3>
+                            <input placeholder='email' onChange={(EO) => { setRegisterEmail(EO.target.value) }}  />
+                            <input placeholder='password' onChange={(EO) => { setRegisterPassword(EO.target.value) }} />
+                            <button onClick={register}>create user</button>
+                        </div>
+                        :
+                        null
+                }
+                {
+                    (isHave) 
+                        ?
+                        null
+                        :
+                        <p className='Have' onClick={(EO) => {setIsHave(true)}}>Do you have an account?</p>
+                }
+            {
+                    (isHave)
+                        ?
+                <div className='LoginPart AnimationAuth'>
+                    <h3>Login</h3>
+                    <input placeholder='email' onChange={(EO) => { setLoginEmail(EO.target.value) }}  />
+                    <input placeholder='password' onChange={(EO) => { setLoginPassword(EO.target.value) }} />
+                    <button onClick={login}>Login</button>
+                </div>
+                        :
+                        null
+                    
+            }
+            <h4 className='TitleLogged'>User Logged in: {user?.email}</h4>
+            <button onClick={logout} className='SignOut'>sign out</button>
             </div>
-            <div>
-                <h3>Login</h3>
-                <input placeholder='email' onChange={(EO) => { setLoginEmail(EO.target.value) }}  />
-                <input placeholder='password' onChange={(EO) => { setLoginPassword(EO.target.value) }} />
-                <button onClick={login}>Login</button>
-            </div>
-            <h4>User Logged in: {user?.email}</h4>
-            <button onClick={logout}>Sign out</button>
         </div>
     )
 })
