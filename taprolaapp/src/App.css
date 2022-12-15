@@ -1635,10 +1635,10 @@ body {
 }
 
 .WrapperContent .WrapperSlider {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
 }
 
 .WrapperContent .WrapperSlider .Slider {
@@ -1978,4 +1978,52 @@ body {
 .WrapperAuth .SignOut:hover {
   transition: 1s;
   opacity: 0.7;
+}
+
+ .WrapperImages {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.WrapperImages .ImageDefault {
+  width: 220px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.WrapperImages .ImageDefault:hover {
+  transition: 0.8s;
+  opacity: 0.7;
+}
+
+.WrapperImages .ImageOpened {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  bottom: 0px;
+  border-radius: 13px;
+  animation: imageopen 0.5s linear;
+}
+
+@keyframes imageopen {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }

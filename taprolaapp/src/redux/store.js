@@ -5,6 +5,7 @@ import sendSlice from './sendSlice';
 import listSlice from './listSlice';
 import reviewsSlice from './reviewsSlice';
 import gallerySlice from './gallerySlice';
+import imagesSlice from './imagesSlice';
 
 export const store = configureStore({
     reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
         informationAboutUserMessage: sendSlice,
         informationAboutListIntrudaction: listSlice,
         informationAboutReviewsList: reviewsSlice,
-        informationAboutGallery: gallerySlice
+        informationAboutGallery: gallerySlice,
+        informationAboutImagesGallery: imagesSlice
     }
 })
