@@ -1962,6 +1962,13 @@ body {
   padding-bottom: 50px;
 }
 
+.WrapperAuth .FormAuth .LoginPart .LoginButton {
+  background-color: #0983ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .WrapperAuth .FormAuth .LoginPart h3 {
   width: 100%;
   text-align: center;

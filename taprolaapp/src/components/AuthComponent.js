@@ -20,6 +20,7 @@ export const Auth = React.memo(() => {
     const [user, setUser] = useState({});
     const [isHave, setIsHave] = useState(false);
     const [isAccept, setIsAccept] = useState(false);
+    const [isAcceptLogin, setIsAcceptLogin] = useState(false);
 
     const registerEmailRef = useRef("");
     const registerPasswordRef = useRef("");
@@ -79,6 +80,15 @@ export const Auth = React.memo(() => {
         }
     }
 
+    const acceptAllLogin = () => {
+        if (loginEmail == '' || loginPassword == '') {
+            setIsAcceptLogin(false);
+        }
+        else {
+            setIsAcceptLogin(true);
+        }
+    }
+
     const readRegisterEmail = (EO) => {
         setRegisterEmail(EO.target.value);
         acceptAllRegister();
@@ -91,10 +101,12 @@ export const Auth = React.memo(() => {
 
     const readLoginEmail = (EO) => {
         setLoginEmail(EO.target.value);
+        acceptAllLogin();
     }
 
     const readLoginPassword = (EO) => {
         setLoginPassword(EO.target.value);
+        acceptAllLogin();
     }
 
     return (
@@ -123,7 +135,13 @@ export const Auth = React.memo(() => {
                             <h3>Login</h3>
                             <input placeholder='email' onChange={readLoginEmail}  />
                             <input placeholder='password' onChange={readLoginPassword} />
-                            <button onClick={login}>Login</button>
+                            {
+                                (!isAcceptLogin)
+                                    ?
+                                    <button onClick={login} disabled={true} style={{ opacity: 0.7 }} className='LoginButton'>Login</button>
+                                    :
+                                    <button onClick={login} className='LoginButton'>Login</button>
+                            }
                         </div>
                 }
             <h4 className='TitleLogged'>User Logged in: {user?.email}</h4>
