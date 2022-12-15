@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 
 
 export const Images = ({ code, image, name, backgroundColor, targetImage, cbOpenImage, parent }) => {
