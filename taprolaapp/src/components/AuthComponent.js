@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase-config';
 import { getUser } from '../redux/userSlice';
