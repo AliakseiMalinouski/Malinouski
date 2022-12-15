@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes, { element } from 'prop-types';
 import Items from './ItemsComponent';
 import { Title } from './TitleComponent';
-import bucket from '../assets/waste.png'
 import JsonIcon from '../assets/edit.png';
 import {taprolaEvents} from '../events';
 import { withBGHoc } from './withColorBackground';
