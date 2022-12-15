@@ -11,7 +11,7 @@ export const PageMenu = () => {
     const [colorProgress, setColorProgress] = useState("red");
 
     useEffect(() => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/57225c6273781cf6e6f858cbf5cb59fd/raw/80c2da501d262c4338bba95eff8b5ac88702e01c/ArrayCategoryTaprola",
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/57225c6273781cf6e6f858cbf5cb59fd/raw/b573b345534f080e6266dd7b63b2b61d2614998d/ArrayCategoryTaprola",
             { method: 'get' })
             .then(response => {
                 if (!response.ok) {
