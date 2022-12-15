@@ -71,30 +71,23 @@ export const Auth = React.memo(() => {
                             <input placeholder='email' onChange={(EO) => { setRegisterEmail(EO.target.value) }}  />
                             <input placeholder='password' onChange={(EO) => { setRegisterPassword(EO.target.value) }} />
                             <button onClick={register}>create user</button>
+                            <p className='Have' onClick={(EO) => {setIsHave(true)}}>Do you have an account?</p>
                         </div>
                         :
-                        null
+                        <div className='LoginPart AnimationAuth'>
+                        <h3>Login</h3>
+                        <input placeholder='email' onChange={(EO) => { setLoginEmail(EO.target.value) }}  />
+                        <input placeholder='password' onChange={(EO) => { setLoginPassword(EO.target.value) }} />
+                        <button onClick={login}>Login</button>
+                        </div>
                 }
-                {
+                {/* {
                     (isHave) 
                         ?
                         null
                         :
                         <p className='Have' onClick={(EO) => {setIsHave(true)}}>Do you have an account?</p>
-                }
-            {
-                    (isHave)
-                        ?
-                <div className='LoginPart AnimationAuth'>
-                    <h3>Login</h3>
-                    <input placeholder='email' onChange={(EO) => { setLoginEmail(EO.target.value) }}  />
-                    <input placeholder='password' onChange={(EO) => { setLoginPassword(EO.target.value) }} />
-                    <button onClick={login}>Login</button>
-                </div>
-                        :
-                        null
-                    
-            }
+                } */}
             <h4 className='TitleLogged'>User Logged in: {user?.email}</h4>
             <button onClick={logout} className='SignOut'>sign out</button>
             </div>

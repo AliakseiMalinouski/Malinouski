@@ -1915,6 +1915,9 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .WrapperAuth .FormAuth .Have:hover {
