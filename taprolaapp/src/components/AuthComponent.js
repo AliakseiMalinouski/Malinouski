@@ -5,11 +5,13 @@ import { auth } from '../firebase-config';
 import { getUser } from '../redux/userSlice';
 import { removeUser } from '../redux/userSlice';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 export const Auth = React.memo(() => {
 
     let dispatch = useDispatch();
     
+    let navigate = useNavigate();
 
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
@@ -59,6 +61,11 @@ export const Auth = React.memo(() => {
         }
     }, [user?.email]);
 
+    const openLogin = () => {
+        setIsHave(true);
+        
+    }
+
     return (
         <div className='WrapperAuth'>
             <h2>Registration</h2>
@@ -71,7 +78,7 @@ export const Auth = React.memo(() => {
                             <input placeholder='email' onChange={(EO) => { setRegisterEmail(EO.target.value) }}  />
                             <input placeholder='password' onChange={(EO) => { setRegisterPassword(EO.target.value) }} />
                             <button onClick={register}>create user</button>
-                            <p className='Have' onClick={(EO) => {setIsHave(true)}}>Do you have an account?</p>
+                            <p className='Have' onClick={openLogin}>Do you have an account?</p>
                         </div>
                         :
                         <div className='LoginPart AnimationAuth'>
