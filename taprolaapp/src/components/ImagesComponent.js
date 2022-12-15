@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import useScroll from "../hooks/useScroll";
 
 
 export const Images = ({ code, image, name, backgroundColor, targetImage, cbOpenImage, parent }) => {
@@ -8,9 +7,6 @@ export const Images = ({ code, image, name, backgroundColor, targetImage, cbOpen
     const openImage = () => {
         cbOpenImage(code);
     }
-
-
-    useScroll(parent);
 
     if (code == targetImage) {
         return (
