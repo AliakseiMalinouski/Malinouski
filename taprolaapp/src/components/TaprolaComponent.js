@@ -271,7 +271,6 @@ class Taprola extends React.PureComponent {
     }
 
     render() {
-        console.log(this.state.ItemH.code)
         let items = this.state.array.map(e =>
             <Items
                 key={e.code}
