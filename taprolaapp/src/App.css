@@ -1982,13 +1982,12 @@ body {
 
  .WrapperImages {
   width: 100%;
-  border: 1px solid black;
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
   align-items: center;
   height: 300px;
-  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .WrapperImages .ImageDefault {
@@ -2014,7 +2013,7 @@ body {
   position: absolute;
   width: 550px;
   height: 550px;
-  bottom: 0px;
+  top: 300px;
   border-radius: 13px;
   animation: imageopen 0.5s linear;
 }

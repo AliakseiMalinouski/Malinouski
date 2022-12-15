@@ -102,8 +102,13 @@ export const Slider = () => {
     }
 
     return (
-        <div className='WrapperSlider' style={{height: targetImage ? '1500px' : 'auto'}} ref={parent}>
-            <div className='Slider'>
+        <div className='WrapperSlider' style={{ height: targetImage ? '1500px' : 'auto' }} ref={parent}>
+            <div className='WrapperImages'>
+                {
+                    imagesGallery.data.map(e => <Images key={e.code} code={e.code} name={e.name} image={e.image} backgroundColor={e.color} cbOpenImage={openImage} targetImage={targetImage} parent={parent.current} />)
+                }
+            </div>
+            <div className='Slider' style={{marginTop: targetImage ? '500px' : ''}}>
                 <div className='SliderTrack' style={{left: leftSliderTrack + 'px'}}>
                     {
                         galleryArray.data.map(e => <GallerySlides key={e.code} viewText={e.view} targetCode={targetCode} cbView={cbView} cbClose={cbClose} viewImage={e.viewImage} closeImage={e.closeImage} code={e.code} name={e.name} description={e.description} image={e.image} />)
@@ -116,11 +121,6 @@ export const Slider = () => {
                 }
                 {
                     !isClickedNextButton ? <button type='button' onClick={next}>{`${'>'}`}</button> : <button type='button' onClick={next} style={{backgroundColor: 'red', opacity: '1'}}>{`${'>'}`}</button>
-                }
-            </div>
-            <div className='WrapperImages'>
-                {
-                    imagesGallery.data.map(e => <Images key={e.code} code={e.code} name={e.name} image={e.image} backgroundColor={e.color} cbOpenImage={openImage} targetImage={targetImage} parent={parent.current} />)
                 }
             </div>
         </div>
