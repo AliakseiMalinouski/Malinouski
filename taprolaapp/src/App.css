@@ -1864,6 +1864,9 @@ body {
   margin-top: 40px;
   padding-bottom: 50px;
 }
+.WrapperAuth .FormAuth .RegisterPart {
+  position: relative;
+}
 
 .WrapperAuth .FormAuth .RegisterPart h3 {
   width: 100%;
@@ -1901,11 +1904,26 @@ body {
   font-weight: 500;
   letter-spacing: 0.5px;
   margin-left: 50px;
+  margin-top: 50px;
 }
 
 .WrapperAuth .FormAuth .RegisterPart button:hover {
   transition: 1s;
   opacity: 0.7;
+}
+
+.WrapperAuth .FormAuth .RegisterPart .Accept {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.WrapperAuth .FormAuth .RegisterPart .AllCorrectAccept {
+  position: absolute;
+  left: 90px;
+  top: 210px;
 }
 
 .WrapperAuth .FormAuth .Have {

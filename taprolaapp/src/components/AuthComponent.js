@@ -19,6 +19,7 @@ export const Auth = React.memo(() => {
     const [loginPassword, setLoginPassword] = useState("");
     const [user, setUser] = useState({});
     const [isHave, setIsHave] = useState(false);
+    const [isAccept, setIsAccept] = useState(false);
 
 
     useEffect(() => {
@@ -63,7 +64,15 @@ export const Auth = React.memo(() => {
 
     const openLogin = () => {
         setIsHave(true);
-        
+    }
+
+    const acceptAll = () => {
+        if (registerEmail == '' || registerPassword == '') {
+            setIsAccept(false);
+        }
+        else {
+            setIsAccept(true);
+        }
     }
 
     return (
@@ -77,7 +86,14 @@ export const Auth = React.memo(() => {
                             <h3>Register User</h3>
                             <input placeholder='email' onChange={(EO) => { setRegisterEmail(EO.target.value) }}  />
                             <input placeholder='password' onChange={(EO) => { setRegisterPassword(EO.target.value) }} />
-                            <button onClick={register}>create user</button>
+                            <input type='checkbox' onClick={acceptAll} className='Accept'/><span className='AllCorrectAccept'>All the information is correct</span>
+                            {
+                                (!isAccept)
+                                    ?
+                                    <button onClick={register} disabled={true} style={{opacity: 0.7}}>create user</button>
+                                    :
+                                    <button onClick={register}>create user</button>
+                            }
                             <p className='Have' onClick={openLogin}>Do you have an account?</p>
                         </div>
                         :
