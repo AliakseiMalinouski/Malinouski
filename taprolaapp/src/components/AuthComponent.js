@@ -75,6 +75,22 @@ export const Auth = React.memo(() => {
         }
     }
 
+    const readRegisterEmail = (EO) => {
+        setRegisterEmail(EO.target.value)
+    }
+
+    const readRegisterPassword = (EO) => {
+        setRegisterPassword(EO.target.value)
+    }
+
+    const readLoginEmail = (EO) => {
+        setLoginEmail(EO.target.value)
+    }
+
+    const readLoginPassword = (EO) => {
+        setLoginPassword(EO.target.value)
+    }
+
     return (
         <div className='WrapperAuth'>
             <h2>Registration</h2>
@@ -84,8 +100,8 @@ export const Auth = React.memo(() => {
                         ?
                         <div className='RegisterPart'>
                             <h3>Register User</h3>
-                            <input placeholder='email' onChange={(EO) => { setRegisterEmail(EO.target.value) }}  />
-                            <input placeholder='password' onChange={(EO) => { setRegisterPassword(EO.target.value) }} />
+                            <input placeholder='email' onChange={readRegisterEmail}  />
+                            <input placeholder='password' onChange={readRegisterPassword} />
                             <input type='checkbox' onClick={acceptAll} className='Accept'/><span className='AllCorrectAccept'>All the information is correct</span>
                             {
                                 (!isAccept)
@@ -99,8 +115,8 @@ export const Auth = React.memo(() => {
                         :
                         <div className='LoginPart AnimationAuth'>
                             <h3>Login</h3>
-                            <input placeholder='email' onChange={(EO) => { setLoginEmail(EO.target.value) }}  />
-                            <input placeholder='password' onChange={(EO) => { setLoginPassword(EO.target.value) }} />
+                            <input placeholder='email' onChange={readLoginEmail}  />
+                            <input placeholder='password' onChange={readLoginPassword} />
                             <button onClick={login}>Login</button>
                         </div>
                 }
