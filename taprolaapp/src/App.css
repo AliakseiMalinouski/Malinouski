@@ -1812,13 +1812,19 @@ body {
 .WrapperHeader .Header .NavLinks a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   color: white;
 }
 
 .WrapperHeader .Header .NavLinks .NavLink:hover {
   transition: 1s;
   color: #0983ff;
+}
+
+.WrapperHeader .Header .DataUser {
+  color: #0983ff;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 @keyframes head {
