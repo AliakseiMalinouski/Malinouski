@@ -154,7 +154,7 @@ class Taprola extends React.PureComponent {
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
-        this.setState({ ItemH: {code: 0, name: "", remains: null} });
+        this.setState({ ItemH: {code: this.state.array.slice(-1).pop().code + 1, name: "", remains: null} });
     }
 
     addNameNewItem = (EO) => {
@@ -164,13 +164,6 @@ class Taprola extends React.PureComponent {
         }
         else if (valueOfNewName && this.newRemainsValue.value) {
             this.setState({ disabledAddNewItemButton: false });
-        }
-        // (!this.state.array.length) ? null : this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
-        if (!this.state.array.length) {
-            return null;
-        }
-        else {
-            this.state.ItemH.code = this.state.array.slice(-1).pop().code + 1;
         }
         this.setState({ ItemH: { ...this.state.ItemH, name: valueOfNewName } });
     }
@@ -279,6 +272,7 @@ class Taprola extends React.PureComponent {
     }
 
     render() {
+        console.log(this.state.ItemH.code)
         let items = this.state.array.map(e =>
             <Items
                 key={e.code}
