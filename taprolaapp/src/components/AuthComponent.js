@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase-config';
@@ -21,6 +21,9 @@ export const Auth = React.memo(() => {
     const [isHave, setIsHave] = useState(false);
     const [isAccept, setIsAccept] = useState(false);
 
+    const registerEmailRef = useRef("");
+    const registerPasswordRef = useRef("");
+
 
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
@@ -31,7 +34,6 @@ export const Auth = React.memo(() => {
     const register = async () => {
         try {
             const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
-            console.log(user)
         }
         catch (error) {
             console.log(error.message);
@@ -54,6 +56,8 @@ export const Auth = React.memo(() => {
     const logout = async () => {
         await signOut(auth);
         dispatch(removeUser({ nothing: "" }));
+        registerEmailRef.current.value = '';
+        registerPasswordRef.current.value = '';
     }
 
     useEffect(() => {
@@ -66,7 +70,7 @@ export const Auth = React.memo(() => {
         setIsHave(true);
     }
 
-    const acceptAll = () => {
+    const acceptAllRegister = () => {
         if (registerEmail == '' || registerPassword == '') {
             setIsAccept(false);
         }
@@ -76,19 +80,21 @@ export const Auth = React.memo(() => {
     }
 
     const readRegisterEmail = (EO) => {
-        setRegisterEmail(EO.target.value)
+        setRegisterEmail(EO.target.value);
+        acceptAllRegister();
     }
 
     const readRegisterPassword = (EO) => {
-        setRegisterPassword(EO.target.value)
+        setRegisterPassword(EO.target.value);
+        acceptAllRegister();
     }
 
     const readLoginEmail = (EO) => {
-        setLoginEmail(EO.target.value)
+        setLoginEmail(EO.target.value);
     }
 
     const readLoginPassword = (EO) => {
-        setLoginPassword(EO.target.value)
+        setLoginPassword(EO.target.value);
     }
 
     return (
@@ -100,9 +106,9 @@ export const Auth = React.memo(() => {
                         ?
                         <div className='RegisterPart'>
                             <h3>Register User</h3>
-                            <input placeholder='email' onChange={readRegisterEmail}  />
-                            <input placeholder='password' onChange={readRegisterPassword} />
-                            <input type='checkbox' onClick={acceptAll} className='Accept'/><span className='AllCorrectAccept'>All the information is correct</span>
+                            <input placeholder='email' onChange={readRegisterEmail} ref={registerEmailRef} />
+                            <input placeholder='password' onChange={readRegisterPassword} ref={registerPasswordRef} />
+                            <input type='checkbox' onClick={acceptAllRegister} className='Accept'/><span className='AllCorrectAccept'>All the information is correct</span>
                             {
                                 (!isAccept)
                                     ?
