@@ -132,15 +132,17 @@ export const Auth = React.memo(() => {
                         </div>
                         :
                         <div className='LoginPart AnimationAuth'>
-                            <h3>Login</h3>
-                            <input placeholder='email' onChange={readLoginEmail}  />
-                            <input placeholder='password' onChange={readLoginPassword} />
                             {
-                                (!isAcceptLogin)
+                                (user?.email)
                                     ?
-                                    <button onClick={login} disabled={true} style={{ opacity: 0.7 }} className='LoginButton'>Login</button>
+                                    null
                                     :
-                                    <button onClick={login} className='LoginButton'>Login</button>
+                                    <div>
+                                        <h3>Login</h3>
+                                        <input placeholder='email' onChange={readLoginEmail}  />
+                                        <input placeholder='password' onChange={readLoginPassword} />
+                                        <button onClick={login} disabled={(!isAcceptLogin ? true : false)} style={{ opacity: (!isAcceptLogin) ? 0.7 : '' }} className='LoginButton'>Login</button>
+                                    </div>
                             }
                         </div>
                 }
