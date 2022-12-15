@@ -3,8 +3,14 @@ import { useState, useEffect } from 'react';
 // import { useSelector, useDispatch } from 'react-redux';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase-config';
+import { getUser } from '../redux/userSlice';
+import { removeUser } from '../redux/userSlice';
+import { useDispatch } from 'react-redux';
 
 export const Auth = React.memo(() => {
+
+    let dispatch = useDispatch();
+    
 
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
@@ -12,6 +18,7 @@ export const Auth = React.memo(() => {
     const [loginPassword, setLoginPassword] = useState("");
     const [user, setUser] = useState({});
     const [isHave, setIsHave] = useState(false);
+
 
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
@@ -32,6 +39,8 @@ export const Auth = React.memo(() => {
     const login = async () => {
     try {
         const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+        dispatch(getUser({ userEmail: loginEmail }));
+
     }
     catch (error) {
       console.log(error.message);
@@ -42,7 +51,14 @@ export const Auth = React.memo(() => {
 
     const logout = async () => {
         await signOut(auth);
+        dispatch(removeUser({ nothing: "" }));
     }
+
+    useEffect(() => {
+        if (user?.email) {
+            dispatch(getUser({ userEmail: user?.email }));
+        }
+    }, [user?.email]);
 
     return (
         <div className='WrapperAuth'>

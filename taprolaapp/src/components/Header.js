@@ -3,8 +3,13 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../assets/LogoTaprola.png'
+import { useSelector, useDispatch } from 'react-redux';
 
 export const Header = React.memo(() => {
+
+    let dispatch = useDispatch();
+
+    const user = useSelector(state => state.informationAboutUser.userEmail);
 
     const _END = '/';
 
@@ -26,6 +31,7 @@ export const Header = React.memo(() => {
                 <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)}>Contacts</NavLink>
                 <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)}>Reviews</NavLink>
                 <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
+                <span>Email: {user}</span>
             </div>
         </div>
     )
