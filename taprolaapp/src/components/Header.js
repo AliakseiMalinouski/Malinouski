@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../assets/LogoTaprola.png'
 import { useSelector, useDispatch } from 'react-redux';
@@ -17,22 +17,46 @@ export const Header = React.memo(() => {
 
     const page = params.pathname;
 
+    const [resize, setResize] = useState(false);
+    const [isView, setIsView] = useState(false);
+
+    useEffect(() => {
+        let resize = window.matchMedia('(max-width: 560px)');
+        resize.matches ? setResize(true) : setResize(false);
+    }, [resize]);
+
     return (
             <div className='Header' style={{ backgroundColor: '#333' }}>
             <img src={logo} alt='Logo' className='LogoTaprola'/>
-            <div className='NavLinks'>
-                <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Auth</NavLink>
-                <NavLink className='NavLink' style={(page == '/intrudaction' ? {color: 'red'} : null)} to='/intrudaction'>Intrudaction</NavLink>
-                <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)}>Taprola</NavLink>
-                <NavLink className='NavLink' to='/menu' style={(page == '/menu' ? {color: 'red'} : null)}>Menu</NavLink>
-                <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)}>Options</NavLink>
-                <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)}>Contacts</NavLink>
-                <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)}>Reviews</NavLink>
-                <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
-                {
-                    user == '' ? null : <span className='DataUser'>User: {user}</span>
-                }
-            </div>
+            {
+                (!resize)
+                    ?
+                <div className='NavLinks'>
+                    <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Auth</NavLink>
+                    <NavLink className='NavLink' style={(page == '/intrudaction' ? {color: 'red'} : null)} to='/intrudaction'>Intrudaction</NavLink>
+                    <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)}>Taprola</NavLink>
+                    <NavLink className='NavLink' to='/menu' style={(page == '/menu' ? {color: 'red'} : null)}>Menu</NavLink>
+                    <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)}>Options</NavLink>
+                    <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)}>Contacts</NavLink>
+                    <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)}>Reviews</NavLink>
+                    <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
+                    {
+                        user == '' ? null : <span className='DataUser'>User: {user}</span>
+                    }
+                </div>
+                    :
+                <div>
+                    {
+                            (!isView)
+                                ?
+                                <img onClick={() => { setIsView(view => !view) }} className='HeaderMenu' style={{ width: '40px', height: '40px' }} src='https://cdn-icons-png.flaticon.com/512/6188/6188739.png' alt='Menu' />
+                                :
+                                <div className='PageMenuHeader'>
+                                    some text
+                                </div>
+                    }
+                </div>
+            }
         </div>
     )
 }) 

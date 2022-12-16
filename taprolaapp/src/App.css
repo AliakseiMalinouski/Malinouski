@@ -2214,4 +2214,25 @@ body {
   .WrapperImages .ImageOpened  {
     top: 670px;
   }
+
+  .WrapperHeader .Header {
+    padding-left: 20px;
+    justify-content: flex-start;
+  }
+
+  .WrapperHeader .Header .HeaderMenu {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+
+  .PageMenuHeader {
+    position: fixed;
+    width: 250px;
+    height: 400px;
+    background-color: red;
+    top: 0px;
+    right: 0px;
+  }
 }
