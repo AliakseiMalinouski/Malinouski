@@ -57,8 +57,6 @@ export const Auth = React.memo(() => {
     const logout = async () => {
         await signOut(auth);
         dispatch(removeUser({ nothing: "" }));
-        registerEmailRef.current.value = '';
-        registerPasswordRef.current.value = '';
     }
 
     useEffect(() => {
