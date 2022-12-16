@@ -533,7 +533,7 @@ body {
   position: relative;
   background-color: white;
   min-height: 500px;
-  width: 360px;
+  width: 870px;
   margin: 0 auto;
   padding-left: 25px;
   padding-top: 30px;
@@ -2068,5 +2068,150 @@ body {
   }
   to {
     transform: scale(1);
+  }
+}
+
+
+@media all and (max-width: 1200px) {
+  #container {
+    width: 960px;
+    border: 1px solid red;
+  }
+ .WrapperContent .WrapperMenu {
+    width: 960px;
+  }
+
+  .WrapperContent .WrapperMenu .WrapperCategories {
+    padding-left: 200px;
+  }
+
+  .WrapperContent .WrapperMenu .BackToTaprolaImageButton {
+    left: 454px;
+  }
+  .WrapperContent .WrapperMenu .WrapperGuide {
+    padding-left: 35px;
+  }
+  
+  .WrapperContent .WrapperReviewss {
+    width: 960px;
+  }
+  .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .SideBar {
+    display: none;
+  }
+
+  .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar {
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 960px) {
+  #container {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperOptions {
+    width: 360px;
+  }
+
+  .WrapperAuth .FormAuth {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperWelcomeAlert {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperItems {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperItems div .Icon {
+    right: 160px;
+  }
+
+  .WrapperContent .WrapperItems div .ColorInputDiv {
+    right: 140px;
+  }
+  
+  .WrapperContent .WrapperItems div .ButtonrReturnToIntrudaction {
+    left: 360px;
+  }
+
+  .WrapperContent .WrapperItems div .ButtonGoToMenu {
+    right: 225px;
+  }
+
+  .WrapperContent .WrapperItems div .LanguageButton {
+    right: 292px;
+  }
+
+  .WrapperContent .WrapperItems div .ButtonGoToOptions {
+    right: 352px;
+  }
+
+  .WrapperContent .WrapperMenu {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperMenu .WrapperCategories {
+    padding-left: 0px;
+  }
+
+  .WrapperContent .WrapperMenu .WrapperGuide .InformationCategory {
+    padding-left: 0px;
+    font-size: 20px;
+  }
+
+  .WrapperContent .WrapperFormSend {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperSend {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName {
+    width: 560px;
+  }
+
+  .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .CloseReview {
+    left: 450px;
+  }
+  
+  .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .Review {
+    font-size: 18px;
+  }
+  .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar {
+    padding-right: 0px;
+  }
+
+  .WrapperContent .WrapperReviews {
+    padding-left: 0px;
+  }
+
+  .WrapperContent .WrapperSlider .Slider .SliderTrack .Slide {
+    display: none;
+  }
+
+  .WrapperContent .WrapperSlider .Slider {
+    display: none;
+  }
+
+  .WrapperContent .WrapperSlider .ButtonsGallery {
+    display: none;
+  }
+
+  .WrapperContent .WrapperSlider .Slider .SliderTrack {
+    display: none;
+  }
+  
+  .WrapperImages {
+    height: 560px;
+  }
+
+  .WrapperImages .ImageOpened  {
+    top: 670px;
   }
 }
