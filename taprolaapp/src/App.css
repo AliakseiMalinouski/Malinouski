@@ -2227,12 +2227,40 @@ body {
     top: 20px;
   }
 
-  .PageMenuHeader {
+  div .PageMenuHeader {
     position: fixed;
     width: 250px;
     height: 400px;
-    background-color: red;
+    background-color: white;
     top: 0px;
     right: 0px;
+    animation: pagemenu 1s linear;
+    border-bottom-left-radius: 16px;
+  }
+  div .PageMenuHeader .WrapperDataUser {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+    div .PageMenuHeader .NavLinksMobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90%;
+      justify-content: space-evenly;
+      padding-left: 10px;
+    }
+    div .PageMenuHeader .NavLinksMobile .NavLink {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+  @keyframes pagemenu {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
