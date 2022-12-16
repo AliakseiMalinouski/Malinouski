@@ -2301,4 +2301,55 @@ body {
   .WrapperAuth .FormAuth .RegisterPart button {
     margin-left: 10px;
   }
+
+  .WrapperContent .WrapperItems {
+    width: 320px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .WrapperContent .WrapperItems div .ButtonrReturnToIntrudaction {
+    left: 220px;
+  }
+  .WrapperContent .WrapperItems div .ButtonGoToMenu {
+    right: 115px;
+  }
+  .WrapperContent .WrapperItems div .LanguageButton {
+    right: 172px;
+  }
+  .WrapperContent .WrapperItems div .ButtonGoToOptions {
+    right: 222px;
+  }
+  .WrapperContent .WrapperItems div .Item .ItemChoice {
+    width: 170px;
+    height: 40px;
+    padding-top: 10px;
+  }
+  .WrapperContent .WrapperItems div .Item .Remains {
+    right: 80px;
+  }
+  .WrapperContent .WrapperItems div .Icon {
+    right: 40px;
+  }
+  .WrapperContent .WrapperItems div .Quanlity {
+    right: 80px;
+  }
+  .WrapperContent .WrapperItems div .Name {
+    left: 10px;
+  }
+  .WrapperContent .WrapperItems div .ColorInputDiv {
+    right: 60px;
+  }
+  .WrapperContent .WrapperItems div .ColorInputDiv input {
+    margin-right: 0px;
+  }
+  .WrapperContent .WrapperItems div .ColorInputDiv button {
+    display: block;
+    margin-top: 7px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+  }
+  
+.WrapperContent .WrapperItems div .Title {
+  margin-top: 10px;
+}
 }
