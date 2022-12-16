@@ -381,7 +381,7 @@ class Taprola extends React.PureComponent {
                             null
                             : 
                             <div className='HintAboutDelete'>
-                                <div>some text</div>
+                                <div>{this.props.t("hint-delete")}</div>
                             </div>
                         }
                         {

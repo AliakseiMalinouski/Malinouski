@@ -11,5 +11,6 @@
     "name-of-item": "Nazwa",
     "quanlity-of-item": "Liczba",
     "editing-item": "Edycja",
-    "edit": "Edytuj"
+    "edit": "Edytuj",
+    "hint-delete": "Nie można edytować elementu, jeśli jest on najnowszy. Jeśli chcesz zmienić ten konkretny element, dodaj nowy element, a następnie wprowadź zmiany"
 }
