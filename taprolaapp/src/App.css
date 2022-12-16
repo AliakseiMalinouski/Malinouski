@@ -2506,4 +2506,44 @@ body {
   font-size: 14px;
   padding-left: 10px;
 }
+.WrapperContent .WrapperMenu .BackToTaprolaImageButton {
+  left: 144px;
+}
+.WrapperContent .WrapperOptions {
+  width: 320px;
+}
+.WrapperContent .WrapperFormSend {
+  width: 320px;
+}
+.WrapperContent .WrapperFormSend form button {
+  width: 200px;
+  margin-left: 5px;
+}
+.WrapperContent .WrapperSend {
+  width: 320px;
+}
+.WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName {
+  width: 320px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+.WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName .Age {
+  left: 140px;
+}
+.WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .CloseReview {
+  left: 260px;
+  top: 73px;
+  font-size: 15px;
+}
+.WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .Review {
+  font-size: 11px;
+}
+.WrapperImages {
+  height: 900px;
+}
+.WrapperImages .ImageOpened {
+  width: 320px;
+  height: 320px;
+  top: 980px;
+}
 }
