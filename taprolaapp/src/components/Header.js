@@ -25,6 +25,10 @@ export const Header = React.memo(({cbResize}) => {
         resize.matches ? setResize(true) : setResize(false);
     }, [resize]);
 
+    useEffect(() => {
+        
+    })
+
     return (
             <div className='Header' style={{ backgroundColor: '#333' }}>
             <img src={logo} alt='Logo' className='LogoTaprola'/>
