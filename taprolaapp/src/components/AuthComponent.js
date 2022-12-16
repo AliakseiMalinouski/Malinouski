@@ -145,7 +145,7 @@ export const Auth = React.memo(() => {
                         </div>
                 }
             <h4 className='TitleLogged'>User Logged in: {user?.email}</h4>
-            <button onClick={logout} className='SignOut'>sign out</button>
+            <button onClick={logout} className='SignOut' disabled={user?.email ? '' : true} style={{opacity: user?.email ? '' : 0.7}}>sign out</button>
             </div>
         </div>
     )
