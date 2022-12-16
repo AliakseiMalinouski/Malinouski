@@ -22,6 +22,34 @@ body {
   margin: 0 auto;
 }
 
+.DeleteAnimation {
+  animation: delanim 1.5s linear;
+}
+@keyframes delanim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+
+  80% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+
+}
+
 .WrapperContent {
   padding-top: 100px;
   padding-bottom: 30px;
@@ -176,6 +204,19 @@ body {
 
   to {
     background-color: #00CED1;
+    opacity: 1;
+  }
+}
+
+.WrapperContent .WrapperItems div .Item .ItemChoice {
+  animation: choiceitem 1s linear;
+}
+
+@keyframes choiceitem {
+  from {
+    opacity: 0.5;
+  }
+  to {
     opacity: 1;
   }
 }
