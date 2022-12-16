@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from '../assets/LogoTaprola.png'
 import { useSelector, useDispatch } from 'react-redux';
+import { onAuthStateChanged } from 'firebase/auth';
+import { auth } from '../firebase-config';
 
 export const Header = React.memo(({cbResize}) => {
 
@@ -19,6 +21,7 @@ export const Header = React.memo(({cbResize}) => {
 
     const [resize, setResize] = useState(false);
     const [isView, setIsView] = useState(false);
+    const [userEmail, setUserEmail] = useState("");
 
     useEffect(() => {
         let resize = window.matchMedia('(max-width: 560px)');
@@ -26,8 +29,10 @@ export const Header = React.memo(({cbResize}) => {
     }, [resize]);
 
     useEffect(() => {
-        
-    })
+        onAuthStateChanged(auth, (currentUser) => {
+            setUserEmail(currentUser.email);
+        });
+    }, []);
 
     return (
             <div className='Header' style={{ backgroundColor: '#333' }}>
@@ -45,7 +50,7 @@ export const Header = React.memo(({cbResize}) => {
                     <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)}>Reviews</NavLink>
                     <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
                     {
-                        user == '' ? null : <span className='DataUser'>User: {user}</span>
+                        user == '' ? <span className='DataUser'>{userEmail}</span> : <span className='DataUser'>User: {user}</span>
                     }
                 </div>
                     :
@@ -71,7 +76,7 @@ export const Header = React.memo(({cbResize}) => {
                                             <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
                                         </div>
                                             <div className='WrapperDataUser'>
-                                                {user == '' ? null : <span className='DataUser'>User: {user}</span>}
+                                                {user == '' ? <span className='DataUser'>{userEmail}</span> : <span className='DataUser'>User: {user}</span>}
                                             </div>
                                     </div>
                                </div>
