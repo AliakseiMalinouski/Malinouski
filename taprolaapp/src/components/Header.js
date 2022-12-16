@@ -66,6 +66,10 @@ export const Header = React.memo(({cbResize}) => {
                                 :
                                 <div>
                                     <div className='PageMenuHeader'>
+                                        <img onClick={() => {
+                                            setIsView(false);
+                                            cbResize(false);
+                                        }} className='ClosePageMenu' src='https://img.icons8.com/fluency/512/multiply.png' alt='Close' />
                                         <div className='NavLinksMobile'>
                                             <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Auth</NavLink>
                                             <NavLink className='NavLink' style={(page == '/intrudaction' ? {color: 'red'} : null)} to='/intrudaction'>Intrudaction</NavLink>

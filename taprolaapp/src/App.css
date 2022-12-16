@@ -2103,7 +2103,6 @@ body {
 @media all and (max-width: 1200px) {
   #container {
     width: 960px;
-    border: 1px solid red;
   }
  .WrapperContent .WrapperMenu {
     width: 960px;
@@ -2273,6 +2272,13 @@ body {
     right: 0px;
     animation: pagemenu 1s linear;
     border-bottom-left-radius: 16px;
+  }
+  div .PageMenuHeader .ClosePageMenu {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
   }
   div .PageMenuHeader .WrapperDataUser {
     position: absolute;
