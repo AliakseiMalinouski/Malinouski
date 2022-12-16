@@ -11,8 +11,6 @@ export const Header = React.memo(() => {
 
     const user = useSelector(state => state.informationAboutUser.userEmail);
 
-    const _END = '/';
-
     let navigate = useNavigate();
 
     const params = useLocation();
