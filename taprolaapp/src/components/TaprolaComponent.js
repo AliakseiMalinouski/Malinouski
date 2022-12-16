@@ -135,6 +135,11 @@ class Taprola extends React.PureComponent {
     Selected = (code) => {
         this.setState({ targetCode: code });
         this.setState({ activeAddNewItemButton: true });
+        if (this.state.array.length == 1) {
+            console.log('ee')
+            this.setState({ targetCode: null });
+            this.setState({ activeAddNewItemButton: false });
+        }
     }
 
     Delete = (code) => {
@@ -153,7 +158,7 @@ class Taprola extends React.PureComponent {
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
-        this.setState({ ItemH: {code: this.state.array.slice(-1).pop().code + 1, name: "", remains: null} });
+        this.setState({ ItemH: {code: !this.state.array.length ? 0 : this.state.array.slice(-1).pop().code + 1, name: "", remains: null} });
     }
 
     addNameNewItem = (EO) => {
