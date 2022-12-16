@@ -31,10 +31,11 @@ export const Header = React.memo(({cbResize}) => {
 
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
-            setUserEmail(currentUser.email);
-            getUser({ userEmail: currentUser.email });
+            setUserEmail(currentUser?.email);
+            getUser({ userEmail: currentUser?.email });
         });
     }, []);
+
 
     return (
             <div className='Header' style={{ backgroundColor: '#333' }}>
