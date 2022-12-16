@@ -2546,4 +2546,7 @@ body {
   height: 320px;
   top: 980px;
 }
+.WrapperContent .WrapperLoad {
+  width: 320px;
+}
 }
