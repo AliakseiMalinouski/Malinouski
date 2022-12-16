@@ -6,6 +6,7 @@ import logo from '../assets/LogoTaprola.png'
 import { useSelector, useDispatch } from 'react-redux';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebase-config';
+import { getUser } from '../redux/userSlice';
 
 export const Header = React.memo(({cbResize}) => {
 
@@ -31,6 +32,7 @@ export const Header = React.memo(({cbResize}) => {
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
             setUserEmail(currentUser.email);
+            getUser({ userEmail: currentUser.email });
         });
     }, []);
 
@@ -49,9 +51,7 @@ export const Header = React.memo(({cbResize}) => {
                     <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)}>Contacts</NavLink>
                     <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)}>Reviews</NavLink>
                     <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
-                    {
-                        user == '' ? <span className='DataUser'>{userEmail}</span> : <span className='DataUser'>User: {user}</span>
-                    }
+                        {userEmail == '' ? null : <span className='DataUser'> User: {userEmail}</span>}
                 </div>
                     :
                 <div>
@@ -76,7 +76,7 @@ export const Header = React.memo(({cbResize}) => {
                                             <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
                                         </div>
                                             <div className='WrapperDataUser'>
-                                                {user == '' ? <span className='DataUser'>{userEmail}</span> : <span className='DataUser'>User: {user}</span>}
+                                                {userEmail == '' ? null : <span className='DataUser'> User: {userEmail}</span>}
                                             </div>
                                     </div>
                                </div>

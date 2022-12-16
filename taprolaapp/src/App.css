@@ -2273,3 +2273,32 @@ body {
     }
   }
 }
+
+@media all and (max-width: 560px) {
+  #container {
+    width: 320px;
+  }
+
+  .WrapperAuth .FormAuth {
+    width: 320px;
+  }
+  .WrapperAuth .FormAuth .RegisterPart input {
+    width: 320px;
+  }
+
+  .WrapperAuth .FormAuth .RegisterPart {
+    width: 320px;
+  }
+  
+  .WrapperAuth .FormAuth .RegisterPart .Accept  {
+    left: 10px;
+  }
+
+  .WrapperAuth .FormAuth .RegisterPart .AllCorrectAccept {
+    left: 50px;
+  }
+
+  .WrapperAuth .FormAuth .RegisterPart button {
+    margin-left: 10px;
+  }
+}
