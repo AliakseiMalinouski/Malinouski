@@ -151,6 +151,7 @@ class Taprola extends React.PureComponent {
         if (answer) {
             this.setState({ array: newArrayItems });
             this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
+            this.setState({ isNull: false });
         }
         else {
             this.setState({ targetCode: null });
@@ -159,7 +160,8 @@ class Taprola extends React.PureComponent {
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
-        this.setState({ ItemH: {code: !this.state.array.length ? 0 : this.state.array.slice(-1).pop().code + 1, name: "", remains: null} });
+        this.setState({ ItemH: { code: !this.state.array.length ? 0 : this.state.array.slice(-1).pop().code + 1, name: "", remains: null } });
+        this.setState({ isNull: false });
     }
 
     addNameNewItem = (EO) => {
