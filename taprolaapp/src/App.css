@@ -2380,4 +2380,130 @@ body {
 .WrapperContent .WrapperItems div .Title {
   margin-top: 10px;
 }
+.WrapperContent .WrapperMenu {
+  width: 320px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.WrapperContent .WrapperMenu .TitleCategory {
+  font-size: 22px;
+  width: 100%;
+}
+.WrapperContent .WrapperMenu .WrapperGuide .ButtonGetInfoCategory {
+  width: 200px;
+  margin-left: 30px;
+}
+.WrapperContent .WrapperMenu .search {
+  width: 270px;
+}
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Food {
+  width: 320px;
+  padding-left: 0px;
+}
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .FirstImage {
+  width: 100%;
+}
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Food img {
+  margin-left: 59px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks {
+  width: 320px;
+  padding-left: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks .FirstImage {
+  width: 100%;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks img {
+  margin-left: 59px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping {
+  width: 320px;
+  padding-left: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping .FirstImage {
+  width: 100%;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping img {
+  margin-left: 59px;
+}
+
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents {
+  width: 320px;
+  padding-left: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents .FirstImage {
+  width: 100%;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents img {
+  margin-left: 59px;
+}
+
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs {
+  width: 320px;
+  padding-left: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs .FirstImage {
+  width: 100%;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs img {
+  margin-left: 59px;
+}
+
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel {
+  width: 320px;
+  padding-left: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel .FirstImage {
+  width: 100%;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel img {
+  margin-left: 59px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .InfoParagraph {
+  line-height: 28px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks .InfoParagraph {
+  line-height: 28px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel .InfoParagraph {
+  line-height: 28px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping .InfoParagraph {
+  line-height: 28px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents .InfoParagraph {
+  line-height: 28px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs .InfoParagraph {
+  line-height: 28px;
+  font-size: 14px;
+  padding-left: 10px;
+}
 }
