@@ -39,6 +39,7 @@ class Taprola extends React.PureComponent {
         heigthOfApp: 600,
         isLanguage: false,
         arrayColors: null,
+        isNull: false
     }
 
     newNameValue = null;
@@ -136,9 +137,9 @@ class Taprola extends React.PureComponent {
         this.setState({ targetCode: code });
         this.setState({ activeAddNewItemButton: true });
         if (this.state.array.length == 1) {
-            console.log('ee')
             this.setState({ targetCode: null });
             this.setState({ activeAddNewItemButton: false });
+            this.setState({ isNull: true });
         }
     }
 
@@ -374,6 +375,15 @@ class Taprola extends React.PureComponent {
                         <TitleWithBG title={JsonTitle} />
                     <span className='Name'>{this.props.t("name-item")} </span><span className='Quanlity'>{this.props.t("quanlity")}</span>
                         <div>{items}</div>
+                        {
+                        (!this.state.isNull) 
+                            ?
+                            null
+                            : 
+                            <div className='HintAboutDelete'>
+                                <div>some text</div>
+                            </div>
+                        }
                         {
                             (this.state.activeAddNewItemButton) 
                             ?

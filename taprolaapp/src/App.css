@@ -277,6 +277,13 @@ body {
   font-size: 20px;
 }
 
+.WrapperContent .WrapperItems div .HintAboutDelete {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .WrapperContent .WrapperItems div .ButtonCreateFormNewItem {
   display: inline-block;
   margin-top: 15px;
@@ -492,6 +499,8 @@ body {
   color: #999;
   margin-bottom: 20px;
 }
+
+
 
 .WrapperContent .WrapperWelcomeAlert .ButtonStartWork {
   display: block;
