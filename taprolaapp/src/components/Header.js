@@ -24,7 +24,7 @@ export const Header = React.memo(({cbResize}) => {
     const [userEmail, setUserEmail] = useState("");
 
     useEffect(() => {
-        let resize = window.matchMedia('(max-width: 560px)');
+        let resize = window.matchMedia('(max-width: 960px)');
         resize.matches ? setResize(true) : setResize(false);
     }, [resize]);
 

@@ -2081,6 +2081,10 @@ body {
     width: 960px;
   }
 
+  .WrapperHeader .Header .NavLinks {
+    width: 90%;
+  }
+
   .WrapperContent .WrapperMenu .WrapperCategories {
     padding-left: 200px;
   }
@@ -2109,6 +2113,10 @@ body {
 @media all and (max-width: 960px) {
   #container {
     width: 560px;
+  }
+
+  .WrapperHeader .Header {
+    position: relative;
   }
 
   .WrapperContent .WrapperOptions {
@@ -2231,7 +2239,8 @@ body {
     position: fixed;
     width: 250px;
     height: 400px;
-    background-color: white;
+    background: #833ab4;
+    background: linear-gradient(90deg, #833ab4 0%, #d45a5a 50%, #fcb045 100%);
     top: 0px;
     right: 0px;
     animation: pagemenu 1s linear;
@@ -2253,7 +2262,7 @@ body {
     div .PageMenuHeader .NavLinksMobile .NavLink {
       text-decoration: none;
       font-weight: bold;
-      color: black;
+      color: white;
     }
   @keyframes pagemenu {
     from {
