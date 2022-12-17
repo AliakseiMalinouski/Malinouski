@@ -52,7 +52,7 @@ export const Reviews = React.memo( () => {
                     <h3>more</h3>
                 </div>
             </div>
-            <NavLink><img className='ReturnToApp' src={BackToTaprolaIcon} alt='Return'/></NavLink>
+            <NavLink to='/taprola'><img className='ReturnToApp' src={BackToTaprolaIcon} alt='Return'/></NavLink>
         </div>
     )
 
