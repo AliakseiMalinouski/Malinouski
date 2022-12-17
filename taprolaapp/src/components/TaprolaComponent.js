@@ -323,9 +323,9 @@ class Taprola extends React.PureComponent {
                         <div className='WrapFormNewItem'>
                             <h3 className='TitleNewItem'>{this.props.t("fill-all")}</h3>
                             <span>{this.props.t("name-of-item")}</span>
-                            <input type='text' className='InputNewItem' onChange={this.addNameNewItem} ref={this.LinkNewName} />
+                            <input type='text' maxLength={29} className='InputNewItem' onChange={this.addNameNewItem} ref={this.LinkNewName} />
                             <span>{this.props.t("quanlity-of-item")}</span>
-                            <input type='number' className='InputNewItem' onChange={this.addNewRemainsItem} ref={this.LinkNewRemains} />
+                            <input maxLength={2} type='number' className='InputNewItem' onChange={this.addNewRemainsItem} ref={this.LinkNewRemains} />
                             <input type='checkbox' onClick={this.validAll} style={{ marginRight: '15px' }} /><span>{this.props.t("data-correct")}</span>
                             {
                                 (this.state.disabledAddNewItemButton) 
@@ -356,8 +356,8 @@ class Taprola extends React.PureComponent {
                     <div>{items}</div>
                     <div className='WrapEditing'>
                         <h3 className='TitleEditingItem'>{this.props.t("editing-item")}</h3>
-                        <input type='text' className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
-                        <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem} />
+                        <input type='text' maxLength={29} className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
+                        <input type='number' maxLength={2} className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem} />
                         <input type='checkbox' onClick={this.validEditInfo}/><span style={{marginLeft: '15px'}}>{this.props.t("data-correct")}</span>
                         {
                             (this.state.activeCheckboxEditingItem)
@@ -378,7 +378,7 @@ class Taprola extends React.PureComponent {
                         {
                             (this.state.colorClicked) ?
                                 <div className='ColorInputDiv'>
-                                    <input type='text' placeholder={this.props.t("color-name")} onChange={this.readColor}/>
+                                    <input type='text' maxLength={10} placeholder={this.props.t("color-name")} onChange={this.readColor}/>
                                     <button type='button' onClick={this.changeColorTitle}>{this.props.t("change-color")}</button>
                                 </div>
                                 : null
