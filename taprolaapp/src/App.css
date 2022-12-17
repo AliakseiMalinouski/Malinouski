@@ -2416,6 +2416,9 @@ body {
     height: 40px;
     padding-top: 10px;
   }
+  .EditingAnimation {
+    height: 40px;
+  }
   .WrapperContent .WrapperItems div .Item .Remains {
     right: 80px;
   }
