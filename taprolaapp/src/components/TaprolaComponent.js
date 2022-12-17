@@ -177,7 +177,7 @@ class Taprola extends React.PureComponent {
 
     createFormAddNewItem = (EO) => {
         this.setState({ boolANI: true });
-        this.setState({ ItemH: { code: !this.state.array.length ? 0 : this.state.array.slice(-1).pop().code + 1, name: "", remains: null } });
+        this.setState({ ItemH: { code: !this.state.array.length ? 0 : this.state.array.slice(-1).pop().code + 1, name: "", remains: null, iconWasteUrl: "https://cdn-icons-png.flaticon.com/512/6559/6559406.png" } });
         this.setState({ isNull: false });
     }
 
@@ -218,7 +218,7 @@ class Taprola extends React.PureComponent {
                 this.setState({ disabledAddNewItemButton: true });
             }
         }
-        this.setState({ ItemH: { ...this.state.ItemH, iconWasteUrl: "https://cdn-icons-png.flaticon.com/512/6559/6559406.png" } });
+        // this.setState({ ItemH: { ...this.state.ItemH, iconWasteUrl: "https://cdn-icons-png.flaticon.com/512/6559/6559406.png" } });
         if (this.newRemainsValue.value.length > 2) {
             this.setState({ disabledAddNewItemButton: true });
         }
