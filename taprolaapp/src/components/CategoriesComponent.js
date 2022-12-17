@@ -19,7 +19,6 @@ class Categories extends React.PureComponent {
 
     componentDidMount() {
         let resize = window.matchMedia('(max-width: 560px');
-        console.log(resize)
         resize.matches ? this.setState({ resize: true }) : this.setState({ resize: false });
         
         
