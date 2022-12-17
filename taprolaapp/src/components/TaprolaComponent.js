@@ -45,6 +45,7 @@ class Taprola extends React.PureComponent {
 
     newNameValue = null;
     newRemainsValue = null;
+    editingRemainsValue = null;
 
     loadColors = () => {
         fetch("https://gist.githubusercontent.com/AliakseiMalinouski/549591760d65166031248e34f13dedbe/raw/a32210944048380be1ae1246a210c9490fb7039c/ArrayColorsTitleTaprola",
@@ -142,6 +143,10 @@ class Taprola extends React.PureComponent {
 
     LinkNewRemains = (ref) => {
         this.newRemainsValue = ref;
+    }
+
+    LinkEditRemains = (ref) => {
+        this.editingRemainsValue = ref;
     }
 
     Selected = (code) => {
@@ -261,6 +266,9 @@ class Taprola extends React.PureComponent {
             this.setState({ activeCheckboxEditingItem: false });
         }
         this.setState({ editedName: newName });
+        if (this.editingRemainsValue.value.length > 2) {
+            this.setState({ activeCheckboxEditingItem: true });
+        }
     }
 
     EditRemainsItem = (EO) => {
@@ -272,6 +280,9 @@ class Taprola extends React.PureComponent {
             this.setState({ activeCheckboxEditingItem: false });
         }
         this.setState({ editedRemains: newRemains });
+        if (newRemains.length > 2) {
+            this.setState({ activeCheckboxEditingItem: true });
+        }
     }
 
     validEditInfo = (EO) => {
@@ -369,7 +380,7 @@ class Taprola extends React.PureComponent {
                     <div className='WrapEditing'>
                         <h3 className='TitleEditingItem'>{this.props.t("editing-item")}</h3>
                         <input type='text' maxLength={(!this.state.isResize ? 29 : 11)} className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
-                        <input type='number' maxLength={2} className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem} />
+                        <input type='number' className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem} ref={this.LinkEditRemains} />
                         <input type='checkbox' onClick={this.validEditInfo}/><span style={{marginLeft: '15px'}}>{this.props.t("data-correct")}</span>
                         {
                             (this.state.activeCheckboxEditingItem)
