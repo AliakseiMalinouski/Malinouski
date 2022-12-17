@@ -23,31 +23,33 @@ body {
 }
 
 .DeleteAnimation {
-  animation: delanim 1.5s linear;
+  animation: delanim 0.8s linear;
 }
 @keyframes delanim {
-  0% {
-    transform: rotate(0deg);
+  from {
+    filter: blur(0px);
   }
+  to {
+    filter: blur(2px);
+  }
+}
 
-  20% {
-    transform: rotate(5deg);
-  }
-  40% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(-5deg);
-  }
+.my-node-enter {
+  opacity: 0;
+}
 
-  80% {
-    transform: rotate(-10deg);
-  }
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
 
-  100% {
-    transform: rotate(0deg);
-  }
+.my-node-exit {
+  opacity: 1;
+}
 
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
 }
 
 .WrapperContent {

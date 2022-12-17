@@ -39,7 +39,7 @@ class Taprola extends React.PureComponent {
         heigthOfApp: 600,
         isLanguage: false,
         arrayColors: null,
-        isNull: false
+        isNull: false,
     }
 
     newNameValue = null;
@@ -119,6 +119,14 @@ class Taprola extends React.PureComponent {
         this.loadColors();
     }
 
+    componentDidUpdate() {
+        if (this.state.hook === true) {
+            setTimeout(() => {
+                this.setState({ hook: false });
+            }, 1000);
+        }
+    }
+
     componentWillUnmount = () => {
         taprolaEvents.removeListener('ECheckedItem', this.Selected);
         taprolaEvents.removeListener('EDeleteItem', this.Delete);
@@ -152,6 +160,7 @@ class Taprola extends React.PureComponent {
             this.setState({ array: newArrayItems });
             this.setState({ heigthOfApp: this.state.heigthOfApp - 70 });
             this.setState({ isNull: false });
+            this.setState({ hook: true });
         }
         else {
             this.setState({ targetCode: null });
@@ -376,7 +385,7 @@ class Taprola extends React.PureComponent {
                         }
                         <TitleWithBG title={JsonTitle} />
                     <span className='Name'>{this.props.t("name-item")} </span><span className='Quanlity'>{this.props.t("quanlity")}</span>
-                        <div>{items}</div>
+                        <div className={this.state.hook === true ? 'DeleteAnimation' : ''}>{items}</div>
                         {
                         (!this.state.isNull) 
                             ?
