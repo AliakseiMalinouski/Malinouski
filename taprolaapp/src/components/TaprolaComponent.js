@@ -196,6 +196,9 @@ class Taprola extends React.PureComponent {
             this.setState({ disabledAddNewItemButton: false });
         }
         this.setState({ ItemH: { ...this.state.ItemH, remains: valueOfNewRemains } });
+        if (valueOfNewRemains.length > 2) {
+            this.setState({ disabledAddNewItemButton: true });
+        }
     }
 
     validAll = () => {
