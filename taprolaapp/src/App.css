@@ -42,10 +42,12 @@ body {
 
 @keyframes afteredit {
   from {
-    background-color: green;
+    filter: blur(1px);
+    background-color: #FF1493;
   }
   to {
     opacity: 1;
+    background-color: white;
   }
 }
 
