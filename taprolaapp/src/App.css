@@ -2373,6 +2373,10 @@ body {
     width: 320px;
   }
 
+  .WrapperContent .WrapperWelcomeAlert {
+    width: 320px;
+  }
+
   .WrapperAuth .FormAuth {
     width: 320px;
   }
