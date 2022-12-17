@@ -40,6 +40,7 @@ class Taprola extends React.PureComponent {
         isLanguage: false,
         arrayColors: null,
         isNull: false,
+        isResize: false
     }
 
     newNameValue = null;
@@ -117,6 +118,8 @@ class Taprola extends React.PureComponent {
         taprolaEvents.addListener('EDeleteItem', this.Delete);
         taprolaEvents.addListener('changeBackgroundColorTitle', this.changeBackgroundColorTitle);
         this.loadColors();
+        let resize = window.matchMedia("(max-width: 560px)");
+        (resize.matches) ? this.setState({ isResize: true }) : this.setState({ isResize: false });
     }
 
     componentDidUpdate() {
@@ -323,7 +326,7 @@ class Taprola extends React.PureComponent {
                         <div className='WrapFormNewItem'>
                             <h3 className='TitleNewItem'>{this.props.t("fill-all")}</h3>
                             <span>{this.props.t("name-of-item")}</span>
-                            <input type='text' maxLength={29} className='InputNewItem' onChange={this.addNameNewItem} ref={this.LinkNewName} />
+                            <input type='text' maxLength={(!this.state.isResize ? 29 : 11)} className='InputNewItem' onChange={this.addNameNewItem} ref={this.LinkNewName} />
                             <span>{this.props.t("quanlity-of-item")}</span>
                             <input maxLength={2} type='number' className='InputNewItem' onChange={this.addNewRemainsItem} ref={this.LinkNewRemains} />
                             <input type='checkbox' onClick={this.validAll} style={{ marginRight: '15px' }} /><span>{this.props.t("data-correct")}</span>
@@ -356,7 +359,7 @@ class Taprola extends React.PureComponent {
                     <div>{items}</div>
                     <div className='WrapEditing'>
                         <h3 className='TitleEditingItem'>{this.props.t("editing-item")}</h3>
-                        <input type='text' maxLength={29} className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
+                        <input type='text' maxLength={(!this.state.isResize ? 29 : 11)} className='EditingNameItem' placeholder='name' onChange={this.EditNameItem}/>
                         <input type='number' maxLength={2} className='EditingRemainsItem' placeholder='remains' onChange={this.EditRemainsItem} />
                         <input type='checkbox' onClick={this.validEditInfo}/><span style={{marginLeft: '15px'}}>{this.props.t("data-correct")}</span>
                         {
