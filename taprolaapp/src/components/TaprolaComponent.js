@@ -185,6 +185,9 @@ class Taprola extends React.PureComponent {
             this.setState({ disabledAddNewItemButton: false });
         }
         this.setState({ ItemH: { ...this.state.ItemH, name: valueOfNewName } });
+        if (this.newRemainsValue.value.length > 2) {
+            this.setState({ disabledAddNewItemButton: true });
+        }
     }
 
     addNewRemainsItem = (EO) => {
@@ -211,6 +214,9 @@ class Taprola extends React.PureComponent {
             }
         }
         this.setState({ ItemH: { ...this.state.ItemH, iconWasteUrl: "https://cdn-icons-png.flaticon.com/512/6559/6559406.png" } });
+        if (this.newRemainsValue.value.length > 2) {
+            this.setState({ disabledAddNewItemButton: true });
+        }
     }
 
     addNewItem = (EO) => {
