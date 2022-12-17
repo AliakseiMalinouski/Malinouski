@@ -71,14 +71,38 @@ export const Header = React.memo(({cbResize}) => {
                                             cbResize(false);
                                         }} className='ClosePageMenu' src='https://img.icons8.com/fluency/512/multiply.png' alt='Close' />
                                         <div className='NavLinksMobile'>
-                                            <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Auth</NavLink>
-                                            <NavLink className='NavLink' style={(page == '/intrudaction' ? {color: 'red'} : null)} to='/intrudaction'>Intrudaction</NavLink>
-                                            <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)}>Taprola</NavLink>
-                                            <NavLink className='NavLink' to='/menu' style={(page == '/menu' ? {color: 'red'} : null)}>Menu</NavLink>
-                                            <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)}>Options</NavLink>
-                                            <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)}>Contacts</NavLink>
-                                            <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)}>Reviews</NavLink>
-                                            <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)}>Gallery</NavLink>
+                                            <NavLink className='NavLink' style={(page == '/' ? { color: 'red' } : null)} to='/' onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Auth</NavLink>
+                                            <NavLink className='NavLink' style={(page == '/intrudaction' ? { color: 'red' } : null)} to='/intrudaction' onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Intrudaction</NavLink>
+                                            <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)} onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Taprola</NavLink>
+                                            <NavLink className='NavLink' to='/menu' style={(page == '/menu' ? {color: 'red'} : null)} onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Menu</NavLink>
+                                            <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)} onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Options</NavLink>
+                                            <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)} onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Contacts</NavLink>
+                                            <NavLink className='NavLink' to='/reviews' style={(page == '/reviews' ? { color: 'red' } : null)} onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Reviews</NavLink>
+                                            <NavLink className='NavLink' to='/gallery' style={(page == '/gallery' ? { color: 'red' } : null)} onClick={() => {
+                                                setIsView(false);
+                                                cbResize(false);
+                                            }}>Gallery</NavLink>
                                         </div>
                                             <div className='WrapperDataUser'>
                                                 {userEmail == '' ? null : <span className='DataUser'> User: {userEmail}</span>}
