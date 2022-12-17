@@ -14,6 +14,10 @@ class Items extends React.PureComponent {
         cbDelete: PropTypes.func.isRequired,
     }
 
+    state = {
+        editedName: this.props.name
+    }
+
     СheckedItem = (EO) => {
         if (this.props.cbSelected) {
             taprolaEvents.emit('ECheckedItem', this.props.code);
@@ -40,7 +44,7 @@ class Items extends React.PureComponent {
                 </div>
                     :
                 <div className='Item'>
-                    <div onClick={this.СheckedItem} className='ItemChoice'>{this.props.name}</div>
+                    <div className={(this.state.editedName !== this.props.name ? 'EditingAnimation' : '')}><div onClick={this.СheckedItem} className='ItemChoice'>{this.props.name}</div></div>
                     <div className='Remains'>{this.props.remains}</div>
                     <div className='WrapIconWaste'><img onClick={this.DeleteItem} style={{width: '25px', heigth: '25px', position: 'absolute', right: '15px', cursor: 'pointer'}} src={this.props.iconWasteUrl} alt='Icon waste'/></div>
                 </div>
