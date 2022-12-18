@@ -42,7 +42,7 @@ class Categories extends React.PureComponent {
                 <div>
                     <img src={this.props.images[1]} alt='Image' />
                     <img src={this.props.images[2]} alt='Image' />
-                    <h3 style={{paddingLeft: this.state.resize ? '0px' : '20px', textAlign: this.state.resize ? 'center' : ''}}>{this.props.name}</h3>
+                    <h3>{this.props.name}</h3>
                 </div>
             </div>
         </div>

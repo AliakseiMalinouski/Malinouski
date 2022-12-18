@@ -2530,6 +2530,11 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Food div h3 {
+  padding-left: 0px;
+  width: 100%;
+  text-align: center;
+}
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .FirstImage {
   width: 100%;
 }
@@ -2541,6 +2546,12 @@ body {
   width: 320px;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks div h3 {
+  padding-left: 0px;
+  width: 100%;
+  text-align: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks .FirstImage {
@@ -2555,6 +2566,12 @@ body {
   width: 320px;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping div h3 {
+  padding-left: 0px;
+  width: 100%;
+  text-align: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping .FirstImage {
@@ -2572,6 +2589,12 @@ body {
   padding-right: 0px;
 }
 
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents div h3 {
+  padding-left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents .FirstImage {
   width: 100%;
 }
@@ -2587,6 +2610,12 @@ body {
   padding-right: 0px;
 }
 
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs div h3 {
+  padding-left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs .FirstImage {
   width: 100%;
 }
@@ -2600,6 +2629,12 @@ body {
   width: 320px;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel div h3 {
+  padding-left: 0px;
+  width: 100%;
+  text-align: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel .FirstImage {
