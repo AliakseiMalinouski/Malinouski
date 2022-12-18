@@ -39,7 +39,7 @@ class Categories extends React.PureComponent {
             return <div className='Categories' onClick={this.Selected}>
             <div className={this.props.className} >
                 <img className='FirstImage' src={this.props.images[0]} alt='Image' />
-                <div>
+                <div className='OtherImages'>
                     <img src={this.props.images[1]} alt='Image' />
                     <img src={this.props.images[2]} alt='Image' />
                     <h3>{this.props.name}</h3>

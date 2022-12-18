@@ -2315,6 +2315,8 @@ body {
 
   .WrapperContent .WrapperMenu .WrapperCategories {
     padding-left: 0px;
+    align-items: center;
+    justify-content: center;
   }
 
   .WrapperContent .WrapperMenu .WrapperGuide .InformationCategory {
@@ -2524,7 +2526,7 @@ body {
   margin-top: 10px;
 }
 .WrapperContent .WrapperMenu {
-  width: 320px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -2541,7 +2543,7 @@ body {
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food {
-  width: 320px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -2553,9 +2555,13 @@ body {
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .FirstImage {
   width: 100%;
 }
-.WrapperContent .WrapperMenu .WrapperCategories .Categories .Food img {
-  margin-left: 59px;
-}
+
+ .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .OtherImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks {
   width: 320px;
