@@ -2721,17 +2721,17 @@ body {
   left: 144px;
 }
 .WrapperContent .WrapperOptions {
-  width: 320px;
+  width: 100%;
 }
 .WrapperContent .WrapperFormSend {
-  width: 320px;
+  width: 100%;
 }
 .WrapperContent .WrapperFormSend form button {
   width: 200px;
   margin-left: 5px;
 }
 .WrapperContent .WrapperSend {
-  width: 320px;
+  width: 100%;
 }
 .WrapperContent .WrapperReviews .WrapperReviewsAndSideBar .MainWrapperReviews .WrapperReview .UserName {
   width: 320px;
