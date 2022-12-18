@@ -432,11 +432,13 @@ class Taprola extends React.PureComponent {
                             :
                             <button type='button' className='EditItemButton' disabled>{this.props.t("edit-item")}</button>
                     }
+                    <div className='NavLinksTaprola'>
                     <NavLink to="/"><img src={IconBack} className='ButtonrReturnToIntrudaction' alt='Return to intrudaction'/></NavLink>
                     <NavLink to="/options"><img src={OptionsIcon} className='ButtonGoToOptions' alt='Return to intrudaction'/></NavLink>
                     <img onClick={this.setLanguage} className="LanguageButton" src={LanguageIcon} alt='Language' />
                     <NavLink to="/menu"><img src={MenuIcon} alt='Menu' className='ButtonGoToMenu' /></NavLink>
                     <NavLink to='/send'><img className='SendIcon' src={SendIcon} alt='Send' /></NavLink>
+                    </div>
                     {
                         (this.state.isLanguage) 
                             ?
