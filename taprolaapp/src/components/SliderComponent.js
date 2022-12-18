@@ -59,7 +59,7 @@ export const Slider = () => {
     }, [isClickedNextButton, isClickedPreviousButton]);
 
     useEffect(() => {
-        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/d6798bcc83126b681ebe4721d0adfc68/raw/02d15260d644d19a386c9232dbdfd120d03bfde3/GalleryTaprolaArray", { method: 'get' })
+        fetch("https://gist.githubusercontent.com/AliakseiMalinouski/d6798bcc83126b681ebe4721d0adfc68/raw/357f3d9be519bef080b4a63872ce9b5f15346cc8/GalleryTaprolaArray", { method: 'get' })
             .then(response => {
                 if (!response.ok) {
                     alert("Error with connection")
@@ -111,7 +111,7 @@ export const Slider = () => {
             <div className='Slider' style={{marginTop: targetImage ? '500px' : ''}}>
                 <div className='SliderTrack' style={{left: leftSliderTrack + 'px'}}>
                     {
-                        galleryArray.data.map(e => <GallerySlides key={e.code} viewText={e.view} targetCode={targetCode} cbView={cbView} cbClose={cbClose} viewImage={e.viewImage} closeImage={e.closeImage} code={e.code} name={e.name} description={e.description} image={e.image} />)
+                        galleryArray.data.map(e => <GallerySlides key={e.code} viewText={e.view} targetCode={targetCode} cbView={cbView} cbClose={cbClose} code={e.code} name={e.name} description={e.description} image={e.image} />)
                     }
                 </div>
             </div>

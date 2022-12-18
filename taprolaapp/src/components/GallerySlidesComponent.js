@@ -1,6 +1,6 @@
 import React from "react";
 
-export const GallerySlides = ({ code, name, description, image, targetCode, cbView, cbClose, viewText, viewImage, closeImage }) => {
+export const GallerySlides = ({ code, name, description, image, targetCode, cbView, cbClose, viewText}) => {
 
     const view = (EO) => {
         cbView(code);
@@ -18,8 +18,7 @@ export const GallerySlides = ({ code, name, description, image, targetCode, cbVi
                 <h3 className='Name'>{name}</h3>
                     <p className='Description'>{description}</p>
                     <p className='ViewDescription'>{viewText}</p>
-                    <img className='ViewImage' src={viewImage} alt='Image' />
-                    <img onClick={close} className='CloseImage' src={closeImage} alt='Image' />
+                    <span onClick={close} className="Close">Close</span>
             </div>
         </div>
     )

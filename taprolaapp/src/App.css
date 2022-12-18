@@ -1812,13 +1812,26 @@ body {
   animation: view 2s linear;
 }
 
-.WrapperContent .WrapperSlider .Slider .SliderTrack .CloseImage {
-  width: 40px;
-  height: 40px;
+.WrapperContent .WrapperSlider .Slider .SliderTrack .Close {
+  display: block;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  bottom: 15px;
+  right: 325px;
   cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 13px;
+}
+
+.WrapperContent .WrapperSlider .Slider .SliderTrack .Close:hover {
+  transition: 0.7s;
+  opacity: 0.7;
 }
 
 @keyframes view {
