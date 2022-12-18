@@ -23,7 +23,7 @@ export const Auth = React.memo(() => {
     const [isAcceptLogin, setIsAcceptLogin] = useState(false);
 
     const [registerEmailValidation, setRegisterEmailValidation] = useState("");
-    const [viewPassword, setViewPassword] = useState("");
+    const [loginDataValidation, setLoginDataValidation] = useState("");
 
     const registerEmailRef = useRef("");
     const registerPasswordRef = useRef("");
@@ -38,7 +38,9 @@ export const Auth = React.memo(() => {
     const register = async () => {
         try {
             const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
-            setRegisterEmailValidation(false);
+            if (registerEmailValidation) {
+                setRegisterEmailValidation(false);
+            }
         }
         catch (error) {
             console.log(error.message);
@@ -50,11 +52,14 @@ export const Auth = React.memo(() => {
     try {
         const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
         dispatch(getUser({ userEmail: loginEmail }));
+        if (loginDataValidation) {
+            setLoginDataValidation(false);
+        }
 
     }
     catch (error) {
         console.log(error.message);
-        console.log('uouou')
+        setLoginDataValidation(true);
     }
   };
 
@@ -113,13 +118,6 @@ export const Auth = React.memo(() => {
         acceptAllLogin();
     }
 
-    const viewAndHidePassword = () => {
-        setViewPassword(true);
-        if (viewPassword) {
-            setViewPassword(false);
-        }
-    }
-
     return (
         <div className='WrapperAuth'>
             <h2>Registration</h2>
@@ -129,12 +127,11 @@ export const Auth = React.memo(() => {
                         ?
                         <div className='RegisterPart'>
                             <h3>Register User</h3>
-                            <input placeholder='email' onChange={readRegisterEmail} ref={registerEmailRef} />
+                            <input placeholder='email' onChange={readRegisterEmail} ref={registerEmailRef} value={registerEmail} />
                             <br/>
                             <span className='ValidationRegisterEmail'>{registerEmailValidation ? 'Not valid e-mail, try again' : ''}</span>
-                            <input placeholder='password' type={viewPassword ? '' : 'password'} autocomplete="new-password" onChange={readRegisterPassword} ref={registerPasswordRef} />
+                            <input placeholder='password' value={registerPassword} onChange={readRegisterPassword} ref={registerPasswordRef} />
                             <input type='checkbox' onClick={acceptAllRegister} className='Accept' /><span className='AllCorrectAccept'>All the information is correct</span>
-                            <input type='checkbox' className='ViewPassword' onClick={viewAndHidePassword}/>
                             {
                                 (!isAccept)
                                     ?
@@ -153,8 +150,9 @@ export const Auth = React.memo(() => {
                                     :
                                     <div>
                                         <h3>Login</h3>
-                                        <input placeholder='email' onChange={readLoginEmail}  />
-                                        <input placeholder='password' type='password' onChange={readLoginPassword} />
+                                        <input placeholder='email' onChange={readLoginEmail} value={loginEmail} />
+                                        <span className='LoginDataValidation'>{loginDataValidation ? 'Incorrect password or e-mail, try again' : ''}</span>
+                                        <input placeholder='password' value={loginPassword} onChange={readLoginPassword} />
                                         <button onClick={login} disabled={(!isAcceptLogin ? true : false)} style={{ opacity: (!isAcceptLogin) ? 0.7 : '' }} className='LoginButton'>Login</button>
                                     </div>
                             }
