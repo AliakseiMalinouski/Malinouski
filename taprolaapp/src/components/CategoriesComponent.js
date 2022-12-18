@@ -28,7 +28,7 @@ class Categories extends React.PureComponent {
     render() {
         if (this.props.targetCode == this.props.code) {
             return <div className='Categories ClosedAnimationCategory' onClick={this.Selected}>
-            <div className={this.props.className}>
+            <div className={this.props.className} style={{backgroundColor: '#00BFFF'}}>
                     <h3>{this.props.name}</h3>
                     <p className='InfoParagraph'>{this.props.description}</p>
                     <button type='button' onClick={this.CloseCategory}>close</button>

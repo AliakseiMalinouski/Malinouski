@@ -2444,7 +2444,7 @@ body {
   }
 
   .WrapperAuth .FormAuth {
-    width: 320px;
+    width: 100%;
   }
   .WrapperAuth .FormAuth .RegisterPart {
     padding-left: 10px;
@@ -2564,9 +2564,16 @@ body {
  }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks {
-  width: 320px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks .OtherImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks div h3 {
@@ -2579,14 +2586,18 @@ body {
   width: 100%;
 }
 
-.WrapperContent .WrapperMenu .WrapperCategories .Categories .Tasks img {
-  margin-left: 59px;
-}
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping {
-  width: 320px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping .OtherImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping div h3 {
@@ -2599,15 +2610,20 @@ body {
   width: 100%;
 }
 
-.WrapperContent .WrapperMenu .WrapperCategories .Categories .Shopping img {
-  margin-left: 59px;
-}
+
 
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents {
-  width: 320px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents .OtherImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents div h3 {
@@ -2620,15 +2636,19 @@ body {
   width: 100%;
 }
 
-.WrapperContent .WrapperMenu .WrapperCategories .Categories .Presents img {
-  margin-left: 59px;
-}
 
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs {
-  width: 320px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs .OtherImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs div h3 {
@@ -2641,15 +2661,18 @@ body {
   width: 100%;
 }
 
-.WrapperContent .WrapperMenu .WrapperCategories .Categories .Cribs img {
-  margin-left: 59px;
-}
-
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel {
-  width: 320px;
+  width: 100%;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel .OtherImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel div h3 {
@@ -2662,9 +2685,6 @@ body {
   width: 100%;
 }
 
-.WrapperContent .WrapperMenu .WrapperCategories .Categories .Travel img {
-  margin-left: 59px;
-}
 
 .WrapperContent .WrapperMenu .WrapperCategories .Categories .Food .InfoParagraph {
   line-height: 28px;
