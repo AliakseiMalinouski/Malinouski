@@ -2536,7 +2536,7 @@ body {
 }
 .WrapperContent .WrapperMenu .WrapperGuide .ButtonGetInfoCategory {
   width: 200px;
-  margin-left: 30px;
+  margin: 0 auto;
 }
 .WrapperContent .WrapperMenu .search {
   width: 270px;
