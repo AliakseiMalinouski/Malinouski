@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+#root .container .HomePage {
+  width: 1415px;
+  margin: 0 auto;
+  padding-top: 50px;
+
+}
+
+
+#root .container .Default {
+  width: 100%;
+  height: 100%;
+}
+
+.container .Default .ImageMainCharacter {
+  margin: 0 auto;
+  width: 300px;
+  height: 400px;
+  background-image: url(https://i.ibb.co/LRNbsGC/56-567906-heisenberg-3-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.container .Default .Phrases {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.container .Default .Phrases p:nth-child(1) {
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+}
+
+.container .Default .Phrases p:nth-child(2) {
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+}
+
+.container .BaseWrapper {
+  position: relative;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.container .BaseWrapper .Cash {
+  width: 100%;
+  height: 91px;
+  background: linear-gradient(0deg, rgba(104, 113, 120, 1) 0%, rgba(83, 90, 95, 1) 100%);
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .BaseWrapper .Cash .Number {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.container .BaseWrapper .WrapperItems {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.container .BaseWrapper .WrapperItems .Item {
+  max-width: 380px;
+  height: 528px;
+  box-shadow: rgb(255 255 255 / 10%) 0px 1px 1px 0px inset, rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .Image {
+  width: 380px;
+  height: 380px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems {
+  padding-top: 10px;
+  width: 100%;
+  height: 148px;
+  background: linear-gradient(0deg, rgba(104, 113, 120, 1) 0%, rgba(83, 90, 95, 1) 100%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Name {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  font-size: 22px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Price {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Other {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Other div:nth-child(2n) {
+  color: white;
+  font-weight: 500;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Buy {
+  background-color: rgb(158, 221, 153);
+  width: 64px;
+  height: 50px;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  padding-left: 18px;
+  padding-top: 15px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Buy:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Sell {
+  background-color: rgb(221, 153, 153);
+  width: 64px;
+  height: 50px;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Sell:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
