@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { loadArrayItems } from "../Redux/itemsSlice";
 import { Items } from "./Items";
+import {CSSTransition} from 'react-transition-group';
 
 export const Home = () => {
 
     const [cash, setCash] = useState(80000000);
     const [currentPrice, setCurrentPrice] = useState(null);
+    const [active, setActive] = useState(false);
 
     let dispatch = useDispatch();
 
@@ -37,6 +39,7 @@ export const Home = () => {
         else {
             setCash(prevValue => prevValue - price);
             setCurrentPrice(price);
+            setActive(true);
         }
     }
 
@@ -56,7 +59,9 @@ export const Home = () => {
 
     return <div className="BaseWrapper">
         <div className="Cash">
-            <div className="Number">{cash.toFixed(2)}$</div>
+            <div><CSSTransition in={active} timeout={500} classNames='my-node'>
+                <div className="Number">{cash.toFixed(2)}$</div>
+            </CSSTransition></div>
         </div>
         <div className="HomePage">
         <div className="WrapperItems">
