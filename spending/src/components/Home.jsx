@@ -6,7 +6,8 @@ import { Items } from "./Items";
 
 export const Home = () => {
 
-    const [cash, setCash] = useState(80000000)
+    const [cash, setCash] = useState(80000000);
+    const [currentPrice, setCurrentPrice] = useState(null);
 
     let dispatch = useDispatch();
 
@@ -35,15 +36,20 @@ export const Home = () => {
         }
         else {
             setCash(prevValue => prevValue - price);
+            setCurrentPrice(price);
         }
     }
 
     const sellItem = (price) => {
-        if (cash == 80000000) {
-            setCash(prev => prev);
+        if (cash >= 80000000) {
+            setCash(prev => prev = 80000000);
+
+        }
+        else if (price !== currentPrice) {
+            return null;
         }
         else {
-            setCash(prev => prev + price)
+            setCash(prev => prev + price);
         }
     }
 
