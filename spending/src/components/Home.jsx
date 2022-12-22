@@ -13,6 +13,7 @@ export const Home = () => {
     const [active, setActive] = useState(false);
     const [searchValue, setSearchValue] = useState("");
     const [bucketArray, setBucketArray] = useState([]);
+    const [currentCode, setCurrentCode] = useState(null);
 
     const cashChangd = useRef();
 
@@ -38,7 +39,6 @@ export const Home = () => {
     const itemsList = useSelector(state => state.informationAboutItems.items);
 
     const buyItem = (price, code) => {
-        let currentCode = code;
         if (price > cash) {
             setCash(prev => prev);
         }
@@ -50,7 +50,13 @@ export const Home = () => {
         let selectedElement = itemsList.find(el => {
             return el.code === code;
         });
-        setBucketArray(prev => prev.concat(selectedElement));
+        if (selectedElement.code !== currentCode) {
+            setBucketArray(prev => prev.concat(selectedElement));
+            setCurrentCode(selectedElement.code);
+        }
+        else {
+            setBucketArray(prev => prev)
+        }
     }
 
     const sellItem = (price) => {
