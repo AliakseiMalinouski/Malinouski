@@ -13,7 +13,7 @@ export const Items = ({ code, name, image, price, sell, buy, quanlity, cbIn, cbD
 
     return (
         <div className="Item">
-            <div className="Image" style={{backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundSize: '100% 110%', backgroundPosition: 'center center'}}>
+            <div className="Image" style={{backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundSize: '130% 100%', backgroundPosition: 'center center'}}>
 
             </div>
             <div className="InformationItems">
