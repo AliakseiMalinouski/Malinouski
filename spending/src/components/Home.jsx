@@ -3,7 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { loadArrayItems } from "../Redux/itemsSlice";
 import { Items } from "./Items";
-import {CSSTransition} from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
+import { Bucket } from "./Bucket";
 
 export const Home = () => {
 
@@ -88,7 +89,9 @@ export const Home = () => {
             }
         </div>
         <div className="Bucket">
-            
+            {
+                    bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell}/>)
+            }
         </div>
     </div>
     </div>
