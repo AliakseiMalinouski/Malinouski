@@ -14,15 +14,6 @@ export const Home = () => {
 
     const cashChangd = useRef();
 
-    useEffect(() => {
-        if (!cashChangd.current) {
-            console.log("eee")
-        }
-        else {
-            console.log('true')
-        }
-    }, [cashChangd]);
-
     let dispatch = useDispatch();
 
     useEffect(() => {
