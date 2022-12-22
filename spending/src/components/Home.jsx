@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { loadArrayItems } from "../Redux/itemsSlice";
 import { Items } from "./Items";
@@ -10,6 +10,17 @@ export const Home = () => {
     const [cash, setCash] = useState(80000000);
     const [currentPrice, setCurrentPrice] = useState(null);
     const [active, setActive] = useState(false);
+
+    const cashChangd = useRef();
+
+    useEffect(() => {
+        if (!cashChangd.current) {
+            console.log("eee")
+        }
+        else {
+            console.log('true')
+        }
+    }, [cashChangd]);
 
     let dispatch = useDispatch();
 
@@ -60,7 +71,7 @@ export const Home = () => {
     return <div className="BaseWrapper">
         <div className="Cash">
             <div><CSSTransition in={active} timeout={500} classNames='my-node'>
-                <div className="Number">{cash.toFixed(2)}$</div>
+                <div className="Number" ref={cashChangd}>{cash.toFixed(2)}$ <span className="Precent">{`Remaining: ${((cash * 100) / 80000000).toFixed(6)} %`}</span></div>
             </CSSTransition></div>
         </div>
         <div className="HomePage">
