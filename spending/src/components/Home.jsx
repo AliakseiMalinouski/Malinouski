@@ -35,7 +35,7 @@ export const Home = () => {
 
     const itemsList = useSelector(state => state.informationAboutItems.items);
 
-    const buyItem = (price) => {
+    const buyItem = (price, code) => {
         if (price > cash) {
             setCash(prev => prev);
         }
@@ -44,6 +44,10 @@ export const Home = () => {
             setCurrentPrice(price);
             setActive(true);
         }
+        let selectedElement = itemsList.find(el => {
+            return el.code === code;
+        });
+        console.log(selectedElement)
     }
 
     const sellItem = (price) => {

@@ -7,7 +7,7 @@ export const Items = ({ code, name, image, price, sell, buy, quanlity, cbIn, cbD
     const [currentQuantity, setCurrentQuantity] = useState(quanlity);
     
     const buyItem = () => {
-        cbIn(price);
+        cbIn(price, code);
         setCurrentQuantity(prev => prev + 1);
     }
 
