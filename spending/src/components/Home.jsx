@@ -38,6 +38,7 @@ export const Home = () => {
     const itemsList = useSelector(state => state.informationAboutItems.items);
 
     const buyItem = (price, code) => {
+        let currentCode = code;
         if (price > cash) {
             setCash(prev => prev);
         }
@@ -49,10 +50,8 @@ export const Home = () => {
         let selectedElement = itemsList.find(el => {
             return el.code === code;
         });
-        setBucketArray(prev => [...prev, prev.concat(selectedElement)]);
-
+        setBucketArray(prev => prev.concat(selectedElement));
     }
-    console.log(bucketArray)
 
     const sellItem = (price) => {
         if (cash >= 80000000) {
