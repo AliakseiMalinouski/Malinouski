@@ -89,6 +89,9 @@ export const Home = () => {
                 }).map(e => <Items key={e.code} cbIn={buyItem} cbDc={sellItem} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
             }
         </div>
+        <div className="Bucket">
+            
+        </div>
     </div>
     </div>
 }
