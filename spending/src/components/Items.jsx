@@ -3,7 +3,7 @@ import { useState } from "react";
 import { wwEvents } from "../events";
 
 
-export const Items = ({ code, name, image, price, sell, buy, quanlity}) => {
+export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity}) => {
 
     const [currentQuantity, setCurrentQuantity] = useState(quanlity);
     
@@ -36,4 +36,4 @@ export const Items = ({ code, name, image, price, sell, buy, quanlity}) => {
             </div>
         </div>
     )
-}
+})
