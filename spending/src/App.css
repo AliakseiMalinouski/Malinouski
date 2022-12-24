@@ -13,6 +13,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   font-family: 'Montserrat', sans-serif;
+  background-color: #f1f2f6;
 }
 
 .my-node-enter {
@@ -133,7 +134,7 @@ body {
 .container .BaseWrapper .Cash {
   width: 100%;
   height: 91px;
-  background: linear-gradient(0deg, rgba(104, 113, 120, 1) 0%, rgba(83, 90, 95, 1) 100%);
+  background: linear-gradient(#28d67c, #1e9258);
   position: sticky;
   top: 0;
   display: flex;
@@ -156,28 +157,29 @@ body {
 }
 
 .container .BaseWrapper .WrapperItems .Item {
-  max-width: 380px;
-  height: 528px;
-  box-shadow: rgb(255 255 255 / 10%) 0px 1px 1px 0px inset, rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+  width: 260px;
+  height: 331px;
+  background-color: white;
   border-radius: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   cursor: pointer;
 }
 
-.container .BaseWrapper .WrapperItems .Item .Image {
-  width: 380px;
-  height: 380px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
 
 .container .BaseWrapper .WrapperItems .Item .InformationItems {
-  padding-top: 10px;
+  padding-top: 50px;
   width: 100%;
   height: 148px;
-  background: linear-gradient(0deg, rgba(104, 113, 120, 1) 0%, rgba(83, 90, 95, 1) 100%);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems img {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 120px;
+  margin-bottom: 20px;
 }
 
 .container .BaseWrapper .Cash .Number .Precent {
@@ -190,15 +192,15 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 500;
-  color: white;
-  font-size: 22px;
+  color: black;
+  font-size: 20px;
 }
 
 .container .BaseWrapper .WrapperItems .Item .InformationItems .Price {
   width: 100%;
   text-align: center;
   font-weight: 500;
-  color: white;
+  color: black;
   margin-top: 10px;
   font-size: 16px;
 }
@@ -212,21 +214,25 @@ body {
   padding-top: 20px;
 }
 
-.container .BaseWrapper .WrapperItems .Item .InformationItems .Other div:nth-child(2n) {
-  color: white;
-  font-weight: 500;
-}
-
 .container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Buy {
-  background-color: rgb(158, 221, 153);
+  background-color: #4bc74b;
   width: 64px;
   height: 50px;
   cursor: pointer;
   padding: 1.5rem 2rem;
   border: none;
   border-radius: 5px;
-  padding-left: 18px;
+  padding-left: 15px;
   padding-top: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Quantity {
+  color: black;
+  font-weight: 500;
+  padding-top: 17px;
 }
 
 .container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Buy:hover {
@@ -239,10 +245,13 @@ body {
   width: 64px;
   height: 50px;
   cursor: pointer;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-top: 15px;
   border: none;
   border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .container .BaseWrapper .WrapperItems .Item .InformationItems .Other .Sell:hover {
