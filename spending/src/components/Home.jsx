@@ -6,6 +6,7 @@ import { Items } from "./Items";
 import { CSSTransition } from 'react-transition-group';
 import { Bucket } from "./Bucket";
 import { wwEvents } from "../events";
+import { changeCode } from '../Redux/currentCodeSlice';
 
 export const Home = React.memo(() => {
 
@@ -14,7 +15,6 @@ export const Home = React.memo(() => {
     const [active, setActive] = useState(false);
     const [searchValue, setSearchValue] = useState("");
     const [bucketArray, setBucketArray] = useState([]);
-    const [currentCode, setCurrentCode] = useState(null);
 
     const cashChangd = useRef();
 
@@ -40,8 +40,13 @@ export const Home = React.memo(() => {
 
 
     const itemsList = useSelector(state => state.informationAboutItems.items);
+    const currentCodeFromReduxStore = useSelector(state => state.currentCode.code);
 
     const buyItem = (price, code) => {
+        dispatch(changeCode({ code: code }));
+        let selectedElement = itemsList.find(el => {
+            return el.code === code;
+        });
         if (price > cash) {
             setCash(prev => prev);
         }
@@ -49,17 +54,12 @@ export const Home = React.memo(() => {
             setCash(prevValue => prevValue - price);
             setCurrentPrice(price);
             setActive(true);
-        }
-        let selectedElement = itemsList.find(el => {
-            return el.code === code;
-        });
-        if (selectedElement.code !== currentCode) {
-            setBucketArray(prev => prev.concat(selectedElement));
-            setCurrentCode(selectedElement.code);
-        }
-        else {
-            setBucketArray(prev => prev)
-        }
+        }       
+        validElement(selectedElement);
+    }
+
+    const validElement = (item) => {
+        bucketArray.find(item => item.code === currentCodeFromReduxStore) ? setBucketArray(prev => prev) : setBucketArray(prev => prev.concat(item));
     }
 
     const sellItem = (price) => {
