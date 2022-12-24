@@ -5,6 +5,7 @@ import { loadArrayItems } from "../Redux/itemsSlice";
 import { Items } from "./Items";
 import { CSSTransition } from 'react-transition-group';
 import { Bucket } from "./Bucket";
+import { wwEvents } from "../events";
 
 export const Home = React.memo(() => {
 
@@ -34,6 +35,8 @@ export const Home = React.memo(() => {
                 dispatch(loadArrayItems({ data: data }));
         })
     }, [dispatch]);
+
+    
 
 
     const itemsList = useSelector(state => state.informationAboutItems.items);
@@ -71,6 +74,15 @@ export const Home = React.memo(() => {
             setCash(prev => prev + price);
         }
     }
+
+    useEffect(() => {
+        wwEvents.addListener('putPriceAndCode', buyItem);
+        wwEvents.addListener('dPrice', sellItem);
+        return () => {
+            wwEvents.removeListener('putPriceAndCode', buyItem);
+            wwEvents.removeListener('dPrice', sellItem);
+        }
+    });
 
 
     return <div className="BaseWrapper">

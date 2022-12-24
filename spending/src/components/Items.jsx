@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { wwEvents } from "../events";
 
 
 export const Items = ({ code, name, image, price, sell, buy, quanlity, cbIn, cbDc }) => {
@@ -7,12 +8,14 @@ export const Items = ({ code, name, image, price, sell, buy, quanlity, cbIn, cbD
     const [currentQuantity, setCurrentQuantity] = useState(quanlity);
     
     const buyItem = () => {
-        cbIn(price, code);
+        // cbIn(price, code);
+        wwEvents.emit('putPriceAndCode', price, code);
         setCurrentQuantity(prev => prev + 1);
     }
 
     const sellItem = () => {
-        cbDc(price);
+        // cbDc(price);
+        wwEvents.emit('dPrice', price);
         if (currentQuantity === 0) {
             setCurrentQuantity(0);
         }
