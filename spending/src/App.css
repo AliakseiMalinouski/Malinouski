@@ -163,6 +163,17 @@ body {
   border-radius: 8px;
   margin-bottom: 70px;
   cursor: pointer;
+  animation: item 1s linear;
+}
+
+@keyframes item {
+  from {
+    opacity: 0;
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 
