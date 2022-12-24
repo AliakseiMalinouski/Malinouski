@@ -3,7 +3,7 @@ import { useState } from "react";
 import { wwEvents } from "../events";
 
 
-export const Items = ({ code, name, image, price, sell, buy, quanlity, cbIn, cbDc }) => {
+export const Items = ({ code, name, image, price, sell, buy, quanlity}) => {
 
     const [currentQuantity, setCurrentQuantity] = useState(quanlity);
     

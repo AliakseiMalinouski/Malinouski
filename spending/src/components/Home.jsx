@@ -102,7 +102,7 @@ export const Home = React.memo(() => {
             {
                 itemsList.filter(element => {
                     return element.name.toLowerCase().includes(searchValue.toLowerCase())
-                }).map(e => <Items key={e.code} cbIn={buyItem} cbDc={sellItem} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
+                }).map(e => <Items key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
             }
         </div>
         <div className="Bucket">
