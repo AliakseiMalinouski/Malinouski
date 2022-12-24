@@ -6,7 +6,7 @@ import { Items } from "./Items";
 import { CSSTransition } from 'react-transition-group';
 import { Bucket } from "./Bucket";
 
-export const Home = () => {
+export const Home = React.memo(() => {
 
     const [cash, setCash] = useState(80000000);
     const [currentPrice, setCurrentPrice] = useState(null);
@@ -100,4 +100,4 @@ export const Home = () => {
         </div>
     </div>
     </div>
-}
+})
