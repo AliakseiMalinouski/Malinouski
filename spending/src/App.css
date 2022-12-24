@@ -43,13 +43,24 @@ body {
 .container {
   width: 100%;
   height: 100%;
+  animation: home 1s linear;
 }
 
 #root .container .HomePage {
   width: 1415px;
   margin: 0 auto;
   padding-top: 50px;
+}
 
+@keyframes home {
+  from {
+    opacity: 0;
+    filter: blur(3px);
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 
@@ -163,17 +174,6 @@ body {
   border-radius: 8px;
   margin-bottom: 70px;
   cursor: pointer;
-  animation: item 1s linear;
-}
-
-@keyframes item {
-  from {
-    opacity: 0;
-    filter: blur(3px);
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 
