@@ -16,9 +16,10 @@ export const Home = React.memo(() => {
     const [searchValue, setSearchValue] = useState("");
     const [bucketArray, setBucketArray] = useState([]);
     const [currentQuantity, setCurrentQuantity] = useState(0);
-    const [currentCode, setCurrentCode] = useState(null);
+    // const [currentCode, setCurrentCode] = useState(null);
 
     const cashChangd = useRef();
+
 
     let dispatch = useDispatch();
 
@@ -77,8 +78,6 @@ export const Home = React.memo(() => {
             setCash(prev => prev + price);
         }
     }
-
-    console.log(currentQuantity)
 
     useEffect(() => {
         wwEvents.addListener('putPriceAndCode', buyItem);
