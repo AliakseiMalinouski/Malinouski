@@ -15,6 +15,8 @@ export const Home = React.memo(() => {
     const [active, setActive] = useState(false);
     const [searchValue, setSearchValue] = useState("");
     const [bucketArray, setBucketArray] = useState([]);
+    const [currentQuantity, setCurrentQuantity] = useState(0);
+    const [currentCode, setCurrentCode] = useState(null);
 
     const cashChangd = useRef();
 
@@ -44,6 +46,7 @@ export const Home = React.memo(() => {
 
     const buyItem = (price, code) => {
         dispatch(changeCode({ code: code }));
+        setCurrentQuantity(prev => prev + 1);
         let selectedElement = itemsList.find(el => {
             return el.code === code;
         });
@@ -74,6 +77,8 @@ export const Home = React.memo(() => {
             setCash(prev => prev + price);
         }
     }
+
+    console.log(currentQuantity)
 
     useEffect(() => {
         wwEvents.addListener('putPriceAndCode', buyItem);
@@ -107,7 +112,7 @@ export const Home = React.memo(() => {
         </div>
         <div className="Bucket">
             {
-                    bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell}/>)
+                    bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={currentQuantity} buy={e.buy} sell={e.sell}/>)
             }
         </div>
     </div>
