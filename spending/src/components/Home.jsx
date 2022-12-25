@@ -11,7 +11,6 @@ import { changeCode } from '../Redux/currentCodeSlice';
 export const Home = React.memo(() => {
 
     const [cash, setCash] = useState(80000000);
-    const [currentPrice, setCurrentPrice] = useState(null);
     const [active, setActive] = useState(false);
     const [searchValue, setSearchValue] = useState("");
     const [bucketArray, setBucketArray] = useState([]);
@@ -43,24 +42,27 @@ export const Home = React.memo(() => {
     const itemsList = useSelector(state => state.informationAboutItems.items);
     const currentCodeFromReduxStore = useSelector(state => state.currentCode.code);
 
-    const buyItem = (price, code) => {
+    const buyItem = (price, code, item) => {
         dispatch(changeCode({ code: code }));
-        let selectedElement = itemsList.find(el => {
-            return el.code === code;
-        });
         if (price > cash) {
             setCash(prev => prev);
         }
         else {
             setCash(prevValue => prevValue - price);
-            setCurrentPrice(price);
             setActive(true);
-        }       
+        }
+        let selectedElement = item;
         validElement(selectedElement);
     }
 
     const validElement = (item) => {
-        bucketArray.find(item => item.code === currentCodeFromReduxStore) ? setBucketArray(prev => prev) : setBucketArray(prev => prev.concat(item));
+        let isInFlag = false;
+        bucketArray.forEach(el => {
+            if (el.code === item.code) {
+                isInFlag = true;
+            }
+        })
+        if (!isInFlag) setBucketArray(prev => [...prev, item]); 
     }
 
     const sellItem = (price) => {
@@ -100,7 +102,7 @@ export const Home = React.memo(() => {
             {
                 itemsList.filter(element => {
                     return element.name.toLowerCase().includes(searchValue.toLowerCase())
-                }).map(e => <Items key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
+                }).map(e => <Items key={e.code} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
             }
         </div>
         <div className="Bucket">

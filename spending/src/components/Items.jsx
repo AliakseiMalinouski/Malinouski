@@ -3,12 +3,12 @@ import { useState } from "react";
 import { wwEvents } from "../events";
 
 
-export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity}) => {
+export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity, item}) => {
 
     const [currentQuantity, setCurrentQuantity] = useState(quanlity);
     
     const buyItem = () => {
-        wwEvents.emit('putPriceAndCode', price, code);
+        wwEvents.emit('putPriceAndCode', price, code, item);
         setCurrentQuantity(prev => prev + 1);
     }
 
