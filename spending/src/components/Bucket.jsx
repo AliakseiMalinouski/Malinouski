@@ -6,7 +6,7 @@ export const Bucket = ({ name, code, quanlity, price, image }) => {
         <div className="WrapperBucket">
             <div className="BucketItem">
                 <div className="BucketName">Name: {name}</div>
-                <div className="BucketQuantity">Quantity: {quanlity}</div>
+                <div className="BucketPrice">Price: {price}$</div>
             </div>
         </div>
     )
