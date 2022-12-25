@@ -71,9 +71,6 @@ export const Home = React.memo(() => {
             setCash(prev => prev = 80000000);
 
         }
-        else if (price !== currentPrice) {
-            return null;
-        }
         else {
             setCash(prev => prev + price);
         }
