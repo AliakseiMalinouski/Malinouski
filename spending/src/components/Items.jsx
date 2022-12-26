@@ -9,7 +9,12 @@ export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity
     
     const buyItem = () => {
         wwEvents.emit('putPriceAndCode', price, code, item);
-        setCurrentQuantity(prev => prev + 1);
+        if (price > cash) {
+            setCurrentQuantity(prev => prev);
+        }
+        else {
+            setCurrentQuantity(prev => prev + 1);
+        }
     }
 
     const sellItem = () => {
