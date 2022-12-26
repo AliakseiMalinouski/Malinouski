@@ -70,7 +70,7 @@ export const Home = React.memo(() => {
         if (!isInFlag) setBucketArray(prev => [...prev, item]);
     }
 
-    const sellItem = (price) => {
+    const sellItem = (price, item) => {
         if (cash >= 80000000) {
             setCash(prev => prev = 80000000);
             setHaveCode(null);
@@ -79,6 +79,10 @@ export const Home = React.memo(() => {
             setCash(prev => prev + price);
             setHaveCode(null);
         }
+        let newBucketArray = bucketArray.filter(el => {
+            return el.code !== item.code;
+        })
+        setBucketArray(newBucketArray);
     }
 
     useEffect(() => {

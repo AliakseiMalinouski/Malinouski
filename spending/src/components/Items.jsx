@@ -13,7 +13,7 @@ export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity
     }
 
     const sellItem = () => {
-        wwEvents.emit('dPrice', price);
+        wwEvents.emit('dPrice', price, item);
         if (currentQuantity === 0) {
             setCurrentQuantity(0);
         }
