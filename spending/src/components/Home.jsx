@@ -21,7 +21,7 @@ export const Home = React.memo(() => {
     let dispatch = useDispatch();
 
     useEffect(() => {
-        let url = "https://gist.githubusercontent.com/AliakseiMalinouski/16cd68b98a0e568dadbcf4b5c29ab385/raw/6c2b64a75783d345288033ab78775d2b3684a037/BreakingBadBaseArray"
+        let url = "https://gist.githubusercontent.com/AliakseiMalinouski/16cd68b98a0e568dadbcf4b5c29ab385/raw/52628a8c7975710ed3f912c5596e8c951c266a31/BreakingBadBaseArray"
         fetch(url, { method: 'get' })
             .then(response => {
                 if (!response.ok) {
