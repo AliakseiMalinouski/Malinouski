@@ -274,7 +274,7 @@ body {
 
 .container .Default .Bucket {
   width: 100%;
-  
+  position: relative;
 }
 .container .Default .Bucket .WrapperBucket {
   width: 100%;
@@ -365,4 +365,11 @@ body {
   height: 120px;
   display: block;
   margin-top: 15px;
+}
+
+.container .Default .Bucket .ClearBucketImage {
+  position: absolute;
+  left: 770px;
+  width: 40px;
+  height: 40px;
 }

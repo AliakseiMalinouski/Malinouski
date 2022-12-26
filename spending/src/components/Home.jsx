@@ -128,6 +128,7 @@ export const Home = React.memo(() => {
                     <div className="NothingBucket">To replenish the basket, buy something</div>
                         :
                     <>
+                    <img className="ClearBucketImage" src='https://cdn-icons-png.flaticon.com/512/8371/8371662.png' alt='Clear' />
                     <button className="ClearBucket" onClick={clearBucket}>Clear Basket</button>
                     {bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>)}
                     </>
