@@ -49,6 +49,10 @@ export const Home = React.memo(() => {
         if (price > cash) {
             setCash(prev => prev);
         }
+        else if (price > cash / 2) {
+            setHaveCode(code);
+            setCash(prevValue => prevValue - price);
+        }
         else {
             setCash(prevValue => prevValue - price);
             setActive(true);
@@ -73,23 +77,16 @@ export const Home = React.memo(() => {
         }
         else {
             setCash(prev => prev + price);
-        }
-    }
-
-    const checkCurrentPrice = (item) => {
-        if (item.price > cash) {
-            setHaveCode(item.code);
+            setHaveCode(null);
         }
     }
 
     useEffect(() => {
         wwEvents.addListener('putPriceAndCode', buyItem);
         wwEvents.addListener('dPrice', sellItem);
-        wwEvents.addListener('checkCurrentPrice', checkCurrentPrice);
         return () => {
             wwEvents.removeListener('putPriceAndCode', buyItem);
             wwEvents.removeListener('dPrice', sellItem);
-            wwEvents.removeListener('checkCurrentPrice', checkCurrentPrice);
         }
     });
 
@@ -116,7 +113,7 @@ export const Home = React.memo(() => {
             {
                 itemsList.filter(element => {
                     return element.name.toLowerCase().includes(searchValue.toLowerCase())
-                }).map(e => <Items key={e.code} haveCode={haveCode} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
+                }).map(e => <Items key={e.code} haveCode={haveCode} cash={cash} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
             }
         </div>
         <div className="Bucket">
