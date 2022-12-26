@@ -7,6 +7,7 @@ import { CSSTransition } from 'react-transition-group';
 import { Bucket } from "./Bucket";
 import { wwEvents } from "../events";
 import { changeCode } from '../Redux/currentCodeSlice';
+import { ReactFragment } from "react";
 
 export const Home = React.memo(() => {
 
@@ -104,8 +105,16 @@ export const Home = React.memo(() => {
             }
         </div>
         <div className="Bucket">
+            <h3 className="BucketTitle">Basket</h3>
             {
-                    bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>)
+                    (!bucketArray.length)
+                    ?
+                    <div className="NothingBucket">To replenish the basket, buy something</div>
+                        :
+                    <>
+                    <div></div>
+                    {bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>)}
+                    </>
             }
         </div>
     </div>

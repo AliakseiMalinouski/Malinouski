@@ -267,3 +267,81 @@ body {
   transition: 1s;
   opacity: 0.7;
 }
+
+.container .Default .Bucket {
+  width: 100%;
+  
+}
+.container .Default .Bucket .WrapperBucket {
+  width: 100%;
+
+}
+
+.container .Default .Bucket .BucketTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+.container .Default .Bucket .NothingBucket {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.container .Default .Bucket .WrapperBucket .BucketItem {
+  padding-bottom: 30px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.container .Default .Bucket .WrapperBucket .BucketItem .BucketName {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-left: 7px;
+  padding-bottom: 10px;
+  padding-right: 7px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 80px;
+}
+
+.container .Default .Bucket .WrapperBucket .BucketItem .BucketPrice {
+  font-size: 18px;
+  height: 50px;
+  color: #4bc74b;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 16px;
+  padding-top: 10px;
+  padding-left: 7px;
+  padding-bottom: 10px;
+  padding-right: 7px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.container .Default .Bucket .WrapperBucket .BucketItem .BucketImage {
+  width: 140px;
+  height: 120px;
+  display: block;
+  margin-top: 15px;
+}

@@ -7,6 +7,7 @@ export const Bucket = ({ name, code, quanlity, price, image }) => {
             <div className="BucketItem">
                 <div className="BucketName">Name: {name}</div>
                 <div className="BucketPrice">Price: {price}$</div>
+                <img className="BucketImage" src={image} alt='Item'/>
             </div>
         </div>
     )
