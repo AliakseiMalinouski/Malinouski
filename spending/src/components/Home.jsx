@@ -67,7 +67,7 @@ export const Home = React.memo(() => {
         bucketArray.forEach(el => {
             if (el.code === item.code) isInFlag = true;
         });
-        if (!isInFlag) setBucketArray(prev => [...prev, item]);
+        if (!isInFlag && haveCode === null) setBucketArray(prev => [...prev, item]);
     }
 
     const sellItem = (price, item) => {
