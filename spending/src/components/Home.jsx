@@ -83,6 +83,11 @@ export const Home = React.memo(() => {
         }
     });
 
+    const clearBucket = () => {
+        let sure = window.confirm('You sure?');
+        if (sure) setBucketArray([]);
+    }
+
 
     return <div className="BaseWrapper">
         <div className="Cash">
@@ -112,7 +117,7 @@ export const Home = React.memo(() => {
                     <div className="NothingBucket">To replenish the basket, buy something</div>
                         :
                     <>
-                    <div></div>
+                    <button className="ClearBucket" onClick={clearBucket}>Clear Basket</button>
                     {bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>)}
                     </>
             }
