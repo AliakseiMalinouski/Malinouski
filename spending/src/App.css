@@ -16,9 +16,13 @@ body {
   background-color: #f1f2f6;
 }
 
+.BaseOpacity {
+  opacity: 0.6;
+  background-color: crimson !important;
+}
+
 .my-node-enter {
   opacity: 0;
-  
 }
 
 .my-node-enter-active {

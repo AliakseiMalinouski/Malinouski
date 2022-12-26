@@ -15,6 +15,7 @@ export const Home = React.memo(() => {
     const [active, setActive] = useState(false);
     const [searchValue, setSearchValue] = useState("");
     const [bucketArray, setBucketArray] = useState([]);
+    const [haveCode, setHaveCode] = useState(null);
 
     const cashChangd = useRef();
 
@@ -51,6 +52,7 @@ export const Home = React.memo(() => {
         else {
             setCash(prevValue => prevValue - price);
             setActive(true);
+            setHaveCode(null);
         }
         let selectedElement = item;
         validElement(selectedElement);
@@ -67,19 +69,27 @@ export const Home = React.memo(() => {
     const sellItem = (price) => {
         if (cash >= 80000000) {
             setCash(prev => prev = 80000000);
-
+            setHaveCode(null);
         }
         else {
             setCash(prev => prev + price);
         }
     }
 
+    const checkCurrentPrice = (item) => {
+        if (item.price > cash) {
+            setHaveCode(item.code);
+        }
+    }
+
     useEffect(() => {
         wwEvents.addListener('putPriceAndCode', buyItem);
         wwEvents.addListener('dPrice', sellItem);
+        wwEvents.addListener('checkCurrentPrice', checkCurrentPrice);
         return () => {
             wwEvents.removeListener('putPriceAndCode', buyItem);
             wwEvents.removeListener('dPrice', sellItem);
+            wwEvents.removeListener('checkCurrentPrice', checkCurrentPrice);
         }
     });
 
@@ -106,7 +116,7 @@ export const Home = React.memo(() => {
             {
                 itemsList.filter(element => {
                     return element.name.toLowerCase().includes(searchValue.toLowerCase())
-                }).map(e => <Items key={e.code} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
+                }).map(e => <Items key={e.code} haveCode={haveCode} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
             }
         </div>
         <div className="Bucket">
