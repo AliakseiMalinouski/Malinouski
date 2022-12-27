@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // import { loadArrayItems } from "../Redux/itemsSlice";
@@ -7,7 +7,6 @@ import { CSSTransition } from 'react-transition-group';
 import { Bucket } from "./Bucket";
 import { wwEvents } from "../events";
 import { changeCode } from '../Redux/currentCodeSlice';
-import { ReactFragment } from "react";
 import { LoadData } from "../Redux/loadData";
 
 export const Home = React.memo(() => {
@@ -31,7 +30,6 @@ export const Home = React.memo(() => {
 
 
     const itemsList = useSelector(state => state.informationAboutItems.items);
-    const currentCodeFromReduxStore = useSelector(state => state.currentCode.code);
 
     const buyItem = (price, code, item) => {
         dispatch(changeCode({ code: code }));
@@ -88,6 +86,11 @@ export const Home = React.memo(() => {
         if (sure) setBucketArray([]);
     }
 
+    let itemsMemoezeed = useMemo(() => itemsList.filter(element => {
+        return element.name.toLowerCase().includes(searchValue.toLowerCase())
+    }).map(e => <Items key={e.code} haveCode={haveCode} cash={cash} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />),
+        [itemsList, cash, haveCode, searchValue]);
+
 
     return <div className="BaseWrapper">
         <div className="Cash">
@@ -103,11 +106,7 @@ export const Home = React.memo(() => {
                 }} />
             </div>
         <div className="WrapperItems">
-            {
-                itemsList.filter(element => {
-                    return element.name.toLowerCase().includes(searchValue.toLowerCase())
-                }).map(e => <Items key={e.code} haveCode={haveCode} cash={cash} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />)
-            }
+            {itemsMemoezeed}
         </div>
         <div className="Bucket">
             <h3 className="BucketTitle">Basket</h3>
