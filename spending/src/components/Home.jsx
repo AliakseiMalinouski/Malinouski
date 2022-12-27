@@ -1,13 +1,14 @@
 import React from "react";
 import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { loadArrayItems } from "../Redux/itemsSlice";
+// import { loadArrayItems } from "../Redux/itemsSlice";
 import { Items } from "./Items";
 import { CSSTransition } from 'react-transition-group';
 import { Bucket } from "./Bucket";
 import { wwEvents } from "../events";
 import { changeCode } from '../Redux/currentCodeSlice';
 import { ReactFragment } from "react";
+import { LoadData } from "../Redux/loadData";
 
 export const Home = React.memo(() => {
 
@@ -23,19 +24,7 @@ export const Home = React.memo(() => {
     let dispatch = useDispatch();
 
     useEffect(() => {
-        let url = "https://gist.githubusercontent.com/AliakseiMalinouski/16cd68b98a0e568dadbcf4b5c29ab385/raw/52628a8c7975710ed3f912c5596e8c951c266a31/BreakingBadBaseArray"
-        fetch(url, { method: 'get' })
-            .then(response => {
-                if (!response.ok) {
-                    alert("error with connection");
-                }
-                else {
-                    return response.json();
-                }
-            })
-            .then(data => {
-                dispatch(loadArrayItems({ data: data }));
-        })
+        dispatch(LoadData);
     }, [dispatch]);
 
     
