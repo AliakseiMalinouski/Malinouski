@@ -170,6 +170,13 @@ body {
   flex-flow: wrap;
 }
 
+.container .BaseWrapper .WrapperItems .AlertAboutBadSearch {
+  margin: 0 auto;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
 .container .BaseWrapper .WrapperItems .Item {
   width: 260px;
   height: 331px;

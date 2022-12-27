@@ -118,22 +118,33 @@ export const Home = React.memo(() => {
                 }} />
             </div>
         <div className="WrapperItems">
-            {itemsMemoezeed}
-        </div>
-        <div className="Bucket">
-            <h3 className="BucketTitle">Basket</h3>
-            {
-                    (!bucketArray.length)
+                {(itemsMemoezeed.length)
                     ?
-                    <div className="NothingBucket">To replenish the basket, buy something</div>
-                        :
-                    <>
-                    <img className="ClearBucketImage" src='https://cdn-icons-png.flaticon.com/512/8371/8371662.png' alt='Clear' />
-                    <button className="ClearBucket" onClick={clearBucket}>Clear Basket</button>
-                    {bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>)}
-                    </>
-            }
+                    itemsMemoezeed
+                    :
+                    <div className="AlertAboutBadSearch">Oops...Looks like you entered the wrong name</div>
+                }
         </div>
+        {
+                (!itemsMemoezeed.length)
+                    ?
+                    null
+                    :
+                    <div className="Bucket">
+                    <h3 className="BucketTitle">Basket</h3>
+                    {
+                        (!bucketArray.length)
+                        ?
+                        <div className="NothingBucket">To replenish the basket, buy something</div>
+                            :
+                        <>
+                        <img className="ClearBucketImage" src='https://cdn-icons-png.flaticon.com/512/8371/8371662.png' alt='Clear' />
+                        <button className="ClearBucket" onClick={clearBucket}>Clear Basket</button>
+                        {bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>)}
+                        </>
+                    }
+                </div>
+                }
     </div>
     </div>
 })
