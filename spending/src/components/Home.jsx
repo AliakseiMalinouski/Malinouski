@@ -27,7 +27,14 @@ export const Home = React.memo(() => {
     }, [dispatch]);
 
     
-
+    useEffect(() => {
+        wwEvents.addListener('putPriceAndCode', buyItem);
+        wwEvents.addListener('dPrice', sellItem);
+        return () => {
+            wwEvents.removeListener('putPriceAndCode', buyItem);
+            wwEvents.removeListener('dPrice', sellItem);
+        }
+    });
 
     const itemsList = useSelector(state => state.informationAboutItems.items);
 
@@ -71,15 +78,6 @@ export const Home = React.memo(() => {
         })
         setBucketArray(newBucketArray);
     }
-
-    useEffect(() => {
-        wwEvents.addListener('putPriceAndCode', buyItem);
-        wwEvents.addListener('dPrice', sellItem);
-        return () => {
-            wwEvents.removeListener('putPriceAndCode', buyItem);
-            wwEvents.removeListener('dPrice', sellItem);
-        }
-    });
 
     const clearBucket = () => {
         let sure = window.confirm('You sure?');
