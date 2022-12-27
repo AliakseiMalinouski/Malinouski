@@ -56,6 +56,12 @@ body {
   padding-top: 50px;
 }
 
+#root .container .IntrudactionPage {
+  width: 1415px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
 @keyframes home {
   from {
     opacity: 0;
@@ -379,4 +385,67 @@ body {
   left: 770px;
   width: 40px;
   height: 40px;
+}
+
+
+#root .container .IntrudactionPage .HelpBoard {
+  width: 90%;
+  height: 800px;
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 13px;
+  padding-top: 50px;
+}
+
+#root .container .IntrudactionPage .HelpBoard h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+}
+
+#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks .NoReg {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #3F44F7;
+  border: 1px solid 3F44F7;
+  border-radius: 13px;
+  color: white;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+}
+
+#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks .Reg {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #40EF2F;
+  border: 1px solid 3F44F7;
+  border-radius: 13px;
+  color: black;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  width: 398px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks a:hover {
+  transition: 1s;
+  opacity: 0.6;
 }
