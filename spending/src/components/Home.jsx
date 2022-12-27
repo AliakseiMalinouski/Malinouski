@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
 import { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-// import { loadArrayItems } from "../Redux/itemsSlice";
 import { Items } from "./Items";
 import { CSSTransition } from 'react-transition-group';
 import { Bucket } from "./Bucket";
