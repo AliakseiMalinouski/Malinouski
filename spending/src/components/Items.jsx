@@ -51,7 +51,13 @@ export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity
                 <h3 className="Name">{name}</h3>
                 <h4 className="Price">USD {price}</h4>
                 <div className="Other">
-                    <button className="Buy" onClick={buyItem}>{buy}</button>
+                    {
+                            price > cash 
+                                ?
+                                <button className="Buy BaseOpacity" onClick={buyItem}>{buy}</button>
+                                :
+                                <button className="Buy" onClick={buyItem}>{buy}</button>
+                    }
                     <div className="Quantity">{currentQuantity}</div>
                     <button className="Sell" onClick={sellItem}>{sell}</button>
                 </div>
