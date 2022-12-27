@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { wwEvents } from "../events";
 
 
-export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity, item, haveCode, cash}) => {
+export const Items = React.memo(({ code, name, image, price, sell, buy, quanlity, item, haveCode, cash, reset }) => {
+    
+    useEffect(() => {
+        if (reset) {
+            setCurrentQuantity(0);
+        }
+    }, [reset]);
 
     const [currentQuantity, setCurrentQuantity] = useState(quanlity);
     

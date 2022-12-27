@@ -16,6 +16,7 @@ export const Home = React.memo(() => {
     const [searchValue, setSearchValue] = useState("");
     const [bucketArray, setBucketArray] = useState([]);
     const [haveCode, setHaveCode] = useState(null);
+    const [reset, setReset] = useState(false);
 
     const cashChangd = useRef();
 
@@ -25,6 +26,10 @@ export const Home = React.memo(() => {
     useEffect(() => {
         dispatch(LoadData);
     }, [dispatch]);
+
+    useEffect(() => {
+        if (reset) setReset(false);
+    }, [reset]);
 
     
     useEffect(() => {
@@ -80,18 +85,23 @@ export const Home = React.memo(() => {
     }
 
     const resetAll = () => {
-        
+        setReset(true);
     }
 
     const clearBucket = () => {
         let sure = window.confirm('You sure?');
-        if (sure) setBucketArray([]);
+        if (sure) {
+            setBucketArray([]);
+            resetAll();
+            setCash(80000000);
+            setHaveCode(null);
+        }
     }
 
     let itemsMemoezeed = useMemo(() => itemsList.filter(element => {
         return element.name.toLowerCase().includes(searchValue.toLowerCase())
-    }).map(e => <Items key={e.code} haveCode={haveCode} cash={cash} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />),
-        [itemsList, cash, haveCode, searchValue]);
+    }).map(e => <Items key={e.code} reset={reset} haveCode={haveCode} cash={cash} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />),
+        [itemsList, cash, haveCode, searchValue, reset]);
 
 
     return <div className="BaseWrapper">
