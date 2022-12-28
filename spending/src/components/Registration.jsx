@@ -56,7 +56,8 @@ export const Auth = () => {
     }
 
     return <div className='WrapperAuth'>
-        <div className='Registr'>
+        <div className='WrapOther'>
+            <div className='Registr'>
             <h3>Registration</h3>
             <input type='text' placeholder='email' value={registerEmail} onChange={readRegisterEmail} />
             <input type='text' placeholder='password' value={registerPassword} onChange={readRegisterPassword}/>
@@ -69,7 +70,8 @@ export const Auth = () => {
             <button onClick={login}>Login</button>
         </div>
 
-        <h3>User logged in: {user?.email}</h3>
-        <button onClick={logout}>Sign out</button>
+        <h3 className='CurrentStatus'>User logged in: {user?.email}</h3>
+        <button onClick={logout} className='SingOutReg'>Sign out</button>
+        </div>
     </div>
 }

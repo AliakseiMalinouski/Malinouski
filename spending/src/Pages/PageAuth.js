@@ -3,7 +3,7 @@ import { Auth } from "../components/Registration";
 
 export const PageAuth = () => {
     return (
-        <div>
+        <div style={{ width: '100%', height: '100%'}}>
             <Auth/>
         </div>
     )

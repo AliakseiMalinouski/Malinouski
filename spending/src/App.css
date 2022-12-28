@@ -202,8 +202,8 @@ body {
 }
 
 #root .container .HomePage .Search input {
-  width: 40%;
-  height: 40px;
+  width: 70%;
+  height: 50px;
   border: none;
   background: linear-gradient(180deg,#2ecc71,#1abc9c);
   border-radius: 16px;
@@ -459,64 +459,138 @@ body {
 }
 
 
-#root .container .IntrudactionPage .HelpBoard {
-  width: 90%;
-  height: 800px;
+#root .container .WrapperAuth {
+  width: 1415px;
   margin: 0 auto;
-  border: 1px solid white;
-  background-color: white;
-  border-radius: 13px;
-  padding-top: 50px;
-}
-
-#root .container .IntrudactionPage .HelpBoard h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 48px;
-}
-
-#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  padding-top: 200px;
-}
-
-#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks .NoReg {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #3F44F7;
-  border: 1px solid 3F44F7;
-  border-radius: 13px;
-  color: white;
-  padding-top: 30px;
-  padding-left: 15px;
-  padding-bottom: 30px;
-  padding-right: 15px;
-}
-
-#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks .Reg {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  background-color: #40EF2F;
-  border: 1px solid 3F44F7;
-  border-radius: 13px;
-  color: black;
-  padding-top: 30px;
-  padding-left: 15px;
-  padding-bottom: 30px;
-  padding-right: 15px;
-  width: 398px;
+  height: 700px;
   display: flex;
   justify-content: center;
+}
+
+#root .container .WrapperAuth .WrapOther {
+  width: 50%;
+  padding-top: 100px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 16px;
+}
+
+#root .container .WrapperAuth .WrapOther .CurrentStatus {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 15px;
+}
+
+#root .container .WrapperAuth .WrapOther .SingOutReg {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 13px;
+  background-color: #F96D47;
+  color: white;
+}
+
+#root .container .WrapperAuth .WrapOther .Registr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
   align-items: center;
 }
 
-#root .container .IntrudactionPage .HelpBoard .WrapperNavLinks a:hover {
-  transition: 1s;
-  opacity: 0.6;
+#root .container .WrapperAuth .WrapOther .Registr h3 {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
 }
+
+#root .container .WrapperAuth .WrapOther .Registr input {
+  width: 310px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffc0cb;
+  border-radius: 7px;
+  color: white;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+#root .container .WrapperAuth .WrapOther .Registr input:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+#root .container .WrapperAuth .WrapOther .Registr input::placeholder {
+  color: white;
+}
+
+#root .container .WrapperAuth .WrapOther .Registr button {
+  width: 250px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  background-color: #53a8ff;
+  border-radius: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+#root .container .WrapperAuth .WrapOther .Registr button:hover {
+  transition: 1s;
+  opacity: 0.8;
+}
+
+
+#root .container .WrapperAuth .WrapOther .Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#root .container .WrapperAuth .WrapOther .Login input {
+  width: 310px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffc0cb;
+  border-radius: 7px;
+  color: white;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+#root .container .WrapperAuth .WrapOther .Login input:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+#root .container .WrapperAuth .WrapOther .Login input::placeholder {
+  color: white;
+}
+
+#root .container .WrapperAuth .WrapOther .Login button {
+  width: 250px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  background-color: #53a8ff;
+  border-radius: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+#root .container .WrapperAuth .WrapOther .Login button:hover {
+  transition: 1s;
+  opacity: 0.8;
+}
+
+
