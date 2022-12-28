@@ -102,6 +102,8 @@ export const Home = React.memo(() => {
     }).map(e => <Items key={e.code} reset={reset} haveCode={haveCode} cash={cash} item={e} code={e.code} name={e.name} image={e.image} price={e.price} quanlity={e.quanlity} buy={e.buy} sell={e.sell} />),
         [itemsList, cash, haveCode, searchValue, reset]);
 
+    
+    let bucketMemoizeed = useMemo(() => bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>), [bucketArray])
 
     return <div className="BaseWrapper">
         <div className="Cash">
@@ -139,7 +141,7 @@ export const Home = React.memo(() => {
                         <>
                         <img className="ClearBucketImage" src='https://cdn-icons-png.flaticon.com/512/8371/8371662.png' alt='Clear' />
                         <button className="ClearBucket" onClick={clearBucket}>Clear Basket</button>
-                        {bucketArray.map(e => <Bucket key={e.code} code={e.code} name={e.name} image={e.image} price={e.price} buy={e.buy} sell={e.sell}/>)}
+                        {bucketMemoizeed}
                         </>
                     }
                 </div>
