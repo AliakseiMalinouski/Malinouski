@@ -482,6 +482,17 @@ body {
   padding-top: 15px;
 }
 
+#root .container .WrapperAuth .WrapOther .Registr .DoYouHave {
+  margin-bottom: 20px;
+  font-weight: 500;
+  cursor: pointer ;
+}
+
+#root .container .WrapperAuth .WrapOther .Registr .DoYouHave:hover {
+  transition: 1s;
+  color: crimson;
+}
+
 #root .container .WrapperAuth .WrapOther .SingOutReg {
   display: block;
   margin: 0 auto;
@@ -498,8 +509,7 @@ body {
 #root .container .WrapperAuth .WrapOther .Registr {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
+  height: 400px;
   align-items: center;
 }
 
@@ -507,6 +517,7 @@ body {
   font-size: 36px;
   text-align: center;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 #root .container .WrapperAuth .WrapOther .Registr input {
@@ -519,6 +530,8 @@ body {
   color: white;
   padding-left: 15px;
   font-size: 18px;
+  display: block;
+  margin-bottom: 30px;
 }
 
 #root .container .WrapperAuth .WrapOther .Registr input:focus {
@@ -550,13 +563,13 @@ body {
 #root .container .WrapperAuth .WrapOther .Login {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
+  height: 400px;
   align-items: center;
   margin-top: 50px;
 }
 
 #root .container .WrapperAuth .WrapOther .Login input {
+  display: block;
   width: 310px;
   height: 35px;
   border: none;
@@ -566,6 +579,7 @@ body {
   color: white;
   padding-left: 15px;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
 #root .container .WrapperAuth .WrapOther .Login input:focus {
@@ -591,6 +605,24 @@ body {
 #root .container .WrapperAuth .WrapOther .Login button:hover {
   transition: 1s;
   opacity: 0.8;
+}
+
+#root .container .WrapperAuth .WrapOther .Login h3 {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#root .container .WrapperAuth .WrapOther .Login .ReturnToReg {
+  margin-bottom: 20px;
+  font-weight: 500;
+  cursor: pointer 
+}
+
+#root .container .WrapperAuth .WrapOther .Login .ReturnToReg:hover {
+  transition: 1s;
+  color: crimson;
 }
 
 

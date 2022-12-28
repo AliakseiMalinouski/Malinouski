@@ -10,6 +10,7 @@ export const Auth = () => {
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
     const [user, setUser] = useState("");
+    const [have, setHave] = useState(false);
 
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
@@ -57,21 +58,41 @@ export const Auth = () => {
 
     return <div className='WrapperAuth'>
         <div className='WrapOther'>
+    
+        {
+                have
+                    ?
+                    <div className='Login'>
+                        <h3>Login</h3>
+                        <input type='text' placeholder='email' value={loginEmail} onChange={readLoginEmail}/>
+                        <input type='text' placeholder='password' value={loginPassword} onChange={readLoginPassword} />
+                        <p onClick={() => {
+                            setHave(false);
+                        }} className='ReturnToReg'>Return to registration</p>
+                        <button onClick={login}>Login</button>
+                </div>
+                    :
             <div className='Registr'>
-            <h3>Registration</h3>
-            <input type='text' placeholder='email' value={registerEmail} onChange={readRegisterEmail} />
-            <input type='text' placeholder='password' value={registerPassword} onChange={readRegisterPassword}/>
-            <button onClick={register}>Registration</button>
+                <h3>Registration</h3>
+                <input type='text' placeholder='email' value={registerEmail} onChange={readRegisterEmail} />
+                <input type='text' placeholder='password' value={registerPassword} onChange={readRegisterPassword}/>
+                <p className='DoYouHave' onClick={() => {
+                    setHave(true);
+                }}>Do you have account?</p>
+                <button onClick={register}>Registration</button>
         </div>
-        <div className='Login'>
-            <h3>Login</h3>
-            <input type='text' placeholder='email' value={loginEmail} onChange={readLoginEmail}/>
-            <input type='text' placeholder='password' value={loginPassword} onChange={readLoginPassword} />
-            <button onClick={login}>Login</button>
-        </div>
+        }
 
-        <h3 className='CurrentStatus'>User logged in: {user?.email}</h3>
-        <button onClick={logout} className='SingOutReg'>Sign out</button>
+        {
+                user 
+                    ?
+                    <>
+                        <h3 className='CurrentStatus'>User logged in: {user?.email}</h3>
+                        <button onClick={logout} className='SingOutReg'>Sign out</button>
+                    </>
+                    :
+                    null
+        }
         </div>
     </div>
 }
