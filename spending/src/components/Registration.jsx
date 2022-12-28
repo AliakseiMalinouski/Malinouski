@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { auth } from '../firebase-config';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 
@@ -11,12 +11,18 @@ export const Auth = () => {
     const [loginPassword, setLoginPassword] = useState("");
     const [user, setUser] = useState("");
     const [have, setHave] = useState(false);
+    const [active, setActive] = useState(true);
 
     useEffect(() => {
         onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
         });
     }, []);
+
+    const regEmailInput = useRef();
+    const regPasswordInput = useRef();
+    const logEmailInput = useRef();
+    const logPasswordInput = useRef();
 
     const register = async () => {
         try {
@@ -41,18 +47,46 @@ export const Auth = () => {
     }
 
     const readRegisterEmail = (eo) => {
+        let value = eo.target.value;
+        if (eo.target.value === "" || eo.target.value.length < 3 || regPasswordInput.current.value === "" || regPasswordInput.current.value.length < 3) {
+            setActive(true);
+        }
+        else {
+            setActive(false);
+        }
         setRegisterEmail(eo.target.value);
     }
 
     const readRegisterPassword = (eo) => {
+        let value = eo.target.value;
+        if (eo.target.value === "" || eo.target.value.length < 3 || regEmailInput.current.value === "" || regEmailInput.current.value.length < 3) {
+            setActive(true);
+        }
+        else {
+            setActive(false);
+        }
         setRegisterPassword(eo.target.value);
     }
 
     const readLoginEmail = (eo) => {
+        let value = eo.target.value;
+        if (eo.target.value === "" || eo.target.value.length < 3 || logPasswordInput.current.value === "" || logPasswordInput.current.value.length < 3) {
+            setActive(true);
+        }
+        else {
+            setActive(false);
+        }
         setLoginEmail(eo.target.value);
     }
 
     const readLoginPassword = (eo) => {
+        let value = eo.target.value;
+        if (eo.target.value === "" || eo.target.value.length < 3 || logEmailInput.current.value === "" || logEmailInput.current.value.length < 3) {
+            setActive(true);
+        }
+        else {
+            setActive(false);
+        }
         setLoginPassword(eo.target.value);
     }
 
@@ -64,22 +98,22 @@ export const Auth = () => {
                     ?
                     <div className='Login'>
                         <h3>Login</h3>
-                        <input type='text' placeholder='email' value={loginEmail} onChange={readLoginEmail}/>
-                        <input type='text' placeholder='password' value={loginPassword} onChange={readLoginPassword} />
+                        <input ref={logEmailInput} type='text' placeholder='email' value={loginEmail} onChange={readLoginEmail}/>
+                        <input ref={logPasswordInput} type='text' placeholder='password' value={loginPassword} onChange={readLoginPassword} />
                         <p onClick={() => {
                             setHave(false);
                         }} className='ReturnToReg'>Return to registration</p>
-                        <button onClick={login}>Login</button>
+                        <button onClick={login} disabled={active ? true : false} style={{opacity: active ? 0.6 : 1, backgroundColor: active ? 'crimson' : '#53a8ff'}}>Login</button>
                 </div>
                     :
             <div className='Registr'>
                 <h3>Registration</h3>
-                <input type='text' placeholder='email' value={registerEmail} onChange={readRegisterEmail} />
-                <input type='text' placeholder='password' value={registerPassword} onChange={readRegisterPassword}/>
+                <input ref={regEmailInput} type='text' placeholder='email' value={registerEmail} onChange={readRegisterEmail} />
+                <input ref={regPasswordInput} type='text' placeholder='password' value={registerPassword} onChange={readRegisterPassword}/>
                 <p className='DoYouHave' onClick={() => {
                     setHave(true);
                 }}>Do you have account?</p>
-                <button onClick={register}>Registration</button>
+                <button onClick={register} disabled={active ? true : false} style={{opacity: active ? 0.6 : 1, backgroundColor: active ? 'crimson' : '#53a8ff'}}>Registration</button>
         </div>
         }
 
