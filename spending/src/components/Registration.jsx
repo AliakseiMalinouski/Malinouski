@@ -92,7 +92,10 @@ export const Auth = () => {
                     </>
                     :
                     null
-        }
+            }
+        <div className='ReturnToHomePage'>
+            Spending money back
+        </div>
         </div>
     </div>
 }
