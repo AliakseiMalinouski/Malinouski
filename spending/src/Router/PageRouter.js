@@ -7,9 +7,9 @@ import { PageIntrudaction } from "../Pages/PageIntrudaction";
 export const PageRouter = () => {
     return (
         <Routes>
-            <Route path="/" element={<PageIntrudaction/>} />
+            <Route path="/intrudaction-page" element={<PageIntrudaction/>} />
             <Route path="/registration-page" element={<PageAuth/>} />
-            <Route path="/home-page" element={<PageHome/>} />
+            <Route path="/" element={<PageHome/>} />
         </Routes>
     )
 }

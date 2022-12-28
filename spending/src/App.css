@@ -44,6 +44,8 @@ body {
   height: 100%;
 }
 
+
+
 .container {
   width: 100%;
   height: 100%;
@@ -77,6 +79,75 @@ body {
 #root .container .Default {
   width: 100%;
   height: 100%;
+}
+
+#root .container .Default .UserStatus {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+#root .container .Default .UserStatus .SignInHomePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+#root .container .Default .UserStatus .SignInHomePage img {
+  margin-right: 15px;
+}
+
+#root .container .Default .UserStatus .InAccountPageHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+#root .container .Default .UserStatus .InAccountPageHome span {
+  color: #40EF2F;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#root .container .Default .UserStatus .InAccountPageHome img {
+  margin-right: 15px;
+}
+
+#root .container .Default .UserStatus .SignInHomePage a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#root .container .Default .UserStatus .InAccountPageHome .SingOutHomePage {
+  border: none;
+  cursor: pointer;
+  background-color: darkorange;
+  width: 80px;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+#root .container .Default .UserStatus .InAccountPageHome .SingOutHomePage:hover {
+  transition: 1s;
+  opacity: 0.8;
+}
+
+#root .container .Default .UserStatus .SignInHomePage a:hover {
+  transition: 1s;
+  color: #40EF2F;
+  opacity: 0.8;
+}
+
+#root .container .Default .UserStatus .UserIcon {
+  width: 40px;
+  height: 40px;
 }
 
 .container .Default .ImageMainCharacter {
