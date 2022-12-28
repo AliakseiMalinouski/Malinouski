@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { auth } from '../firebase-config';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { NavLink } from 'react-router-dom';
 
 export const Auth = () => {
 
@@ -48,46 +49,36 @@ export const Auth = () => {
 
     const readRegisterEmail = (eo) => {
         let value = eo.target.value;
-        if (eo.target.value === "" || eo.target.value.length < 3 || regPasswordInput.current.value === "" || regPasswordInput.current.value.length < 3) {
-            setActive(true);
-        }
-        else {
-            setActive(false);
-        }
+        validationAll(value, regPasswordInput.current.value);
         setRegisterEmail(eo.target.value);
+        console.log('parent function  ' +value)
     }
 
     const readRegisterPassword = (eo) => {
         let value = eo.target.value;
-        if (eo.target.value === "" || eo.target.value.length < 3 || regEmailInput.current.value === "" || regEmailInput.current.value.length < 3) {
-            setActive(true);
-        }
-        else {
-            setActive(false);
-        }
+        validationAll(value, regEmailInput.current.value);
         setRegisterPassword(eo.target.value);
     }
 
     const readLoginEmail = (eo) => {
         let value = eo.target.value;
-        if (eo.target.value === "" || eo.target.value.length < 3 || logPasswordInput.current.value === "" || logPasswordInput.current.value.length < 3) {
-            setActive(true);
-        }
-        else {
-            setActive(false);
-        }
+        validationAll(value, logPasswordInput.current.value);
         setLoginEmail(eo.target.value);
     }
 
     const readLoginPassword = (eo) => {
         let value = eo.target.value;
-        if (eo.target.value === "" || eo.target.value.length < 3 || logEmailInput.current.value === "" || logEmailInput.current.value.length < 3) {
+        validationAll(value, logEmailInput.current.value);
+        setLoginPassword(eo.target.value);
+    }
+
+    const validationAll = (valueElement, refElementValue) => {
+        if (valueElement === "" || valueElement.length < 3 || refElementValue === "" || refElementValue.length < 3) {
             setActive(true);
         }
         else {
             setActive(false);
         }
-        setLoginPassword(eo.target.value);
     }
 
     return <div className='WrapperAuth'>
@@ -127,9 +118,9 @@ export const Auth = () => {
                     :
                     null
             }
-        <div className='ReturnToHomePage'>
+        <NavLink to='/' className='ReturnToHomePage'>
             Spending money back
-        </div>
+        </NavLink>
         </div>
     </div>
 }

@@ -493,6 +493,7 @@ body {
   left: 175px;
   margin-bottom: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #root .container .WrapperAuth .WrapOther .ReturnToHomePage:hover {
