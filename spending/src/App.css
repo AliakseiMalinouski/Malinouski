@@ -75,16 +75,12 @@ body {
   height: 100%;
 }
 
-#root .container .Default .UserStatus {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-}
-
 #root .container .Default .UserStatus .SignInHomePage {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 20px;
+  padding-top: 10px;
 }
 
 #root .container .Default .UserStatus .SignInHomePage img {
