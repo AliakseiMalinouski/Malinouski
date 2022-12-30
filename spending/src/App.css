@@ -83,8 +83,7 @@ body {
 
 #root .container .Default .UserStatus .SignInHomePage {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   padding-right: 20px;
 }
 
@@ -225,6 +224,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 }
 
 .container .BaseWrapper .Cash .Number {
