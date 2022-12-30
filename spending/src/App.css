@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline:  1px solid red;
 }
 
 html {
@@ -56,12 +57,6 @@ body {
   width: 1415px;
   margin: 0 auto;
   padding-top: 50px;
-}
-
-#root .container .IntrudactionPage {
-  width: 1415px;
-  margin: 0 auto;
-  padding-top: 100px;
 }
 
 @keyframes home {
@@ -663,3 +658,116 @@ body {
   }
 }
 
+
+@media all and (max-width: 1415px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  #root .container .HomePage {
+    width: 1030px;
+  }
+
+  .container .Default .Bucket .ClearBucketImage {
+    left: 580px;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .container {
+    width: 760px;
+    margin: 0 auto;
+  }
+
+  #root .container .HomePage {
+    width: 760px;
+  }
+
+  .container .BaseWrapper .Cash .Number {
+    font-size: 35px;
+  }
+
+  .container .Default .Phrases p:nth-child(1) {
+    font-size: 30px;
+  }
+
+  .container .BaseWrapper .WrapperItems {
+    justify-content: space-evenly;
+  }
+
+  .container .Default .Bucket .ClearBucketImage {
+    left: 450px;
+  }
+}
+
+
+@media all and (max-width: 760px) {
+  .container {
+    width: 560px;
+  }
+
+  #root .container .HomePage {
+    width: 100%;
+  }
+
+  .container .Default .Bucket .ClearBucketImage {
+    left: 350px;
+  }
+
+  .container .BaseWrapper .Cash .Number .Precent {
+    font-size: 19px;
+  }
+
+  .container .BaseWrapper .Cash .Number {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 560px) {
+  .container {
+    width: 100%;
+  }
+
+  #root .container .HomePage {
+    width: 100%;
+  }
+
+  .container .BaseWrapper .Cash .Number {
+    font-size: 19px;
+  }
+
+    .container .Default .Phrases p:nth-child(1) {
+      font-size: 25px;
+  }
+
+  .container .Default .Bucket .WrapperBucket .BucketItem {
+    padding-left: 0px;
+  }
+
+  .container .Default .Bucket .WrapperBucket .BucketItem {
+    flex-direction: column;
+  }
+
+  .container .Default .Bucket .WrapperBucket .BucketItem .BucketName {
+    margin-right: 0px;
+  }
+
+  .container .Default .Bucket .WrapperBucket .BucketItem .BucketPrice {
+    margin-right: 0px;
+  }
+
+  .container .Default .Bucket .ClearBucketImage {
+    display: none;
+  }
+
+  .container .BaseWrapper .Cash .Number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .BaseWrapper .Cash .Number .Precent {
+    margin-top: 15px;
+  }
+}
