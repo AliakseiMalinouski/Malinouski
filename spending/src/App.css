@@ -672,6 +672,15 @@ body {
   .container .Default .Bucket .ClearBucketImage {
     left: 580px;
   }
+
+  #root .container .WrapperAuth {
+    width: 1080px;
+  }
+
+  #root .container .WrapperAuth .WrapOther .ReturnToHomePage {
+    font-size: 23px;
+    left: 144px;
+  }
 }
 
 @media all and (max-width: 1080px) {
@@ -684,8 +693,17 @@ body {
     width: 760px;
   }
 
+  #root .container .WrapperAuth {
+    width: 760px;
+  }
+
   .container .BaseWrapper .Cash .Number {
     font-size: 35px;
+  }
+
+  #root .container .WrapperAuth .WrapOther .ReturnToHomePage {
+    font-size: 16px;
+    left: 100px;
   }
 
   .container .Default .Phrases p:nth-child(1) {
@@ -722,6 +740,18 @@ body {
   .container .BaseWrapper .Cash .Number {
     font-size: 24px;
   }
+
+  #root .container .WrapperAuth {
+    width: 560px;
+  }
+
+  #root .container .WrapperAuth .WrapOther {
+    width: 100%;
+  }
+
+  #root .container .WrapperAuth .WrapOther .ReturnToHomePage {
+    left: 135px;
+  }
 }
 
 @media all and (max-width: 560px) {
@@ -730,6 +760,10 @@ body {
   }
 
   #root .container .HomePage {
+    width: 100%;
+  }
+
+  #root .container .WrapperAuth {
     width: 100%;
   }
 
@@ -769,5 +803,17 @@ body {
 
   .container .BaseWrapper .Cash .Number .Precent {
     margin-top: 15px;
+  }
+
+  .container .BaseWrapper .Cash .Number .Precent {
+    font-size: 18px;
+  }
+
+  #root .container .WrapperAuth .WrapOther .ReturnToHomePage {
+    position: static;
+    margin: 0 auto;
+  }
+  #root .container .WrapperAuth .WrapOther .ReturnToHomePage {
+    font-size: 14px;
   }
 }
