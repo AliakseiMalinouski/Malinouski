@@ -88,7 +88,7 @@ export const Home = React.memo(() => {
     }
 
     const clearBucket = () => {
-        let sure = window.confirm('You sure?');
+        let sure = window.confirm('Are You sure?');
         if (sure) {
             setBucketArray([]);
             resetAll();
