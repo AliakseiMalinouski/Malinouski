@@ -4,17 +4,23 @@ import { useSelector, useDispatch } from 'react-redux';
 import { titlesThunk } from '../Redux/titlesThunk';
 import { CatalogTitles } from './CatalogTitles';
 import { IlyBooksEvents } from '../events';
+import { itemsThunk } from '../Redux/itemsThunk';
+import { Items } from './Items';
 
 export const Catalog = React.memo(() => {
 
     let dispatch = useDispatch();
 
     const titles = useSelector(state => state.titles.data);
+    const items = useSelector(state => state.items.data);
 
     useEffect(() => {
         dispatch(titlesThunk);
     }, [dispatch]);
 
+    useEffect(() => {
+        dispatch(itemsThunk)
+    }, [dispatch])
 
     useEffect(() => {
         IlyBooksEvents.addListener('Select', Select);
@@ -23,7 +29,8 @@ export const Catalog = React.memo(() => {
         }
     }, []);
 
-     const [isSelect, setIsSelected] = useState(null);
+
+    const [isSelect, setIsSelected] = useState(null);
 
     let listTitles = useMemo(() => titles.map(e => <CatalogTitles key={e.code} code={e.code} title={e.title} isSelect={isSelect} />), [titles, isSelect]);
 
@@ -31,6 +38,8 @@ export const Catalog = React.memo(() => {
         console.log(code)
         setIsSelected(code);
     }
+
+    
 
     return (
         <div className='Catalog'>
@@ -47,6 +56,11 @@ export const Catalog = React.memo(() => {
                 <ul className='TitlesList'>
                     {listTitles}
                 </ul>
+                <div className='WrapperItems'>
+                    {
+                        items.map(e => <Items key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} />)
+                    }
+                </div>
             </div>
         </div>
     )
