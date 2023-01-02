@@ -28,7 +28,7 @@ export const Header = () => {
                 }
             </ul>
             <div className='RestHeader'>
-                <input type='text' className='Search' />
+                <input type='text' className='Search' maxLength='100'/>
                 <img src='https://i.ibb.co/RzHWngP/Vector-4.png' alt='Search Button' className='SearchButton'/>
                 {
                     icons.map(e => <img key={e.code} src={e.url} alt='Icon'/>)

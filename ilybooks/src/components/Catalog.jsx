@@ -28,14 +28,12 @@ export const Catalog = React.memo(() => {
             IlyBooksEvents.addListener('Select', Select);
         }
     }, []);
-
-
+ 
     const [isSelect, setIsSelected] = useState(null);
 
     let listTitles = useMemo(() => titles.map(e => <CatalogTitles key={e.code} code={e.code} title={e.title} isSelect={isSelect} />), [titles, isSelect]);
 
     const Select = (code) => {
-        console.log(code)
         setIsSelected(code);
     }
 
@@ -61,6 +59,9 @@ export const Catalog = React.memo(() => {
                         items.map(e => <Items key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} />)
                     }
                 </div>
+                {/* <div className='FirstShelf'></div>
+                <div className='SecondShelf'></div> */}
+                <p className='CatalogDescription'>Avid bookworms have a must read list for years to come. And other readers like to wander among the bookshelves or in the catalog of an online store - and often they come across exactly the work that matches the train of thought and mood. In this sense, the online book store is especially convenient - you can "travel" through it in any weather - anywhere in the world.</p>
             </div>
         </div>
     )

@@ -67,6 +67,13 @@ li {
   width: 224px;
   border: none;
   border-bottom: 2px solid black;
+  padding-left: 5px;
+  font-style: italic;
+}
+
+.Header .Search:focus {
+  outline: none;
+  outline-offset: none;
 }
 
 .Header .RestHeader {
@@ -93,7 +100,6 @@ li {
   left: 180px;
   cursor: pointer;
 }
-
 
 
 .Catalog .FlexibilityBlockCatalog {
@@ -215,11 +221,14 @@ li {
   padding-right: 37.74px;
   padding-bottom: 57px;
   border: 1px solid black;
-  margin-bottom: 146px;
+  margin-bottom: 86px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  position: relative;
+  z-index: 10;
+  background-color: white;
 }
 
 .Catalog .CatalogOffers .WrapperItems .Item .RestItems {
@@ -244,4 +253,43 @@ li {
   bottom: 0px;
   right: 50px;
   cursor: pointer;
+}
+
+.Catalog .CatalogDescription {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.92px;
+  width: 100%;
+  padding-bottom: 49px;
+}
+
+/* .Catalog .FirstShelf {
+  position: absolute;
+  width: 100%;
+  height: 153px;
+  background-color: #E2B08E;
+  top: -230px;
+}
+
+.Catalog .SecondShelf {
+  position: absolute;
+  width: 100%;
+  height: 153px;
+  background-color: #E2B08E;
+  top: -1060px;
+} */
+
+.WrapperFooter {
+  height: 385px;
+  background-color: #F6D5BF;
+  padding-bottom: 164px;
+  padding-top: 67px;
+}
+
+.WrapperFooter .Footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

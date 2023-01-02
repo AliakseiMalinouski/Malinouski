@@ -5,6 +5,7 @@ import { store } from './Redux/store';
 import { Provider } from 'react-redux';
 import { PageRouter } from './Router/PageRouter';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
         <div className='WrapperContent'>
           <div className='Container'>
             <PageRouter/>
+          </div>
+        </div>
+        <div className='WrapperFooter'>
+          <div className='Container'>
+            <Footer/>
           </div>
         </div>
       </Provider>
