@@ -23,6 +23,12 @@ li {
   list-style: none;
 }
 
+.Selected {
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
 .Container {
   margin: 0 auto;
   width: 1544px;
@@ -88,12 +94,105 @@ li {
   cursor: pointer;
 }
 
-/* .Header .BigStaticText p {
+
+
+.Catalog .FlexibilityBlockCatalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Catalog .FlexibilityBlockCatalog .Illustration {
+  width: 876px;
+  height: 588px;
+}
+
+.Catalog .BigStaticText {
+  padding-top: 86px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Catalog .BigStaticText p:nth-child(1) {
   width: 622px;
   height: 180px;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 44.8px;
-} */
+  text-align: center;
+}
 
+.Catalog .BigStaticText span {
+  width: 622px;
+  height: 180px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 44.8px;
+}
 
+.Catalog .BigStaticText p:nth-child(2) {
+  width: 619px;
+  height: 81px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 51px;
+}
+
+.Catalog .BigStaticText button {
+  width: 357px;
+  height: 53px;
+  background-color: #242121;
+  border: none;
+  margin-top: 54px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-box-shadow: 7px 6px 0px 0px rgba(192, 155, 131, 0.73);
+  -moz-box-shadow: 7px 6px 0px 0px rgba(192, 155, 131, 0.73);
+  box-shadow: 7px 6px 0px 0px rgba(192, 155, 131, 0.73);
+}
+
+.Catalog .BigStaticText button:hover {
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.Catalog .BigStaticText button img {
+  margin-left: 10px;
+}
+
+.Catalog .CatalogOffers {
+  width: 1282.48px;
+  margin: 0 auto;
+  padding-top: 58px;
+}
+
+.Catalog .CatalogOffers .MiniTitle {
+  font-weight: 500;
+  line-height: 20.16px;
+  font-size: 18px;
+}
+
+.Catalog .CatalogOffers .TitlesList {
+  display: flex;
+  width: 303px;
+  padding-top: 27px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.Catalog .CatalogOffers .TitlesList li {
+  border: 1px solid black;
+  padding-left: 8px;
+  padding-top: 6px;
+  padding-right: 8px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}

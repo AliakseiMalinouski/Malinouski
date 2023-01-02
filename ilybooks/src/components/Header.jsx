@@ -19,8 +19,6 @@ export const Header = () => {
         dispatch(iconThunk);
     }, [dispatch]);
 
-    console.log(icons)
-
     return (
         <div className='Header'>
             <img src='https://i.ibb.co/vdKGBYM/ilybooks.png' alt='Logo' className='Logo' />
