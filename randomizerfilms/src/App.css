@@ -153,6 +153,13 @@ a {
   opacity: 0.8;
 }
 
+.Container .Film .Welcome {
+  width: 100%;
+  line-height: 35px;
+  color: #9ca3af;
+  font-size: 26px;
+}
+
 @media all and (max-width: 1200px) {
   .Container {
     width: 960px;

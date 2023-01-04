@@ -18,7 +18,8 @@ export const Film = ({ code, name, year, duration, genre, director, actors, imag
     if (code === undefined || name === undefined || year === undefined || duration === undefined || genre === undefined || director === undefined || actors === undefined || image === undefined || plot === undefined || rating === undefined) {
         return (
             <div className='Film'>
-                <button onClick={viewNewFilm} className='UpdateFilmButton'>Start</button>
+                <h4 className='Welcome'>Welcome to the Film Randomiser! Here you can quickly find the film that suits you with one click!</h4>
+                <button onClick={viewNewFilm} className='UpdateFilmButton'>Recommend</button>
             </div>
         )
     }
