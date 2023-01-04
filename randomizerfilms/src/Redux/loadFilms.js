@@ -3,7 +3,7 @@ import { getFilms, updateLoadState } from "./filmsSlice";
 
 export const loadFilms = (dispatch) => {
     dispatch(updateLoadState({ loadState: 1 }));
-    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/fa0d16adc01043d44e5e374f9bb7bfd8/raw/8b7074e65ceeaf8a47a8aed74dc8c1ba1b2166f8/FilmsArray",
+    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/fa0d16adc01043d44e5e374f9bb7bfd8/raw/3e5f068ff8526cb19877f23279945311596ec9fb/FilmsArray",
         {
             method: 'get',
             headers: {

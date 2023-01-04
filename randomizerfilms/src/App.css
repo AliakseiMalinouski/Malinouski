@@ -53,6 +53,21 @@ a {
   height: 209px;
 }
 
+.Container .RandomizerFilms .Loading {
+  width: 40px;
+  height: 40px;
+  animation: loading 0.2s linear;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .Container .RandomizerFilms .Film .Name {
   color: white;
   font-size: 24px;

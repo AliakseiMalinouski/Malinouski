@@ -52,7 +52,7 @@ export const RandomizerFilms = React.memo(() => {
 
     return (
         <div className='RandomizerFilms'>
-            {(loadState === 1) && <div style={{color: 'red'}}>...Loagind</div>}
+            {(loadState === 1) && <img src='https://cdn-icons-png.flaticon.com/512/9053/9053458.png' alt='Loading' className='Loading'/>}
             {(loadState === 2) && filmsMemoizeed}
             {(loadState === 3) && <div>Error</div>}
         </div>
