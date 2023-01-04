@@ -8,7 +8,9 @@ import { filmsEvents } from '../events';
 export const RandomizerFilms = React.memo(() => {
 
     const [currentFilm, setCurrentFilm] = useState({});
-    const [workMode, setWorkMode] = useState(false);
+
+
+    const loadState = useSelector(state => state.films.loadState);
     const films = useSelector(state => state.films.filmsArray);
 
     let dispatch = useDispatch();
@@ -38,6 +40,7 @@ export const RandomizerFilms = React.memo(() => {
         image={currentFilm.image}
     />, [currentFilm]);
 
+
     const viewNewFilm = () => {
         films.forEach(el => {
             if (el.id === currentFilm.id) {
@@ -49,7 +52,9 @@ export const RandomizerFilms = React.memo(() => {
 
     return (
         <div className='RandomizerFilms'>
-            {filmsMemoizeed}
+            {(loadState === 1) && <div style={{color: 'red'}}>...Loagind</div>}
+            {(loadState === 2) && filmsMemoizeed}
+            {(loadState === 3) && <div>Error</div>}
         </div>
     )
 })
