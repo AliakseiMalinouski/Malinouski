@@ -14,9 +14,12 @@ export const filmsSlice = createSlice({
         },
         updateLoadState: (state, action) => {
             state.loadState = action.payload.loadState;
+        },
+        changeFilm: (state, action) => {
+
         }
     }
 })
 
-export const { getFilms, updateLoadState } = filmsSlice.actions;
+export const { getFilms, updateLoadState, changeFilm } = filmsSlice.actions;
 export default filmsSlice.reducer;
