@@ -77,7 +77,7 @@ a {
 
 .Container .RandomizerFilms .Film .DurationActorsYear {
   margin-top: 30px;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
