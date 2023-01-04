@@ -13,8 +13,12 @@ body {
   min-width: 100%;
   min-height: 100%;
   background-color: #111827;
+  font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 
 .Container {
   width: 1220px;
@@ -22,6 +26,7 @@ body {
   padding-top: 50px;
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 
 .Container .RandomizerFilms .Film {
@@ -30,10 +35,104 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  animation: film 0.9s linear;
+}
+
+@keyframes film {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .Container .RandomizerFilms .Film .Poster {
   display: block;
   width: 140px;
   height: 209px;
+}
+
+.Container .RandomizerFilms .Film .Name {
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.Container .RandomizerFilms .Film .DurationActorsYear {
+  margin-top: 30px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Container .RandomizerFilms .Film .DurationActorsYear span {
+  font-size: 18px;
+  color: #9ca3af;
+}
+
+.Container .RandomizerFilms .Film .Rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.Container .RandomizerFilms .Film .Rating p {
+  color: white;
+}
+
+.Container .RandomizerFilms .Film .Rating .SpanRating {
+  color: white;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container .RandomizerFilms .Film .Rating .IMGb {
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+}
+
+.Container .RandomizerFilms .Film .Rating .Streaming {
+  color: white;
+}
+
+.Container .RandomizerFilms .Film .Rating .Streaming:hover {
+  transition: 1s;
+  color: red;
+}
+
+.Container .RandomizerFilms .Film .InformationAboutFilm {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #9ca3af;
+}
+
+.Container .RandomizerFilms .Film .InformationAboutFilm p {
+  color: white;
+  padding-top: 9px;
+  font-weight: 400;
+}
+
+.Container .RandomizerFilms .Film .UpdateFilmButton {
+  margin-top: 100px;
+  cursor: pointer;
+  border: none;
+  background-color: #6366f1;
+  width: 295px;
+  height: 44px;
+  border-radius: 16px;
+  color: white;
+  font-size: 20px;
+}
+
+.Container .RandomizerFilms .Film .UpdateFilmButton:hover {
+  transition: 1s;
+  opacity: 0.8;
 }

@@ -18,7 +18,29 @@ export const Film = ({ code, name, year, duration, genre, director, actors, imag
     return (
         <div className='Film'>
             <img src={image} alt='Poster' className='Poster' />
-            <button onClick={viewNewFilm}>click</button>
+            <h3 className='Name'>{name}</h3>
+            <div className='DurationActorsYear'>
+                <span>{year}</span>
+                <span>{genre}</span>
+                <span>{duration} min</span>
+            </div>
+            <div className='Rating'>
+                <span className='SpanRating'><img src='https://img.icons8.com/color/512/imdb.png' alt='IMDd Logo' className='IMGb' /> {rating}</span>
+                <a href='https://unogs.com/' target='_blank' rel="noreferrer" className='Streaming'>Who is streaming?</a>
+            </div>
+            <div className='InformationAboutFilm'>
+                Director
+                <p>{director}</p>
+            </div>
+            <div className='InformationAboutFilm'>
+                Actors
+                <p>{actors}</p>
+            </div>
+            <div className='InformationAboutFilm'>
+                Plot
+                <p>{plot}</p>
+            </div>
+            <button onClick={viewNewFilm} className='UpdateFilmButton'>Another film</button>
         </div>
     )
 }
