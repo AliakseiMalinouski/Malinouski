@@ -16,8 +16,10 @@ export const RandomizerFilms = React.memo(() => {
     let dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(loadFilms);
-    }, [dispatch]);
+        if (!films.length) {
+            dispatch(loadFilms);
+        }
+    }, [dispatch, films]);
 
     useEffect(() => {
         filmsEvents.addListener('ViewNewFilm', viewNewFilm);
