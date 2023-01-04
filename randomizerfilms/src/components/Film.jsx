@@ -17,7 +17,7 @@ export const Film = ({ code, name, year, duration, genre, director, actors, imag
 
     if (code === undefined || name === undefined || year === undefined || duration === undefined || genre === undefined || director === undefined || actors === undefined || image === undefined || plot === undefined || rating === undefined) {
         return (
-            <div>
+            <div className='Film'>
                 <button onClick={viewNewFilm} className='UpdateFilmButton'>Start</button>
             </div>
         )
