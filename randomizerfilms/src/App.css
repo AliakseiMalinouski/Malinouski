@@ -174,10 +174,6 @@ a {
   .Container .Film {
     width: 560px !important;
   }
-
-  .Container .Film .Welcome {
-
-  }
 }
 
 @media all and (max-width: 560px) {
