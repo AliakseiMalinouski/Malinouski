@@ -27,7 +27,6 @@ a {
   display: flex;
   justify-content: center;
   height: 100%;
-  border: 1px solid red;
 }
 
 .Container .RandomizerFilms .Film {
