@@ -158,6 +158,7 @@ a {
   line-height: 35px;
   color: #9ca3af;
   font-size: 26px;
+  text-align: center;
 }
 
 @media all and (max-width: 1200px) {
@@ -172,6 +173,10 @@ a {
   }
   .Container .Film {
     width: 560px !important;
+  }
+
+  .Container .Film .Welcome {
+
   }
 }
 
