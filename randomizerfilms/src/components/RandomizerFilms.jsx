@@ -28,19 +28,19 @@ export const RandomizerFilms = React.memo(() => {
         }
     });
 
-    let filmsMemoizeed = useMemo(() => <Film
-        key={currentFilm.id}
-        code={currentFilm.id}
-        name={currentFilm.name}
-        year={currentFilm.year}
-        rating={currentFilm.rating}
-        actors={currentFilm.actors}
-        genre={currentFilm.genre}
-        duration={currentFilm.duration}
-        director={currentFilm.director}
-        plot={currentFilm.plot}
-        image={currentFilm.image}
-    />, [currentFilm]);
+    // let filmsMemoizeed = useMemo(() => <Film
+    //     key={currentFilm.id}
+    //     code={currentFilm.id}
+    //     name={currentFilm.name}
+    //     year={currentFilm.year}
+    //     rating={currentFilm.rating}
+    //     actors={currentFilm.actors}
+    //     genre={currentFilm.genre}
+    //     duration={currentFilm.duration}
+    //     director={currentFilm.director}
+    //     plot={currentFilm.plot}
+    //     image={currentFilm.image}
+    // />, [currentFilm]);
 
 
     const viewNewFilm = () => {
@@ -55,7 +55,19 @@ export const RandomizerFilms = React.memo(() => {
     return (
         <div className='RandomizerFilms'>
             {(loadState === 1) && <img src='https://cdn-icons-png.flaticon.com/512/9053/9053458.png' alt='Loading' className='Loading'/>}
-            {(loadState === 2) && filmsMemoizeed}
+            {(loadState === 2) && <Film
+                key={currentFilm.id}
+                code={currentFilm.id}
+                name={currentFilm.name}
+                year={currentFilm.year}
+                rating={currentFilm.rating}
+                actors={currentFilm.actors}
+                genre={currentFilm.genre}
+                duration={currentFilm.duration}
+                director={currentFilm.director}
+                plot={currentFilm.plot}
+                image={currentFilm.image}
+            />}
             {(loadState === 3) && <div>Error</div>}
         </div>
     )
