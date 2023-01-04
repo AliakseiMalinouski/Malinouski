@@ -15,7 +15,15 @@ export const Film = ({ code, name, year, duration, genre, director, actors, imag
         filmsEvents.emit('ViewNewFilm');
     }
 
-    return (
+    if (code === undefined || name === undefined || year === undefined || duration === undefined || genre === undefined || director === undefined || actors === undefined || image === undefined || plot === undefined || rating === undefined) {
+        return (
+            <div>
+                <button onClick={viewNewFilm} className='UpdateFilmButton'>Start</button>
+            </div>
+        )
+    }
+    else {
+        return (
         <div className='Film'>
             <img src={image} alt='Poster' className='Poster' />
             <h3 className='Name'>{name}</h3>
@@ -43,4 +51,5 @@ export const Film = ({ code, name, year, duration, genre, director, actors, imag
             <button onClick={viewNewFilm} className='UpdateFilmButton'>Another film</button>
         </div>
     )
+    }
 }
