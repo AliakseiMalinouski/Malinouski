@@ -7,12 +7,9 @@ export const Film = ({ code, name, year, duration, genre, director, actors, imag
     useEffect(() => {
         if (code === undefined || name === undefined || year === undefined || duration === undefined || genre === undefined || director === undefined || actors === undefined || image === undefined || plot === undefined || rating === undefined) {
             filmsEvents.emit('ViewNewFilm');
-            console.log('eee')
         }
     }, [code, name, year, duration, genre, director, actors, image, plot, rating]);
 
-
-    console.log(code, name, year, duration, genre, director, actors, image, plot, rating)
 
     const viewNewFilm = () => {
         filmsEvents.emit('ViewNewFilm');
