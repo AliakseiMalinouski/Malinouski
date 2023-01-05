@@ -44,9 +44,9 @@ export const Header = React.memo(({cbResize}) => {
                 (!resize)
                     ?
                 <div className='NavLinks'>
-                    <NavLink className='NavLink' style={(page == '/' ? {color: 'red'} : null)} to='/'>Auth</NavLink>
+                    <NavLink className='NavLink' style={(page == '/registration' ? {color: 'red'} : null)} to='/registration'>Auth</NavLink>
                     <NavLink className='NavLink' style={(page == '/intrudaction' ? {color: 'red'} : null)} to='/intrudaction'>Intrudaction</NavLink>
-                    <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)}>Taprola</NavLink>
+                    <NavLink className='NavLink' to='/' style={(page == '/' ? {color: 'red'} : null)}>Taprola</NavLink>
                     <NavLink className='NavLink' to='/menu' style={(page == '/menu' ? {color: 'red'} : null)}>Menu</NavLink>
                     <NavLink className='NavLink' to='/options' style={(page == '/options' ? {color: 'red'} : null)}>Options</NavLink>
                     <NavLink className='NavLink' to='/send' style={(page == '/send' ? { color: 'red' } : null)}>Contacts</NavLink>

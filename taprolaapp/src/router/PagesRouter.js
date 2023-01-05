@@ -14,9 +14,9 @@ export const PagesRouter = () => {
           
     return (
       <Routes>
-        <Route path='/' element={<PageAuth/>} />
+        <Route path='/registration' element={<PageAuth/>} />
         <Route path='/intrudaction' element={<PageIntrudaction/>} />
-        <Route path="/taprola" element={<PageTaprola />} />
+        <Route path="/" element={<PageTaprola />} />
         <Route path='/options' element={<PageOptions />} />
         <Route path='/send' element={<PageSend/>} />
         <Route path='/menu' element={<PageMenu />} />
