@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Items = ({ code, name, image, arrow }) => {
+export const Items = React.memo(({ code, name, image, arrow }) => {
     
     let navigate = useNavigate();
 
@@ -23,4 +23,4 @@ export const Items = ({ code, name, image, arrow }) => {
             </div>
         </div>
     )
-}
+})

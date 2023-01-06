@@ -88,6 +88,7 @@ li {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  color: black;
 }
 
 .Header .ListPage:hover {
@@ -212,6 +213,18 @@ li {
   padding-top: 58px;
 }
 
+.AnimationItems {
+  animation: wrapperItems 1s linear;
+}
+
+@keyframes wrapperItems {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .Catalog .CatalogOffers .WrapperItems .Item {
   width: 306.37px;
@@ -229,6 +242,11 @@ li {
   position: relative;
   z-index: 10;
   background-color: white;
+}
+
+.Catalog .CatalogOffers .WrapperItems .Item:hover {
+  transition: 0.4s;
+  opacity: 0.7;
 }
 
 .Catalog .CatalogOffers .WrapperItems .Item .RestItems {
@@ -292,4 +310,65 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.WrapperFooter .Footer .WBlockFooter {
+  width: 100%;
+}
+
+.WrapperFooter .Footer .FooterLists {
+  padding-top: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.WrapperFooter .Footer .FooterLists ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 126px;
+}
+
+.WrapperFooter .Footer .FooterLists ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.92px;
+}
+
+.WrapperFooter .Footer .FooterLists h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 31.36px;
+  margin-bottom: 23px;
+}
+
+.WrapperFooter .Footer .FooterLists input {
+  width: 273px;
+  height: 40px;
+  border: 1px solid black;
+  padding-left: 11px;
+  background-color: white;
+}
+
+.WrapperFooter .Footer .FooterLists input:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.WrapperFooter .Footer .FooterLists button {
+  width: 125px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: #242121;
+  border: 1px solid #242121;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.WrapperFooter .Footer .FooterLists button:hover {
+  transition: 1s;
+  opacity: 0.7;
 }

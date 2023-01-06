@@ -5,8 +5,10 @@ import { IlyBooksEvents } from '../events';
 export const CatalogTitles = ({code, title, isSelect }) => {
 
     const selected = () => {
-        IlyBooksEvents.emit('Select', code);console.log('title ' + isSelect)
+        IlyBooksEvents.emit('Select', code, title);
     }
+
+    console.log(isSelect, code)
 
     if (code === isSelect) {
         return (

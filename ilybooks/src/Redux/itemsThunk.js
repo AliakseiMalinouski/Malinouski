@@ -1,7 +1,7 @@
 import { getItems } from "./ItemsSlice";
 
 export const itemsThunk = (dispatch) => {
-    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/926f1c521f82b848160f80d1b20b8ab5/raw/a9da8b43cc1c2f213475c50cc7771e9aa860655b/CatalogItemsIlyBooks",
+    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/926f1c521f82b848160f80d1b20b8ab5/raw/2bf74284eb85243b1dfc7e9f6373df15ea699828/CatalogItemsIlyBooks",
         {
          method: 'get'
      }

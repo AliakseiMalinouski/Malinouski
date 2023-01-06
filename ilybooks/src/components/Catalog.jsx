@@ -9,6 +9,9 @@ import { Items } from './Items';
 
 export const Catalog = React.memo(() => {
 
+    const [isSelect, setIsSelected] = useState(1);
+    const [currentTitle, setCurrentTitle] = useState("All");
+
     let dispatch = useDispatch();
 
     const titles = useSelector(state => state.titles.data);
@@ -28,16 +31,16 @@ export const Catalog = React.memo(() => {
             IlyBooksEvents.addListener('Select', Select);
         }
     }, []);
- 
-    const [isSelect, setIsSelected] = useState(null);
 
     let listTitles = useMemo(() => titles.map(e => <CatalogTitles key={e.code} code={e.code} title={e.title} isSelect={isSelect} />), [titles, isSelect]);
 
-    const Select = (code) => {
+    const Select = (code, title) => {
         setIsSelected(code);
+        if (code === 1) setCurrentTitle('All');
+        else setCurrentTitle(title);
     }
 
-    
+    console.log(currentTitle)
 
     return (
         <div className='Catalog'>
@@ -56,11 +59,15 @@ export const Catalog = React.memo(() => {
                 </ul>
                 <div className='WrapperItems'>
                     {
-                        items.map(e => <Items key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} />)
+                        (currentTitle === "All")
+                            ?
+                            items.map(e => <Items key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} type={e.type} />)
+                            :
+                            items.filter(element => {
+                                return element.type === currentTitle.toLowerCase();
+                            }).map(e => <Items key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} type={e.type}/>)
                     }
                 </div>
-                {/* <div className='FirstShelf'></div>
-                <div className='SecondShelf'></div> */}
                 <p className='CatalogDescription'>Avid bookworms have a must read list for years to come. And other readers like to wander among the bookshelves or in the catalog of an online store - and often they come across exactly the work that matches the train of thought and mood. In this sense, the online book store is especially convenient - you can "travel" through it in any weather - anywhere in the world.</p>
             </div>
         </div>

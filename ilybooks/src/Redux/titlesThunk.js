@@ -2,7 +2,7 @@ import { getTitles } from "./TitlesCatalogSlice";
 
 
 export const titlesThunk = (dispatch) => {
-    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/5669c3fc181654a6cc0db37dc101c65f/raw/f161138f892eb20d4d0829f60a890d1f940a59c9/TitlesMiniIlliBooks",
+    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/5669c3fc181654a6cc0db37dc101c65f/raw/19795dacb3815f1c0cca4eeb524e1a1aeef2a283/TitlesMiniIlliBooks",
         {
             method: 'get'
         }

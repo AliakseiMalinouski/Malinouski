@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { listThunk } from '../Redux/listThunk';
 import { iconThunk } from '../Redux/iconThunk';
+import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
 
@@ -24,7 +25,7 @@ export const Header = () => {
             <img src='https://i.ibb.co/vdKGBYM/ilybooks.png' alt='Logo' className='Logo' />
             <ul className='ListPageHeader'>
                 {
-                    list.map(e => <li key={e.code} className='ListPage'>{e.page}</li>)
+                    list.map(e => <NavLink key={e.code} to={e.url} className='ListPage'>{e.page}</NavLink>)
                 }
             </ul>
             <div className='RestHeader'>
