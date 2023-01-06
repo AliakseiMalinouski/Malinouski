@@ -8,8 +8,6 @@ export const CatalogTitles = ({code, title, isSelect }) => {
         IlyBooksEvents.emit('Select', code, title);
     }
 
-    console.log(isSelect, code)
-
     if (code === isSelect) {
         return (
             <><li className="Selected" onClick={selected}>{title}</li></>

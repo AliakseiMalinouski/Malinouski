@@ -211,11 +211,9 @@ li {
   flex-flow: wrap;
   padding: 0.1px;
   padding-top: 58px;
-}
-
-.AnimationItems {
   animation: wrapperItems 1s linear;
 }
+
 
 @keyframes wrapperItems {
   from {

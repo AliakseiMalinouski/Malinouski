@@ -40,8 +40,6 @@ export const Catalog = React.memo(() => {
         else setCurrentTitle(title);
     }
 
-    console.log(currentTitle)
-
     return (
         <div className='Catalog'>
             <div className='FlexibilityBlockCatalog'>
