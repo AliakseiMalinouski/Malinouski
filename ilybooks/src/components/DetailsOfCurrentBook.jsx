@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getFavouriteBook } from "../Redux/favouriteBookSlice";
@@ -9,7 +10,12 @@ export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) =
     let dispatch = useDispatch();
     
     const addToFavourite = () => {
-        dispatch(getFavouriteBook(item));
+        let clone = [...favouriteBooks];
+        let isInArray = false;
+        clone.forEach(element => {
+            if (element.code === item.code) isInArray = true;
+        })
+        if(!isInArray) dispatch(getFavouriteBook(item));
     }
 
     return (
