@@ -83,6 +83,10 @@ li {
   position: relative;
 }
 
+.Header .RestHeader img {
+  cursor: pointer;
+}
+
 .Header .ListPage {
   line-height: 20.16px;
   font-size: 18px;

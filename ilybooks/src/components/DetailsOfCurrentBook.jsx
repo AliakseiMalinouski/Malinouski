@@ -1,13 +1,26 @@
 
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getFavouriteBook } from "../Redux/favouriteBookSlice";
 
 export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) => {
 
     const favouriteBooks = useSelector(state => state.favouriteBook.book);
+    
+    const [selected, setSelected] = useState(false);
 
     let dispatch = useDispatch();
+
+    useEffect(() => {
+        let clone = [...favouriteBooks];
+        let isInArray = false;
+        clone.forEach(element => {
+            if (element.code === item.code) isInArray = true;
+        })
+        if (isInArray) setSelected(true);
+    }, [favouriteBooks, selected, item]);
     
     const addToFavourite = () => {
         let clone = [...favouriteBooks];
@@ -26,7 +39,13 @@ export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) =
                     <h4>{name}</h4>
                     <button type="button">Add to cart</button>
                     <div className="LikeButton" onClick={addToFavourite}>
-                        <img src="https://i.ibb.co/wNTx56p/heart.png" alt="Heart"/>
+                        {
+                            (selected)
+                                ?
+                                <img src="https://cdn-icons-png.flaticon.com/512/32/32557.png" alt="Black Heart"/>
+                                :
+                                <img src="https://i.ibb.co/wNTx56p/heart.png" alt="Heart"/>
+                        }
                     </div>
                     <p className="BookPrice">$9.99</p>
                 </div>
