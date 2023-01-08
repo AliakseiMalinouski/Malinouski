@@ -2,7 +2,7 @@ import { getImages } from "./IconsHeaderSlice";
 
 
 export const iconThunk = (dispatch) => {
-    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/0dab2730b54beba6196bd8b70e34fa21/raw/de667b1252496b13a23438891e7a8a67291538f8/IconsHeaderIllyBooks",
+    fetch("https://gist.githubusercontent.com/AliakseiMalinouski/0dab2730b54beba6196bd8b70e34fa21/raw/d9f7aa9b1072643ed60032c38cc29e309b65b9fb/IconsHeaderIllyBooks",
         {
             method: 'get'
         }

@@ -1,7 +1,17 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getFavouriteBook } from "../Redux/favouriteBookSlice";
 
+export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) => {
 
-export const DetailsOfCurrentBook = ({code, image, name, type, arrow}) => {
+    const favouriteBooks = useSelector(state => state.favouriteBook.book);
+
+    let dispatch = useDispatch();
+    
+    const addToFavourite = () => {
+        dispatch(getFavouriteBook(item));
+    }
+
     return (
         <div className="CurrentBook">
             <img src={image} alt='Current Book' className="BookImage"/>
@@ -9,7 +19,7 @@ export const DetailsOfCurrentBook = ({code, image, name, type, arrow}) => {
                 <div className="BookName">
                     <h4>{name}</h4>
                     <button type="button">Add to cart</button>
-                    <div className="LikeButton">
+                    <div className="LikeButton" onClick={addToFavourite}>
                         <img src="https://i.ibb.co/wNTx56p/heart.png" alt="Heart"/>
                     </div>
                     <p className="BookPrice">$9.99</p>

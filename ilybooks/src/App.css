@@ -463,3 +463,25 @@ li {
   transition: 1s;
   opacity: 0.7;
 }
+
+.FavouriteBooks {
+  display: flex;
+  width: 30%;
+}
+
+.FavouriteBooks .FavouriteBook .AuthorAndName h4 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 31.36px;
+}
+
+.FavouriteBooks .FavouriteBook .AuthorAndName h5 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24.64px;
+}
+
+
+.FavouriteBooks .FavouriteBook {
+  margin-left: 30px;
+}

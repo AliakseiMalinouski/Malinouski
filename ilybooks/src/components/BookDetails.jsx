@@ -44,6 +44,7 @@ export const BookDetails = React.memo(() => {
                         image={currentItem.image}
                         arrow={currentItem.arrow}
                         type={currentItem.type}
+                        item={currentItem}
                         />
                     :
                     <div>Some error</div>
