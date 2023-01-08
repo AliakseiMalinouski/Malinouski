@@ -87,6 +87,19 @@ li {
   cursor: pointer;
 }
 
+.Header .RestHeader .WrapperHeart {
+  position: relative;
+  padding-right: 15px;
+}
+
+.Header .RestHeader .WrapperHeart .QuantityOfFavouriteBooks {
+  font-size: 17px;
+  font-weight: 500;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
 .Header .ListPage {
   line-height: 20.16px;
   font-size: 18px;

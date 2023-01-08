@@ -12,6 +12,7 @@ export const Header = React.memo(() => {
     let navigate = useNavigate();
 
     const list = useSelector(state => state.list.data);
+    const favouriteBooks = useSelector(state => state.favouriteBook.book);
 
     useEffect(() => {
         dispatch(listThunk);
@@ -37,7 +38,10 @@ export const Header = React.memo(() => {
                 <input type='text' className='Search' maxLength='100'/>
                 <img src='https://i.ibb.co/RzHWngP/Vector-4.png' alt='Search Button' className='SearchButton' />
                 <img src='https://i.ibb.co/QDr4LFc/Vector-5.png' alt='Account' />
-                <img src='https://i.ibb.co/wNTx56p/heart.png' alt='Heart' onClick={goToFavouriteBooksPage}/>
+                <div className='WrapperHeart'>
+                    <img src='https://i.ibb.co/wNTx56p/heart.png' alt='Heart' onClick={goToFavouriteBooksPage} />
+                    <span className='QuantityOfFavouriteBooks'>{favouriteBooks.length}</span>
+                </div>
                 <img src='https://i.ibb.co/r2Gt8FV/account.png' alt='Basket'/>
             </div>
             <div className='BigStaticText'>
