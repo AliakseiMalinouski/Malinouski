@@ -1,15 +1,19 @@
 
+
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getFavouriteBook } from "../Redux/favouriteBookSlice";
+import { getItemsBasket } from "../Redux/basketSlice";
 
 export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) => {
 
     const favouriteBooks = useSelector(state => state.favouriteBook.book);
+    const itemsBasket = useSelector(state => state.basket.basket);
     
     const [selected, setSelected] = useState(false);
+    const [isBasket, setIsBasket] = useState(false);
 
     let dispatch = useDispatch();
 
@@ -21,6 +25,16 @@ export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) =
         })
         if (isInArray) setSelected(true);
     }, [favouriteBooks, selected, item]);
+
+
+    useEffect(() => {
+        let clone = [...itemsBasket];
+        let flag = false;
+        clone.forEach(elem => {
+            if (elem.code === item.code) flag = true;
+        });
+        if (flag) setIsBasket(true);
+    }, [itemsBasket, isBasket, setIsBasket, item]);
     
     const addToFavourite = () => {
         let clone = [...favouriteBooks];
@@ -31,13 +45,28 @@ export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) =
         if(!isInArray) dispatch(getFavouriteBook(item));
     }
 
+    const addItemToBasket = () => {
+        let clone = [...itemsBasket];
+        let isInArray = false;
+        clone.forEach(element => {
+            if (element.code === item.code) isInArray = true;
+        });
+        if (!isInArray) dispatch(getItemsBasket(item));
+    }
+
     return (
         <div className="CurrentBook">
             <img src={image} alt='Current Book' className="BookImage"/>
             <div className='InformationAboutCurrentBook'>
                 <div className="BookName">
                     <h4>{name}</h4>
-                    <button type="button">Add to cart</button>
+                    {
+                        (!isBasket)
+                            ?
+                            <button type="button" onClick={addItemToBasket}>Add to cart</button>
+                            :
+                            <button type="button">In basket</button>
+                    }
                     <div className="LikeButton" onClick={addToFavourite}>
                         {
                             (selected)

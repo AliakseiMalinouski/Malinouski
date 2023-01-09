@@ -1,18 +1,28 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { FavouriteBook } from './FavouriteBook';
+import { resetFavourite } from '../Redux/favouriteBookSlice';
 
 export const FavouriteBooks = () => {
 
     const favouriteBooks = useSelector(state => state.favouriteBook.book);
 
+    let dispatch = useDispatch();
 
-
-    console.log(favouriteBooks)
+    const clearFavourite = () => {
+        let proofReset = window.confirm("Are you sure?");
+        if(proofReset) dispatch(resetFavourite());
+    }
 
     return (
         <div className='FavouriteBooks'>
+            {
+                (!favouriteBooks.length)
+                    ?
+                    null
+                    :
+                    <button type='button' onClick={clearFavourite} className='ResetFavourite'>Clear</button>
+            }
             {
                 (!favouriteBooks.length)
                     ?

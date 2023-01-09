@@ -10,9 +10,12 @@ export const favouriteBookSlice = createSlice({
     reducers: {
         getFavouriteBook: (state, action) => {
             state.book.push(action.payload);
+        },
+        resetFavourite: (state, action) => {
+            state.book.splice(0, state.book.length);
         }
     }
 })
 
-export const { getFavouriteBook } = favouriteBookSlice.actions;
+export const { getFavouriteBook, resetFavourite } = favouriteBookSlice.actions;
 export default favouriteBookSlice.reducer;

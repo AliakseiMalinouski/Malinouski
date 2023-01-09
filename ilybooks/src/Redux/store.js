@@ -5,6 +5,7 @@ import IconsHeaderSlice from './IconsHeaderSlice';
 import TitlesCatalogSlice from './TitlesCatalogSlice';
 import ItemsSlice from './ItemsSlice';
 import favouriteBookSlice from './favouriteBookSlice';
+import basketSlice from './basketSlice';
 
 export const store = configureStore({
     reducer: {
@@ -13,6 +14,7 @@ export const store = configureStore({
         icons: IconsHeaderSlice,
         titles: TitlesCatalogSlice,
         items: ItemsSlice,
-        favouriteBook: favouriteBookSlice
+        favouriteBook: favouriteBookSlice,
+        basket: basketSlice
     }
 });

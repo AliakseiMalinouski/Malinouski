@@ -28,7 +28,7 @@ export const Catalog = React.memo(() => {
     useEffect(() => {
         IlyBooksEvents.addListener('Select', Select);
         return () => {
-            IlyBooksEvents.addListener('Select', Select);
+            IlyBooksEvents.removeListener('Select', Select);
         }
     }, []);
 

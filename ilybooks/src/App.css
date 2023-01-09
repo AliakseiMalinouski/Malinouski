@@ -100,6 +100,19 @@ li {
   top: 0px;
 }
 
+.Header .RestHeader .WrapperBasket {
+  position: relative;
+  padding-right: 15px;
+}
+
+.Header .RestHeader .WrapperBasket .QuantityOfFavouriteBooks {
+  font-size: 17px;
+  font-weight: 500;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
 .Header .ListPage {
   line-height: 20.16px;
   font-size: 18px;
@@ -296,22 +309,6 @@ li {
   padding-bottom: 49px;
 }
 
-/* .Catalog .FirstShelf {
-  position: absolute;
-  width: 100%;
-  height: 153px;
-  background-color: #E2B08E;
-  top: -230px;
-}
-
-.Catalog .SecondShelf {
-  position: absolute;
-  width: 100%;
-  height: 153px;
-  background-color: #E2B08E;
-  top: -1060px;
-} */
-
 .WrapperFooter {
   height: 385px;
   background-color: #F6D5BF;
@@ -482,8 +479,9 @@ li {
 }
 
 .FavouriteBooks {
+  position: relative;
   display: flex;
-  width: 30%;
+  width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -492,6 +490,9 @@ li {
   font-size: 28px;
   font-weight: 400;
   line-height: 31.36px;
+  width: 60%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .FavouriteBooks .FavouriteBook .AuthorAndName h5 {
@@ -503,4 +504,67 @@ li {
 
 .FavouriteBooks .FavouriteBook {
   margin-left: 30px;
+}
+
+.FavouriteBooks .ResetFavourite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: #242121;
+  color: white;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+.FavouriteBooks .ResetFavourite:hover {
+  transition: 1s;
+  opacity: 0.8;
+}
+
+
+.BasketBooks {
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.BasketBooks .BasketBook .AuthorAndName h4 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 31.36px;
+  width: 60%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.BasketBooks .BasketBook .AuthorAndName h5 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24.64px;
+}
+
+
+.BasketBooks .ClearBasketButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: #242121;
+  color: white;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+.BasketBooks .ClearBasketButton:hover {
+  transition: 1s;
+  opacity: 0.8;
 }
