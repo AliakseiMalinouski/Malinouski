@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { FavouriteBook } from './FavouriteBook';
 import { resetFavourite } from '../Redux/favouriteBookSlice';
+import { EmptyBasket } from './EmptyBasket';
 
 export const FavouriteBooks = () => {
 
@@ -15,7 +16,7 @@ export const FavouriteBooks = () => {
     }
 
     return (
-        <div className='FavouriteBooks'>
+        <div className='FavouriteBooks' style={{width: favouriteBooks.length ? "" : "100%"}}>
             {
                 (!favouriteBooks.length)
                     ?
@@ -26,7 +27,9 @@ export const FavouriteBooks = () => {
             {
                 (!favouriteBooks.length)
                     ?
-                    <div>Add something</div>
+                    <div className='EmptyBasket'>
+                        <EmptyBasket/>
+                    </div>
                     :
                     favouriteBooks.map(e => <FavouriteBook key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} type={e.type} />)
             }

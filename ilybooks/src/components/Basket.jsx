@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { BookBasket } from './BookBasket';
 import { clearBasket } from '../Redux/basketSlice';
 import { useState, useEffect } from 'react';
+import { EmptyBasket } from './EmptyBasket';
 
 export const Basket = React.memo(() => {
 
@@ -25,7 +26,7 @@ export const Basket = React.memo(() => {
 
     return (
         <div className='Cart'>
-            <div className='BasketBooks'>
+            <div className='BasketBooks' style={{width: (items.length) ? "" : '100%'}}>
             <h5>Home / Cart</h5>
             {
                 (!items.length)
@@ -37,8 +38,8 @@ export const Basket = React.memo(() => {
             {
                 (!items.length)
                     ?
-                    <div>
-                        Basket is empty
+                    <div className='EmptyBasket'>
+                        <EmptyBasket/>
                     </div>
                     :
                     items.map(e => <BookBasket key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} type={e.type}/>)
