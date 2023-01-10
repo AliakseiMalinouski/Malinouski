@@ -36,7 +36,7 @@ li {
 
 .WrapperHeader {
   height: 151px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .WrapperHeader .Container {
@@ -314,6 +314,7 @@ li {
   background-color: #F6D5BF;
   padding-bottom: 164px;
   padding-top: 67px;
+  border-top: 1px solid black;
 }
 
 .WrapperFooter .Footer {
@@ -527,20 +528,38 @@ li {
 
 
 .BasketBooks {
-  display: flex;
-  width: 100%;
+  width: 70%;
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
+}
+
+.BasketBooks h5 {
+  font-size: 22px;
+  line-height: 24.64px;
+  font-weight: 400;
+  margin-bottom: 61px;
+}
+
+.BasketBooks .BasketBook {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin-bottom: 60px;
+}
+
+.BasketBooks .BasketBook .AuthorAndName {
+  width: 100%;
+  padding-left: 30px;
 }
 
 .BasketBooks .BasketBook .AuthorAndName h4 {
   font-size: 28px;
   font-weight: 400;
   line-height: 31.36px;
-  width: 60%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .BasketBooks .BasketBook .AuthorAndName h5 {
@@ -567,4 +586,80 @@ li {
 .BasketBooks .ClearBasketButton:hover {
   transition: 1s;
   opacity: 0.8;
+}
+
+.Cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.InformationAboutBookBasket {
+  width: 30%;
+  border-left: 1px solid black;
+  padding-top: 39px;
+}
+
+
+.InformationAboutBookBasket .Summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.InformationAboutBookBasket .Summary h4 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 31.36px;
+  margin-bottom: 49px;
+  width: 100%;
+  text-align: center;
+}
+
+.InformationAboutBookBasket .Summary h5 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24.64px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+ .InformationAboutBookBasket .Total {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+
+ .InformationAboutBookBasket .Total button {
+  width: 320px;
+  height: 30px;
+  background-color: #242121;
+  border: none;
+  cursor: pointer;
+  color: white;
+  line-height: 17.92px;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 7px 6px 0px 0px rgb(192 155 131 / 73%);
+ }
+
+  .InformationAboutBookBasket .Total button:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
+
+.InformationAboutBookBasket .Total h5 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 31.36px;
+  width: 97%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
 }
