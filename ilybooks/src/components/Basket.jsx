@@ -42,7 +42,7 @@ export const Basket = React.memo(() => {
                         <EmptyBasket/>
                     </div>
                     :
-                    items.map(e => <BookBasket key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} type={e.type}/>)
+                        items.map(e => <BookBasket key={e.code} code={e.code} name={e.name} image={e.image} arrow={e.arrow} type={e.type} author={e.author} />)
             }
             </div>
             {
