@@ -21,8 +21,6 @@ export const MemeDetails = () => {
         setCurrentMem(currentMem);
     }, [mem, memeName]);
 
-    console.log(currentMem)
-
     return (
         <div className="MemeDetails">
             <CurrentMeme key={currentMem.code} code={currentMem.code} name={currentMem.name} url={currentMem.url}/>
