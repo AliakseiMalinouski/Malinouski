@@ -151,3 +151,12 @@ body {
 .MemeDetails .CurrentMeme .ImageMeme .TopText::placeholder {
   color: white;
 }
+
+.MemeDetails .CurrentMeme .MemeDevTools {
+  width: 40%;
+}
+
+.MemeDetails .CurrentMeme .MemeDevTools .TopTextInput {
+  display: block;
+  margin: 0 auto;
+}
