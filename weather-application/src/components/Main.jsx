@@ -43,6 +43,8 @@ export const Main = () => {
         })
     }
 
+    console.log(currentPlace)
+
     return (
         <div className="Main">
             <input type='text' value={searchValue} onChange={
@@ -56,9 +58,8 @@ export const Main = () => {
             key={currentPlace.id}
             name={currentPlace.name}
             weather={currentPlace.weather[0]}
-            country={currentPlace.sys.country}
             wind={currentPlace.wind}
-            countryFullName={searchValue}
+            main={currentPlace.main}
             />)}
             {(loadState===3 && <div>Error</div>)}
         </div>
