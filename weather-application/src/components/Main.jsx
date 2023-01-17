@@ -1,17 +1,26 @@
 
 import React from "react";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { api } from "../Api/api";
 import { updatePlace, updateLoadState } from "../Redux/currentPlaceSlice";
 import { Data } from "./Data";
+import { monthThunk } from "../Redux/monthThunk";
+import { daysThunk } from "../Redux/daysThunk";
 
 export const Main = () => {
 
     let dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(monthThunk);
+        dispatch(daysThunk);
+    }, [dispatch]);
+
     const currentPlace = useSelector(state => state.currentPlace.currentPlace);
     const loadState = useSelector(state => state.currentPlace.loadState);
+    const days = useSelector(state => state.date.days);
+    const months = useSelector(state => state.date.month);
 
     const [searchValue, setSearchValue] = useState(""); 
 
@@ -43,7 +52,7 @@ export const Main = () => {
         })
     }
 
-    console.log(currentPlace)
+    console.log(days, months)
 
     return (
         <div className="Main">
