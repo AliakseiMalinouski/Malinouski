@@ -5,7 +5,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { api } from "../Api/api";
 import { updatePlace, updateLoadState } from "../Redux/currentPlaceSlice";
 import { Data } from "./Data";
-import { monthThunk } from "../Redux/monthThunk";
 import { daysThunk } from "../Redux/daysThunk";
 
 export const Main = () => {
@@ -13,14 +12,12 @@ export const Main = () => {
     let dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(monthThunk);
-        dispatch(daysThunk);
+        dispatch(daysThunk)
     }, [dispatch]);
 
     const currentPlace = useSelector(state => state.currentPlace.currentPlace);
     const loadState = useSelector(state => state.currentPlace.loadState);
-    const days = useSelector(state => state.date.days);
-    const months = useSelector(state => state.date.month);
+    const date = useSelector(state => state.date.date);
 
     const [searchValue, setSearchValue] = useState(""); 
 
@@ -52,8 +49,6 @@ export const Main = () => {
         })
     }
 
-    console.log(days, months)
-
     return (
         <div className="Main">
             <input type='text' value={searchValue} onChange={
@@ -69,6 +64,8 @@ export const Main = () => {
             weather={currentPlace.weather[0]}
             wind={currentPlace.wind}
             main={currentPlace.main}
+            days={date[0].days}
+            months={date[1].months}
             />)}
             {(loadState===3 && <div>Error</div>)}
         </div>

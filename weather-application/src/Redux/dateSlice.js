@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    month: [],
-    days: [],
+    date: []
 }
 
 export const dateSlice = createSlice({
@@ -10,8 +9,7 @@ export const dateSlice = createSlice({
     initialState,
     reducers: {
         getDate: (state, action) => {
-            state.month = action.payload.month;
-            state.days = action.payload.days;
+            state.date = action.payload;
         }
     }
 });

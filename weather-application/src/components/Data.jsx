@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 
-export const Data = React.memo(({name, wind, weather, main}) => {
+export const Data = React.memo(({name, wind, weather, main, days, months}) => {
+
+    console.log(days, months)
 
     useEffect(() => {
         createDate();
@@ -19,9 +21,6 @@ export const Data = React.memo(({name, wind, weather, main}) => {
 
     const createDate = () => {
         let dateHash = new Date();
-        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        
         let day = days[dateHash.getDay()];
         let date = dateHash.getDate();
         let mounth = months[dateHash.getMonth()];
