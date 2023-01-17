@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 
 export const Data = React.memo(({name, wind, weather, main, days, months}) => {
 
@@ -7,7 +7,7 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
 
     useEffect(() => {
         createDate();
-    }, []);
+    }, [createDate]);
 
     const weatherData = {
         currentTemperature: Math.round(main.temp),
@@ -19,7 +19,7 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
         windSpeed: wind.speed,
     }
 
-    const createDate = () => {
+    const createDate = useCallback(() => {
         let dateHash = new Date();
         let day = days[dateHash.getDay()];
         let date = dateHash.getDate();
@@ -27,9 +27,8 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
         let year = dateHash.getFullYear();
 
         return `${day} ${date} ${mounth} ${year}`
-    }
+    }, [days, months])
 
-    console.log(createDate())
 
     return (
         <div className="Data">
