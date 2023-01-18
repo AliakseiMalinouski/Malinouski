@@ -49,8 +49,6 @@ export const Main = React.memo(() => {
         })
     }
 
-    console.log('render parent')
-
     return (
         <div className="Main">
             <input type='text' value={searchValue} onChange={

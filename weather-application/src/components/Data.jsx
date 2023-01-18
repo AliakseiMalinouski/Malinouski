@@ -33,9 +33,7 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
             currentPressure: Math.round(main.pressure),
             windSpeed: wind.speed,
         }))
-    }, [dispatch, main.temp, main.feels_like, main.pressure, main.temp_max, main.temp_min, wind.gust, wind.speed]);
-
-    console.log('render child')    
+    }, [dispatch, main.temp, main.feels_like, main.pressure, main.temp_max, main.temp_min, wind.gust, wind.speed]);  
 
     return (
         <div className="Data">
@@ -47,7 +45,7 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
                 <h4 className="temperature">
                 {weatherData.currentTemperature}
                 </h4>
-                <p>{weather.main}</p>
+                <p>{weather.main}</p> 
                 <p>
                     <span>Min: {(weatherData.currentTemperatureMin === weatherData.currentTemperatureMax ? weatherData.currentTemperatureMin - 1 : weatherData.currentTemperatureMin)}</span>
                     <span>Max: {weatherData.currentTemperatureMax}</span>
