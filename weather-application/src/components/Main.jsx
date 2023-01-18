@@ -6,6 +6,7 @@ import { api } from "../Api/api";
 import { updatePlace, updateLoadState } from "../Redux/currentPlaceSlice";
 import { Data } from "./Data";
 import { daysThunk } from "../Redux/daysThunk";
+import { updateTime } from "../Redux/timeSlice";
 
 export const Main = React.memo(() => {
 
@@ -18,8 +19,10 @@ export const Main = React.memo(() => {
     const currentPlace = useSelector(state => state.currentPlace.currentPlace);
     const loadState = useSelector(state => state.currentPlace.loadState);
     const date = useSelector(state => state.date.date);
+    const time = useSelector(state => state.time.time);
 
     const [searchValue, setSearchValue] = useState("");
+    const [background, setBackground] = useState("");
 
     const createDate = useCallback(() => {
         let dateHash = new Date();
@@ -28,11 +31,18 @@ export const Main = React.memo(() => {
         let mounth = date[1] === undefined ? null : date[1].months[dateHash.getMonth()];
         let year = dateHash.getFullYear();
 
+        dispatch(updateTime({
+            day: day,
+            number: number,
+            month: mounth,
+            year: year
+        }));
+
         return `${day} ${number} ${mounth} ${year}`
-    }, [date]);
+    }, [date, dispatch]);
 
     useEffect(() => {
-        createDate()
+        createDate();
     }, [createDate])
 
     const loadWeatherCurrentPlace = () => {
@@ -65,12 +75,19 @@ export const Main = React.memo(() => {
 
     return (
         <div className="Main">
-            <input type='text' value={searchValue} onChange={
-                (EO) => {
-                    setSearchValue(EO.target.value);
-                }
-            }/>
-            <button onClick={loadWeatherCurrentPlace} type='button'>Click</button>
+            <div className="CurrrentDate">
+                <div className="Date">
+                    <p>{time.day} {time.number} {time.month} {time.year}</p>
+                </div>
+            </div>
+           <div className="Tools">
+                <input type='text' value={searchValue} onChange={
+                    (EO) => {
+                        setSearchValue(EO.target.value);
+                    }
+                }/>
+                <button onClick={loadWeatherCurrentPlace} type='button'>Click</button>
+           </div>
             {(loadState===1 && <div>wait a moment</div>)}
             {(loadState===2 && <Data 
             key={currentPlace.id}

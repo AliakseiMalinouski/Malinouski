@@ -23,9 +23,6 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
 
     return (
         <div className="Data">
-            <div className="CurrrentDate">
-
-            </div>
             <div className="AboutWeather">
                 <h3>{name}</h3>
                 <h4 className="temperature">
