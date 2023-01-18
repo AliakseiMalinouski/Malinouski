@@ -72,6 +72,10 @@ export const Main = React.memo(() => {
             let randomBackground = Math.floor(Math.random() * backgrounds[0].evening.length);
             setBackground(backgrounds[0].evening[randomBackground]);
         }
+        else if(flag === 'Clouds' && temperature > 0 && (time.hours >= 0 && time.hours <= 7)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[0].night.length);
+            setBackground(backgrounds[0].night[randomBackground]);
+        }
         else if(flag === 'Rain' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
             let randomBackground = Math.floor(Math.random() * backgrounds[1].morning.length);
             setBackground(backgrounds[1].morning[randomBackground]);
@@ -88,6 +92,10 @@ export const Main = React.memo(() => {
             let randomBackground = Math.floor(Math.random() * backgrounds[2].evening.length);
             setBackground(backgrounds[2].evening[randomBackground]);
         }
+        else if(flag === 'Clear' && temperature > 0 && (time.hours >= 0 && time.hours <= 7)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[2].night.length);
+            setBackground(backgrounds[2].night[randomBackground]);
+        }
     }, [flag, time.hours, temperature, backgrounds]);
 
     const changeFlagBackground = (temp, weatherState) => {
@@ -96,7 +104,6 @@ export const Main = React.memo(() => {
             setFlag(weatherState);
         }
     }
-
 
     useEffect(() => {
         createDate();
