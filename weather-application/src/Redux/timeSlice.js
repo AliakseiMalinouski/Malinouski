@@ -6,6 +6,7 @@ const initialState = {
         number: null,
         month: null,
         year: null,
+        hours: null
     }
 }
 
@@ -18,6 +19,7 @@ export const timeSlice = createSlice({
             state.time.number = action.payload.number;
             state.time.month = action.payload.month;
             state.time.year = action.payload.year;
+            state.time.hours = action.payload.hours;
         }
     }
 })

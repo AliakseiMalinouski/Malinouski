@@ -2,10 +2,13 @@ import React from "react";
 import { useEffect } from "react";
 import {useSelector, useDispatch} from 'react-redux';
 import { saveData } from "../Redux/weatherDataSlice";
+import { weatherEvents } from "../events";
 
-export const Data = React.memo(({name, wind, weather, main, days, months}) => {
+export const Data = React.memo(({name, wind, weather, main}) => {
 
     let dispatch = useDispatch();
+
+    const weatherData = useSelector(state => state.weatherData.weatherData);
 
     useEffect(() => {
         dispatch(saveData({
@@ -16,10 +19,12 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
             currentGust: (wind.gust === undefined ? null : Math.round(wind.gust)),
             currentPressure: Math.round(main.pressure),
             windSpeed: wind.speed,
-        }))
+        }));
     }, [dispatch, main.temp, main.feels_like, main.pressure, main.temp_max, main.temp_min, wind.gust, wind.speed]);  
 
-    const weatherData = useSelector(state => state.weatherData.weatherData);
+    useEffect(() => {
+        weatherEvents.emit("PutWeather", weatherData.currentTemperature, weather.main);
+    }, [weatherData.currentTemperature, weather.main])
 
     return (
         <div className="Data">

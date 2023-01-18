@@ -7,6 +7,7 @@ import { updatePlace, updateLoadState } from "../Redux/currentPlaceSlice";
 import { Data } from "./Data";
 import { daysThunk } from "../Redux/daysThunk";
 import { updateTime } from "../Redux/timeSlice";
+import { weatherEvents } from "../events";
 
 export const Main = React.memo(() => {
 
@@ -16,6 +17,13 @@ export const Main = React.memo(() => {
         dispatch(daysThunk)
     }, [dispatch]);
 
+    useEffect(() => {
+        weatherEvents.addListener("PutWeather", changeFlagBackground);
+        return () => {
+            weatherEvents.removeListener("PutWeather", changeFlagBackground);
+        }
+    }, []);
+
     const currentPlace = useSelector(state => state.currentPlace.currentPlace);
     const loadState = useSelector(state => state.currentPlace.loadState);
     const date = useSelector(state => state.date.date);
@@ -23,6 +31,8 @@ export const Main = React.memo(() => {
 
     const [searchValue, setSearchValue] = useState("");
     const [background, setBackground] = useState("");
+    const [flag, setFlag] = useState(null);
+    const [temperature, setTemperature] = useState(null);
 
     const createDate = useCallback(() => {
         let dateHash = new Date();
@@ -30,20 +40,45 @@ export const Main = React.memo(() => {
         let number = dateHash.getDate();
         let mounth = date[1] === undefined ? null : date[1].months[dateHash.getMonth()];
         let year = dateHash.getFullYear();
+        let hours = dateHash.getHours();
 
         dispatch(updateTime({
             day: day,
             number: number,
             month: mounth,
-            year: year
+            year: year,
+            hours: hours
         }));
-
-        return `${day} ${number} ${mounth} ${year}`
     }, [date, dispatch]);
+
+    const changeBackground = useCallback(() => {
+        if(flag === null && (time.hours > 7 && time.hours < 17)) {
+            setBackground("https://i.ibb.co/WBLLv1j/day-theme.png");
+        }
+        else if(flag === null && (time.hours > 17 && time.hours < 23)) {
+            setBackground("https://i.ibb.co/t4Tr41G/evening-theme.png");
+        }
+        else if(flag === 'Clouds' && temperature > 10 && (time.hours > 7 && time.hours < 17)) {
+            setBackground("https://i.ibb.co/JCt48R3/a-little-clouds.png")
+        }
+    }, [flag, time.hours, temperature]);
+
+    const changeFlagBackground = (temp, weatherState) => {
+        if(temp !== null && weatherState !== null) {
+            setTemperature(temp);
+            setFlag(weatherState);
+        }
+    }   
+
+    console.log(temperature, flag)
 
     useEffect(() => {
         createDate();
-    }, [createDate])
+    }, [createDate]);
+
+    useEffect(() => {
+        changeBackground();
+    }, [changeBackground]);
 
     const loadWeatherCurrentPlace = () => {
         dispatch(updateLoadState(1));
@@ -74,7 +109,7 @@ export const Main = React.memo(() => {
     }
 
     return (
-        <div className="Main">
+        <div className="Main" style={{backgroundImage: `url(${background})`}}>
             <div className="CurrrentDate">
                 <div className="Date">
                     <p>{time.day} {time.number} {time.month} {time.year}</p>
