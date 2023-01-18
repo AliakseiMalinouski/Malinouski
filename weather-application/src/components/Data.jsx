@@ -29,13 +29,21 @@ export const Data = React.memo(({name, wind, weather, main}) => {
     return (
         <div className="Data">
             <div className="AboutWeather">
+
+                {(weatherData.currentTemperature >= 15 && weather.main === 'Clear') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Weather"/>}
+                {(weatherData.currentTemperature <= 0 && weather.main === 'Clear') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/7334/7334205.png" alt="Weather"/>}
+                {(weatherData.currentTemperature >= 15 && weather.main === 'Clouds') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png" alt="Weather"/>}
+                {((weatherData.currentTemperature > 5 && weatherData.currentTemperature <= 14)  && weather.main === 'Clear') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/4064/4064276.png" alt="Weather"/>}
+                {((weatherData.currentTemperature < 15 && weatherData.currentTemperature >= 5 ) && weather.main === 'Clouds') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather"/>}
+                {(weatherData.currentTemperature <= 4 && weather.main === 'Clouds') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/9137/9137480.png" alt="Weather"/>}
+                {(weatherData.currentTemperature <= 0 && weather.main === 'Snow') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/7334/7334205.png" alt="Weather"/>}
                 <h3 className="NameOfCountry">{name}</h3>
                 <h4 className="temperature">
                 {weatherData.currentTemperature}
                 <img className="Deg" src="https://cdn-icons-png.flaticon.com/512/7038/7038286.png" alt="Deg"/>
                 </h4>
                 <p className="StateWeather">{weather.main}</p> 
-                <p className="MaxMin">
+                <p className="MaxMin" style={weatherData.currentTemperatureMin > 10 ||  weatherData.currentTemperatureMin > 10 || weatherData.currentTemperatureMin <= -10 || weatherData.currentTemperatureMax <= -10 ? {paddingLeft: '20px'} : null}>
                     <span>Min: {(weatherData.currentTemperatureMin === weatherData.currentTemperatureMax ? weatherData.currentTemperatureMin - 1 : weatherData.currentTemperatureMin)} <img src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/></span>
                     <span>Max: {weatherData.currentTemperatureMax} <img src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/></span>
                 </p>
@@ -43,7 +51,7 @@ export const Data = React.memo(({name, wind, weather, main}) => {
                     <div className="OpacityBlock">
                     </div>
                     <p>
-                         Feels like: {weatherData.feelsLikeTemperature}
+                         Feels like: {weatherData.feelsLikeTemperature} <img style={weatherData.feelsLikeTemperature > 10 || weatherData.feelsLikeTemperature < -10 ? {right: '130px'} : null} className="Icon" src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/>
                         </p>
                         <p>
                             Wind speed: {weatherData.windSpeed} m/s
