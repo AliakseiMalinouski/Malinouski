@@ -1,23 +1,13 @@
 import React from "react";
 import { useEffect, useCallback } from "react";
+import {useSelector, useDispatch} from 'react-redux';
+import { saveData } from "../Redux/weatherDataSlice";
 
 export const Data = React.memo(({name, wind, weather, main, days, months}) => {
 
-    console.log(days, months)
+    let dispatch = useDispatch();
 
-    useEffect(() => {
-        createDate();
-    }, [createDate]);
-
-    const weatherData = {
-        currentTemperature: Math.round(main.temp),
-        currentTemperatureMax: Math.round(main.temp_max),
-        currentTemperatureMin: Math.round(main.temp_min),
-        feelsLikeTemperature: Math.round(main.feels_like),
-        currentGust: (wind.gust === undefined ? null : Math.round(wind.gust)),
-        currentPressure: Math.round(main.pressure),
-        windSpeed: wind.speed,
-    }
+    const weatherData = useSelector(state => state.weatherData.weatherData);
 
     const createDate = useCallback(() => {
         let dateHash = new Date();
@@ -27,8 +17,25 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
         let year = dateHash.getFullYear();
 
         return `${day} ${date} ${mounth} ${year}`
-    }, [days, months])
+    }, [days, months]);
 
+    useEffect(() => {
+        createDate();
+    }, [createDate]);
+
+    useEffect(() => {
+        dispatch(saveData({
+            currentTemperature: Math.round(main.temp),
+            currentTemperatureMax: Math.round(main.temp_max),
+            currentTemperatureMin: Math.round(main.temp_min),
+            feelsLikeTemperature: Math.round(main.feels_like),
+            currentGust: (wind.gust === undefined ? null : Math.round(wind.gust)),
+            currentPressure: Math.round(main.pressure),
+            windSpeed: wind.speed,
+        }))
+    }, [dispatch, main.temp, main.feels_like, main.pressure, main.temp_max, main.temp_min, wind.gust, wind.speed]);
+
+    console.log('render child')    
 
     return (
         <div className="Data">

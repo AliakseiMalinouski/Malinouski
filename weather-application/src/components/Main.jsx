@@ -7,7 +7,7 @@ import { updatePlace, updateLoadState } from "../Redux/currentPlaceSlice";
 import { Data } from "./Data";
 import { daysThunk } from "../Redux/daysThunk";
 
-export const Main = () => {
+export const Main = React.memo(() => {
 
     let dispatch = useDispatch();
 
@@ -49,6 +49,8 @@ export const Main = () => {
         })
     }
 
+    console.log('render parent')
+
     return (
         <div className="Main">
             <input type='text' value={searchValue} onChange={
@@ -70,4 +72,4 @@ export const Main = () => {
             {(loadState===3 && <div>Error</div>)}
         </div>
     )
-}
+})
