@@ -1,6 +1,6 @@
 
 import React from "react";
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { api } from "../Api/api";
 import { updatePlace, updateLoadState } from "../Redux/currentPlaceSlice";
@@ -19,7 +19,21 @@ export const Main = React.memo(() => {
     const loadState = useSelector(state => state.currentPlace.loadState);
     const date = useSelector(state => state.date.date);
 
-    const [searchValue, setSearchValue] = useState(""); 
+    const [searchValue, setSearchValue] = useState("");
+
+    const createDate = useCallback(() => {
+        let dateHash = new Date();
+        let day = date[0] === undefined ? null : date[0].days[dateHash.getDay()];
+        let number = dateHash.getDate();
+        let mounth = date[1] === undefined ? null : date[1].months[dateHash.getMonth()];
+        let year = dateHash.getFullYear();
+
+        return `${day} ${number} ${mounth} ${year}`
+    }, [date]);
+
+    useEffect(() => {
+        createDate()
+    }, [createDate])
 
     const loadWeatherCurrentPlace = () => {
         dispatch(updateLoadState(1));

@@ -1,27 +1,11 @@
 import React from "react";
-import { useEffect, useCallback } from "react";
+import { useEffect } from "react";
 import {useSelector, useDispatch} from 'react-redux';
 import { saveData } from "../Redux/weatherDataSlice";
 
 export const Data = React.memo(({name, wind, weather, main, days, months}) => {
 
     let dispatch = useDispatch();
-
-    const weatherData = useSelector(state => state.weatherData.weatherData);
-
-    const createDate = useCallback(() => {
-        let dateHash = new Date();
-        let day = days[dateHash.getDay()];
-        let date = dateHash.getDate();
-        let mounth = months[dateHash.getMonth()];
-        let year = dateHash.getFullYear();
-
-        return `${day} ${date} ${mounth} ${year}`
-    }, [days, months]);
-
-    useEffect(() => {
-        createDate();
-    }, [createDate]);
 
     useEffect(() => {
         dispatch(saveData({
@@ -34,6 +18,8 @@ export const Data = React.memo(({name, wind, weather, main, days, months}) => {
             windSpeed: wind.speed,
         }))
     }, [dispatch, main.temp, main.feels_like, main.pressure, main.temp_max, main.temp_min, wind.gust, wind.speed]);  
+
+    const weatherData = useSelector(state => state.weatherData.weatherData);
 
     return (
         <div className="Data">
