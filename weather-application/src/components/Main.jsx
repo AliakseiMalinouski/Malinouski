@@ -64,6 +64,9 @@ export const Main = React.memo(() => {
         else if(flag === null && (time.hours >= 17 && time.hours < 23)) {
             setBackground("https://i.ibb.co/t4Tr41G/evening-theme.png");
         }
+        else if(flag === null && (time.hours >= 0 && time.hours < 7)) {
+            setBackground("https://images.unsplash.com/photo-1568233823082-873ab0156ad7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+        }
         else if(flag === 'Clouds' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
             let randomBackground = Math.floor(Math.random() * backgrounds[0].morning.length);
             setBackground(backgrounds[0].morning[randomBackground]);
@@ -83,6 +86,10 @@ export const Main = React.memo(() => {
         else if(flag === 'Rain' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
             let randomBackground = Math.floor(Math.random() * backgrounds[1].evening.length);
             setBackground(backgrounds[1].evening[randomBackground]);
+        }
+        else if(flag === 'Rain' && temperature > 0 && (time.hours >= 0 && time.hours <= 7)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[1].night.length);
+            setBackground(backgrounds[1].night[randomBackground]);
         }
         else if(flag === 'Clear' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
             let randomBackground = Math.floor(Math.random() * backgrounds[2].morning.length);
