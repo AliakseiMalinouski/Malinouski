@@ -8,6 +8,7 @@ import { Data } from "./Data";
 import { daysThunk } from "../Redux/daysThunk";
 import { updateTime } from "../Redux/timeSlice";
 import { weatherEvents } from "../events";
+import { backgroundThunk } from "../Redux/backgroundThunk";
 
 export const Main = React.memo(() => {
 
@@ -16,6 +17,10 @@ export const Main = React.memo(() => {
     useEffect(() => {
         dispatch(daysThunk)
     }, [dispatch]);
+
+    useEffect(() => {
+        dispatch(backgroundThunk);
+    }, [dispatch])
 
     useEffect(() => {
         weatherEvents.addListener("PutWeather", changeFlagBackground);
@@ -28,6 +33,7 @@ export const Main = React.memo(() => {
     const loadState = useSelector(state => state.currentPlace.loadState);
     const date = useSelector(state => state.date.date);
     const time = useSelector(state => state.time.time);
+    const backgrounds = useSelector(state => state.background.backgrounds);
 
     const [searchValue, setSearchValue] = useState("");
     const [background, setBackground] = useState("");
@@ -49,41 +55,48 @@ export const Main = React.memo(() => {
             year: year,
             hours: hours
         }));
-    }, [date, dispatch]);
+    }, [date, dispatch])
 
     const changeBackground = useCallback(() => {
-        if(flag === null && (time.hours > 7 && time.hours < 17)) {
+        if(flag === null && (time.hours >= 7 && time.hours <= 17)) {
             setBackground("https://i.ibb.co/WBLLv1j/day-theme.png");
         }
-        else if(flag === null && (time.hours > 17 && time.hours < 23)) {
+        else if(flag === null && (time.hours >= 17 && time.hours < 23)) {
             setBackground("https://i.ibb.co/t4Tr41G/evening-theme.png");
         }
-        else if(flag === 'Clouds' && temperature > 0 && (time.hours > 7 && time.hours < 17)) {
-            setBackground("https://i.ibb.co/JCt48R3/a-little-clouds.png")
+        else if(flag === 'Clouds' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[0].morning.length);
+            setBackground(backgrounds[0].morning[randomBackground]);
         }
-        else if(flag === 'Clouds' && temperature > 0 && (time.hours > 17 && time.hours < 23)) {
-            setBackground("https://i.ibb.co/3FjRXhN/Clouds-weather.png")
+        else if(flag === 'Clouds' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[0].evening.length);
+            setBackground(backgrounds[0].evening[randomBackground]);
         }
-        else if(flag === 'Rain' && temperature > 0 && (time.hours > 7 && time.hours < 17)) {
-            setBackground("https://i.ibb.co/34Gff9f/mor-raining.png");
+        else if(flag === 'Rain' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[1].morning.length);
+            setBackground(backgrounds[1].morning[randomBackground]);
         }
-        else if(flag === 'Rain' && temperature > 0 && (time.hours > 17 && time.hours < 23)) {
-            setBackground("https://i.ibb.co/KrhwJWx/raining-weather.png");
+        else if(flag === 'Rain' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[1].evening.length);
+            setBackground(backgrounds[1].evening[randomBackground]);
         }
-        else if(flag === 'Clear' && temperature > 0 && (time.hours > 7 && time.hours < 17)) {
-            setBackground("https://i.ibb.co/MN1Gjgf/warm-weather.png");
+        else if(flag === 'Clear' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[2].morning.length);
+            setBackground(backgrounds[2].morning[randomBackground]);
         }
-        else if(flag === 'Clear' && temperature > 0 && (time.hours > 17 && time.hours < 23)) {
-            setBackground("https://i.ibb.co/wrHFTff/clear-dark.png");
+        else if(flag === 'Clear' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[2].evening.length);
+            setBackground(backgrounds[2].evening[randomBackground]);
         }
-    }, [flag, time.hours, temperature]);
+    }, [flag, time.hours, temperature, backgrounds]);
 
     const changeFlagBackground = (temp, weatherState) => {
         if(temp !== null && weatherState !== null) {
             setTemperature(temp);
             setFlag(weatherState);
         }
-    }   
+    }
+
 
     useEffect(() => {
         createDate();
