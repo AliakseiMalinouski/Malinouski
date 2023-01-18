@@ -58,8 +58,23 @@ export const Main = React.memo(() => {
         else if(flag === null && (time.hours > 17 && time.hours < 23)) {
             setBackground("https://i.ibb.co/t4Tr41G/evening-theme.png");
         }
-        else if(flag === 'Clouds' && temperature > 10 && (time.hours > 7 && time.hours < 17)) {
+        else if(flag === 'Clouds' && temperature > 0 && (time.hours > 7 && time.hours < 17)) {
             setBackground("https://i.ibb.co/JCt48R3/a-little-clouds.png")
+        }
+        else if(flag === 'Clouds' && temperature > 0 && (time.hours > 17 && time.hours < 23)) {
+            setBackground("https://i.ibb.co/3FjRXhN/Clouds-weather.png")
+        }
+        else if(flag === 'Rain' && temperature > 0 && (time.hours > 7 && time.hours < 17)) {
+            setBackground("https://i.ibb.co/34Gff9f/mor-raining.png");
+        }
+        else if(flag === 'Rain' && temperature > 0 && (time.hours > 17 && time.hours < 23)) {
+            setBackground("https://i.ibb.co/KrhwJWx/raining-weather.png");
+        }
+        else if(flag === 'Clear' && temperature > 0 && (time.hours > 7 && time.hours < 17)) {
+            setBackground("https://i.ibb.co/MN1Gjgf/warm-weather.png");
+        }
+        else if(flag === 'Clear' && temperature > 0 && (time.hours > 17 && time.hours < 23)) {
+            setBackground("https://i.ibb.co/wrHFTff/clear-dark.png");
         }
     }, [flag, time.hours, temperature]);
 
@@ -69,8 +84,6 @@ export const Main = React.memo(() => {
             setFlag(weatherState);
         }
     }   
-
-    console.log(temperature, flag)
 
     useEffect(() => {
         createDate();
