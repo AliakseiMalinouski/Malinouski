@@ -16,11 +16,30 @@ body {
   background-color: #202124;
 }
 
+body::after {
+  background-color:rgba(0, 0, 0, 0.5);
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;   
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+}
+
 .Container {
   width: 560px;
   margin: 0 auto;
   height: 900px;
-  /* background-image: linear-gradient(to top, rgba(0,0,0, 0.8), rgba(0,0,0,0)); */
+  border-radius: 13px;
 }
 
 .Container .Main {
@@ -28,19 +47,34 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
-  padding-top: 120px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 50px;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 13px;
 }
 
-.Container .Main .CurrrentDate {
+.Container .Main .Gradient {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0, 0.8), rgba(0,0,0,0));
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  border-radius: 13px;
+}
+
+.Container .Main .Gradient .FlexblBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Container .Main .Gradient .FlexblBlock .CurrrentDate {
   position: absolute;
   width: 100%;
   height: 10%;
@@ -48,14 +82,59 @@ body {
   left: 0px;
 }
 
-.Container .Main .CurrrentDate .Date {
+.Container .Main .Gradient .FlexblBlock .CurrrentDate .Date {
   position: relative;
 }
 
-.Container .Main .CurrrentDate .Date p {
+.Container .Main .Gradient .FlexblBlock .CurrrentDate .Date p {
   position: absolute;
   top: 10px;
   right: 10px;
   color: white;
   font-size: 28px;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools input {
+  width: 70%;
+  height: 30px;
+  border: none;
+  padding-left: 20px;
+  border-radius: 13px;
+  opacity: 0.7;
+  font-weight: bold;
+  background-color: white;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools input:focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools input::placeholder {
+  opacity: 1;
+  color: black;
+  font-weight: 300;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools button {
+  width: 30%;
+  height: 25px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 13px;
+  background-color: #F8F8FF;
+  opacity: 0.8;
+}
+
+.Container .Main .Gradient .FlexblBlock .Tools button:hover {
+  transition: 1s;
+  opacity: 0.7;
 }

@@ -150,30 +150,34 @@ export const Main = React.memo(() => {
 
     return (
         <div className="Main" style={{backgroundImage: `url(${background})`}}>
-            <div className="CurrrentDate">
-                <div className="Date">
-                    <p>{time.day} {time.number} {time.month} {time.year}</p>
+            <div className="Gradient">
+                <div className="FlexblBlock">
+                    <div className="CurrrentDate">
+                        <div className="Date">
+                            <p>{time.day} {time.number} {time.month} {time.year}</p>
+                        </div>
+                    </div>
+                <div className="Tools">
+                        <input type='text' placeholder="Name of country or city" value={searchValue} onChange={
+                            (EO) => {
+                                setSearchValue(EO.target.value);
+                            }
+                        }/>
+                        <button onClick={loadWeatherCurrentPlace} type='button'>Check the weather</button>
+                </div>
+                    {(loadState===1 && <div>wait a moment</div>)}
+                    {(loadState===2 && <Data 
+                    key={currentPlace.id}
+                    name={currentPlace.name}
+                    weather={currentPlace.weather[0]}
+                    wind={currentPlace.wind}
+                    main={currentPlace.main}
+                    days={date[0].days}
+                    months={date[1].months}
+                    />)}
+                    {(loadState===3 && <div>Error</div>)}
                 </div>
             </div>
-           <div className="Tools">
-                <input type='text' value={searchValue} onChange={
-                    (EO) => {
-                        setSearchValue(EO.target.value);
-                    }
-                }/>
-                <button onClick={loadWeatherCurrentPlace} type='button'>Click</button>
-           </div>
-            {(loadState===1 && <div>wait a moment</div>)}
-            {(loadState===2 && <Data 
-            key={currentPlace.id}
-            name={currentPlace.name}
-            weather={currentPlace.weather[0]}
-            wind={currentPlace.wind}
-            main={currentPlace.main}
-            days={date[0].days}
-            months={date[1].months}
-            />)}
-            {(loadState===3 && <div>Error</div>)}
         </div>
     )
 })
