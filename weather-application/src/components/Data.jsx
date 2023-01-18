@@ -29,31 +29,36 @@ export const Data = React.memo(({name, wind, weather, main}) => {
     return (
         <div className="Data">
             <div className="AboutWeather">
-                <h3>{name}</h3>
+                <h3 className="NameOfCountry">{name}</h3>
                 <h4 className="temperature">
                 {weatherData.currentTemperature}
+                <img className="Deg" src="https://cdn-icons-png.flaticon.com/512/7038/7038286.png" alt="Deg"/>
                 </h4>
-                <p>{weather.main}</p> 
-                <p>
-                    <span>Min: {(weatherData.currentTemperatureMin === weatherData.currentTemperatureMax ? weatherData.currentTemperatureMin - 1 : weatherData.currentTemperatureMin)}</span>
-                    <span>Max: {weatherData.currentTemperatureMax}</span>
+                <p className="StateWeather">{weather.main}</p> 
+                <p className="MaxMin">
+                    <span>Min: {(weatherData.currentTemperatureMin === weatherData.currentTemperatureMax ? weatherData.currentTemperatureMin - 1 : weatherData.currentTemperatureMin)} <img src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/></span>
+                    <span>Max: {weatherData.currentTemperatureMax} <img src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/></span>
                 </p>
-                <p>
-                    Feels like: {weatherData.feelsLikeTemperature}
-                </p>
-                <p>
-                    Wind speed: {weatherData.windSpeed} m/s
-                </p>
-                {
-                    (weatherData.currentGust === null)
-                    ?
-                    null
-                    :
+                <div className="OtherInformation">
+                    <div className="OpacityBlock">
+                    </div>
                     <p>
-                        A gust of wind: {weatherData.currentGust} {weatherData.currentGust === 1 ? 'point' : "points"}
-                    </p>
-                }
-                <h5>Pressure: {weatherData.currentPressure}</h5>
+                         Feels like: {weatherData.feelsLikeTemperature}
+                        </p>
+                        <p>
+                            Wind speed: {weatherData.windSpeed} m/s
+                        </p>
+                        {
+                            (weatherData.currentGust === null)
+                            ?
+                            null
+                            :
+                            <p>
+                                A gust of wind: {weatherData.currentGust} {weatherData.currentGust === 1 ? 'point' : "points"}
+                            </p>
+                        }
+                        <h5>Pressure: {weatherData.currentPressure} Pa</h5>
+                </div>
             </div>
         </div>
     )
