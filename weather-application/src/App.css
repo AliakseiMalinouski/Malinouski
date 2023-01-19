@@ -29,6 +29,8 @@ body::after {
 }
 
 #root {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,5 +372,24 @@ body::after {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media all and (max-width: 560px) {
+  .Container {
+    width: 100%;
+  }
+
+  .Container .Main {
+    width: 100%;
+  }
+
+  .Container .Main .Gradient .FlexblBlock .Tools input {
+    width: 90%;
+  }
+
+  .Container .Main .Gradient .FlexblBlock .Tools button {
+    width: 60%;
   }
 }
