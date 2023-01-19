@@ -381,6 +381,11 @@ body::after {
 
 
 @media all and (max-width: 560px) {
+
+  #root {
+    padding-top: 0px;
+  }
+
   .Container {
     width: 100%;
   }
