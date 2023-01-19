@@ -101,6 +101,7 @@ export const Main = React.memo(() => {
     }, [changeBackground]);
 
     const loadWeatherCurrentPlace = () => {
+        if(loadState === 3) dispatch(updateLoadState(1));
         dispatch(updateLoadState(1));
         fetch(`${api.base}weather?q=${searchValue}&units=metric&APPID=${api.key}`,
         
@@ -115,18 +116,20 @@ export const Main = React.memo(() => {
                 dispatch(updateLoadState(3));
             }
             else {
+                dispatch(updateLoadState(2));
                 return response.json();
             }
         })
         .then(data => {
             dispatch(updatePlace(data));
-            dispatch(updateLoadState(2));
         })
         .catch(error => {
             alert("Error with download");
             dispatch(updateLoadState(3));
         })
     }
+
+    console.log(currentPlace)
 
     return (
         <div className="Main" style={{backgroundImage: `url(${background})`}}>
@@ -146,15 +149,20 @@ export const Main = React.memo(() => {
                         <button onClick={loadWeatherCurrentPlace} type='button'>Check the weather</button>
                 </div>
                     {(loadState===1 && <div>wait a moment</div>)}
-                    {(loadState===2 && <Data 
-                    key={currentPlace.id}
-                    name={currentPlace.name}
-                    weather={currentPlace.weather[0]}
-                    wind={currentPlace.wind}
-                    main={currentPlace.main}
-                    days={date[0].days}
-                    months={date[1].months}
-                    />)}
+                    {((loadState === 2 && currentPlace !== {}) && currentPlace !== undefined)
+                        ?
+                        (loadState===2 && <Data 
+                            key={currentPlace.id}
+                            name={currentPlace.name}
+                            weather={currentPlace.weather[0]}
+                            wind={currentPlace.wind}
+                            main={currentPlace.main}
+                            days={date[0].days}
+                            months={date[1].months}
+                            />)
+                            :
+                            null
+                    }
                     {(loadState===3 && <div>Error</div>)}
                 </div>
             </div>
