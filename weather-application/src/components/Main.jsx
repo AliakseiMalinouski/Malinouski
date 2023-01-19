@@ -124,6 +124,7 @@ export const Main = React.memo(() => {
         .then(data => {
             dispatch(updateLoadState(2));
             dispatch(updatePlace(data));
+            setSearchValue("");
         })
         .catch(error => {
             alert("Download error or entered value is incorrect");
