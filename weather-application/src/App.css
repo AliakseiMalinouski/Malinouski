@@ -169,8 +169,9 @@ body::after {
 }
 
 .Container .Main .Gradient .FlexblBlock .Data .AboutWeather .temperature .Deg {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
 }
 
 .Container .Main .Gradient .FlexblBlock .Data .AboutWeather .StateWeather {

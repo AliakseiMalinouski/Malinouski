@@ -46,7 +46,7 @@ export const Data = React.memo(({name, wind, weather, main}) => {
                 <h3 className="NameOfCountry">{name}</h3>
                 <h4 className="temperature">
                 {weatherData.currentTemperature}
-                <img className="Deg" src="https://cdn-icons-png.flaticon.com/512/7038/7038286.png" alt="Deg"/>
+                <img className="Deg" src="https://cdn-icons-png.flaticon.com/512/2059/2059275.png" alt="Deg"/>
                 </h4>
                 <p className="StateWeather">{weather.main}</p> 
                 <p className="MaxMin" style={weatherData.currentTemperatureMin > 10 ||  weatherData.currentTemperatureMin > 10 || weatherData.currentTemperatureMin <= -10 || weatherData.currentTemperatureMax <= -10 ? {paddingLeft: '20px'} : null}>
