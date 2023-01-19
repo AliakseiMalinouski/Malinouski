@@ -408,4 +408,17 @@ body::after {
   .Container .Main .Gradient .FlexblBlock .Tools button {
     width: 60%;
   }
+
+  .Container .Main .Gradient .FlexblBlock .CurrrentDate .Date {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Container .Main .Gradient .FlexblBlock .CurrrentDate .Date p {
+    position: static;
+  }
+
+  
 }
