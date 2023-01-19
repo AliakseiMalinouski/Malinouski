@@ -62,21 +62,17 @@ export const Main = React.memo(() => {
             return el.name === flag;
         });
         let temp = temperature;
-        console.log(neededWeather)
         if((time.hours >= 0 && time.hours <= 7) && neededWeather !== undefined) {
             let randomBackground = Math.floor(Math.random() * backgrounds[neededWeather.code - 1].night.length);
             setBackground(backgrounds[neededWeather.code - 1].night[randomBackground]);
-            console.log('1')
         }
         else if((time.hours >= 7 && time.hours <= 17) && neededWeather !== undefined) {
             let randomBackground = Math.floor(Math.random() * backgrounds[neededWeather.code - 1].morning.length);
             setBackground(backgrounds[neededWeather.code - 1].morning[randomBackground]);
-            console.log('2')
         }
         else if((time.hours >= 17 && time.hours <= 23) && neededWeather !== undefined) {
             let randomBackground = Math.floor(Math.random() * backgrounds[neededWeather.code - 1].evening.length);
             setBackground(backgrounds[neededWeather.code - 1].evening[randomBackground]);
-            console.log('3')
         }
         else if(flag === null && (time.hours >= 7 && time.hours <= 17)) {
             setBackground("https://i.ibb.co/WBLLv1j/day-theme.png");
