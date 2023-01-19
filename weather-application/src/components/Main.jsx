@@ -41,6 +41,7 @@ export const Main = React.memo(() => {
     const [background, setBackground] = useState("");
     const [flag, setFlag] = useState(null);
     const [temperature, setTemperature] = useState(null);
+    const [isActive, setIsActive] = useState(false);
 
     const createDate = useCallback(() => {
         let dateHash = new Date();
@@ -125,6 +126,7 @@ export const Main = React.memo(() => {
             dispatch(updateLoadState(2));
             dispatch(updatePlace(data));
             setSearchValue("");
+            setIsActive(false);
         })
         .catch(error => {
             alert("Download error or entered value is incorrect");
@@ -146,9 +148,16 @@ export const Main = React.memo(() => {
                         <input type='text' placeholder="Name of country or city" value={searchValue} onChange={
                             (EO) => {
                                 setSearchValue(EO.target.value);
+                                EO.target.value.length > 2 ? setIsActive(true) : setIsActive(false);
                             }
                         }/>
-                        <button onClick={loadWeatherCurrentPlace} type='button'>Check the weather</button>
+                        {
+                            (!isActive)
+                            ?
+                            <button disabled={true} type='button'>Check the weather</button>
+                            :
+                            <button onClick={loadWeatherCurrentPlace} type='button'>Check the weather</button>
+                        }
                 </div>
                     {(loadState===0 && <Hint/>)}
                     {(loadState===1 && <div>wait a moment</div>)}
