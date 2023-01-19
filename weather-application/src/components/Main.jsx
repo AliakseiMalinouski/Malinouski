@@ -101,7 +101,7 @@ export const Main = React.memo(() => {
     }, [changeBackground]);
 
     const loadWeatherCurrentPlace = () => {
-        if(loadState === 3) dispatch(updateLoadState(1));
+        if(loadState === 2) dispatch(updateLoadState(1));
         dispatch(updateLoadState(1));
         fetch(`${api.base}weather?q=${searchValue}&units=metric&APPID=${api.key}`,
         
@@ -116,11 +116,11 @@ export const Main = React.memo(() => {
                 dispatch(updateLoadState(3));
             }
             else {
-                dispatch(updateLoadState(2));
                 return response.json();
             }
         })
         .then(data => {
+            dispatch(updateLoadState(2));
             dispatch(updatePlace(data));
         })
         .catch(error => {
@@ -128,8 +128,6 @@ export const Main = React.memo(() => {
             dispatch(updateLoadState(3));
         })
     }
-
-    console.log(currentPlace)
 
     return (
         <div className="Main" style={{backgroundImage: `url(${background})`}}>
@@ -163,7 +161,7 @@ export const Main = React.memo(() => {
                             :
                             null
                     }
-                    {(loadState===3 && <div>Error</div>)}
+                    {(loadState === 3 || currentPlace === undefined || currentPlace === {}) && <div>Error</div>}
                 </div>
             </div>
         </div>
