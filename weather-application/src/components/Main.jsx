@@ -132,8 +132,9 @@ export const Main = React.memo(() => {
         })
     }
 
+
     return (
-        <div className="Main" style={{backgroundImage: `url(${background})`}}>
+        <div className="Main" style={{backgroundImage: `url(${background})`, transition: loadState === 0 ? "" : "background-image 1s ease-in-out"}}>
             <div className="Gradient">
                 <div className="FlexblBlock">
                     <div className="CurrrentDate">
