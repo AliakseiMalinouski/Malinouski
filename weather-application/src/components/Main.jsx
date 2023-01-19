@@ -58,7 +58,27 @@ export const Main = React.memo(() => {
     }, [date, dispatch])
 
     const changeBackground = useCallback(() => {
-        if(flag === null && (time.hours >= 7 && time.hours <= 17)) {
+        let neededWeather = backgrounds.find(el => {
+            return el.name === flag;
+        });
+        let temp = temperature;
+        console.log(neededWeather)
+        if((time.hours >= 0 && time.hours <= 7) && neededWeather !== undefined) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[neededWeather.code - 1].night.length);
+            setBackground(backgrounds[neededWeather.code - 1].night[randomBackground]);
+            console.log('1')
+        }
+        else if((time.hours >= 7 && time.hours <= 17) && neededWeather !== undefined) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[neededWeather.code - 1].morning.length);
+            setBackground(backgrounds[neededWeather.code - 1].morning[randomBackground]);
+            console.log('2')
+        }
+        else if((time.hours >= 17 && time.hours <= 23) && neededWeather !== undefined) {
+            let randomBackground = Math.floor(Math.random() * backgrounds[neededWeather.code - 1].evening.length);
+            setBackground(backgrounds[neededWeather.code - 1].evening[randomBackground]);
+            console.log('3')
+        }
+        else if(flag === null && (time.hours >= 7 && time.hours <= 17)) {
             setBackground("https://i.ibb.co/WBLLv1j/day-theme.png");
         }
         else if(flag === null && (time.hours >= 17 && time.hours < 23)) {
@@ -67,63 +87,7 @@ export const Main = React.memo(() => {
         else if(flag === null && (time.hours >= 0 && time.hours < 7)) {
             setBackground("https://images.unsplash.com/photo-1568233823082-873ab0156ad7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
         }
-        else if(flag === 'Clouds' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[0].morning.length);
-            setBackground(backgrounds[0].morning[randomBackground]);
-        }
-        else if(flag === 'Clouds' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[0].evening.length);
-            setBackground(backgrounds[0].evening[randomBackground]);
-        }
-        else if(flag === 'Clouds' && temperature <= 0 && (time.hours >= 17 && time.hours <= 23)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[3].night.length);
-            setBackground(backgrounds[3].night[randomBackground]);
-        }
-        else if(flag === 'Clouds' && temperature > 0 && (time.hours >= 0 && time.hours <= 7)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[0].night.length);
-            setBackground(backgrounds[0].night[randomBackground]);
-        }
-        else if(flag === 'Clouds' && temperature <= 0 && (time.hours >= 0 && time.hours <= 7)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[3].night.length);
-            setBackground(backgrounds[3].night[randomBackground]);
-        }
-        else if(flag === 'Rain' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[1].morning.length);
-            setBackground(backgrounds[1].morning[randomBackground]);
-        }
-        else if(flag === 'Rain' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[1].evening.length);
-            setBackground(backgrounds[1].evening[randomBackground]);
-        }
-        else if(flag === 'Rain' && temperature > 0 && (time.hours >= 0 && time.hours <= 7)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[1].night.length);
-            setBackground(backgrounds[1].night[randomBackground]);
-        }
-        else if(flag === 'Clear' && temperature > 0 && (time.hours >= 7 && time.hours <= 17)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[2].morning.length);
-            setBackground(backgrounds[2].morning[randomBackground]);
-        }
-        else if(flag === 'Clear' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[2].evening.length);
-            setBackground(backgrounds[2].evening[randomBackground]);
-        }
-        else if(flag === 'Clear' && temperature > 0 && (time.hours >= 17 && time.hours <= 23)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[3].night.length);
-            setBackground(backgrounds[3].night[randomBackground]);
-        }
-        else if(flag === 'Clear' && temperature > 0 && (time.hours >= 0 && time.hours <= 7)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[2].night.length);
-            setBackground(backgrounds[2].night[randomBackground]);
-        }
-        else if(flag === 'Snow' && temperature <= 0 && (time.hours >= 7 && time.hours <= 17)) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[3].morning.length);
-            setBackground(backgrounds[3].morning[randomBackground]);
-        }
-        else if(flag === 'Snow' && temperature <= 0 && ((time.hours >= 17 && time.hours <= 23) && (time.hours >= 0 && time.hours <= 7))) {
-            let randomBackground = Math.floor(Math.random() * backgrounds[3].night.length);
-            setBackground(backgrounds[3].night[randomBackground]);
-        }
-    }, [flag, time.hours, temperature, backgrounds]);
+    }, [backgrounds, flag, time.hours, temperature])
 
     const changeFlagBackground = (temp, weatherState) => {
         if(temp !== null && weatherState !== null) {
