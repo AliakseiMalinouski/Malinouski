@@ -11,6 +11,7 @@ import { weatherEvents } from "../events";
 import { backgroundThunk } from "../Redux/backgroundThunk";
 import { Error } from "./Error";
 import { Hint } from "./Hint";
+import { Loading } from "./Loading";
 
 export const Main = React.memo(() => {
 
@@ -160,7 +161,7 @@ export const Main = React.memo(() => {
                         }
                 </div>
                     {(loadState===0 && <Hint/>)}
-                    {(loadState===1 && <div>wait a moment</div>)}
+                    {(loadState===1 && <Loading/>)}
                     {((loadState === 2 && currentPlace !== {}) && currentPlace !== undefined)
                         ?
                         (loadState===2 && <Data 
