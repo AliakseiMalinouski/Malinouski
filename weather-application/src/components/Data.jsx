@@ -43,6 +43,9 @@ export const Data = React.memo(({name, wind, weather, main}) => {
                 {(weatherData.currentTemperature >= 15 && weather.main === 'Mist') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/9369/9369647.png" alt="Weather"/>}
                 {(weatherData.currentTemperature <= 14 && weather.main === 'Mist') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/4005/4005901.png" alt="Weather"/>}
                 {(weatherData.currentTemperature <= 0 && weather.main === 'Mist') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/3104/3104495.png" alt="Weather"/>}
+                {(weatherData.currentTemperature >= 15 && weather.main === 'Drizzle') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/1809/1809557.png" alt="Weather"/>}
+                {(weatherData.currentTemperature <= 14 && weather.main === 'Drizzle') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/1113/1113720.png" alt="Weather"/>}
+                {(weatherData.currentTemperature <= 0 && weather.main === 'Drizzle') && <img className="ImageWeather" src="https://cdn-icons-png.flaticon.com/512/9249/9249555.png" alt="Weather"/>}
                 <h3 className="NameOfCountry">{name}</h3>
                 <h4 className="temperature">
                 {weatherData.currentTemperature}
