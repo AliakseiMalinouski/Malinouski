@@ -9,6 +9,8 @@ import { daysThunk } from "../Redux/daysThunk";
 import { updateTime } from "../Redux/timeSlice";
 import { weatherEvents } from "../events";
 import { backgroundThunk } from "../Redux/backgroundThunk";
+import { Error } from "./Error";
+import { Hint } from "./Hint";
 
 export const Main = React.memo(() => {
 
@@ -112,7 +114,7 @@ export const Main = React.memo(() => {
         )
         .then(response => {
             if(!response.ok) {
-                alert("Error with download");
+                alert("Download error or entered value is incorrect");
                 dispatch(updateLoadState(3));
             }
             else {
@@ -124,7 +126,7 @@ export const Main = React.memo(() => {
             dispatch(updatePlace(data));
         })
         .catch(error => {
-            alert("Error with download");
+            alert("Download error or entered value is incorrect");
             dispatch(updateLoadState(3));
         })
     }
@@ -146,6 +148,7 @@ export const Main = React.memo(() => {
                         }/>
                         <button onClick={loadWeatherCurrentPlace} type='button'>Check the weather</button>
                 </div>
+                    {(loadState===0 && <Hint/>)}
                     {(loadState===1 && <div>wait a moment</div>)}
                     {((loadState === 2 && currentPlace !== {}) && currentPlace !== undefined)
                         ?
@@ -161,7 +164,7 @@ export const Main = React.memo(() => {
                             :
                             null
                     }
-                    {(loadState === 3 || currentPlace === undefined || currentPlace === {}) && <div>Error</div>}
+                    {(loadState === 3 || currentPlace === undefined || currentPlace === {}) && <Error/>}
                 </div>
             </div>
         </div>
