@@ -60,7 +60,7 @@ export const Data = React.memo(({name, wind, weather, main}) => {
                     <div className="OpacityBlock">
                     </div>
                     <p>
-                         Feels like: {weatherData.feelsLikeTemperature} <img style={weatherData.feelsLikeTemperature > 10 || weatherData.feelsLikeTemperature < -10 ? {right: '130px'} : null} className="Icon" src="https://cdn-icons-png.flaticon.com/512/5726/5726885.png" alt="Deg"/>
+                         Feels like: {weatherData.feelsLikeTemperature} 
                         </p>
                         <p>
                             Wind speed: {weatherData.windSpeed} m/s
