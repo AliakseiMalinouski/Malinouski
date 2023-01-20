@@ -71,7 +71,7 @@ export const Header = React.memo(({cbResize}) => {
                                             cbResize(false);
                                         }} className='ClosePageMenu' src='https://img.icons8.com/fluency/512/multiply.png' alt='Close' />
                                         <div className='NavLinksMobile'>
-                                            <NavLink className='NavLink' style={(page == '/' ? { color: 'red' } : null)} to='/' onClick={() => {
+                                            <NavLink className='NavLink' style={(page == '/registration' ? { color: 'red' } : null)} to='/registration' onClick={() => {
                                                 setIsView(false);
                                                 cbResize(false);
                                             }}>Auth</NavLink>
@@ -79,7 +79,7 @@ export const Header = React.memo(({cbResize}) => {
                                                 setIsView(false);
                                                 cbResize(false);
                                             }}>Intrudaction</NavLink>
-                                            <NavLink className='NavLink' to='/taprola' style={(page == '/taprola' ? {color: 'red'} : null)} onClick={() => {
+                                            <NavLink className='NavLink' to='/' style={(page == '/' ? {color: 'red'} : null)} onClick={() => {
                                                 setIsView(false);
                                                 cbResize(false);
                                             }}>Taprola</NavLink>
