@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getFavouriteBook } from "../Redux/favouriteBookSlice";
 import { getItemsBasket } from "../Redux/basketSlice";
 
-export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) => {
+export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item, description }) => {
 
     const favouriteBooks = useSelector(state => state.favouriteBook.book);
     const itemsBasket = useSelector(state => state.basket.basket);
@@ -80,7 +80,7 @@ export const DetailsOfCurrentBook = ({ code, image, name, type, arrow, item }) =
                 </div>
                 <div className="AboutBook">
                     <h4>About this ebook <img src='https://i.ibb.co/479tw9L/Arrow-1-2.png' alt="Arrow"/></h4>
-                    <p>NOW A MAJOR MOTION PICTURE directed by Denis Villeneuve, starring Timothée Chalamet, Zendaya, Jason Momoa, Rebecca Ferguson, Oscar Isaac, Josh Brolin, Stellan Skarsgård, Dave Bautista, David Dastmalchian, Stephen McKinley Henderson, Chang Chen, Sharon Duncan-Brewster, Charlotte Rampling, and Javier Bardem. Frank Herbert's classic masterpiece — a triumph of the imagination and one of the bestselling science fiction novels of all time.</p>
+                    <p>{description}</p>
                 </div>
             </div>
         </div>
