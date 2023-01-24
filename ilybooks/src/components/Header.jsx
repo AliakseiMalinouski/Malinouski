@@ -50,7 +50,7 @@ export const Header = React.memo(() => {
                     <img src='https://i.ibb.co/wNTx56p/heart.png' alt='Heart' onClick={goToFavouriteBooksPage} />
                     <span className='QuantityOfFavouriteBooks'>{favouriteBooks.length}</span>
                 </div>
-                <img src='https://i.ibb.co/r2Gt8FV/account.png' alt='Account' />
+                <NavLink to='/regestration'><img src='https://i.ibb.co/r2Gt8FV/account.png' alt='Account' /></NavLink>
             </div>
             <div className='BigStaticText'>
                 <p></p>

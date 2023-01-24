@@ -736,3 +736,13 @@ li {
   font-size: 30px;
   text-align: center;
 }
+
+
+.Auth {
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

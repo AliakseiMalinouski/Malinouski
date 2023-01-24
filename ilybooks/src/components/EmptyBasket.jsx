@@ -7,8 +7,6 @@ export const EmptyBasket = () => {
 
     let page = params.pathname;
 
-    console.log(page)
-
     if (page === '/basket') {
         return (
         <div className="WrapEmptyBasket">
