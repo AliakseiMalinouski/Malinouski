@@ -2,9 +2,13 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { auth } from "../firebase-config";
 import {signInWithEmailAndPassword, signOut, onAuthStateChanged, createUserWithEmailAndPassword} from 'firebase/auth';
+import { removeUser } from "../Redux/userSlice";
+import { useDispatch } from "react-redux";
 
 
 export const Auth = () => {
+
+    let dispatch = useDispatch();
 
     const [regEmail, setRegEmail] = useState("");
     const [regPass, setRegPass] = useState("");
@@ -60,6 +64,7 @@ export const Auth = () => {
 
     const signOutUser = () => {
         signOut(auth);
+        dispatch(removeUser());
     }
 
     const validationRegestrationProcess = (emailValue, passwordValue) => {

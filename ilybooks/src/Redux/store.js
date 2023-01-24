@@ -6,6 +6,7 @@ import TitlesCatalogSlice from './TitlesCatalogSlice';
 import ItemsSlice from './ItemsSlice';
 import favouriteBookSlice from './favouriteBookSlice';
 import basketSlice from './basketSlice';
+import userSlice from './userSlice';
 
 export const store = configureStore({
     reducer: {
@@ -15,6 +16,7 @@ export const store = configureStore({
         titles: TitlesCatalogSlice,
         items: ItemsSlice,
         favouriteBook: favouriteBookSlice,
-        basket: basketSlice
+        basket: basketSlice,
+        user: userSlice
     }
 });

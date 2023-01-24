@@ -77,10 +77,23 @@ li {
 }
 
 .Header .RestHeader {
-  width: 485px;
+  width: 490px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
+}
+
+.Header .UserHeader {
+  display: flex;
+  align-items: center;
+}
+
+.Header .UserHeader span {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .Header .RestHeader img {

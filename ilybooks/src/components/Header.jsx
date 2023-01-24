@@ -5,6 +5,9 @@ import { listThunk } from '../Redux/listThunk';
 import { iconThunk } from '../Redux/iconThunk';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { onAuthStateChanged } from 'firebase/auth';
+import { updateUser } from '../Redux/userSlice';
+import { auth } from '../firebase-config';
 
 export const Header = React.memo(() => {
 
@@ -14,6 +17,13 @@ export const Header = React.memo(() => {
     const list = useSelector(state => state.list.data);
     const favouriteBooks = useSelector(state => state.favouriteBook.book);
     const itemsBasket = useSelector(state => state.basket.basket);
+    const user = useSelector(state => state.user.userEmail);
+
+    useEffect(() => {
+        onAuthStateChanged(auth, currentUser => {
+            dispatch(updateUser(currentUser?.email));
+        })
+    }, [dispatch])
 
     useEffect(() => {
         dispatch(listThunk);
@@ -40,8 +50,6 @@ export const Header = React.memo(() => {
                 }
             </ul>
             <div className='RestHeader'>
-                <input type='text' className='Search' maxLength='100'/>
-                <img src='https://i.ibb.co/RzHWngP/Vector-4.png' alt='Search Button' className='SearchButton' />
                 <div className='WrapperBasket'>
                     <img src='https://i.ibb.co/QDr4LFc/Vector-5.png' alt='Basket' onClick={goToBasketPage}/>
                     <span className='QuantityOfFavouriteBooks'>{itemsBasket.length}</span>
@@ -50,7 +58,20 @@ export const Header = React.memo(() => {
                     <img src='https://i.ibb.co/wNTx56p/heart.png' alt='Heart' onClick={goToFavouriteBooksPage} />
                     <span className='QuantityOfFavouriteBooks'>{favouriteBooks.length}</span>
                 </div>
-                <NavLink to='/regestration'><img src='https://i.ibb.co/r2Gt8FV/account.png' alt='Account' /></NavLink>
+                <div className='UserHeader'>
+                    {
+                        !user 
+                        ?
+                        <NavLink to='regestration'>
+                           <span className='EmailUser'>Sign in</span>
+                        </NavLink>
+                        :
+                        <div className='UserHeader'>
+                            <NavLink to='/regestration'><img src='https://i.ibb.co/r2Gt8FV/account.png' alt='Account' /></NavLink>
+                            <span className='EmailUser'>{user}</span>
+                        </div>
+                    }
+                </div>
             </div>
             <div className='BigStaticText'>
                 <p></p>
